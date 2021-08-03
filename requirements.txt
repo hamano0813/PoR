@@ -1,0 +1,2 @@
+PySide6
+dolphin_memory_engine
