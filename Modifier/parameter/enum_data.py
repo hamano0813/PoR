@@ -1275,6 +1275,11 @@ class EnumData(QObject):
             'SID_WINGSHIELD': self.tr('SID_WINGSHIELD'),
             'SID_WLUPTOS': self.tr('SID_WLUPTOS'),
         }
+        self.SUPPORT_ENUM = {
+            'PID_IKE': (
+
+            )
+        }
 
     def GROUP_MAPPING(self):
         return {
@@ -1321,6 +1326,9 @@ class EnumData(QObject):
             0x1D: self.tr("Serenes"),  # 鹭的住民
             0x1E: self.tr("Alone Mercenary"),  # 孤身的佣兵
         }
+
+    def SUPPORT_MAPPING(self):
+        return self.SUPPORT_ENUM
 
     def AID_MAPPING(self):
         return self.get_mapping(self.AID_ENUM, self.AID_OFFSET)
