@@ -71,7 +71,7 @@
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="543"/>
         <source>PID_ERINCIA_QUEEN</source>
-        <translation>エリンシア[QUEEN]</translation>
+        <translation>エリンシア</translation>
     </message>
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="544"/>
@@ -1461,7 +1461,7 @@
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="821"/>
         <source>PID_ERINCIA_QUEEN_EV</source>
-        <translation>エリンシア[QUEEN_EV]</translation>
+        <translation>エリンシア[EV]</translation>
     </message>
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="822"/>
@@ -6249,177 +6249,177 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1281"/>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1286"/>
         <source>this</source>
         <translation>味方</translation>
     </message>
     <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1282"/>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1287"/>
         <source>enemy</source>
         <translation>敵</translation>
     </message>
     <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1283"/>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1288"/>
         <source>other</source>
         <translation>その他</translation>
     </message>
     <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1284"/>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1289"/>
         <source>friend</source>
         <translation>友好</translation>
     </message>
     <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1285"/>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1290"/>
         <source>death</source>
         <translation>死亡</translation>
     </message>
     <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1288"/>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1293"/>
         <source>ready</source>
         <translation>未出撃</translation>
     </message>
     <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1287"/>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1292"/>
         <source>killed</source>
         <translation>殺される</translation>
     </message>
     <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1293"/>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1298"/>
         <source>Crimea</source>
         <translation>クリミア軍</translation>
     </message>
     <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1295"/>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1300"/>
         <source>Daein</source>
         <translation>デイン軍</translation>
     </message>
     <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1296"/>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1301"/>
         <source>Gallian</source>
         <translation>ガリア軍</translation>
     </message>
     <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1297"/>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1302"/>
         <source>Bandit</source>
         <translation>山賊</translation>
     </message>
     <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1298"/>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1303"/>
         <source>Pirate</source>
         <translation>海賊</translation>
     </message>
     <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1299"/>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1304"/>
         <source>Elincia Reinforce</source>
         <translation>エリンシア増援</translation>
     </message>
     <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1316"/>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1321"/>
         <source>Holy Guard</source>
         <translation>神使親衛隊</translation>
     </message>
     <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1301"/>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1306"/>
         <source>Kariwa Bandit</source>
         <translation>カリワ山賊</translation>
     </message>
     <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1302"/>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1307"/>
         <source>Greil Mercenaries</source>
         <translation>グレイル傭兵団</translation>
     </message>
     <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1303"/>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1308"/>
         <source>Begnion</source>
         <translation>ベグニオン軍</translation>
     </message>
     <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1304"/>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1309"/>
         <source>Pegasus Knight</source>
         <translation>天馬騎士</translation>
     </message>
     <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1305"/>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1310"/>
         <source>Merchant</source>
         <translation>行商団</translation>
     </message>
     <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1306"/>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1311"/>
         <source>Laguz Emancipation Army</source>
         <translation>ラグズ解放軍</translation>
     </message>
     <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1307"/>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1312"/>
         <source>Dukedom of Tanas</source>
         <translation>タナス公爵軍</translation>
     </message>
     <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1308"/>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1313"/>
         <source>Thief</source>
         <translation>盗賊</translation>
     </message>
     <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1309"/>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1314"/>
         <source>Kilvas</source>
         <translation>キルヴァス軍</translation>
     </message>
     <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1310"/>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1315"/>
         <source>Phoenicis</source>
         <translation>フェニキス軍</translation>
     </message>
     <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1311"/>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1316"/>
         <source>Wild</source>
         <translation>無所属</translation>
     </message>
     <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1312"/>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1317"/>
         <source>Palmeni</source>
         <translation>パルメニー僧</translation>
     </message>
     <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1313"/>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1318"/>
         <source>Captive</source>
         <translation>捕虜</translation>
     </message>
     <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1314"/>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1319"/>
         <source>Begnion Reinforce</source>
         <translation>ベグニオン増援</translation>
     </message>
     <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1315"/>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1320"/>
         <source>Vigilante</source>
         <translation>自警団</translation>
     </message>
     <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1317"/>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1322"/>
         <source>Mystery Army</source>
         <translation>謎の軍</translation>
     </message>
     <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1318"/>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1323"/>
         <source>Daein Remnant</source>
         <translation>デイン残党</translation>
     </message>
     <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1319"/>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1324"/>
         <source>Mystery Force</source>
         <translation>謎の勢力</translation>
     </message>
     <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1320"/>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1325"/>
         <source>Fighter</source>
         <translation>闘士</translation>
     </message>
     <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1321"/>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1326"/>
         <source>Serenes</source>
         <translation>サギの民</translation>
     </message>
     <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1322"/>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1327"/>
         <source>Alone Mercenary</source>
         <translation>はぐれ傭兵</translation>
     </message>
@@ -6427,12 +6427,12 @@
 <context>
     <name>Item</name>
     <message>
-        <location filename="../../Modifier/interface/item.py" line="19"/>
+        <location filename="../../Modifier/interface/item.py" line="20"/>
         <source>Equip</source>
         <translation>装備</translation>
     </message>
     <message>
-        <location filename="../../Modifier/interface/item.py" line="20"/>
+        <location filename="../../Modifier/interface/item.py" line="21"/>
         <source>Drop</source>
         <translation>ドロップ</translation>
     </message>
@@ -6440,70 +6440,170 @@
 <context>
     <name>Status</name>
     <message>
-        <location filename="../../Modifier/interface/status.py" line="22"/>
+        <location filename="../../Modifier/interface/status.py" line="32"/>
         <source>Unit</source>
         <translation>ユニット</translation>
     </message>
     <message>
-        <location filename="../../Modifier/interface/status.py" line="30"/>
+        <location filename="../../Modifier/interface/status.py" line="42"/>
         <source>Person</source>
         <translation>人物</translation>
     </message>
     <message>
-        <location filename="../../Modifier/interface/status.py" line="31"/>
+        <location filename="../../Modifier/interface/status.py" line="43"/>
         <source>Job</source>
         <translation>クラス</translation>
     </message>
     <message>
-        <location filename="../../Modifier/interface/status.py" line="32"/>
+        <location filename="../../Modifier/interface/status.py" line="44"/>
         <source>Action</source>
         <translation>アクション</translation>
     </message>
     <message>
-        <location filename="../../Modifier/interface/status.py" line="33"/>
+        <location filename="../../Modifier/interface/status.py" line="45"/>
         <source>Group</source>
         <translation>軍勢</translation>
     </message>
     <message>
-        <location filename="../../Modifier/interface/status.py" line="34"/>
+        <location filename="../../Modifier/interface/status.py" line="46"/>
         <source>Army</source>
         <translation>所属</translation>
     </message>
     <message>
-        <location filename="../../Modifier/interface/status.py" line="39"/>
+        <location filename="../../Modifier/interface/status.py" line="71"/>
         <source>With</source>
         <translation>同行</translation>
     </message>
     <message>
-        <location filename="../../Modifier/interface/status.py" line="41"/>
+        <location filename="../../Modifier/interface/status.py" line="73"/>
         <source>Saving</source>
         <translation>救出</translation>
     </message>
     <message>
-        <location filename="../../Modifier/interface/status.py" line="42"/>
+        <location filename="../../Modifier/interface/status.py" line="74"/>
         <source>Saved</source>
         <translation>被救</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/interface/status.py" line="83"/>
+        <source>Position</source>
+        <translation>位置</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/interface/status.py" line="87"/>
+        <source>Coordinate X</source>
+        <translation>座標Ｘ</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/interface/status.py" line="88"/>
+        <source>Coordinate Y</source>
+        <translation>座標Ｙ</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/interface/status.py" line="93"/>
+        <source>Debuff</source>
+        <translation>異常</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/interface/status.py" line="100"/>
+        <source>Poison</source>
+        <translation>ポイズン</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/interface/status.py" line="101"/>
+        <source>Sleep</source>
+        <translation>スリープ</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/interface/status.py" line="102"/>
+        <source>Silence</source>
+        <translation>サイレス</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/interface/status.py" line="103"/>
+        <source>Berserk</source>
+        <translation>バサーク</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/interface/status.py" line="104"/>
+        <source>Stun</source>
+        <translation>衝撃</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/interface/status.py" line="51"/>
+        <source>Condition</source>
+        <translation>状況</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/interface/status.py" line="60"/>
+        <source>Leader</source>
+        <translation>リーダー</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/interface/status.py" line="61"/>
+        <source>ID</source>
+        <translation>番号</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/interface/status.py" line="62"/>
+        <source>LV</source>
+        <translation>レベル</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/interface/status.py" line="63"/>
+        <source>EXP</source>
+        <translation>経験</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/interface/status.py" line="64"/>
+        <source>HP</source>
+        <translation>ＨＰ</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/interface/status.py" line="65"/>
+        <source>Transforme</source>
+        <translation>化身</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/interface/status.py" line="66"/>
+        <source>Finish</source>
+        <translation>行動終了</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/interface/status.py" line="109"/>
+        <source>Combat</source>
+        <translation>交戦</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/interface/status.py" line="113"/>
+        <source>Battle</source>
+        <translation>戦闘</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/interface/status.py" line="114"/>
+        <source>Win</source>
+        <translation>勝利</translation>
     </message>
 </context>
 <context>
     <name>Window</name>
     <message>
-        <location filename="../../Modifier/interface/window.py" line="19"/>
+        <location filename="../../Modifier/interface/window.py" line="20"/>
         <source>Refresh</source>
         <translation>リフレッシュ</translation>
     </message>
     <message>
-        <location filename="../../Modifier/interface/window.py" line="35"/>
+        <location filename="../../Modifier/interface/window.py" line="36"/>
         <source>Item</source>
         <translation>アイテム</translation>
     </message>
     <message>
-        <location filename="../../Modifier/interface/window.py" line="44"/>
+        <location filename="../../Modifier/interface/window.py" line="45"/>
         <source>Path of Radiance Memory Modifier</source>
         <translation>蒼炎の軌跡 メモリー エディタ</translation>
     </message>
     <message>
-        <location filename="../../Modifier/interface/window.py" line="34"/>
+        <location filename="../../Modifier/interface/window.py" line="35"/>
         <source>Status</source>
         <translation>ステータス</translation>
     </message>

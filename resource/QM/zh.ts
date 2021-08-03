@@ -6248,177 +6248,177 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1281"/>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1286"/>
         <source>this</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1282"/>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1287"/>
         <source>enemy</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1283"/>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1288"/>
         <source>other</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1284"/>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1289"/>
         <source>friend</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1285"/>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1290"/>
         <source>death</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1288"/>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1293"/>
         <source>ready</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1287"/>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1292"/>
         <source>killed</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1293"/>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1298"/>
         <source>Crimea</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1295"/>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1300"/>
         <source>Daein</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1296"/>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1301"/>
         <source>Gallian</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1297"/>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1302"/>
         <source>Bandit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1298"/>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1303"/>
         <source>Pirate</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1299"/>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1304"/>
         <source>Elincia Reinforce</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1316"/>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1321"/>
         <source>Holy Guard</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1301"/>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1306"/>
         <source>Kariwa Bandit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1302"/>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1307"/>
         <source>Greil Mercenaries</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1303"/>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1308"/>
         <source>Begnion</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1304"/>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1309"/>
         <source>Pegasus Knight</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1305"/>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1310"/>
         <source>Merchant</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1306"/>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1311"/>
         <source>Laguz Emancipation Army</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1307"/>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1312"/>
         <source>Dukedom of Tanas</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1308"/>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1313"/>
         <source>Thief</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1309"/>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1314"/>
         <source>Kilvas</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1310"/>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1315"/>
         <source>Phoenicis</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1311"/>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1316"/>
         <source>Wild</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1312"/>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1317"/>
         <source>Palmeni</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1313"/>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1318"/>
         <source>Captive</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1314"/>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1319"/>
         <source>Begnion Reinforce</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1315"/>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1320"/>
         <source>Vigilante</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1317"/>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1322"/>
         <source>Mystery Army</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1318"/>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1323"/>
         <source>Daein Remnant</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1319"/>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1324"/>
         <source>Mystery Force</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1320"/>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1325"/>
         <source>Fighter</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1321"/>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1326"/>
         <source>Serenes</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1322"/>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1327"/>
         <source>Alone Mercenary</source>
         <translation type="unfinished"></translation>
     </message>
@@ -6426,12 +6426,12 @@
 <context>
     <name>Item</name>
     <message>
-        <location filename="../../Modifier/interface/item.py" line="19"/>
+        <location filename="../../Modifier/interface/item.py" line="20"/>
         <source>Equip</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../Modifier/interface/item.py" line="20"/>
+        <location filename="../../Modifier/interface/item.py" line="21"/>
         <source>Drop</source>
         <translation type="unfinished"></translation>
     </message>
@@ -6439,70 +6439,170 @@
 <context>
     <name>Status</name>
     <message>
-        <location filename="../../Modifier/interface/status.py" line="22"/>
+        <location filename="../../Modifier/interface/status.py" line="32"/>
         <source>Unit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../Modifier/interface/status.py" line="30"/>
+        <location filename="../../Modifier/interface/status.py" line="42"/>
         <source>Person</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../Modifier/interface/status.py" line="31"/>
+        <location filename="../../Modifier/interface/status.py" line="43"/>
         <source>Job</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../Modifier/interface/status.py" line="32"/>
+        <location filename="../../Modifier/interface/status.py" line="44"/>
         <source>Action</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../Modifier/interface/status.py" line="33"/>
+        <location filename="../../Modifier/interface/status.py" line="45"/>
         <source>Group</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../Modifier/interface/status.py" line="34"/>
+        <location filename="../../Modifier/interface/status.py" line="46"/>
         <source>Army</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../Modifier/interface/status.py" line="39"/>
+        <location filename="../../Modifier/interface/status.py" line="71"/>
         <source>With</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../Modifier/interface/status.py" line="41"/>
+        <location filename="../../Modifier/interface/status.py" line="73"/>
         <source>Saving</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../Modifier/interface/status.py" line="42"/>
+        <location filename="../../Modifier/interface/status.py" line="74"/>
         <source>Saved</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/interface/status.py" line="83"/>
+        <source>Position</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/interface/status.py" line="93"/>
+        <source>Debuff</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/interface/status.py" line="100"/>
+        <source>Poison</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/interface/status.py" line="101"/>
+        <source>Sleep</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/interface/status.py" line="102"/>
+        <source>Silence</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/interface/status.py" line="103"/>
+        <source>Berserk</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/interface/status.py" line="104"/>
+        <source>Stun</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/interface/status.py" line="51"/>
+        <source>Condition</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/interface/status.py" line="60"/>
+        <source>Leader</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/interface/status.py" line="61"/>
+        <source>ID</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/interface/status.py" line="62"/>
+        <source>LV</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/interface/status.py" line="63"/>
+        <source>EXP</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/interface/status.py" line="64"/>
+        <source>HP</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/interface/status.py" line="65"/>
+        <source>Transforme</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/interface/status.py" line="66"/>
+        <source>Finish</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/interface/status.py" line="87"/>
+        <source>Coordinate X</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/interface/status.py" line="88"/>
+        <source>Coordinate Y</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/interface/status.py" line="109"/>
+        <source>Combat</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/interface/status.py" line="113"/>
+        <source>Battle</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/interface/status.py" line="114"/>
+        <source>Win</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>Window</name>
     <message>
-        <location filename="../../Modifier/interface/window.py" line="19"/>
+        <location filename="../../Modifier/interface/window.py" line="20"/>
         <source>Refresh</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../Modifier/interface/window.py" line="35"/>
+        <location filename="../../Modifier/interface/window.py" line="36"/>
         <source>Item</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../Modifier/interface/window.py" line="44"/>
+        <location filename="../../Modifier/interface/window.py" line="45"/>
         <source>Path of Radiance Memory Modifier</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../Modifier/interface/window.py" line="34"/>
+        <location filename="../../Modifier/interface/window.py" line="35"/>
         <source>Status</source>
         <translation type="unfinished"></translation>
     </message>
