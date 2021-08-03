@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 
 from PySide6.QtWidgets import QSpinBox
+from PySide6.QtCore import Qt
 from PySide6.QtGui import QIntValidator
 from .customize import Customize
 
@@ -11,6 +12,8 @@ class ValueSpin(Customize, QSpinBox):
         QSpinBox.__init__(self, parent)
         Customize.__init__(self, parent, **kwargs)
         self.init_editor()
+        self.setMinimumWidth(50)
+        self.setAlignment(Qt.AlignRight | Qt.AlignVCenter)
 
     def init_editor(self):
         if (length := self.structure['value'].length) > 0:

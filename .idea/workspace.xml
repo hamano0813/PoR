@@ -7,11 +7,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d46fa3eb-b3fc-4a28-b979-0366497ae973" name="Default Changelist" comment="#19.">
+    <list default="true" id="d46fa3eb-b3fc-4a28-b979-0366497ae973" name="Default Changelist" comment="#19.撤销项目界面翻译">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modifier/interface/item.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modifier/interface/item.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Modifier/interface/resource.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modifier/interface/resource.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modifier/parameter/enum_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modifier/parameter/enum_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.MD" beforeDir="false" afterPath="$PROJECT_DIR$/README.MD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modifier/interface/status.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modifier/interface/status.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modifier/interface/window.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modifier/interface/window.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modifier/parameter/data_setting.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modifier/parameter/data_setting.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modifier/widget/map_combo.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modifier/widget/map_combo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modifier/widget/slot_list.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modifier/widget/slot_list.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modifier/widget/value_spin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modifier/widget/value_spin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PoR.pro" beforeDir="false" afterPath="$PROJECT_DIR$/PoR.pro" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resource/QM/jp.qm" beforeDir="false" afterPath="$PROJECT_DIR$/resource/QM/jp.qm" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resource/QM/jp.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resource/QM/jp.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resource/QM/zh.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resource/QM/zh.ts" afterDir="false" />
@@ -225,6 +231,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="#1.新建项目文件" />
