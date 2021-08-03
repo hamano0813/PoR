@@ -111,6 +111,6 @@ class Status(BackgroundFrame):
         self['胜利'] = ValueSpin(self, value=DataSetting()['胜利'])
         layout = QFormLayout()
         layout.addRow(self.tr('Battle'), self['战斗'])
-        layout.addRow(self.tr('Battle'), self['胜利'])
+        layout.addRow(self.tr('Win'), self['胜利'])
         group.setLayout(layout)
         return group
