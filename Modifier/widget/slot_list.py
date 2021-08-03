@@ -73,7 +73,7 @@ class SlotModel(QAbstractListModel):
         pid_enum = self.parent().pid_mapping.get(pid_data, [f'{pid_data:08X}'] * 2)
         jid_enum = self.parent().jid_mapping.get(jid_data, [f'{pid_data:08X}'] * 2)
         if role == Qt.DisplayRole:
-            return f'【{pid_enum[-1]}】\n\n  {jid_enum[-1]}'
+            return f'【{pid_enum[-1]}】\n{jid_enum[-1]}'
         if role == Qt.DecorationRole:
             return QIcon(f":/PID/{pid_enum[0]}.gif")
         if role == Qt.ToolTipRole:
