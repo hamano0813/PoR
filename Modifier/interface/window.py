@@ -3,7 +3,8 @@
 
 from PySide6.QtWidgets import QMainWindow, QPushButton, QTabWidget, QHBoxLayout, QVBoxLayout
 from PySide6.QtCore import Qt, QSize
-from PySide6.QtGui import QIcon
+from PySide6.QtGui import QIcon, QCloseEvent
+from dolphin_memory_engine import un_hook, is_hooked
 from widget import SlotList, BackgroundFrame
 from parameter import DataSetting
 from . import Status, Item
@@ -44,3 +45,8 @@ class Window(QMainWindow):
         self.setWindowTitle(self.tr('Path of Radiance Memory Modifier'))
         self.setWindowIcon(QIcon(':/ICON/icon.png'))
         slot_list.refresh()
+
+    def closeEvent(self, event: QCloseEvent) -> None:
+        if is_hooked():
+            un_hook()
+        event.accept()
