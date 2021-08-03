@@ -7,7 +7,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d46fa3eb-b3fc-4a28-b979-0366497ae973" name="Default Changelist" comment="" />
+    <list default="true" id="d46fa3eb-b3fc-4a28-b979-0366497ae973" name="Default Changelist" comment="#19.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modifier/interface/resource.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modifier/interface/resource.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modifier/parameter/enum_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modifier/parameter/enum_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.MD" beforeDir="false" afterPath="$PROJECT_DIR$/README.MD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource/QM/jp.qm" beforeDir="false" afterPath="$PROJECT_DIR$/resource/QM/jp.qm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource/QM/jp.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resource/QM/jp.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource/QM/zh.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resource/QM/zh.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,10 +50,12 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="C:/Python3/Scripts/pyside6-rcc.exe" />
+    <property name="settings.editor.selected.configurable" value="preferences.externalTools" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -153,7 +163,56 @@
       <option name="project" value="LOCAL" />
       <updated>1627965294890</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="#9.提交Pycharm项目文件">
+      <created>1627965449093</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1627965449093</updated>
+    </task>
+    <task id="LOCAL-00010" summary="#10.增加Pycharm项目文件">
+      <created>1627965491268</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1627965491268</updated>
+    </task>
+    <task id="LOCAL-00011" summary="#11.更新状态界面以包含所有必要控件">
+      <created>1627973007458</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1627973007458</updated>
+    </task>
+    <task id="LOCAL-00012" summary="#12.更新主界面退出时断开钩子">
+      <created>1627973045887</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1627973045887</updated>
+    </task>
+    <task id="LOCAL-00013" summary="#13.更新列表显示文字效果">
+      <created>1627973086716</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1627973086716</updated>
+    </task>
+    <task id="LOCAL-00014" summary="#14.取消样式表">
+      <created>1627973117917</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1627973117917</updated>
+    </task>
+    <task id="LOCAL-00015" summary="#15.修正命名错误">
+      <created>1627973666108</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1627973666108</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -176,6 +235,13 @@
     <MESSAGE value="#6.新建界面模块" />
     <MESSAGE value="#7.加入资源打包文件" />
     <MESSAGE value="#8.新增项目可执行文件和配置文件" />
-    <option name="LAST_COMMIT_MESSAGE" value="#8.新增项目可执行文件和配置文件" />
+    <MESSAGE value="#9.提交Pycharm项目文件" />
+    <MESSAGE value="#10.增加Pycharm项目文件" />
+    <MESSAGE value="#11.更新状态界面以包含所有必要控件" />
+    <MESSAGE value="#12.更新主界面退出时断开钩子" />
+    <MESSAGE value="#13.更新列表显示文字效果" />
+    <MESSAGE value="#14.取消样式表" />
+    <MESSAGE value="#15.修正命名错误" />
+    <option name="LAST_COMMIT_MESSAGE" value="#15.修正命名错误" />
   </component>
 </project>
