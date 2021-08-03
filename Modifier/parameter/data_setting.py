@@ -109,8 +109,8 @@ class DataSetting:
             '支援6': (0x802AF7FD, 0x1),
             '支援7': (0x802AF7FE, 0x1),
 
-            '战斗': (0x802AF80C, 0x1),
-            '胜利': (0x802AF80E, 0x1),
+            '战斗': (0x802AF80C, 0x2),
+            '胜利': (0x802AF80E, 0x2),
         }
 
     def __getitem__(self, name: str):
