@@ -16,7 +16,6 @@ if __name__ == '__main__':
         trans = QtCore.QTranslator()
         trans.load(':QM/jp.qm')
         app.installTranslator(trans)
-        app.setStyleSheet('QListView {font-family: "DFHSMincho-W7", "monospace"; font-size: 10pt;}')
         window = Window()
         window.show()
         sys.exit(app.exec())
