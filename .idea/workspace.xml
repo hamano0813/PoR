@@ -7,20 +7,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d46fa3eb-b3fc-4a28-b979-0366497ae973" name="Default Changelist" comment="#19.撤销项目界面翻译">
+    <list default="true" id="d46fa3eb-b3fc-4a28-b979-0366497ae973" name="Default Changelist" comment="#21.修正私有属性">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modifier/interface/item.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modifier/interface/item.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modifier/interface/resource.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modifier/interface/resource.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modifier/interface/status.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modifier/interface/status.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modifier/interface/window.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modifier/interface/window.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modifier/parameter/data_setting.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modifier/parameter/data_setting.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modifier/widget/map_combo.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modifier/widget/map_combo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modifier/widget/slot_list.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modifier/widget/slot_list.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modifier/widget/value_spin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modifier/widget/value_spin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PoR.pro" beforeDir="false" afterPath="$PROJECT_DIR$/PoR.pro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource/QM/jp.qm" beforeDir="false" afterPath="$PROJECT_DIR$/resource/QM/jp.qm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource/QM/jp.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resource/QM/jp.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource/QM/zh.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resource/QM/zh.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modifier/parameter/enum_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modifier/parameter/enum_data.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +49,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="C:/Python3/Scripts/pyside6-rcc.exe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ChinaMobile/RetiredSystem/RetiredSystem.pyw" />
     <property name="settings.editor.selected.configurable" value="preferences.externalTools" />
   </component>
   <component name="RecentsManager">
@@ -108,6 +97,9 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="d46fa3eb-b3fc-4a28-b979-0366497ae973" name="Default Changelist" comment="" />
+      <changelist id="" name="修正私有属性" comment="" />
+      <changelist id="" name="调整显示效果" comment="#24.调整显示效果" />
+      <changelist id="" name="增加支援修改" comment="#25.增加支援修改功能" />
       <created>1627286138158</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -218,7 +210,56 @@
       <option name="project" value="LOCAL" />
       <updated>1627973666108</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="#19.撤销项目界面翻译">
+      <created>1628004426486</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1628004426486</updated>
+    </task>
+    <task id="LOCAL-00017" summary="#20.修正数据设定错误">
+      <created>1628004445377</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1628004445377</updated>
+    </task>
+    <task id="LOCAL-00018" summary="#21.修正私有属性">
+      <created>1628054992243</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1628054992243</updated>
+    </task>
+    <task id="LOCAL-00019" summary="#22.新增支援显示进度条">
+      <created>1628055030338</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1628055030338</updated>
+    </task>
+    <task id="LOCAL-00020" summary="#23.修正控件数据写入错误">
+      <created>1628055060986</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1628055060986</updated>
+    </task>
+    <task id="LOCAL-00021" summary="#24.调整显示效果">
+      <created>1628055267006</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1628055267006</updated>
+    </task>
+    <task id="LOCAL-00022" summary="#25.增加支援修改功能">
+      <created>1628055275200</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1628055275200</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -234,6 +275,7 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <confirmRemoveEmptyChangelist value="2" />
     <MESSAGE value="#1.新建项目文件" />
     <MESSAGE value="#2.添加资源文件" />
     <MESSAGE value="#3.新建数据解析模块" />
@@ -249,6 +291,13 @@
     <MESSAGE value="#13.更新列表显示文字效果" />
     <MESSAGE value="#14.取消样式表" />
     <MESSAGE value="#15.修正命名错误" />
-    <option name="LAST_COMMIT_MESSAGE" value="#15.修正命名错误" />
+    <MESSAGE value="#19.撤销项目界面翻译" />
+    <MESSAGE value="#20.修正数据设定错误" />
+    <MESSAGE value="#21.修正私有属性" />
+    <MESSAGE value="#22.新增支援显示进度条" />
+    <MESSAGE value="#23.修正控件数据写入错误" />
+    <MESSAGE value="#24.调整显示效果" />
+    <MESSAGE value="#25.增加支援修改功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="#25.增加支援修改功能" />
   </component>
 </project>

@@ -1277,8 +1277,24 @@ class EnumData(QObject):
         }
         self.SUPPORT_ENUM = {
             'PID_IKE': (
+                (self.tr('PID_TIAMAT'), (8, 11, 26)),
+                (self.tr('PID_SENERIO'), (5, 12, 19)),
+                (self.tr('PID_OSCAR'), (5, 8, 11)),
+                (self.tr('PID_LETHE'), (4, 9, 14)),
+                (self.tr('PID_ERINCIA_QUEEN'), (1, 1, 2)),
+                (self.tr('PID_RIEUSION'), (5, 8, 11)),
+                (self.tr('PID_LAY'), (1, 2, 3)),
+            ),
+            'PID_TIAMAT': (
+                (self.tr('PID_IKE'), (8, 11, 26)),
+                (self.tr('PID_MIST'), (3, 6, 9)),
+                (self.tr('PID_BOLE'), (7, 15, 20)),
+                (self.tr('PID_KILROY'), (5, 8, 11)),
+                (None, None),
+                (None, None),
+                (None, None),
+            ),
 
-            )
         }
 
     def GROUP_MAPPING(self):
