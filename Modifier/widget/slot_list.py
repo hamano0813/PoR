@@ -45,6 +45,11 @@ class SlotList(QListView, Customize):
         for widget in self._child:
             widget.refresh()
 
+    def current_pid(self):
+        if pid := self.model().data(self.currentIndex(), Qt.ToolTipRole):
+            return pid
+        return 'PID_IKE'
+
     def add_child(self, widget: Customize):
         self._child.append(widget)
 
