@@ -15,7 +15,7 @@ class Item(BackgroundFrame):
         for idx in range(1, 9):
             self[f'道具{idx}'] = MapCombo(self, EnumData().IID_MAPPING, 'IID', value=DataSetting()[f'道具{idx}'])
             self[f'道具{idx}'].setIconSize(QSize(24, 24))
-            self[f'道具{idx}'].setFixedWidth(200)
+            self[f'道具{idx}'].setFixedWidth(300)
             self[f'耐久{idx}'] = ValueSpin(self, value=DataSetting()[f'耐久{idx}'])
             self[f'装备{idx}'] = BoolCheck(self, '装备', value=DataSetting()[f'装备{idx}'])
             self[f'掉落{idx}'] = BoolCheck(self, '掉落', value=DataSetting()[f'掉落{idx}'])
