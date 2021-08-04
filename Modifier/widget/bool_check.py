@@ -18,4 +18,4 @@ class BoolCheck(Customize, QCheckBox):
         self.stateChanged.connect(self.rewrite)
 
     def rewrite(self):
-        self.structure['value'].set(self.isChecked())
+        self.structure['value'].set(self.isChecked(), self.offset)
