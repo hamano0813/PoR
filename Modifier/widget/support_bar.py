@@ -9,9 +9,9 @@ class SupportBar(QProgressBar):
         QProgressBar.__init__(self, parent=None)
         self.setTextVisible(True)
         self.setFormat(text)
-        self.setMaximumSize(100, 25)
+        self.setMaximumSize(100, 28)
         self.setStyleSheet('''
-        QProgressBar {text-align: center; font: bold; border: 1px solid Grey; border-radius: 1px;}
+        QProgressBar {text-align: center; font: bold; border: 1px solid Grey; border-radius: 5px;}
         QProgressBar::chunk {background-color: #05B8CC; width: 1px;}
         ''')
 

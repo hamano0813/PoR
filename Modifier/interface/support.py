@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from PySide6.QtWidgets import QLabel, QGridLayout, QSpacerItem, QSizePolicy
-from widget import BackgroundFrame, ValueSpin, SupportBar
+from PySide6.QtWidgets import QGridLayout, QSpacerItem, QSizePolicy
+from widget import BackgroundFrame, ValueSpin, SupportBar, NameLabel
 from parameter import DataSetting, EnumData
 
 
@@ -16,9 +16,8 @@ class Support(BackgroundFrame):
     def init_support(self):
         main_layout = QGridLayout()
         for idx in range(1, 8):
-            label = QLabel()
-            label.setFixedWidth(100)
-            label.setStyleSheet('* {border:1px solid Gray; border-radius: 1px;}')
+            label = NameLabel('')
+            label.setFixedSize(100, 28)
             self[f'支援{idx}'] = ValueSpin(self, value=DataSetting()[f'支援{idx}'])
             progress_c = SupportBar('C')
             progress_b = SupportBar('B')

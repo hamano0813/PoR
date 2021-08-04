@@ -7,3 +7,4 @@ from .map_combo import MapCombo
 from .value_spin import ValueSpin
 from .bool_check import BoolCheck
 from .support_bar import SupportBar
+from .name_label import NameLabel

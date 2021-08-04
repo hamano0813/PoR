@@ -7,9 +7,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d46fa3eb-b3fc-4a28-b979-0366497ae973" name="Default Changelist" comment="#21.修正私有属性">
+    <list default="true" id="d46fa3eb-b3fc-4a28-b979-0366497ae973" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Modifier/widget/name_label.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modifier/parameter/enum_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modifier/parameter/enum_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modifier/PoR.pyw" beforeDir="false" afterPath="$PROJECT_DIR$/Modifier/PoR.pyw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modifier/interface/item.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modifier/interface/item.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modifier/interface/status.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modifier/interface/status.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modifier/interface/support.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modifier/interface/support.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modifier/interface/window.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modifier/interface/window.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modifier/widget/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modifier/widget/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modifier/widget/customize.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modifier/widget/customize.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modifier/widget/support_bar.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modifier/widget/support_bar.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -259,7 +267,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628055275200</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="#26.增加支援枚举信息">
+      <created>1628055304667</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1628055304667</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -298,6 +313,7 @@
     <MESSAGE value="#23.修正控件数据写入错误" />
     <MESSAGE value="#24.调整显示效果" />
     <MESSAGE value="#25.增加支援修改功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="#25.增加支援修改功能" />
+    <MESSAGE value="#26.增加支援枚举信息" />
+    <option name="LAST_COMMIT_MESSAGE" value="#26.增加支援枚举信息" />
   </component>
 </project>

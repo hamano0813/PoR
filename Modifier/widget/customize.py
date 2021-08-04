@@ -12,7 +12,7 @@ class Customize:
         self._parent = parent
         self.structure: Dict[str, Value] = {key: Value(self, *setting) for key, setting in kwargs.items()}
         # noinspection PyUnresolvedReferences
-        self.setMinimumHeight(25)
+        self.setMinimumHeight(28)
 
     def sequence(self, name: str) -> List[int]:
         return [self.structure[name].get(self.offset + DataSetting.STEP * idx) for idx in range(DataSetting.COUNT)]

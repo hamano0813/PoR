@@ -36,7 +36,7 @@ class Window(QMainWindow):
 
         tab_widget = QTabWidget()
         tab_widget.addTab(status_frame, '状态')
-        tab_widget.addTab(item_frame, '道具')
+        tab_widget.addTab(item_frame, '装备')
         tab_widget.addTab(support_frame, '支援')
 
         main_frame = BackgroundFrame()
