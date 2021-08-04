@@ -13,7 +13,7 @@ class SlotList(QListView, Customize):
     def __init__(self, parent, **kwargs):
         QListView.__init__(self, parent)
         Customize.__init__(self, parent, **kwargs)
-        self.__child: List[Customize] = list()
+        self._child: List[Customize] = list()
         self.pid_mapping = EnumData().PID_MAPPING().copy()
         self.jid_mapping = EnumData().JID_MAPPING().copy()
         self.pid_sequence = list()
@@ -42,15 +42,15 @@ class SlotList(QListView, Customize):
             else:
                 self.setRowHidden(idx, False)
                 self.slot[DataSetting.SLOT + DataSetting.STEP * idx] = self.pid_mapping.get(self.pid_sequence[idx])[-1]
-        for widget in self.__child:
+        for widget in self._child:
             widget.refresh()
 
     def add_child(self, widget: Customize):
-        self.__child.append(widget)
+        self._child.append(widget)
 
     def control_child(self):
         idx = self.currentIndex().row()
-        for widget in self.__child:
+        for widget in self._child:
             widget.offset = DataSetting.STEP * idx
             widget.refresh()
 
