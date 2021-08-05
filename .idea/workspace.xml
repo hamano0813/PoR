@@ -7,11 +7,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d46fa3eb-b3fc-4a28-b979-0366497ae973" name="Default Changelist" comment="#26.增加支援枚举信息">
+    <list default="true" id="d46fa3eb-b3fc-4a28-b979-0366497ae973" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modifier/interface/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modifier/interface/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modifier/interface/ability.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modifier/interface/ability.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modifier/interface/window.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modifier/interface/window.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modifier/parameter/enum_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modifier/parameter/enum_data.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -276,7 +274,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628150676927</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="#29.增加能力修改功能">
+      <created>1628152590490</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1628152590490</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -317,6 +322,7 @@
     <MESSAGE value="#25.增加支援修改功能" />
     <MESSAGE value="#26.增加支援枚举信息" />
     <MESSAGE value="#28.调增界面布局" />
-    <option name="LAST_COMMIT_MESSAGE" value="#28.调增界面布局" />
+    <MESSAGE value="#29.增加能力修改功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="#29.增加能力修改功能" />
   </component>
 </project>
