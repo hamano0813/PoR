@@ -7,7 +7,7 @@ from PySide6.QtGui import QIcon, QCloseEvent
 from dolphin_memory_engine import un_hook, is_hooked
 from widget import SlotList, BackgroundFrame
 from parameter import DataSetting
-from . import Status, Item, Support
+from . import Status, Ability, Item, Support
 
 
 class Window(QMainWindow):
@@ -26,15 +26,18 @@ class Window(QMainWindow):
         refresh_button.clicked.connect(slot_list.refresh)
 
         status_frame = Status(slot_list)
+        ability_frame = Ability(slot_list)
         item_frame = Item(slot_list)
         support_frame = Support(slot_list)
 
         slot_list.add_child(status_frame)
+        slot_list.add_child(ability_frame)
         slot_list.add_child(item_frame)
         slot_list.add_child(support_frame)
 
         tab_widget = QTabWidget()
         tab_widget.addTab(status_frame, '状态')
+        tab_widget.addTab(ability_frame, '能力')
         tab_widget.addTab(item_frame, '装备')
         tab_widget.addTab(support_frame, '支援')
 
