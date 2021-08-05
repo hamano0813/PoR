@@ -8,16 +8,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d46fa3eb-b3fc-4a28-b979-0366497ae973" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Modifier/widget/name_label.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modifier/PoR.pyw" beforeDir="false" afterPath="$PROJECT_DIR$/Modifier/PoR.pyw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modifier/interface/ability.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modifier/interface/ability.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Modifier/interface/item.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modifier/interface/item.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Modifier/interface/status.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modifier/interface/status.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Modifier/interface/support.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modifier/interface/support.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Modifier/interface/window.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modifier/interface/window.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modifier/widget/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modifier/widget/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modifier/widget/customize.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modifier/widget/customize.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modifier/widget/name_label.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modifier/widget/name_label.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modifier/widget/slot_list.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modifier/widget/slot_list.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Modifier/widget/support_bar.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modifier/widget/support_bar.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modifier/widget/value_spin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modifier/widget/value_spin.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +34,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>

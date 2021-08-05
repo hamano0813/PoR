@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from PySide6.QtWidgets import QMainWindow, QPushButton, QTabWidget, QHBoxLayout, QVBoxLayout
+from PySide6.QtWidgets import QMainWindow, QPushButton, QTabWidget, QHBoxLayout, QVBoxLayout, QSizePolicy
 from PySide6.QtCore import Qt, QSize
 from PySide6.QtGui import QIcon, QCloseEvent
 from dolphin_memory_engine import un_hook, is_hooked
@@ -15,14 +15,13 @@ class Window(QMainWindow):
     def __init__(self):
         super(Window, self).__init__(parent=None, flags=Qt.WindowCloseButtonHint)
         slot_list = SlotList(None, PID=DataSetting()['人物'], JID=DataSetting()['职业'])
-        slot_list.setIconSize(QSize(50, 50))
-        slot_list.setFixedSize(255, 500)
+        slot_list.setIconSize(QSize(36, 36))
+        slot_list.setFixedWidth(250)
         refresh_button = QPushButton('刷新列表')
         refresh_button.setFixedHeight(40)
         slot_layout = QVBoxLayout()
         slot_layout.addWidget(slot_list)
         slot_layout.addWidget(refresh_button)
-        slot_layout.addStretch()
 
         refresh_button.clicked.connect(slot_list.refresh)
 

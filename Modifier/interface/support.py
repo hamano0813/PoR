@@ -11,9 +11,7 @@ class Support(BackgroundFrame):
     def __init__(self, parent):
         BackgroundFrame.__init__(self, parent)
         self.support_row = list()
-        self.init_support()
 
-    def init_support(self):
         main_layout = QGridLayout()
         for idx in range(1, 8):
             label = NameLabel('')
@@ -28,7 +26,9 @@ class Support(BackgroundFrame):
             main_layout.addWidget(progress_c, idx - 1, 2, 1, 1)
             main_layout.addWidget(progress_b, idx - 1, 3, 1, 1)
             main_layout.addWidget(progress_a, idx - 1, 4, 1, 1)
+        
         main_layout.addItem(QSpacerItem(1, 1, QSizePolicy.Expanding, QSizePolicy.Expanding), 8, 5, 1, 1)
+        main_layout.setSpacing(3)
         self.setLayout(main_layout)
 
     def set_support(self, name: str):

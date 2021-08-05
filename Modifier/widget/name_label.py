@@ -9,6 +9,7 @@ class NameLabel(QLabel):
     def __init__(self, text):
         super(NameLabel, self).__init__(text, parent=None)
         self.setAlignment(Qt.AlignCenter)
-        self.setMinimumSize(60, 28)
-        self.setStyleSheet("* {border:1px solid gray;}")
-        self.setSizePolicy(QSizePolicy.Fixed, QSizePolicy.MinimumExpanding)
+        self.setFixedWidth(80)
+        self.setMinimumHeight(28)
+        self.setStyleSheet("* {border:1px solid #808080;}")
+        self.setSizePolicy(QSizePolicy.Fixed, QSizePolicy.Preferred)

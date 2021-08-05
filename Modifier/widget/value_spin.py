@@ -12,7 +12,7 @@ class ValueSpin(Customize, QSpinBox):
         QSpinBox.__init__(self, parent)
         Customize.__init__(self, parent, **kwargs)
         self.init_editor()
-        self.setMinimumWidth(50)
+        self.setFixedWidth(80)
         self.setAlignment(Qt.AlignRight | Qt.AlignVCenter)
 
     def init_editor(self):
