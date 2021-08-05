@@ -1,116 +1,3227 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS><TS version="2.0" language="zh_CN" sourcelanguage="en">
+<!DOCTYPE TS>
+<TS version="2.1" language="zh_CN" sourcelanguage="en">
 <context>
     <name>EnumData</name>
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="530"/>
         <source>PID_IKE</source>
-        <translation type="unfinished">艾克</translation>
+        <translation>艾克</translation>
     </message>
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="531"/>
         <source>PID_TIAMAT</source>
-        <translation type="unfinished">迪亚玛特</translation>
+        <translation>迪亚玛特</translation>
     </message>
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="532"/>
         <source>PID_SENERIO</source>
-        <translation type="unfinished">塞内利奥</translation>
+        <translation>塞内利奥</translation>
     </message>
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="533"/>
         <source>PID_MIST</source>
-        <translation type="unfinished">蜜斯特</translation>
+        <translation>蜜斯特</translation>
     </message>
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="534"/>
         <source>PID_GREIL</source>
-        <translation type="unfinished">古雷尔</translation>
+        <translation>古雷尔</translation>
     </message>
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="535"/>
         <source>PID_GREIL_MAP1</source>
-        <translation type="unfinished">古雷尔[MAP1]</translation>
+        <translation>古雷尔[MAP1]</translation>
     </message>
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="536"/>
         <source>PID_OSCAR</source>
-        <translation type="unfinished">奥斯卡</translation>
+        <translation>奥斯卡</translation>
     </message>
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="537"/>
         <source>PID_BOLE</source>
-        <translation type="unfinished">波雷</translation>
+        <translation>波雷</translation>
     </message>
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="538"/>
         <source>PID_BOLE_MAP1</source>
-        <translation type="unfinished">波雷[MAP1]</translation>
+        <translation>波雷[MAP1]</translation>
     </message>
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="539"/>
         <source>PID_LOFA</source>
-        <translation type="unfinished">约珐</translation>
+        <translation>约珐</translation>
     </message>
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="540"/>
         <source>PID_CHINON</source>
-        <translation type="unfinished">希浓</translation>
+        <translation>希浓</translation>
     </message>
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="541"/>
         <source>PID_GATRIE</source>
-        <translation type="unfinished">卡特里</translation>
+        <translation>卡特里</translation>
     </message>
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="542"/>
         <source>PID_DUMMY1</source>
-        <translation type="unfinished">？？？</translation>
+        <translation>？？？</translation>
     </message>
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="543"/>
         <source>PID_ERINCIA_QUEEN</source>
-        <translation type="unfinished">艾琳西娅</translation>
+        <translation>艾琳西娅</translation>
     </message>
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="544"/>
         <source>PID_GEOFFRAY</source>
-        <translation type="unfinished">肖夫雷</translation>
+        <translation>肖夫雷</translation>
     </message>
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="545"/>
         <source>PID_ULYSSES</source>
-        <translation type="unfinished">尤利西斯</translation>
+        <translation>尤利西斯</translation>
     </message>
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="546"/>
         <source>PID_KEVIN</source>
-        <translation type="unfinished">凯宾</translation>
+        <translation>凯宾</translation>
     </message>
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="547"/>
         <source>PID_KILROY</source>
-        <translation type="unfinished">基尔罗伊</translation>
+        <translation>基尔罗伊</translation>
     </message>
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="548"/>
         <source>PID_LUCHINO</source>
-        <translation type="unfinished">露奇诺</translation>
+        <translation>露奇诺</translation>
     </message>
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="549"/>
         <source>PID_ZIHARK</source>
-        <translation type="unfinished">崔哈克</translation>
+        <translation>崔哈克</translation>
     </message>
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="550"/>
         <source>PID_DALAHOWE</source>
-        <translation type="unfinished">塔拉哈乌</translation>
+        <translation>塔拉哈乌</translation>
     </message>
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="551"/>
         <source>PID_DUMMY2</source>
-        <translation type="unfinished">？？？</translation>
+        <translation>？？？</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="552"/>
+        <source>PID_CEPHERAN_FAKE</source>
+        <translation>塞菲兰[FAKE]</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="553"/>
+        <source>PID_ZELGIUS</source>
+        <translation>塞鲁基乌斯</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="554"/>
+        <source>PID_BLACKKNIGHT</source>
+        <translation>漆黑的骑士</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="555"/>
+        <source>PID_SIGRUN</source>
+        <translation>希格伦</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="556"/>
+        <source>PID_TANIS</source>
+        <translation>塔妮斯</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="557"/>
+        <source>PID_MARCIA</source>
+        <translation>玛夏</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="558"/>
+        <source>PID_MAKAROV</source>
+        <translation>马格罗夫</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="559"/>
+        <source>PID_TOPUCK</source>
+        <translation>多邦克</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="560"/>
+        <source>PID_MWARIM</source>
+        <translation>木华黎</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="561"/>
+        <source>PID_SOANVALCKE</source>
+        <translation>索恩哈鲁凯</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="562"/>
+        <source>PID_ELAICE</source>
+        <translation>伊蕾丝</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="563"/>
+        <source>PID_CALILL</source>
+        <translation>卡莉鲁</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="564"/>
+        <source>PID_LARGO</source>
+        <translation>拉尔哥</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="565"/>
+        <source>PID_STELLA</source>
+        <translation>斯黛拉</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="566"/>
+        <source>PID_VOKE</source>
+        <translation>佛尔加</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="567"/>
+        <source>PID_SOTHE</source>
+        <translation>萨扎</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="568"/>
+        <source>PID_WAYU</source>
+        <translation>瓦尤</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="569"/>
+        <source>PID_DUMMY4</source>
+        <translation>？？？</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="570"/>
+        <source>PID_LEKAIN</source>
+        <translation>鲁刚</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="571"/>
+        <source>PID_HETZEL</source>
+        <translation>贝兹艾尔</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="572"/>
+        <source>PID_OLIVER</source>
+        <translation>奥利沃</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="573"/>
+        <source>PID_HEATHER</source>
+        <translation>贝莎</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="574"/>
+        <source>PID_MELTY</source>
+        <translation>神使亲卫队员</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="575"/>
+        <source>PID_ASHNARD</source>
+        <translation>阿修纳德</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="576"/>
+        <source>PID_PRAGUE</source>
+        <translation>普拉哈</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="577"/>
+        <source>PID_BEUFORRES</source>
+        <translation>贝乌菲奥雷斯</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="578"/>
+        <source>PID_ENA</source>
+        <translation>伊娜</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="579"/>
+        <source>PID_HAAR</source>
+        <translation>哈尔</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="580"/>
+        <source>PID_JILL</source>
+        <translation>吉尔</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="581"/>
+        <source>PID_TAURONEO</source>
+        <translation>塔乌罗尼奥</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="582"/>
+        <source>PID_NEPENEE</source>
+        <translation>奈菲妮</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="583"/>
+        <source>PID_CHAP</source>
+        <translation>查普</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="584"/>
+        <source>PID_DUMMY5</source>
+        <translation>？？？</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="585"/>
+        <source>PID_DUMMY6</source>
+        <translation>？？？</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="586"/>
+        <source>PID_DUMMY7</source>
+        <translation>？？？</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="587"/>
+        <source>PID_NASIR</source>
+        <translation>奈西尔</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="588"/>
+        <source>PID_CAINEGHIS</source>
+        <translation>凯内基斯</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="589"/>
+        <source>PID_GIFFCA</source>
+        <translation>吉布卡</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="590"/>
+        <source>PID_LETHE</source>
+        <translation>蕾迪</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="591"/>
+        <source>PID_MORDY</source>
+        <translation>摩迪</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="592"/>
+        <source>PID_LAY</source>
+        <translation>莱</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="593"/>
+        <source>PID_TIBARN</source>
+        <translation>迪万</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="594"/>
+        <source>PID_VULCI</source>
+        <translation>乌鲁基</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="595"/>
+        <source>PID_JANAFF</source>
+        <translation>亚那布</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="596"/>
+        <source>PID_NAESALA</source>
+        <translation>内萨拉</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="597"/>
+        <source>PID_NEALUCHI</source>
+        <translation>尼阿鲁奇</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="598"/>
+        <source>PID_RIEUSION</source>
+        <translation>琉西昂</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="599"/>
+        <source>PID_LEARNE</source>
+        <translation>莉阿妮</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="600"/>
+        <source>PID_ZAKO</source>
+        <translation>迪恩兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="601"/>
+        <source>PID_ZAKO_2</source>
+        <translation>迪恩兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="602"/>
+        <source>PID_ZAKO_3</source>
+        <translation>迪恩兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="603"/>
+        <source>PID_ZAKO_M</source>
+        <translation>迪恩兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="604"/>
+        <source>PID_HIBUCCHI</source>
+        <translation>比布迪</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="605"/>
+        <source>PID_NEDATA</source>
+        <translation>内塔达</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="606"/>
+        <source>PID_IKANAU</source>
+        <translation>伊卡那乌</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="607"/>
+        <source>PID_ZAWANAR</source>
+        <translation>萨瓦纳</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="608"/>
+        <source>PID_MAIZIN</source>
+        <translation>麦金</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="609"/>
+        <source>PID_KAMURA</source>
+        <translation>卡姆拉</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="610"/>
+        <source>PID_DAKKOWA</source>
+        <translation>塔哥乌</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="611"/>
+        <source>PID_BARUMA</source>
+        <translation>巴尔玛</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="612"/>
+        <source>PID_KOTAHU</source>
+        <translation>库夫</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="613"/>
+        <source>PID_NOSHITHI</source>
+        <translation>诺西多比</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="614"/>
+        <source>PID_DANOMIRU</source>
+        <translation>塔诺米尔</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="615"/>
+        <source>PID_MAKKOYAR</source>
+        <translation>玛格亚</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="616"/>
+        <source>PID_CHIGU</source>
+        <translation>西卡</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="617"/>
+        <source>PID_EMAKOU</source>
+        <translation>艾马科</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="618"/>
+        <source>PID_GASIRAMA</source>
+        <translation>卡基拉马</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="619"/>
+        <source>PID_KIMARSI</source>
+        <translation>基玛西</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="620"/>
+        <source>PID_SIHARAMU</source>
+        <translation>西巴拉姆</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="621"/>
+        <source>PID_HOMAS</source>
+        <translation>霍曼萨</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="622"/>
+        <source>PID_KAYACHE</source>
+        <translation>卡亚奇艾</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="623"/>
+        <source>PID_KASATAI</source>
+        <translation>卡萨坦</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="624"/>
+        <source>PID_SIRKUKO</source>
+        <translation>西克空</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="625"/>
+        <source>PID_RIHITORU</source>
+        <translation>利比多尔</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="626"/>
+        <source>PID_HAHUXEDO</source>
+        <translation>哈非艾德</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="627"/>
+        <source>PID_GURORMERU</source>
+        <translation>克隆美尔</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="628"/>
+        <source>PID_KOYUJO</source>
+        <translation>哥尤修</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="629"/>
+        <source>PID_BURAISU</source>
+        <translation>普莱斯</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="630"/>
+        <source>PID_BOSS</source>
+        <translation>迪恩将领</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="631"/>
+        <source>PID_B_BOSS</source>
+        <translation>贝格尼奥将领</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="632"/>
+        <source>PID_B_ZAKO</source>
+        <translation>贝格尼奥兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="633"/>
+        <source>PID_C_BOSS</source>
+        <translation>克利米亚将领</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="634"/>
+        <source>PID_C_ZAKO</source>
+        <translation>克利米亚兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="635"/>
+        <source>PID_F_BOSS</source>
+        <translation>菲尼吉斯将领</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="636"/>
+        <source>PID_F_ZAKO</source>
+        <translation>菲尼吉斯兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="637"/>
+        <source>PID_K_BOSS</source>
+        <translation>吉鲁瓦斯将领</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="638"/>
+        <source>PID_K_ZAKO</source>
+        <translation>吉鲁瓦斯兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="639"/>
+        <source>PID_G_BOSS</source>
+        <translation>卡利亚将领</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="640"/>
+        <source>PID_G_ZAKO</source>
+        <translation>卡利亚兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="641"/>
+        <source>PID_O_BOSS</source>
+        <translation>蛮族将领</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="642"/>
+        <source>PID_O_ZAKO</source>
+        <translation>蛮族兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="643"/>
+        <source>PID_D_ZAKO_11_1</source>
+        <translation>看守</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="644"/>
+        <source>PID_D_ZAKO_11_2</source>
+        <translation>看守</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="645"/>
+        <source>PID_D_ZAKO_11_3</source>
+        <translation>看守</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="646"/>
+        <source>PID_D_ZAKO_11_4</source>
+        <translation>看守</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="647"/>
+        <source>PID_O_ZAKO_2_H</source>
+        <translation>卡利瓦山贼</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="648"/>
+        <source>PID_ZAKO_8_H</source>
+        <translation>迪恩兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="649"/>
+        <source>PID_ZAKO_8_H_EV1</source>
+        <translation>迪恩兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="650"/>
+        <source>PID_ZAKO_8_H_EV2</source>
+        <translation>迪恩兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="651"/>
+        <source>PID_ZAKO_8_H_2</source>
+        <translation>迪恩兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="652"/>
+        <source>PID_ZAKO_8_H_AM</source>
+        <translation>迪恩兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="653"/>
+        <source>PID_ZAKO_8_H_A</source>
+        <translation>迪恩兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="654"/>
+        <source>PID_ZAKO_EV1</source>
+        <translation>迪恩兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="655"/>
+        <source>PID_ZAKO_EV2</source>
+        <translation>迪恩兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="656"/>
+        <source>PID_ZAKO_EV3</source>
+        <translation>迪恩兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="657"/>
+        <source>PID_ZAKO_EV4</source>
+        <translation>迪恩兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="658"/>
+        <source>PID_ZAKO_EV5</source>
+        <translation>迪恩兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="659"/>
+        <source>PID_ZAKO_EV6</source>
+        <translation>迪恩兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="660"/>
+        <source>PID_ZAKO_EV7</source>
+        <translation>迪恩兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="661"/>
+        <source>PID_ZAKO_EV8</source>
+        <translation>迪恩兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="662"/>
+        <source>PID_ZAKO_EV9</source>
+        <translation>迪恩兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="663"/>
+        <source>PID_ZAKO_EV10</source>
+        <translation>迪恩兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="664"/>
+        <source>PID_DAYNE_SOL_1</source>
+        <translation>迪恩兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="665"/>
+        <source>PID_DAYNE_SOL_2</source>
+        <translation>迪恩兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="666"/>
+        <source>PID_DAYNE_SOL_3</source>
+        <translation>迪恩兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="667"/>
+        <source>PID_DAYNE_SOL_4</source>
+        <translation>迪恩兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="668"/>
+        <source>PID_DAYNE_SOL_5</source>
+        <translation>迪恩兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="669"/>
+        <source>PID_DAYNE_SOL_6</source>
+        <translation>迪恩兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="670"/>
+        <source>PID_DAYNE_SOL_7</source>
+        <translation>迪恩兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="671"/>
+        <source>PID_DAYNE_SOL_8</source>
+        <translation>迪恩兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="672"/>
+        <source>PID_DAYNE_HAL_1</source>
+        <translation>迪恩兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="673"/>
+        <source>PID_DAYNE_ARC_1</source>
+        <translation>迪恩兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="674"/>
+        <source>PID_DAYNE_ARC_2</source>
+        <translation>迪恩兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="675"/>
+        <source>PID_DAYNE_ARC_3</source>
+        <translation>迪恩兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="676"/>
+        <source>PID_DAYNE_ARC_4</source>
+        <translation>迪恩兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="677"/>
+        <source>PID_DAYNE_SNP_1</source>
+        <translation>迪恩兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="678"/>
+        <source>PID_DAYNE_ARM_1</source>
+        <translation>迪恩兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="679"/>
+        <source>PID_DAYNE_GNL_1</source>
+        <translation>迪恩兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="680"/>
+        <source>PID_DAYNE_SKN_1</source>
+        <translation>迪恩兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="681"/>
+        <source>PID_DAYNE_SKN_2</source>
+        <translation>迪恩兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="682"/>
+        <source>PID_DAYNE_PLD_1</source>
+        <translation>迪恩兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="683"/>
+        <source>PID_DAYNE_DKN_1</source>
+        <translation>迪恩兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="684"/>
+        <source>PID_DAYNE_DMS_1</source>
+        <translation>迪恩兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="685"/>
+        <source>PID_DAYNE_MAG_1</source>
+        <translation>迪恩兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="686"/>
+        <source>PID_DAYNE_SAG_1</source>
+        <translation>迪恩兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="687"/>
+        <source>PID_DAYNE_PRS_1</source>
+        <translation>迪恩兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="688"/>
+        <source>PID_DAYNE_BSH_1</source>
+        <translation>迪恩兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="689"/>
+        <source>PID_B_ZAKO_EV1</source>
+        <translation>贝格尼奥兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="690"/>
+        <source>PID_B_ZAKO_EV2</source>
+        <translation>贝格尼奥兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="691"/>
+        <source>PID_B_ZAKO_EV3</source>
+        <translation>贝格尼奥兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="692"/>
+        <source>PID_K_ZAKO_EV1</source>
+        <translation>吉鲁瓦斯兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="693"/>
+        <source>PID_K_ZAKO_EV2</source>
+        <translation>吉鲁瓦斯兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="694"/>
+        <source>PID_K_ZAKO_EV3</source>
+        <translation>吉鲁瓦斯兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="695"/>
+        <source>PID_G_ZAKO_EV1</source>
+        <translation>吉鲁瓦斯兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="696"/>
+        <source>PID_G_ZAKO_EV2</source>
+        <translation>吉鲁瓦斯兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="697"/>
+        <source>PID_G_ZAKO_EV3</source>
+        <translation>吉鲁瓦斯兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="698"/>
+        <source>PID_G_ZAKO_EV4</source>
+        <translation>吉鲁瓦斯兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="699"/>
+        <source>PID_PEOPLE_EV1</source>
+        <translation>村人</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="700"/>
+        <source>PID_PEOPLE_EV2</source>
+        <translation>村人</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="701"/>
+        <source>PID_PEOPLE_EV3</source>
+        <translation>村人</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="702"/>
+        <source>PID_PEOPLE_EV4</source>
+        <translation>村人</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="703"/>
+        <source>PID_PEOPLE_EV5</source>
+        <translation>村人</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="704"/>
+        <source>PID_PEOPLE_EV6</source>
+        <translation>村人</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="705"/>
+        <source>PID_PEOPLE_EV7</source>
+        <translation>村人</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="706"/>
+        <source>PID_PEOPLE_EV8</source>
+        <translation>村人</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="707"/>
+        <source>PID_PEOPLE_EV9</source>
+        <translation>村人</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="708"/>
+        <source>PID_PEOPLE_EV10</source>
+        <translation>村人</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="709"/>
+        <source>PID_PEOPLE_EV11</source>
+        <translation>村人</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="710"/>
+        <source>PID_PEOPLE_EV12</source>
+        <translation>村人</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="711"/>
+        <source>PID_IKE_EV</source>
+        <translation>艾克[EV]</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="712"/>
+        <source>PID_GREIL_EV</source>
+        <translation>古雷尔[EV]</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="713"/>
+        <source>PID_TIAMAT_EV</source>
+        <translation>迪亚玛特[EV]</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="714"/>
+        <source>PID_SENERIO_EV</source>
+        <translation>塞内利奥[EV]</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="715"/>
+        <source>PID_SENERIO_EV2</source>
+        <translation>塞内利奥[EV2]</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="716"/>
+        <source>PID_MIST_EV</source>
+        <translation>蜜斯特[EV]</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="717"/>
+        <source>PID_OSCAR_EV</source>
+        <translation>奥斯卡[EV]</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="718"/>
+        <source>PID_BOLE_EV</source>
+        <translation>波雷[EV]</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="719"/>
+        <source>PID_KILROY_EV</source>
+        <translation>基尔罗伊[EV]</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="720"/>
+        <source>PID_CHINON_EV</source>
+        <translation>希浓[EV]</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="721"/>
+        <source>PID_GATRIE_EV</source>
+        <translation>卡特里[EV]</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="722"/>
+        <source>PID_TOPUCK_EV</source>
+        <translation>多邦克[EV]</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="723"/>
+        <source>PID_GEOFFRAY_EV</source>
+        <translation>肖夫雷[EV]</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="724"/>
+        <source>PID_ULYSSES_EV</source>
+        <translation>尤利西斯[EV]</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="725"/>
+        <source>PID_LUCHINO_EV</source>
+        <translation>露奇诺[EV]</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="726"/>
+        <source>PID_NASIR_EV</source>
+        <translation>奈西尔[EV]</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="727"/>
+        <source>PID_LOFA_EV</source>
+        <translation>约珐[EV]</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="728"/>
+        <source>PID_TUT_SW_B</source>
+        <translation>自军</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="729"/>
+        <source>PID_TUT_SW_R</source>
+        <translation>敌军</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="730"/>
+        <source>PID_TUT_SW_G</source>
+        <translation>其他</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="731"/>
+        <source>PID_TUT_FI_B</source>
+        <translation>自军</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="732"/>
+        <source>PID_TUT_FI_R</source>
+        <translation>敌军</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="733"/>
+        <source>PID_TUT_BD_R</source>
+        <translation>敌军</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="734"/>
+        <source>PID_TUT_SK_B</source>
+        <translation>自军</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="735"/>
+        <source>PID_TUT_PK_B</source>
+        <translation>自军</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="736"/>
+        <source>PID_TUT_DK_B</source>
+        <translation>自军</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="737"/>
+        <source>PID_TUT_DK_R</source>
+        <translation>敌军</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="738"/>
+        <source>PID_TUT_PR_B</source>
+        <translation>自军</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="739"/>
+        <source>PID_TUT_BS_B</source>
+        <translation>自军</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="740"/>
+        <source>PID_TUT_BS_R</source>
+        <translation>敌军</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="741"/>
+        <source>PID_TUT_TH_B</source>
+        <translation>自军</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="742"/>
+        <source>PID_TUT_BC_Y</source>
+        <translation>友军</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="743"/>
+        <source>PID_TUT_BB_B</source>
+        <translation>自军</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="744"/>
+        <source>PID_TUT_AR_B</source>
+        <translation>自军</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="745"/>
+        <source>PID_TUT_AR_R</source>
+        <translation>敌军</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="746"/>
+        <source>PID_TUT_MG_B</source>
+        <translation>自军</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="747"/>
+        <source>PID_TUT_MG_R</source>
+        <translation>敌军</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="748"/>
+        <source>PID_02_BANDIT_MOU</source>
+        <translation>山贼</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="749"/>
+        <source>PID_03_BANDIT_MOU</source>
+        <translation>山贼</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="750"/>
+        <source>PID_04_BANDIT_SEA</source>
+        <translation>海盗</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="751"/>
+        <source>PID_BANDIT_SEA</source>
+        <translation>海盗</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="752"/>
+        <source>PID_BANDIT_SEA_EV1</source>
+        <translation>海盗</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="753"/>
+        <source>PID_BANDIT_MOU</source>
+        <translation>山贼</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="754"/>
+        <source>PID_BANDIT_MOU_EV1</source>
+        <translation>山贼</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="755"/>
+        <source>PID_M_STR_1</source>
+        <translation>卡利瓦山贼</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="756"/>
+        <source>PID_M_STR_2</source>
+        <translation>卡利瓦山贼</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="757"/>
+        <source>PID_M_STR_3</source>
+        <translation>卡利瓦山贼</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="758"/>
+        <source>PID_12_SELFDEFENCE</source>
+        <translation>自卫团</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="759"/>
+        <source>PID_12_THIEF</source>
+        <translation>盗贼</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="760"/>
+        <source>PID_15_PEDDLING</source>
+        <translation>商队</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="761"/>
+        <source>PID_16_LIBERATION</source>
+        <translation>拉格兹解放军</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="762"/>
+        <source>PID_178_TANAS</source>
+        <translation>塔那斯公爵军</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="763"/>
+        <source>PID_15_PEDDLING_T</source>
+        <translation>半成兽</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="764"/>
+        <source>PID_16_LIBERATION_1</source>
+        <translation>拉格兹解放军</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="765"/>
+        <source>PID_16_LIBERATION_2</source>
+        <translation>拉格兹解放军</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="766"/>
+        <source>PID_16_LIBERATION_3</source>
+        <translation>拉格兹解放军</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="767"/>
+        <source>PID_16_LIBERATION_4</source>
+        <translation>拉格兹解放军</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="768"/>
+        <source>PID_178_TANAS_1</source>
+        <translation>塔那斯公爵军</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="769"/>
+        <source>PID_178_TANAS_2</source>
+        <translation>塔那斯公爵军</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="770"/>
+        <source>PID_178_TANAS_3</source>
+        <translation>塔那斯公爵军</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="771"/>
+        <source>PID_N_07_DAYNE_2</source>
+        <translation>迪恩兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="772"/>
+        <source>PID_N_07_DAYNE_3</source>
+        <translation>迪恩兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="773"/>
+        <source>PID_N_08_DAYNE_1</source>
+        <translation>迪恩兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="774"/>
+        <source>PID_N_08_DAYNE_2</source>
+        <translation>迪恩兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="775"/>
+        <source>PID_N_08_DAYNE_3</source>
+        <translation>迪恩兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="776"/>
+        <source>PID_DAYNE_SRD</source>
+        <translation>迪恩佣兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="777"/>
+        <source>PID_DAYNE_SMS</source>
+        <translation>迪恩佣兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="778"/>
+        <source>PID_DAYNE_SOL</source>
+        <translation>迪恩兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="779"/>
+        <source>PID_DAYNE_HAL</source>
+        <translation>迪恩兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="780"/>
+        <source>PID_DAYNE_FIG</source>
+        <translation>迪恩佣兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="781"/>
+        <source>PID_DAYNE_WAR</source>
+        <translation>迪恩佣兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="782"/>
+        <source>PID_DAYNE_ARC</source>
+        <translation>迪恩兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="783"/>
+        <source>PID_DAYNE_SNP</source>
+        <translation>迪恩兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="784"/>
+        <source>PID_DAYNE_ARM</source>
+        <translation>迪恩兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="785"/>
+        <source>PID_DAYNE_GNL</source>
+        <translation>迪恩兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="786"/>
+        <source>PID_DAYNE_SKN</source>
+        <translation>迪恩兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="787"/>
+        <source>PID_DAYNE_PLD</source>
+        <translation>迪恩兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="788"/>
+        <source>PID_DAYNE_DKN</source>
+        <translation>迪恩兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="789"/>
+        <source>PID_DAYNE_DMS</source>
+        <translation>迪恩兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="790"/>
+        <source>PID_DAYNE_MAG</source>
+        <translation>迪恩兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="791"/>
+        <source>PID_DAYNE_SAG</source>
+        <translation>迪恩兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="792"/>
+        <source>PID_DAYNE_PRS</source>
+        <translation>迪恩兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="793"/>
+        <source>PID_DAYNE_BSH</source>
+        <translation>迪恩兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="794"/>
+        <source>PID_02_BANDIT_EV</source>
+        <translation>迪恩兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="795"/>
+        <source>PID_DAYNE_SOL_9</source>
+        <translation>迪恩兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="796"/>
+        <source>PID_DAYNE_SOL_10</source>
+        <translation>迪恩兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="797"/>
+        <source>PID_DAYNE_ARC_5</source>
+        <translation>迪恩兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="798"/>
+        <source>PID_DAYNE_ARC_6</source>
+        <translation>迪恩兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="799"/>
+        <source>PID_DAYNE_ARC_7</source>
+        <translation>迪恩兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="800"/>
+        <source>PID_DAYNE_ARC_8</source>
+        <translation>迪恩兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="801"/>
+        <source>PID_DAYNE_SKN_3</source>
+        <translation>迪恩兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="802"/>
+        <source>PID_DAYNE_SKN_4</source>
+        <translation>迪恩兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="803"/>
+        <source>PID_DAYNE_SKN_5</source>
+        <translation>迪恩兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="804"/>
+        <source>PID_OLDMAN_1</source>
+        <translation>迪恩兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="805"/>
+        <source>PID_DAYNE_DKN_2</source>
+        <translation>迪恩兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="806"/>
+        <source>PID_DAYNE_DKN_3</source>
+        <translation>迪恩兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="807"/>
+        <source>PID_DAYNE_DKN_4</source>
+        <translation>迪恩兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="808"/>
+        <source>PID_DAYNE_DKN_5</source>
+        <translation>迪恩兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="809"/>
+        <source>PID_DAYNE_DKN_6</source>
+        <translation>迪恩兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="810"/>
+        <source>PID_ASHNARD2</source>
+        <translation>阿修纳德[2]</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="811"/>
+        <source>PID_15_DUMMYT</source>
+        <translation>商队</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="812"/>
+        <source>PID_IKE_CHILD_EV</source>
+        <translation>艾克[CHILD_EV]</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="813"/>
+        <source>PID_GREIL_SEPIA_EV</source>
+        <translation>古雷尔[SEPIA_EV]</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="814"/>
+        <source>PID_LETHE_EV</source>
+        <translation>蕾迪[EV]</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="815"/>
+        <source>PID_MORDY_EV</source>
+        <translation>摩迪[EV]</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="816"/>
+        <source>PID_LAY_EV</source>
+        <translation>莱[EV]</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="817"/>
+        <source>PID_LAY_EV2</source>
+        <translation>莱[EV2]</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="818"/>
+        <source>PID_LETHE_MAP9</source>
+        <translation>蕾迪[MAP9]</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="819"/>
+        <source>PID_LEARNE_EV</source>
+        <translation>莉阿妮[EV]</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="820"/>
+        <source>PID_ENA_EV</source>
+        <translation>伊娜[EV]</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="821"/>
+        <source>PID_ERINCIA_QUEEN_EV</source>
+        <translation>艾琳西娅[EV]</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="822"/>
+        <source>PID_LAY_EV3</source>
+        <translation>莱[EV3]</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="823"/>
+        <source>PID_TIBARN_EV</source>
+        <translation>迪万[EV]</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="824"/>
+        <source>PID_RIEUSION_EV</source>
+        <translation>琉西昂[EV]</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="825"/>
+        <source>PID_ENA_EV2</source>
+        <translation>伊娜[EV2]</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="826"/>
+        <source>PID_TIBARN_EV2</source>
+        <translation>迪万[EV2]</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="827"/>
+        <source>PID_WAYU_EV</source>
+        <translation>瓦尤[EV]</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="828"/>
+        <source>PID_TUT_SO_B</source>
+        <translation>自军</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="829"/>
+        <source>PID_TUT_SO2_B</source>
+        <translation>自军</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="830"/>
+        <source>PID_TUT_SO2_G</source>
+        <translation>其他</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="831"/>
+        <source>PID_TUT_SK_R</source>
+        <translation>敌军</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="832"/>
+        <source>PID_TUT_PK_R</source>
+        <translation>敌军</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="833"/>
+        <source>PID_TUT_BB2_R</source>
+        <translation>敌军</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="834"/>
+        <source>PID_TUT_BC_B</source>
+        <translation>自军</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="835"/>
+        <source>PID_23_PAL_PRS</source>
+        <translation>帕鲁梅尼僧</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="836"/>
+        <source>PID_23_PAL_BSH</source>
+        <translation>帕鲁梅尼僧</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="837"/>
+        <source>PID_23_PAL_BSH_EV</source>
+        <translation>多梅纳米</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="838"/>
+        <source>PID_23_SIK_BUKA1</source>
+        <translation>迪恩佣兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="839"/>
+        <source>PID_23_SIK_BUKA2</source>
+        <translation>迪恩佣兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="840"/>
+        <source>PID_23_SIK_BUKA3</source>
+        <translation>迪恩佣兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="841"/>
+        <source>PID_RAJAION</source>
+        <translation>拉夏奥</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="842"/>
+        <source>PID_GIFFCA_EV</source>
+        <translation>吉布卡[EV]</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="843"/>
+        <source>PID_NAESALA_EV</source>
+        <translation>内萨拉[EV]</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="844"/>
+        <source>PID_BLACKKNIGHT_EV1</source>
+        <translation>漆黑的骑士[EV1]</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="845"/>
+        <source>PID_BLACKKNIGHT_EV2</source>
+        <translation>漆黑的骑士[EV2]</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="846"/>
+        <source>PID_IKE_EV1</source>
+        <translation>艾克[EV1]</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="847"/>
+        <source>PID_IKE_EV2</source>
+        <translation>艾克[EV2]</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="848"/>
+        <source>PID_MAP21_DKN_1</source>
+        <translation>迪恩兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="849"/>
+        <source>PID_MAP21_DKN_2</source>
+        <translation>迪恩兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="850"/>
+        <source>PID_MAP21_DKN_3</source>
+        <translation>迪恩兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="851"/>
+        <source>PID_TRIAL1_BUKA</source>
+        <translation>兵卒</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="852"/>
+        <source>PID_TRIAL1_BOSS</source>
+        <translation>军将</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="853"/>
+        <source>PID_TRIAL2_BUKA</source>
+        <translation>兵卒</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="854"/>
+        <source>PID_TRIAL3_BUKA</source>
+        <translation>军将</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="855"/>
+        <source>PID_TRIAL4_BUKA</source>
+        <translation>兵卒</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="856"/>
+        <source>PID_TRIAL5_BOSS</source>
+        <translation>军将</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="857"/>
+        <source>PID_TRIAL6_BUKA</source>
+        <translation>兵卒</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="858"/>
+        <source>PID_TRIAL6_BOSS</source>
+        <translation>军将</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="859"/>
+        <source>PID_14_SRD</source>
+        <translation>谜之军</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="860"/>
+        <source>PID_14_SOL</source>
+        <translation>谜之军</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="861"/>
+        <source>PID_14_HAL</source>
+        <translation>谜之军</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="862"/>
+        <source>PID_14_FIG</source>
+        <translation>谜之军</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="863"/>
+        <source>PID_14_ARC</source>
+        <translation>谜之军</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="864"/>
+        <source>PID_14_SNP</source>
+        <translation>谜之军</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="865"/>
+        <source>PID_14_MAG</source>
+        <translation>谜之军</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="866"/>
+        <source>PID_ACTORMANQUE_D</source>
+        <translation>半成兽</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="867"/>
+        <source>PID_ACTORMANQUE_P</source>
+        <translation>半成兽</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="868"/>
+        <source>PID_DAYNE_PLD_2</source>
+        <translation>迪恩兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="869"/>
+        <source>PID_DAYNE_PLD_3</source>
+        <translation>迪恩兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="872"/>
+        <source>JID_RANGER</source>
+        <translation>兵团长</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="873"/>
+        <source>JID_HERO</source>
+        <translation>领主</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="874"/>
+        <source>JID_HERO_G</source>
+        <translation>勇者</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="875"/>
+        <source>JID_SWORDER</source>
+        <translation>剑士「男」</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="876"/>
+        <source>JID_SWORDER/F</source>
+        <translation>剑士「女」</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="877"/>
+        <source>JID_SWORDMASTER</source>
+        <translation>剑豪「男」</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="878"/>
+        <source>JID_SWORDMASTER/F</source>
+        <translation>剑豪「女」</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="879"/>
+        <source>JID_SOLDIER</source>
+        <translation>士兵「男」</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="880"/>
+        <source>JID_SOLDIER/F</source>
+        <translation>士兵「女」</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="881"/>
+        <source>JID_HALBERDIER</source>
+        <translation>枪斗士「男」</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="882"/>
+        <source>JID_HALBERDIER/F</source>
+        <translation>枪斗士「女」</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="883"/>
+        <source>JID_FIGHTER</source>
+        <translation>战士</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="884"/>
+        <source>JID_WARRIOR</source>
+        <translation>勇士</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="885"/>
+        <source>JID_ARCHER</source>
+        <translation>弓兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="886"/>
+        <source>JID_SNIPER</source>
+        <translation>狙击手</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="887"/>
+        <source>JID_ARMOR</source>
+        <translation>重步兵</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="888"/>
+        <source>JID_GENERAL</source>
+        <translation>将军</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="889"/>
+        <source>JID_SOCIALKNIGHT_S</source>
+        <translation>剑骑士「男」</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="890"/>
+        <source>JID_SOCIALKNIGHT_L</source>
+        <translation>枪骑士「男」</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="891"/>
+        <source>JID_SOCIALKNIGHT_A</source>
+        <translation>斧骑士「男」</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="892"/>
+        <source>JID_SOCIALKNIGHT_B</source>
+        <translation>弓骑士「男」</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="893"/>
+        <source>JID_SOCIALKNIGHT_S/F</source>
+        <translation>剑骑士「女」</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="894"/>
+        <source>JID_SOCIALKNIGHT_L/F</source>
+        <translation>枪骑士「女」</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="895"/>
+        <source>JID_SOCIALKNIGHT_A/F</source>
+        <translation>斧骑士「女」</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="896"/>
+        <source>JID_SOCIALKNIGHT_B/F</source>
+        <translation>弓骑士「女」</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="897"/>
+        <source>JID_PALADIN_S</source>
+        <translation>圣骑士「剑・男」</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="898"/>
+        <source>JID_PALADIN_L</source>
+        <translation>圣骑士「枪・男」</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="899"/>
+        <source>JID_PALADIN_A</source>
+        <translation>圣骑士「斧・男」</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="900"/>
+        <source>JID_PALADIN_B</source>
+        <translation>圣骑士「弓・男」</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="901"/>
+        <source>JID_PALADIN_S/F</source>
+        <translation>圣骑士「剑・女」</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="902"/>
+        <source>JID_PALADIN_L/F</source>
+        <translation>圣骑士「枪・女」</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="903"/>
+        <source>JID_PALADIN_A/F</source>
+        <translation>圣骑士「斧・女」</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="904"/>
+        <source>JID_PALADIN_B/F</source>
+        <translation>圣骑士「弓・女」</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="905"/>
+        <source>JID_TIAMAT/F</source>
+        <translation>圣骑士「迪亚玛特」</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="906"/>
+        <source>JID_UNUSED0/F</source>
+        <translation>圣骑士「女」</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="907"/>
+        <source>JID_PEGASUSKNIGHT/F</source>
+        <translation>天马骑士</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="908"/>
+        <source>JID_FALCONKNIGHT/F</source>
+        <translation>圣天马骑士</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="909"/>
+        <source>JID_FALCONKNIGHT_E/F</source>
+        <translation>克利米亚公主</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="910"/>
+        <source>JID_DRAGONKNIGHT</source>
+        <translation>龙骑士「男」</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="911"/>
+        <source>JID_DRAGONKNIGHT/F</source>
+        <translation>龙骑士「女」</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="912"/>
+        <source>JID_DRAGONMASTER</source>
+        <translation>圣龙骑士「男」</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="913"/>
+        <source>JID_DRAGONMASTER/F</source>
+        <translation>圣龙骑士「女」</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="914"/>
+        <source>JID_DRAGONMASTER_A</source>
+        <translation>迪恩国王</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="915"/>
+        <source>JID_MAGE_F</source>
+        <translation>魔道士「炎・男」</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="916"/>
+        <source>JID_MAGE_W</source>
+        <translation>魔道士「风・男」</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="917"/>
+        <source>JID_MAGE_T</source>
+        <translation>魔道士「雷・男」</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="918"/>
+        <source>JID_MAGE</source>
+        <translation>魔道士「男」</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="919"/>
+        <source>JID_MAGE_F/F</source>
+        <translation>魔道士「炎・女」</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="920"/>
+        <source>JID_MAGE_W/F</source>
+        <translation>魔道士「风・女」</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="921"/>
+        <source>JID_MAGE_T/F</source>
+        <translation>魔道士「雷・女」</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="922"/>
+        <source>JID_MAGE/F</source>
+        <translation>魔道士「女」</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="923"/>
+        <source>JID_SAGE_F</source>
+        <translation>贤者「炎・男」</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="924"/>
+        <source>JID_SAGE_W</source>
+        <translation>贤者「风・男」</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="925"/>
+        <source>JID_SAGE_T</source>
+        <translation>贤者「雷・男」</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="926"/>
+        <source>JID_SAGE</source>
+        <translation>贤者「男」</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="927"/>
+        <source>JID_SAGE_F/F</source>
+        <translation>贤者「炎・女」</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="928"/>
+        <source>JID_SAGE_W/F</source>
+        <translation>贤者「风・女」</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="929"/>
+        <source>JID_SAGE_T/F</source>
+        <translation>贤者「雷・女」</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="930"/>
+        <source>JID_SAGE/F</source>
+        <translation>贤者「女」</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="931"/>
+        <source>JID_SAGE_R_F</source>
+        <translation>贤者「杖・炎」</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="932"/>
+        <source>JID_SAGE_R_W</source>
+        <translation>贤者「杖・风」</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="933"/>
+        <source>JID_SAGE_R_T</source>
+        <translation>贤者「杖・雷」</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="934"/>
+        <source>JID_SAGE_S_F</source>
+        <translation>贤者「轻器・炎」</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="935"/>
+        <source>JID_SAGE_S_W</source>
+        <translation>贤者「轻器・风」</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="936"/>
+        <source>JID_SAGE_S_T</source>
+        <translation>贤者「轻器・雷」</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="937"/>
+        <source>JID_PRIEST</source>
+        <translation>神官</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="938"/>
+        <source>JID_BISHOP</source>
+        <translation>司祭「男」</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="939"/>
+        <source>JID_BISHOP/F</source>
+        <translation>司祭「女」</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="940"/>
+        <source>JID_CLERIC/F</source>
+        <translation>牧师</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="941"/>
+        <source>JID_VALKYRIE/F</source>
+        <translation>战少女</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="942"/>
+        <source>JID_THIEF</source>
+        <translation>小偷</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="943"/>
+        <source>JID_ASSASSIN</source>
+        <translation>暗杀者「男」</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="944"/>
+        <source>JID_ASSASSIN/F</source>
+        <translation>暗杀者「女」</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="945"/>
+        <source>JID_BANDIT</source>
+        <translation>强盗</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="946"/>
+        <source>JID_BERSERKER</source>
+        <translation>強盗</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="947"/>
+        <source>JID_BEAST_L</source>
+        <translation>兽牙族「狮子」</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="948"/>
+        <source>JID_BEAST_T</source>
+        <translation>兽牙族「虎」</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="949"/>
+        <source>JID_BEAST_C</source>
+        <translation>兽牙族「猫・男」</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="950"/>
+        <source>JID_BEAST_C/F</source>
+        <translation>兽牙族「猫・女」</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="951"/>
+        <source>JID_DRAGON_B</source>
+        <translation>龙鳞族「黑龙」</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="952"/>
+        <source>JID_DRAGON_W</source>
+        <translation>龙鳞族「白龙」</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="953"/>
+        <source>JID_DRAGON_R</source>
+        <translation>龙鳞族「赤龙・男」</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="954"/>
+        <source>JID_DRAGON_R/F</source>
+        <translation>龙鳞族「赤龙・女」</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="955"/>
+        <source>JID_BIRD_HA</source>
+        <translation>鸟翼族「鹰」</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="956"/>
+        <source>JID_BIRD_C</source>
+        <translation>鸟翼族「乌鸦」</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="957"/>
+        <source>JID_BIRD_HE</source>
+        <translation>鸟翼族「鹭」</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="958"/>
+        <source>JID_BIRD_HE_W</source>
+        <translation>鸟翼族「鹭・男」</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="959"/>
+        <source>JID_BIRD_HE_W/F</source>
+        <translation>鸟翼族「鹭・女」</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="960"/>
+        <source>JID_LION</source>
+        <translation>狮子</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="961"/>
+        <source>JID_TIGER</source>
+        <translation>虎</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="962"/>
+        <source>JID_CAT</source>
+        <translation>猫「男」</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="963"/>
+        <source>JID_CAT/F</source>
+        <translation>猫「女」</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="964"/>
+        <source>JID_BLACKDRAGON</source>
+        <translation>黑龙</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="965"/>
+        <source>JID_WHITEDRAGON</source>
+        <translation>白龙</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="966"/>
+        <source>JID_REDDRAGON</source>
+        <translation>赤龙「男」</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="967"/>
+        <source>JID_REDDRAGON/F</source>
+        <translation>赤龙「女」</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="968"/>
+        <source>JID_HAWK</source>
+        <translation>鹰</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="969"/>
+        <source>JID_CROW</source>
+        <translation>乌鸦</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="970"/>
+        <source>JID_HERON</source>
+        <translation>鹭</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="971"/>
+        <source>JID_HERON_W</source>
+        <translation>鹭「男」</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="972"/>
+        <source>JID_HERON_W/F</source>
+        <translation>鹭「女」</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="973"/>
+        <source>JID_CITIZEN</source>
+        <translation>JID_CITIZEN</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="974"/>
+        <source>JID_CITIZEN/F</source>
+        <translation>市民「女」</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="975"/>
+        <source>JID_CHILD</source>
+        <translation>孩子「男」</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="976"/>
+        <source>JID_CHILD/F</source>
+        <translation>孩子「女」</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="977"/>
+        <source>JID_SAGE_R</source>
+        <translation>贤者「杖・男」</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="978"/>
+        <source>JID_SAGE_S</source>
+        <translation>贤者「轻器・男」</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="979"/>
+        <source>JID_DUMMY</source>
+        <translation>大米</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="980"/>
+        <source>JID_SAGE_R/F</source>
+        <translation>贤者「杖・女」</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="981"/>
+        <source>JID_SAGE_S/F</source>
+        <translation>贤者「轻器・女」</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="982"/>
+        <source>JID_BIRD_HA_TIB</source>
+        <translation>鸟翼族「鹰・迪万」</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="983"/>
+        <source>JID_HAWK_TIB</source>
+        <translation>鹰「迪万」</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="984"/>
+        <source>JID_BIRD_C_NES</source>
+        <translation>鸟翼族「乌鸦・内萨拉」</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="985"/>
+        <source>JID_CROW_NES</source>
+        <translation>乌鸦「内萨拉」</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="986"/>
+        <source>JID_BKNIGHT</source>
+        <translation>漆黑的骑士</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="989"/>
+        <source>IID_IRONSWORD</source>
+        <translation>铁剑</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="990"/>
+        <source>IID_PRACTICESWORD</source>
+        <translation>训练剑</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="991"/>
+        <source>IID_SLIMSWORD</source>
+        <translation>细剑</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="992"/>
+        <source>IID_STEELSWORD</source>
+        <translation>钢剑</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="993"/>
+        <source>IID_SILVERSWORD</source>
+        <translation>银剑</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="994"/>
+        <source>IID_IRONBLADE</source>
+        <translation>铁之大剑</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="995"/>
+        <source>IID_SILVERBLADE</source>
+        <translation>银之大剑</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="996"/>
+        <source>IID_POISONSWORD</source>
+        <translation>毒剑</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="997"/>
+        <source>IID_LONGSWORD</source>
+        <translation>王者之剑</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="998"/>
+        <source>IID_BRAVESWORD</source>
+        <translation>勇者之剑</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="999"/>
+        <source>IID_WATOU</source>
+        <translation>波刃皇剑</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1000"/>
+        <source>IID_KILLSWORD</source>
+        <translation>必杀刀</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1001"/>
+        <source>IID_ARMORKILLER</source>
+        <translation>斩铁剑</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1002"/>
+        <source>IID_RANCEBASTER</source>
+        <translation>拉格兹必杀剑</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1003"/>
+        <source>IID_HORSEKILLER</source>
+        <translation>长柄刀</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1004"/>
+        <source>IID_LONGLONGBOW</source>
+        <translation>女神辉闪</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1005"/>
+        <source>IID_RUNESWORD</source>
+        <translation>卢尼之剑</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1006"/>
+        <source>IID_ALONDITE</source>
+        <translation>艾塔鲁德</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1007"/>
+        <source>IID_RAGNELL</source>
+        <translation>拉格尼尔</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1008"/>
+        <source>IID_GURGURANT</source>
+        <translation>古鲁古兰特</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1009"/>
+        <source>IID_IRONLANCE</source>
+        <translation>铁枪</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1010"/>
+        <source>IID_SLIMLANCE</source>
+        <translation>细枪</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1011"/>
+        <source>IID_STEELLANCE</source>
+        <translation>钢</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1012"/>
+        <source>IID_SILVERLANCE</source>
+        <translation>银枪</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1013"/>
+        <source>IID_POISONLANCE</source>
+        <translation>毒枪</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1014"/>
+        <source>IID_BRAVELANCE</source>
+        <translation>勇者之枪</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1015"/>
+        <source>IID_KILLERLANCE</source>
+        <translation>必杀枪</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1016"/>
+        <source>IID_KNIGHTKILLER</source>
+        <translation>刺马枪</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1017"/>
+        <source>IID_HANDSPEAR</source>
+        <translation>投枪</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1018"/>
+        <source>IID_SLENDERSPEAR</source>
+        <translation>锁链枪</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1019"/>
+        <source>IID_FRAMELANCE</source>
+        <translation>火焰枪</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1020"/>
+        <source>IID_DRAGONRANCE</source>
+        <translation>拉格兹必杀枪</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1021"/>
+        <source>IID_AXEBASTER</source>
+        <translation>短枪</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1022"/>
+        <source>IID_IRONAXE</source>
+        <translation>铁斧</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1023"/>
+        <source>IID_PRACTICEAXE</source>
+        <translation>训练斧</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1024"/>
+        <source>IID_STEELAXE</source>
+        <translation>钢斧</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1025"/>
+        <source>IID_SILVERAXE</source>
+        <translation>银斧</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1026"/>
+        <source>IID_POISONAXE</source>
+        <translation>毒斧</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1027"/>
+        <source>IID_BRAVEAXE</source>
+        <translation>勇者之斧</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1028"/>
+        <source>IID_KILLERAXE</source>
+        <translation>必杀斧</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1029"/>
+        <source>IID_POLEAXE</source>
+        <translation>连珠斧</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1030"/>
+        <source>IID_HAMMER</source>
+        <translation>大锤</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1031"/>
+        <source>IID_DEVILAXE</source>
+        <translation>恶魔之斧</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1032"/>
+        <source>IID_HANDAXE</source>
+        <translation>投斧</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1033"/>
+        <source>IID_TOMAHAWK</source>
+        <translation>回旋斧</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1034"/>
+        <source>IID_SONICAXE</source>
+        <translation>魔刃斧</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1035"/>
+        <source>IID_SWORDBASTER</source>
+        <translation>短斧</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1036"/>
+        <source>IID_BEASTAXE</source>
+        <translation>拉格兹必杀斧</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1037"/>
+        <source>IID_URVAN</source>
+        <translation>圣炎神兽</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1038"/>
+        <source>IID_IRONBOW</source>
+        <translation>铁弓</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1039"/>
+        <source>IID_STEELBOW</source>
+        <translation>钢弓</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1040"/>
+        <source>IID_SILVERBOW</source>
+        <translation>银弓</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1041"/>
+        <source>IID_POISONBOW</source>
+        <translation>毒弓</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1042"/>
+        <source>IID_KILLERBOW</source>
+        <translation>必杀弓</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1043"/>
+        <source>IID_BRAVEBOW</source>
+        <translation>勇者之弓</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1044"/>
+        <source>IID_SHORTBOW</source>
+        <translation>拉格兹必杀弓</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1045"/>
+        <source>IID_LONGBOW</source>
+        <translation>长弓</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1046"/>
+        <source>IID_LOFABOW</source>
+        <translation>约珐之弓</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1047"/>
+        <source>IID_KNIFE</source>
+        <translation>匕首</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1048"/>
+        <source>IID_DAGGER</source>
+        <translation>短刀</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1049"/>
+        <source>IID_STILETTO</source>
+        <translation>突刺短刀</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1050"/>
+        <source>IID_LIONNAIL</source>
+        <translation>爪「狮子」</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1051"/>
+        <source>IID_CHANGESTONE</source>
+        <translation>化身之石</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1052"/>
+        <source>IID_TIGERNAIL</source>
+        <translation>爪「虎」</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1053"/>
+        <source>IID_CHANGESTONE1</source>
+        <translation>化身之石</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1054"/>
+        <source>IID_CATNAIL</source>
+        <translation>爪「猫」</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1055"/>
+        <source>IID_CRIMEASWORD</source>
+        <translation>阿米迪</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1056"/>
+        <source>IID_ZANEZPHTE</source>
+        <translation>欲望本源</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1057"/>
+        <source>IID_WHITEBREATH</source>
+        <translation>吐息「白龙」</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1058"/>
+        <source>IID_REDBREATH</source>
+        <translation>吐息「赤龙」</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1059"/>
+        <source>IID_KNIGHTRING</source>
+        <translation>骑士指轮</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1060"/>
+        <source>IID_HAWKBEAK</source>
+        <translation>喙「鹰」</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1061"/>
+        <source>IID_STEELBLADE</source>
+        <translation>钢之大剑</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1062"/>
+        <source>IID_CROWBEAK</source>
+        <translation>喙「乌鸦」</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1063"/>
+        <source>IID_LONGARCH</source>
+        <translation>长弩</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1064"/>
+        <source>IID_IRONARCH</source>
+        <translation>铁弩</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1065"/>
+        <source>IID_KILLERARCH</source>
+        <translation>必杀弩</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1066"/>
+        <source>IID_ONAGER</source>
+        <translation>投石器</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1067"/>
+        <source>IID_FIRE</source>
+        <translation>火炎</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1068"/>
+        <source>IID_ELFIRE</source>
+        <translation>业炎</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1069"/>
+        <source>IID_BOLGANONE</source>
+        <translation>熔岩</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1070"/>
+        <source>IID_FORBLAZE</source>
+        <translation>阳炎</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1071"/>
+        <source>IID_METEOR</source>
+        <translation>陨石</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1072"/>
+        <source>IID_WIND</source>
+        <translation>风刃</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1073"/>
+        <source>IID_FLUTTER</source>
+        <translation>疾风之刃</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1074"/>
+        <source>IID_ELWIND</source>
+        <translation>烈风</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1075"/>
+        <source>IID_TORNADO</source>
+        <translation>龙卷风</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1076"/>
+        <source>IID_FIMBULVETR</source>
+        <translation>岚刃</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1077"/>
+        <source>IID_BLIZZARD</source>
+        <translation>暴风雪</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1078"/>
+        <source>IID_THUNDER</source>
+        <translation>闪电</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1079"/>
+        <source>IID_ELTHUNDER</source>
+        <translation>轰雷</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1080"/>
+        <source>IID_THORON</source>
+        <translation>雷鸣</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1081"/>
+        <source>IID_MJOLNIR</source>
+        <translation>神雷</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1082"/>
+        <source>IID_THUNDERSTORM</source>
+        <translation>雷爆</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1083"/>
+        <source>IID_LIGHTNING</source>
+        <translation>光</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1084"/>
+        <source>IID_SHINE</source>
+        <translation>阳光</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1085"/>
+        <source>IID_RESIRE</source>
+        <translation>吸星术</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1086"/>
+        <source>IID_AURA</source>
+        <translation>曌光</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1087"/>
+        <source>IID_PURGE</source>
+        <translation>净化之光</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1088"/>
+        <source>IID_GODDESSROD</source>
+        <translation>女神之杖</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1089"/>
+        <source>IID_LIVE</source>
+        <translation>回复之杖</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1090"/>
+        <source>IID_RELIVE</source>
+        <translation>治疗之杖</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1091"/>
+        <source>IID_RECOVER</source>
+        <translation>痊愈之杖</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1092"/>
+        <source>IID_REBLOW</source>
+        <translation>治愈之杖</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1093"/>
+        <source>IID_RESERVE</source>
+        <translation>生命之杖</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1094"/>
+        <source>IID_REST</source>
+        <translation>复原之杖</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1095"/>
+        <source>IID_SILENCE</source>
+        <translation>沉默之杖</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1096"/>
+        <source>IID_SLEEP</source>
+        <translation>睡眠之杖</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1097"/>
+        <source>IID_BERSERK</source>
+        <translation>狂乱之杖</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1098"/>
+        <source>IID_WARP</source>
+        <translation>传送杖</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1099"/>
+        <source>IID_RESCUE</source>
+        <translation>援救杖</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1100"/>
+        <source>IID_TORCH</source>
+        <translation>松明之杖</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1101"/>
+        <source>IID_HAMMERNE</source>
+        <translation>修理之杖</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1102"/>
+        <source>IID_UNLOCK</source>
+        <translation>开锁杖</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1103"/>
+        <source>IID_MSHIELD</source>
+        <translation>魔防之杖</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1104"/>
+        <source>IID_VSBEAST</source>
+        <translation>拉格兹守护</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1105"/>
+        <source>IID_VSHUMAN</source>
+        <translation>贝奥克守护</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1106"/>
+        <source>IID_DELPHISHIELD</source>
+        <translation>全特效守护</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1107"/>
+        <source>IID_SWORDERSRING</source>
+        <translation>剑士的腕轮</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1108"/>
+        <source>IID_SOLDIERRING</source>
+        <translation>兵士的腕轮</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1109"/>
+        <source>IID_FIGHTERSRING</source>
+        <translation>战士的腕轮</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1110"/>
+        <source>IID_ARCHERSRING</source>
+        <translation>弓兵的腕轮</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1111"/>
+        <source>IID_ARMORSRING</source>
+        <translation>重步兵的腕轮</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1112"/>
+        <source>IID_SOCIALKNIGHTSRING</source>
+        <translation>骑士的腕轮</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1113"/>
+        <source>IID_PEGASUSKNIGHTSRING</source>
+        <translation>天马骑士的腕轮</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1114"/>
+        <source>IID_DRAGONKNIGHTSRING</source>
+        <translation>龙骑士的腕轮</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1115"/>
+        <source>IID_MAGESRING</source>
+        <translation>魔道士的腕轮</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1116"/>
+        <source>IID_PRIESTSRING</source>
+        <translation>神官的腕轮</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1117"/>
+        <source>IID_THIEFSRING</source>
+        <translation>盗贼的腕轮</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1118"/>
+        <source>IID_HPDROP</source>
+        <translation>天使之衣</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1119"/>
+        <source>IID_POWERDROP</source>
+        <translation>能量之液</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1120"/>
+        <source>IID_MAGICDROP</source>
+        <translation>精灵之粉</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1121"/>
+        <source>IID_TECHDROP</source>
+        <translation>秘传之书</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1122"/>
+        <source>IID_SPEEDDROP</source>
+        <translation>疾风之羽</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1123"/>
+        <source>IID_LUCKDROP</source>
+        <translation>女神像</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1124"/>
+        <source>IID_DEFDROP</source>
+        <translation>龙盾</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1125"/>
+        <source>IID_MDDROP</source>
+        <translation>魔法护身符</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1126"/>
+        <source>IID_BOOTS</source>
+        <translation>靴子</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1127"/>
+        <source>IID_BODYRING</source>
+        <translation>石像的碎片</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1128"/>
+        <source>IID_MASTERPROOF</source>
+        <translation>统帅之证</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1129"/>
+        <source>IID_TREASUREKEY</source>
+        <translation>宝箱钥匙</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1130"/>
+        <source>IID_DOORKEY</source>
+        <translation>门的钥匙</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1131"/>
+        <source>IID_KNIGHTSHIELD</source>
+        <translation>骑士守护</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1132"/>
+        <source>IID_VULNERARY</source>
+        <translation>伤药</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1133"/>
+        <source>IID_ELIXIR</source>
+        <translation>特效药</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1134"/>
+        <source>IID_HOLYWATER</source>
+        <translation>圣水</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1135"/>
+        <source>IID_DETOXDRUG</source>
+        <translation>解毒草</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1136"/>
+        <source>IID_JACKLIGHT</source>
+        <translation>火把</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1137"/>
+        <source>IID_WEAPONDROP</source>
+        <translation>武术书</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1138"/>
+        <source>IID_SILVERCARD</source>
+        <translation>银卡</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1139"/>
+        <source>IID_WHITEGEM</source>
+        <translation>白之宝玉</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1140"/>
+        <source>IID_BLUEGEM</source>
+        <translation>青之宝玉</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1141"/>
+        <source>IID_REDGEM</source>
+        <translation>赤之宝玉</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1142"/>
+        <source>IID_ELITE</source>
+        <translation>精英之书</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1143"/>
+        <source>IID_SWIFT</source>
+        <translation>俊足之书</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1144"/>
+        <source>IID_ESOTERIC</source>
+        <translation>奥义之书</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1145"/>
+        <source>IID_BLAVE</source>
+        <translation>勇将之书</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1146"/>
+        <source>IID_IMPREGNABLE</source>
+        <translation>铁壁之书</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1147"/>
+        <source>IID_TEMPER</source>
+        <translation>大起落之书</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1148"/>
+        <source>IID_CALM</source>
+        <translation>安定之书</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1149"/>
+        <source>IID_RESCUEP</source>
+        <translation>救援之书</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1150"/>
+        <source>IID_AMBUSH</source>
+        <translation>待伏之书</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1151"/>
+        <source>IID_GRASP</source>
+        <translation>见切之书</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1152"/>
+        <source>IID_ANGER</source>
+        <translation>怒之书</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1153"/>
+        <source>IID_WEAPONDESTROY</source>
+        <translation>武器破坏的书</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1154"/>
+        <source>IID_PRAY</source>
+        <translation>祈祷之书</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1155"/>
+        <source>IID_COUNTER</source>
+        <translation>反击之书</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1156"/>
+        <source>IID_HORROR</source>
+        <translation>恐怖之书</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1157"/>
+        <source>IID_PROVOKE</source>
+        <translation>挑衅之书</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1158"/>
+        <source>IID_SHADE</source>
+        <translation>影之书</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1159"/>
+        <source>IID_GAMBLE</source>
+        <translation>舍身击之书</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1160"/>
+        <source>IID_FAIRNESS</source>
+        <translation>能力胜负之书</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1161"/>
+        <source>IID_TACKLE2</source>
+        <translation>冲撞之书</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1162"/>
+        <source>IID_CHANT</source>
+        <translation>再行动之歌</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1163"/>
+        <source>IID_DEFENCE</source>
+        <translation>取消之书</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1164"/>
+        <source>IID_SONICBLADE</source>
+        <translation>音速之剑</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1165"/>
+        <source>IID_LIGHTNINGBOW</source>
+        <translation>光弩</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1166"/>
+        <source>IID_CONTINUATION</source>
+        <translation>连续之书</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1167"/>
+        <source>IID_FRAC90</source>
+        <translation>大器晚成之书</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1168"/>
+        <source>IID_REINFORCEMENTS</source>
+        <translation>援军之书</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1169"/>
+        <source>IID_TELEGNOSIS</source>
+        <translation>千里眼之书</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1170"/>
+        <source>IID_BIGEAR</source>
+        <translation>顺风耳之书</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1171"/>
+        <source>IID_TURNREGENE</source>
+        <translation>回复之书</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1172"/>
+        <source>IID_ARMORBREAK</source>
+        <translation>贯穿之枪</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1173"/>
+        <source>IID_CHANGERING</source>
+        <translation>半化身的腕轮</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1174"/>
+        <source>IID_CHANGERING2</source>
+        <translation>化身的腕轮</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1175"/>
+        <source>IID_COIN</source>
+        <translation>金币</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1176"/>
+        <source>IID_HAWKBEAK_KING</source>
+        <translation>喙「鹰·迪万」</translation>
+    </message>
+    <message>
+        <location filename="../../Modifier/parameter/enum_data.py" line="1177"/>
+        <source>IID_CROWBEAK_KING</source>
+        <translation>喙「乌鸦·内萨拉」</translation>
     </message>
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="20"/>
@@ -2653,3116 +5764,6 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="552"/>
-        <source>PID_CEPHERAN_FAKE</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="553"/>
-        <source>PID_ZELGIUS</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="554"/>
-        <source>PID_BLACKKNIGHT</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="555"/>
-        <source>PID_SIGRUN</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="556"/>
-        <source>PID_TANIS</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="557"/>
-        <source>PID_MARCIA</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="558"/>
-        <source>PID_MAKAROV</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="559"/>
-        <source>PID_TOPUCK</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="560"/>
-        <source>PID_MWARIM</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="561"/>
-        <source>PID_SOANVALCKE</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="562"/>
-        <source>PID_ELAICE</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="563"/>
-        <source>PID_CALILL</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="564"/>
-        <source>PID_LARGO</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="565"/>
-        <source>PID_STELLA</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="566"/>
-        <source>PID_VOKE</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="567"/>
-        <source>PID_SOTHE</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="568"/>
-        <source>PID_WAYU</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="569"/>
-        <source>PID_DUMMY4</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="570"/>
-        <source>PID_LEKAIN</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="571"/>
-        <source>PID_HETZEL</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="572"/>
-        <source>PID_OLIVER</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="573"/>
-        <source>PID_HEATHER</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="574"/>
-        <source>PID_MELTY</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="575"/>
-        <source>PID_ASHNARD</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="576"/>
-        <source>PID_PRAGUE</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="577"/>
-        <source>PID_BEUFORRES</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="578"/>
-        <source>PID_ENA</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="579"/>
-        <source>PID_HAAR</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="580"/>
-        <source>PID_JILL</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="581"/>
-        <source>PID_TAURONEO</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="582"/>
-        <source>PID_NEPENEE</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="583"/>
-        <source>PID_CHAP</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="584"/>
-        <source>PID_DUMMY5</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="585"/>
-        <source>PID_DUMMY6</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="586"/>
-        <source>PID_DUMMY7</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="587"/>
-        <source>PID_NASIR</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="588"/>
-        <source>PID_CAINEGHIS</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="589"/>
-        <source>PID_GIFFCA</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="590"/>
-        <source>PID_LETHE</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="591"/>
-        <source>PID_MORDY</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="592"/>
-        <source>PID_LAY</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="593"/>
-        <source>PID_TIBARN</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="594"/>
-        <source>PID_VULCI</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="595"/>
-        <source>PID_JANAFF</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="596"/>
-        <source>PID_NAESALA</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="597"/>
-        <source>PID_NEALUCHI</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="598"/>
-        <source>PID_RIEUSION</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="599"/>
-        <source>PID_LEARNE</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="600"/>
-        <source>PID_ZAKO</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="601"/>
-        <source>PID_ZAKO_2</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="602"/>
-        <source>PID_ZAKO_3</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="603"/>
-        <source>PID_ZAKO_M</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="604"/>
-        <source>PID_HIBUCCHI</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="605"/>
-        <source>PID_NEDATA</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="606"/>
-        <source>PID_IKANAU</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="607"/>
-        <source>PID_ZAWANAR</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="608"/>
-        <source>PID_MAIZIN</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="609"/>
-        <source>PID_KAMURA</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="610"/>
-        <source>PID_DAKKOWA</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="611"/>
-        <source>PID_BARUMA</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="612"/>
-        <source>PID_KOTAHU</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="613"/>
-        <source>PID_NOSHITHI</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="614"/>
-        <source>PID_DANOMIRU</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="615"/>
-        <source>PID_MAKKOYAR</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="616"/>
-        <source>PID_CHIGU</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="617"/>
-        <source>PID_EMAKOU</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="618"/>
-        <source>PID_GASIRAMA</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="619"/>
-        <source>PID_KIMARSI</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="620"/>
-        <source>PID_SIHARAMU</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="621"/>
-        <source>PID_HOMAS</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="622"/>
-        <source>PID_KAYACHE</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="623"/>
-        <source>PID_KASATAI</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="624"/>
-        <source>PID_SIRKUKO</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="625"/>
-        <source>PID_RIHITORU</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="626"/>
-        <source>PID_HAHUXEDO</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="627"/>
-        <source>PID_GURORMERU</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="628"/>
-        <source>PID_KOYUJO</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="629"/>
-        <source>PID_BURAISU</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="630"/>
-        <source>PID_BOSS</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="631"/>
-        <source>PID_B_BOSS</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="632"/>
-        <source>PID_B_ZAKO</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="633"/>
-        <source>PID_C_BOSS</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="634"/>
-        <source>PID_C_ZAKO</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="635"/>
-        <source>PID_F_BOSS</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="636"/>
-        <source>PID_F_ZAKO</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="637"/>
-        <source>PID_K_BOSS</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="638"/>
-        <source>PID_K_ZAKO</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="639"/>
-        <source>PID_G_BOSS</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="640"/>
-        <source>PID_G_ZAKO</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="641"/>
-        <source>PID_O_BOSS</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="642"/>
-        <source>PID_O_ZAKO</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="643"/>
-        <source>PID_D_ZAKO_11_1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="644"/>
-        <source>PID_D_ZAKO_11_2</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="645"/>
-        <source>PID_D_ZAKO_11_3</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="646"/>
-        <source>PID_D_ZAKO_11_4</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="647"/>
-        <source>PID_O_ZAKO_2_H</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="648"/>
-        <source>PID_ZAKO_8_H</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="649"/>
-        <source>PID_ZAKO_8_H_EV1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="650"/>
-        <source>PID_ZAKO_8_H_EV2</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="651"/>
-        <source>PID_ZAKO_8_H_2</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="652"/>
-        <source>PID_ZAKO_8_H_AM</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="653"/>
-        <source>PID_ZAKO_8_H_A</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="654"/>
-        <source>PID_ZAKO_EV1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="655"/>
-        <source>PID_ZAKO_EV2</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="656"/>
-        <source>PID_ZAKO_EV3</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="657"/>
-        <source>PID_ZAKO_EV4</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="658"/>
-        <source>PID_ZAKO_EV5</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="659"/>
-        <source>PID_ZAKO_EV6</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="660"/>
-        <source>PID_ZAKO_EV7</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="661"/>
-        <source>PID_ZAKO_EV8</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="662"/>
-        <source>PID_ZAKO_EV9</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="663"/>
-        <source>PID_ZAKO_EV10</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="664"/>
-        <source>PID_DAYNE_SOL_1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="665"/>
-        <source>PID_DAYNE_SOL_2</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="666"/>
-        <source>PID_DAYNE_SOL_3</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="667"/>
-        <source>PID_DAYNE_SOL_4</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="668"/>
-        <source>PID_DAYNE_SOL_5</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="669"/>
-        <source>PID_DAYNE_SOL_6</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="670"/>
-        <source>PID_DAYNE_SOL_7</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="671"/>
-        <source>PID_DAYNE_SOL_8</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="672"/>
-        <source>PID_DAYNE_HAL_1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="673"/>
-        <source>PID_DAYNE_ARC_1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="674"/>
-        <source>PID_DAYNE_ARC_2</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="675"/>
-        <source>PID_DAYNE_ARC_3</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="676"/>
-        <source>PID_DAYNE_ARC_4</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="677"/>
-        <source>PID_DAYNE_SNP_1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="678"/>
-        <source>PID_DAYNE_ARM_1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="679"/>
-        <source>PID_DAYNE_GNL_1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="680"/>
-        <source>PID_DAYNE_SKN_1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="681"/>
-        <source>PID_DAYNE_SKN_2</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="682"/>
-        <source>PID_DAYNE_PLD_1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="683"/>
-        <source>PID_DAYNE_DKN_1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="684"/>
-        <source>PID_DAYNE_DMS_1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="685"/>
-        <source>PID_DAYNE_MAG_1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="686"/>
-        <source>PID_DAYNE_SAG_1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="687"/>
-        <source>PID_DAYNE_PRS_1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="688"/>
-        <source>PID_DAYNE_BSH_1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="689"/>
-        <source>PID_B_ZAKO_EV1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="690"/>
-        <source>PID_B_ZAKO_EV2</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="691"/>
-        <source>PID_B_ZAKO_EV3</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="692"/>
-        <source>PID_K_ZAKO_EV1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="693"/>
-        <source>PID_K_ZAKO_EV2</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="694"/>
-        <source>PID_K_ZAKO_EV3</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="695"/>
-        <source>PID_G_ZAKO_EV1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="696"/>
-        <source>PID_G_ZAKO_EV2</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="697"/>
-        <source>PID_G_ZAKO_EV3</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="698"/>
-        <source>PID_G_ZAKO_EV4</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="699"/>
-        <source>PID_PEOPLE_EV1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="700"/>
-        <source>PID_PEOPLE_EV2</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="701"/>
-        <source>PID_PEOPLE_EV3</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="702"/>
-        <source>PID_PEOPLE_EV4</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="703"/>
-        <source>PID_PEOPLE_EV5</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="704"/>
-        <source>PID_PEOPLE_EV6</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="705"/>
-        <source>PID_PEOPLE_EV7</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="706"/>
-        <source>PID_PEOPLE_EV8</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="707"/>
-        <source>PID_PEOPLE_EV9</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="708"/>
-        <source>PID_PEOPLE_EV10</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="709"/>
-        <source>PID_PEOPLE_EV11</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="710"/>
-        <source>PID_PEOPLE_EV12</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="711"/>
-        <source>PID_IKE_EV</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="712"/>
-        <source>PID_GREIL_EV</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="713"/>
-        <source>PID_TIAMAT_EV</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="714"/>
-        <source>PID_SENERIO_EV</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="715"/>
-        <source>PID_SENERIO_EV2</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="716"/>
-        <source>PID_MIST_EV</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="717"/>
-        <source>PID_OSCAR_EV</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="718"/>
-        <source>PID_BOLE_EV</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="719"/>
-        <source>PID_KILROY_EV</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="720"/>
-        <source>PID_CHINON_EV</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="721"/>
-        <source>PID_GATRIE_EV</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="722"/>
-        <source>PID_TOPUCK_EV</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="723"/>
-        <source>PID_GEOFFRAY_EV</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="724"/>
-        <source>PID_ULYSSES_EV</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="725"/>
-        <source>PID_LUCHINO_EV</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="726"/>
-        <source>PID_NASIR_EV</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="727"/>
-        <source>PID_LOFA_EV</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="728"/>
-        <source>PID_TUT_SW_B</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="729"/>
-        <source>PID_TUT_SW_R</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="730"/>
-        <source>PID_TUT_SW_G</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="731"/>
-        <source>PID_TUT_FI_B</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="732"/>
-        <source>PID_TUT_FI_R</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="733"/>
-        <source>PID_TUT_BD_R</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="734"/>
-        <source>PID_TUT_SK_B</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="735"/>
-        <source>PID_TUT_PK_B</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="736"/>
-        <source>PID_TUT_DK_B</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="737"/>
-        <source>PID_TUT_DK_R</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="738"/>
-        <source>PID_TUT_PR_B</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="739"/>
-        <source>PID_TUT_BS_B</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="740"/>
-        <source>PID_TUT_BS_R</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="741"/>
-        <source>PID_TUT_TH_B</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="742"/>
-        <source>PID_TUT_BC_Y</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="743"/>
-        <source>PID_TUT_BB_B</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="744"/>
-        <source>PID_TUT_AR_B</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="745"/>
-        <source>PID_TUT_AR_R</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="746"/>
-        <source>PID_TUT_MG_B</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="747"/>
-        <source>PID_TUT_MG_R</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="748"/>
-        <source>PID_02_BANDIT_MOU</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="749"/>
-        <source>PID_03_BANDIT_MOU</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="750"/>
-        <source>PID_04_BANDIT_SEA</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="751"/>
-        <source>PID_BANDIT_SEA</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="752"/>
-        <source>PID_BANDIT_SEA_EV1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="753"/>
-        <source>PID_BANDIT_MOU</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="754"/>
-        <source>PID_BANDIT_MOU_EV1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="755"/>
-        <source>PID_M_STR_1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="756"/>
-        <source>PID_M_STR_2</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="757"/>
-        <source>PID_M_STR_3</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="758"/>
-        <source>PID_12_SELFDEFENCE</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="759"/>
-        <source>PID_12_THIEF</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="760"/>
-        <source>PID_15_PEDDLING</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="761"/>
-        <source>PID_16_LIBERATION</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="762"/>
-        <source>PID_178_TANAS</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="763"/>
-        <source>PID_15_PEDDLING_T</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="764"/>
-        <source>PID_16_LIBERATION_1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="765"/>
-        <source>PID_16_LIBERATION_2</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="766"/>
-        <source>PID_16_LIBERATION_3</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="767"/>
-        <source>PID_16_LIBERATION_4</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="768"/>
-        <source>PID_178_TANAS_1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="769"/>
-        <source>PID_178_TANAS_2</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="770"/>
-        <source>PID_178_TANAS_3</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="771"/>
-        <source>PID_N_07_DAYNE_2</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="772"/>
-        <source>PID_N_07_DAYNE_3</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="773"/>
-        <source>PID_N_08_DAYNE_1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="774"/>
-        <source>PID_N_08_DAYNE_2</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="775"/>
-        <source>PID_N_08_DAYNE_3</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="776"/>
-        <source>PID_DAYNE_SRD</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="777"/>
-        <source>PID_DAYNE_SMS</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="778"/>
-        <source>PID_DAYNE_SOL</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="779"/>
-        <source>PID_DAYNE_HAL</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="780"/>
-        <source>PID_DAYNE_FIG</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="781"/>
-        <source>PID_DAYNE_WAR</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="782"/>
-        <source>PID_DAYNE_ARC</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="783"/>
-        <source>PID_DAYNE_SNP</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="784"/>
-        <source>PID_DAYNE_ARM</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="785"/>
-        <source>PID_DAYNE_GNL</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="786"/>
-        <source>PID_DAYNE_SKN</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="787"/>
-        <source>PID_DAYNE_PLD</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="788"/>
-        <source>PID_DAYNE_DKN</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="789"/>
-        <source>PID_DAYNE_DMS</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="790"/>
-        <source>PID_DAYNE_MAG</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="791"/>
-        <source>PID_DAYNE_SAG</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="792"/>
-        <source>PID_DAYNE_PRS</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="793"/>
-        <source>PID_DAYNE_BSH</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="794"/>
-        <source>PID_02_BANDIT_EV</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="795"/>
-        <source>PID_DAYNE_SOL_9</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="796"/>
-        <source>PID_DAYNE_SOL_10</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="797"/>
-        <source>PID_DAYNE_ARC_5</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="798"/>
-        <source>PID_DAYNE_ARC_6</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="799"/>
-        <source>PID_DAYNE_ARC_7</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="800"/>
-        <source>PID_DAYNE_ARC_8</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="801"/>
-        <source>PID_DAYNE_SKN_3</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="802"/>
-        <source>PID_DAYNE_SKN_4</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="803"/>
-        <source>PID_DAYNE_SKN_5</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="804"/>
-        <source>PID_OLDMAN_1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="805"/>
-        <source>PID_DAYNE_DKN_2</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="806"/>
-        <source>PID_DAYNE_DKN_3</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="807"/>
-        <source>PID_DAYNE_DKN_4</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="808"/>
-        <source>PID_DAYNE_DKN_5</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="809"/>
-        <source>PID_DAYNE_DKN_6</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="810"/>
-        <source>PID_ASHNARD2</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="811"/>
-        <source>PID_15_DUMMYT</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="812"/>
-        <source>PID_IKE_CHILD_EV</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="813"/>
-        <source>PID_GREIL_SEPIA_EV</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="814"/>
-        <source>PID_LETHE_EV</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="815"/>
-        <source>PID_MORDY_EV</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="816"/>
-        <source>PID_LAY_EV</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="817"/>
-        <source>PID_LAY_EV2</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="818"/>
-        <source>PID_LETHE_MAP9</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="819"/>
-        <source>PID_LEARNE_EV</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="820"/>
-        <source>PID_ENA_EV</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="821"/>
-        <source>PID_ERINCIA_QUEEN_EV</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="822"/>
-        <source>PID_LAY_EV3</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="823"/>
-        <source>PID_TIBARN_EV</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="824"/>
-        <source>PID_RIEUSION_EV</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="825"/>
-        <source>PID_ENA_EV2</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="826"/>
-        <source>PID_TIBARN_EV2</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="827"/>
-        <source>PID_WAYU_EV</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="828"/>
-        <source>PID_TUT_SO_B</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="829"/>
-        <source>PID_TUT_SO2_B</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="830"/>
-        <source>PID_TUT_SO2_G</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="831"/>
-        <source>PID_TUT_SK_R</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="832"/>
-        <source>PID_TUT_PK_R</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="833"/>
-        <source>PID_TUT_BB2_R</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="834"/>
-        <source>PID_TUT_BC_B</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="835"/>
-        <source>PID_23_PAL_PRS</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="836"/>
-        <source>PID_23_PAL_BSH</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="837"/>
-        <source>PID_23_PAL_BSH_EV</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="838"/>
-        <source>PID_23_SIK_BUKA1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="839"/>
-        <source>PID_23_SIK_BUKA2</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="840"/>
-        <source>PID_23_SIK_BUKA3</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="841"/>
-        <source>PID_RAJAION</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="842"/>
-        <source>PID_GIFFCA_EV</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="843"/>
-        <source>PID_NAESALA_EV</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="844"/>
-        <source>PID_BLACKKNIGHT_EV1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="845"/>
-        <source>PID_BLACKKNIGHT_EV2</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="846"/>
-        <source>PID_IKE_EV1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="847"/>
-        <source>PID_IKE_EV2</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="848"/>
-        <source>PID_MAP21_DKN_1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="849"/>
-        <source>PID_MAP21_DKN_2</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="850"/>
-        <source>PID_MAP21_DKN_3</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="851"/>
-        <source>PID_TRIAL1_BUKA</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="852"/>
-        <source>PID_TRIAL1_BOSS</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="853"/>
-        <source>PID_TRIAL2_BUKA</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="854"/>
-        <source>PID_TRIAL3_BUKA</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="855"/>
-        <source>PID_TRIAL4_BUKA</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="856"/>
-        <source>PID_TRIAL5_BOSS</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="857"/>
-        <source>PID_TRIAL6_BUKA</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="858"/>
-        <source>PID_TRIAL6_BOSS</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="859"/>
-        <source>PID_14_SRD</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="860"/>
-        <source>PID_14_SOL</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="861"/>
-        <source>PID_14_HAL</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="862"/>
-        <source>PID_14_FIG</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="863"/>
-        <source>PID_14_ARC</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="864"/>
-        <source>PID_14_SNP</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="865"/>
-        <source>PID_14_MAG</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="866"/>
-        <source>PID_ACTORMANQUE_D</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="867"/>
-        <source>PID_ACTORMANQUE_P</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="868"/>
-        <source>PID_DAYNE_PLD_2</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="869"/>
-        <source>PID_DAYNE_PLD_3</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="872"/>
-        <source>JID_RANGER</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="873"/>
-        <source>JID_HERO</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="874"/>
-        <source>JID_HERO_G</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="875"/>
-        <source>JID_SWORDER</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="876"/>
-        <source>JID_SWORDER/F</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="877"/>
-        <source>JID_SWORDMASTER</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="878"/>
-        <source>JID_SWORDMASTER/F</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="879"/>
-        <source>JID_SOLDIER</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="880"/>
-        <source>JID_SOLDIER/F</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="881"/>
-        <source>JID_HALBERDIER</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="882"/>
-        <source>JID_HALBERDIER/F</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="883"/>
-        <source>JID_FIGHTER</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="884"/>
-        <source>JID_WARRIOR</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="885"/>
-        <source>JID_ARCHER</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="886"/>
-        <source>JID_SNIPER</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="887"/>
-        <source>JID_ARMOR</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="888"/>
-        <source>JID_GENERAL</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="889"/>
-        <source>JID_SOCIALKNIGHT_S</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="890"/>
-        <source>JID_SOCIALKNIGHT_L</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="891"/>
-        <source>JID_SOCIALKNIGHT_A</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="892"/>
-        <source>JID_SOCIALKNIGHT_B</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="893"/>
-        <source>JID_SOCIALKNIGHT_S/F</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="894"/>
-        <source>JID_SOCIALKNIGHT_L/F</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="895"/>
-        <source>JID_SOCIALKNIGHT_A/F</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="896"/>
-        <source>JID_SOCIALKNIGHT_B/F</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="897"/>
-        <source>JID_PALADIN_S</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="898"/>
-        <source>JID_PALADIN_L</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="899"/>
-        <source>JID_PALADIN_A</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="900"/>
-        <source>JID_PALADIN_B</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="901"/>
-        <source>JID_PALADIN_S/F</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="902"/>
-        <source>JID_PALADIN_L/F</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="903"/>
-        <source>JID_PALADIN_A/F</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="904"/>
-        <source>JID_PALADIN_B/F</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="905"/>
-        <source>JID_TIAMAT/F</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="906"/>
-        <source>JID_UNUSED0/F</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="907"/>
-        <source>JID_PEGASUSKNIGHT/F</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="908"/>
-        <source>JID_FALCONKNIGHT/F</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="909"/>
-        <source>JID_FALCONKNIGHT_E/F</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="910"/>
-        <source>JID_DRAGONKNIGHT</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="911"/>
-        <source>JID_DRAGONKNIGHT/F</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="912"/>
-        <source>JID_DRAGONMASTER</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="913"/>
-        <source>JID_DRAGONMASTER/F</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="914"/>
-        <source>JID_DRAGONMASTER_A</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="915"/>
-        <source>JID_MAGE_F</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="916"/>
-        <source>JID_MAGE_W</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="917"/>
-        <source>JID_MAGE_T</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="918"/>
-        <source>JID_MAGE</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="919"/>
-        <source>JID_MAGE_F/F</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="920"/>
-        <source>JID_MAGE_W/F</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="921"/>
-        <source>JID_MAGE_T/F</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="922"/>
-        <source>JID_MAGE/F</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="923"/>
-        <source>JID_SAGE_F</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="924"/>
-        <source>JID_SAGE_W</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="925"/>
-        <source>JID_SAGE_T</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="926"/>
-        <source>JID_SAGE</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="927"/>
-        <source>JID_SAGE_F/F</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="928"/>
-        <source>JID_SAGE_W/F</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="929"/>
-        <source>JID_SAGE_T/F</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="930"/>
-        <source>JID_SAGE/F</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="931"/>
-        <source>JID_SAGE_R_F</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="932"/>
-        <source>JID_SAGE_R_W</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="933"/>
-        <source>JID_SAGE_R_T</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="934"/>
-        <source>JID_SAGE_S_F</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="935"/>
-        <source>JID_SAGE_S_W</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="936"/>
-        <source>JID_SAGE_S_T</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="937"/>
-        <source>JID_PRIEST</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="938"/>
-        <source>JID_BISHOP</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="939"/>
-        <source>JID_BISHOP/F</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="940"/>
-        <source>JID_CLERIC/F</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="941"/>
-        <source>JID_VALKYRIE/F</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="942"/>
-        <source>JID_THIEF</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="943"/>
-        <source>JID_ASSASSIN</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="944"/>
-        <source>JID_ASSASSIN/F</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="945"/>
-        <source>JID_BANDIT</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="946"/>
-        <source>JID_BERSERKER</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="947"/>
-        <source>JID_BEAST_L</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="948"/>
-        <source>JID_BEAST_T</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="949"/>
-        <source>JID_BEAST_C</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="950"/>
-        <source>JID_BEAST_C/F</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="951"/>
-        <source>JID_DRAGON_B</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="952"/>
-        <source>JID_DRAGON_W</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="953"/>
-        <source>JID_DRAGON_R</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="954"/>
-        <source>JID_DRAGON_R/F</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="955"/>
-        <source>JID_BIRD_HA</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="956"/>
-        <source>JID_BIRD_C</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="957"/>
-        <source>JID_BIRD_HE</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="958"/>
-        <source>JID_BIRD_HE_W</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="959"/>
-        <source>JID_BIRD_HE_W/F</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="960"/>
-        <source>JID_LION</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="961"/>
-        <source>JID_TIGER</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="962"/>
-        <source>JID_CAT</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="963"/>
-        <source>JID_CAT/F</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="964"/>
-        <source>JID_BLACKDRAGON</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="965"/>
-        <source>JID_WHITEDRAGON</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="966"/>
-        <source>JID_REDDRAGON</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="967"/>
-        <source>JID_REDDRAGON/F</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="968"/>
-        <source>JID_HAWK</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="969"/>
-        <source>JID_CROW</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="970"/>
-        <source>JID_HERON</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="971"/>
-        <source>JID_HERON_W</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="972"/>
-        <source>JID_HERON_W/F</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="973"/>
-        <source>JID_CITIZEN</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="974"/>
-        <source>JID_CITIZEN/F</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="975"/>
-        <source>JID_CHILD</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="976"/>
-        <source>JID_CHILD/F</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="977"/>
-        <source>JID_SAGE_R</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="978"/>
-        <source>JID_SAGE_S</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="979"/>
-        <source>JID_DUMMY</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="980"/>
-        <source>JID_SAGE_R/F</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="981"/>
-        <source>JID_SAGE_S/F</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="982"/>
-        <source>JID_BIRD_HA_TIB</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="983"/>
-        <source>JID_HAWK_TIB</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="984"/>
-        <source>JID_BIRD_C_NES</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="985"/>
-        <source>JID_CROW_NES</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="986"/>
-        <source>JID_BKNIGHT</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="989"/>
-        <source>IID_IRONSWORD</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="990"/>
-        <source>IID_PRACTICESWORD</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="991"/>
-        <source>IID_SLIMSWORD</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="992"/>
-        <source>IID_STEELSWORD</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="993"/>
-        <source>IID_SILVERSWORD</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="994"/>
-        <source>IID_IRONBLADE</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="995"/>
-        <source>IID_SILVERBLADE</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="996"/>
-        <source>IID_POISONSWORD</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="997"/>
-        <source>IID_LONGSWORD</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="998"/>
-        <source>IID_BRAVESWORD</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="999"/>
-        <source>IID_WATOU</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1000"/>
-        <source>IID_KILLSWORD</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1001"/>
-        <source>IID_ARMORKILLER</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1002"/>
-        <source>IID_RANCEBASTER</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1003"/>
-        <source>IID_HORSEKILLER</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1004"/>
-        <source>IID_LONGLONGBOW</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1005"/>
-        <source>IID_RUNESWORD</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1006"/>
-        <source>IID_ALONDITE</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1007"/>
-        <source>IID_RAGNELL</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1008"/>
-        <source>IID_GURGURANT</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1009"/>
-        <source>IID_IRONLANCE</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1010"/>
-        <source>IID_SLIMLANCE</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1011"/>
-        <source>IID_STEELLANCE</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1012"/>
-        <source>IID_SILVERLANCE</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1013"/>
-        <source>IID_POISONLANCE</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1014"/>
-        <source>IID_BRAVELANCE</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1015"/>
-        <source>IID_KILLERLANCE</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1016"/>
-        <source>IID_KNIGHTKILLER</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1017"/>
-        <source>IID_HANDSPEAR</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1018"/>
-        <source>IID_SLENDERSPEAR</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1019"/>
-        <source>IID_FRAMELANCE</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1020"/>
-        <source>IID_DRAGONRANCE</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1021"/>
-        <source>IID_AXEBASTER</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1022"/>
-        <source>IID_IRONAXE</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1023"/>
-        <source>IID_PRACTICEAXE</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1024"/>
-        <source>IID_STEELAXE</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1025"/>
-        <source>IID_SILVERAXE</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1026"/>
-        <source>IID_POISONAXE</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1027"/>
-        <source>IID_BRAVEAXE</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1028"/>
-        <source>IID_KILLERAXE</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1029"/>
-        <source>IID_POLEAXE</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1030"/>
-        <source>IID_HAMMER</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1031"/>
-        <source>IID_DEVILAXE</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1032"/>
-        <source>IID_HANDAXE</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1033"/>
-        <source>IID_TOMAHAWK</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1034"/>
-        <source>IID_SONICAXE</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1035"/>
-        <source>IID_SWORDBASTER</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1036"/>
-        <source>IID_BEASTAXE</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1037"/>
-        <source>IID_URVAN</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1038"/>
-        <source>IID_IRONBOW</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1039"/>
-        <source>IID_STEELBOW</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1040"/>
-        <source>IID_SILVERBOW</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1041"/>
-        <source>IID_POISONBOW</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1042"/>
-        <source>IID_KILLERBOW</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1043"/>
-        <source>IID_BRAVEBOW</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1044"/>
-        <source>IID_SHORTBOW</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1045"/>
-        <source>IID_LONGBOW</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1046"/>
-        <source>IID_LOFABOW</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1047"/>
-        <source>IID_KNIFE</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1048"/>
-        <source>IID_DAGGER</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1049"/>
-        <source>IID_STILETTO</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1050"/>
-        <source>IID_LIONNAIL</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1051"/>
-        <source>IID_CHANGESTONE</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1052"/>
-        <source>IID_TIGERNAIL</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1053"/>
-        <source>IID_CHANGESTONE1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1054"/>
-        <source>IID_CATNAIL</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1055"/>
-        <source>IID_CRIMEASWORD</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1056"/>
-        <source>IID_ZANEZPHTE</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1057"/>
-        <source>IID_WHITEBREATH</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1058"/>
-        <source>IID_REDBREATH</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1059"/>
-        <source>IID_KNIGHTRING</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1060"/>
-        <source>IID_HAWKBEAK</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1061"/>
-        <source>IID_STEELBLADE</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1062"/>
-        <source>IID_CROWBEAK</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1063"/>
-        <source>IID_LONGARCH</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1064"/>
-        <source>IID_IRONARCH</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1065"/>
-        <source>IID_KILLERARCH</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1066"/>
-        <source>IID_ONAGER</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1067"/>
-        <source>IID_FIRE</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1068"/>
-        <source>IID_ELFIRE</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1069"/>
-        <source>IID_BOLGANONE</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1070"/>
-        <source>IID_FORBLAZE</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1071"/>
-        <source>IID_METEOR</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1072"/>
-        <source>IID_WIND</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1073"/>
-        <source>IID_FLUTTER</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1074"/>
-        <source>IID_ELWIND</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1075"/>
-        <source>IID_TORNADO</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1076"/>
-        <source>IID_FIMBULVETR</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1077"/>
-        <source>IID_BLIZZARD</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1078"/>
-        <source>IID_THUNDER</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1079"/>
-        <source>IID_ELTHUNDER</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1080"/>
-        <source>IID_THORON</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1081"/>
-        <source>IID_MJOLNIR</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1082"/>
-        <source>IID_THUNDERSTORM</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1083"/>
-        <source>IID_LIGHTNING</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1084"/>
-        <source>IID_SHINE</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1085"/>
-        <source>IID_RESIRE</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1086"/>
-        <source>IID_AURA</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1087"/>
-        <source>IID_PURGE</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1088"/>
-        <source>IID_GODDESSROD</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1089"/>
-        <source>IID_LIVE</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1090"/>
-        <source>IID_RELIVE</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1091"/>
-        <source>IID_RECOVER</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1092"/>
-        <source>IID_REBLOW</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1093"/>
-        <source>IID_RESERVE</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1094"/>
-        <source>IID_REST</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1095"/>
-        <source>IID_SILENCE</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1096"/>
-        <source>IID_SLEEP</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1097"/>
-        <source>IID_BERSERK</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1098"/>
-        <source>IID_WARP</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1099"/>
-        <source>IID_RESCUE</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1100"/>
-        <source>IID_TORCH</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1101"/>
-        <source>IID_HAMMERNE</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1102"/>
-        <source>IID_UNLOCK</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1103"/>
-        <source>IID_MSHIELD</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1104"/>
-        <source>IID_VSBEAST</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1105"/>
-        <source>IID_VSHUMAN</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1106"/>
-        <source>IID_DELPHISHIELD</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1107"/>
-        <source>IID_SWORDERSRING</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1108"/>
-        <source>IID_SOLDIERRING</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1109"/>
-        <source>IID_FIGHTERSRING</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1110"/>
-        <source>IID_ARCHERSRING</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1111"/>
-        <source>IID_ARMORSRING</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1112"/>
-        <source>IID_SOCIALKNIGHTSRING</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1113"/>
-        <source>IID_PEGASUSKNIGHTSRING</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1114"/>
-        <source>IID_DRAGONKNIGHTSRING</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1115"/>
-        <source>IID_MAGESRING</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1116"/>
-        <source>IID_PRIESTSRING</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1117"/>
-        <source>IID_THIEFSRING</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1118"/>
-        <source>IID_HPDROP</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1119"/>
-        <source>IID_POWERDROP</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1120"/>
-        <source>IID_MAGICDROP</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1121"/>
-        <source>IID_TECHDROP</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1122"/>
-        <source>IID_SPEEDDROP</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1123"/>
-        <source>IID_LUCKDROP</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1124"/>
-        <source>IID_DEFDROP</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1125"/>
-        <source>IID_MDDROP</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1126"/>
-        <source>IID_BOOTS</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1127"/>
-        <source>IID_BODYRING</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1128"/>
-        <source>IID_MASTERPROOF</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1129"/>
-        <source>IID_TREASUREKEY</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1130"/>
-        <source>IID_DOORKEY</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1131"/>
-        <source>IID_KNIGHTSHIELD</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1132"/>
-        <source>IID_VULNERARY</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1133"/>
-        <source>IID_ELIXIR</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1134"/>
-        <source>IID_HOLYWATER</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1135"/>
-        <source>IID_DETOXDRUG</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1136"/>
-        <source>IID_JACKLIGHT</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1137"/>
-        <source>IID_WEAPONDROP</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1138"/>
-        <source>IID_SILVERCARD</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1139"/>
-        <source>IID_WHITEGEM</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1140"/>
-        <source>IID_BLUEGEM</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1141"/>
-        <source>IID_REDGEM</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1142"/>
-        <source>IID_ELITE</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1143"/>
-        <source>IID_SWIFT</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1144"/>
-        <source>IID_ESOTERIC</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1145"/>
-        <source>IID_BLAVE</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1146"/>
-        <source>IID_IMPREGNABLE</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1147"/>
-        <source>IID_TEMPER</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1148"/>
-        <source>IID_CALM</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1149"/>
-        <source>IID_RESCUEP</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1150"/>
-        <source>IID_AMBUSH</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1151"/>
-        <source>IID_GRASP</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1152"/>
-        <source>IID_ANGER</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1153"/>
-        <source>IID_WEAPONDESTROY</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1154"/>
-        <source>IID_PRAY</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1155"/>
-        <source>IID_COUNTER</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1156"/>
-        <source>IID_HORROR</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1157"/>
-        <source>IID_PROVOKE</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1158"/>
-        <source>IID_SHADE</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1159"/>
-        <source>IID_GAMBLE</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1160"/>
-        <source>IID_FAIRNESS</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1161"/>
-        <source>IID_TACKLE2</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1162"/>
-        <source>IID_CHANT</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1163"/>
-        <source>IID_DEFENCE</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1164"/>
-        <source>IID_SONICBLADE</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1165"/>
-        <source>IID_LIGHTNINGBOW</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1166"/>
-        <source>IID_CONTINUATION</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1167"/>
-        <source>IID_FRAC90</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1168"/>
-        <source>IID_REINFORCEMENTS</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1169"/>
-        <source>IID_TELEGNOSIS</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1170"/>
-        <source>IID_BIGEAR</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1171"/>
-        <source>IID_TURNREGENE</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1172"/>
-        <source>IID_ARMORBREAK</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1173"/>
-        <source>IID_CHANGERING</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1174"/>
-        <source>IID_CHANGERING2</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1175"/>
-        <source>IID_COIN</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1176"/>
-        <source>IID_HAWKBEAK_KING</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Modifier/parameter/enum_data.py" line="1177"/>
-        <source>IID_CROWBEAK_KING</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="1180"/>
         <source>SID_ABSMOVE</source>
         <translation type="unfinished"></translation>
@@ -6250,186 +6251,177 @@
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="1286"/>
         <source>this</source>
-        <translation type="unfinished"></translation>
+        <translation>己方</translation>
     </message>
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="1287"/>
         <source>enemy</source>
-        <translation type="unfinished"></translation>
+        <translation>敌</translation>
     </message>
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="1288"/>
         <source>other</source>
-        <translation type="unfinished"></translation>
+        <translation>其他</translation>
     </message>
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="1289"/>
         <source>friend</source>
-        <translation type="unfinished"></translation>
+        <translation>友好</translation>
     </message>
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="1290"/>
         <source>death</source>
-        <translation type="unfinished"></translation>
+        <translation>死亡</translation>
     </message>
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="1293"/>
         <source>ready</source>
-        <translation type="unfinished"></translation>
+        <translation>未出击</translation>
     </message>
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="1292"/>
         <source>killed</source>
-        <translation type="unfinished"></translation>
+        <translation>阵亡</translation>
     </message>
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="1298"/>
         <source>Crimea</source>
-        <translation type="unfinished"></translation>
+        <translation>克利米亚军</translation>
     </message>
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="1300"/>
         <source>Daein</source>
-        <translation type="unfinished"></translation>
+        <translation>迪恩军</translation>
     </message>
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="1301"/>
         <source>Gallian</source>
-        <translation type="unfinished"></translation>
+        <translation>卡利亚军</translation>
     </message>
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="1302"/>
         <source>Bandit</source>
-        <translation type="unfinished"></translation>
+        <translation>山贼</translation>
     </message>
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="1303"/>
         <source>Pirate</source>
-        <translation type="unfinished"></translation>
+        <translation>海盗</translation>
     </message>
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="1304"/>
         <source>Elincia Reinforce</source>
-        <translation type="unfinished"></translation>
+        <translation>艾琳西娅增援</translation>
     </message>
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="1321"/>
         <source>Holy Guard</source>
-        <translation type="unfinished"></translation>
+        <translation>神使亲卫队</translation>
     </message>
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="1306"/>
         <source>Kariwa Bandit</source>
-        <translation type="unfinished"></translation>
+        <translation>卡利瓦山贼</translation>
     </message>
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="1307"/>
         <source>Greil Mercenaries</source>
-        <translation type="unfinished"></translation>
+        <translation>古雷尔佣兵团</translation>
     </message>
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="1308"/>
         <source>Begnion</source>
-        <translation type="unfinished"></translation>
+        <translation>贝格尼奥军</translation>
     </message>
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="1309"/>
         <source>Pegasus Knight</source>
-        <translation type="unfinished"></translation>
+        <translation>天马骑士</translation>
     </message>
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="1310"/>
         <source>Merchant</source>
-        <translation type="unfinished"></translation>
+        <translation>商队</translation>
     </message>
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="1311"/>
         <source>Laguz Emancipation Army</source>
-        <translation type="unfinished"></translation>
+        <translation>拉格兹解放军</translation>
     </message>
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="1312"/>
         <source>Dukedom of Tanas</source>
-        <translation type="unfinished"></translation>
+        <translation>塔那斯公爵军</translation>
     </message>
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="1313"/>
         <source>Thief</source>
-        <translation type="unfinished"></translation>
+        <translation>盗贼</translation>
     </message>
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="1314"/>
         <source>Kilvas</source>
-        <translation type="unfinished"></translation>
+        <translation>吉鲁瓦斯军</translation>
     </message>
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="1315"/>
         <source>Phoenicis</source>
-        <translation type="unfinished"></translation>
+        <translation>菲尼吉斯军</translation>
     </message>
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="1316"/>
         <source>Wild</source>
-        <translation type="unfinished"></translation>
+        <translation>无所属</translation>
     </message>
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="1317"/>
         <source>Palmeni</source>
-        <translation type="unfinished"></translation>
+        <translation>帕鲁梅尼僧</translation>
     </message>
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="1318"/>
         <source>Captive</source>
-        <translation type="unfinished"></translation>
+        <translation>俘虏</translation>
     </message>
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="1319"/>
         <source>Begnion Reinforce</source>
-        <translation type="unfinished"></translation>
+        <translation>贝格尼奥增援</translation>
     </message>
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="1320"/>
         <source>Vigilante</source>
-        <translation type="unfinished"></translation>
+        <translation>自卫团</translation>
     </message>
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="1322"/>
         <source>Mystery Army</source>
-        <translation type="unfinished"></translation>
+        <translation>谜之军队</translation>
     </message>
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="1323"/>
         <source>Daein Remnant</source>
-        <translation type="unfinished"></translation>
+        <translation>迪恩残部</translation>
     </message>
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="1324"/>
         <source>Mystery Force</source>
-        <translation type="unfinished"></translation>
+        <translation>谜之势力</translation>
     </message>
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="1325"/>
         <source>Fighter</source>
-        <translation type="unfinished"></translation>
+        <translation>斗士</translation>
     </message>
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="1326"/>
         <source>Serenes</source>
-        <translation type="unfinished"></translation>
+        <translation>鹭的住民</translation>
     </message>
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="1327"/>
         <source>Alone Mercenary</source>
-        <translation type="unfinished"></translation>
+        <translation>孤身的佣兵</translation>
     </message>
-</context>
-<context>
-    <name>Item</name>
-</context>
-<context>
-    <name>Status</name>
-</context>
-<context>
-    <name>Window</name>
 </context>
 </TS>

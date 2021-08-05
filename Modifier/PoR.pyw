@@ -15,6 +15,7 @@ def main():
     trans = QtCore.QTranslator()
     trans.load(':QM/jp.qm')
     app.installTranslator(trans)
+    app.setStyleSheet('* {font-family: "Iosevka Semibold", "Inziu Roboto SC"; font-size: 12pt;}')
     window = Window()
     window.show()
     sys.exit(app.exec())

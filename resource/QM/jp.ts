@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS><TS version="2.0" language="ja_JP" sourcelanguage="en">
+<!DOCTYPE TS>
+<TS version="2.1" language="ja_JP" sourcelanguage="en">
 <context>
     <name>EnumData</name>
     <message>
@@ -2585,7 +2586,7 @@
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="1050"/>
         <source>IID_LIONNAIL</source>
-        <translation>爪</translation>
+        <translation>爪「獅子」</translation>
     </message>
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="1051"/>
@@ -2595,7 +2596,7 @@
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="1052"/>
         <source>IID_TIGERNAIL</source>
-        <translation>爪</translation>
+        <translation>爪「虎」</translation>
     </message>
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="1053"/>
@@ -2605,7 +2606,7 @@
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="1054"/>
         <source>IID_CATNAIL</source>
-        <translation>爪</translation>
+        <translation>爪「猫」</translation>
     </message>
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="1055"/>
@@ -2620,12 +2621,12 @@
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="1057"/>
         <source>IID_WHITEBREATH</source>
-        <translation>ブレス</translation>
+        <translation>ブレス「白竜」</translation>
     </message>
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="1058"/>
         <source>IID_REDBREATH</source>
-        <translation>ブレス</translation>
+        <translation>ブレス「赤竜」</translation>
     </message>
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="1059"/>
@@ -2635,7 +2636,7 @@
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="1060"/>
         <source>IID_HAWKBEAK</source>
-        <translation>くちばし</translation>
+        <translation>くちばし「タカ」</translation>
     </message>
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="1061"/>
@@ -2645,7 +2646,7 @@
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="1062"/>
         <source>IID_CROWBEAK</source>
-        <translation>くちばし</translation>
+        <translation>くちばし「カラス」</translation>
     </message>
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="1063"/>
@@ -3215,12 +3216,12 @@
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="1176"/>
         <source>IID_HAWKBEAK_KING</source>
-        <translation>くちばし</translation>
+        <translation>くちばし「タカ・ティバーン」</translation>
     </message>
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="1177"/>
         <source>IID_CROWBEAK_KING</source>
-        <translation>くちばし</translation>
+        <translation>くちばし「カラス・ネサラ」</translation>
     </message>
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="20"/>
