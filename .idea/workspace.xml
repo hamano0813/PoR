@@ -9,14 +9,11 @@
   <component name="ChangeListManager">
     <list default="true" id="d46fa3eb-b3fc-4a28-b979-0366497ae973" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modifier/interface/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modifier/interface/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Modifier/interface/resource.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modifier/interface/resource.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Modifier/interface/skill.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modifier/interface/skill.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modifier/interface/window.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modifier/interface/window.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modifier/parameter/data_setting.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modifier/parameter/data_setting.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modifier/parameter/enum_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modifier/parameter/enum_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.MD" beforeDir="false" afterPath="$PROJECT_DIR$/README.MD" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource/resource.qrc" beforeDir="false" afterPath="$PROJECT_DIR$/resource/resource.qrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource/QM/jp.qm" beforeDir="false" afterPath="$PROJECT_DIR$/resource/QM/jp.qm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource/QM/jp.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resource/QM/jp.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource/QM/zh.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resource/QM/zh.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -322,7 +319,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628179316850</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="#32.增加技能修改">
+      <created>1628236680156</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1628236680156</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -339,7 +343,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <confirmRemoveEmptyChangelist value="2" />
-    <MESSAGE value="#3.新建数据解析模块" />
     <MESSAGE value="#4.新建数据设定和枚举模块" />
     <MESSAGE value="#5.新建控件模块" />
     <MESSAGE value="#6.新建界面模块" />
@@ -364,6 +367,7 @@
     <MESSAGE value="#29.增加能力修改功能" />
     <MESSAGE value="#30.完成支援枚举" />
     <MESSAGE value="#31.调整显示效果" />
-    <option name="LAST_COMMIT_MESSAGE" value="#31.调整显示效果" />
+    <MESSAGE value="#32.增加技能修改" />
+    <option name="LAST_COMMIT_MESSAGE" value="#32.增加技能修改" />
   </component>
 </project>
