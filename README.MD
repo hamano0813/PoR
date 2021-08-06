@@ -6,17 +6,11 @@
 
 #### 可修改项目
 
-- [x] 人物
-- [x] 职业
-- [x] 形象
-- [ ] 地图状态
-- [ ] 行动状态
-- [ ] 救出状态
-- [ ] 异常状态
-- [ ] 支援
-- [ ] 能力值
-- [ ] 道具
-- [ ] 技能
+- [x] 人物状态
+- [x] 能力熟练
+- [ ] 特技属性
+- [x] 装备道具
+- [x] 支援关系
 
 #### 项目文件结构
 
@@ -38,6 +32,7 @@ r---IID([IID])
 r---PID([PID])
 r---QM([QM])
 r---WP([WP])
+r---blank.png
 r---icon.png
 r---resource.qrc
 m---i
@@ -46,23 +41,25 @@ m---w
 m---s
 m---PoR.pyw
 m---config.ini
-i---window.py
-i---status.py
-i---support.py
-i---skill.py
 i---ability.py
 i---item.py
 i---resource.py
-p---enum_data.py
+i---skill.py
+i---status.py
+i---support.py
+i---window.py
 p---data_setting.py
+p---enum_data.py
 s---text.py
 s---value.py
-w---customize.py
 w---background_frame.py
 w---bool_check.py
-w---mapping_combo.py
-w---value_spin.py
+w---customize.py
+w---map_combo.py
+w---name_label.py
 w---slot_list.py
+w---support_bar.py
+w---value_spin.py
 R---r
 ```
 
