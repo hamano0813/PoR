@@ -9,11 +9,22 @@
   <component name="ChangeListManager">
     <list default="true" id="d46fa3eb-b3fc-4a28-b979-0366497ae973" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modifier/PoR.pyw" beforeDir="false" afterPath="$PROJECT_DIR$/Modifier/PoR.pyw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modifier/config.ini" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Modifier/interface/resource.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modifier/interface/resource.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Modifier/interface/skill.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modifier/interface/skill.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource/QM/jp.qm" beforeDir="false" afterPath="$PROJECT_DIR$/resource/QM/jp.qm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource/QM/jp.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resource/QM/jp.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource/QM/zh.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resource/QM/zh.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modifier/interface/window.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modifier/interface/window.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modifier/widget/slot_list.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modifier/widget/slot_list.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.MD" beforeDir="false" afterPath="$PROJECT_DIR$/README.MD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource/AFF/AFF_DARK.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource/AFF/AFF_EARTH.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource/AFF/AFF_FIRE.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource/AFF/AFF_HEAVEN.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource/AFF/AFF_LIGHT.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource/AFF/AFF_THUNDER.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource/AFF/AFF_WATER.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource/AFF/AFF_WIND.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource/resource.qrc" beforeDir="false" afterPath="$PROJECT_DIR$/resource/resource.qrc" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,11 +61,12 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../PySanDS/SanDS_RomEditor/widgets/common/picture_editor.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ChinaMobile/RetiredSystem/program/main_window.py" />
     <property name="settings.editor.selected.configurable" value="preferences.externalTools" />
   </component>
   <component name="RecentsManager">
@@ -326,7 +338,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628236680156</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="#33.增加技能翻译">
+      <created>1628243459088</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1628243459088</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -343,7 +362,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <confirmRemoveEmptyChangelist value="2" />
-    <MESSAGE value="#4.新建数据设定和枚举模块" />
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="#5.新建控件模块" />
     <MESSAGE value="#6.新建界面模块" />
     <MESSAGE value="#7.加入资源打包文件" />
@@ -368,6 +387,18 @@
     <MESSAGE value="#30.完成支援枚举" />
     <MESSAGE value="#31.调整显示效果" />
     <MESSAGE value="#32.增加技能修改" />
-    <option name="LAST_COMMIT_MESSAGE" value="#32.增加技能修改" />
+    <MESSAGE value="#33.增加技能翻译" />
+    <option name="LAST_COMMIT_MESSAGE" value="#33.增加技能翻译" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Modifier/PoR.pyw</url>
+          <line>34</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

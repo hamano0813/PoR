@@ -40,7 +40,6 @@ m---p
 m---w
 m---s
 m---PoR.pyw
-m---config.ini
 i---ability.py
 i---item.py
 i---resource.py

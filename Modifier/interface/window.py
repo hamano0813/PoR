@@ -3,7 +3,7 @@
 
 from PySide6.QtWidgets import QMainWindow, QPushButton, QTabWidget, QHBoxLayout, QVBoxLayout, QSizePolicy
 from PySide6.QtCore import Qt, QSize
-from PySide6.QtGui import QIcon, QCloseEvent
+from PySide6.QtGui import QIcon, QCloseEvent, QPixmap
 from dolphin_memory_engine import un_hook, is_hooked
 from widget import SlotList, BackgroundFrame
 from parameter import DataSetting
@@ -53,7 +53,15 @@ class Window(QMainWindow):
         self.setCentralWidget(main_frame)
         self.setWindowTitle('苍炎的轨迹 动态修改器 V1.0')
         self.setWindowIcon(QIcon(':/ICON/icon.png'))
+
+        skill_frame['SID_EQUIPLIGHT'].stateChanged.connect(self.charge_light)
+
         slot_list.refresh()
+
+    def charge_light(self):
+        label = self.centralWidget().layout().itemAt(1).widget().widget(1).layout().itemAtPosition(8, 3).widget()
+        light = 'LIGHT' if self.sender().isChecked() else 'STAFF'
+        label.setPixmap(QPixmap(f':WP/WP_{light}.png'))
 
     def closeEvent(self, event: QCloseEvent) -> None:
         if is_hooked():

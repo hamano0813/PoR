@@ -580,16 +580,6 @@
         <file alias="SID_GODDESSBLESS.gif">./SID/SID_GODDESSBLESS.gif</file>
         <file alias="SID_BRIGHTNESS.gif">./SID/SID_BRIGHTNESS.gif</file>
     </qresource>
-    <qresource prefix="AFF/">
-        <file alias="AFF_FIRE.gif">./AFF/AFF_FIRE.gif</file>
-        <file alias="AFF_THUNDER.gif">./AFF/AFF_THUNDER.gif</file>
-        <file alias="AFF_WIND.gif">./AFF/AFF_WIND.gif</file>
-        <file alias="AFF_WATER.gif">./AFF/AFF_WATER.gif</file>
-        <file alias="AFF_DARK.gif">./AFF/AFF_DARK.gif</file>
-        <file alias="AFF_LIGHT.gif">./AFF/AFF_LIGHT.gif</file>
-        <file alias="AFF_HEAVEN.gif">./AFF/AFF_HEAVEN.gif</file>
-        <file alias="AFF_EARTH.gif">./AFF/AFF_EARTH.gif</file>
-    </qresource>
     <qresource prefix="WP/">
         <file alias="WP_SWORD.png">./WP/WP_SWORD.png</file>
         <file alias="WP_LANCE.png">./WP/WP_LANCE.png</file>

@@ -5,7 +5,6 @@ from typing import Any, List
 from PySide6.QtWidgets import QListView
 from PySide6.QtCore import Qt, QAbstractListModel, QModelIndex
 from PySide6.QtGui import QIcon
-from dolphin_memory_engine import is_hooked
 from parameter import DataSetting, EnumData
 from .customize import Customize
 
@@ -69,9 +68,7 @@ class SlotModel(QAbstractListModel):
         return 1
 
     def rowCount(self, parent: QModelIndex = ...) -> int:
-        if is_hooked():
-            return DataSetting.COUNT
-        return 0
+        return DataSetting.COUNT
 
     def data(self, index: QModelIndex, role: int = ...) -> Any:
         if not index.isValid():

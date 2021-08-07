@@ -39,6 +39,7 @@ class Skill(BackgroundFrame):
             skill_layout.addWidget(self[mastery], idx + 32, 1, 1, 1)
 
         skill_layout.setContentsMargins(10, 5, 5, 5)
+        skill_layout.setSpacing(3)
         skill_frame.setLayout(skill_layout)
         skill_scroll = QScrollArea()
         skill_scroll.setFixedHeight(400)
@@ -49,12 +50,14 @@ class Skill(BackgroundFrame):
                                       value=DataSetting()[feature])
             feature_layout.addWidget(self[feature], idx, 0, 1, 1)
         feature_layout.setContentsMargins(10, 5, 5, 5)
+        feature_layout.setSpacing(3)
         feature_frame.setLayout(feature_layout)
         feature_scorll = QScrollArea()
         feature_scorll.setFixedHeight(400)
         feature_scorll.setWidget(feature_frame)
 
         main_layout = QGridLayout()
+        main_layout.setSpacing(3)
         main_layout.addWidget(skill_scroll, 0, 0, 1, 1)
         main_layout.addWidget(feature_scorll, 0, 1, 1, 1)
         self.setLayout(main_layout)
