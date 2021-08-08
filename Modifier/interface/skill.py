@@ -42,7 +42,6 @@ class Skill(BackgroundFrame):
         skill_layout.setSpacing(3)
         skill_frame.setLayout(skill_layout)
         skill_scroll = QScrollArea()
-        skill_scroll.setFixedHeight(400)
         skill_scroll.setWidget(skill_frame)
 
         for idx, feature in enumerate(EnumData.FEATURE_ENUM):
@@ -53,7 +52,6 @@ class Skill(BackgroundFrame):
         feature_layout.setSpacing(3)
         feature_frame.setLayout(feature_layout)
         feature_scorll = QScrollArea()
-        feature_scorll.setFixedHeight(400)
         feature_scorll.setWidget(feature_frame)
 
         main_layout = QGridLayout()

@@ -25,6 +25,7 @@ class Other(BackgroundFrame):
         7.人物的生理节奏与战斗次数有关，每战斗10次生理曲线前进1格，30格为一个周期<br>
         8.技能修改中的部分隐藏特性无效，未翻译的隐藏特性谨慎修改，除非你知道那代表什么<br>
         ''')
+        text_edit.setReadOnly(True)
 
         main_layout = QGridLayout()
         main_layout.addWidget(NameLabel('所持金'), 0, 0, 1, 1)
@@ -33,4 +34,5 @@ class Other(BackgroundFrame):
         main_layout.addWidget(self['奖励EX'], 1, 1, 1, 1)
         main_layout.addWidget(text_edit, 2, 0, 1, 3)
 
+        main_layout.setSpacing(3)
         self.setLayout(main_layout)

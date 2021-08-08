@@ -56,6 +56,7 @@ class Window(QMainWindow):
         self.setCentralWidget(main_frame)
         self.setWindowTitle('苍炎的轨迹 动态修改器 V1.0')
         self.setWindowIcon(QIcon(':/ICON/icon.png'))
+        self.setMinimumHeight(480)
 
         skill_frame['SID_EQUIPLIGHT'].stateChanged.connect(self.charge_light)
 
