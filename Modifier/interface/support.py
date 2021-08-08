@@ -40,9 +40,9 @@ class Support(BackgroundFrame):
                     self.support_row[idx][3].setRange(data[0] + 1, data[1] + 2)
                     self.support_row[idx][4].setRange(data[1] + 2, data[2] + 3)
                     self.support_row[idx][1].refresh()
-                    self.support_row[idx][2].refresh()
-                    self.support_row[idx][3].refresh()
-                    self.support_row[idx][4].refresh()
+                    self.support_row[idx][2].set_value(self.support_row[idx][1].value())
+                    self.support_row[idx][3].set_value(self.support_row[idx][1].value())
+                    self.support_row[idx][4].set_value(self.support_row[idx][1].value())
                 else:
                     self.support_row[idx][2].setRange(0, 0)
                     self.support_row[idx][3].setRange(0, 0)
@@ -61,5 +61,3 @@ class Support(BackgroundFrame):
             row[1].valueChanged[int].connect(row[4].set_value)
         name = self._parent.current_pid()
         self.set_support(name)
-        for child in self._child:
-            child.refresh()

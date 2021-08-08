@@ -15,12 +15,6 @@ class SupportBar(QProgressBar):
         QProgressBar::chunk {background-color: #05B8CC; width: 1px;}
         ''')
 
-    def refresh(self):
-        value = self.value()
-        self.setValue(self.maximum())
-        self.setValue(self.minimum())
-        self.setValue(value)
-
     def set_value(self, value: int):
         if value < self.minimum():
             self.setValue(self.minimum())
