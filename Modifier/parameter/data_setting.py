@@ -209,6 +209,9 @@ class DataSetting:
             'SID_EQREV_A': (0x802AF7A8, 0x4, 30),
             'SID_WEAK_A': (0x802AF7A8, 0x4, 31),
             'SID_AHIMSA': (0x802AF7AC, 0x4, 0),
+
+            '所持金': (0x8032E7A1, 0x3),
+            '奖励EX': (0x8032E7A5, 0x3),
         }
 
     def __getitem__(self, name: str):
