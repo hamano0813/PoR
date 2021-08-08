@@ -13,29 +13,31 @@ from interface.resource import *
 # noinspection PyUnresolvedReferences
 def main():
     app = QApplication(sys.argv)
+    if is_hooked():
+        box = QMessageBox(QMessageBox.Question, '选择语言', '界面名词使用语言')
+        box.setWindowIcon(QIcon(':/ICON/icon.png'))
+        accept = box.addButton('日文（原版）', QMessageBox.AcceptRole)
+        reject = box.addButton('汉化（默认）', QMessageBox.RejectRole)
+        accept.setFixedSize(120, 30)
+        reject.setFixedSize(120, 30)
+        box.exec()
+        language = 'jp' if box.clickedButton() == accept else 'zh'
 
-    box = QMessageBox()
-    box.setWindowIcon(QIcon(':/ICON/icon.png'))
-    box.setWindowTitle('选择语言')
-    box.setText('界面名词使用语言')
-    accept = box.addButton('日文（原版）', QMessageBox.AcceptRole)
-    reject = box.addButton('汉化（默认）', QMessageBox.RejectRole)
-    accept.setFixedSize(120, 30)
-    reject.setFixedSize(120, 30)
-    box.exec()
-    language = 'jp' if box.clickedButton() == accept else 'zh'
+        trans = QtCore.QTranslator()
+        trans.load(f':QM/{language}.qm')
+        app.installTranslator(trans)
+        app.setStyleSheet('* {font-family: "Iosevka Semibold", "Inziu Roboto SC"; font-size: 12pt;}')
 
-    trans = QtCore.QTranslator()
-    trans.load(f':QM/{language}.qm')
-    app.installTranslator(trans)
-    app.setStyleSheet('* {font-family: "Iosevka Semibold", "Inziu Roboto SC"; font-size: 12pt;}')
-
-    window = Window()
-    window.show()
-    sys.exit(app.exec())
+        window = Window()
+        window.show()
+        sys.exit(app.exec())
+    else:
+        box = QMessageBox(QMessageBox.Critical, '出错啦', '请先开始模拟游戏')
+        box.setWindowIcon(QIcon(':/ICON/icon.png'))
+        box.addButton('关闭', QMessageBox.NoRole)
+        sys.exit(box.exec())
 
 
 if __name__ == '__main__':
     hook()
-    if is_hooked():
-        main()
+    main()
