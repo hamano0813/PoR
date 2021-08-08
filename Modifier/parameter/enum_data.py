@@ -1749,51 +1749,99 @@ class EnumData(QObject):
                 (None, None),
             ),
         }
+        self.AFF_ENUM = {
+            self.tr('PID_IKE'): 'AFF_EARTH',
+            self.tr('PID_TIAMAT'): 'AFF_LIGHT',
+            self.tr('PID_SENERIO'): 'AFF_DARK',
+            self.tr('PID_MIST'): 'AFF_WATER',
+            self.tr('PID_OSCAR'): 'AFF_EARTH',
+            self.tr('PID_BOLE'): 'AFF_FIRE',
+            self.tr('PID_LOFA'): 'AFF_WIND',
+            self.tr('PID_CHINON'): 'AFF_THUNDER',
+            self.tr('PID_GATRIE'): 'AFF_LIGHT',
+            self.tr('PID_ERINCIA_QUEEN'): 'AFF_HEAVEN',
+            self.tr('PID_GEOFFRAY'): 'AFF_FIRE',
+            self.tr('PID_ULYSSES'): 'AFF_WIND',
+            self.tr('PID_KEVIN'): 'AFF_WIND',
+            self.tr('PID_KILROY'): 'AFF_FIRE',
+            self.tr('PID_LUCHINO'): 'AFF_EARTH',
+            self.tr('PID_ZIHARK'): 'AFF_EARTH',
+            self.tr('PID_DALAHOWE'): 'AFF_FIRE',
+            self.tr('PID_TANIS'): 'AFF_EARTH',
+            self.tr('PID_MARCIA'): 'AFF_FIRE',
+            self.tr('PID_MAKAROV'): 'AFF_THUNDER',
+            self.tr('PID_TOPUCK'): 'AFF_FIRE',
+            self.tr('PID_MWARIM'): 'AFF_THUNDER',
+            self.tr('PID_SOANVALCKE'): 'AFF_HEAVEN',
+            self.tr('PID_ELAICE'): 'AFF_LIGHT',
+            self.tr('PID_CALILL'): 'AFF_DARK',
+            self.tr('PID_LARGO'): 'AFF_WIND',
+            self.tr('PID_STELLA'): 'AFF_WIND',
+            self.tr('PID_VOKE'): 'AFF_WIND',
+            self.tr('PID_SOTHE'): 'AFF_WIND',
+            self.tr('PID_WAYU'): 'AFF_FIRE',
+            self.tr('PID_ENA'): 'AFF_EARTH',
+            self.tr('PID_HAAR'): 'AFF_WIND',
+            self.tr('PID_JILL'): 'AFF_THUNDER',
+            self.tr('PID_TAURONEO'): 'AFF_THUNDER',
+            self.tr('PID_NEPENEE'): 'AFF_WIND',
+            self.tr('PID_CHAP'): 'AFF_WATER',
+            self.tr('PID_NASIR'): 'AFF_LIGHT',
+            self.tr('PID_GIFFCA'): 'AFF_DARK',
+            self.tr('PID_LETHE'): 'AFF_HEAVEN',
+            self.tr('PID_MORDY'): 'AFF_WATER',
+            self.tr('PID_LAY'): 'AFF_WIND',
+            self.tr('PID_TIBARN'): 'AFF_HEAVEN',
+            self.tr('PID_VULCI'): 'AFF_WATER',
+            self.tr('PID_JANAFF'): 'AFF_THUNDER',
+            self.tr('PID_NAESALA'): 'AFF_DARK',
+            self.tr('PID_RIEUSION'): 'AFF_FIRE',
+        }
 
     def GROUP_MAPPING(self):
         return {
-            0x802C8364: self.tr("this"),  # 己方
-            0x802C8370: self.tr("enemy"),  # 敌
-            0x802C837C: self.tr("other"),  # 其他
-            0x802C8388: self.tr("friend"),  # 友好
-            0x802C8394: self.tr("death"),  # 死亡
-            0x802C83A0: self.tr("ready"),  # 未出击
-            0x802C83AC: self.tr("killed"),  # 己方阵亡
-            0x802C83B8: self.tr("ready"),  # 未出击
+            0x802C8364: self.tr('this'),  # 己方
+            0x802C8370: self.tr('enemy'),  # 敌
+            0x802C837C: self.tr('other'),  # 其他
+            0x802C8388: self.tr('friend'),  # 友好
+            0x802C8394: self.tr('death'),  # 死亡
+            0x802C83A0: self.tr('ready'),  # 未出击
+            0x802C83AC: self.tr('killed'),  # 己方阵亡
+            0x802C83B8: self.tr('ready'),  # 未出击
         }
 
     def ARMY_MAPPING(self):
         return {
-            0x01: self.tr("Crimea"),  # 克利米亚军
-            0x02: self.tr("Daein"),  # 迪恩军
-            0x03: self.tr("Daein"),  # 迪恩军
-            0x04: self.tr("Gallian"),  # 卡利亚军
-            0x05: self.tr("Bandit"),  # 山贼
-            0x06: self.tr("Pirate"),  # 海盗
-            0x07: self.tr("Elincia Reinforce"),  # 艾琳西娅增援
-            0x08: self.tr("Holy Guard"),  # 神使亲卫队
-            0x09: self.tr("Kariwa Bandit"),  # 卡利瓦山贼
-            0x0A: self.tr("Greil Mercenaries"),  # 古雷尔佣兵团
-            0x0B: self.tr("Begnion"),  # 贝格尼奥军
-            0x0C: self.tr("Pegasus Knight"),  # 天马骑士
-            0x0D: self.tr("Merchant"),  # 商队
-            0x0E: self.tr("Laguz Emancipation Army"),  # 拉格兹解放军
-            0x0F: self.tr("Dukedom of Tanas"),  # 塔那斯公爵军
-            0x10: self.tr("Thief"),  # 盗贼
-            0x11: self.tr("Kilvas"),  # 吉鲁瓦斯军
-            0x12: self.tr("Phoenicis"),  # 菲尼吉斯军
-            0x13: self.tr("Wild"),  # 无所属
-            0x14: self.tr("Palmeni"),  # 帕鲁梅尼僧
-            0x15: self.tr("Captive"),  # 俘虏
-            0x16: self.tr("Begnion Reinforce"),  # 贝格尼奥增援
-            0x17: self.tr("Vigilante"),  # 自卫团
-            0x18: self.tr("Holy Guard"),  # 神使亲卫队
-            0x19: self.tr("Mystery Army"),  # 谜之军队
-            0x1A: self.tr("Daein Remnant"),  # 迪恩残部
-            0x1B: self.tr("Mystery Force"),  # 谜之势力
-            0x1C: self.tr("Fighter"),  # 斗士
-            0x1D: self.tr("Serenes"),  # 鹭的住民
-            0x1E: self.tr("Alone Mercenary"),  # 孤身的佣兵
+            0x01: self.tr('Crimea'),  # 克利米亚军
+            0x02: self.tr('Daein'),  # 迪恩军
+            0x03: self.tr('Daein'),  # 迪恩军
+            0x04: self.tr('Gallian'),  # 卡利亚军
+            0x05: self.tr('Bandit'),  # 山贼
+            0x06: self.tr('Pirate'),  # 海盗
+            0x07: self.tr('Elincia Reinforce'),  # 艾琳西娅增援
+            0x08: self.tr('Holy Guard'),  # 神使亲卫队
+            0x09: self.tr('Kariwa Bandit'),  # 卡利瓦山贼
+            0x0A: self.tr('Greil Mercenaries'),  # 古雷尔佣兵团
+            0x0B: self.tr('Begnion'),  # 贝格尼奥军
+            0x0C: self.tr('Pegasus Knight'),  # 天马骑士
+            0x0D: self.tr('Merchant'),  # 商队
+            0x0E: self.tr('Laguz Emancipation Army'),  # 拉格兹解放军
+            0x0F: self.tr('Dukedom of Tanas'),  # 塔那斯公爵军
+            0x10: self.tr('Thief'),  # 盗贼
+            0x11: self.tr('Kilvas'),  # 吉鲁瓦斯军
+            0x12: self.tr('Phoenicis'),  # 菲尼吉斯军
+            0x13: self.tr('Wild'),  # 无所属
+            0x14: self.tr('Palmeni'),  # 帕鲁梅尼僧
+            0x15: self.tr('Captive'),  # 俘虏
+            0x16: self.tr('Begnion Reinforce'),  # 贝格尼奥增援
+            0x17: self.tr('Vigilante'),  # 自卫团
+            0x18: self.tr('Holy Guard'),  # 神使亲卫队
+            0x19: self.tr('Mystery Army'),  # 谜之军队
+            0x1A: self.tr('Daein Remnant'),  # 迪恩残部
+            0x1B: self.tr('Mystery Force'),  # 谜之势力
+            0x1C: self.tr('Fighter'),  # 斗士
+            0x1D: self.tr('Serenes'),  # 鹭的住民
+            0x1E: self.tr('Alone Mercenary'),  # 孤身的佣兵
         }
 
     def SUPPORT_MAPPING(self):

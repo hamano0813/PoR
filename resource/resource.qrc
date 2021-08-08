@@ -591,6 +591,17 @@
         <file alias="WP_STAFF.png">./WP/WP_STAFF.png</file>
         <file alias="WP_LIGHT.png">./WP/WP_LIGHT.png</file>
     </qresource>
+    <qresource prefix="AFF/">
+        <file alias="AFF_FIRE.gif">./AFF/AFF_FIRE.gif</file>
+        <file alias="AFF_THUNDER.gif">./AFF/AFF_THUNDER.gif</file>
+        <file alias="AFF_WIND.gif">./AFF/AFF_WIND.gif</file>
+        <file alias="AFF_WATER.gif">./AFF/AFF_WATER.gif</file>
+        <file alias="AFF_DARK.gif">./AFF/AFF_DARK.gif</file>
+        <file alias="AFF_LIGHT.gif">./AFF/AFF_LIGHT.gif</file>
+        <file alias="AFF_HEAVEN.gif">./AFF/AFF_HEAVEN.gif</file>
+        <file alias="AFF_EARTH.gif">./AFF/AFF_EARTH.gif</file>
+        <file alias="blank.gif">blank.png</file>
+    </qresource>
     <qresource prefix="QM/">
         <file alias="zh.qm">./QM/zh.qm</file>
         <file alias="jp.qm">./QM/jp.qm</file>
