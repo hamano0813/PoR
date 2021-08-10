@@ -1,0 +1,17 @@
+NameLabel {
+    border:1px solid #808080;
+}
+
+
+SupportBar {
+    text-align: center;
+    font: bold;
+    border: 1px solid #202020;
+    border-radius: 3px;
+}
+
+SupportBar::chunk {
+    background-color: #05B8CC;
+    width: 1px;
+}
+

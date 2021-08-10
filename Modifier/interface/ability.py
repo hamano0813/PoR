@@ -1,11 +1,11 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from PySide6.QtWidgets import QGridLayout, QSpacerItem, QSizePolicy
-from PySide6.QtCore import Qt, QSize
+from PySide6.QtWidgets import QLabel, QGridLayout, QSpacerItem, QSizePolicy
+from PySide6.QtCore import Qt
 from PySide6.QtGui import QPixmap
 from widget import BackgroundFrame, NameLabel, ValueSpin
-from parameter import DataSetting, EnumData
+from parameter import DataSetting
 
 
 # noinspection PyTypeChecker
@@ -75,10 +75,9 @@ class Ability(BackgroundFrame):
             if idx < 8:
                 main_layout.addWidget(self[f'E_{ability}'], idx + 1, 2)
         for idx, (name, weapon) in enumerate(self.WEAPON.items()):
-            label = NameLabel(name)
+            label = QLabel(name)
+            label.setFixedWidth(40)
             label.setPixmap(QPixmap(f':WP/WP_{name}.png'))
-            label.setStyleSheet('')
-            label.setFixedWidth(50)
             label.setAlignment(Qt.AlignRight | Qt.AlignVCenter)
             main_layout.addWidget(label, idx + 1, 3)
             main_layout.addWidget(self[f'{weapon}'], idx + 1, 4)

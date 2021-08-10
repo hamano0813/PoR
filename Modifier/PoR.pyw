@@ -3,9 +3,10 @@
 
 import sys
 from PySide6.QtWidgets import QApplication, QMessageBox
-from PySide6.QtGui import QIcon, QFontDatabase
+from PySide6.QtGui import QIcon
 from dolphin_memory_engine import hook, is_hooked
 from interface.window import Window
+from interface.language import get_language
 # noinspection PyUnresolvedReferences
 from interface.resource import *
 
@@ -13,17 +14,14 @@ from interface.resource import *
 # noinspection PyUnresolvedReferences
 def main():
     app = QApplication(sys.argv)
-    QFontDatabase.addApplicationFont(":FONT/roboto.ttc")
-    if is_hooked():
-        box = QMessageBox(QMessageBox.Question, '选择语言', '界面名词使用语言')
-        box.setWindowIcon(QIcon(':/ICON/icon.png'))
-        accept = box.addButton('日文（原版）', QMessageBox.AcceptRole)
-        reject = box.addButton('汉化（默认）', QMessageBox.RejectRole)
-        accept.setFixedSize(120, 30)
-        reject.setFixedSize(120, 30)
-        box.exec()
-        language = 'jp' if box.clickedButton() == accept else 'zh'
 
+    if is_hooked():
+        qss = QtCore.QFile(':QSS/custom.qss')
+        qss.open(QtCore.QFile.ReadOnly)
+        stylesheet = bytearray(qss.readAll()).decode('UTF-8')
+        app.setStyleSheet(stylesheet)
+
+        language = get_language()
         trans = QtCore.QTranslator()
         trans.load(f':QM/{language}.qm')
         app.installTranslator(trans)

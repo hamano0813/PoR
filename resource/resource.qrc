@@ -610,4 +610,7 @@
         <file alias="icon.png">icon.png</file>
         <file alias="blank.png">blank.png</file>
     </qresource>
+    <qresource prefix="QSS/">
+        <file alias="custom.qss">./QSS/custom.qss</file>
+    </qresource>
 </RCC>

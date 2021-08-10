@@ -7,17 +7,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d46fa3eb-b3fc-4a28-b979-0366497ae973" name="Default Changelist" comment="#39.更新程序启动入口">
-      <change beforePath="$PROJECT_DIR$/.idea/PoR.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PoR.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="d46fa3eb-b3fc-4a28-b979-0366497ae973" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Modifier/interface/language.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resource/QSS/custom.qss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Modifier/PoR.pyw" beforeDir="false" afterPath="$PROJECT_DIR$/Modifier/PoR.pyw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modifier/interface/ability.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modifier/interface/ability.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Modifier/interface/resource.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modifier/interface/resource.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modifier/interface/skill.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modifier/interface/skill.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Modifier/interface/support.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modifier/interface/support.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modifier/interface/window.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modifier/interface/window.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modifier/parameter/enum_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modifier/parameter/enum_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modifier/widget/slot_list.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modifier/widget/slot_list.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modifier/widget/name_label.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modifier/widget/name_label.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modifier/widget/support_bar.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modifier/widget/support_bar.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource/resource.qrc" beforeDir="false" afterPath="$PROJECT_DIR$/resource/resource.qrc" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +56,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resource/FONT" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ChinaMobile/RetiredSystem/RetiredSystem.pyw" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -371,7 +371,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628411924347</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="#40.程序启动逻辑">
+      <created>1628574466973</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1628574466973</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -389,7 +396,6 @@
   <component name="VcsManagerConfiguration">
     <confirmRemoveEmptyChangelist value="2" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="#10.增加Pycharm项目文件" />
     <MESSAGE value="#11.更新状态界面以包含所有必要控件" />
     <MESSAGE value="#12.更新主界面退出时断开钩子" />
     <MESSAGE value="#13.更新列表显示文字效果" />
@@ -414,6 +420,7 @@
     <MESSAGE value="#36.增加金钱和奖励EX的修改" />
     <MESSAGE value="#37.调整显示效果" />
     <MESSAGE value="#38.增加支援界面属性展示" />
-    <option name="LAST_COMMIT_MESSAGE" value="#38.增加支援界面属性展示" />
+    <MESSAGE value="#40.程序启动逻辑" />
+    <option name="LAST_COMMIT_MESSAGE" value="#40.程序启动逻辑" />
   </component>
 </project>

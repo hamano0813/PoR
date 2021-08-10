@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from PySide6.QtWidgets import QGridLayout, QSpacerItem, QSizePolicy
+from PySide6.QtWidgets import QLabel, QGridLayout, QSpacerItem, QSizePolicy
 from PySide6.QtGui import QPixmap
 from widget import BackgroundFrame, ValueSpin, SupportBar, NameLabel
 from parameter import DataSetting, EnumData
@@ -13,7 +13,7 @@ class Support(BackgroundFrame):
         BackgroundFrame.__init__(self, parent)
         self.support_row = list()
 
-        self.current_aff = NameLabel('')
+        self.current_aff = QLabel()
         self.current_aff.setFixedSize(30, 30)
         self.current_name = NameLabel('')
         self.current_name.setFixedSize(100, 30)
@@ -22,7 +22,7 @@ class Support(BackgroundFrame):
         main_layout.addWidget(self.current_aff, 0, 0, 1, 1)
         main_layout.addWidget(self.current_name, 0, 1, 1, 1)
         for idx in range(1, 8):
-            aff_label = NameLabel('')
+            aff_label = QLabel()
             aff_label.setFixedSize(30, 30)
             name_label = NameLabel('')
             name_label.setFixedSize(100, 30)
@@ -77,6 +77,4 @@ class Support(BackgroundFrame):
                     widget.setHidden(True)
 
     def refresh(self):
-
-        name = self._parent.current_pid()
-        self.set_support(name)
+        self.set_support(self._parent.current_pid())

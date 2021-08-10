@@ -11,5 +11,4 @@ class NameLabel(QLabel):
         self.setAlignment(Qt.AlignCenter)
         self.setFixedWidth(80)
         self.setMinimumHeight(30)
-        self.setStyleSheet("* {border:1px solid #808080;}")
         self.setSizePolicy(QSizePolicy.Fixed, QSizePolicy.Preferred)
