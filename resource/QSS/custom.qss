@@ -15,3 +15,6 @@ SupportBar::chunk {
     width: 1px;
 }
 
+.action {
+    margin-left: 20px;
+}

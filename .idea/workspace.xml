@@ -1,80 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AnalysisUIOptions">
-    <option name="SCOPE_TYPE" value="3" />
-  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d46fa3eb-b3fc-4a28-b979-0366497ae973" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Modifier/interface/language.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resource/QSS/custom.qss" afterDir="false" />
+    <list default="true" id="e2f6064c-2996-4e61-8d95-f77f7396516e" name="Changes" comment="#42">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modifier/PoR.pyw" beforeDir="false" afterPath="$PROJECT_DIR$/Modifier/PoR.pyw" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modifier/interface/ability.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modifier/interface/ability.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modifier/interface/resource.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modifier/interface/resource.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modifier/interface/support.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modifier/interface/support.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modifier/widget/name_label.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modifier/widget/name_label.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modifier/widget/support_bar.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modifier/widget/support_bar.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource/resource.qrc" beforeDir="false" afterPath="$PROJECT_DIR$/resource/resource.qrc" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Blank Requirements File" />
-        <option value="Python Script" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="RESET_MODE" value="HARD" />
   </component>
-  <component name="GitSEFilterConfiguration">
-    <file-type-list>
-      <filtered-out-file-type name="LOCAL_BRANCH" />
-      <filtered-out-file-type name="REMOTE_BRANCH" />
-      <filtered-out-file-type name="TAG" />
-      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
-    </file-type-list>
-  </component>
-  <component name="ProjectId" id="1vqOQdqGQxW1U1fqOiZBmjbNsNg" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showLibraryContents" value="true" />
-  </component>
-  <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ChinaMobile/RetiredSystem/RetiredSystem.pyw" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Python\PoR\resource\FONT" />
-      <recent name="D:\Python\PoR\resource\QM" />
-      <recent name="D:\Python\PoR" />
-      <recent name="D:\Python\PoR\resource" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Python\PoR\Modifier\interface" />
-      <recent name="D:\Python\PoR\Modifier" />
-      <recent name="D:\Python\PoR\path_of_radiance" />
-      <recent name="D:\Python\path_of_radiance" />
-      <recent name="D:\Python\PoR\path_of_radiance\programs" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Python.PoR.pyw">
+  <component name="RunManager">
     <configuration name="PoR.pyw" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PoR" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -96,289 +38,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="enum_data" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="PoR" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Modifier/parameter" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Modifier/parameter/enum_data.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.PoR.pyw" />
-        <item itemvalue="Python.enum_data" />
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="d46fa3eb-b3fc-4a28-b979-0366497ae973" name="Default Changelist" comment="" />
-      <created>1627286138158</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1627286138158</updated>
-    </task>
-    <task id="LOCAL-00001" summary="#1.新建项目文件">
-      <created>1627965006829</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1627965006829</updated>
-    </task>
-    <task id="LOCAL-00002" summary="#2.添加资源文件">
-      <created>1627965057190</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1627965057190</updated>
-    </task>
-    <task id="LOCAL-00003" summary="#3.新建数据解析模块">
-      <created>1627965093456</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1627965093456</updated>
-    </task>
-    <task id="LOCAL-00004" summary="#4.新建数据设定和枚举模块">
-      <created>1627965126931</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1627965126931</updated>
-    </task>
-    <task id="LOCAL-00005" summary="#5.新建控件模块">
-      <created>1627965163165</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1627965163165</updated>
-    </task>
-    <task id="LOCAL-00006" summary="#6.新建界面模块">
-      <created>1627965202756</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1627965202756</updated>
-    </task>
-    <task id="LOCAL-00007" summary="#7.加入资源打包文件">
-      <created>1627965253131</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1627965253131</updated>
-    </task>
-    <task id="LOCAL-00008" summary="#8.新增项目可执行文件和配置文件">
-      <created>1627965294890</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1627965294890</updated>
-    </task>
-    <task id="LOCAL-00009" summary="#9.提交Pycharm项目文件">
-      <created>1627965449093</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1627965449093</updated>
-    </task>
-    <task id="LOCAL-00010" summary="#10.增加Pycharm项目文件">
-      <created>1627965491268</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1627965491268</updated>
-    </task>
-    <task id="LOCAL-00011" summary="#11.更新状态界面以包含所有必要控件">
-      <created>1627973007458</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1627973007458</updated>
-    </task>
-    <task id="LOCAL-00012" summary="#12.更新主界面退出时断开钩子">
-      <created>1627973045887</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1627973045887</updated>
-    </task>
-    <task id="LOCAL-00013" summary="#13.更新列表显示文字效果">
-      <created>1627973086716</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1627973086716</updated>
-    </task>
-    <task id="LOCAL-00014" summary="#14.取消样式表">
-      <created>1627973117917</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1627973117917</updated>
-    </task>
-    <task id="LOCAL-00015" summary="#15.修正命名错误">
-      <created>1627973666108</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1627973666108</updated>
-    </task>
-    <task id="LOCAL-00016" summary="#19.撤销项目界面翻译">
-      <created>1628004426486</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1628004426486</updated>
-    </task>
-    <task id="LOCAL-00017" summary="#20.修正数据设定错误">
-      <created>1628004445377</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1628004445377</updated>
-    </task>
-    <task id="LOCAL-00018" summary="#21.修正私有属性">
-      <created>1628054992243</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1628054992243</updated>
-    </task>
-    <task id="LOCAL-00019" summary="#22.新增支援显示进度条">
-      <created>1628055030338</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1628055030338</updated>
-    </task>
-    <task id="LOCAL-00020" summary="#23.修正控件数据写入错误">
-      <created>1628055060986</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1628055060986</updated>
-    </task>
-    <task id="LOCAL-00021" summary="#24.调整显示效果">
-      <created>1628055267006</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1628055267006</updated>
-    </task>
-    <task id="LOCAL-00022" summary="#25.增加支援修改功能">
-      <created>1628055275200</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1628055275200</updated>
-    </task>
-    <task id="LOCAL-00023" summary="#26.增加支援枚举信息">
-      <created>1628055304667</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1628055304667</updated>
-    </task>
-    <task id="LOCAL-00024" summary="#28.调增界面布局">
-      <created>1628150676927</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1628150676927</updated>
-    </task>
-    <task id="LOCAL-00025" summary="#29.增加能力修改功能">
-      <created>1628152590490</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1628152590490</updated>
-    </task>
-    <task id="LOCAL-00026" summary="#30.完成支援枚举">
-      <created>1628156310611</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1628156310611</updated>
-    </task>
-    <task id="LOCAL-00027" summary="#31.调整显示效果">
-      <created>1628179316850</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1628179316850</updated>
-    </task>
-    <task id="LOCAL-00028" summary="#32.增加技能修改">
-      <created>1628236680156</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1628236680156</updated>
-    </task>
-    <task id="LOCAL-00029" summary="#33.增加技能翻译">
-      <created>1628243459088</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1628243459088</updated>
-    </task>
-    <task id="LOCAL-00030" summary="#34.新增界面翻译语言选择">
-      <created>1628340096045</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1628340096045</updated>
-    </task>
-    <task id="LOCAL-00031" summary="#35.修正支援显示逻辑错误">
-      <created>1628407983267</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1628407983267</updated>
-    </task>
-    <task id="LOCAL-00032" summary="#36.增加金钱和奖励EX的修改">
-      <created>1628408047588</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1628408047588</updated>
-    </task>
-    <task id="LOCAL-00033" summary="#37.调整显示效果">
-      <created>1628411896330</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1628411896330</updated>
-    </task>
-    <task id="LOCAL-00034" summary="#38.增加支援界面属性展示">
-      <created>1628411924347</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1628411924347</updated>
-    </task>
-    <task id="LOCAL-00035" summary="#40.程序启动逻辑">
-      <created>1628574466973</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1628574466973</updated>
-    </task>
-    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -392,35 +58,5 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <confirmRemoveEmptyChangelist value="2" />
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="#11.更新状态界面以包含所有必要控件" />
-    <MESSAGE value="#12.更新主界面退出时断开钩子" />
-    <MESSAGE value="#13.更新列表显示文字效果" />
-    <MESSAGE value="#14.取消样式表" />
-    <MESSAGE value="#15.修正命名错误" />
-    <MESSAGE value="#19.撤销项目界面翻译" />
-    <MESSAGE value="#20.修正数据设定错误" />
-    <MESSAGE value="#21.修正私有属性" />
-    <MESSAGE value="#22.新增支援显示进度条" />
-    <MESSAGE value="#23.修正控件数据写入错误" />
-    <MESSAGE value="#24.调整显示效果" />
-    <MESSAGE value="#25.增加支援修改功能" />
-    <MESSAGE value="#26.增加支援枚举信息" />
-    <MESSAGE value="#28.调增界面布局" />
-    <MESSAGE value="#29.增加能力修改功能" />
-    <MESSAGE value="#30.完成支援枚举" />
-    <MESSAGE value="#31.调整显示效果" />
-    <MESSAGE value="#32.增加技能修改" />
-    <MESSAGE value="#33.增加技能翻译" />
-    <MESSAGE value="#34.新增界面翻译语言选择" />
-    <MESSAGE value="#35.修正支援显示逻辑错误" />
-    <MESSAGE value="#36.增加金钱和奖励EX的修改" />
-    <MESSAGE value="#37.调整显示效果" />
-    <MESSAGE value="#38.增加支援界面属性展示" />
-    <MESSAGE value="#40.程序启动逻辑" />
-    <option name="LAST_COMMIT_MESSAGE" value="#40.程序启动逻辑" />
   </component>
 </project>

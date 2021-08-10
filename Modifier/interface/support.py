@@ -75,6 +75,7 @@ class Support(BackgroundFrame):
             for row in self.support_row:
                 for widget in row:
                     widget.setHidden(True)
+        self.current_name.setHidden(not support_data)
 
     def refresh(self):
         self.set_support(self._parent.current_pid())

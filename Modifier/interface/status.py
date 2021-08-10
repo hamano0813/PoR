@@ -21,7 +21,8 @@ class Status(BackgroundFrame):
         self['部队'] = MapCombo(self, EnumData().ARMY_MAPPING, value=DataSetting()['部队'])
         self['首领'] = BoolCheck(self, '部队首领', value=DataSetting()['首领'])
         self['同行'] = MapCombo(self, self.parent().SLOT_MAPPING, value=DataSetting()['同行'])
-        self['行动'] = BoolCheck(self, '行动完毕', value=DataSetting()['行动'])
+        self['行动'] = BoolCheck(self, {'未行动': 0, '锁定未行动': 0, '行动完毕': 1}, value=DataSetting()['行动'])
+        self['行动'].setProperty('class', 'action')
         self['救出'] = BoolCheck(self, '救出', value=DataSetting()['救出'])
         self['被救'] = BoolCheck(self, '被救', value=DataSetting()['被救'])
         self['序号'] = ValueSpin(self, value=DataSetting()['序号'])
@@ -82,7 +83,7 @@ class Status(BackgroundFrame):
         main_layout.addWidget(self['麻痹'], 9, 3, 1, 1)
         main_layout.addWidget(self['坐标Ｘ'], 5, 5, 1, 1)
         main_layout.addWidget(self['坐标Ｙ'], 6, 5, 1, 1)
-        main_layout.addWidget(self['行动'], 7, 4, 1, 2, Qt.AlignCenter)
+        main_layout.addWidget(self['行动'], 7, 4, 1, 2, Qt.AlignLeft)
         main_layout.addWidget(self['战斗'], 8, 5, 1, 1)
         main_layout.addWidget(self['胜利'], 9, 5, 1, 1)
 
