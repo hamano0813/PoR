@@ -49,6 +49,8 @@ class Support(BackgroundFrame):
 
     def set_support(self, name: str):
         current = EnumData().PID_ENUM.get(name)
+        if not current:
+            return
         self.current_name.setText(current)
         self.current_aff.setPixmap(QPixmap(f':AFF/{EnumData().AFF_ENUM.get(current, "blank")}.gif'))
         if support_data := EnumData().SUPPORT_MAPPING().get(name):

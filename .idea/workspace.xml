@@ -8,9 +8,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d46fa3eb-b3fc-4a28-b979-0366497ae973" name="Default Changelist" comment="#39.更新程序启动入口">
+      <change beforePath="$PROJECT_DIR$/.idea/PoR.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PoR.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Modifier/PoR.pyw" beforeDir="false" afterPath="$PROJECT_DIR$/Modifier/PoR.pyw" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modifier/interface/other.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modifier/interface/other.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modifier/interface/resource.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modifier/interface/resource.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modifier/interface/skill.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modifier/interface/skill.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modifier/interface/support.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modifier/interface/support.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modifier/interface/window.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modifier/interface/window.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modifier/parameter/enum_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modifier/parameter/enum_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modifier/widget/slot_list.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modifier/widget/slot_list.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,11 +56,12 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ChinaMobile/RetiredSystem/program/main_window.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resource/FONT" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Python\PoR\resource\FONT" />
       <recent name="D:\Python\PoR\resource\QM" />
       <recent name="D:\Python\PoR" />
       <recent name="D:\Python\PoR\resource" />
@@ -120,7 +128,6 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="d46fa3eb-b3fc-4a28-b979-0366497ae973" name="Default Changelist" comment="" />
-      <changelist id="" name="调整显示效果" comment="#37.调整显示效果" />
       <created>1627286138158</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />

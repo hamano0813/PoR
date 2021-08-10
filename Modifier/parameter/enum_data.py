@@ -1865,3 +1865,4 @@ class EnumData(QObject):
             if text := Text.get_text(offset[0] + DataSetting.STEP * idx):
                 address = read_word(offset[0]) - list(enum_dict.keys()).index(text) * offset[-1]
                 return {address + offset[-1] * i: enum_item for i, enum_item in enumerate(enum_dict.items())}
+        return {}

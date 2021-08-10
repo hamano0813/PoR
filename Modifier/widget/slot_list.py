@@ -14,8 +14,8 @@ class SlotList(QListView, Customize):
         QListView.__init__(self, parent)
         Customize.__init__(self, parent, **kwargs)
         self._child: List[Customize] = list()
-        self.pid_mapping = EnumData().PID_MAPPING().copy()
-        self.jid_mapping = EnumData().JID_MAPPING().copy()
+        self.pid_mapping = dict()
+        self.jid_mapping = dict()
         self.pid_sequence = list()
         self.jid_sequence = list()
         self.slot = dict()
@@ -30,6 +30,8 @@ class SlotList(QListView, Customize):
 
     def refresh(self):
         self.disconnect(self)
+        self.pid_mapping = EnumData().PID_MAPPING().copy()
+        self.jid_mapping = EnumData().JID_MAPPING().copy()
         self.pid_sequence = self.sequence('PID').copy()
         self.jid_sequence = self.sequence('JID').copy()
         self.setModel(SlotModel(self))
@@ -41,14 +43,13 @@ class SlotList(QListView, Customize):
                 self.setRowHidden(idx, True)
             else:
                 self.setRowHidden(idx, False)
-                self.slot[DataSetting.SLOT + DataSetting.STEP * idx] = self.pid_mapping.get(self.pid_sequence[idx])[-1]
+                self.slot[DataSetting.SLOT + DataSetting.STEP * idx] = self.pid_mapping.get(self.pid_sequence[idx], ('', ''))[-1]
         for widget in self._child:
             widget.refresh()
 
     def current_pid(self):
         if pid := self.model().data(self.currentIndex(), Qt.ToolTipRole):
             return pid
-        return 'PID_IKE'
 
     def add_child(self, widget: Customize):
         self._child.append(widget)

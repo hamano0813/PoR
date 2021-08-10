@@ -3,7 +3,7 @@
 
 import sys
 from PySide6.QtWidgets import QApplication, QMessageBox
-from PySide6.QtGui import QIcon
+from PySide6.QtGui import QIcon, QFontDatabase
 from dolphin_memory_engine import hook, is_hooked
 from interface.window import Window
 # noinspection PyUnresolvedReferences
@@ -13,6 +13,7 @@ from interface.resource import *
 # noinspection PyUnresolvedReferences
 def main():
     app = QApplication(sys.argv)
+    QFontDatabase.addApplicationFont(":FONT/roboto.ttc")
     if is_hooked():
         box = QMessageBox(QMessageBox.Question, '选择语言', '界面名词使用语言')
         box.setWindowIcon(QIcon(':/ICON/icon.png'))
@@ -26,7 +27,6 @@ def main():
         trans = QtCore.QTranslator()
         trans.load(f':QM/{language}.qm')
         app.installTranslator(trans)
-        app.setStyleSheet('* {font-family: "Iosevka Semibold", "Inziu Roboto SC"; font-size: 12pt;}')
 
         window = Window()
         window.show()
