@@ -4,7 +4,7 @@
 from typing import Any, List
 from PySide6.QtWidgets import QListView
 from PySide6.QtCore import Qt, QAbstractListModel, QModelIndex
-from PySide6.QtGui import QIcon
+from PySide6.QtGui import QIcon, QMouseEvent
 from parameter import DataSetting, EnumData
 from .customize import Customize
 
@@ -48,8 +48,11 @@ class SlotList(QListView, Customize):
             widget.refresh()
 
     def current_pid(self):
+        if not self.pid_mapping:
+            return None
         if pid := self.model().data(self.currentIndex(), Qt.ToolTipRole):
             return pid
+        return 'PID_IKE'
 
     def add_child(self, widget: Customize):
         self._child.append(widget)

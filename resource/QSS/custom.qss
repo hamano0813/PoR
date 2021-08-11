@@ -2,7 +2,6 @@ NameLabel {
     border:1px solid #808080;
 }
 
-
 SupportBar {
     text-align: center;
     font: bold;
@@ -16,5 +15,14 @@ SupportBar::chunk {
 }
 
 .action {
-    margin-left: 20px;
+    margin-left: 15px;
+}
+
+QPushButton {
+    border: 1px solid #808080;
+}
+
+QPushButton::hover {
+    border: 1px solid #0078ED;
+    background-color: #E2F1FB;
 }
