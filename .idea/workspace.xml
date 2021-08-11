@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e2f6064c-2996-4e61-8d95-f77f7396516e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modifier/widget/bool_check.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modifier/widget/bool_check.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.MD" beforeDir="false" afterPath="$PROJECT_DIR$/README.MD" afterDir="false" />
-    </list>
+    <list default="true" id="e2f6064c-2996-4e61-8d95-f77f7396516e" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -84,7 +80,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628642515590</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="#44.调整README及锁定操作的写入间隔">
+      <created>1628693102443</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1628693102443</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -103,6 +106,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="#42.增加锁定无限行动功能" />
     <MESSAGE value="#43.调整显示样式" />
-    <option name="LAST_COMMIT_MESSAGE" value="#43.调整显示样式" />
+    <MESSAGE value="#44.调整README及锁定操作的写入间隔" />
+    <option name="LAST_COMMIT_MESSAGE" value="#44.调整README及锁定操作的写入间隔" />
   </component>
 </project>
