@@ -16,7 +16,7 @@ class LockThread(QThread):
     def run(self):
         while True:
             self.structure.set(self.lock_value, self.offset)
-            self.msleep(100)
+            self.msleep(10)
 
 
 class BoolCheck(Customize, QCheckBox):

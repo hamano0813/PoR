@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e2f6064c-2996-4e61-8d95-f77f7396516e" name="Changes" comment="#42.增加锁定无限行动功能">
+    <list default="true" id="e2f6064c-2996-4e61-8d95-f77f7396516e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modifier/PoR.pyw" beforeDir="false" afterPath="$PROJECT_DIR$/Modifier/PoR.pyw" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modifier/widget/slot_list.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modifier/widget/slot_list.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource/QSS/custom.qss" beforeDir="false" afterPath="$PROJECT_DIR$/resource/QSS/custom.qss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modifier/widget/bool_check.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modifier/widget/bool_check.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.MD" beforeDir="false" afterPath="$PROJECT_DIR$/README.MD" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +27,11 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Python\PoR\Modifier\interface" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="PoR.pyw" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -73,7 +77,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628609587435</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="#43.调整显示样式">
+      <created>1628642515590</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1628642515590</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -91,6 +102,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="#42.增加锁定无限行动功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="#42.增加锁定无限行动功能" />
+    <MESSAGE value="#43.调整显示样式" />
+    <option name="LAST_COMMIT_MESSAGE" value="#43.调整显示样式" />
   </component>
 </project>
