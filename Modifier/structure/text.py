@@ -17,12 +17,3 @@ class Text:
             offset += 1
         # print(f"0x{_offset:08X}: self.tr('{text}'),")
         return text
-
-
-# if __name__ == '__main__':
-#     from dolphin_memory_engine import hook
-#
-#     hook()
-#     for i in range(32):
-#         t = Text.get_text(0x8080A614 + 0x18 * i)
-        # print(f"'{t}': self.tr('{t}'),")

@@ -9,11 +9,12 @@ from structure import Text
 
 # noinspection PyTypeChecker,SpellCheckingInspection,PyPep8Naming
 class EnumData(QObject):
-    AID_OFFSET = 0x802AF760, 0x14
-    PID_OFFSET = 0x802AF76C, 0x64
-    JID_OFFSET = 0x802AF770, 0x64
-    IID_OFFSET = 0x802AF7B0, 0x48
-    MTYPE_OFFSET = 0x8080A614, 0x18
+    AID_SETTING = 0x802AF760, 0x14
+    PID_SETTING = 0x802AF76C, 0x64
+    JID_SETTING = 0x802AF770, 0x64
+    IID_SETTING = 0x802AF7B0, 0x48
+    SEQ_SETTING = 0x80511258, 0x10
+    MTYPE_SETTING = 0x80511048, 0x10
     SKILL_ENUM = (
         'SID_ELITE',
         'SID_TURNREGENE',
@@ -1379,118 +1380,118 @@ class EnumData(QObject):
             'SID_WEAK_A': self.tr('SID_WEAK_A'),
             'SID_AHIMSA': self.tr('SID_AHIMSA'),
         }
-        self.MTYPE_ENUM = {
-            0x8080EC52: self.tr('MTYPE_NORMAL'),
-            0x8080EBBE: self.tr('MTYPE_BULL'),
-            0x8080EBB3: self.tr('MTYPE_BEAR'),
-            0x8080EBD4: self.tr('MTYPE_FOUL'),
-            0x8080EBC9: self.tr('MTYPE_FOOL'),
-            0x8080EB94: self.tr('MTYPE_ARCHER'),
-            0x8080EBA1: self.tr('MTYPE_ARMORKILLER'),
-            0x8080EC13: self.tr('MTYPE_KNIGHTKILLER'),
-            0x8080EC01: self.tr('MTYPE_HUMANKILLER'),
-            0x8080EB81: self.tr('MTYPE_ANIMALKILLER'),
-            0x8080EC26: self.tr('MTYPE_LONGRANGE'),
-            0x8080EC36: self.tr('MTYPE_MAGEKILLER'),
-            0x8080EBF0: self.tr('MTYPE_HEROKILLER'),
-            0x8080EBDF: self.tr('MTYPE_GREENFORCE'),
-            0x8080EC5F: self.tr('MTYPE_TEST00'),
-            0x8080EC6C: self.tr('MTYPE_TEST01'),
-            0x8080EC79: self.tr('MTYPE_TEST02'),
-            0x8080EC86: self.tr('MTYPE_TEST03'),
-            0x8080EC93: self.tr('MTYPE_TEST04'),
-            0x8080ECA0: self.tr('MTYPE_TEST05'),
-            0x8080ECAD: self.tr('MTYPE_TEST06'),
-            0x8080ECBA: self.tr('MTYPE_TEST07'),
-            0x8080ECC7: self.tr('MTYPE_TEST08'),
-            0x8080ECD4: self.tr('MTYPE_TEST09'),
-            0x8080ECE1: self.tr('MTYPE_TEST10'),
-            0x8080ECEE: self.tr('MTYPE_TEST11'),
-            0x8080ECFB: self.tr('MTYPE_TEST12'),
-            0x8080ED08: self.tr('MTYPE_TEST13'),
-            0x8080ED15: self.tr('MTYPE_TEST14'),
-            0x8080ED22: self.tr('MTYPE_TEST15'),
-            0x8080ED2F: self.tr('MTYPE_TEST16'),
-            0x8080EC47: self.tr('MTYPE_NONE'),
-        }
         self.SEQ_ENUM = {
-            0x8080EE0D: self.tr('SEQ_ALLATK100_BLACKNIGHT'),
-            0x8080EE26: self.tr('SEQ_ALLATK100_DIRECT'),
-            0x8080EE3B: self.tr('SEQ_ALLATK100_FOR_CHINON'),
-            0x8080EE54: self.tr('SEQ_ALLATK100_FOR_ZIHARK'),
-            0x8080EE6D: self.tr('SEQ_ALLATK100_NOCHILD'),
-            0x8080EE83: self.tr('SEQ_ALLATK100_NOGREIL'),
-            0x8080EE99: self.tr('SEQ_ALLATK100_NOIKE'),
-            0x8080EEAD: self.tr('SEQ_ALLATK100_NOJILL'),
-            0x8080EEC2: self.tr('SEQ_ALLATK100_NOLAGU'),
-            0x8080EED7: self.tr('SEQ_ALLATK100_NOLEARNE'),
-            0x8080EEEE: self.tr('SEQ_ALLATK100_NOMIST'),
-            0x8080EF03: self.tr('SEQ_ALLATK100_NOPRAGUE'),
-            0x8080EF1A: self.tr('SEQ_ALLATK100_NORIEUSION'),
-            0x8080EF33: self.tr('SEQ_ALLUNITATTACK100'),
-            0x8080EF48: self.tr('SEQ_ALLUNITATTACK100_GAMBLE50'),
-            0x8080EF66: self.tr('SEQ_ALLUNITATTACK100_ROCK100'),
-            0x8080EF83: self.tr('SEQ_ALLUNITATTACK100_SHOOT100'),
-            0x8080EFA1: self.tr('SEQ_ALLUNITATTACK100_TACKLE100'),
-            0x8080EFC0: self.tr('SEQ_ALLUNITATTACK50'),
-            0x8080EFD4: self.tr('SEQ_ALLUNITATTACK80'),
-            0x8080EFE8: self.tr('SEQ_ALLUNITROD100'),
-            0x8080EFFA: self.tr('SEQ_ATTACK1.5RANGEMOVE'),
-            0x8080F011: self.tr('SEQ_ATTACK2RANGEMOVE'),
-            0x8080F026: self.tr('SEQ_ATTACK3RANGEMOVE'),
-            0x8080F03B: self.tr('SEQ_ATTACKRANGEMOVE'),
-            0x8080F04F: self.tr('SEQ_ATTACKRANGEMOVE_NOJILL'),
-            0x8080F06A: self.tr('SEQ_ATTACKRANGEMOVE_NOLAGU'),
-            0x8080F085: self.tr('SEQ_BEARHEAL'),
-            0x8080F092: self.tr('SEQ_BEARHEAL_NOACT'),
-            0x8080F0A5: self.tr('SEQ_BREAKMOVE'),
-            0x8080F0B3: self.tr('SEQ_BULLHEAL'),
-            0x8080F0C0: self.tr('SEQ_ESCAPEMOVE'),
-            0x8080F0CF: self.tr('SEQ_LOOTERMOVE'),
-            0x8080F0DE: self.tr('SEQ_LOOTERMOVE_ESCAPE'),
-            0x8080F0F4: self.tr('SEQ_LOOTERMOVE_ONE'),
-            0x8080F107: self.tr('SEQ_MAP11_ROUTEMOVE1'),
-            0x8080F11C: self.tr('SEQ_MAP11_ROUTEMOVE2'),
-            0x8080F131: self.tr('SEQ_MAP11_ROUTEMOVE3'),
-            0x8080F146: self.tr('SEQ_MAP11_ROUTEMOVE4'),
-            0x8080F15B: self.tr('SEQ_MAP24_GREENMOVE'),
-            0x8080F16F: self.tr('SEQ_NEARESTUNITMOVE'),
-            0x8080F183: self.tr('SEQ_NEARESTUNITMOVEINDIRECT'),
-            0x8080F19F: self.tr('SEQ_NEARESTUNITMOVE_BLACKNIGHT'),
-            0x8080F1BE: self.tr('SEQ_NEARESTUNITMOVE_NOIKE'),
-            0x8080F1D8: self.tr('SEQ_NEARESTUNITMOVE_NOJILL'),
-            0x8080F1F3: self.tr('SEQ_NEARESTUNITMOVE_NOLAGU'),
-            0x8080F20E: self.tr('SEQ_NEARESTUNITMOVE_NOLEARNE'),
-            0x8080F22B: self.tr('SEQ_NEARESTUNITMOVE_NOPRAGUE'),
-            0x8080F248: self.tr('SEQ_NEARESTUNITMOVE_TO_GEOFFRAY'),
-            0x8080F268: self.tr('SEQ_NEARESTUNITMOVE_TO_IKE'),
-            0x8080F283: self.tr('SEQ_NEARESTUNITSAFETYMOVE'),
-            0x8080F29D: self.tr('SEQ_NOATTACK'),
-            0x8080F2AA: self.tr('SEQ_NOHEAL'),
-            0x8080F2B5: self.tr('SEQ_NOMOVATK100_NOCRIMEA_AND_TALK'),
-            0x8080F2D7: self.tr('SEQ_NOMOVATK100_NOJILL_AND_TALK'),
-            0x8080F2F7: self.tr('SEQ_NOMOVE'),
-            0x8080F302: self.tr('SEQ_NOMOVEATTACK100'),
-            0x8080F316: self.tr('SEQ_NOMOVEATTACK100_NOERINCIA'),
-            0x8080F334: self.tr('SEQ_NOMOVEATTACK100_TALK_TO_JILL'),
-            0x8080F355: self.tr('SEQ_NOMOVEATTACK50'),
-            0x8080F368: self.tr('SEQ_NOMOVEATTACK80'),
-            0x8080F37B: self.tr('SEQ_NOMOVEROD100'),
-            0x8080F38C: self.tr('SEQ_NORMALHEAL'),
-            0x8080F39B: self.tr('SEQ_PERSONMOVE_TO_IKE'),
-            0x8080F3B1: self.tr('SEQ_ROCKATTACK_FORCE'),
-            0x8080F3C6: self.tr('SEQ_SUPERBEARHEAL'),
-            0x8080F3D8: self.tr('SEQ_TALKMOVE_TO_IKE'),
-            0x8080F3EC: self.tr('SEQ_TALKMOVE_TO_RIEUSION'),
-            0x8080F405: self.tr('SEQ_USECHANGE_1.5ATRANGE'),
-            0x8080F41E: self.tr('SEQ_USECHANGE_2ATRANGE'),
-            0x8080F435: self.tr('SEQ_USECHANGE_3ATRANGE'),
-            0x8080F44C: self.tr('SEQ_USECHANGE_ATRANGE'),
-            0x8080F462: self.tr('SEQ_USECHANGE_NEAREST'),
-            0x8080F478: self.tr('SEQ_USECHANGE_NEARESTMOVE'),
-            0x8080F492: self.tr('SEQ_USECHANGE_NOMOVE'),
+            'SEQ_ALLATK100_BLACKNIGHT': self.tr('SEQ_ALLATK100_BLACKNIGHT'),
+            'SEQ_ALLATK100_DIRECT': self.tr('SEQ_ALLATK100_DIRECT'),
+            'SEQ_ALLATK100_FOR_CHINON': self.tr('SEQ_ALLATK100_FOR_CHINON'),
+            'SEQ_ALLATK100_FOR_ZIHARK': self.tr('SEQ_ALLATK100_FOR_ZIHARK'),
+            'SEQ_ALLATK100_NOCHILD': self.tr('SEQ_ALLATK100_NOCHILD'),
+            'SEQ_ALLATK100_NOGREIL': self.tr('SEQ_ALLATK100_NOGREIL'),
+            'SEQ_ALLATK100_NOIKE': self.tr('SEQ_ALLATK100_NOIKE'),
+            'SEQ_ALLATK100_NOJILL': self.tr('SEQ_ALLATK100_NOJILL'),
+            'SEQ_ALLATK100_NOLAGU': self.tr('SEQ_ALLATK100_NOLAGU'),
+            'SEQ_ALLATK100_NOLEARNE': self.tr('SEQ_ALLATK100_NOLEARNE'),
+            'SEQ_ALLATK100_NOMIST': self.tr('SEQ_ALLATK100_NOMIST'),
+            'SEQ_ALLATK100_NOPRAGUE': self.tr('SEQ_ALLATK100_NOPRAGUE'),
+            'SEQ_ALLATK100_NORIEUSION': self.tr('SEQ_ALLATK100_NORIEUSION'),
+            'SEQ_ALLUNITATTACK100': self.tr('SEQ_ALLUNITATTACK100'),
+            'SEQ_ALLUNITATTACK100_GAMBLE50': self.tr('SEQ_ALLUNITATTACK100_GAMBLE50'),
+            'SEQ_ALLUNITATTACK100_ROCK100': self.tr('SEQ_ALLUNITATTACK100_ROCK100'),
+            'SEQ_ALLUNITATTACK100_SHOOT100': self.tr('SEQ_ALLUNITATTACK100_SHOOT100'),
+            'SEQ_ALLUNITATTACK100_TACKLE100': self.tr('SEQ_ALLUNITATTACK100_TACKLE100'),
+            'SEQ_ALLUNITATTACK50': self.tr('SEQ_ALLUNITATTACK50'),
+            'SEQ_ALLUNITATTACK80': self.tr('SEQ_ALLUNITATTACK80'),
+            'SEQ_ALLUNITROD100': self.tr('SEQ_ALLUNITROD100'),
+            'SEQ_ATTACK1.5RANGEMOVE': self.tr('SEQ_ATTACK1.5RANGEMOVE'),
+            'SEQ_ATTACK2RANGEMOVE': self.tr('SEQ_ATTACK2RANGEMOVE'),
+            'SEQ_ATTACK3RANGEMOVE': self.tr('SEQ_ATTACK3RANGEMOVE'),
+            'SEQ_ATTACKRANGEMOVE': self.tr('SEQ_ATTACKRANGEMOVE'),
+            'SEQ_ATTACKRANGEMOVE_NOJILL': self.tr('SEQ_ATTACKRANGEMOVE_NOJILL'),
+            'SEQ_ATTACKRANGEMOVE_NOLAGU': self.tr('SEQ_ATTACKRANGEMOVE_NOLAGU'),
+            'SEQ_BEARHEAL': self.tr('SEQ_BEARHEAL'),
+            'SEQ_BEARHEAL_NOACT': self.tr('SEQ_BEARHEAL_NOACT'),
+            'SEQ_BREAKMOVE': self.tr('SEQ_BREAKMOVE'),
+            'SEQ_BULLHEAL': self.tr('SEQ_BULLHEAL'),
+            'SEQ_ESCAPEMOVE': self.tr('SEQ_ESCAPEMOVE'),
+            'SEQ_LOOTERMOVE': self.tr('SEQ_LOOTERMOVE'),
+            'SEQ_LOOTERMOVE_ESCAPE': self.tr('SEQ_LOOTERMOVE_ESCAPE'),
+            'SEQ_LOOTERMOVE_ONE': self.tr('SEQ_LOOTERMOVE_ONE'),
+            'SEQ_MAP11_ROUTEMOVE1': self.tr('SEQ_MAP11_ROUTEMOVE1'),
+            'SEQ_MAP11_ROUTEMOVE2': self.tr('SEQ_MAP11_ROUTEMOVE2'),
+            'SEQ_MAP11_ROUTEMOVE3': self.tr('SEQ_MAP11_ROUTEMOVE3'),
+            'SEQ_MAP11_ROUTEMOVE4': self.tr('SEQ_MAP11_ROUTEMOVE4'),
+            'SEQ_MAP24_GREENMOVE': self.tr('SEQ_MAP24_GREENMOVE'),
+            'SEQ_NEARESTUNITMOVE': self.tr('SEQ_NEARESTUNITMOVE'),
+            'SEQ_NEARESTUNITMOVEINDIRECT': self.tr('SEQ_NEARESTUNITMOVEINDIRECT'),
+            'SEQ_NEARESTUNITMOVE_BLACKNIGHT': self.tr('SEQ_NEARESTUNITMOVE_BLACKNIGHT'),
+            'SEQ_NEARESTUNITMOVE_NOIKE': self.tr('SEQ_NEARESTUNITMOVE_NOIKE'),
+            'SEQ_NEARESTUNITMOVE_NOJILL': self.tr('SEQ_NEARESTUNITMOVE_NOJILL'),
+            'SEQ_NEARESTUNITMOVE_NOLAGU': self.tr('SEQ_NEARESTUNITMOVE_NOLAGU'),
+            'SEQ_NEARESTUNITMOVE_NOLEARNE': self.tr('SEQ_NEARESTUNITMOVE_NOLEARNE'),
+            'SEQ_NEARESTUNITMOVE_NOPRAGUE': self.tr('SEQ_NEARESTUNITMOVE_NOPRAGUE'),
+            'SEQ_NEARESTUNITMOVE_TO_GEOFFRAY': self.tr('SEQ_NEARESTUNITMOVE_TO_GEOFFRAY'),
+            'SEQ_NEARESTUNITMOVE_TO_IKE': self.tr('SEQ_NEARESTUNITMOVE_TO_IKE'),
+            'SEQ_NEARESTUNITSAFETYMOVE': self.tr('SEQ_NEARESTUNITSAFETYMOVE'),
+            'SEQ_NOATTACK': self.tr('SEQ_NOATTACK'),
+            'SEQ_NOHEAL': self.tr('SEQ_NOHEAL'),
+            'SEQ_NOMOVATK100_NOCRIMEA_AND_TALK': self.tr('SEQ_NOMOVATK100_NOCRIMEA_AND_TALK'),
+            'SEQ_NOMOVATK100_NOJILL_AND_TALK': self.tr('SEQ_NOMOVATK100_NOJILL_AND_TALK'),
+            'SEQ_NOMOVE': self.tr('SEQ_NOMOVE'),
+            'SEQ_NOMOVEATTACK100': self.tr('SEQ_NOMOVEATTACK100'),
+            'SEQ_NOMOVEATTACK100_NOERINCIA': self.tr('SEQ_NOMOVEATTACK100_NOERINCIA'),
+            'SEQ_NOMOVEATTACK100_TALK_TO_JILL': self.tr('SEQ_NOMOVEATTACK100_TALK_TO_JILL'),
+            'SEQ_NOMOVEATTACK50': self.tr('SEQ_NOMOVEATTACK50'),
+            'SEQ_NOMOVEATTACK80': self.tr('SEQ_NOMOVEATTACK80'),
+            'SEQ_NOMOVEROD100': self.tr('SEQ_NOMOVEROD100'),
+            'SEQ_NORMALHEAL': self.tr('SEQ_NORMALHEAL'),
+            'SEQ_PERSONMOVE_TO_IKE': self.tr('SEQ_PERSONMOVE_TO_IKE'),
+            'SEQ_ROCKATTACK_FORCE': self.tr('SEQ_ROCKATTACK_FORCE'),
+            'SEQ_SUPERBEARHEAL': self.tr('SEQ_SUPERBEARHEAL'),
+            'SEQ_TALKMOVE_TO_IKE': self.tr('SEQ_TALKMOVE_TO_IKE'),
+            'SEQ_TALKMOVE_TO_RIEUSION': self.tr('SEQ_TALKMOVE_TO_RIEUSION'),
+            'SEQ_USECHANGE_1.5ATRANGE': self.tr('SEQ_USECHANGE_1.5ATRANGE'),
+            'SEQ_USECHANGE_2ATRANGE': self.tr('SEQ_USECHANGE_2ATRANGE'),
+            'SEQ_USECHANGE_3ATRANGE': self.tr('SEQ_USECHANGE_3ATRANGE'),
+            'SEQ_USECHANGE_ATRANGE': self.tr('SEQ_USECHANGE_ATRANGE'),
+            'SEQ_USECHANGE_NEAREST': self.tr('SEQ_USECHANGE_NEAREST'),
+            'SEQ_USECHANGE_NEARESTMOVE': self.tr('SEQ_USECHANGE_NEARESTMOVE'),
+            'SEQ_USECHANGE_NOMOVE': self.tr('SEQ_USECHANGE_NOMOVE'),
         }
-
+        self.MTYPE_ENUM = {
+            'MTYPE_ANIMALKILLER': self.tr('MTYPE_ANIMALKILLER'),
+            'MTYPE_ARCHER': self.tr('MTYPE_ARCHER'),
+            'MTYPE_ARMORKILLER': self.tr('MTYPE_ARMORKILLER'),
+            'MTYPE_BEAR': self.tr('MTYPE_BEAR'),
+            'MTYPE_BULL': self.tr('MTYPE_BULL'),
+            'MTYPE_FOOL': self.tr('MTYPE_FOOL'),
+            'MTYPE_FOUL': self.tr('MTYPE_FOUL'),
+            'MTYPE_GREENFORCE': self.tr('MTYPE_GREENFORCE'),
+            'MTYPE_HEROKILLER': self.tr('MTYPE_HEROKILLER'),
+            'MTYPE_HUMANKILLER': self.tr('MTYPE_HUMANKILLER'),
+            'MTYPE_KNIGHTKILLER': self.tr('MTYPE_KNIGHTKILLER'),
+            'MTYPE_LONGRANGE': self.tr('MTYPE_LONGRANGE'),
+            'MTYPE_MAGEKILLER': self.tr('MTYPE_MAGEKILLER'),
+            'MTYPE_NONE': self.tr('MTYPE_NONE'),
+            'MTYPE_NORMAL': self.tr('MTYPE_NORMAL'),
+            'MTYPE_TABLEID_LIST': self.tr('MTYPE_TABLEID_LIST'),
+            'MTYPE_TEST00': self.tr('MTYPE_TEST00'),
+            'MTYPE_TEST01': self.tr('MTYPE_TEST01'),
+            'MTYPE_TEST02': self.tr('MTYPE_TEST02'),
+            'MTYPE_TEST03': self.tr('MTYPE_TEST03'),
+            'MTYPE_TEST04': self.tr('MTYPE_TEST04'),
+            'MTYPE_TEST05': self.tr('MTYPE_TEST05'),
+            'MTYPE_TEST06': self.tr('MTYPE_TEST06'),
+            'MTYPE_TEST07': self.tr('MTYPE_TEST07'),
+            'MTYPE_TEST08': self.tr('MTYPE_TEST08'),
+            'MTYPE_TEST09': self.tr('MTYPE_TEST09'),
+            'MTYPE_TEST10': self.tr('MTYPE_TEST10'),
+            'MTYPE_TEST11': self.tr('MTYPE_TEST11'),
+            'MTYPE_TEST12': self.tr('MTYPE_TEST12'),
+            'MTYPE_TEST13': self.tr('MTYPE_TEST13'),
+            'MTYPE_TEST14': self.tr('MTYPE_TEST14'),
+            'MTYPE_TEST15': self.tr('MTYPE_TEST15'),
+            'MTYPE_TEST16': self.tr('MTYPE_TEST16'),
+        }
         self.SUPPORT_ENUM = {
             'PID_IKE': (
                 (self.tr('PID_TIAMAT'), (8, 11, 26)),
@@ -1957,31 +1958,36 @@ class EnumData(QObject):
             0x1E: self.tr('Alone Mercenary'),  # 孤身的佣兵
         }
 
-    def MTYPE_MAPPING(self):
-        return self.MTYPE_ENUM
-
-    def SEQ_MAPPING(self):
-        return self.SEQ_ENUM
-
     def SUPPORT_MAPPING(self):
         return self.SUPPORT_ENUM
 
     def AID_MAPPING(self):
-        return self.get_mapping(self.AID_ENUM, self.AID_OFFSET)
+        return self.pointer_mapping(self.AID_ENUM, self.AID_SETTING)
 
     def PID_MAPPING(self):
-        return self.get_mapping(self.PID_ENUM, self.PID_OFFSET)
+        return self.pointer_mapping(self.PID_ENUM, self.PID_SETTING)
 
     def JID_MAPPING(self):
-        return self.get_mapping(self.JID_ENUM, self.JID_OFFSET)
+        return self.pointer_mapping(self.JID_ENUM, self.JID_SETTING)
 
     def IID_MAPPING(self):
-        return self.get_mapping(self.IID_ENUM, self.IID_OFFSET)
+        return self.pointer_mapping(self.IID_ENUM, self.IID_SETTING)
+
+    def SEQ_MAPPING(self):
+        return self.text_mapping(self.SEQ_ENUM, self.SEQ_SETTING, -0x131F)
+
+    def MTYPE_MAPPING(self):
+        return self.text_mapping(self.MTYPE_ENUM, self.MTYPE_SETTING, -0x13DD)
 
     @staticmethod
-    def get_mapping(enum_dict: dict, offset: tuple):
+    def pointer_mapping(enum_dict: dict, setting: tuple):
         for idx in range(DataSetting.COUNT):
-            if text := Text.get_text(offset[0] + DataSetting.STEP * idx):
-                address = read_word(offset[0]) - list(enum_dict.keys()).index(text) * offset[-1]
-                return {address + offset[-1] * i: enum_item for i, enum_item in enumerate(enum_dict.items())}
+            if text := Text.get_text(setting[0] + DataSetting.STEP * idx):
+                address = read_word(setting[0]) - list(enum_dict.keys()).index(text) * setting[-1]
+                return {address + setting[-1] * i: enum_item for i, enum_item in enumerate(enum_dict.items())}
         return {}
+
+    @staticmethod
+    def text_mapping(enum_dict: dict, setting: tuple, offset: int):
+        return {read_word(setting[0] + setting[-1] * idx) + offset: enum_item
+                for idx, enum_item in enumerate(enum_dict.items())}

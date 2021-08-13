@@ -41,10 +41,10 @@ class Status(BackgroundFrame):
         self['战斗'] = ValueSpin(self, value=DataSetting()['战斗'])
         self['胜利'] = ValueSpin(self, value=DataSetting()['胜利'])
 
+        self['MTYPE'] = MapCombo(self, EnumData().MTYPE_MAPPING, value=DataSetting()['MTYPE'])
         self['SEQ1'] = MapCombo(self, EnumData().SEQ_MAPPING, value=DataSetting()['SEQ1'])
         self['SEQ2'] = MapCombo(self, EnumData().SEQ_MAPPING, value=DataSetting()['SEQ2'])
         self['SEQ3'] = MapCombo(self, EnumData().SEQ_MAPPING, value=DataSetting()['SEQ3'])
-        self['MTYPE'] = MapCombo(self, EnumData().MTYPE_MAPPING, value=DataSetting()['MTYPE'])
 
         main_layout = QGridLayout()
         main_layout.addWidget(NameLabel('人物'), 0, 0, 1, 1)
