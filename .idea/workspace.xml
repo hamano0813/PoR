@@ -5,17 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e2f6064c-2996-4e61-8d95-f77f7396516e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/PoR.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PoR.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modifier/interface/resource.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modifier/interface/resource.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource/QM/jp.qm" beforeDir="false" afterPath="$PROJECT_DIR$/resource/QM/jp.qm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource/QM/jp.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resource/QM/jp.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource/QM/zh.qm" beforeDir="false" afterPath="$PROJECT_DIR$/resource/QM/zh.qm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource/QM/zh.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resource/QM/zh.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modifier/PoR.pyw" beforeDir="false" afterPath="$PROJECT_DIR$/Modifier/Modifier.pyw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modifier/interface/status.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modifier/interface/status.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modifier/parameter/data_setting.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modifier/parameter/data_setting.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modifier/parameter/enum_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modifier/parameter/enum_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modifier/structure/text.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modifier/structure/text.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -30,15 +38,18 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../PySanDS/SanDS_RomEditor/parsers/character.py" />
+    <property name="com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File" value="Python" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Editor" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Python\PoR\" />
       <recent name="D:\Python\PoR\Modifier\interface" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.PoR.pyw">
-    <configuration name="PoR.pyw" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.Modifier.pyw">
+    <configuration name="Modifier.pyw (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PoR" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -50,7 +61,28 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Modifier/PoR.pyw" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Modifier/Modifier.pyw" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Modifier.pyw" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="PoR" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Modifier" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="D:\Python\PoR\Modifier\Modifier.pyw" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -72,6 +104,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="F:/de.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="scratch" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="PoR" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$APPLICATION_CONFIG_DIR$/scratches" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$APPLICATION_CONFIG_DIR$/scratches/scratch.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -103,9 +156,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.PoR.pyw" />
-        <item itemvalue="Python.de" />
+        <item itemvalue="Python.Modifier.pyw" />
         <item itemvalue="Python.text" />
+        <item itemvalue="Python.Modifier.pyw (1)" />
+        <item itemvalue="Python.scratch" />
+        <item itemvalue="Python.de" />
       </list>
     </recent_temporary>
   </component>

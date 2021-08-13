@@ -210,6 +210,11 @@ class DataSetting:
             'SID_WEAK_A': (0x802AF7A8, 0x4, 31),
             'SID_AHIMSA': (0x802AF7AC, 0x4, 0),
 
+            'SEQ1': (0x802AF81C, 0x4),
+            'SEQ2': (0x802AF820, 0x4),
+            'SEQ3': (0x802AF824, 0x4),
+            'MTYPE': (0x802AF828, 0x4),
+
             '所持金': (0x8032E7A1, 0x3),
             '奖励EX': (0x8032E7A5, 0x3),
         }

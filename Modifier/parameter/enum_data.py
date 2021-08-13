@@ -13,6 +13,7 @@ class EnumData(QObject):
     PID_OFFSET = 0x802AF76C, 0x64
     JID_OFFSET = 0x802AF770, 0x64
     IID_OFFSET = 0x802AF7B0, 0x48
+    MTYPE_OFFSET = 0x8080A614, 0x18
     SKILL_ENUM = (
         'SID_ELITE',
         'SID_TURNREGENE',
@@ -1378,6 +1379,118 @@ class EnumData(QObject):
             'SID_WEAK_A': self.tr('SID_WEAK_A'),
             'SID_AHIMSA': self.tr('SID_AHIMSA'),
         }
+        self.MTYPE_ENUM = {
+            0x8080EC52: self.tr('MTYPE_NORMAL'),
+            0x8080EBBE: self.tr('MTYPE_BULL'),
+            0x8080EBB3: self.tr('MTYPE_BEAR'),
+            0x8080EBD4: self.tr('MTYPE_FOUL'),
+            0x8080EBC9: self.tr('MTYPE_FOOL'),
+            0x8080EB94: self.tr('MTYPE_ARCHER'),
+            0x8080EBA1: self.tr('MTYPE_ARMORKILLER'),
+            0x8080EC13: self.tr('MTYPE_KNIGHTKILLER'),
+            0x8080EC01: self.tr('MTYPE_HUMANKILLER'),
+            0x8080EB81: self.tr('MTYPE_ANIMALKILLER'),
+            0x8080EC26: self.tr('MTYPE_LONGRANGE'),
+            0x8080EC36: self.tr('MTYPE_MAGEKILLER'),
+            0x8080EBF0: self.tr('MTYPE_HEROKILLER'),
+            0x8080EBDF: self.tr('MTYPE_GREENFORCE'),
+            0x8080EC5F: self.tr('MTYPE_TEST00'),
+            0x8080EC6C: self.tr('MTYPE_TEST01'),
+            0x8080EC79: self.tr('MTYPE_TEST02'),
+            0x8080EC86: self.tr('MTYPE_TEST03'),
+            0x8080EC93: self.tr('MTYPE_TEST04'),
+            0x8080ECA0: self.tr('MTYPE_TEST05'),
+            0x8080ECAD: self.tr('MTYPE_TEST06'),
+            0x8080ECBA: self.tr('MTYPE_TEST07'),
+            0x8080ECC7: self.tr('MTYPE_TEST08'),
+            0x8080ECD4: self.tr('MTYPE_TEST09'),
+            0x8080ECE1: self.tr('MTYPE_TEST10'),
+            0x8080ECEE: self.tr('MTYPE_TEST11'),
+            0x8080ECFB: self.tr('MTYPE_TEST12'),
+            0x8080ED08: self.tr('MTYPE_TEST13'),
+            0x8080ED15: self.tr('MTYPE_TEST14'),
+            0x8080ED22: self.tr('MTYPE_TEST15'),
+            0x8080ED2F: self.tr('MTYPE_TEST16'),
+            0x8080EC47: self.tr('MTYPE_NONE'),
+        }
+        self.SEQ_ENUM = {
+            0x8080EE0D: self.tr('SEQ_ALLATK100_BLACKNIGHT'),
+            0x8080EE26: self.tr('SEQ_ALLATK100_DIRECT'),
+            0x8080EE3B: self.tr('SEQ_ALLATK100_FOR_CHINON'),
+            0x8080EE54: self.tr('SEQ_ALLATK100_FOR_ZIHARK'),
+            0x8080EE6D: self.tr('SEQ_ALLATK100_NOCHILD'),
+            0x8080EE83: self.tr('SEQ_ALLATK100_NOGREIL'),
+            0x8080EE99: self.tr('SEQ_ALLATK100_NOIKE'),
+            0x8080EEAD: self.tr('SEQ_ALLATK100_NOJILL'),
+            0x8080EEC2: self.tr('SEQ_ALLATK100_NOLAGU'),
+            0x8080EED7: self.tr('SEQ_ALLATK100_NOLEARNE'),
+            0x8080EEEE: self.tr('SEQ_ALLATK100_NOMIST'),
+            0x8080EF03: self.tr('SEQ_ALLATK100_NOPRAGUE'),
+            0x8080EF1A: self.tr('SEQ_ALLATK100_NORIEUSION'),
+            0x8080EF33: self.tr('SEQ_ALLUNITATTACK100'),
+            0x8080EF48: self.tr('SEQ_ALLUNITATTACK100_GAMBLE50'),
+            0x8080EF66: self.tr('SEQ_ALLUNITATTACK100_ROCK100'),
+            0x8080EF83: self.tr('SEQ_ALLUNITATTACK100_SHOOT100'),
+            0x8080EFA1: self.tr('SEQ_ALLUNITATTACK100_TACKLE100'),
+            0x8080EFC0: self.tr('SEQ_ALLUNITATTACK50'),
+            0x8080EFD4: self.tr('SEQ_ALLUNITATTACK80'),
+            0x8080EFE8: self.tr('SEQ_ALLUNITROD100'),
+            0x8080EFFA: self.tr('SEQ_ATTACK1.5RANGEMOVE'),
+            0x8080F011: self.tr('SEQ_ATTACK2RANGEMOVE'),
+            0x8080F026: self.tr('SEQ_ATTACK3RANGEMOVE'),
+            0x8080F03B: self.tr('SEQ_ATTACKRANGEMOVE'),
+            0x8080F04F: self.tr('SEQ_ATTACKRANGEMOVE_NOJILL'),
+            0x8080F06A: self.tr('SEQ_ATTACKRANGEMOVE_NOLAGU'),
+            0x8080F085: self.tr('SEQ_BEARHEAL'),
+            0x8080F092: self.tr('SEQ_BEARHEAL_NOACT'),
+            0x8080F0A5: self.tr('SEQ_BREAKMOVE'),
+            0x8080F0B3: self.tr('SEQ_BULLHEAL'),
+            0x8080F0C0: self.tr('SEQ_ESCAPEMOVE'),
+            0x8080F0CF: self.tr('SEQ_LOOTERMOVE'),
+            0x8080F0DE: self.tr('SEQ_LOOTERMOVE_ESCAPE'),
+            0x8080F0F4: self.tr('SEQ_LOOTERMOVE_ONE'),
+            0x8080F107: self.tr('SEQ_MAP11_ROUTEMOVE1'),
+            0x8080F11C: self.tr('SEQ_MAP11_ROUTEMOVE2'),
+            0x8080F131: self.tr('SEQ_MAP11_ROUTEMOVE3'),
+            0x8080F146: self.tr('SEQ_MAP11_ROUTEMOVE4'),
+            0x8080F15B: self.tr('SEQ_MAP24_GREENMOVE'),
+            0x8080F16F: self.tr('SEQ_NEARESTUNITMOVE'),
+            0x8080F183: self.tr('SEQ_NEARESTUNITMOVEINDIRECT'),
+            0x8080F19F: self.tr('SEQ_NEARESTUNITMOVE_BLACKNIGHT'),
+            0x8080F1BE: self.tr('SEQ_NEARESTUNITMOVE_NOIKE'),
+            0x8080F1D8: self.tr('SEQ_NEARESTUNITMOVE_NOJILL'),
+            0x8080F1F3: self.tr('SEQ_NEARESTUNITMOVE_NOLAGU'),
+            0x8080F20E: self.tr('SEQ_NEARESTUNITMOVE_NOLEARNE'),
+            0x8080F22B: self.tr('SEQ_NEARESTUNITMOVE_NOPRAGUE'),
+            0x8080F248: self.tr('SEQ_NEARESTUNITMOVE_TO_GEOFFRAY'),
+            0x8080F268: self.tr('SEQ_NEARESTUNITMOVE_TO_IKE'),
+            0x8080F283: self.tr('SEQ_NEARESTUNITSAFETYMOVE'),
+            0x8080F29D: self.tr('SEQ_NOATTACK'),
+            0x8080F2AA: self.tr('SEQ_NOHEAL'),
+            0x8080F2B5: self.tr('SEQ_NOMOVATK100_NOCRIMEA_AND_TALK'),
+            0x8080F2D7: self.tr('SEQ_NOMOVATK100_NOJILL_AND_TALK'),
+            0x8080F2F7: self.tr('SEQ_NOMOVE'),
+            0x8080F302: self.tr('SEQ_NOMOVEATTACK100'),
+            0x8080F316: self.tr('SEQ_NOMOVEATTACK100_NOERINCIA'),
+            0x8080F334: self.tr('SEQ_NOMOVEATTACK100_TALK_TO_JILL'),
+            0x8080F355: self.tr('SEQ_NOMOVEATTACK50'),
+            0x8080F368: self.tr('SEQ_NOMOVEATTACK80'),
+            0x8080F37B: self.tr('SEQ_NOMOVEROD100'),
+            0x8080F38C: self.tr('SEQ_NORMALHEAL'),
+            0x8080F39B: self.tr('SEQ_PERSONMOVE_TO_IKE'),
+            0x8080F3B1: self.tr('SEQ_ROCKATTACK_FORCE'),
+            0x8080F3C6: self.tr('SEQ_SUPERBEARHEAL'),
+            0x8080F3D8: self.tr('SEQ_TALKMOVE_TO_IKE'),
+            0x8080F3EC: self.tr('SEQ_TALKMOVE_TO_RIEUSION'),
+            0x8080F405: self.tr('SEQ_USECHANGE_1.5ATRANGE'),
+            0x8080F41E: self.tr('SEQ_USECHANGE_2ATRANGE'),
+            0x8080F435: self.tr('SEQ_USECHANGE_3ATRANGE'),
+            0x8080F44C: self.tr('SEQ_USECHANGE_ATRANGE'),
+            0x8080F462: self.tr('SEQ_USECHANGE_NEAREST'),
+            0x8080F478: self.tr('SEQ_USECHANGE_NEARESTMOVE'),
+            0x8080F492: self.tr('SEQ_USECHANGE_NOMOVE'),
+        }
+
         self.SUPPORT_ENUM = {
             'PID_IKE': (
                 (self.tr('PID_TIAMAT'), (8, 11, 26)),
@@ -1843,6 +1956,12 @@ class EnumData(QObject):
             0x1D: self.tr('Serenes'),  # 鹭的住民
             0x1E: self.tr('Alone Mercenary'),  # 孤身的佣兵
         }
+
+    def MTYPE_MAPPING(self):
+        return self.MTYPE_ENUM
+
+    def SEQ_MAPPING(self):
+        return self.SEQ_ENUM
 
     def SUPPORT_MAPPING(self):
         return self.SUPPORT_ENUM
