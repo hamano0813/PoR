@@ -5951,7 +5951,7 @@
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="1285"/>
         <source>SID_HIGHER</source>
-        <translation>上級クラス</translation>
+        <translation>上級職</translation>
     </message>
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="1286"/>
@@ -5981,17 +5981,17 @@
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="1291"/>
         <source>SID_ANIMALIZE</source>
-        <translation>ラグズ</translation>
+        <translation>獣化職</translation>
     </message>
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="1292"/>
         <source>SID_LYCANTHROPE</source>
-        <translation>普通化身</translation>
+        <translation>獣化中</translation>
     </message>
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="1293"/>
         <source>SID_FIXEDBEAST</source>
-        <translation>固定化身</translation>
+        <translation>獣固定</translation>
     </message>
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="1294"/>
@@ -6006,7 +6006,7 @@
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="1296"/>
         <source>SID_BARGAIN</source>
-        <translation type="unfinished"></translation>
+        <translation>値切り</translation>
     </message>
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="1297"/>
@@ -6016,7 +6016,7 @@
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="1298"/>
         <source>SID_WLUPTOS</source>
-        <translation type="unfinished"></translation>
+        <translation>大魔法</translation>
     </message>
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="1299"/>
@@ -6041,12 +6041,12 @@
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="1303"/>
         <source>SID_FLYTHRU</source>
-        <translation type="unfinished"></translation>
+        <translation>飛行</translation>
     </message>
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="1304"/>
         <source>SID_WALKTHRU</source>
-        <translation type="unfinished"></translation>
+        <translation>突破</translation>
     </message>
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="1305"/>
@@ -6066,47 +6066,47 @@
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="1308"/>
         <source>SID_CHANTHP</source>
-        <translation type="unfinished"></translation>
+        <translation>ＨＰの歌</translation>
     </message>
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="1309"/>
         <source>SID_CHANTSTR</source>
-        <translation type="unfinished"></translation>
+        <translation>力の歌</translation>
     </message>
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="1310"/>
         <source>SID_CHANTMPOW</source>
-        <translation type="unfinished"></translation>
+        <translation>魔力の歌</translation>
     </message>
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="1311"/>
         <source>SID_CHANTTECH</source>
-        <translation type="unfinished"></translation>
+        <translation>技の歌</translation>
     </message>
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="1312"/>
         <source>SID_CHANTQUICK</source>
-        <translation type="unfinished"></translation>
+        <translation>速さの歌</translation>
     </message>
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="1313"/>
         <source>SID_CHANTLUCK</source>
-        <translation type="unfinished"></translation>
+        <translation>幸運の歌</translation>
     </message>
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="1314"/>
         <source>SID_CHANTDEF</source>
-        <translation type="unfinished"></translation>
+        <translation>守備の歌</translation>
     </message>
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="1315"/>
         <source>SID_CHANTMDEF</source>
-        <translation type="unfinished"></translation>
+        <translation>魔防の歌</translation>
     </message>
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="1316"/>
         <source>SID_EQUIPFANG</source>
-        <translation type="unfinished"></translation>
+        <translation>獣装備</translation>
     </message>
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="1317"/>
@@ -6211,7 +6211,7 @@
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="1337"/>
         <source>SID_CHAOS</source>
-        <translation type="unfinished"></translation>
+        <translation>混沌</translation>
     </message>
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="1338"/>
@@ -6261,7 +6261,7 @@
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="1347"/>
         <source>SID_ABSMOVE</source>
-        <translation type="unfinished"></translation>
+        <translation>絶対移動</translation>
     </message>
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="1348"/>
@@ -6271,7 +6271,7 @@
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="1349"/>
         <source>SID_CONFRONT</source>
-        <translation type="unfinished"></translation>
+        <translation>一騎討ち</translation>
     </message>
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="1350"/>
@@ -6296,7 +6296,7 @@
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="1354"/>
         <source>SID_EVILEYE</source>
-        <translation>邪悪な目</translation>
+        <translation>邪眼</translation>
     </message>
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="1355"/>
@@ -6326,22 +6326,22 @@
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="1360"/>
         <source>SID_EVENTCC</source>
-        <translation>イベントチェンジ</translation>
+        <translation>イベＣＣ</translation>
     </message>
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="1361"/>
         <source>SID_SUMMONED</source>
-        <translation>召喚</translation>
+        <translation>召喚され</translation>
     </message>
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="1362"/>
         <source>SID_SHOOT</source>
-        <translation>シューター系</translation>
+        <translation>シュート</translation>
     </message>
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="1363"/>
         <source>SID_KEY50</source>
-        <translation>ロック解除</translation>
+        <translation>鍵50</translation>
     </message>
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="1364"/>
@@ -6361,32 +6361,32 @@
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="1367"/>
         <source>SID_TRI_A</source>
-        <translation>トライアングル「天馬」</translation>
+        <translation>トライＡ「天馬」</translation>
     </message>
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="1368"/>
         <source>SID_TRI_B</source>
-        <translation>トライアングル「兄弟」</translation>
+        <translation>トライＢ「兄弟」</translation>
     </message>
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="1369"/>
         <source>SID_EQ_A</source>
-        <translation>ヨファの弓装備</translation>
+        <translation>専用Ａ「ヨファの弓」</translation>
     </message>
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="1370"/>
         <source>SID_EQ_B</source>
-        <translation>アミーテ装備</translation>
+        <translation>専用Ｂ「アミーテ」</translation>
     </message>
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="1371"/>
         <source>SID_EQ_C</source>
-        <translation>化身の腕輪装備</translation>
+        <translation>専用Ｃ「化身の腕輪」</translation>
     </message>
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="1372"/>
         <source>SID_TEMP_ON_DIE</source>
-        <translation type="unfinished"></translation>
+        <translation>死んだふり</translation>
     </message>
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="1373"/>
@@ -6396,32 +6396,32 @@
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="1374"/>
         <source>SID_KEY0</source>
-        <translation>ロック解除</translation>
+        <translation>鍵無料</translation>
     </message>
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="1375"/>
         <source>SID_IMMORTAL</source>
-        <translation>不滅</translation>
+        <translation>不死身</translation>
     </message>
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="1376"/>
         <source>SID_EQ_D</source>
-        <translation>騎士の護り装備</translation>
+        <translation>専用Ｄ「騎士の護り」</translation>
     </message>
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="1377"/>
         <source>SID_EQREV_A</source>
-        <translation type="unfinished"></translation>
+        <translation>逆専用Ａ</translation>
     </message>
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="1378"/>
         <source>SID_WEAK_A</source>
-        <translation type="unfinished"></translation>
+        <translation>弱点Ａ</translation>
     </message>
     <message>
         <location filename="../../Modifier/parameter/enum_data.py" line="1379"/>
         <source>SID_AHIMSA</source>
-        <translation type="unfinished"></translation>
+        <translation>アヒンサー</translation>
     </message>
 </context>
 </TS>

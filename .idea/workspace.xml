@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e2f6064c-2996-4e61-8d95-f77f7396516e" name="Changes" comment="" />
+    <list default="true" id="e2f6064c-2996-4e61-8d95-f77f7396516e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modifier/interface/resource.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modifier/interface/resource.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource/QM/jp.qm" beforeDir="false" afterPath="$PROJECT_DIR$/resource/QM/jp.qm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource/QM/jp.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resource/QM/jp.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource/QM/zh.qm" beforeDir="false" afterPath="$PROJECT_DIR$/resource/QM/zh.qm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource/QM/zh.ts" beforeDir="false" afterPath="$PROJECT_DIR$/resource/QM/zh.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,13 +30,14 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../PySanDS/SanDS_RomEditor/parsers/character.py" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Python\PoR\Modifier\interface" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.PoR.pyw">
     <configuration name="PoR.pyw" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PoR" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -51,9 +59,53 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="de" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="PoR" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="F:/" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="F:/de.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="text" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="PoR" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Modifier/structure" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Modifier/structure/text.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.PoR.pyw" />
+        <item itemvalue="Python.de" />
+        <item itemvalue="Python.text" />
       </list>
     </recent_temporary>
   </component>
@@ -87,7 +139,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628693102443</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="#45.增加项目LICENSE">
+      <created>1628693557585</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1628693557585</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -107,6 +166,18 @@
     <MESSAGE value="#42.增加锁定无限行动功能" />
     <MESSAGE value="#43.调整显示样式" />
     <MESSAGE value="#44.调整README及锁定操作的写入间隔" />
-    <option name="LAST_COMMIT_MESSAGE" value="#44.调整README及锁定操作的写入间隔" />
+    <MESSAGE value="#45.增加项目LICENSE" />
+    <option name="LAST_COMMIT_MESSAGE" value="#45.增加项目LICENSE" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://F:/de.py</url>
+          <line>15</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
