@@ -27,3 +27,10 @@
 - [x] 道具
 - [x] 支援
 - [x] 金钱
+
+#### BUILD本地EXE程序方法
+1. 安装适合自身操作系统版本的CPython解释器，教程自寻，要求3.8或更高版本。<br>[Python官网下载页面](https://www.python.org/downloads/)
+2. 下载并解压项目完整源代码（下方的Source code.zip）
+3. 双击build.bat等待构建完成
+4. 在dist文件夹内找到修改器，程序入口PoR.exe
+5. 程序构建成功后可按需删除源代码和卸载CPython解释器
