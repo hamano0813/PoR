@@ -607,10 +607,13 @@
         <file alias="jp.qm">./QM/jp.qm</file>
     </qresource>
     <qresource prefix="ICON/">
-        <file alias="icon.png">icon.png</file>
+        <file alias="icon.ico">icon.ico</file>
         <file alias="blank.png">blank.png</file>
     </qresource>
     <qresource prefix="QSS/">
         <file alias="custom.qss">./QSS/custom.qss</file>
+    </qresource>
+    <qresource prefix="DLL/">
+        <file alias="mdgcm.dll">mdgcm.dll</file>
     </qresource>
 </RCC>
