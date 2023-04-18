@@ -5,7 +5,7 @@ block_cipher = None
 
 
 a = Analysis(
-    ['release\\PoR.py'],
+    ['src\\main.py'],
     pathex=[],
     binaries=[],
     datas=[],
