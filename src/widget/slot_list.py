@@ -11,7 +11,7 @@ from parameter import DataSetting, EnumData
 from .customize import Customize
 
 
-class SlotList(QListView, Customize):
+class SlotList(Customize, QListView):
     def __init__(self, parent, **kwargs):
         QListView.__init__(self, parent)
         Customize.__init__(self, parent, **kwargs)

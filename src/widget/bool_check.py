@@ -48,7 +48,7 @@ class BoolCheck(Customize, QCheckBox):
                 self.setCheckState(Qt.Checked)
             else:
                 self.setCheckState(Qt.Unchecked)
-            self.setText(self._text[self.checkState()][0])
+            self.setText(self._text[self.checkState().value][0])
         self.stateChanged.connect(self.rewrite)
 
     # noinspection PyUnresolvedReferences,PyTypeChecker
