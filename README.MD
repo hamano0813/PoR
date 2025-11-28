@@ -1,9 +1,9 @@
 ###  苍炎的轨迹 动态修改器
 
-[![python](https://img.shields.io/badge/Python-3.11.3-darkcyan?logo=python&style=flat&labelColor=013243)](https://www.python.org/)
-[![PySide6](https://img.shields.io/badge/PySide6-6.5.0-darkcyan?logo=qt&style=flat&labelColor=013243)](https://doc.qt.io/qtforpython/)
+[![python](https://img.shields.io/badge/Python-3.13.9-darkcyan?logo=python&style=flat&labelColor=013243)](https://www.python.org/)
+[![PySide6](https://img.shields.io/badge/PySide6-6.10.1-darkcyan?logo=qt&style=flat&labelColor=013243)](https://doc.qt.io/qtforpython/)
 [![Dolphin](https://img.shields.io/badge/Dolphin-5.0-darkcyan?logo=nintendogamecube&style=flat&labelColor=013243)](https://cn.dolphin-emu.org/)
-[![Dolphin-Memory-Engine](https://img.shields.io/badge/Dolphin_Memory_Engine-1.1.2-darkcyan?style=flat&labelColor=013243)](https://pypi.org/project/dolphin-memory-engine/)
+[![Dolphin-Memory-Engine](https://img.shields.io/badge/Dolphin_Memory_Engine-1.3.0-darkcyan?style=flat&labelColor=013243)](https://pypi.org/project/dolphin-memory-engine/)
 
 #### 项目说明
 
