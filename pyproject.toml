@@ -1,0 +1,7 @@
+[project]
+name = "PoR"
+version = "1.2.0"
+description = "苍炎的轨迹 动态修改器"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = []
