@@ -16,7 +16,7 @@
         Background="{DynamicResource AppBackgroundBrush}">
 
     <Grid RowDefinitions="*,44">
-        <Grid Grid.Row="0" ColumnDefinitions="300,*">
+        <Grid Grid.Row="0" ColumnDefinitions="280,*">
             <Border Grid.Column="0"
                     Background="{DynamicResource AppSurfaceAltBrush}"
                     BorderBrush="{DynamicResource AppBorderBrush}"
