@@ -7,6 +7,11 @@
              x:Class="PoR.App.Views.StatusView"
              x:DataType="vm:StatusTabViewModel">
 
+    <UserControl.Resources>
+        <!-- 人物标签上边距：调整第二个数字（top）即可微调标签的垂直位置。 -->
+        <Thickness x:Key="PersonLabelMargin">2,3,0,3</Thickness>
+    </UserControl.Resources>
+
     <UserControl.DataTemplates>
         <DataTemplate DataType="{x:Type fields:NumericFieldViewModel}"
                       x:DataType="fields:NumericFieldViewModel">
@@ -17,10 +22,10 @@
                            FormatString="0"
                            Increment="1"
                            ShowButtonSpinner="True"
-                           Width="110"
-                           MinHeight="26"
-                           Margin="0,2"
-                           HorizontalAlignment="Left" />
+                           TextAlignment="Right"
+                           Height="32"
+                           Margin="2,3,0,3"
+                           HorizontalAlignment="Stretch" />
         </DataTemplate>
 
         <DataTemplate DataType="{x:Type fields:EnumFieldViewModel}"
@@ -29,15 +34,16 @@
                       SelectedItem="{Binding SelectedItem}"
                       IsEnabled="{Binding IsEditable}"
                       Classes="compact"
-                      MaxDropDownHeight="320"
-                      Margin="0,2"
+                      Height="{Binding EditorHeight}"
+                      MaxDropDownHeight="{Binding DropDownHeight}"
+                      Margin="2,3,0,3"
                       HorizontalAlignment="Stretch">
                 <ComboBox.ItemTemplate>
                     <DataTemplate x:DataType="fields:EnumItemViewModel">
                         <Grid ColumnDefinitions="Auto,*">
                             <Image Source="{Binding Icon}"
-                                   Width="32"
-                                   Height="32"
+                                   Width="{Binding IconSize}"
+                                   Height="{Binding IconSize}"
                                    Margin="0,0,6,0"
                                    IsVisible="{Binding HasIcon}" />
                             <TextBlock Grid.Column="1"
@@ -55,8 +61,8 @@
             <CheckBox Content="{Binding Label}"
                       IsChecked="{Binding IsChecked}"
                       IsEnabled="{Binding IsEditable}"
-                      MinHeight="26"
-                      Margin="0,2" />
+                      MinHeight="32"
+                      Margin="10,3,0,3" />
         </DataTemplate>
 
         <DataTemplate DataType="{x:Type fields:TriStateLockFieldViewModel}"
@@ -65,22 +71,24 @@
                                            IsChecked="{Binding StateValue, Mode=TwoWay}"
                                            Content="{Binding DisplayText}"
                                            IsEnabled="{Binding IsEditable}"
-                                           MinHeight="26"
-                                           Margin="0,2" />
+                                           MinHeight="32"
+                                           Margin="10,3,0,3" />
         </DataTemplate>
     </UserControl.DataTemplates>
 
     <Border Classes="card"
-            Padding="10"
+            Padding="12"
             Margin="4"
             HorizontalAlignment="Center"
-            VerticalAlignment="Top">
+            VerticalAlignment="Stretch">
         <ScrollViewer VerticalScrollBarVisibility="Auto"
                       HorizontalScrollBarVisibility="Disabled">
             <Grid ColumnDefinitions="66,110,66,110,66,110"
                   RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto">
 
-                <Border Grid.Row="0" Grid.Column="0" Classes="fieldLabel">
+                <Border Grid.Row="0" Grid.Column="0" Classes="fieldLabel"
+                        VerticalAlignment="Top"
+                        Margin="{StaticResource PersonLabelMargin}">
                     <TextBlock Text="{loc:Tr Field_person}" VerticalAlignment="Center" />
                 </Border>
                 <ContentControl Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="5"

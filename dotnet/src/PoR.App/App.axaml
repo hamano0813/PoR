@@ -68,7 +68,8 @@
 
         <Style Selector="TabItem">
             <Setter Property="CornerRadius" Value="6,6,0,0" />
-            <Setter Property="Padding" Value="14,6" />
+            <Setter Property="Padding" Value="12,5" />
+            <Setter Property="FontSize" Value="13" />
         </Style>
 
         <Style Selector="TabItem:selected">
@@ -93,14 +94,16 @@
             <Setter Property="BorderBrush" Value="{DynamicResource AppBorderBrush}" />
             <Setter Property="BorderThickness" Value="1" />
             <Setter Property="CornerRadius" Value="3" />
-            <Setter Property="Padding" Value="4,2" />
-            <Setter Property="Margin" Value="0,2" />
-            <Setter Property="MinHeight" Value="26" />
+            <Setter Property="Padding" Value="6,3" />
+            <Setter Property="Margin" Value="2,3,0,3" />
+            <Setter Property="MinHeight" Value="32" />
         </Style>
 
         <Style Selector="Border.fieldLabel > TextBlock">
             <Setter Property="FontSize" Value="12" />
+            <Setter Property="HorizontalAlignment" Value="Center" />
             <Setter Property="VerticalAlignment" Value="Center" />
+            <Setter Property="TextAlignment" Value="Center" />
         </Style>
     </Application.Styles>
 </Application>

@@ -23,12 +23,18 @@ public sealed partial class EnumFieldViewModel : FieldViewModelBase
         long value)
         : base(session, definition, slotIndex, label)
     {
+        var isPortrait = string.Equals(definition.EnumId, "pid", StringComparison.Ordinal);
+        IconSize = isPortrait ? 100 : 32;
+        EditorHeight = isPortrait ? 112 : 32;
+        DropDownHeight = isPortrait ? 540 : 320;
+
         Items = mapping
             .Select(item => new EnumItemViewModel(
                 item.Value,
                 item.Key,
                 localization.Term(item.TermKey),
-                GetIcon(definition.EnumId, item.Key, assets)))
+                GetIcon(definition.EnumId, item.Key, assets),
+                IconSize))
             .ToList();
 
         SetLoading(true);
@@ -37,6 +43,12 @@ public sealed partial class EnumFieldViewModel : FieldViewModelBase
     }
 
     public IReadOnlyList<EnumItemViewModel> Items { get; }
+
+    public double IconSize { get; }
+
+    public double EditorHeight { get; }
+
+    public double DropDownHeight { get; }
 
     public void Load(long value)
     {
