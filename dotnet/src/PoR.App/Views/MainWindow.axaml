@@ -2,23 +2,27 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:vm="using:PoR.App.ViewModels"
         xmlns:views="using:PoR.App.Views"
+        xmlns:loc="using:PoR.App.Localization"
         x:Class="PoR.App.Views.MainWindow"
         x:DataType="vm:MainWindowViewModel"
-        Title="苍炎的轨迹 动态修改器"
+        Title="{loc:Tr Ui_App_Title}"
         Icon="/Assets/icon.ico"
         Width="1180"
         Height="760"
         MinWidth="980"
         MinHeight="620"
-        FontFamily="Microsoft YaHei UI">
+        FontFamily="Microsoft YaHei UI"
+        TransparencyLevelHint="Mica, AcrylicBlur, None"
+        Background="Transparent">
 
     <Grid RowDefinitions="52,*,28">
         <Border Grid.Row="0"
+                Background="{DynamicResource SystemControlBackgroundAltHighBrush}"
                 BorderBrush="{DynamicResource SystemControlForegroundBaseLowBrush}"
                 BorderThickness="0,0,0,1"
                 Padding="12,0">
             <Grid ColumnDefinitions="Auto,*,Auto">
-                <TextBlock Text="苍炎的轨迹 动态修改器"
+                <TextBlock Text="{loc:Tr Ui_App_Title}"
                            FontSize="15"
                            FontWeight="SemiBold"
                            VerticalAlignment="Center" />
@@ -37,7 +41,7 @@
 
                     <ComboBox Width="92"
                               ItemsSource="{Binding Languages}"
-                              SelectedItem="{Binding SelectedLanguage}"
+                              SelectedItem="{Binding SelectedLanguage, Mode=TwoWay}"
                               MinHeight="30">
                         <ComboBox.ItemTemplate>
                             <DataTemplate x:DataType="vm:LanguageOption">
@@ -47,14 +51,14 @@
                     </ComboBox>
 
                     <ToggleButton Content="{Binding ThemeButtonText}"
-                                  IsChecked="{Binding IsDarkTheme}"
+                                  IsChecked="{Binding IsDarkTheme, Mode=TwoWay}"
                                   MinHeight="30" />
 
-                    <Button Content="刷新"
+                    <Button Content="{loc:Tr Ui_Action_Refresh}"
                             Command="{Binding RefreshCommand}"
                             IsEnabled="{Binding IsNotBusy}"
                             MinHeight="30" />
-                    <Button Content="重连"
+                    <Button Content="{loc:Tr Ui_Action_Reconnect}"
                             Command="{Binding ReconnectCommand}"
                             IsEnabled="{Binding IsNotBusy}"
                             MinHeight="30" />
@@ -64,6 +68,7 @@
 
         <Grid Grid.Row="1" ColumnDefinitions="300,*">
             <Border Grid.Column="0"
+                    Background="{DynamicResource SystemControlBackgroundAltHighBrush}"
                     BorderBrush="{DynamicResource SystemControlForegroundBaseLowBrush}"
                     BorderThickness="0,0,1,0">
                 <Grid RowDefinitions="*,Auto">
@@ -100,7 +105,7 @@
                     </ListBox>
 
                     <Button Grid.Row="1"
-                            Content="刷新列表"
+                            Content="{loc:Tr Ui_Action_RefreshList}"
                             Command="{Binding RefreshCommand}"
                             IsEnabled="{Binding IsNotBusy}"
                             Margin="8"
@@ -109,35 +114,35 @@
             </Border>
 
             <TabControl Grid.Column="1" Margin="8,6,8,6">
-                <TabItem Header="状态">
+                <TabItem Header="{loc:Tr Ui_Tab_Status}">
                     <views:StatusView DataContext="{Binding StatusTab}" />
                 </TabItem>
-                <TabItem Header="能力">
-                    <TextBlock Text="能力页开发中"
+                <TabItem Header="{loc:Tr Ui_Tab_Ability}">
+                    <TextBlock Text="{loc:Tr Ui_Status_Dev}"
                                HorizontalAlignment="Center"
                                VerticalAlignment="Center"
                                Opacity="0.6" />
                 </TabItem>
-                <TabItem Header="技能">
-                    <TextBlock Text="技能页开发中"
+                <TabItem Header="{loc:Tr Ui_Tab_Skill}">
+                    <TextBlock Text="{loc:Tr Ui_Status_Dev}"
                                HorizontalAlignment="Center"
                                VerticalAlignment="Center"
                                Opacity="0.6" />
                 </TabItem>
-                <TabItem Header="装备">
-                    <TextBlock Text="装备页开发中"
+                <TabItem Header="{loc:Tr Ui_Tab_Item}">
+                    <TextBlock Text="{loc:Tr Ui_Status_Dev}"
                                HorizontalAlignment="Center"
                                VerticalAlignment="Center"
                                Opacity="0.6" />
                 </TabItem>
-                <TabItem Header="支援">
-                    <TextBlock Text="支援页开发中"
+                <TabItem Header="{loc:Tr Ui_Tab_Support}">
+                    <TextBlock Text="{loc:Tr Ui_Status_Dev}"
                                HorizontalAlignment="Center"
                                VerticalAlignment="Center"
                                Opacity="0.6" />
                 </TabItem>
-                <TabItem Header="其他">
-                    <TextBlock Text="其他页开发中"
+                <TabItem Header="{loc:Tr Ui_Tab_Other}">
+                    <TextBlock Text="{loc:Tr Ui_Status_Dev}"
                                HorizontalAlignment="Center"
                                VerticalAlignment="Center"
                                Opacity="0.6" />

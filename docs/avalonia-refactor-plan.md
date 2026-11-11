@@ -1207,3 +1207,10 @@ __pycache__/
   - 构建 0 警告 0 错误；应用冒烟运行 15 秒无崩溃。
   - 启动命令：`dotnet run --project src/PoR.App/PoR.App.csproj`（在 `dotnet/` 下）。
   - 注意：Avalonia 原生依赖较大，当前机器通过 `.nuget-local` 本地包源完成 restore；该目录已忽略，不提交。
+- 2026-11-12：根据人工 UI 测试修复。
+  - 翻译资源 `.zh.json` 被 MSBuild 识别为 culture，生成了 `zh/PoR.App.resources.dll`；改为显式 `LogicalName` + `WithCulture=false`，并把资源名改为 `terms-zh.json` / `ui-zh.json`。
+  - 新增 `ui.zh.json` / `ui.jp.json`，覆盖标题、Tab、按钮、连接状态、状态字段标签、行动选项。
+  - 新增 `TrExtension`（`{loc:Tr Ui_App_Title}`），语言切换时刷新所有索引器绑定。
+  - 语言 ComboBox、主题 ToggleButton 改为显式 `Mode=TwoWay`。
+  - 主题增加 Mica、圆角控件样式、卡片背景、青绿色 Accent。
+  - 仍需人工验证：Mica 在目标机器上的效果、浅色/深色切换、zh/jp 所有标签与游戏名词切换。

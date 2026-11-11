@@ -3,13 +3,62 @@
              x:Class="PoR.App.App"
              xmlns:local="using:PoR.App"
              RequestedThemeVariant="Default">
-             <!-- "Default" ThemeVariant follows system theme variant. "Dark" or "Light" are other available options. -->
 
     <Application.DataTemplates>
         <local:ViewLocator />
     </Application.DataTemplates>
 
+    <Application.Resources>
+        <Color x:Key="SystemAccentColor">#0E8FA3</Color>
+        <SolidColorBrush x:Key="PorAccentBrush" Color="#0E8FA3" />
+        <SolidColorBrush x:Key="PorAccentSubtleBrush" Color="#220E8FA3" />
+    </Application.Resources>
+
     <Application.Styles>
         <FluentTheme />
+
+        <Style Selector="Button">
+            <Setter Property="CornerRadius" Value="6" />
+            <Setter Property="MinHeight" Value="32" />
+            <Setter Property="Padding" Value="14,4" />
+        </Style>
+
+        <Style Selector="ToggleButton">
+            <Setter Property="CornerRadius" Value="6" />
+            <Setter Property="MinHeight" Value="32" />
+        </Style>
+
+        <Style Selector="TextBox">
+            <Setter Property="CornerRadius" Value="6" />
+            <Setter Property="MinHeight" Value="32" />
+        </Style>
+
+        <Style Selector="ComboBox">
+            <Setter Property="CornerRadius" Value="6" />
+            <Setter Property="MinHeight" Value="32" />
+        </Style>
+
+        <Style Selector="NumericUpDown">
+            <Setter Property="CornerRadius" Value="6" />
+            <Setter Property="MinHeight" Value="30" />
+        </Style>
+
+        <Style Selector="TabItem">
+            <Setter Property="CornerRadius" Value="6,6,0,0" />
+            <Setter Property="Padding" Value="14,6" />
+        </Style>
+
+        <Style Selector="ListBoxItem">
+            <Setter Property="CornerRadius" Value="6" />
+            <Setter Property="Margin" Value="2" />
+            <Setter Property="Padding" Value="4" />
+        </Style>
+
+        <Style Selector="Border.card">
+            <Setter Property="Background" Value="{DynamicResource SystemControlBackgroundAltHighBrush}" />
+            <Setter Property="BorderBrush" Value="{DynamicResource SystemControlForegroundBaseLowBrush}" />
+            <Setter Property="BorderThickness" Value="1" />
+            <Setter Property="CornerRadius" Value="8" />
+        </Style>
     </Application.Styles>
 </Application>

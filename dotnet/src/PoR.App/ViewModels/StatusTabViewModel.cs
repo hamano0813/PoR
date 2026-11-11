@@ -41,15 +41,6 @@ public sealed class StatusTabViewModel
         "victory",
     ];
 
-    private static readonly IReadOnlyDictionary<string, string> LabelOverrides =
-        new Dictionary<string, string>(StringComparer.Ordinal)
-        {
-            ["mtype"] = "模式",
-            ["seq1"] = "攻击",
-            ["seq2"] = "目标",
-            ["seq3"] = "回复",
-        };
-
     public StatusTabViewModel(
         GameSnapshot snapshot,
         SlotInfo slot,
@@ -61,9 +52,11 @@ public sealed class StatusTabViewModel
         foreach (var id in StatusFieldIds)
         {
             var field = session.Catalog.GetField(id);
-            var label = LabelOverrides.TryGetValue(id, out var custom)
-                ? custom
-                : field.LegacyKey;
+            var label = localization.Ui($"Field_{id}");
+            if (string.IsNullOrWhiteSpace(label) || label == $"Field_{id}")
+            {
+                label = field.LegacyKey;
+            }
             var value = snapshot.Slots.ReadField(field, slot.Index);
             IReadOnlyList<MappingItem> mapping = field.EnumId is null
                 ? Array.Empty<MappingItem>()
@@ -92,8 +85,8 @@ public sealed class StatusTabViewModel
                     slot.Index,
                     label,
                     [
-                        new ChoiceItem(0, "未行动"),
-                        new ChoiceItem(1, "行动完毕"),
+                        new ChoiceItem(0, localization.Ui("Choice_NotActed")),
+                        new ChoiceItem(1, localization.Ui("Choice_Acted")),
                     ],
                     value),
                 _ => new NumericFieldViewModel(

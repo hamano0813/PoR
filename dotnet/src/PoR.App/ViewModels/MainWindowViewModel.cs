@@ -51,6 +51,8 @@ public sealed partial class MainWindowViewModel : ViewModelBase, IDisposable
         _session = new GameSession(_memory);
         Languages = [new LanguageOption("zh", "中文"), new LanguageOption("jp", "日文")];
         _selectedLanguage = Languages[0];
+        _connectionText = _localization.Ui("Ui_Status_Disconnected");
+        _lastRefreshText = _localization.Ui("Ui_Status_NotRefreshed");
     }
 
     public ObservableCollection<CharacterSlotViewModel> Slots { get; } = [];
@@ -61,7 +63,8 @@ public sealed partial class MainWindowViewModel : ViewModelBase, IDisposable
 
     public bool HasError => !string.IsNullOrWhiteSpace(ErrorMessage);
 
-    public string ThemeButtonText => IsDarkTheme ? "浅色" : "深色";
+    public string ThemeButtonText => _localization.Ui(
+        IsDarkTheme ? "Ui_Action_ThemeLight" : "Ui_Action_ThemeDark");
 
     public async Task InitializeAsync()
     {
@@ -84,7 +87,6 @@ public sealed partial class MainWindowViewModel : ViewModelBase, IDisposable
             var snapshot = await _session.RefreshAsync();
             _snapshot = snapshot;
             BuildSlots(snapshot);
-            LastRefreshText = $"上次刷新 {snapshot.Timestamp:HH:mm:ss}";
         }
         catch (Exception exception)
         {
@@ -98,6 +100,7 @@ public sealed partial class MainWindowViewModel : ViewModelBase, IDisposable
         {
             IsBusy = false;
             UpdateConnection();
+            UpdateLastRefreshText();
         }
     }
 
@@ -160,6 +163,10 @@ public sealed partial class MainWindowViewModel : ViewModelBase, IDisposable
                 slot.RefreshText();
             }
         }
+
+        UpdateConnection();
+        UpdateLastRefreshText();
+        OnPropertyChanged(nameof(ThemeButtonText));
     }
 
     public void Dispose()
@@ -207,11 +214,19 @@ public sealed partial class MainWindowViewModel : ViewModelBase, IDisposable
         ConnectionText = _session.Status switch
         {
             DolphinStatus.Hooked =>
-                $"已连接 · PID {_memory.ProcessId} · MEM1 0x{_memory.Mem1HostBase:X}",
-            DolphinStatus.NotRunning => "未找到 Dolphin",
-            DolphinStatus.NoEmu => "Dolphin 已运行，等待游戏",
-            DolphinStatus.AccessDenied => "权限不足",
-            _ => "未连接",
+                $"{_localization.Ui("Ui_Status_Connected")} · PID {_memory.ProcessId} · " +
+                $"MEM1 0x{_memory.Mem1HostBase:X}",
+            DolphinStatus.NotRunning => _localization.Ui("Ui_Status_NotRunning"),
+            DolphinStatus.NoEmu => _localization.Ui("Ui_Status_NoEmu"),
+            DolphinStatus.AccessDenied => _localization.Ui("Ui_Status_AccessDenied"),
+            _ => _localization.Ui("Ui_Status_Disconnected"),
         };
+    }
+
+    private void UpdateLastRefreshText()
+    {
+        LastRefreshText = _snapshot is null
+            ? _localization.Ui("Ui_Status_NotRefreshed")
+            : $"{_localization.Ui("Ui_Status_LastRefresh")} {_snapshot.Timestamp:HH:mm:ss}";
     }
 }

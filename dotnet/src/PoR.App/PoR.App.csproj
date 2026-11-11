@@ -9,7 +9,22 @@
 
   <ItemGroup>
     <AvaloniaResource Include="Assets\**" />
-    <EmbeddedResource Include="Localization\terms.*.json" />
+    <EmbeddedResource Include="Localization\terms.zh.json">
+      <LogicalName>PoR.App.Localization.terms-zh.json</LogicalName>
+      <WithCulture>false</WithCulture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Localization\terms.jp.json">
+      <LogicalName>PoR.App.Localization.terms-jp.json</LogicalName>
+      <WithCulture>false</WithCulture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Localization\ui.zh.json">
+      <LogicalName>PoR.App.Localization.ui-zh.json</LogicalName>
+      <WithCulture>false</WithCulture>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Localization\ui.jp.json">
+      <LogicalName>PoR.App.Localization.ui-jp.json</LogicalName>
+      <WithCulture>false</WithCulture>
+    </EmbeddedResource>
   </ItemGroup>
 
   <ItemGroup>

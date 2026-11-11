@@ -38,6 +38,8 @@ public sealed class CharacterSlotViewModel : ObservableObject
     private string DisplayText(string? termKey, string? fallbackKey)
     {
         var text = _localization.Term(termKey);
-        return string.IsNullOrWhiteSpace(text) ? (fallbackKey ?? "未知") : text;
+        return string.IsNullOrWhiteSpace(text)
+            ? (fallbackKey ?? _localization.Ui("Ui_Status_Unknown"))
+            : text;
     }
 }
