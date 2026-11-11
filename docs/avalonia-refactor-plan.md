@@ -1177,9 +1177,12 @@ __pycache__/
   - `.NET 10 SDK 10.0.404` 已安装。
   - 生成 `dotnet/src/PoR.Game/Data/*.json` 和 `dotnet/src/PoR.App/Localization/terms.*.json`。
   - 校验工具报告：0 错误；PID/IID/SID/AFF/WP 图标 0 缺失。
-- 2026-11-11：P1 内存 PoC 完成。
+- 2026-11-11：P1 内存 PoC 完成并验证。
   - `PoR.Core`：`IDolphinMemory` / `DolphinStatus` / `MemoryAccessException`。
   - `PoR.Memory.Dolphin`：Windows/GameCube MEM1 探测、读/写、状态机。
   - `PoR.Tools.Probe`：读取人物/职业/等级/金钱和 159 个槽位。
   - 构建通过；未启动游戏时正确返回 `NoEmu`。
-  - 待验证：启动《苍炎》后 Probe 应返回 `Hooked` 且数值与 Python 版一致。
+  - 启动 Dolphin 2609b +《苍炎》后返回 `Hooked`，MEM1 大小 `0x1800000`。
+  - C# 与 Python DME 的 person/class/level/money/visibleSlots/10 个槽位样本完全一致。
+  - 同值写回自测（金钱 3 字节 + 等级 1 字节）通过，说明 `WriteProcessMemory` 正常。
+  - 新增 `tools/legacy/probe_python.py` 和 `tools/verify_parity.py`，可重复做 parity 检查。

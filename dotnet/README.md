@@ -31,7 +31,26 @@ Start Dolphin and boot Path of Radiance first, then:
 ```bash
 dotnet run --project tools/PoR.Tools.Probe/PoR.Tools.Probe.csproj
 dotnet run --project tools/PoR.Tools.Probe/PoR.Tools.Probe.csproj -- --json
+
+# Safe write round-trip: reads money/level and writes the same bytes back.
+dotnet run --project tools/PoR.Tools.Probe/PoR.Tools.Probe.csproj -- --json --write-self-test
 ```
+
+## Parity check
+
+With the legacy venv from `../tools/legacy/README.md` and Dolphin running the
+game:
+
+```bash
+# from the repository root
+.venv/Scripts/python.exe -I tools/verify_parity.py
+```
+
+Verified on 2026-11-11 against Dolphin 2609b + Path of Radiance:
+
+- status `Hooked`
+- person/class/level/money/visibleSlots and slot samples match Python exactly
+- write round-trip self-test passes
 
 Expected states:
 

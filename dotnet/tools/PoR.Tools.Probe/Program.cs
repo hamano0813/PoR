@@ -27,6 +27,8 @@ internal static class Program
         Console.OutputEncoding = Encoding.UTF8;
         var asJson = args.Any(
             arg => string.Equals(arg, "--json", StringComparison.OrdinalIgnoreCase));
+        var writeSelfTest = args.Any(
+            arg => string.Equals(arg, "--write-self-test", StringComparison.OrdinalIgnoreCase));
 
         using var memory = new WindowsDolphinMemory();
         if (!asJson)
@@ -65,6 +67,7 @@ internal static class Program
             var level = ReadByte(memory, LevelAddress);
             var money = ReadUInt24(memory, MoneyAddress);
             ReadSlotSnapshot(memory, out var visibleSlots, out var sample);
+            var writeRoundTrip = writeSelfTest && RunWriteSelfTest(memory);
 
             if (asJson)
             {
@@ -82,6 +85,7 @@ internal static class Program
                             money,
                             visibleSlots,
                             sample,
+                            writeSelfTest = writeSelfTest ? writeRoundTrip : (bool?)null,
                         },
                         JsonOptions));
             }
@@ -96,11 +100,21 @@ internal static class Program
                 Console.WriteLine($"Level:       {level}");
                 Console.WriteLine($"Money:       {money}");
                 Console.WriteLine($"Visible:     {visibleSlots} slots");
+                if (writeSelfTest)
+                {
+                    Console.WriteLine($"Write test:  {(writeRoundTrip ? "PASS" : "FAIL")}");
+                }
+
                 foreach (var slot in sample)
                 {
                     Console.WriteLine(
                         $"  [{slot.Index}] person=0x{slot.Person:X8} class=0x{slot.ClassId:X8}");
                 }
+            }
+
+            if (writeSelfTest && !writeRoundTrip)
+            {
+                return 3;
             }
 
             return 0;
@@ -159,6 +173,26 @@ internal static class Program
                 sample.Add(new SlotSample(index, person, classId));
             }
         }
+    }
+
+    private static bool RunWriteSelfTest(IDolphinMemory memory)
+    {
+        // Write the same bytes back: validates WriteProcessMemory without
+        // changing the player's game state.
+        var moneyBefore = new byte[3];
+        memory.ReadBytes(MoneyAddress, moneyBefore);
+        memory.WriteBytes(MoneyAddress, moneyBefore);
+        var moneyAfter = new byte[3];
+        memory.ReadBytes(MoneyAddress, moneyAfter);
+
+        var levelBefore = new byte[1];
+        memory.ReadBytes(LevelAddress, levelBefore);
+        memory.WriteBytes(LevelAddress, levelBefore);
+        var levelAfter = new byte[1];
+        memory.ReadBytes(LevelAddress, levelAfter);
+
+        return moneyBefore.AsSpan().SequenceEqual(moneyAfter) &&
+               levelBefore.AsSpan().SequenceEqual(levelAfter);
     }
 
     private static byte ReadByte(IDolphinMemory memory, uint address)
