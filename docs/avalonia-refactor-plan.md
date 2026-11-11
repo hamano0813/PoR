@@ -1168,3 +1168,18 @@ __pycache__/
 - 如果主题库选定，更新第 9.6 节和 `ThemeService` 包装方式。
 - 如果仓库策略执行，更新第 15 节为实际分支/路径。
 - 版本号、Avalonia/.NET 版本变化时更新 frontmatter 和第 14 节。
+
+---
+
+## 21. 实施进度
+
+- 2026-11-11：P0 数据迁移完成。
+  - `.NET 10 SDK 10.0.404` 已安装。
+  - 生成 `dotnet/src/PoR.Game/Data/*.json` 和 `dotnet/src/PoR.App/Localization/terms.*.json`。
+  - 校验工具报告：0 错误；PID/IID/SID/AFF/WP 图标 0 缺失。
+- 2026-11-11：P1 内存 PoC 完成。
+  - `PoR.Core`：`IDolphinMemory` / `DolphinStatus` / `MemoryAccessException`。
+  - `PoR.Memory.Dolphin`：Windows/GameCube MEM1 探测、读/写、状态机。
+  - `PoR.Tools.Probe`：读取人物/职业/等级/金钱和 159 个槽位。
+  - 构建通过；未启动游戏时正确返回 `NoEmu`。
+  - 待验证：启动《苍炎》后 Probe 应返回 `Hooked` 且数值与 Python 版一致。

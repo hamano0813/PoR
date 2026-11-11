@@ -1,21 +1,54 @@
 # C# / Avalonia Rewrite
 
-Current status: **P0 data migration complete**. The solution/project files will
-be added in P1/P2 after the .NET 10 SDK is installed.
+Current status: **P1 memory PoC implemented** (2026-11-11).
 
-## Layout (planned)
+## Projects
 
 ```text
 dotnet/
 ├─ PoR.sln
 ├─ src/
-│  ├─ PoR.App/                 # Avalonia UI + ViewModels
-│  ├─ PoR.Core/                # memory/domain abstractions
+│  ├─ PoR.Core/                # IDolphinMemory, status, exceptions
 │  ├─ PoR.Game/                # Path of Radiance catalog + Data/*.json
-│  └─ PoR.Memory.Dolphin/      # DME C# port (Windows/GameCube MEM1)
-├─ tests/
-└─ tools/                      # C# probe / migration helpers
+│  └─ PoR.Memory.Dolphin/      # Windows/GameCube MEM1 port of DME
+└─ tools/
+   └─ PoR.Tools.Probe/         # console probe for manual verification
 ```
+
+`PoR.App` (Avalonia UI) will be added in P3.
+
+## Build
+
+```bash
+cd dotnet
+dotnet build PoR.sln
+```
+
+## Probe
+
+Start Dolphin and boot Path of Radiance first, then:
+
+```bash
+dotnet run --project tools/PoR.Tools.Probe/PoR.Tools.Probe.csproj
+dotnet run --project tools/PoR.Tools.Probe/PoR.Tools.Probe.csproj -- --json
+```
+
+Expected states:
+
+- `NotRunning`: Dolphin process not found.
+- `NoEmu`: Dolphin is running but no GameCube MEM1 (usually no game booted).
+- `Hooked`: reads person/class/level/money and the 159-slot snapshot.
+- `AccessDenied`: run Dolphin and the probe at the same privilege level.
+
+The probe reads:
+
+| Field | Console address |
+|---|---|
+| Person | `0x802AF76C` |
+| Class | `0x802AF770` |
+| Level | `0x802AF77E` |
+| Money | `0x8032E7A1` (3 bytes) |
+| Slot snapshot | `0x802AF5E4`, 159 × `0x280` |
 
 ## Generated data
 
@@ -27,6 +60,6 @@ Validation report: `../docs/data-report.md`.
 
 ## Prerequisites
 
-- .NET 10 SDK (10.0.403 or later)
-- Avalonia templates 12.1.6
+- .NET 10 SDK (10.0.404 or later)
+- Avalonia templates 12.1.6 when P3 starts
 - See `../docs/avalonia-refactor-plan.md` section 14 for commands.
