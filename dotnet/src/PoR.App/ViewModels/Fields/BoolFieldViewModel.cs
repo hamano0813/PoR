@@ -1,3 +1,4 @@
+using Avalonia.Media.Imaging;
 using CommunityToolkit.Mvvm.ComponentModel;
 using PoR.Core.Values;
 using PoR.Game;
@@ -14,13 +15,24 @@ public sealed partial class BoolFieldViewModel : FieldViewModelBase
         FieldDefinition definition,
         int? slotIndex,
         string label,
-        long value)
+        long value,
+        Bitmap? icon = null,
+        double iconSize = 32)
         : base(session, definition, slotIndex, label)
     {
+        Icon = icon;
+        IconSize = iconSize;
+
         SetLoading(true);
         IsChecked = value != 0;
         SetLoading(false);
     }
+
+    public Bitmap? Icon { get; }
+
+    public bool HasIcon => Icon is not null;
+
+    public double IconSize { get; }
 
     public void Load(long value)
     {

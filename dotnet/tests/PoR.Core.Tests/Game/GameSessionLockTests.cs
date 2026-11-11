@@ -33,6 +33,19 @@ public sealed class GameSessionLockTests
     }
 
     [Fact]
+    public async Task RefreshReadsGlobalFields()
+    {
+        using var memory = new FakeMemory();
+        await using var session = new GameSession(memory);
+        var money = session.Catalog.GetField("money");
+        memory.WriteBytes(money.Address, new byte[] { 0x01, 0x02, 0x03 });
+
+        var snapshot = await session.RefreshAsync();
+
+        Assert.Equal(0x010203, snapshot.GlobalValues["money"]);
+    }
+
+    [Fact]
     public async Task StopAllLocksClearsEveryLock()
     {
         using var memory = new FakeMemory();

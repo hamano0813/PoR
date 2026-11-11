@@ -265,6 +265,19 @@ public sealed class GameSession : IAsyncDisposable
             profile.SlotStep,
             buffer);
 
+        var globalValues = new Dictionary<string, long>(StringComparer.Ordinal);
+        foreach (var field in _catalog.Fields.Values)
+        {
+            if (field.Scope != FieldScope.Global)
+            {
+                continue;
+            }
+
+            var fieldBuffer = new byte[field.ByteLength];
+            _memory.ReadBytes(field.Address, fieldBuffer);
+            globalValues[field.Id] = ValueCodec.Read(fieldBuffer, field.Length, field.Bit);
+        }
+
         var mappings = new Dictionary<string, IReadOnlyList<MappingItem>>(StringComparer.Ordinal);
 
         foreach (var (id, definition) in _catalog.PointerMappings)
@@ -328,6 +341,7 @@ public sealed class GameSession : IAsyncDisposable
             slots,
             slotInfos,
             mappings,
+            globalValues,
             DateTimeOffset.Now);
     }
 }

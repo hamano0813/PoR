@@ -20,6 +20,7 @@ public sealed partial class MainWindowViewModel : ViewModelBase, IDisposable
     private readonly WindowsDolphinMemory _memory;
     private readonly GameSession _session;
     private GameSnapshot? _snapshot;
+    private bool _suppressTabRebuild;
 
     [ObservableProperty]
     private bool _isBusy;
@@ -38,6 +39,21 @@ public sealed partial class MainWindowViewModel : ViewModelBase, IDisposable
 
     [ObservableProperty]
     private StatusTabViewModel? _statusTab;
+
+    [ObservableProperty]
+    private AbilityTabViewModel? _abilityTab;
+
+    [ObservableProperty]
+    private SkillTabViewModel? _skillTab;
+
+    [ObservableProperty]
+    private ItemTabViewModel? _itemTab;
+
+    [ObservableProperty]
+    private SupportTabViewModel? _supportTab;
+
+    [ObservableProperty]
+    private OtherTabViewModel? _otherTab;
 
     [ObservableProperty]
     private LanguageOption _selectedLanguage;
@@ -108,13 +124,14 @@ public sealed partial class MainWindowViewModel : ViewModelBase, IDisposable
             var snapshot = await _session.RefreshAsync();
             _snapshot = snapshot;
             BuildSlots(snapshot);
+            RebuildTabs();
         }
         catch (Exception exception)
         {
             _snapshot = null;
             Slots.Clear();
             SelectedSlot = null;
-            StatusTab = null;
+            ClearTabs();
             ErrorMessage = exception.Message;
         }
         finally
@@ -172,7 +189,10 @@ public sealed partial class MainWindowViewModel : ViewModelBase, IDisposable
 
     partial void OnSelectedSlotChanged(CharacterSlotViewModel? value)
     {
-        BuildStatus();
+        if (!_suppressTabRebuild)
+        {
+            RebuildTabs(rebuildGlobal: false);
+        }
     }
 
     partial void OnSelectedLanguageChanged(LanguageOption value)
@@ -187,6 +207,7 @@ public sealed partial class MainWindowViewModel : ViewModelBase, IDisposable
         if (_snapshot is not null)
         {
             BuildSlots(_snapshot);
+            RebuildTabs();
         }
         else
         {
@@ -194,6 +215,8 @@ public sealed partial class MainWindowViewModel : ViewModelBase, IDisposable
             {
                 slot.RefreshText();
             }
+
+            ClearTabs();
         }
 
         UpdateConnection();
@@ -258,28 +281,87 @@ public sealed partial class MainWindowViewModel : ViewModelBase, IDisposable
     private void BuildSlots(GameSnapshot snapshot)
     {
         var selectedIndex = SelectedSlot?.Index;
-        Slots.Clear();
-
-        foreach (var info in snapshot.SlotInfos.Where(info => !info.IsEmpty))
+        _suppressTabRebuild = true;
+        try
         {
-            Slots.Add(new CharacterSlotViewModel(info, _localization, _assets));
-        }
+            Slots.Clear();
 
-        SelectedSlot = selectedIndex is { } index
-            ? Slots.FirstOrDefault(slot => slot.Index == index) ?? Slots.FirstOrDefault()
-            : Slots.FirstOrDefault();
+            foreach (var info in snapshot.SlotInfos.Where(info => !info.IsEmpty))
+            {
+                Slots.Add(new CharacterSlotViewModel(info, _localization, _assets));
+            }
+
+            SelectedSlot = selectedIndex is { } index
+                ? Slots.FirstOrDefault(slot => slot.Index == index) ?? Slots.FirstOrDefault()
+                : Slots.FirstOrDefault();
+        }
+        finally
+        {
+            _suppressTabRebuild = false;
+        }
     }
 
-    private void BuildStatus()
+    private void RebuildTabs(bool rebuildGlobal = true)
     {
-        StatusTab = _snapshot is null || SelectedSlot is null
-            ? null
-            : new StatusTabViewModel(
+        if (_snapshot is null || SelectedSlot is null)
+        {
+            StatusTab = null;
+            AbilityTab = null;
+            SkillTab = null;
+            ItemTab = null;
+            SupportTab = null;
+        }
+        else
+        {
+            var info = SelectedSlot.Info;
+            StatusTab = new StatusTabViewModel(
                 _snapshot,
-                SelectedSlot.Info,
+                info,
                 _session,
                 _localization,
                 _assets);
+            AbilityTab = new AbilityTabViewModel(
+                _snapshot,
+                info,
+                _session,
+                _localization,
+                _assets);
+            SkillTab = new SkillTabViewModel(
+                _snapshot,
+                info,
+                _session,
+                _localization,
+                _assets);
+            ItemTab = new ItemTabViewModel(
+                _snapshot,
+                info,
+                _session,
+                _localization,
+                _assets);
+            SupportTab = new SupportTabViewModel(
+                _snapshot,
+                info,
+                _session,
+                _localization,
+                _assets);
+        }
+
+        if (rebuildGlobal || OtherTab is null)
+        {
+            OtherTab = _snapshot is null
+                ? null
+                : new OtherTabViewModel(_snapshot, _session, _localization);
+        }
+    }
+
+    private void ClearTabs()
+    {
+        StatusTab = null;
+        AbilityTab = null;
+        SkillTab = null;
+        ItemTab = null;
+        SupportTab = null;
+        OtherTab = null;
     }
 
     private void UpdateConnection()

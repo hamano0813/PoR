@@ -22,11 +22,13 @@ public sealed class GameSnapshot
         SlotSnapshot slots,
         IReadOnlyList<SlotInfo> slotInfos,
         IReadOnlyDictionary<string, IReadOnlyList<MappingItem>> mappings,
+        IReadOnlyDictionary<string, long> globalValues,
         DateTimeOffset timestamp)
     {
         Slots = slots;
         SlotInfos = slotInfos;
         Mappings = mappings;
+        GlobalValues = globalValues;
         Timestamp = timestamp;
     }
 
@@ -35,6 +37,8 @@ public sealed class GameSnapshot
     public IReadOnlyList<SlotInfo> SlotInfos { get; }
 
     public IReadOnlyDictionary<string, IReadOnlyList<MappingItem>> Mappings { get; }
+
+    public IReadOnlyDictionary<string, long> GlobalValues { get; }
 
     public DateTimeOffset Timestamp { get; }
 

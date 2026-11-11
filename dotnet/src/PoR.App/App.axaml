@@ -2,10 +2,84 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              x:Class="PoR.App.App"
              xmlns:local="using:PoR.App"
+             xmlns:fields="using:PoR.App.ViewModels.Fields"
+             xmlns:controls="using:PoR.App.Controls"
              RequestedThemeVariant="Default">
 
     <Application.DataTemplates>
         <local:ViewLocator />
+
+        <DataTemplate DataType="{x:Type fields:NumericFieldViewModel}"
+                      x:DataType="fields:NumericFieldViewModel">
+            <NumericUpDown Value="{Binding Value}"
+                           Minimum="{Binding Minimum}"
+                           Maximum="{Binding Maximum}"
+                           IsEnabled="{Binding IsEditable}"
+                           FormatString="0"
+                           Increment="1"
+                           ShowButtonSpinner="True"
+                           TextAlignment="Right"
+                           Height="32"
+                           Margin="2,3,0,3"
+                           HorizontalAlignment="Stretch" />
+        </DataTemplate>
+
+        <DataTemplate DataType="{x:Type fields:EnumFieldViewModel}"
+                      x:DataType="fields:EnumFieldViewModel">
+            <ComboBox ItemsSource="{Binding Items}"
+                      SelectedItem="{Binding SelectedItem}"
+                      IsEnabled="{Binding IsEditable}"
+                      Classes="compact"
+                      Height="{Binding EditorHeight}"
+                      MaxDropDownHeight="{Binding DropDownHeight}"
+                      Margin="2,3,0,3"
+                      HorizontalAlignment="Stretch">
+                <ComboBox.ItemTemplate>
+                    <DataTemplate x:DataType="fields:EnumItemViewModel">
+                        <Grid ColumnDefinitions="Auto,*">
+                            <Image Source="{Binding Icon}"
+                                   Width="{Binding IconSize}"
+                                   Height="{Binding IconSize}"
+                                   Margin="0,0,6,0"
+                                   IsVisible="{Binding HasIcon}" />
+                            <TextBlock Grid.Column="1"
+                                       Text="{Binding DisplayName}"
+                                       VerticalAlignment="Center"
+                                       TextTrimming="CharacterEllipsis" />
+                        </Grid>
+                    </DataTemplate>
+                </ComboBox.ItemTemplate>
+            </ComboBox>
+        </DataTemplate>
+
+        <DataTemplate DataType="{x:Type fields:BoolFieldViewModel}"
+                      x:DataType="fields:BoolFieldViewModel">
+            <Grid ColumnDefinitions="Auto,*">
+                <Image Source="{Binding Icon}"
+                       Width="{Binding IconSize}"
+                       Height="{Binding IconSize}"
+                       Margin="0,0,6,0"
+                       VerticalAlignment="Center"
+                       IsVisible="{Binding HasIcon}" />
+                <CheckBox Grid.Column="1"
+                          Content="{Binding Label}"
+                          IsChecked="{Binding IsChecked}"
+                          IsEnabled="{Binding IsEditable}"
+                          MinHeight="32"
+                          Margin="10,3,0,3"
+                          VerticalAlignment="Center" />
+            </Grid>
+        </DataTemplate>
+
+        <DataTemplate DataType="{x:Type fields:TriStateLockFieldViewModel}"
+                      x:DataType="fields:TriStateLockFieldViewModel">
+            <controls:TriStateLockCheckBox IsThreeState="True"
+                                           IsChecked="{Binding StateValue, Mode=TwoWay}"
+                                           Content="{Binding DisplayText}"
+                                           IsEnabled="{Binding IsEditable}"
+                                           MinHeight="32"
+                                           Margin="10,3,0,3" />
+        </DataTemplate>
     </Application.DataTemplates>
 
     <Application.Resources>
@@ -104,6 +178,19 @@
             <Setter Property="HorizontalAlignment" Value="Center" />
             <Setter Property="VerticalAlignment" Value="Center" />
             <Setter Property="TextAlignment" Value="Center" />
+        </Style>
+
+        <Style Selector="TextBlock.sectionTitle">
+            <Setter Property="FontSize" Value="13" />
+            <Setter Property="FontWeight" Value="SemiBold" />
+            <Setter Property="Margin" Value="2,0,0,8" />
+        </Style>
+
+        <Style Selector="TextBlock.columnHeader">
+            <Setter Property="FontSize" Value="11" />
+            <Setter Property="HorizontalAlignment" Value="Center" />
+            <Setter Property="Opacity" Value="0.7" />
+            <Setter Property="Margin" Value="0,0,0,4" />
         </Style>
     </Application.Styles>
 </Application>

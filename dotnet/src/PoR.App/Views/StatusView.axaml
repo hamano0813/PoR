@@ -1,8 +1,6 @@
 <UserControl xmlns="https://github.com/avaloniaui"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:vm="using:PoR.App.ViewModels"
-             xmlns:fields="using:PoR.App.ViewModels.Fields"
-             xmlns:controls="using:PoR.App.Controls"
              xmlns:loc="using:PoR.App.Localization"
              x:Class="PoR.App.Views.StatusView"
              x:DataType="vm:StatusTabViewModel">
@@ -11,70 +9,6 @@
         <!-- 人物标签上边距：调整第二个数字（top）即可微调标签的垂直位置。 -->
         <Thickness x:Key="PersonLabelMargin">2,3,0,3</Thickness>
     </UserControl.Resources>
-
-    <UserControl.DataTemplates>
-        <DataTemplate DataType="{x:Type fields:NumericFieldViewModel}"
-                      x:DataType="fields:NumericFieldViewModel">
-            <NumericUpDown Value="{Binding Value}"
-                           Minimum="{Binding Minimum}"
-                           Maximum="{Binding Maximum}"
-                           IsEnabled="{Binding IsEditable}"
-                           FormatString="0"
-                           Increment="1"
-                           ShowButtonSpinner="True"
-                           TextAlignment="Right"
-                           Height="32"
-                           Margin="2,3,0,3"
-                           HorizontalAlignment="Stretch" />
-        </DataTemplate>
-
-        <DataTemplate DataType="{x:Type fields:EnumFieldViewModel}"
-                      x:DataType="fields:EnumFieldViewModel">
-            <ComboBox ItemsSource="{Binding Items}"
-                      SelectedItem="{Binding SelectedItem}"
-                      IsEnabled="{Binding IsEditable}"
-                      Classes="compact"
-                      Height="{Binding EditorHeight}"
-                      MaxDropDownHeight="{Binding DropDownHeight}"
-                      Margin="2,3,0,3"
-                      HorizontalAlignment="Stretch">
-                <ComboBox.ItemTemplate>
-                    <DataTemplate x:DataType="fields:EnumItemViewModel">
-                        <Grid ColumnDefinitions="Auto,*">
-                            <Image Source="{Binding Icon}"
-                                   Width="{Binding IconSize}"
-                                   Height="{Binding IconSize}"
-                                   Margin="0,0,6,0"
-                                   IsVisible="{Binding HasIcon}" />
-                            <TextBlock Grid.Column="1"
-                                       Text="{Binding DisplayName}"
-                                       VerticalAlignment="Center"
-                                       TextTrimming="CharacterEllipsis" />
-                        </Grid>
-                    </DataTemplate>
-                </ComboBox.ItemTemplate>
-            </ComboBox>
-        </DataTemplate>
-
-        <DataTemplate DataType="{x:Type fields:BoolFieldViewModel}"
-                      x:DataType="fields:BoolFieldViewModel">
-            <CheckBox Content="{Binding Label}"
-                      IsChecked="{Binding IsChecked}"
-                      IsEnabled="{Binding IsEditable}"
-                      MinHeight="32"
-                      Margin="10,3,0,3" />
-        </DataTemplate>
-
-        <DataTemplate DataType="{x:Type fields:TriStateLockFieldViewModel}"
-                      x:DataType="fields:TriStateLockFieldViewModel">
-            <controls:TriStateLockCheckBox IsThreeState="True"
-                                           IsChecked="{Binding StateValue, Mode=TwoWay}"
-                                           Content="{Binding DisplayText}"
-                                           IsEnabled="{Binding IsEditable}"
-                                           MinHeight="32"
-                                           Margin="10,3,0,3" />
-        </DataTemplate>
-    </UserControl.DataTemplates>
 
     <Border Classes="card"
             Padding="12"

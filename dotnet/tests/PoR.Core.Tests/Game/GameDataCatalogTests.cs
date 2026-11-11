@@ -62,6 +62,38 @@ public sealed class GameDataCatalogTests
     }
 
     [Fact]
+    public void RemainingTabFieldsExistWithExpectedKinds()
+    {
+        var catalog = GameDataCatalog.Default;
+        var skillIds = catalog.Skills.Skills
+            .Concat(catalog.Skills.Masteries)
+            .Concat(catalog.Skills.Features);
+
+        foreach (var id in skillIds)
+        {
+            Assert.True(catalog.Fields.TryGetValue(id, out var field), id);
+            Assert.Equal(FieldKind.Bool, field!.Kind);
+        }
+
+        for (var index = 1; index <= 8; index++)
+        {
+            Assert.Equal(FieldKind.Enum, catalog.GetField($"item{index}").Kind);
+            Assert.Equal("iid", catalog.GetField($"item{index}").EnumId);
+            Assert.Equal(FieldKind.Numeric, catalog.GetField($"durability{index}").Kind);
+            Assert.Equal(FieldKind.Bool, catalog.GetField($"equipped{index}").Kind);
+            Assert.Equal(FieldKind.Bool, catalog.GetField($"dropped{index}").Kind);
+        }
+
+        for (var index = 1; index <= 7; index++)
+        {
+            Assert.Equal(FieldKind.Numeric, catalog.GetField($"support{index}").Kind);
+        }
+
+        Assert.Equal(FieldScope.Global, catalog.GetField("money").Scope);
+        Assert.Equal(FieldScope.Global, catalog.GetField("bonusExp").Scope);
+    }
+
+    [Fact]
     public void KeyFieldsHaveExpectedAddresses()
     {
         var catalog = GameDataCatalog.Default;

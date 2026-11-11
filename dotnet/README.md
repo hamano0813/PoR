@@ -1,6 +1,6 @@
 # C# / Avalonia Rewrite
 
-Current status: **P3 Avalonia shell implemented** (2026-11-12).
+Current status: **P4 all editor tabs implemented** (2026-11-12).
 
 ## Projects
 
@@ -38,11 +38,19 @@ Current UI scope:
   available
 - tri-state action checkbox: unchecked = not acted, indeterminate = 10 ms
   "lock not acted" polling, checked = acted
+- ability tab: base stats, growth rates, weapon proficiency icons/values
+- skill tab: two scrollable skill/feature lists with localized names and icons
+- item tab: eight item/durability/equipped/dropped rows with item icons
+- support tab: current affinity, seven support partners, support points and
+  C/B/A progress bars driven by the original thresholds
+- other tab: global money/bonus EXP plus the original modification notes
 - fixed-width language/theme/refresh/reconnect buttons in the bottom status bar
 - `tools/process_avatars.py` regenerates the de-fringed PNG portraits used by
   the roster and the character drop-down (requires Pillow)
 
-Ability/Skill/Item/Support/Other tabs are placeholders for P4.
+All editor fields share the application-level editor DataTemplates in
+`src/PoR.App/App.axaml`, so numeric/enum/bool controls look and behave the same
+across tabs.
 
 ## Build
 

@@ -1,0 +1,86 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:vm="using:PoR.App.ViewModels"
+             xmlns:loc="using:PoR.App.Localization"
+             x:Class="PoR.App.Views.SupportView"
+             x:DataType="vm:SupportTabViewModel">
+
+    <UserControl.DataTemplates>
+        <DataTemplate DataType="{x:Type vm:SupportProgressViewModel}"
+                      x:DataType="vm:SupportProgressViewModel">
+            <Grid Width="88" Height="26" Margin="1,3" HorizontalAlignment="Center">
+                <ProgressBar Minimum="{Binding Minimum}"
+                             Maximum="{Binding Maximum}"
+                             Value="{Binding Value}"
+                             Height="26" />
+                <Border Background="#99000000"
+                        CornerRadius="3"
+                        Padding="5,0"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center">
+                    <TextBlock Text="{Binding Label}"
+                               Foreground="White"
+                               FontSize="11"
+                               FontWeight="SemiBold" />
+                </Border>
+            </Grid>
+        </DataTemplate>
+    </UserControl.DataTemplates>
+
+    <Border Classes="card"
+            Padding="12"
+            Margin="4"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top">
+        <StackPanel>
+            <Grid ColumnDefinitions="34,*" Margin="0,0,0,8">
+                <Image Source="{Binding CurrentAffinityIcon}"
+                       Width="28"
+                       Height="28"
+                       VerticalAlignment="Center"
+                       IsVisible="{Binding HasCurrentAffinity}" />
+                <TextBlock Grid.Column="1"
+                           Text="{Binding CurrentName}"
+                           FontSize="13"
+                           FontWeight="SemiBold"
+                           VerticalAlignment="Center"
+                           Margin="6,0,0,0" />
+            </Grid>
+
+            <Grid ColumnDefinitions="34,110,120,90,90,90">
+                <TextBlock Grid.Column="2"
+                           Classes="columnHeader"
+                           Text="{loc:Tr Ui_Support_Points}"
+                           Margin="2,0,0,4" />
+            </Grid>
+
+            <ItemsControl ItemsSource="{Binding Rows}">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate x:DataType="vm:SupportRowViewModel">
+                        <Grid ColumnDefinitions="34,110,120,90,90,90">
+                            <Image Source="{Binding AffinityIcon}"
+                                   Width="28"
+                                   Height="28"
+                                   VerticalAlignment="Center"
+                                   IsVisible="{Binding HasAffinity}" />
+                            <TextBlock Grid.Column="1"
+                                       Text="{Binding PartnerName}"
+                                       VerticalAlignment="Center"
+                                       TextTrimming="CharacterEllipsis"
+                                       Margin="2,0,6,0" />
+                            <ContentControl Grid.Column="2" Content="{Binding Points}" />
+                            <ContentControl Grid.Column="3" Content="{Binding C}" />
+                            <ContentControl Grid.Column="4" Content="{Binding B}" />
+                            <ContentControl Grid.Column="5" Content="{Binding A}" />
+                        </Grid>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+
+            <TextBlock Text="{Binding EmptyText}"
+                       IsVisible="{Binding IsEmpty}"
+                       Opacity="0.6"
+                       Margin="4,12,4,4" />
+        </StackPanel>
+    </Border>
+</UserControl>

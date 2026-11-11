@@ -60,34 +60,19 @@
                     <views:StatusView DataContext="{Binding StatusTab}" />
                 </TabItem>
                 <TabItem Header="{loc:Tr Ui_Tab_Ability}">
-                    <TextBlock Text="{loc:Tr Ui_Status_Dev}"
-                               HorizontalAlignment="Center"
-                               VerticalAlignment="Center"
-                               Opacity="0.6" />
+                    <views:AbilityView DataContext="{Binding AbilityTab}" />
                 </TabItem>
                 <TabItem Header="{loc:Tr Ui_Tab_Skill}">
-                    <TextBlock Text="{loc:Tr Ui_Status_Dev}"
-                               HorizontalAlignment="Center"
-                               VerticalAlignment="Center"
-                               Opacity="0.6" />
+                    <views:SkillView DataContext="{Binding SkillTab}" />
                 </TabItem>
                 <TabItem Header="{loc:Tr Ui_Tab_Item}">
-                    <TextBlock Text="{loc:Tr Ui_Status_Dev}"
-                               HorizontalAlignment="Center"
-                               VerticalAlignment="Center"
-                               Opacity="0.6" />
+                    <views:ItemView DataContext="{Binding ItemTab}" />
                 </TabItem>
                 <TabItem Header="{loc:Tr Ui_Tab_Support}">
-                    <TextBlock Text="{loc:Tr Ui_Status_Dev}"
-                               HorizontalAlignment="Center"
-                               VerticalAlignment="Center"
-                               Opacity="0.6" />
+                    <views:SupportView DataContext="{Binding SupportTab}" />
                 </TabItem>
                 <TabItem Header="{loc:Tr Ui_Tab_Other}">
-                    <TextBlock Text="{loc:Tr Ui_Status_Dev}"
-                               HorizontalAlignment="Center"
-                               VerticalAlignment="Center"
-                               Opacity="0.6" />
+                    <views:OtherView DataContext="{Binding OtherTab}" />
                 </TabItem>
             </TabControl>
         </Grid>

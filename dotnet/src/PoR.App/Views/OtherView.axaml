@@ -1,0 +1,47 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:vm="using:PoR.App.ViewModels"
+             x:Class="PoR.App.Views.OtherView"
+             x:DataType="vm:OtherTabViewModel">
+
+    <Border Classes="card"
+            Width="620"
+            Padding="16"
+            Margin="4"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top">
+        <StackPanel>
+            <Grid ColumnDefinitions="110,*" Margin="0,0,0,2">
+                <Border Classes="fieldLabel">
+                    <TextBlock Text="{Binding Money.Label}" />
+                </Border>
+                <ContentControl Grid.Column="1" Content="{Binding Money}" />
+            </Grid>
+
+            <Grid ColumnDefinitions="110,*" Margin="0,0,0,8">
+                <Border Classes="fieldLabel">
+                    <TextBlock Text="{Binding BonusExp.Label}" />
+                </Border>
+                <ContentControl Grid.Column="1" Content="{Binding BonusExp}" />
+            </Grid>
+
+            <Border Height="1"
+                    Background="{DynamicResource AppBorderBrush}"
+                    Margin="0,4,0,12" />
+
+            <TextBlock Text="{Binding WarningText}"
+                       FontSize="13"
+                       FontWeight="SemiBold"
+                       Foreground="#D69E2E"
+                       TextWrapping="Wrap"
+                       Margin="2,0,2,10" />
+
+            <TextBlock Text="{Binding InfoText}"
+                       FontSize="12"
+                       LineHeight="20"
+                       TextWrapping="Wrap"
+                       Opacity="0.85"
+                       Margin="2" />
+        </StackPanel>
+    </Border>
+</UserControl>
