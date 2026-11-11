@@ -13,8 +13,9 @@ This branch is a parallel UI version of the completed editor:
   card on the Other tab.
 - Keeps the fixed 960×800 window (no resize/maximize) and the same compact
   280px roster, form spacing and bottom action bar as the `avalonia` branch.
-- Uses FluentAvalonia's native compact `NumericUpDown` spinner instead of the
-  custom `CompactNumericUpDown` from the `avalonia` branch.
+- Uses a `CompactNumericUpDown` tuned for FluentAvalonia: the spinner strip is
+  narrowed to two 14px buttons with a smaller glyph, while keeping the
+  standard NumericUpDown input, validation and wheel behavior.
 - Shares all ViewModels, localization, memory access and page behavior with the
   `avalonia` branch.
 
@@ -50,7 +51,7 @@ Current UI scope:
 - left roster with avatars/names/classes and selection
 - compact status form modeled on the original Qt layout: identity/faction/army,
   flags, level/EXP/HP, status effects, coordinates, MTYPE/SEQ, battle/victory
-- numeric fields use FluentAvalonia's compact spinner; enum fields show
+- numeric fields use a compact FluentAvalonia spinner; enum fields show
   portraits/items where available
 - tri-state action checkbox: unchecked = not acted, indeterminate = 10 ms
   "lock not acted" polling, checked = acted
