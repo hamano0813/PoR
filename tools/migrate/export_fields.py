@@ -82,6 +82,8 @@ CORE_IDS: dict[str, str] = {
     "SEQ2": "seq2",
     "SEQ3": "seq3",
     "MTYPE": "mtype",
+    "战斗": "battle",
+    "胜利": "victory",
     "所持金": "money",
     "奖励EX": "bonusExp",
 }

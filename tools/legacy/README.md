@@ -25,6 +25,21 @@ The script prints JSON with:
 - `person`, `classId`, `level`, `money`
 - `visibleSlots` and the first 10 slot samples
 
+## Print character status
+
+```bash
+# default slot 0
+.venv/Scripts/python.exe -I tools/legacy/print_status.py
+
+# explicit slot
+.venv/Scripts/python.exe -I tools/legacy/print_status.py --slot 8
+```
+
+It prints the status-tab fields (identity, faction/army, level/EXP/HP,
+status effects, coordinates, MTYPE/SEQ, battle/victory). Action-lock state is
+maintained by the modifier, not stored in game memory, so the script reports
+only the raw action value.
+
 ## Parity check
 
 Build the C# solution once, then run:

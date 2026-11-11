@@ -1339,7 +1339,7 @@
       "displayKey": "Ui.Field.support7"
     },
     {
-      "id": "field_96",
+      "id": "battle",
       "legacyKey": "战斗",
       "address": "0x802AF80C",
       "length": 2,
@@ -1349,10 +1349,10 @@
       "enumId": null,
       "readOnly": false,
       "refreshAfterWrite": false,
-      "displayKey": "Ui.Field.field_96"
+      "displayKey": "Ui.Field.battle"
     },
     {
-      "id": "field_97",
+      "id": "victory",
       "legacyKey": "胜利",
       "address": "0x802AF80E",
       "length": 2,
@@ -1362,7 +1362,7 @@
       "enumId": null,
       "readOnly": false,
       "refreshAfterWrite": false,
-      "displayKey": "Ui.Field.field_97"
+      "displayKey": "Ui.Field.victory"
     },
     {
       "id": "SID_HERO",
