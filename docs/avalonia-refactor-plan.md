@@ -279,13 +279,14 @@ PoR.sln
 │  │
 │  ├─ PoR.Core/                    # 与 UI/Win32 无关
 │  │  ├─ Memory/IDolphinMemory.cs
-│  │  ├─ Values/{FieldDefinition,ValueCodec,BitField}.cs
-│  │  ├─ Game/{GameProfile,GameDataCatalog,MappingService,SlotSnapshot,GameSnapshot,GameSession,LockManager}.cs
+│  │  ├─ Values/{FieldDefinition,ValueCodec,BitField,FieldKind,FieldScope}.cs
+│  │  ├─ Game/{GameProfile,EnumDefinition,MappingDefinitions,IMemoryReader,DolphinMemoryReader,MappingService,SlotSnapshot,GameSnapshot,SupportCatalog}.cs
 │  │  ├─ Localization/ILocalizationService.cs
 │  │  └─ Assets/IAssetCatalog.cs
 │  │
-│  ├─ PoR.Game/                    # 苍炎专用数据/算法
-│  │  ├─ PathOfRadianceProfile.cs
+│  ├─ PoR.Game/                    # 苍炎专用数据/编排
+│  │  ├─ GameDataCatalog.cs
+│  │  ├─ GameSession.cs
 │  │  └─ Data/{fields,enums,support,affinity,army,group,weapons,skills,mappings}.json
 │  │
 │  └─ PoR.Memory.Dolphin/          # DME C# 移植
@@ -1186,3 +1187,13 @@ __pycache__/
   - C# 与 Python DME 的 person/class/level/money/visibleSlots/10 个槽位样本完全一致。
   - 同值写回自测（金钱 3 字节 + 等级 1 字节）通过，说明 `WriteProcessMemory` 正常。
   - 新增 `tools/legacy/probe_python.py` 和 `tools/verify_parity.py`，可重复做 parity 检查。
+- 2026-11-11：P2 Core 领域层完成。
+  - `ValueCodec`：大端、有符号、1–4 字节、位域读改写。
+  - `FieldDefinition` / `FieldScope` / `FieldKind` / `BitField`。
+  - `GameDataCatalog`：从嵌入 JSON 加载字段、枚举、支援、亲密度、分组/部队、映射。
+  - `MappingService`：指针映射（PID/JID/AID/IID）、文本映射（SEQ/MTYPE）、分组/部队。
+  - `SlotSnapshot` / `SlotInfo` / `GameSnapshot` / `GameSession`。
+  - `GameSession` 刷新后映射数量：aid=508、pid=340、jid=115、iid=189、seq=75、mtype=33、group=8、army=30、ally=42。
+  - 槽位 0 识别为 `PID_IKE` / `JID_HERO`，与 Python 版一致。
+  - `--session-write-self-test` 对等级（字节）、行动（位域）、金钱（全局 3 字节）做同值写回，通过。
+  - 45 个单元测试通过（ValueCodec、Catalog、MappingService、SlotSnapshot）。

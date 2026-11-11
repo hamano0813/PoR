@@ -1,7 +1,9 @@
 ﻿using System.Buffers.Binary;
 using System.Text;
 using System.Text.Json;
+using PoR.Core.Game;
 using PoR.Core.Memory;
+using PoR.Game;
 using PoR.Memory.Dolphin;
 
 namespace PoR.Tools.Probe;
@@ -22,13 +24,17 @@ internal static class Program
         WriteIndented = true,
     };
 
-    private static int Main(string[] args)
+    private static async Task<int> Main(string[] args)
     {
         Console.OutputEncoding = Encoding.UTF8;
         var asJson = args.Any(
             arg => string.Equals(arg, "--json", StringComparison.OrdinalIgnoreCase));
         var writeSelfTest = args.Any(
             arg => string.Equals(arg, "--write-self-test", StringComparison.OrdinalIgnoreCase));
+        var useSession = args.Any(
+            arg => string.Equals(arg, "--session", StringComparison.OrdinalIgnoreCase));
+        var sessionWriteSelfTest = args.Any(
+            arg => string.Equals(arg, "--session-write-self-test", StringComparison.OrdinalIgnoreCase));
 
         using var memory = new WindowsDolphinMemory();
         if (!asJson)
@@ -68,6 +74,20 @@ internal static class Program
             var money = ReadUInt24(memory, MoneyAddress);
             ReadSlotSnapshot(memory, out var visibleSlots, out var sample);
             var writeRoundTrip = writeSelfTest && RunWriteSelfTest(memory);
+            SessionResult? sessionResult = null;
+            bool? sessionWriteRoundTrip = null;
+
+            if (useSession)
+            {
+                await using var session = new GameSession(memory);
+                var snapshot = await session.RefreshAsync();
+                sessionResult = SessionResult.FromSnapshot(snapshot, session.Catalog);
+
+                if (sessionWriteSelfTest)
+                {
+                    sessionWriteRoundTrip = await RunSessionWriteSelfTest(session);
+                }
+            }
 
             if (asJson)
             {
@@ -86,6 +106,8 @@ internal static class Program
                             visibleSlots,
                             sample,
                             writeSelfTest = writeSelfTest ? writeRoundTrip : (bool?)null,
+                            sessionWriteSelfTest = sessionWriteRoundTrip,
+                            session = sessionResult,
                         },
                         JsonOptions));
             }
@@ -105,6 +127,33 @@ internal static class Program
                     Console.WriteLine($"Write test:  {(writeRoundTrip ? "PASS" : "FAIL")}");
                 }
 
+                if (sessionWriteRoundTrip is not null)
+                {
+                    Console.WriteLine(
+                        $"Session write: {(sessionWriteRoundTrip.Value ? "PASS" : "FAIL")}");
+                }
+
+                if (sessionResult is not null)
+                {
+                    Console.WriteLine(
+                        "Mappings:    " +
+                        string.Join(
+                            ", ",
+                            sessionResult.MappingCounts.Select(pair => $"{pair.Key}={pair.Value}")));
+                    if (sessionResult.Slot0 is { } slot0)
+                    {
+                        Console.WriteLine(
+                            $"Slot 0:      {slot0.PidTermKey} [{slot0.PidKey}] / " +
+                            $"{slot0.JidTermKey} [{slot0.JidKey}]");
+                    }
+
+                    Console.WriteLine(
+                        "Status:      " +
+                        string.Join(
+                            ", ",
+                            sessionResult.Status.Select(pair => $"{pair.Key}={pair.Value}")));
+                }
+
                 foreach (var slot in sample)
                 {
                     Console.WriteLine(
@@ -115,6 +164,11 @@ internal static class Program
             if (writeSelfTest && !writeRoundTrip)
             {
                 return 3;
+            }
+
+            if (sessionWriteRoundTrip is false)
+            {
+                return 4;
             }
 
             return 0;
@@ -173,6 +227,78 @@ internal static class Program
                 sample.Add(new SlotSample(index, person, classId));
             }
         }
+    }
+
+    private static readonly string[] StatusFieldIds =
+    [
+        "person",
+        "class",
+        "model",
+        "faction",
+        "army",
+        "ally",
+        "isLeader",
+        "action",
+        "rescuing",
+        "rescued",
+        "slotIndex",
+        "level",
+        "exp",
+        "hp",
+        "transform",
+        "paralysis",
+        "silence",
+        "sleep",
+        "berserk",
+        "poison",
+        "coordX",
+        "coordY",
+        "mtype",
+        "seq1",
+        "seq2",
+        "seq3",
+        "battle",
+        "victory",
+    ];
+
+    private sealed record SessionResult(
+        IReadOnlyDictionary<string, int> MappingCounts,
+        SlotInfo? Slot0,
+        IReadOnlyDictionary<string, long> Status)
+    {
+        public static SessionResult FromSnapshot(
+            GameSnapshot snapshot,
+            GameDataCatalog catalog)
+        {
+            var counts = snapshot.Mappings
+                .ToDictionary(pair => pair.Key, pair => pair.Value.Count, StringComparer.Ordinal);
+            var slot0 = snapshot.SlotInfos.FirstOrDefault(info => info.Index == 0);
+            var status = StatusFieldIds.ToDictionary(
+                id => id,
+                id => snapshot.Slots.ReadField(catalog.GetField(id), 0),
+                StringComparer.Ordinal);
+
+            return new SessionResult(counts, slot0, status);
+        }
+    }
+
+    private static async Task<bool> RunSessionWriteSelfTest(GameSession session)
+    {
+        var levelField = session.Catalog.GetField("level");
+        var actionField = session.Catalog.GetField("action");
+        var moneyField = session.Catalog.GetField("money");
+
+        var level = session.ReadField(levelField, 0);
+        var action = session.ReadField(actionField, 0);
+        var money = session.ReadField(moneyField, null);
+
+        await session.WriteFieldAsync(levelField, 0, level);
+        await session.WriteFieldAsync(actionField, 0, action);
+        await session.WriteFieldAsync(moneyField, null, money);
+
+        return session.ReadField(levelField, 0) == level &&
+               session.ReadField(actionField, 0) == action &&
+               session.ReadField(moneyField, null) == money;
     }
 
     private static bool RunWriteSelfTest(IDolphinMemory memory)

@@ -7,7 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Update="Data\*.json" CopyToOutputDirectory="PreserveNewest" />
+    <EmbeddedResource Include="Data\*.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PoR.Core\PoR.Core.csproj" />
   </ItemGroup>
 
 </Project>

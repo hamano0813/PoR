@@ -1,6 +1,6 @@
 # C# / Avalonia Rewrite
 
-Current status: **P1 memory PoC implemented** (2026-11-11).
+Current status: **P2 core domain implemented** (2026-11-11).
 
 ## Projects
 
@@ -8,9 +8,11 @@ Current status: **P1 memory PoC implemented** (2026-11-11).
 dotnet/
 ├─ PoR.sln
 ├─ src/
-│  ├─ PoR.Core/                # IDolphinMemory, status, exceptions
-│  ├─ PoR.Game/                # Path of Radiance catalog + Data/*.json
+│  ├─ PoR.Core/                # memory abstractions, ValueCodec, mapping models
+│  ├─ PoR.Game/                # catalog, mapping, slot snapshot, GameSession
 │  └─ PoR.Memory.Dolphin/      # Windows/GameCube MEM1 port of DME
+├─ tests/
+│  └─ PoR.Core.Tests/          # value codec / catalog / mapping / snapshot tests
 └─ tools/
    └─ PoR.Tools.Probe/         # console probe for manual verification
 ```
@@ -34,6 +36,18 @@ dotnet run --project tools/PoR.Tools.Probe/PoR.Tools.Probe.csproj -- --json
 
 # Safe write round-trip: reads money/level and writes the same bytes back.
 dotnet run --project tools/PoR.Tools.Probe/PoR.Tools.Probe.csproj -- --json --write-self-test
+
+# Full GameSession refresh: dynamic mappings + slot 0 status.
+dotnet run --project tools/PoR.Tools.Probe/PoR.Tools.Probe.csproj -- --json --session
+
+# GameSession bitfield/global write round-trip.
+dotnet run --project tools/PoR.Tools.Probe/PoR.Tools.Probe.csproj -- --json --session --session-write-self-test
+```
+
+## Tests
+
+```bash
+dotnet test PoR.sln
 ```
 
 ## Parity check
