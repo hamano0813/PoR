@@ -1,0 +1,34 @@
+[
+  {
+    "value": "0x802C8364",
+    "term": "this"
+  },
+  {
+    "value": "0x802C8370",
+    "term": "enemy"
+  },
+  {
+    "value": "0x802C837C",
+    "term": "other"
+  },
+  {
+    "value": "0x802C8388",
+    "term": "friend"
+  },
+  {
+    "value": "0x802C8394",
+    "term": "death"
+  },
+  {
+    "value": "0x802C83A0",
+    "term": "ready"
+  },
+  {
+    "value": "0x802C83AC",
+    "term": "killed"
+  },
+  {
+    "value": "0x802C83B8",
+    "term": "ready"
+  }
+]

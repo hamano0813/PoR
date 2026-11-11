@@ -1,0 +1,5444 @@
+{
+  "aid": [
+    {
+      "key": "AID_LORD_N",
+      "term": "AID_LORD_N"
+    },
+    {
+      "key": "AID_LORD_SW",
+      "term": "AID_LORD_SW"
+    },
+    {
+      "key": "AID_LORD2_N",
+      "term": "AID_LORD2_N"
+    },
+    {
+      "key": "AID_LORD2_SW",
+      "term": "AID_LORD2_SW"
+    },
+    {
+      "key": "AID_KNIGHT_N",
+      "term": "AID_KNIGHT_N"
+    },
+    {
+      "key": "AID_KNIGHT_SP",
+      "term": "AID_KNIGHT_SP"
+    },
+    {
+      "key": "AID_KNIGHT_JA",
+      "term": "AID_KNIGHT_JA"
+    },
+    {
+      "key": "AID_KNIGHT_SW",
+      "term": "AID_KNIGHT_SW"
+    },
+    {
+      "key": "AID_KNIGHT_BW",
+      "term": "AID_KNIGHT_BW"
+    },
+    {
+      "key": "AID_KNIGHT_AX",
+      "term": "AID_KNIGHT_AX"
+    },
+    {
+      "key": "AID_KNIGHT_HA",
+      "term": "AID_KNIGHT_HA"
+    },
+    {
+      "key": "AID_KNIGHT_ST_N",
+      "term": "AID_KNIGHT_ST_N"
+    },
+    {
+      "key": "AID_KNIGHT_ST_BW",
+      "term": "AID_KNIGHT_ST_BW"
+    },
+    {
+      "key": "AID_KNIGHT_MA_N",
+      "term": "AID_KNIGHT_MA_N"
+    },
+    {
+      "key": "AID_KNIGHT_MA_SW",
+      "term": "AID_KNIGHT_MA_SW"
+    },
+    {
+      "key": "AID_KNIGHT_KE_N",
+      "term": "AID_KNIGHT_KE_N"
+    },
+    {
+      "key": "AID_KNIGHT_KE_AX",
+      "term": "AID_KNIGHT_KE_AX"
+    },
+    {
+      "key": "AID_KNIGHT_KE_HA",
+      "term": "AID_KNIGHT_KE_HA"
+    },
+    {
+      "key": "AID_KNIGHT_OS_N",
+      "term": "AID_KNIGHT_OS_N"
+    },
+    {
+      "key": "AID_KNIGHT_OS_SP",
+      "term": "AID_KNIGHT_OS_SP"
+    },
+    {
+      "key": "AID_KNIGHT_OS_JA",
+      "term": "AID_KNIGHT_OS_JA"
+    },
+    {
+      "key": "AID_KNIGHT_DAY_N",
+      "term": "AID_KNIGHT_DAY_N"
+    },
+    {
+      "key": "AID_KNIGHT_DAY_SP",
+      "term": "AID_KNIGHT_DAY_SP"
+    },
+    {
+      "key": "AID_KNIGHT_DAY_JA",
+      "term": "AID_KNIGHT_DAY_JA"
+    },
+    {
+      "key": "AID_KNIGHT_DAY_SW",
+      "term": "AID_KNIGHT_DAY_SW"
+    },
+    {
+      "key": "AID_KNIGHT_DAY_BW",
+      "term": "AID_KNIGHT_DAY_BW"
+    },
+    {
+      "key": "AID_KNIGHT_DAY_AX",
+      "term": "AID_KNIGHT_DAY_AX"
+    },
+    {
+      "key": "AID_KNIGHT_DAY_HA",
+      "term": "AID_KNIGHT_DAY_HA"
+    },
+    {
+      "key": "AID_KNIGHT_TUT_N",
+      "term": "AID_KNIGHT_TUT_N"
+    },
+    {
+      "key": "AID_KNIGHT_TUT_SP",
+      "term": "AID_KNIGHT_TUT_SP"
+    },
+    {
+      "key": "AID_KNIGHT_TUT_JA",
+      "term": "AID_KNIGHT_TUT_JA"
+    },
+    {
+      "key": "AID_KNIGHT_TUT_SW",
+      "term": "AID_KNIGHT_TUT_SW"
+    },
+    {
+      "key": "AID_KNIGHT_TUT_BW",
+      "term": "AID_KNIGHT_TUT_BW"
+    },
+    {
+      "key": "AID_KNIGHT_TUT_AX",
+      "term": "AID_KNIGHT_TUT_AX"
+    },
+    {
+      "key": "AID_KNIGHT_TUT_HA",
+      "term": "AID_KNIGHT_TUT_HA"
+    },
+    {
+      "key": "AID_KNIGHT2_N",
+      "term": "AID_KNIGHT2_N"
+    },
+    {
+      "key": "AID_KNIGHT2_SW",
+      "term": "AID_KNIGHT2_SW"
+    },
+    {
+      "key": "AID_KNIGHT2_SP",
+      "term": "AID_KNIGHT2_SP"
+    },
+    {
+      "key": "AID_KNIGHT2_JA",
+      "term": "AID_KNIGHT2_JA"
+    },
+    {
+      "key": "AID_KNIGHT2_AX",
+      "term": "AID_KNIGHT2_AX"
+    },
+    {
+      "key": "AID_KNIGHT2_HA",
+      "term": "AID_KNIGHT2_HA"
+    },
+    {
+      "key": "AID_KNIGHT2_BW",
+      "term": "AID_KNIGHT2_BW"
+    },
+    {
+      "key": "AID_KNIGHT2_BE_N",
+      "term": "AID_KNIGHT2_BE_N"
+    },
+    {
+      "key": "AID_KNIGHT2_BE_SW",
+      "term": "AID_KNIGHT2_BE_SW"
+    },
+    {
+      "key": "AID_KNIGHT2_BE_SP",
+      "term": "AID_KNIGHT2_BE_SP"
+    },
+    {
+      "key": "AID_KNIGHT2_BE_JA",
+      "term": "AID_KNIGHT2_BE_JA"
+    },
+    {
+      "key": "AID_KNIGHT2_BE_AX",
+      "term": "AID_KNIGHT2_BE_AX"
+    },
+    {
+      "key": "AID_KNIGHT2_BE_HA",
+      "term": "AID_KNIGHT2_BE_HA"
+    },
+    {
+      "key": "AID_KNIGHT2_BE_BW",
+      "term": "AID_KNIGHT2_BE_BW"
+    },
+    {
+      "key": "AID_KNIGHT2_ST_N",
+      "term": "AID_KNIGHT2_ST_N"
+    },
+    {
+      "key": "AID_KNIGHT2_ST_SW",
+      "term": "AID_KNIGHT2_ST_SW"
+    },
+    {
+      "key": "AID_KNIGHT2_ST_SP",
+      "term": "AID_KNIGHT2_ST_SP"
+    },
+    {
+      "key": "AID_KNIGHT2_ST_JA",
+      "term": "AID_KNIGHT2_ST_JA"
+    },
+    {
+      "key": "AID_KNIGHT2_ST_AX",
+      "term": "AID_KNIGHT2_ST_AX"
+    },
+    {
+      "key": "AID_KNIGHT2_ST_HA",
+      "term": "AID_KNIGHT2_ST_HA"
+    },
+    {
+      "key": "AID_KNIGHT2_ST_BW",
+      "term": "AID_KNIGHT2_ST_BW"
+    },
+    {
+      "key": "AID_KNIGHT2_MA_N",
+      "term": "AID_KNIGHT2_MA_N"
+    },
+    {
+      "key": "AID_KNIGHT2_MA_SW",
+      "term": "AID_KNIGHT2_MA_SW"
+    },
+    {
+      "key": "AID_KNIGHT2_MA_SP",
+      "term": "AID_KNIGHT2_MA_SP"
+    },
+    {
+      "key": "AID_KNIGHT2_MA_JA",
+      "term": "AID_KNIGHT2_MA_JA"
+    },
+    {
+      "key": "AID_KNIGHT2_MA_AX",
+      "term": "AID_KNIGHT2_MA_AX"
+    },
+    {
+      "key": "AID_KNIGHT2_MA_HA",
+      "term": "AID_KNIGHT2_MA_HA"
+    },
+    {
+      "key": "AID_KNIGHT2_MA_BW",
+      "term": "AID_KNIGHT2_MA_BW"
+    },
+    {
+      "key": "AID_KNIGHT2_KE_N",
+      "term": "AID_KNIGHT2_KE_N"
+    },
+    {
+      "key": "AID_KNIGHT2_KE_SW",
+      "term": "AID_KNIGHT2_KE_SW"
+    },
+    {
+      "key": "AID_KNIGHT2_KE_SP",
+      "term": "AID_KNIGHT2_KE_SP"
+    },
+    {
+      "key": "AID_KNIGHT2_KE_JA",
+      "term": "AID_KNIGHT2_KE_JA"
+    },
+    {
+      "key": "AID_KNIGHT2_KE_AX",
+      "term": "AID_KNIGHT2_KE_AX"
+    },
+    {
+      "key": "AID_KNIGHT2_KE_HA",
+      "term": "AID_KNIGHT2_KE_HA"
+    },
+    {
+      "key": "AID_KNIGHT2_KE_BW",
+      "term": "AID_KNIGHT2_KE_BW"
+    },
+    {
+      "key": "AID_KNIGHT2_OS_N",
+      "term": "AID_KNIGHT2_OS_N"
+    },
+    {
+      "key": "AID_KNIGHT2_OS_SW",
+      "term": "AID_KNIGHT2_OS_SW"
+    },
+    {
+      "key": "AID_KNIGHT2_OS_SP",
+      "term": "AID_KNIGHT2_OS_SP"
+    },
+    {
+      "key": "AID_KNIGHT2_OS_JA",
+      "term": "AID_KNIGHT2_OS_JA"
+    },
+    {
+      "key": "AID_KNIGHT2_OS_AX",
+      "term": "AID_KNIGHT2_OS_AX"
+    },
+    {
+      "key": "AID_KNIGHT2_OS_HA",
+      "term": "AID_KNIGHT2_OS_HA"
+    },
+    {
+      "key": "AID_KNIGHT2_OS_BW",
+      "term": "AID_KNIGHT2_OS_BW"
+    },
+    {
+      "key": "AID_KNIGHT2_GE_N",
+      "term": "AID_KNIGHT2_GE_N"
+    },
+    {
+      "key": "AID_KNIGHT2_GE_SW",
+      "term": "AID_KNIGHT2_GE_SW"
+    },
+    {
+      "key": "AID_KNIGHT2_GE_SP",
+      "term": "AID_KNIGHT2_GE_SP"
+    },
+    {
+      "key": "AID_KNIGHT2_GE_JA",
+      "term": "AID_KNIGHT2_GE_JA"
+    },
+    {
+      "key": "AID_KNIGHT2_GE_AX",
+      "term": "AID_KNIGHT2_GE_AX"
+    },
+    {
+      "key": "AID_KNIGHT2_GE_HA",
+      "term": "AID_KNIGHT2_GE_HA"
+    },
+    {
+      "key": "AID_KNIGHT2_GE_BW",
+      "term": "AID_KNIGHT2_GE_BW"
+    },
+    {
+      "key": "AID_KNIGHT2_MC_N",
+      "term": "AID_KNIGHT2_MC_N"
+    },
+    {
+      "key": "AID_KNIGHT2_MC_SW",
+      "term": "AID_KNIGHT2_MC_SW"
+    },
+    {
+      "key": "AID_KNIGHT2_MC_SP",
+      "term": "AID_KNIGHT2_MC_SP"
+    },
+    {
+      "key": "AID_KNIGHT2_MC_JA",
+      "term": "AID_KNIGHT2_MC_JA"
+    },
+    {
+      "key": "AID_KNIGHT2_MC_AX",
+      "term": "AID_KNIGHT2_MC_AX"
+    },
+    {
+      "key": "AID_KNIGHT2_MC_HA",
+      "term": "AID_KNIGHT2_MC_HA"
+    },
+    {
+      "key": "AID_KNIGHT2_MC_BW",
+      "term": "AID_KNIGHT2_MC_BW"
+    },
+    {
+      "key": "AID_KNIGHT2_RI_N",
+      "term": "AID_KNIGHT2_RI_N"
+    },
+    {
+      "key": "AID_KNIGHT2_RI_SW",
+      "term": "AID_KNIGHT2_RI_SW"
+    },
+    {
+      "key": "AID_KNIGHT2_RI_SP",
+      "term": "AID_KNIGHT2_RI_SP"
+    },
+    {
+      "key": "AID_KNIGHT2_RI_JA",
+      "term": "AID_KNIGHT2_RI_JA"
+    },
+    {
+      "key": "AID_KNIGHT2_RI_AX",
+      "term": "AID_KNIGHT2_RI_AX"
+    },
+    {
+      "key": "AID_KNIGHT2_RI_HA",
+      "term": "AID_KNIGHT2_RI_HA"
+    },
+    {
+      "key": "AID_KNIGHT2_RI_BW",
+      "term": "AID_KNIGHT2_RI_BW"
+    },
+    {
+      "key": "AID_KNIGHT2_DAY_N",
+      "term": "AID_KNIGHT2_DAY_N"
+    },
+    {
+      "key": "AID_KNIGHT2_DAY_SW",
+      "term": "AID_KNIGHT2_DAY_SW"
+    },
+    {
+      "key": "AID_KNIGHT2_DAY_SP",
+      "term": "AID_KNIGHT2_DAY_SP"
+    },
+    {
+      "key": "AID_KNIGHT2_DAY_JA",
+      "term": "AID_KNIGHT2_DAY_JA"
+    },
+    {
+      "key": "AID_KNIGHT2_DAY_AX",
+      "term": "AID_KNIGHT2_DAY_AX"
+    },
+    {
+      "key": "AID_KNIGHT2_DAY_HA",
+      "term": "AID_KNIGHT2_DAY_HA"
+    },
+    {
+      "key": "AID_KNIGHT2_DAY_BW",
+      "term": "AID_KNIGHT2_DAY_BW"
+    },
+    {
+      "key": "AID_KNIGHT2_TIA_N",
+      "term": "AID_KNIGHT2_TIA_N"
+    },
+    {
+      "key": "AID_KNIGHT2_TIA_SP",
+      "term": "AID_KNIGHT2_TIA_SP"
+    },
+    {
+      "key": "AID_KNIGHT2_TIA_JA",
+      "term": "AID_KNIGHT2_TIA_JA"
+    },
+    {
+      "key": "AID_KNIGHT2_TIA_AX",
+      "term": "AID_KNIGHT2_TIA_AX"
+    },
+    {
+      "key": "AID_KNIGHT2_TIA_HA",
+      "term": "AID_KNIGHT2_TIA_HA"
+    },
+    {
+      "key": "AID_SWORDER_N",
+      "term": "AID_SWORDER_N"
+    },
+    {
+      "key": "AID_SWORDER_SW",
+      "term": "AID_SWORDER_SW"
+    },
+    {
+      "key": "AID_SWORDER_ZI_N",
+      "term": "AID_SWORDER_ZI_N"
+    },
+    {
+      "key": "AID_SWORDER_ZI_SW",
+      "term": "AID_SWORDER_ZI_SW"
+    },
+    {
+      "key": "AID_SWORDER_NOS_N",
+      "term": "AID_SWORDER_NOS_N"
+    },
+    {
+      "key": "AID_SWORDER_NOS_SW",
+      "term": "AID_SWORDER_NOS_SW"
+    },
+    {
+      "key": "AID_SWORDER_TUT_N",
+      "term": "AID_SWORDER_TUT_N"
+    },
+    {
+      "key": "AID_SWORDER_TUT_SW",
+      "term": "AID_SWORDER_TUT_SW"
+    },
+    {
+      "key": "AID_SWORDERF_N",
+      "term": "AID_SWORDERF_N"
+    },
+    {
+      "key": "AID_SWORDERF_SW",
+      "term": "AID_SWORDERF_SW"
+    },
+    {
+      "key": "AID_SWORDER2_N",
+      "term": "AID_SWORDER2_N"
+    },
+    {
+      "key": "AID_SWORDER2_SW",
+      "term": "AID_SWORDER2_SW"
+    },
+    {
+      "key": "AID_SWORDER2_ZI_N",
+      "term": "AID_SWORDER2_ZI_N"
+    },
+    {
+      "key": "AID_SWORDER2_ZI_SW",
+      "term": "AID_SWORDER2_ZI_SW"
+    },
+    {
+      "key": "AID_SWORDER2_SO_N",
+      "term": "AID_SWORDER2_SO_N"
+    },
+    {
+      "key": "AID_SWORDER2_SO_SW",
+      "term": "AID_SWORDER2_SO_SW"
+    },
+    {
+      "key": "AID_SWORDER2_HO_N",
+      "term": "AID_SWORDER2_HO_N"
+    },
+    {
+      "key": "AID_SWORDER2_HO_SW",
+      "term": "AID_SWORDER2_HO_SW"
+    },
+    {
+      "key": "AID_SWORDER2F_WA_N",
+      "term": "AID_SWORDER2F_WA_N"
+    },
+    {
+      "key": "AID_SWORDER2F_WA_SW",
+      "term": "AID_SWORDER2F_WA_SW"
+    },
+    {
+      "key": "AID_SWORDER2F_LU_N",
+      "term": "AID_SWORDER2F_LU_N"
+    },
+    {
+      "key": "AID_SWORDER2F_LU_SW",
+      "term": "AID_SWORDER2F_LU_SW"
+    },
+    {
+      "key": "AID_SOLDIER_N",
+      "term": "AID_SOLDIER_N"
+    },
+    {
+      "key": "AID_SOLDIER_SP",
+      "term": "AID_SOLDIER_SP"
+    },
+    {
+      "key": "AID_SOLDIER_JA",
+      "term": "AID_SOLDIER_JA"
+    },
+    {
+      "key": "AID_SOLDIER_DAY_N",
+      "term": "AID_SOLDIER_DAY_N"
+    },
+    {
+      "key": "AID_SOLDIER_DAY_SP",
+      "term": "AID_SOLDIER_DAY_SP"
+    },
+    {
+      "key": "AID_SOLDIER_DAY_JA",
+      "term": "AID_SOLDIER_DAY_JA"
+    },
+    {
+      "key": "AID_SOLDIER_BEG_N",
+      "term": "AID_SOLDIER_BEG_N"
+    },
+    {
+      "key": "AID_SOLDIER_BEG_SP",
+      "term": "AID_SOLDIER_BEG_SP"
+    },
+    {
+      "key": "AID_SOLDIER_BEG_JA",
+      "term": "AID_SOLDIER_BEG_JA"
+    },
+    {
+      "key": "AID_SOLDIER_NOS_N",
+      "term": "AID_SOLDIER_NOS_N"
+    },
+    {
+      "key": "AID_SOLDIER_NOS_SP",
+      "term": "AID_SOLDIER_NOS_SP"
+    },
+    {
+      "key": "AID_SOLDIER_NOS_JA",
+      "term": "AID_SOLDIER_NOS_JA"
+    },
+    {
+      "key": "AID_SOLDIER_TUT_N",
+      "term": "AID_SOLDIER_TUT_N"
+    },
+    {
+      "key": "AID_SOLDIER_TUT_SP",
+      "term": "AID_SOLDIER_TUT_SP"
+    },
+    {
+      "key": "AID_SOLDIER_TUT_JA",
+      "term": "AID_SOLDIER_TUT_JA"
+    },
+    {
+      "key": "AID_SOLDIERF_SP",
+      "term": "AID_SOLDIERF_SP"
+    },
+    {
+      "key": "AID_SOLDIERF_JA",
+      "term": "AID_SOLDIERF_JA"
+    },
+    {
+      "key": "AID_SOLDIERF_N",
+      "term": "AID_SOLDIERF_N"
+    },
+    {
+      "key": "AID_SOLDIER2_SP",
+      "term": "AID_SOLDIER2_SP"
+    },
+    {
+      "key": "AID_SOLDIER2_JA",
+      "term": "AID_SOLDIER2_JA"
+    },
+    {
+      "key": "AID_SOLDIER2_N",
+      "term": "AID_SOLDIER2_N"
+    },
+    {
+      "key": "AID_SOLDIER2_DA_SP",
+      "term": "AID_SOLDIER2_DA_SP"
+    },
+    {
+      "key": "AID_SOLDIER2_DA_JA",
+      "term": "AID_SOLDIER2_DA_JA"
+    },
+    {
+      "key": "AID_SOLDIER2_DA_N",
+      "term": "AID_SOLDIER2_DA_N"
+    },
+    {
+      "key": "AID_SOLDIER2_EM_SP",
+      "term": "AID_SOLDIER2_EM_SP"
+    },
+    {
+      "key": "AID_SOLDIER2_EM_JA",
+      "term": "AID_SOLDIER2_EM_JA"
+    },
+    {
+      "key": "AID_SOLDIER2_EM_N",
+      "term": "AID_SOLDIER2_EM_N"
+    },
+    {
+      "key": "AID_SOLDIER2_KO_SP",
+      "term": "AID_SOLDIER2_KO_SP"
+    },
+    {
+      "key": "AID_SOLDIER2_KO_JA",
+      "term": "AID_SOLDIER2_KO_JA"
+    },
+    {
+      "key": "AID_SOLDIER2_KO_N",
+      "term": "AID_SOLDIER2_KO_N"
+    },
+    {
+      "key": "AID_SOLDIER2_HA_SP",
+      "term": "AID_SOLDIER2_HA_SP"
+    },
+    {
+      "key": "AID_SOLDIER2_HA_JA",
+      "term": "AID_SOLDIER2_HA_JA"
+    },
+    {
+      "key": "AID_SOLDIER2_HA_N",
+      "term": "AID_SOLDIER2_HA_N"
+    },
+    {
+      "key": "AID_SOLDIER2_DAY_SP",
+      "term": "AID_SOLDIER2_DAY_SP"
+    },
+    {
+      "key": "AID_SOLDIER2_DAY_JA",
+      "term": "AID_SOLDIER2_DAY_JA"
+    },
+    {
+      "key": "AID_SOLDIER2_DAY_N",
+      "term": "AID_SOLDIER2_DAY_N"
+    },
+    {
+      "key": "AID_SOLDIER2_NOS_SP",
+      "term": "AID_SOLDIER2_NOS_SP"
+    },
+    {
+      "key": "AID_SOLDIER2_NOS_JA",
+      "term": "AID_SOLDIER2_NOS_JA"
+    },
+    {
+      "key": "AID_SOLDIER2_NOS_N",
+      "term": "AID_SOLDIER2_NOS_N"
+    },
+    {
+      "key": "AID_SOLDIER2_TUT_SP",
+      "term": "AID_SOLDIER2_TUT_SP"
+    },
+    {
+      "key": "AID_SOLDIER2_TUT_JA",
+      "term": "AID_SOLDIER2_TUT_JA"
+    },
+    {
+      "key": "AID_SOLDIER2_TUT_N",
+      "term": "AID_SOLDIER2_TUT_N"
+    },
+    {
+      "key": "AID_SOLDIER2F_SP",
+      "term": "AID_SOLDIER2F_SP"
+    },
+    {
+      "key": "AID_SOLDIER2F_JA",
+      "term": "AID_SOLDIER2F_JA"
+    },
+    {
+      "key": "AID_SOLDIER2F_N",
+      "term": "AID_SOLDIER2F_N"
+    },
+    {
+      "key": "AID_FIGHTER_N",
+      "term": "AID_FIGHTER_N"
+    },
+    {
+      "key": "AID_FIGHTER_AX",
+      "term": "AID_FIGHTER_AX"
+    },
+    {
+      "key": "AID_FIGHTER_HA",
+      "term": "AID_FIGHTER_HA"
+    },
+    {
+      "key": "AID_FIGHTER_BO_N",
+      "term": "AID_FIGHTER_BO_N"
+    },
+    {
+      "key": "AID_FIGHTER_BO_AX",
+      "term": "AID_FIGHTER_BO_AX"
+    },
+    {
+      "key": "AID_FIGHTER_BO_HA",
+      "term": "AID_FIGHTER_BO_HA"
+    },
+    {
+      "key": "AID_FIGHTER_NOS_N",
+      "term": "AID_FIGHTER_NOS_N"
+    },
+    {
+      "key": "AID_FIGHTER_NOS_AX",
+      "term": "AID_FIGHTER_NOS_AX"
+    },
+    {
+      "key": "AID_FIGHTER_NOS_HA",
+      "term": "AID_FIGHTER_NOS_HA"
+    },
+    {
+      "key": "AID_FIGHTER_TUT_N",
+      "term": "AID_FIGHTER_TUT_N"
+    },
+    {
+      "key": "AID_FIGHTER_TUT_AX",
+      "term": "AID_FIGHTER_TUT_AX"
+    },
+    {
+      "key": "AID_FIGHTER_TUT_HA",
+      "term": "AID_FIGHTER_TUT_HA"
+    },
+    {
+      "key": "AID_FIGHTER2_AX",
+      "term": "AID_FIGHTER2_AX"
+    },
+    {
+      "key": "AID_FIGHTER2_HA",
+      "term": "AID_FIGHTER2_HA"
+    },
+    {
+      "key": "AID_FIGHTER2_BW",
+      "term": "AID_FIGHTER2_BW"
+    },
+    {
+      "key": "AID_FIGHTER2_N",
+      "term": "AID_FIGHTER2_N"
+    },
+    {
+      "key": "AID_FIGHTER2_BO_AX",
+      "term": "AID_FIGHTER2_BO_AX"
+    },
+    {
+      "key": "AID_FIGHTER2_BO_HA",
+      "term": "AID_FIGHTER2_BO_HA"
+    },
+    {
+      "key": "AID_FIGHTER2_BO_BW",
+      "term": "AID_FIGHTER2_BO_BW"
+    },
+    {
+      "key": "AID_FIGHTER2_BO_N",
+      "term": "AID_FIGHTER2_BO_N"
+    },
+    {
+      "key": "AID_FIGHTER2_SI_AX",
+      "term": "AID_FIGHTER2_SI_AX"
+    },
+    {
+      "key": "AID_FIGHTER2_SI_HA",
+      "term": "AID_FIGHTER2_SI_HA"
+    },
+    {
+      "key": "AID_FIGHTER2_SI_BW",
+      "term": "AID_FIGHTER2_SI_BW"
+    },
+    {
+      "key": "AID_FIGHTER2_SI_N",
+      "term": "AID_FIGHTER2_SI_N"
+    },
+    {
+      "key": "AID_ARCHER_BW",
+      "term": "AID_ARCHER_BW"
+    },
+    {
+      "key": "AID_ARCHER_N",
+      "term": "AID_ARCHER_N"
+    },
+    {
+      "key": "AID_ARCHER_LO_BW",
+      "term": "AID_ARCHER_LO_BW"
+    },
+    {
+      "key": "AID_ARCHER_LO_N",
+      "term": "AID_ARCHER_LO_N"
+    },
+    {
+      "key": "AID_ARCHER_DAY_BW",
+      "term": "AID_ARCHER_DAY_BW"
+    },
+    {
+      "key": "AID_ARCHER_DAY_N",
+      "term": "AID_ARCHER_DAY_N"
+    },
+    {
+      "key": "AID_ARCHER_NOS_BW",
+      "term": "AID_ARCHER_NOS_BW"
+    },
+    {
+      "key": "AID_ARCHER_NOS_N",
+      "term": "AID_ARCHER_NOS_N"
+    },
+    {
+      "key": "AID_ARCHER_TUT_BW",
+      "term": "AID_ARCHER_TUT_BW"
+    },
+    {
+      "key": "AID_ARCHER_TUT_N",
+      "term": "AID_ARCHER_TUT_N"
+    },
+    {
+      "key": "AID_ARCHER2_BW",
+      "term": "AID_ARCHER2_BW"
+    },
+    {
+      "key": "AID_ARCHER2_N",
+      "term": "AID_ARCHER2_N"
+    },
+    {
+      "key": "AID_ARCHER2_LO_BW",
+      "term": "AID_ARCHER2_LO_BW"
+    },
+    {
+      "key": "AID_ARCHER2_LO_N",
+      "term": "AID_ARCHER2_LO_N"
+    },
+    {
+      "key": "AID_ARCHER2_CH_BW",
+      "term": "AID_ARCHER2_CH_BW"
+    },
+    {
+      "key": "AID_ARCHER2_CH_N",
+      "term": "AID_ARCHER2_CH_N"
+    },
+    {
+      "key": "AID_ARCHER2_NO_BW",
+      "term": "AID_ARCHER2_NO_BW"
+    },
+    {
+      "key": "AID_ARCHER2_NO_N",
+      "term": "AID_ARCHER2_NO_N"
+    },
+    {
+      "key": "AID_ARCHER2_DAY_BW",
+      "term": "AID_ARCHER2_DAY_BW"
+    },
+    {
+      "key": "AID_ARCHER2_DAY_N",
+      "term": "AID_ARCHER2_DAY_N"
+    },
+    {
+      "key": "AID_ARCHER2_NOS_BW",
+      "term": "AID_ARCHER2_NOS_BW"
+    },
+    {
+      "key": "AID_ARCHER2_NOS_N",
+      "term": "AID_ARCHER2_NOS_N"
+    },
+    {
+      "key": "AID_ARMOR_N",
+      "term": "AID_ARMOR_N"
+    },
+    {
+      "key": "AID_ARMOR_SP",
+      "term": "AID_ARMOR_SP"
+    },
+    {
+      "key": "AID_ARMOR_JA",
+      "term": "AID_ARMOR_JA"
+    },
+    {
+      "key": "AID_ARMOR_GA_N",
+      "term": "AID_ARMOR_GA_N"
+    },
+    {
+      "key": "AID_ARMOR_GA_SP",
+      "term": "AID_ARMOR_GA_SP"
+    },
+    {
+      "key": "AID_ARMOR_GA_JA",
+      "term": "AID_ARMOR_GA_JA"
+    },
+    {
+      "key": "AID_ARMOR_CH_N",
+      "term": "AID_ARMOR_CH_N"
+    },
+    {
+      "key": "AID_ARMOR_CH_SP",
+      "term": "AID_ARMOR_CH_SP"
+    },
+    {
+      "key": "AID_ARMOR_CH_JA",
+      "term": "AID_ARMOR_CH_JA"
+    },
+    {
+      "key": "AID_ARMOR_DA_N",
+      "term": "AID_ARMOR_DA_N"
+    },
+    {
+      "key": "AID_ARMOR_DA_SP",
+      "term": "AID_ARMOR_DA_SP"
+    },
+    {
+      "key": "AID_ARMOR_DA_JA",
+      "term": "AID_ARMOR_DA_JA"
+    },
+    {
+      "key": "AID_ARMOR_KA_N",
+      "term": "AID_ARMOR_KA_N"
+    },
+    {
+      "key": "AID_ARMOR_KA_SP",
+      "term": "AID_ARMOR_KA_SP"
+    },
+    {
+      "key": "AID_ARMOR_KA_JA",
+      "term": "AID_ARMOR_KA_JA"
+    },
+    {
+      "key": "AID_ARMOR_MA_N",
+      "term": "AID_ARMOR_MA_N"
+    },
+    {
+      "key": "AID_ARMOR_MA_SP",
+      "term": "AID_ARMOR_MA_SP"
+    },
+    {
+      "key": "AID_ARMOR_MA_JA",
+      "term": "AID_ARMOR_MA_JA"
+    },
+    {
+      "key": "AID_ARMOR_DAY_N",
+      "term": "AID_ARMOR_DAY_N"
+    },
+    {
+      "key": "AID_ARMOR_DAY_SP",
+      "term": "AID_ARMOR_DAY_SP"
+    },
+    {
+      "key": "AID_ARMOR_DAY_JA",
+      "term": "AID_ARMOR_DAY_JA"
+    },
+    {
+      "key": "AID_GENERAL_N",
+      "term": "AID_GENERAL_N"
+    },
+    {
+      "key": "AID_GENERAL_SW",
+      "term": "AID_GENERAL_SW"
+    },
+    {
+      "key": "AID_GENERAL_SP",
+      "term": "AID_GENERAL_SP"
+    },
+    {
+      "key": "AID_GENERAL_JA",
+      "term": "AID_GENERAL_JA"
+    },
+    {
+      "key": "AID_GENERAL_GA_N",
+      "term": "AID_GENERAL_GA_N"
+    },
+    {
+      "key": "AID_GENERAL_GA_SW",
+      "term": "AID_GENERAL_GA_SW"
+    },
+    {
+      "key": "AID_GENERAL_GA_SP",
+      "term": "AID_GENERAL_GA_SP"
+    },
+    {
+      "key": "AID_GENERAL_GA_JA",
+      "term": "AID_GENERAL_GA_JA"
+    },
+    {
+      "key": "AID_GENERAL_CH_N",
+      "term": "AID_GENERAL_CH_N"
+    },
+    {
+      "key": "AID_GENERAL_CH_SW",
+      "term": "AID_GENERAL_CH_SW"
+    },
+    {
+      "key": "AID_GENERAL_CH_SP",
+      "term": "AID_GENERAL_CH_SP"
+    },
+    {
+      "key": "AID_GENERAL_CH_JA",
+      "term": "AID_GENERAL_CH_JA"
+    },
+    {
+      "key": "AID_GENERAL_TA_N",
+      "term": "AID_GENERAL_TA_N"
+    },
+    {
+      "key": "AID_GENERAL_TA_SW",
+      "term": "AID_GENERAL_TA_SW"
+    },
+    {
+      "key": "AID_GENERAL_TA_SP",
+      "term": "AID_GENERAL_TA_SP"
+    },
+    {
+      "key": "AID_GENERAL_TA_JA",
+      "term": "AID_GENERAL_TA_JA"
+    },
+    {
+      "key": "AID_GENERAL_ZE_N",
+      "term": "AID_GENERAL_ZE_N"
+    },
+    {
+      "key": "AID_GENERAL_ZE_SW",
+      "term": "AID_GENERAL_ZE_SW"
+    },
+    {
+      "key": "AID_GENERAL_ZE_SP",
+      "term": "AID_GENERAL_ZE_SP"
+    },
+    {
+      "key": "AID_GENERAL_ZE_JA",
+      "term": "AID_GENERAL_ZE_JA"
+    },
+    {
+      "key": "AID_GENERAL_DA_N",
+      "term": "AID_GENERAL_DA_N"
+    },
+    {
+      "key": "AID_GENERAL_DA_SW",
+      "term": "AID_GENERAL_DA_SW"
+    },
+    {
+      "key": "AID_GENERAL_DA_SP",
+      "term": "AID_GENERAL_DA_SP"
+    },
+    {
+      "key": "AID_GENERAL_DA_JA",
+      "term": "AID_GENERAL_DA_JA"
+    },
+    {
+      "key": "AID_GENERAL_KI_N",
+      "term": "AID_GENERAL_KI_N"
+    },
+    {
+      "key": "AID_GENERAL_KI_SW",
+      "term": "AID_GENERAL_KI_SW"
+    },
+    {
+      "key": "AID_GENERAL_KI_SP",
+      "term": "AID_GENERAL_KI_SP"
+    },
+    {
+      "key": "AID_GENERAL_KI_JA",
+      "term": "AID_GENERAL_KI_JA"
+    },
+    {
+      "key": "AID_GENERAL_KA_N",
+      "term": "AID_GENERAL_KA_N"
+    },
+    {
+      "key": "AID_GENERAL_KA_SW",
+      "term": "AID_GENERAL_KA_SW"
+    },
+    {
+      "key": "AID_GENERAL_KA_SP",
+      "term": "AID_GENERAL_KA_SP"
+    },
+    {
+      "key": "AID_GENERAL_KA_JA",
+      "term": "AID_GENERAL_KA_JA"
+    },
+    {
+      "key": "AID_GENERAL_BR_N",
+      "term": "AID_GENERAL_BR_N"
+    },
+    {
+      "key": "AID_GENERAL_BR_SW",
+      "term": "AID_GENERAL_BR_SW"
+    },
+    {
+      "key": "AID_GENERAL_BR_SP",
+      "term": "AID_GENERAL_BR_SP"
+    },
+    {
+      "key": "AID_GENERAL_BR_JA",
+      "term": "AID_GENERAL_BR_JA"
+    },
+    {
+      "key": "AID_GENERAL_DAY_N",
+      "term": "AID_GENERAL_DAY_N"
+    },
+    {
+      "key": "AID_GENERAL_DAY_SW",
+      "term": "AID_GENERAL_DAY_SW"
+    },
+    {
+      "key": "AID_GENERAL_DAY_SP",
+      "term": "AID_GENERAL_DAY_SP"
+    },
+    {
+      "key": "AID_GENERAL_DAY_JA",
+      "term": "AID_GENERAL_DAY_JA"
+    },
+    {
+      "key": "AID_PEGASU_N",
+      "term": "AID_PEGASU_N"
+    },
+    {
+      "key": "AID_PEGASU_SP",
+      "term": "AID_PEGASU_SP"
+    },
+    {
+      "key": "AID_PEGASU_JA",
+      "term": "AID_PEGASU_JA"
+    },
+    {
+      "key": "AID_PEGASU_MA_N",
+      "term": "AID_PEGASU_MA_N"
+    },
+    {
+      "key": "AID_PEGASU_MA_SP",
+      "term": "AID_PEGASU_MA_SP"
+    },
+    {
+      "key": "AID_PEGASU_MA_JA",
+      "term": "AID_PEGASU_MA_JA"
+    },
+    {
+      "key": "AID_PEGASU_TUT_N",
+      "term": "AID_PEGASU_TUT_N"
+    },
+    {
+      "key": "AID_PEGASU_TUT_SP",
+      "term": "AID_PEGASU_TUT_SP"
+    },
+    {
+      "key": "AID_PEGASU_TUT_JA",
+      "term": "AID_PEGASU_TUT_JA"
+    },
+    {
+      "key": "AID_PEGASU2_N",
+      "term": "AID_PEGASU2_N"
+    },
+    {
+      "key": "AID_PEGASU2_SW",
+      "term": "AID_PEGASU2_SW"
+    },
+    {
+      "key": "AID_PEGASU2_SP",
+      "term": "AID_PEGASU2_SP"
+    },
+    {
+      "key": "AID_PEGASU2_JA",
+      "term": "AID_PEGASU2_JA"
+    },
+    {
+      "key": "AID_PEGASU2_MA_N",
+      "term": "AID_PEGASU2_MA_N"
+    },
+    {
+      "key": "AID_PEGASU2_MA_SW",
+      "term": "AID_PEGASU2_MA_SW"
+    },
+    {
+      "key": "AID_PEGASU2_MA_SP",
+      "term": "AID_PEGASU2_MA_SP"
+    },
+    {
+      "key": "AID_PEGASU2_MA_JA",
+      "term": "AID_PEGASU2_MA_JA"
+    },
+    {
+      "key": "AID_PEGASU2_TA_N",
+      "term": "AID_PEGASU2_TA_N"
+    },
+    {
+      "key": "AID_PEGASU2_TA_SW",
+      "term": "AID_PEGASU2_TA_SW"
+    },
+    {
+      "key": "AID_PEGASU2_TA_SP",
+      "term": "AID_PEGASU2_TA_SP"
+    },
+    {
+      "key": "AID_PEGASU2_TA_JA",
+      "term": "AID_PEGASU2_TA_JA"
+    },
+    {
+      "key": "AID_PEGASU2_ELI_N",
+      "term": "AID_PEGASU2_ELI_N"
+    },
+    {
+      "key": "AID_PEGASU2_ELI_SW",
+      "term": "AID_PEGASU2_ELI_SW"
+    },
+    {
+      "key": "AID_PEGASU2_SIG_N",
+      "term": "AID_PEGASU2_SIG_N"
+    },
+    {
+      "key": "AID_PEGASU2_SIG_SW",
+      "term": "AID_PEGASU2_SIG_SW"
+    },
+    {
+      "key": "AID_DRAGON_N",
+      "term": "AID_DRAGON_N"
+    },
+    {
+      "key": "AID_DRAGON_SP",
+      "term": "AID_DRAGON_SP"
+    },
+    {
+      "key": "AID_DRAGON_JA",
+      "term": "AID_DRAGON_JA"
+    },
+    {
+      "key": "AID_DRAGON_JI_N",
+      "term": "AID_DRAGON_JI_N"
+    },
+    {
+      "key": "AID_DRAGON_JI_SP",
+      "term": "AID_DRAGON_JI_SP"
+    },
+    {
+      "key": "AID_DRAGON_JI_JA",
+      "term": "AID_DRAGON_JI_JA"
+    },
+    {
+      "key": "AID_DRAGON_DAY_N",
+      "term": "AID_DRAGON_DAY_N"
+    },
+    {
+      "key": "AID_DRAGON_DAY_SP",
+      "term": "AID_DRAGON_DAY_SP"
+    },
+    {
+      "key": "AID_DRAGON_DAY_JA",
+      "term": "AID_DRAGON_DAY_JA"
+    },
+    {
+      "key": "AID_DRAGON_TUT_N",
+      "term": "AID_DRAGON_TUT_N"
+    },
+    {
+      "key": "AID_DRAGON_TUT_SP",
+      "term": "AID_DRAGON_TUT_SP"
+    },
+    {
+      "key": "AID_DRAGON_TUT_JA",
+      "term": "AID_DRAGON_TUT_JA"
+    },
+    {
+      "key": "AID_DRAGON2_N",
+      "term": "AID_DRAGON2_N"
+    },
+    {
+      "key": "AID_DRAGON2_SP",
+      "term": "AID_DRAGON2_SP"
+    },
+    {
+      "key": "AID_DRAGON2_JA",
+      "term": "AID_DRAGON2_JA"
+    },
+    {
+      "key": "AID_DRAGON2_AX",
+      "term": "AID_DRAGON2_AX"
+    },
+    {
+      "key": "AID_DRAGON2_HA",
+      "term": "AID_DRAGON2_HA"
+    },
+    {
+      "key": "AID_DRAGON2_JI_N",
+      "term": "AID_DRAGON2_JI_N"
+    },
+    {
+      "key": "AID_DRAGON2_JI_SP",
+      "term": "AID_DRAGON2_JI_SP"
+    },
+    {
+      "key": "AID_DRAGON2_JI_JA",
+      "term": "AID_DRAGON2_JI_JA"
+    },
+    {
+      "key": "AID_DRAGON2_JI_AX",
+      "term": "AID_DRAGON2_JI_AX"
+    },
+    {
+      "key": "AID_DRAGON2_JI_HA",
+      "term": "AID_DRAGON2_JI_HA"
+    },
+    {
+      "key": "AID_DRAGON2_HA_N",
+      "term": "AID_DRAGON2_HA_N"
+    },
+    {
+      "key": "AID_DRAGON2_HA_SP",
+      "term": "AID_DRAGON2_HA_SP"
+    },
+    {
+      "key": "AID_DRAGON2_HA_JA",
+      "term": "AID_DRAGON2_HA_JA"
+    },
+    {
+      "key": "AID_DRAGON2_HA_AX",
+      "term": "AID_DRAGON2_HA_AX"
+    },
+    {
+      "key": "AID_DRAGON2_HA_HA",
+      "term": "AID_DRAGON2_HA_HA"
+    },
+    {
+      "key": "AID_DRAGON2_PR_N",
+      "term": "AID_DRAGON2_PR_N"
+    },
+    {
+      "key": "AID_DRAGON2_PR_SP",
+      "term": "AID_DRAGON2_PR_SP"
+    },
+    {
+      "key": "AID_DRAGON2_PR_JA",
+      "term": "AID_DRAGON2_PR_JA"
+    },
+    {
+      "key": "AID_DRAGON2_PR_AX",
+      "term": "AID_DRAGON2_PR_AX"
+    },
+    {
+      "key": "AID_DRAGON2_PR_HA",
+      "term": "AID_DRAGON2_PR_HA"
+    },
+    {
+      "key": "AID_DRAGON2_SH_N",
+      "term": "AID_DRAGON2_SH_N"
+    },
+    {
+      "key": "AID_DRAGON2_SH_SP",
+      "term": "AID_DRAGON2_SH_SP"
+    },
+    {
+      "key": "AID_DRAGON2_SH_JA",
+      "term": "AID_DRAGON2_SH_JA"
+    },
+    {
+      "key": "AID_DRAGON2_SH_AX",
+      "term": "AID_DRAGON2_SH_AX"
+    },
+    {
+      "key": "AID_DRAGON2_SH_HA",
+      "term": "AID_DRAGON2_SH_HA"
+    },
+    {
+      "key": "AID_DRAGON2_GR_N",
+      "term": "AID_DRAGON2_GR_N"
+    },
+    {
+      "key": "AID_DRAGON2_GR_SP",
+      "term": "AID_DRAGON2_GR_SP"
+    },
+    {
+      "key": "AID_DRAGON2_GR_JA",
+      "term": "AID_DRAGON2_GR_JA"
+    },
+    {
+      "key": "AID_DRAGON2_GR_AX",
+      "term": "AID_DRAGON2_GR_AX"
+    },
+    {
+      "key": "AID_DRAGON2_GR_HA",
+      "term": "AID_DRAGON2_GR_HA"
+    },
+    {
+      "key": "AID_DRAGON2_DAY_N",
+      "term": "AID_DRAGON2_DAY_N"
+    },
+    {
+      "key": "AID_DRAGON2_DAY_SP",
+      "term": "AID_DRAGON2_DAY_SP"
+    },
+    {
+      "key": "AID_DRAGON2_DAY_JA",
+      "term": "AID_DRAGON2_DAY_JA"
+    },
+    {
+      "key": "AID_DRAGON2_DAY_AX",
+      "term": "AID_DRAGON2_DAY_AX"
+    },
+    {
+      "key": "AID_DRAGON2_DAY_HA",
+      "term": "AID_DRAGON2_DAY_HA"
+    },
+    {
+      "key": "AID_DRAGON_2AS_N",
+      "term": "AID_DRAGON_2AS_N"
+    },
+    {
+      "key": "AID_DRAGON_2AS_SW",
+      "term": "AID_DRAGON_2AS_SW"
+    },
+    {
+      "key": "AID_DRAGON_2AS_AX",
+      "term": "AID_DRAGON_2AS_AX"
+    },
+    {
+      "key": "AID_DRAGON_2AS_HA",
+      "term": "AID_DRAGON_2AS_HA"
+    },
+    {
+      "key": "AID_DRAGON_2AS2_N",
+      "term": "AID_DRAGON_2AS2_N"
+    },
+    {
+      "key": "AID_DRAGON_2AS2_SW",
+      "term": "AID_DRAGON_2AS2_SW"
+    },
+    {
+      "key": "AID_DRAGON_2AS2_AX",
+      "term": "AID_DRAGON_2AS2_AX"
+    },
+    {
+      "key": "AID_DRAGON_2AS2_HA",
+      "term": "AID_DRAGON_2AS2_HA"
+    },
+    {
+      "key": "AID_DRAGON_2AS3_N",
+      "term": "AID_DRAGON_2AS3_N"
+    },
+    {
+      "key": "AID_MAGE_N",
+      "term": "AID_MAGE_N"
+    },
+    {
+      "key": "AID_MAGE_TO_N",
+      "term": "AID_MAGE_TO_N"
+    },
+    {
+      "key": "AID_MAGE_DAY_N",
+      "term": "AID_MAGE_DAY_N"
+    },
+    {
+      "key": "AID_MAGE_NOS_N",
+      "term": "AID_MAGE_NOS_N"
+    },
+    {
+      "key": "AID_MAGE_TUT_N",
+      "term": "AID_MAGE_TUT_N"
+    },
+    {
+      "key": "AID_MAGEF_N",
+      "term": "AID_MAGEF_N"
+    },
+    {
+      "key": "AID_MAGE2_N",
+      "term": "AID_MAGE2_N"
+    },
+    {
+      "key": "AID_MAGE2_TO_N",
+      "term": "AID_MAGE2_TO_N"
+    },
+    {
+      "key": "AID_MAGE2_UI_N",
+      "term": "AID_MAGE2_UI_N"
+    },
+    {
+      "key": "AID_MAGE2_BA_N",
+      "term": "AID_MAGE2_BA_N"
+    },
+    {
+      "key": "AID_MAGE2_KA_N",
+      "term": "AID_MAGE2_KA_N"
+    },
+    {
+      "key": "AID_MAGE2_KO_N",
+      "term": "AID_MAGE2_KO_N"
+    },
+    {
+      "key": "AID_MAGE2_DAY_N",
+      "term": "AID_MAGE2_DAY_N"
+    },
+    {
+      "key": "AID_MAGEF3_EL_N",
+      "term": "AID_MAGEF3_EL_N"
+    },
+    {
+      "key": "AID_MAGEF3_CA_N",
+      "term": "AID_MAGEF3_CA_N"
+    },
+    {
+      "key": "AID_MAGESENE_N",
+      "term": "AID_MAGESENE_N"
+    },
+    {
+      "key": "AID_MAGESENE2_N",
+      "term": "AID_MAGESENE2_N"
+    },
+    {
+      "key": "AID_BISHOP_N",
+      "term": "AID_BISHOP_N"
+    },
+    {
+      "key": "AID_BISHOP_KI_N",
+      "term": "AID_BISHOP_KI_N"
+    },
+    {
+      "key": "AID_BISHOP_DAY_N",
+      "term": "AID_BISHOP_DAY_N"
+    },
+    {
+      "key": "AID_BISHOP_TUT_N",
+      "term": "AID_BISHOP_TUT_N"
+    },
+    {
+      "key": "AID_BISHOP2_N",
+      "term": "AID_BISHOP2_N"
+    },
+    {
+      "key": "AID_BISHOP2_KI_N",
+      "term": "AID_BISHOP2_KI_N"
+    },
+    {
+      "key": "AID_BISHOP2_OL_N",
+      "term": "AID_BISHOP2_OL_N"
+    },
+    {
+      "key": "AID_BISHOP2_DAY_N",
+      "term": "AID_BISHOP2_DAY_N"
+    },
+    {
+      "key": "AID_BISHOP2_TUT_N",
+      "term": "AID_BISHOP2_TUT_N"
+    },
+    {
+      "key": "AID_BISHOP2_CEF_N",
+      "term": "AID_BISHOP2_CEF_N"
+    },
+    {
+      "key": "AID_BISHOP2F_N",
+      "term": "AID_BISHOP2F_N"
+    },
+    {
+      "key": "AID_BISHOP2F_EL_N",
+      "term": "AID_BISHOP2F_EL_N"
+    },
+    {
+      "key": "AID_CLERIC_N",
+      "term": "AID_CLERIC_N"
+    },
+    {
+      "key": "AID_CLERIC2_SW",
+      "term": "AID_CLERIC2_SW"
+    },
+    {
+      "key": "AID_CLERIC2_N",
+      "term": "AID_CLERIC2_N"
+    },
+    {
+      "key": "AID_THIEF_N",
+      "term": "AID_THIEF_N"
+    },
+    {
+      "key": "AID_THIEF_SO_N",
+      "term": "AID_THIEF_SO_N"
+    },
+    {
+      "key": "AID_THIEF_VO_N",
+      "term": "AID_THIEF_VO_N"
+    },
+    {
+      "key": "AID_THIEF_TUT_N",
+      "term": "AID_THIEF_TUT_N"
+    },
+    {
+      "key": "AID_THIEF2_N",
+      "term": "AID_THIEF2_N"
+    },
+    {
+      "key": "AID_THIEF2_SO_N",
+      "term": "AID_THIEF2_SO_N"
+    },
+    {
+      "key": "AID_THIEF2_VO_N",
+      "term": "AID_THIEF2_VO_N"
+    },
+    {
+      "key": "AID_BARBARIAN_N",
+      "term": "AID_BARBARIAN_N"
+    },
+    {
+      "key": "AID_BARBARIAN_AX",
+      "term": "AID_BARBARIAN_AX"
+    },
+    {
+      "key": "AID_BARBARIAN_HA",
+      "term": "AID_BARBARIAN_HA"
+    },
+    {
+      "key": "AID_BARBARIAN_ZA_N",
+      "term": "AID_BARBARIAN_ZA_N"
+    },
+    {
+      "key": "AID_BARBARIAN_ZA_AX",
+      "term": "AID_BARBARIAN_ZA_AX"
+    },
+    {
+      "key": "AID_BARBARIAN_ZA_HA",
+      "term": "AID_BARBARIAN_ZA_HA"
+    },
+    {
+      "key": "AID_BARBARIAN_IK_N",
+      "term": "AID_BARBARIAN_IK_N"
+    },
+    {
+      "key": "AID_BARBARIAN_IK_AX",
+      "term": "AID_BARBARIAN_IK_AX"
+    },
+    {
+      "key": "AID_BARBARIAN_IK_HA",
+      "term": "AID_BARBARIAN_IK_HA"
+    },
+    {
+      "key": "AID_BARBARIAN_HI_N",
+      "term": "AID_BARBARIAN_HI_N"
+    },
+    {
+      "key": "AID_BARBARIAN_HI_AX",
+      "term": "AID_BARBARIAN_HI_AX"
+    },
+    {
+      "key": "AID_BARBARIAN_HI_HA",
+      "term": "AID_BARBARIAN_HI_HA"
+    },
+    {
+      "key": "AID_BARBARIAN_NE_N",
+      "term": "AID_BARBARIAN_NE_N"
+    },
+    {
+      "key": "AID_BARBARIAN_NE_AX",
+      "term": "AID_BARBARIAN_NE_AX"
+    },
+    {
+      "key": "AID_BARBARIAN_NE_HA",
+      "term": "AID_BARBARIAN_NE_HA"
+    },
+    {
+      "key": "AID_BARBARIAN_TUT_N",
+      "term": "AID_BARBARIAN_TUT_N"
+    },
+    {
+      "key": "AID_BARBARIAN_TUT_AX",
+      "term": "AID_BARBARIAN_TUT_AX"
+    },
+    {
+      "key": "AID_BARBARIAN_TUT_HA",
+      "term": "AID_BARBARIAN_TUT_HA"
+    },
+    {
+      "key": "AID_BARBARIAN2_N",
+      "term": "AID_BARBARIAN2_N"
+    },
+    {
+      "key": "AID_BARBARIAN2_AX",
+      "term": "AID_BARBARIAN2_AX"
+    },
+    {
+      "key": "AID_BARBARIAN2_HA",
+      "term": "AID_BARBARIAN2_HA"
+    },
+    {
+      "key": "AID_BARBARIAN2_LA_N",
+      "term": "AID_BARBARIAN2_LA_N"
+    },
+    {
+      "key": "AID_BARBARIAN2_LA_AX",
+      "term": "AID_BARBARIAN2_LA_AX"
+    },
+    {
+      "key": "AID_BARBARIAN2_LA_HA",
+      "term": "AID_BARBARIAN2_LA_HA"
+    },
+    {
+      "key": "AID_BARBARIAN2_GA_N",
+      "term": "AID_BARBARIAN2_GA_N"
+    },
+    {
+      "key": "AID_BARBARIAN2_GA_AX",
+      "term": "AID_BARBARIAN2_GA_AX"
+    },
+    {
+      "key": "AID_BARBARIAN2_GA_HA",
+      "term": "AID_BARBARIAN2_GA_HA"
+    },
+    {
+      "key": "AID_DRAGONRE_N",
+      "term": "AID_DRAGONRE_N"
+    },
+    {
+      "key": "AID_DRAGONRE_GO_N",
+      "term": "AID_DRAGONRE_GO_N"
+    },
+    {
+      "key": "AID_DRAGONREF_N",
+      "term": "AID_DRAGONREF_N"
+    },
+    {
+      "key": "AID_ENAFOLDUP_N",
+      "term": "AID_ENAFOLDUP_N"
+    },
+    {
+      "key": "AID_BEAST_N",
+      "term": "AID_BEAST_N"
+    },
+    {
+      "key": "AID_BEAST_LA_N",
+      "term": "AID_BEAST_LA_N"
+    },
+    {
+      "key": "AID_BEAST_RE_N",
+      "term": "AID_BEAST_RE_N"
+    },
+    {
+      "key": "AID_CAT_N",
+      "term": "AID_CAT_N"
+    },
+    {
+      "key": "AID_CAHOOD_N",
+      "term": "AID_CAHOOD_N"
+    },
+    {
+      "key": "AID_BEASTCA_N",
+      "term": "AID_BEASTCA_N"
+    },
+    {
+      "key": "AID_BEASTCA_LA_N",
+      "term": "AID_BEASTCA_LA_N"
+    },
+    {
+      "key": "AID_BEASTCA_TUT_N",
+      "term": "AID_BEASTCA_TUT_N"
+    },
+    {
+      "key": "AID_BEASTCA_LAHOOD_N",
+      "term": "AID_BEASTCA_LAHOOD_N"
+    },
+    {
+      "key": "AID_BEASTCA_LAHOOD2_N",
+      "term": "AID_BEASTCA_LAHOOD2_N"
+    },
+    {
+      "key": "AID_BEASTTI_N",
+      "term": "AID_BEASTTI_N"
+    },
+    {
+      "key": "AID_BEASTTI_MW_N",
+      "term": "AID_BEASTTI_MW_N"
+    },
+    {
+      "key": "AID_BEASTTI_MO_N",
+      "term": "AID_BEASTTI_MO_N"
+    },
+    {
+      "key": "AID_BEASTTI_MOHOOD_N",
+      "term": "AID_BEASTTI_MOHOOD_N"
+    },
+    {
+      "key": "AID_BIRDFA_N",
+      "term": "AID_BIRDFA_N"
+    },
+    {
+      "key": "AID_BIRDFA_JA_N",
+      "term": "AID_BIRDFA_JA_N"
+    },
+    {
+      "key": "AID_BIRDFA_VU_N",
+      "term": "AID_BIRDFA_VU_N"
+    },
+    {
+      "key": "AID_BIRDFAT_N",
+      "term": "AID_BIRDFAT_N"
+    },
+    {
+      "key": "AID_BIRDHE_N",
+      "term": "AID_BIRDHE_N"
+    },
+    {
+      "key": "AID_BIRDHE_TUT_N",
+      "term": "AID_BIRDHE_TUT_N"
+    },
+    {
+      "key": "AID_BIRDEG_N",
+      "term": "AID_BIRDEG_N"
+    },
+    {
+      "key": "AID_BIRDEGF_N",
+      "term": "AID_BIRDEGF_N"
+    },
+    {
+      "key": "AID_LEARNEMOV_N",
+      "term": "AID_LEARNEMOV_N"
+    },
+    {
+      "key": "AID_BIRDCR_N",
+      "term": "AID_BIRDCR_N"
+    },
+    {
+      "key": "AID_BIRDCR_NR_N",
+      "term": "AID_BIRDCR_NR_N"
+    },
+    {
+      "key": "AID_BIRDCR_CH_N",
+      "term": "AID_BIRDCR_CH_N"
+    },
+    {
+      "key": "AID_BIRDCRN_N",
+      "term": "AID_BIRDCRN_N"
+    },
+    {
+      "key": "AID_DHEGINHANSEA_N",
+      "term": "AID_DHEGINHANSEA_N"
+    },
+    {
+      "key": "AID_KLTNAGE_N",
+      "term": "AID_KLTNAGE_N"
+    },
+    {
+      "key": "AID_NASIR_N",
+      "term": "AID_NASIR_N"
+    },
+    {
+      "key": "AID_CAINEGHIS_N",
+      "term": "AID_CAINEGHIS_N"
+    },
+    {
+      "key": "AID_GIFFCA_N",
+      "term": "AID_GIFFCA_N"
+    },
+    {
+      "key": "AID_WDRAGON_N",
+      "term": "AID_WDRAGON_N"
+    },
+    {
+      "key": "AID_RDRAGON_N",
+      "term": "AID_RDRAGON_N"
+    },
+    {
+      "key": "AID_RDRAGON_EN_N",
+      "term": "AID_RDRAGON_EN_N"
+    },
+    {
+      "key": "AID_GENERAL_BL_SW",
+      "term": "AID_GENERAL_BL_SW"
+    },
+    {
+      "key": "AID_GENERAL_BL_SP",
+      "term": "AID_GENERAL_BL_SP"
+    },
+    {
+      "key": "AID_GENERAL_BL_JA",
+      "term": "AID_GENERAL_BL_JA"
+    },
+    {
+      "key": "AID_GENERAL_BL_N",
+      "term": "AID_GENERAL_BL_N"
+    },
+    {
+      "key": "AID_CITIZEN_N",
+      "term": "AID_CITIZEN_N"
+    },
+    {
+      "key": "AID_CITIZENGF_N",
+      "term": "AID_CITIZENGF_N"
+    },
+    {
+      "key": "AID_CITIZENF_N",
+      "term": "AID_CITIZENF_N"
+    },
+    {
+      "key": "AID_CHILD_N",
+      "term": "AID_CHILD_N"
+    },
+    {
+      "key": "AID_CHILD_IK_N",
+      "term": "AID_CHILD_IK_N"
+    },
+    {
+      "key": "AID_CHILD_LO_N",
+      "term": "AID_CHILD_LO_N"
+    },
+    {
+      "key": "AID_CHILDF_N",
+      "term": "AID_CHILDF_N"
+    },
+    {
+      "key": "AID_LION_N",
+      "term": "AID_LION_N"
+    },
+    {
+      "key": "AID_LION_GI_N",
+      "term": "AID_LION_GI_N"
+    },
+    {
+      "key": "AID_TIGER_N",
+      "term": "AID_TIGER_N"
+    },
+    {
+      "key": "AID_TIGER_MO_N",
+      "term": "AID_TIGER_MO_N"
+    },
+    {
+      "key": "AID_TIGER_MU_N",
+      "term": "AID_TIGER_MU_N"
+    },
+    {
+      "key": "AID_FALCON_N",
+      "term": "AID_FALCON_N"
+    },
+    {
+      "key": "AID_FALCON_TI_N",
+      "term": "AID_FALCON_TI_N"
+    },
+    {
+      "key": "AID_FALCON_JA_N",
+      "term": "AID_FALCON_JA_N"
+    },
+    {
+      "key": "AID_FALCON_VU_N",
+      "term": "AID_FALCON_VU_N"
+    },
+    {
+      "key": "AID_HERON_N",
+      "term": "AID_HERON_N"
+    },
+    {
+      "key": "AID_EGRET_N",
+      "term": "AID_EGRET_N"
+    },
+    {
+      "key": "AID_CROW_N",
+      "term": "AID_CROW_N"
+    },
+    {
+      "key": "AID_CROW_NE_N",
+      "term": "AID_CROW_NE_N"
+    },
+    {
+      "key": "AID_CROW_NR_N",
+      "term": "AID_CROW_NR_N"
+    },
+    {
+      "key": "AID_CROW_CH_N",
+      "term": "AID_CROW_CH_N"
+    },
+    {
+      "key": "AID_GREIL_SW",
+      "term": "AID_GREIL_SW"
+    },
+    {
+      "key": "AID_GREIL_AX",
+      "term": "AID_GREIL_AX"
+    },
+    {
+      "key": "AID_GREIL_HA",
+      "term": "AID_GREIL_HA"
+    },
+    {
+      "key": "AID_GREIL_N",
+      "term": "AID_GREIL_N"
+    },
+    {
+      "key": "AID_GREIL_CH_SW",
+      "term": "AID_GREIL_CH_SW"
+    },
+    {
+      "key": "AID_GREIL_CH_AX",
+      "term": "AID_GREIL_CH_AX"
+    },
+    {
+      "key": "AID_GREIL_CH_HA",
+      "term": "AID_GREIL_CH_HA"
+    },
+    {
+      "key": "AID_GREIL_CH_N",
+      "term": "AID_GREIL_CH_N"
+    },
+    {
+      "key": "AID_SANAKI_N",
+      "term": "AID_SANAKI_N"
+    },
+    {
+      "key": "AID_SANAKI_2_N",
+      "term": "AID_SANAKI_2_N"
+    },
+    {
+      "key": "AID_DUMMY_N",
+      "term": "AID_DUMMY_N"
+    },
+    {
+      "key": "AID_FALCON_TI2_N",
+      "term": "AID_FALCON_TI2_N"
+    }
+  ],
+  "pid": [
+    {
+      "key": "PID_IKE",
+      "term": "PID_IKE"
+    },
+    {
+      "key": "PID_TIAMAT",
+      "term": "PID_TIAMAT"
+    },
+    {
+      "key": "PID_SENERIO",
+      "term": "PID_SENERIO"
+    },
+    {
+      "key": "PID_MIST",
+      "term": "PID_MIST"
+    },
+    {
+      "key": "PID_GREIL",
+      "term": "PID_GREIL"
+    },
+    {
+      "key": "PID_GREIL_MAP1",
+      "term": "PID_GREIL_MAP1"
+    },
+    {
+      "key": "PID_OSCAR",
+      "term": "PID_OSCAR"
+    },
+    {
+      "key": "PID_BOLE",
+      "term": "PID_BOLE"
+    },
+    {
+      "key": "PID_BOLE_MAP1",
+      "term": "PID_BOLE_MAP1"
+    },
+    {
+      "key": "PID_LOFA",
+      "term": "PID_LOFA"
+    },
+    {
+      "key": "PID_CHINON",
+      "term": "PID_CHINON"
+    },
+    {
+      "key": "PID_GATRIE",
+      "term": "PID_GATRIE"
+    },
+    {
+      "key": "PID_DUMMY1",
+      "term": "PID_DUMMY1"
+    },
+    {
+      "key": "PID_ERINCIA_QUEEN",
+      "term": "PID_ERINCIA_QUEEN"
+    },
+    {
+      "key": "PID_GEOFFRAY",
+      "term": "PID_GEOFFRAY"
+    },
+    {
+      "key": "PID_ULYSSES",
+      "term": "PID_ULYSSES"
+    },
+    {
+      "key": "PID_KEVIN",
+      "term": "PID_KEVIN"
+    },
+    {
+      "key": "PID_KILROY",
+      "term": "PID_KILROY"
+    },
+    {
+      "key": "PID_LUCHINO",
+      "term": "PID_LUCHINO"
+    },
+    {
+      "key": "PID_ZIHARK",
+      "term": "PID_ZIHARK"
+    },
+    {
+      "key": "PID_DALAHOWE",
+      "term": "PID_DALAHOWE"
+    },
+    {
+      "key": "PID_DUMMY2",
+      "term": "PID_DUMMY2"
+    },
+    {
+      "key": "PID_CEPHERAN_FAKE",
+      "term": "PID_CEPHERAN_FAKE"
+    },
+    {
+      "key": "PID_ZELGIUS",
+      "term": "PID_ZELGIUS"
+    },
+    {
+      "key": "PID_BLACKKNIGHT",
+      "term": "PID_BLACKKNIGHT"
+    },
+    {
+      "key": "PID_SIGRUN",
+      "term": "PID_SIGRUN"
+    },
+    {
+      "key": "PID_TANIS",
+      "term": "PID_TANIS"
+    },
+    {
+      "key": "PID_MARCIA",
+      "term": "PID_MARCIA"
+    },
+    {
+      "key": "PID_MAKAROV",
+      "term": "PID_MAKAROV"
+    },
+    {
+      "key": "PID_TOPUCK",
+      "term": "PID_TOPUCK"
+    },
+    {
+      "key": "PID_MWARIM",
+      "term": "PID_MWARIM"
+    },
+    {
+      "key": "PID_SOANVALCKE",
+      "term": "PID_SOANVALCKE"
+    },
+    {
+      "key": "PID_ELAICE",
+      "term": "PID_ELAICE"
+    },
+    {
+      "key": "PID_CALILL",
+      "term": "PID_CALILL"
+    },
+    {
+      "key": "PID_LARGO",
+      "term": "PID_LARGO"
+    },
+    {
+      "key": "PID_STELLA",
+      "term": "PID_STELLA"
+    },
+    {
+      "key": "PID_VOKE",
+      "term": "PID_VOKE"
+    },
+    {
+      "key": "PID_SOTHE",
+      "term": "PID_SOTHE"
+    },
+    {
+      "key": "PID_WAYU",
+      "term": "PID_WAYU"
+    },
+    {
+      "key": "PID_DUMMY4",
+      "term": "PID_DUMMY4"
+    },
+    {
+      "key": "PID_LEKAIN",
+      "term": "PID_LEKAIN"
+    },
+    {
+      "key": "PID_HETZEL",
+      "term": "PID_HETZEL"
+    },
+    {
+      "key": "PID_OLIVER",
+      "term": "PID_OLIVER"
+    },
+    {
+      "key": "PID_HEATHER",
+      "term": "PID_HEATHER"
+    },
+    {
+      "key": "PID_MELTY",
+      "term": "PID_MELTY"
+    },
+    {
+      "key": "PID_ASHNARD",
+      "term": "PID_ASHNARD"
+    },
+    {
+      "key": "PID_PRAGUE",
+      "term": "PID_PRAGUE"
+    },
+    {
+      "key": "PID_BEUFORRES",
+      "term": "PID_BEUFORRES"
+    },
+    {
+      "key": "PID_ENA",
+      "term": "PID_ENA"
+    },
+    {
+      "key": "PID_HAAR",
+      "term": "PID_HAAR"
+    },
+    {
+      "key": "PID_JILL",
+      "term": "PID_JILL"
+    },
+    {
+      "key": "PID_TAURONEO",
+      "term": "PID_TAURONEO"
+    },
+    {
+      "key": "PID_NEPENEE",
+      "term": "PID_NEPENEE"
+    },
+    {
+      "key": "PID_CHAP",
+      "term": "PID_CHAP"
+    },
+    {
+      "key": "PID_DUMMY5",
+      "term": "PID_DUMMY5"
+    },
+    {
+      "key": "PID_DUMMY6",
+      "term": "PID_DUMMY6"
+    },
+    {
+      "key": "PID_DUMMY7",
+      "term": "PID_DUMMY7"
+    },
+    {
+      "key": "PID_NASIR",
+      "term": "PID_NASIR"
+    },
+    {
+      "key": "PID_CAINEGHIS",
+      "term": "PID_CAINEGHIS"
+    },
+    {
+      "key": "PID_GIFFCA",
+      "term": "PID_GIFFCA"
+    },
+    {
+      "key": "PID_LETHE",
+      "term": "PID_LETHE"
+    },
+    {
+      "key": "PID_MORDY",
+      "term": "PID_MORDY"
+    },
+    {
+      "key": "PID_LAY",
+      "term": "PID_LAY"
+    },
+    {
+      "key": "PID_TIBARN",
+      "term": "PID_TIBARN"
+    },
+    {
+      "key": "PID_VULCI",
+      "term": "PID_VULCI"
+    },
+    {
+      "key": "PID_JANAFF",
+      "term": "PID_JANAFF"
+    },
+    {
+      "key": "PID_NAESALA",
+      "term": "PID_NAESALA"
+    },
+    {
+      "key": "PID_NEALUCHI",
+      "term": "PID_NEALUCHI"
+    },
+    {
+      "key": "PID_RIEUSION",
+      "term": "PID_RIEUSION"
+    },
+    {
+      "key": "PID_LEARNE",
+      "term": "PID_LEARNE"
+    },
+    {
+      "key": "PID_ZAKO",
+      "term": "PID_ZAKO"
+    },
+    {
+      "key": "PID_ZAKO_2",
+      "term": "PID_ZAKO_2"
+    },
+    {
+      "key": "PID_ZAKO_3",
+      "term": "PID_ZAKO_3"
+    },
+    {
+      "key": "PID_ZAKO_M",
+      "term": "PID_ZAKO_M"
+    },
+    {
+      "key": "PID_HIBUCCHI",
+      "term": "PID_HIBUCCHI"
+    },
+    {
+      "key": "PID_NEDATA",
+      "term": "PID_NEDATA"
+    },
+    {
+      "key": "PID_IKANAU",
+      "term": "PID_IKANAU"
+    },
+    {
+      "key": "PID_ZAWANAR",
+      "term": "PID_ZAWANAR"
+    },
+    {
+      "key": "PID_MAIZIN",
+      "term": "PID_MAIZIN"
+    },
+    {
+      "key": "PID_KAMURA",
+      "term": "PID_KAMURA"
+    },
+    {
+      "key": "PID_DAKKOWA",
+      "term": "PID_DAKKOWA"
+    },
+    {
+      "key": "PID_BARUMA",
+      "term": "PID_BARUMA"
+    },
+    {
+      "key": "PID_KOTAHU",
+      "term": "PID_KOTAHU"
+    },
+    {
+      "key": "PID_NOSHITHI",
+      "term": "PID_NOSHITHI"
+    },
+    {
+      "key": "PID_DANOMIRU",
+      "term": "PID_DANOMIRU"
+    },
+    {
+      "key": "PID_MAKKOYAR",
+      "term": "PID_MAKKOYAR"
+    },
+    {
+      "key": "PID_CHIGU",
+      "term": "PID_CHIGU"
+    },
+    {
+      "key": "PID_EMAKOU",
+      "term": "PID_EMAKOU"
+    },
+    {
+      "key": "PID_GASIRAMA",
+      "term": "PID_GASIRAMA"
+    },
+    {
+      "key": "PID_KIMARSI",
+      "term": "PID_KIMARSI"
+    },
+    {
+      "key": "PID_SIHARAMU",
+      "term": "PID_SIHARAMU"
+    },
+    {
+      "key": "PID_HOMAS",
+      "term": "PID_HOMAS"
+    },
+    {
+      "key": "PID_KAYACHE",
+      "term": "PID_KAYACHE"
+    },
+    {
+      "key": "PID_KASATAI",
+      "term": "PID_KASATAI"
+    },
+    {
+      "key": "PID_SIRKUKO",
+      "term": "PID_SIRKUKO"
+    },
+    {
+      "key": "PID_RIHITORU",
+      "term": "PID_RIHITORU"
+    },
+    {
+      "key": "PID_HAHUXEDO",
+      "term": "PID_HAHUXEDO"
+    },
+    {
+      "key": "PID_GURORMERU",
+      "term": "PID_GURORMERU"
+    },
+    {
+      "key": "PID_KOYUJO",
+      "term": "PID_KOYUJO"
+    },
+    {
+      "key": "PID_BURAISU",
+      "term": "PID_BURAISU"
+    },
+    {
+      "key": "PID_BOSS",
+      "term": "PID_BOSS"
+    },
+    {
+      "key": "PID_B_BOSS",
+      "term": "PID_B_BOSS"
+    },
+    {
+      "key": "PID_B_ZAKO",
+      "term": "PID_B_ZAKO"
+    },
+    {
+      "key": "PID_C_BOSS",
+      "term": "PID_C_BOSS"
+    },
+    {
+      "key": "PID_C_ZAKO",
+      "term": "PID_C_ZAKO"
+    },
+    {
+      "key": "PID_F_BOSS",
+      "term": "PID_F_BOSS"
+    },
+    {
+      "key": "PID_F_ZAKO",
+      "term": "PID_F_ZAKO"
+    },
+    {
+      "key": "PID_K_BOSS",
+      "term": "PID_K_BOSS"
+    },
+    {
+      "key": "PID_K_ZAKO",
+      "term": "PID_K_ZAKO"
+    },
+    {
+      "key": "PID_G_BOSS",
+      "term": "PID_G_BOSS"
+    },
+    {
+      "key": "PID_G_ZAKO",
+      "term": "PID_G_ZAKO"
+    },
+    {
+      "key": "PID_O_BOSS",
+      "term": "PID_O_BOSS"
+    },
+    {
+      "key": "PID_O_ZAKO",
+      "term": "PID_O_ZAKO"
+    },
+    {
+      "key": "PID_D_ZAKO_11_1",
+      "term": "PID_D_ZAKO_11_1"
+    },
+    {
+      "key": "PID_D_ZAKO_11_2",
+      "term": "PID_D_ZAKO_11_2"
+    },
+    {
+      "key": "PID_D_ZAKO_11_3",
+      "term": "PID_D_ZAKO_11_3"
+    },
+    {
+      "key": "PID_D_ZAKO_11_4",
+      "term": "PID_D_ZAKO_11_4"
+    },
+    {
+      "key": "PID_O_ZAKO_2_H",
+      "term": "PID_O_ZAKO_2_H"
+    },
+    {
+      "key": "PID_ZAKO_8_H",
+      "term": "PID_ZAKO_8_H"
+    },
+    {
+      "key": "PID_ZAKO_8_H_EV1",
+      "term": "PID_ZAKO_8_H_EV1"
+    },
+    {
+      "key": "PID_ZAKO_8_H_EV2",
+      "term": "PID_ZAKO_8_H_EV2"
+    },
+    {
+      "key": "PID_ZAKO_8_H_2",
+      "term": "PID_ZAKO_8_H_2"
+    },
+    {
+      "key": "PID_ZAKO_8_H_AM",
+      "term": "PID_ZAKO_8_H_AM"
+    },
+    {
+      "key": "PID_ZAKO_8_H_A",
+      "term": "PID_ZAKO_8_H_A"
+    },
+    {
+      "key": "PID_ZAKO_EV1",
+      "term": "PID_ZAKO_EV1"
+    },
+    {
+      "key": "PID_ZAKO_EV2",
+      "term": "PID_ZAKO_EV2"
+    },
+    {
+      "key": "PID_ZAKO_EV3",
+      "term": "PID_ZAKO_EV3"
+    },
+    {
+      "key": "PID_ZAKO_EV4",
+      "term": "PID_ZAKO_EV4"
+    },
+    {
+      "key": "PID_ZAKO_EV5",
+      "term": "PID_ZAKO_EV5"
+    },
+    {
+      "key": "PID_ZAKO_EV6",
+      "term": "PID_ZAKO_EV6"
+    },
+    {
+      "key": "PID_ZAKO_EV7",
+      "term": "PID_ZAKO_EV7"
+    },
+    {
+      "key": "PID_ZAKO_EV8",
+      "term": "PID_ZAKO_EV8"
+    },
+    {
+      "key": "PID_ZAKO_EV9",
+      "term": "PID_ZAKO_EV9"
+    },
+    {
+      "key": "PID_ZAKO_EV10",
+      "term": "PID_ZAKO_EV10"
+    },
+    {
+      "key": "PID_DAYNE_SOL_1",
+      "term": "PID_DAYNE_SOL_1"
+    },
+    {
+      "key": "PID_DAYNE_SOL_2",
+      "term": "PID_DAYNE_SOL_2"
+    },
+    {
+      "key": "PID_DAYNE_SOL_3",
+      "term": "PID_DAYNE_SOL_3"
+    },
+    {
+      "key": "PID_DAYNE_SOL_4",
+      "term": "PID_DAYNE_SOL_4"
+    },
+    {
+      "key": "PID_DAYNE_SOL_5",
+      "term": "PID_DAYNE_SOL_5"
+    },
+    {
+      "key": "PID_DAYNE_SOL_6",
+      "term": "PID_DAYNE_SOL_6"
+    },
+    {
+      "key": "PID_DAYNE_SOL_7",
+      "term": "PID_DAYNE_SOL_7"
+    },
+    {
+      "key": "PID_DAYNE_SOL_8",
+      "term": "PID_DAYNE_SOL_8"
+    },
+    {
+      "key": "PID_DAYNE_HAL_1",
+      "term": "PID_DAYNE_HAL_1"
+    },
+    {
+      "key": "PID_DAYNE_ARC_1",
+      "term": "PID_DAYNE_ARC_1"
+    },
+    {
+      "key": "PID_DAYNE_ARC_2",
+      "term": "PID_DAYNE_ARC_2"
+    },
+    {
+      "key": "PID_DAYNE_ARC_3",
+      "term": "PID_DAYNE_ARC_3"
+    },
+    {
+      "key": "PID_DAYNE_ARC_4",
+      "term": "PID_DAYNE_ARC_4"
+    },
+    {
+      "key": "PID_DAYNE_SNP_1",
+      "term": "PID_DAYNE_SNP_1"
+    },
+    {
+      "key": "PID_DAYNE_ARM_1",
+      "term": "PID_DAYNE_ARM_1"
+    },
+    {
+      "key": "PID_DAYNE_GNL_1",
+      "term": "PID_DAYNE_GNL_1"
+    },
+    {
+      "key": "PID_DAYNE_SKN_1",
+      "term": "PID_DAYNE_SKN_1"
+    },
+    {
+      "key": "PID_DAYNE_SKN_2",
+      "term": "PID_DAYNE_SKN_2"
+    },
+    {
+      "key": "PID_DAYNE_PLD_1",
+      "term": "PID_DAYNE_PLD_1"
+    },
+    {
+      "key": "PID_DAYNE_DKN_1",
+      "term": "PID_DAYNE_DKN_1"
+    },
+    {
+      "key": "PID_DAYNE_DMS_1",
+      "term": "PID_DAYNE_DMS_1"
+    },
+    {
+      "key": "PID_DAYNE_MAG_1",
+      "term": "PID_DAYNE_MAG_1"
+    },
+    {
+      "key": "PID_DAYNE_SAG_1",
+      "term": "PID_DAYNE_SAG_1"
+    },
+    {
+      "key": "PID_DAYNE_PRS_1",
+      "term": "PID_DAYNE_PRS_1"
+    },
+    {
+      "key": "PID_DAYNE_BSH_1",
+      "term": "PID_DAYNE_BSH_1"
+    },
+    {
+      "key": "PID_B_ZAKO_EV1",
+      "term": "PID_B_ZAKO_EV1"
+    },
+    {
+      "key": "PID_B_ZAKO_EV2",
+      "term": "PID_B_ZAKO_EV2"
+    },
+    {
+      "key": "PID_B_ZAKO_EV3",
+      "term": "PID_B_ZAKO_EV3"
+    },
+    {
+      "key": "PID_K_ZAKO_EV1",
+      "term": "PID_K_ZAKO_EV1"
+    },
+    {
+      "key": "PID_K_ZAKO_EV2",
+      "term": "PID_K_ZAKO_EV2"
+    },
+    {
+      "key": "PID_K_ZAKO_EV3",
+      "term": "PID_K_ZAKO_EV3"
+    },
+    {
+      "key": "PID_G_ZAKO_EV1",
+      "term": "PID_G_ZAKO_EV1"
+    },
+    {
+      "key": "PID_G_ZAKO_EV2",
+      "term": "PID_G_ZAKO_EV2"
+    },
+    {
+      "key": "PID_G_ZAKO_EV3",
+      "term": "PID_G_ZAKO_EV3"
+    },
+    {
+      "key": "PID_G_ZAKO_EV4",
+      "term": "PID_G_ZAKO_EV4"
+    },
+    {
+      "key": "PID_PEOPLE_EV1",
+      "term": "PID_PEOPLE_EV1"
+    },
+    {
+      "key": "PID_PEOPLE_EV2",
+      "term": "PID_PEOPLE_EV2"
+    },
+    {
+      "key": "PID_PEOPLE_EV3",
+      "term": "PID_PEOPLE_EV3"
+    },
+    {
+      "key": "PID_PEOPLE_EV4",
+      "term": "PID_PEOPLE_EV4"
+    },
+    {
+      "key": "PID_PEOPLE_EV5",
+      "term": "PID_PEOPLE_EV5"
+    },
+    {
+      "key": "PID_PEOPLE_EV6",
+      "term": "PID_PEOPLE_EV6"
+    },
+    {
+      "key": "PID_PEOPLE_EV7",
+      "term": "PID_PEOPLE_EV7"
+    },
+    {
+      "key": "PID_PEOPLE_EV8",
+      "term": "PID_PEOPLE_EV8"
+    },
+    {
+      "key": "PID_PEOPLE_EV9",
+      "term": "PID_PEOPLE_EV9"
+    },
+    {
+      "key": "PID_PEOPLE_EV10",
+      "term": "PID_PEOPLE_EV10"
+    },
+    {
+      "key": "PID_PEOPLE_EV11",
+      "term": "PID_PEOPLE_EV11"
+    },
+    {
+      "key": "PID_PEOPLE_EV12",
+      "term": "PID_PEOPLE_EV12"
+    },
+    {
+      "key": "PID_IKE_EV",
+      "term": "PID_IKE_EV"
+    },
+    {
+      "key": "PID_GREIL_EV",
+      "term": "PID_GREIL_EV"
+    },
+    {
+      "key": "PID_TIAMAT_EV",
+      "term": "PID_TIAMAT_EV"
+    },
+    {
+      "key": "PID_SENERIO_EV",
+      "term": "PID_SENERIO_EV"
+    },
+    {
+      "key": "PID_SENERIO_EV2",
+      "term": "PID_SENERIO_EV2"
+    },
+    {
+      "key": "PID_MIST_EV",
+      "term": "PID_MIST_EV"
+    },
+    {
+      "key": "PID_OSCAR_EV",
+      "term": "PID_OSCAR_EV"
+    },
+    {
+      "key": "PID_BOLE_EV",
+      "term": "PID_BOLE_EV"
+    },
+    {
+      "key": "PID_KILROY_EV",
+      "term": "PID_KILROY_EV"
+    },
+    {
+      "key": "PID_CHINON_EV",
+      "term": "PID_CHINON_EV"
+    },
+    {
+      "key": "PID_GATRIE_EV",
+      "term": "PID_GATRIE_EV"
+    },
+    {
+      "key": "PID_TOPUCK_EV",
+      "term": "PID_TOPUCK_EV"
+    },
+    {
+      "key": "PID_GEOFFRAY_EV",
+      "term": "PID_GEOFFRAY_EV"
+    },
+    {
+      "key": "PID_ULYSSES_EV",
+      "term": "PID_ULYSSES_EV"
+    },
+    {
+      "key": "PID_LUCHINO_EV",
+      "term": "PID_LUCHINO_EV"
+    },
+    {
+      "key": "PID_NASIR_EV",
+      "term": "PID_NASIR_EV"
+    },
+    {
+      "key": "PID_LOFA_EV",
+      "term": "PID_LOFA_EV"
+    },
+    {
+      "key": "PID_TUT_SW_B",
+      "term": "PID_TUT_SW_B"
+    },
+    {
+      "key": "PID_TUT_SW_R",
+      "term": "PID_TUT_SW_R"
+    },
+    {
+      "key": "PID_TUT_SW_G",
+      "term": "PID_TUT_SW_G"
+    },
+    {
+      "key": "PID_TUT_FI_B",
+      "term": "PID_TUT_FI_B"
+    },
+    {
+      "key": "PID_TUT_FI_R",
+      "term": "PID_TUT_FI_R"
+    },
+    {
+      "key": "PID_TUT_BD_R",
+      "term": "PID_TUT_BD_R"
+    },
+    {
+      "key": "PID_TUT_SK_B",
+      "term": "PID_TUT_SK_B"
+    },
+    {
+      "key": "PID_TUT_PK_B",
+      "term": "PID_TUT_PK_B"
+    },
+    {
+      "key": "PID_TUT_DK_B",
+      "term": "PID_TUT_DK_B"
+    },
+    {
+      "key": "PID_TUT_DK_R",
+      "term": "PID_TUT_DK_R"
+    },
+    {
+      "key": "PID_TUT_PR_B",
+      "term": "PID_TUT_PR_B"
+    },
+    {
+      "key": "PID_TUT_BS_B",
+      "term": "PID_TUT_BS_B"
+    },
+    {
+      "key": "PID_TUT_BS_R",
+      "term": "PID_TUT_BS_R"
+    },
+    {
+      "key": "PID_TUT_TH_B",
+      "term": "PID_TUT_TH_B"
+    },
+    {
+      "key": "PID_TUT_BC_Y",
+      "term": "PID_TUT_BC_Y"
+    },
+    {
+      "key": "PID_TUT_BB_B",
+      "term": "PID_TUT_BB_B"
+    },
+    {
+      "key": "PID_TUT_AR_B",
+      "term": "PID_TUT_AR_B"
+    },
+    {
+      "key": "PID_TUT_AR_R",
+      "term": "PID_TUT_AR_R"
+    },
+    {
+      "key": "PID_TUT_MG_B",
+      "term": "PID_TUT_MG_B"
+    },
+    {
+      "key": "PID_TUT_MG_R",
+      "term": "PID_TUT_MG_R"
+    },
+    {
+      "key": "PID_02_BANDIT_MOU",
+      "term": "PID_02_BANDIT_MOU"
+    },
+    {
+      "key": "PID_03_BANDIT_MOU",
+      "term": "PID_03_BANDIT_MOU"
+    },
+    {
+      "key": "PID_04_BANDIT_SEA",
+      "term": "PID_04_BANDIT_SEA"
+    },
+    {
+      "key": "PID_BANDIT_SEA",
+      "term": "PID_BANDIT_SEA"
+    },
+    {
+      "key": "PID_BANDIT_SEA_EV1",
+      "term": "PID_BANDIT_SEA_EV1"
+    },
+    {
+      "key": "PID_BANDIT_MOU",
+      "term": "PID_BANDIT_MOU"
+    },
+    {
+      "key": "PID_BANDIT_MOU_EV1",
+      "term": "PID_BANDIT_MOU_EV1"
+    },
+    {
+      "key": "PID_M_STR_1",
+      "term": "PID_M_STR_1"
+    },
+    {
+      "key": "PID_M_STR_2",
+      "term": "PID_M_STR_2"
+    },
+    {
+      "key": "PID_M_STR_3",
+      "term": "PID_M_STR_3"
+    },
+    {
+      "key": "PID_12_SELFDEFENCE",
+      "term": "PID_12_SELFDEFENCE"
+    },
+    {
+      "key": "PID_12_THIEF",
+      "term": "PID_12_THIEF"
+    },
+    {
+      "key": "PID_15_PEDDLING",
+      "term": "PID_15_PEDDLING"
+    },
+    {
+      "key": "PID_16_LIBERATION",
+      "term": "PID_16_LIBERATION"
+    },
+    {
+      "key": "PID_178_TANAS",
+      "term": "PID_178_TANAS"
+    },
+    {
+      "key": "PID_15_PEDDLING_T",
+      "term": "PID_15_PEDDLING_T"
+    },
+    {
+      "key": "PID_16_LIBERATION_1",
+      "term": "PID_16_LIBERATION_1"
+    },
+    {
+      "key": "PID_16_LIBERATION_2",
+      "term": "PID_16_LIBERATION_2"
+    },
+    {
+      "key": "PID_16_LIBERATION_3",
+      "term": "PID_16_LIBERATION_3"
+    },
+    {
+      "key": "PID_16_LIBERATION_4",
+      "term": "PID_16_LIBERATION_4"
+    },
+    {
+      "key": "PID_178_TANAS_1",
+      "term": "PID_178_TANAS_1"
+    },
+    {
+      "key": "PID_178_TANAS_2",
+      "term": "PID_178_TANAS_2"
+    },
+    {
+      "key": "PID_178_TANAS_3",
+      "term": "PID_178_TANAS_3"
+    },
+    {
+      "key": "PID_N_07_DAYNE_2",
+      "term": "PID_N_07_DAYNE_2"
+    },
+    {
+      "key": "PID_N_07_DAYNE_3",
+      "term": "PID_N_07_DAYNE_3"
+    },
+    {
+      "key": "PID_N_08_DAYNE_1",
+      "term": "PID_N_08_DAYNE_1"
+    },
+    {
+      "key": "PID_N_08_DAYNE_2",
+      "term": "PID_N_08_DAYNE_2"
+    },
+    {
+      "key": "PID_N_08_DAYNE_3",
+      "term": "PID_N_08_DAYNE_3"
+    },
+    {
+      "key": "PID_DAYNE_SRD",
+      "term": "PID_DAYNE_SRD"
+    },
+    {
+      "key": "PID_DAYNE_SMS",
+      "term": "PID_DAYNE_SMS"
+    },
+    {
+      "key": "PID_DAYNE_SOL",
+      "term": "PID_DAYNE_SOL"
+    },
+    {
+      "key": "PID_DAYNE_HAL",
+      "term": "PID_DAYNE_HAL"
+    },
+    {
+      "key": "PID_DAYNE_FIG",
+      "term": "PID_DAYNE_FIG"
+    },
+    {
+      "key": "PID_DAYNE_WAR",
+      "term": "PID_DAYNE_WAR"
+    },
+    {
+      "key": "PID_DAYNE_ARC",
+      "term": "PID_DAYNE_ARC"
+    },
+    {
+      "key": "PID_DAYNE_SNP",
+      "term": "PID_DAYNE_SNP"
+    },
+    {
+      "key": "PID_DAYNE_ARM",
+      "term": "PID_DAYNE_ARM"
+    },
+    {
+      "key": "PID_DAYNE_GNL",
+      "term": "PID_DAYNE_GNL"
+    },
+    {
+      "key": "PID_DAYNE_SKN",
+      "term": "PID_DAYNE_SKN"
+    },
+    {
+      "key": "PID_DAYNE_PLD",
+      "term": "PID_DAYNE_PLD"
+    },
+    {
+      "key": "PID_DAYNE_DKN",
+      "term": "PID_DAYNE_DKN"
+    },
+    {
+      "key": "PID_DAYNE_DMS",
+      "term": "PID_DAYNE_DMS"
+    },
+    {
+      "key": "PID_DAYNE_MAG",
+      "term": "PID_DAYNE_MAG"
+    },
+    {
+      "key": "PID_DAYNE_SAG",
+      "term": "PID_DAYNE_SAG"
+    },
+    {
+      "key": "PID_DAYNE_PRS",
+      "term": "PID_DAYNE_PRS"
+    },
+    {
+      "key": "PID_DAYNE_BSH",
+      "term": "PID_DAYNE_BSH"
+    },
+    {
+      "key": "PID_02_BANDIT_EV",
+      "term": "PID_02_BANDIT_EV"
+    },
+    {
+      "key": "PID_DAYNE_SOL_9",
+      "term": "PID_DAYNE_SOL_9"
+    },
+    {
+      "key": "PID_DAYNE_SOL_10",
+      "term": "PID_DAYNE_SOL_10"
+    },
+    {
+      "key": "PID_DAYNE_ARC_5",
+      "term": "PID_DAYNE_ARC_5"
+    },
+    {
+      "key": "PID_DAYNE_ARC_6",
+      "term": "PID_DAYNE_ARC_6"
+    },
+    {
+      "key": "PID_DAYNE_ARC_7",
+      "term": "PID_DAYNE_ARC_7"
+    },
+    {
+      "key": "PID_DAYNE_ARC_8",
+      "term": "PID_DAYNE_ARC_8"
+    },
+    {
+      "key": "PID_DAYNE_SKN_3",
+      "term": "PID_DAYNE_SKN_3"
+    },
+    {
+      "key": "PID_DAYNE_SKN_4",
+      "term": "PID_DAYNE_SKN_4"
+    },
+    {
+      "key": "PID_DAYNE_SKN_5",
+      "term": "PID_DAYNE_SKN_5"
+    },
+    {
+      "key": "PID_OLDMAN_1",
+      "term": "PID_OLDMAN_1"
+    },
+    {
+      "key": "PID_DAYNE_DKN_2",
+      "term": "PID_DAYNE_DKN_2"
+    },
+    {
+      "key": "PID_DAYNE_DKN_3",
+      "term": "PID_DAYNE_DKN_3"
+    },
+    {
+      "key": "PID_DAYNE_DKN_4",
+      "term": "PID_DAYNE_DKN_4"
+    },
+    {
+      "key": "PID_DAYNE_DKN_5",
+      "term": "PID_DAYNE_DKN_5"
+    },
+    {
+      "key": "PID_DAYNE_DKN_6",
+      "term": "PID_DAYNE_DKN_6"
+    },
+    {
+      "key": "PID_ASHNARD2",
+      "term": "PID_ASHNARD2"
+    },
+    {
+      "key": "PID_15_DUMMYT",
+      "term": "PID_15_DUMMYT"
+    },
+    {
+      "key": "PID_IKE_CHILD_EV",
+      "term": "PID_IKE_CHILD_EV"
+    },
+    {
+      "key": "PID_GREIL_SEPIA_EV",
+      "term": "PID_GREIL_SEPIA_EV"
+    },
+    {
+      "key": "PID_LETHE_EV",
+      "term": "PID_LETHE_EV"
+    },
+    {
+      "key": "PID_MORDY_EV",
+      "term": "PID_MORDY_EV"
+    },
+    {
+      "key": "PID_LAY_EV",
+      "term": "PID_LAY_EV"
+    },
+    {
+      "key": "PID_LAY_EV2",
+      "term": "PID_LAY_EV2"
+    },
+    {
+      "key": "PID_LETHE_MAP9",
+      "term": "PID_LETHE_MAP9"
+    },
+    {
+      "key": "PID_LEARNE_EV",
+      "term": "PID_LEARNE_EV"
+    },
+    {
+      "key": "PID_ENA_EV",
+      "term": "PID_ENA_EV"
+    },
+    {
+      "key": "PID_ERINCIA_QUEEN_EV",
+      "term": "PID_ERINCIA_QUEEN_EV"
+    },
+    {
+      "key": "PID_LAY_EV3",
+      "term": "PID_LAY_EV3"
+    },
+    {
+      "key": "PID_TIBARN_EV",
+      "term": "PID_TIBARN_EV"
+    },
+    {
+      "key": "PID_RIEUSION_EV",
+      "term": "PID_RIEUSION_EV"
+    },
+    {
+      "key": "PID_ENA_EV2",
+      "term": "PID_ENA_EV2"
+    },
+    {
+      "key": "PID_TIBARN_EV2",
+      "term": "PID_TIBARN_EV2"
+    },
+    {
+      "key": "PID_WAYU_EV",
+      "term": "PID_WAYU_EV"
+    },
+    {
+      "key": "PID_TUT_SO_B",
+      "term": "PID_TUT_SO_B"
+    },
+    {
+      "key": "PID_TUT_SO2_B",
+      "term": "PID_TUT_SO2_B"
+    },
+    {
+      "key": "PID_TUT_SO2_G",
+      "term": "PID_TUT_SO2_G"
+    },
+    {
+      "key": "PID_TUT_SK_R",
+      "term": "PID_TUT_SK_R"
+    },
+    {
+      "key": "PID_TUT_PK_R",
+      "term": "PID_TUT_PK_R"
+    },
+    {
+      "key": "PID_TUT_BB2_R",
+      "term": "PID_TUT_BB2_R"
+    },
+    {
+      "key": "PID_TUT_BC_B",
+      "term": "PID_TUT_BC_B"
+    },
+    {
+      "key": "PID_23_PAL_PRS",
+      "term": "PID_23_PAL_PRS"
+    },
+    {
+      "key": "PID_23_PAL_BSH",
+      "term": "PID_23_PAL_BSH"
+    },
+    {
+      "key": "PID_23_PAL_BSH_EV",
+      "term": "PID_23_PAL_BSH_EV"
+    },
+    {
+      "key": "PID_23_SIK_BUKA1",
+      "term": "PID_23_SIK_BUKA1"
+    },
+    {
+      "key": "PID_23_SIK_BUKA2",
+      "term": "PID_23_SIK_BUKA2"
+    },
+    {
+      "key": "PID_23_SIK_BUKA3",
+      "term": "PID_23_SIK_BUKA3"
+    },
+    {
+      "key": "PID_RAJAION",
+      "term": "PID_RAJAION"
+    },
+    {
+      "key": "PID_GIFFCA_EV",
+      "term": "PID_GIFFCA_EV"
+    },
+    {
+      "key": "PID_NAESALA_EV",
+      "term": "PID_NAESALA_EV"
+    },
+    {
+      "key": "PID_BLACKKNIGHT_EV1",
+      "term": "PID_BLACKKNIGHT_EV1"
+    },
+    {
+      "key": "PID_BLACKKNIGHT_EV2",
+      "term": "PID_BLACKKNIGHT_EV2"
+    },
+    {
+      "key": "PID_IKE_EV1",
+      "term": "PID_IKE_EV1"
+    },
+    {
+      "key": "PID_IKE_EV2",
+      "term": "PID_IKE_EV2"
+    },
+    {
+      "key": "PID_MAP21_DKN_1",
+      "term": "PID_MAP21_DKN_1"
+    },
+    {
+      "key": "PID_MAP21_DKN_2",
+      "term": "PID_MAP21_DKN_2"
+    },
+    {
+      "key": "PID_MAP21_DKN_3",
+      "term": "PID_MAP21_DKN_3"
+    },
+    {
+      "key": "PID_TRIAL1_BUKA",
+      "term": "PID_TRIAL1_BUKA"
+    },
+    {
+      "key": "PID_TRIAL1_BOSS",
+      "term": "PID_TRIAL1_BOSS"
+    },
+    {
+      "key": "PID_TRIAL2_BUKA",
+      "term": "PID_TRIAL2_BUKA"
+    },
+    {
+      "key": "PID_TRIAL3_BUKA",
+      "term": "PID_TRIAL3_BUKA"
+    },
+    {
+      "key": "PID_TRIAL4_BUKA",
+      "term": "PID_TRIAL4_BUKA"
+    },
+    {
+      "key": "PID_TRIAL5_BOSS",
+      "term": "PID_TRIAL5_BOSS"
+    },
+    {
+      "key": "PID_TRIAL6_BUKA",
+      "term": "PID_TRIAL6_BUKA"
+    },
+    {
+      "key": "PID_TRIAL6_BOSS",
+      "term": "PID_TRIAL6_BOSS"
+    },
+    {
+      "key": "PID_14_SRD",
+      "term": "PID_14_SRD"
+    },
+    {
+      "key": "PID_14_SOL",
+      "term": "PID_14_SOL"
+    },
+    {
+      "key": "PID_14_HAL",
+      "term": "PID_14_HAL"
+    },
+    {
+      "key": "PID_14_FIG",
+      "term": "PID_14_FIG"
+    },
+    {
+      "key": "PID_14_ARC",
+      "term": "PID_14_ARC"
+    },
+    {
+      "key": "PID_14_SNP",
+      "term": "PID_14_SNP"
+    },
+    {
+      "key": "PID_14_MAG",
+      "term": "PID_14_MAG"
+    },
+    {
+      "key": "PID_ACTORMANQUE_D",
+      "term": "PID_ACTORMANQUE_D"
+    },
+    {
+      "key": "PID_ACTORMANQUE_P",
+      "term": "PID_ACTORMANQUE_P"
+    },
+    {
+      "key": "PID_DAYNE_PLD_2",
+      "term": "PID_DAYNE_PLD_2"
+    },
+    {
+      "key": "PID_DAYNE_PLD_3",
+      "term": "PID_DAYNE_PLD_3"
+    }
+  ],
+  "jid": [
+    {
+      "key": "JID_RANGER",
+      "term": "JID_RANGER"
+    },
+    {
+      "key": "JID_HERO",
+      "term": "JID_HERO"
+    },
+    {
+      "key": "JID_HERO_G",
+      "term": "JID_HERO_G"
+    },
+    {
+      "key": "JID_SWORDER",
+      "term": "JID_SWORDER"
+    },
+    {
+      "key": "JID_SWORDER/F",
+      "term": "JID_SWORDER/F"
+    },
+    {
+      "key": "JID_SWORDMASTER",
+      "term": "JID_SWORDMASTER"
+    },
+    {
+      "key": "JID_SWORDMASTER/F",
+      "term": "JID_SWORDMASTER/F"
+    },
+    {
+      "key": "JID_SOLDIER",
+      "term": "JID_SOLDIER"
+    },
+    {
+      "key": "JID_SOLDIER/F",
+      "term": "JID_SOLDIER/F"
+    },
+    {
+      "key": "JID_HALBERDIER",
+      "term": "JID_HALBERDIER"
+    },
+    {
+      "key": "JID_HALBERDIER/F",
+      "term": "JID_HALBERDIER/F"
+    },
+    {
+      "key": "JID_FIGHTER",
+      "term": "JID_FIGHTER"
+    },
+    {
+      "key": "JID_WARRIOR",
+      "term": "JID_WARRIOR"
+    },
+    {
+      "key": "JID_ARCHER",
+      "term": "JID_ARCHER"
+    },
+    {
+      "key": "JID_SNIPER",
+      "term": "JID_SNIPER"
+    },
+    {
+      "key": "JID_ARMOR",
+      "term": "JID_ARMOR"
+    },
+    {
+      "key": "JID_GENERAL",
+      "term": "JID_GENERAL"
+    },
+    {
+      "key": "JID_SOCIALKNIGHT_S",
+      "term": "JID_SOCIALKNIGHT_S"
+    },
+    {
+      "key": "JID_SOCIALKNIGHT_L",
+      "term": "JID_SOCIALKNIGHT_L"
+    },
+    {
+      "key": "JID_SOCIALKNIGHT_A",
+      "term": "JID_SOCIALKNIGHT_A"
+    },
+    {
+      "key": "JID_SOCIALKNIGHT_B",
+      "term": "JID_SOCIALKNIGHT_B"
+    },
+    {
+      "key": "JID_SOCIALKNIGHT_S/F",
+      "term": "JID_SOCIALKNIGHT_S/F"
+    },
+    {
+      "key": "JID_SOCIALKNIGHT_L/F",
+      "term": "JID_SOCIALKNIGHT_L/F"
+    },
+    {
+      "key": "JID_SOCIALKNIGHT_A/F",
+      "term": "JID_SOCIALKNIGHT_A/F"
+    },
+    {
+      "key": "JID_SOCIALKNIGHT_B/F",
+      "term": "JID_SOCIALKNIGHT_B/F"
+    },
+    {
+      "key": "JID_PALADIN_S",
+      "term": "JID_PALADIN_S"
+    },
+    {
+      "key": "JID_PALADIN_L",
+      "term": "JID_PALADIN_L"
+    },
+    {
+      "key": "JID_PALADIN_A",
+      "term": "JID_PALADIN_A"
+    },
+    {
+      "key": "JID_PALADIN_B",
+      "term": "JID_PALADIN_B"
+    },
+    {
+      "key": "JID_PALADIN_S/F",
+      "term": "JID_PALADIN_S/F"
+    },
+    {
+      "key": "JID_PALADIN_L/F",
+      "term": "JID_PALADIN_L/F"
+    },
+    {
+      "key": "JID_PALADIN_A/F",
+      "term": "JID_PALADIN_A/F"
+    },
+    {
+      "key": "JID_PALADIN_B/F",
+      "term": "JID_PALADIN_B/F"
+    },
+    {
+      "key": "JID_TIAMAT/F",
+      "term": "JID_TIAMAT/F"
+    },
+    {
+      "key": "JID_UNUSED0/F",
+      "term": "JID_UNUSED0/F"
+    },
+    {
+      "key": "JID_PEGASUSKNIGHT/F",
+      "term": "JID_PEGASUSKNIGHT/F"
+    },
+    {
+      "key": "JID_FALCONKNIGHT/F",
+      "term": "JID_FALCONKNIGHT/F"
+    },
+    {
+      "key": "JID_FALCONKNIGHT_E/F",
+      "term": "JID_FALCONKNIGHT_E/F"
+    },
+    {
+      "key": "JID_DRAGONKNIGHT",
+      "term": "JID_DRAGONKNIGHT"
+    },
+    {
+      "key": "JID_DRAGONKNIGHT/F",
+      "term": "JID_DRAGONKNIGHT/F"
+    },
+    {
+      "key": "JID_DRAGONMASTER",
+      "term": "JID_DRAGONMASTER"
+    },
+    {
+      "key": "JID_DRAGONMASTER/F",
+      "term": "JID_DRAGONMASTER/F"
+    },
+    {
+      "key": "JID_DRAGONMASTER_A",
+      "term": "JID_DRAGONMASTER_A"
+    },
+    {
+      "key": "JID_MAGE_F",
+      "term": "JID_MAGE_F"
+    },
+    {
+      "key": "JID_MAGE_W",
+      "term": "JID_MAGE_W"
+    },
+    {
+      "key": "JID_MAGE_T",
+      "term": "JID_MAGE_T"
+    },
+    {
+      "key": "JID_MAGE",
+      "term": "JID_MAGE"
+    },
+    {
+      "key": "JID_MAGE_F/F",
+      "term": "JID_MAGE_F/F"
+    },
+    {
+      "key": "JID_MAGE_W/F",
+      "term": "JID_MAGE_W/F"
+    },
+    {
+      "key": "JID_MAGE_T/F",
+      "term": "JID_MAGE_T/F"
+    },
+    {
+      "key": "JID_MAGE/F",
+      "term": "JID_MAGE/F"
+    },
+    {
+      "key": "JID_SAGE_F",
+      "term": "JID_SAGE_F"
+    },
+    {
+      "key": "JID_SAGE_W",
+      "term": "JID_SAGE_W"
+    },
+    {
+      "key": "JID_SAGE_T",
+      "term": "JID_SAGE_T"
+    },
+    {
+      "key": "JID_SAGE",
+      "term": "JID_SAGE"
+    },
+    {
+      "key": "JID_SAGE_F/F",
+      "term": "JID_SAGE_F/F"
+    },
+    {
+      "key": "JID_SAGE_W/F",
+      "term": "JID_SAGE_W/F"
+    },
+    {
+      "key": "JID_SAGE_T/F",
+      "term": "JID_SAGE_T/F"
+    },
+    {
+      "key": "JID_SAGE/F",
+      "term": "JID_SAGE/F"
+    },
+    {
+      "key": "JID_SAGE_R_F",
+      "term": "JID_SAGE_R_F"
+    },
+    {
+      "key": "JID_SAGE_R_W",
+      "term": "JID_SAGE_R_W"
+    },
+    {
+      "key": "JID_SAGE_R_T",
+      "term": "JID_SAGE_R_T"
+    },
+    {
+      "key": "JID_SAGE_S_F",
+      "term": "JID_SAGE_S_F"
+    },
+    {
+      "key": "JID_SAGE_S_W",
+      "term": "JID_SAGE_S_W"
+    },
+    {
+      "key": "JID_SAGE_S_T",
+      "term": "JID_SAGE_S_T"
+    },
+    {
+      "key": "JID_PRIEST",
+      "term": "JID_PRIEST"
+    },
+    {
+      "key": "JID_BISHOP",
+      "term": "JID_BISHOP"
+    },
+    {
+      "key": "JID_BISHOP/F",
+      "term": "JID_BISHOP/F"
+    },
+    {
+      "key": "JID_CLERIC/F",
+      "term": "JID_CLERIC/F"
+    },
+    {
+      "key": "JID_VALKYRIE/F",
+      "term": "JID_VALKYRIE/F"
+    },
+    {
+      "key": "JID_THIEF",
+      "term": "JID_THIEF"
+    },
+    {
+      "key": "JID_ASSASSIN",
+      "term": "JID_ASSASSIN"
+    },
+    {
+      "key": "JID_ASSASSIN/F",
+      "term": "JID_ASSASSIN/F"
+    },
+    {
+      "key": "JID_BANDIT",
+      "term": "JID_BANDIT"
+    },
+    {
+      "key": "JID_BERSERKER",
+      "term": "JID_BERSERKER"
+    },
+    {
+      "key": "JID_BEAST_L",
+      "term": "JID_BEAST_L"
+    },
+    {
+      "key": "JID_BEAST_T",
+      "term": "JID_BEAST_T"
+    },
+    {
+      "key": "JID_BEAST_C",
+      "term": "JID_BEAST_C"
+    },
+    {
+      "key": "JID_BEAST_C/F",
+      "term": "JID_BEAST_C/F"
+    },
+    {
+      "key": "JID_DRAGON_B",
+      "term": "JID_DRAGON_B"
+    },
+    {
+      "key": "JID_DRAGON_W",
+      "term": "JID_DRAGON_W"
+    },
+    {
+      "key": "JID_DRAGON_R",
+      "term": "JID_DRAGON_R"
+    },
+    {
+      "key": "JID_DRAGON_R/F",
+      "term": "JID_DRAGON_R/F"
+    },
+    {
+      "key": "JID_BIRD_HA",
+      "term": "JID_BIRD_HA"
+    },
+    {
+      "key": "JID_BIRD_C",
+      "term": "JID_BIRD_C"
+    },
+    {
+      "key": "JID_BIRD_HE",
+      "term": "JID_BIRD_HE"
+    },
+    {
+      "key": "JID_BIRD_HE_W",
+      "term": "JID_BIRD_HE_W"
+    },
+    {
+      "key": "JID_BIRD_HE_W/F",
+      "term": "JID_BIRD_HE_W/F"
+    },
+    {
+      "key": "JID_LION",
+      "term": "JID_LION"
+    },
+    {
+      "key": "JID_TIGER",
+      "term": "JID_TIGER"
+    },
+    {
+      "key": "JID_CAT",
+      "term": "JID_CAT"
+    },
+    {
+      "key": "JID_CAT/F",
+      "term": "JID_CAT/F"
+    },
+    {
+      "key": "JID_BLACKDRAGON",
+      "term": "JID_BLACKDRAGON"
+    },
+    {
+      "key": "JID_WHITEDRAGON",
+      "term": "JID_WHITEDRAGON"
+    },
+    {
+      "key": "JID_REDDRAGON",
+      "term": "JID_REDDRAGON"
+    },
+    {
+      "key": "JID_REDDRAGON/F",
+      "term": "JID_REDDRAGON/F"
+    },
+    {
+      "key": "JID_HAWK",
+      "term": "JID_HAWK"
+    },
+    {
+      "key": "JID_CROW",
+      "term": "JID_CROW"
+    },
+    {
+      "key": "JID_HERON",
+      "term": "JID_HERON"
+    },
+    {
+      "key": "JID_HERON_W",
+      "term": "JID_HERON_W"
+    },
+    {
+      "key": "JID_HERON_W/F",
+      "term": "JID_HERON_W/F"
+    },
+    {
+      "key": "JID_CITIZEN",
+      "term": "JID_CITIZEN"
+    },
+    {
+      "key": "JID_CITIZEN/F",
+      "term": "JID_CITIZEN/F"
+    },
+    {
+      "key": "JID_CHILD",
+      "term": "JID_CHILD"
+    },
+    {
+      "key": "JID_CHILD/F",
+      "term": "JID_CHILD/F"
+    },
+    {
+      "key": "JID_SAGE_R",
+      "term": "JID_SAGE_R"
+    },
+    {
+      "key": "JID_SAGE_S",
+      "term": "JID_SAGE_S"
+    },
+    {
+      "key": "JID_DUMMY",
+      "term": "JID_DUMMY"
+    },
+    {
+      "key": "JID_SAGE_R/F",
+      "term": "JID_SAGE_R/F"
+    },
+    {
+      "key": "JID_SAGE_S/F",
+      "term": "JID_SAGE_S/F"
+    },
+    {
+      "key": "JID_BIRD_HA_TIB",
+      "term": "JID_BIRD_HA_TIB"
+    },
+    {
+      "key": "JID_HAWK_TIB",
+      "term": "JID_HAWK_TIB"
+    },
+    {
+      "key": "JID_BIRD_C_NES",
+      "term": "JID_BIRD_C_NES"
+    },
+    {
+      "key": "JID_CROW_NES",
+      "term": "JID_CROW_NES"
+    },
+    {
+      "key": "JID_BKNIGHT",
+      "term": "JID_BKNIGHT"
+    }
+  ],
+  "iid": [
+    {
+      "key": "IID_IRONSWORD",
+      "term": "IID_IRONSWORD"
+    },
+    {
+      "key": "IID_PRACTICESWORD",
+      "term": "IID_PRACTICESWORD"
+    },
+    {
+      "key": "IID_SLIMSWORD",
+      "term": "IID_SLIMSWORD"
+    },
+    {
+      "key": "IID_STEELSWORD",
+      "term": "IID_STEELSWORD"
+    },
+    {
+      "key": "IID_SILVERSWORD",
+      "term": "IID_SILVERSWORD"
+    },
+    {
+      "key": "IID_IRONBLADE",
+      "term": "IID_IRONBLADE"
+    },
+    {
+      "key": "IID_SILVERBLADE",
+      "term": "IID_SILVERBLADE"
+    },
+    {
+      "key": "IID_POISONSWORD",
+      "term": "IID_POISONSWORD"
+    },
+    {
+      "key": "IID_LONGSWORD",
+      "term": "IID_LONGSWORD"
+    },
+    {
+      "key": "IID_BRAVESWORD",
+      "term": "IID_BRAVESWORD"
+    },
+    {
+      "key": "IID_WATOU",
+      "term": "IID_WATOU"
+    },
+    {
+      "key": "IID_KILLSWORD",
+      "term": "IID_KILLSWORD"
+    },
+    {
+      "key": "IID_ARMORKILLER",
+      "term": "IID_ARMORKILLER"
+    },
+    {
+      "key": "IID_RANCEBASTER",
+      "term": "IID_RANCEBASTER"
+    },
+    {
+      "key": "IID_HORSEKILLER",
+      "term": "IID_HORSEKILLER"
+    },
+    {
+      "key": "IID_LONGLONGBOW",
+      "term": "IID_LONGLONGBOW"
+    },
+    {
+      "key": "IID_RUNESWORD",
+      "term": "IID_RUNESWORD"
+    },
+    {
+      "key": "IID_ALONDITE",
+      "term": "IID_ALONDITE"
+    },
+    {
+      "key": "IID_RAGNELL",
+      "term": "IID_RAGNELL"
+    },
+    {
+      "key": "IID_GURGURANT",
+      "term": "IID_GURGURANT"
+    },
+    {
+      "key": "IID_IRONLANCE",
+      "term": "IID_IRONLANCE"
+    },
+    {
+      "key": "IID_SLIMLANCE",
+      "term": "IID_SLIMLANCE"
+    },
+    {
+      "key": "IID_STEELLANCE",
+      "term": "IID_STEELLANCE"
+    },
+    {
+      "key": "IID_SILVERLANCE",
+      "term": "IID_SILVERLANCE"
+    },
+    {
+      "key": "IID_POISONLANCE",
+      "term": "IID_POISONLANCE"
+    },
+    {
+      "key": "IID_BRAVELANCE",
+      "term": "IID_BRAVELANCE"
+    },
+    {
+      "key": "IID_KILLERLANCE",
+      "term": "IID_KILLERLANCE"
+    },
+    {
+      "key": "IID_KNIGHTKILLER",
+      "term": "IID_KNIGHTKILLER"
+    },
+    {
+      "key": "IID_HANDSPEAR",
+      "term": "IID_HANDSPEAR"
+    },
+    {
+      "key": "IID_SLENDERSPEAR",
+      "term": "IID_SLENDERSPEAR"
+    },
+    {
+      "key": "IID_FRAMELANCE",
+      "term": "IID_FRAMELANCE"
+    },
+    {
+      "key": "IID_DRAGONRANCE",
+      "term": "IID_DRAGONRANCE"
+    },
+    {
+      "key": "IID_AXEBASTER",
+      "term": "IID_AXEBASTER"
+    },
+    {
+      "key": "IID_IRONAXE",
+      "term": "IID_IRONAXE"
+    },
+    {
+      "key": "IID_PRACTICEAXE",
+      "term": "IID_PRACTICEAXE"
+    },
+    {
+      "key": "IID_STEELAXE",
+      "term": "IID_STEELAXE"
+    },
+    {
+      "key": "IID_SILVERAXE",
+      "term": "IID_SILVERAXE"
+    },
+    {
+      "key": "IID_POISONAXE",
+      "term": "IID_POISONAXE"
+    },
+    {
+      "key": "IID_BRAVEAXE",
+      "term": "IID_BRAVEAXE"
+    },
+    {
+      "key": "IID_KILLERAXE",
+      "term": "IID_KILLERAXE"
+    },
+    {
+      "key": "IID_POLEAXE",
+      "term": "IID_POLEAXE"
+    },
+    {
+      "key": "IID_HAMMER",
+      "term": "IID_HAMMER"
+    },
+    {
+      "key": "IID_DEVILAXE",
+      "term": "IID_DEVILAXE"
+    },
+    {
+      "key": "IID_HANDAXE",
+      "term": "IID_HANDAXE"
+    },
+    {
+      "key": "IID_TOMAHAWK",
+      "term": "IID_TOMAHAWK"
+    },
+    {
+      "key": "IID_SONICAXE",
+      "term": "IID_SONICAXE"
+    },
+    {
+      "key": "IID_SWORDBASTER",
+      "term": "IID_SWORDBASTER"
+    },
+    {
+      "key": "IID_BEASTAXE",
+      "term": "IID_BEASTAXE"
+    },
+    {
+      "key": "IID_URVAN",
+      "term": "IID_URVAN"
+    },
+    {
+      "key": "IID_IRONBOW",
+      "term": "IID_IRONBOW"
+    },
+    {
+      "key": "IID_STEELBOW",
+      "term": "IID_STEELBOW"
+    },
+    {
+      "key": "IID_SILVERBOW",
+      "term": "IID_SILVERBOW"
+    },
+    {
+      "key": "IID_POISONBOW",
+      "term": "IID_POISONBOW"
+    },
+    {
+      "key": "IID_KILLERBOW",
+      "term": "IID_KILLERBOW"
+    },
+    {
+      "key": "IID_BRAVEBOW",
+      "term": "IID_BRAVEBOW"
+    },
+    {
+      "key": "IID_SHORTBOW",
+      "term": "IID_SHORTBOW"
+    },
+    {
+      "key": "IID_LONGBOW",
+      "term": "IID_LONGBOW"
+    },
+    {
+      "key": "IID_LOFABOW",
+      "term": "IID_LOFABOW"
+    },
+    {
+      "key": "IID_KNIFE",
+      "term": "IID_KNIFE"
+    },
+    {
+      "key": "IID_DAGGER",
+      "term": "IID_DAGGER"
+    },
+    {
+      "key": "IID_STILETTO",
+      "term": "IID_STILETTO"
+    },
+    {
+      "key": "IID_LIONNAIL",
+      "term": "IID_LIONNAIL"
+    },
+    {
+      "key": "IID_CHANGESTONE",
+      "term": "IID_CHANGESTONE"
+    },
+    {
+      "key": "IID_TIGERNAIL",
+      "term": "IID_TIGERNAIL"
+    },
+    {
+      "key": "IID_CHANGESTONE1",
+      "term": "IID_CHANGESTONE1"
+    },
+    {
+      "key": "IID_CATNAIL",
+      "term": "IID_CATNAIL"
+    },
+    {
+      "key": "IID_CRIMEASWORD",
+      "term": "IID_CRIMEASWORD"
+    },
+    {
+      "key": "IID_ZANEZPHTE",
+      "term": "IID_ZANEZPHTE"
+    },
+    {
+      "key": "IID_WHITEBREATH",
+      "term": "IID_WHITEBREATH"
+    },
+    {
+      "key": "IID_REDBREATH",
+      "term": "IID_REDBREATH"
+    },
+    {
+      "key": "IID_KNIGHTRING",
+      "term": "IID_KNIGHTRING"
+    },
+    {
+      "key": "IID_HAWKBEAK",
+      "term": "IID_HAWKBEAK"
+    },
+    {
+      "key": "IID_STEELBLADE",
+      "term": "IID_STEELBLADE"
+    },
+    {
+      "key": "IID_CROWBEAK",
+      "term": "IID_CROWBEAK"
+    },
+    {
+      "key": "IID_LONGARCH",
+      "term": "IID_LONGARCH"
+    },
+    {
+      "key": "IID_IRONARCH",
+      "term": "IID_IRONARCH"
+    },
+    {
+      "key": "IID_KILLERARCH",
+      "term": "IID_KILLERARCH"
+    },
+    {
+      "key": "IID_ONAGER",
+      "term": "IID_ONAGER"
+    },
+    {
+      "key": "IID_FIRE",
+      "term": "IID_FIRE"
+    },
+    {
+      "key": "IID_ELFIRE",
+      "term": "IID_ELFIRE"
+    },
+    {
+      "key": "IID_BOLGANONE",
+      "term": "IID_BOLGANONE"
+    },
+    {
+      "key": "IID_FORBLAZE",
+      "term": "IID_FORBLAZE"
+    },
+    {
+      "key": "IID_METEOR",
+      "term": "IID_METEOR"
+    },
+    {
+      "key": "IID_WIND",
+      "term": "IID_WIND"
+    },
+    {
+      "key": "IID_FLUTTER",
+      "term": "IID_FLUTTER"
+    },
+    {
+      "key": "IID_ELWIND",
+      "term": "IID_ELWIND"
+    },
+    {
+      "key": "IID_TORNADO",
+      "term": "IID_TORNADO"
+    },
+    {
+      "key": "IID_FIMBULVETR",
+      "term": "IID_FIMBULVETR"
+    },
+    {
+      "key": "IID_BLIZZARD",
+      "term": "IID_BLIZZARD"
+    },
+    {
+      "key": "IID_THUNDER",
+      "term": "IID_THUNDER"
+    },
+    {
+      "key": "IID_ELTHUNDER",
+      "term": "IID_ELTHUNDER"
+    },
+    {
+      "key": "IID_THORON",
+      "term": "IID_THORON"
+    },
+    {
+      "key": "IID_MJOLNIR",
+      "term": "IID_MJOLNIR"
+    },
+    {
+      "key": "IID_THUNDERSTORM",
+      "term": "IID_THUNDERSTORM"
+    },
+    {
+      "key": "IID_LIGHTNING",
+      "term": "IID_LIGHTNING"
+    },
+    {
+      "key": "IID_SHINE",
+      "term": "IID_SHINE"
+    },
+    {
+      "key": "IID_RESIRE",
+      "term": "IID_RESIRE"
+    },
+    {
+      "key": "IID_AURA",
+      "term": "IID_AURA"
+    },
+    {
+      "key": "IID_PURGE",
+      "term": "IID_PURGE"
+    },
+    {
+      "key": "IID_GODDESSROD",
+      "term": "IID_GODDESSROD"
+    },
+    {
+      "key": "IID_LIVE",
+      "term": "IID_LIVE"
+    },
+    {
+      "key": "IID_RELIVE",
+      "term": "IID_RELIVE"
+    },
+    {
+      "key": "IID_RECOVER",
+      "term": "IID_RECOVER"
+    },
+    {
+      "key": "IID_REBLOW",
+      "term": "IID_REBLOW"
+    },
+    {
+      "key": "IID_RESERVE",
+      "term": "IID_RESERVE"
+    },
+    {
+      "key": "IID_REST",
+      "term": "IID_REST"
+    },
+    {
+      "key": "IID_SILENCE",
+      "term": "IID_SILENCE"
+    },
+    {
+      "key": "IID_SLEEP",
+      "term": "IID_SLEEP"
+    },
+    {
+      "key": "IID_BERSERK",
+      "term": "IID_BERSERK"
+    },
+    {
+      "key": "IID_WARP",
+      "term": "IID_WARP"
+    },
+    {
+      "key": "IID_RESCUE",
+      "term": "IID_RESCUE"
+    },
+    {
+      "key": "IID_TORCH",
+      "term": "IID_TORCH"
+    },
+    {
+      "key": "IID_HAMMERNE",
+      "term": "IID_HAMMERNE"
+    },
+    {
+      "key": "IID_UNLOCK",
+      "term": "IID_UNLOCK"
+    },
+    {
+      "key": "IID_MSHIELD",
+      "term": "IID_MSHIELD"
+    },
+    {
+      "key": "IID_VSBEAST",
+      "term": "IID_VSBEAST"
+    },
+    {
+      "key": "IID_VSHUMAN",
+      "term": "IID_VSHUMAN"
+    },
+    {
+      "key": "IID_DELPHISHIELD",
+      "term": "IID_DELPHISHIELD"
+    },
+    {
+      "key": "IID_SWORDERSRING",
+      "term": "IID_SWORDERSRING"
+    },
+    {
+      "key": "IID_SOLDIERRING",
+      "term": "IID_SOLDIERRING"
+    },
+    {
+      "key": "IID_FIGHTERSRING",
+      "term": "IID_FIGHTERSRING"
+    },
+    {
+      "key": "IID_ARCHERSRING",
+      "term": "IID_ARCHERSRING"
+    },
+    {
+      "key": "IID_ARMORSRING",
+      "term": "IID_ARMORSRING"
+    },
+    {
+      "key": "IID_SOCIALKNIGHTSRING",
+      "term": "IID_SOCIALKNIGHTSRING"
+    },
+    {
+      "key": "IID_PEGASUSKNIGHTSRING",
+      "term": "IID_PEGASUSKNIGHTSRING"
+    },
+    {
+      "key": "IID_DRAGONKNIGHTSRING",
+      "term": "IID_DRAGONKNIGHTSRING"
+    },
+    {
+      "key": "IID_MAGESRING",
+      "term": "IID_MAGESRING"
+    },
+    {
+      "key": "IID_PRIESTSRING",
+      "term": "IID_PRIESTSRING"
+    },
+    {
+      "key": "IID_THIEFSRING",
+      "term": "IID_THIEFSRING"
+    },
+    {
+      "key": "IID_HPDROP",
+      "term": "IID_HPDROP"
+    },
+    {
+      "key": "IID_POWERDROP",
+      "term": "IID_POWERDROP"
+    },
+    {
+      "key": "IID_MAGICDROP",
+      "term": "IID_MAGICDROP"
+    },
+    {
+      "key": "IID_TECHDROP",
+      "term": "IID_TECHDROP"
+    },
+    {
+      "key": "IID_SPEEDDROP",
+      "term": "IID_SPEEDDROP"
+    },
+    {
+      "key": "IID_LUCKDROP",
+      "term": "IID_LUCKDROP"
+    },
+    {
+      "key": "IID_DEFDROP",
+      "term": "IID_DEFDROP"
+    },
+    {
+      "key": "IID_MDDROP",
+      "term": "IID_MDDROP"
+    },
+    {
+      "key": "IID_BOOTS",
+      "term": "IID_BOOTS"
+    },
+    {
+      "key": "IID_BODYRING",
+      "term": "IID_BODYRING"
+    },
+    {
+      "key": "IID_MASTERPROOF",
+      "term": "IID_MASTERPROOF"
+    },
+    {
+      "key": "IID_TREASUREKEY",
+      "term": "IID_TREASUREKEY"
+    },
+    {
+      "key": "IID_DOORKEY",
+      "term": "IID_DOORKEY"
+    },
+    {
+      "key": "IID_KNIGHTSHIELD",
+      "term": "IID_KNIGHTSHIELD"
+    },
+    {
+      "key": "IID_VULNERARY",
+      "term": "IID_VULNERARY"
+    },
+    {
+      "key": "IID_ELIXIR",
+      "term": "IID_ELIXIR"
+    },
+    {
+      "key": "IID_HOLYWATER",
+      "term": "IID_HOLYWATER"
+    },
+    {
+      "key": "IID_DETOXDRUG",
+      "term": "IID_DETOXDRUG"
+    },
+    {
+      "key": "IID_JACKLIGHT",
+      "term": "IID_JACKLIGHT"
+    },
+    {
+      "key": "IID_WEAPONDROP",
+      "term": "IID_WEAPONDROP"
+    },
+    {
+      "key": "IID_SILVERCARD",
+      "term": "IID_SILVERCARD"
+    },
+    {
+      "key": "IID_WHITEGEM",
+      "term": "IID_WHITEGEM"
+    },
+    {
+      "key": "IID_BLUEGEM",
+      "term": "IID_BLUEGEM"
+    },
+    {
+      "key": "IID_REDGEM",
+      "term": "IID_REDGEM"
+    },
+    {
+      "key": "IID_ELITE",
+      "term": "IID_ELITE"
+    },
+    {
+      "key": "IID_SWIFT",
+      "term": "IID_SWIFT"
+    },
+    {
+      "key": "IID_ESOTERIC",
+      "term": "IID_ESOTERIC"
+    },
+    {
+      "key": "IID_BLAVE",
+      "term": "IID_BLAVE"
+    },
+    {
+      "key": "IID_IMPREGNABLE",
+      "term": "IID_IMPREGNABLE"
+    },
+    {
+      "key": "IID_TEMPER",
+      "term": "IID_TEMPER"
+    },
+    {
+      "key": "IID_CALM",
+      "term": "IID_CALM"
+    },
+    {
+      "key": "IID_RESCUEP",
+      "term": "IID_RESCUEP"
+    },
+    {
+      "key": "IID_AMBUSH",
+      "term": "IID_AMBUSH"
+    },
+    {
+      "key": "IID_GRASP",
+      "term": "IID_GRASP"
+    },
+    {
+      "key": "IID_ANGER",
+      "term": "IID_ANGER"
+    },
+    {
+      "key": "IID_WEAPONDESTROY",
+      "term": "IID_WEAPONDESTROY"
+    },
+    {
+      "key": "IID_PRAY",
+      "term": "IID_PRAY"
+    },
+    {
+      "key": "IID_COUNTER",
+      "term": "IID_COUNTER"
+    },
+    {
+      "key": "IID_HORROR",
+      "term": "IID_HORROR"
+    },
+    {
+      "key": "IID_PROVOKE",
+      "term": "IID_PROVOKE"
+    },
+    {
+      "key": "IID_SHADE",
+      "term": "IID_SHADE"
+    },
+    {
+      "key": "IID_GAMBLE",
+      "term": "IID_GAMBLE"
+    },
+    {
+      "key": "IID_FAIRNESS",
+      "term": "IID_FAIRNESS"
+    },
+    {
+      "key": "IID_TACKLE2",
+      "term": "IID_TACKLE2"
+    },
+    {
+      "key": "IID_CHANT",
+      "term": "IID_CHANT"
+    },
+    {
+      "key": "IID_DEFENCE",
+      "term": "IID_DEFENCE"
+    },
+    {
+      "key": "IID_SONICBLADE",
+      "term": "IID_SONICBLADE"
+    },
+    {
+      "key": "IID_LIGHTNINGBOW",
+      "term": "IID_LIGHTNINGBOW"
+    },
+    {
+      "key": "IID_CONTINUATION",
+      "term": "IID_CONTINUATION"
+    },
+    {
+      "key": "IID_FRAC90",
+      "term": "IID_FRAC90"
+    },
+    {
+      "key": "IID_REINFORCEMENTS",
+      "term": "IID_REINFORCEMENTS"
+    },
+    {
+      "key": "IID_TELEGNOSIS",
+      "term": "IID_TELEGNOSIS"
+    },
+    {
+      "key": "IID_BIGEAR",
+      "term": "IID_BIGEAR"
+    },
+    {
+      "key": "IID_TURNREGENE",
+      "term": "IID_TURNREGENE"
+    },
+    {
+      "key": "IID_ARMORBREAK",
+      "term": "IID_ARMORBREAK"
+    },
+    {
+      "key": "IID_CHANGERING",
+      "term": "IID_CHANGERING"
+    },
+    {
+      "key": "IID_CHANGERING2",
+      "term": "IID_CHANGERING2"
+    },
+    {
+      "key": "IID_COIN",
+      "term": "IID_COIN"
+    },
+    {
+      "key": "IID_HAWKBEAK_KING",
+      "term": "IID_HAWKBEAK_KING"
+    },
+    {
+      "key": "IID_CROWBEAK_KING",
+      "term": "IID_CROWBEAK_KING"
+    }
+  ],
+  "sid": [
+    {
+      "key": "SID_HERO",
+      "term": "SID_HERO"
+    },
+    {
+      "key": "SID_FEMALE",
+      "term": "SID_FEMALE"
+    },
+    {
+      "key": "SID_HIGHER",
+      "term": "SID_HIGHER"
+    },
+    {
+      "key": "SID_TWICE",
+      "term": "SID_TWICE"
+    },
+    {
+      "key": "SID_FLY",
+      "term": "SID_FLY"
+    },
+    {
+      "key": "SID_VILLAGEDESTROY",
+      "term": "SID_VILLAGEDESTROY"
+    },
+    {
+      "key": "SID_BOSS",
+      "term": "SID_BOSS"
+    },
+    {
+      "key": "SID_FINAL",
+      "term": "SID_FINAL"
+    },
+    {
+      "key": "SID_ANIMALIZE",
+      "term": "SID_ANIMALIZE"
+    },
+    {
+      "key": "SID_LYCANTHROPE",
+      "term": "SID_LYCANTHROPE"
+    },
+    {
+      "key": "SID_FIXEDBEAST",
+      "term": "SID_FIXEDBEAST"
+    },
+    {
+      "key": "SID_ELITE",
+      "term": "SID_ELITE"
+    },
+    {
+      "key": "SID_TURNREGENE",
+      "term": "SID_TURNREGENE"
+    },
+    {
+      "key": "SID_BARGAIN",
+      "term": "SID_BARGAIN"
+    },
+    {
+      "key": "SID_SWIFT",
+      "term": "SID_SWIFT"
+    },
+    {
+      "key": "SID_WLUPTOS",
+      "term": "SID_WLUPTOS"
+    },
+    {
+      "key": "SID_BLAVE",
+      "term": "SID_BLAVE"
+    },
+    {
+      "key": "SID_IMPREGNABLE",
+      "term": "SID_IMPREGNABLE"
+    },
+    {
+      "key": "SID_TEMPER",
+      "term": "SID_TEMPER"
+    },
+    {
+      "key": "SID_CALM",
+      "term": "SID_CALM"
+    },
+    {
+      "key": "SID_FLYTHRU",
+      "term": "SID_FLYTHRU"
+    },
+    {
+      "key": "SID_WALKTHRU",
+      "term": "SID_WALKTHRU"
+    },
+    {
+      "key": "SID_RESCUEP",
+      "term": "SID_RESCUEP"
+    },
+    {
+      "key": "SID_HANDI",
+      "term": "SID_HANDI"
+    },
+    {
+      "key": "SID_CHANT",
+      "term": "SID_CHANT"
+    },
+    {
+      "key": "SID_CHANTHP",
+      "term": "SID_CHANTHP"
+    },
+    {
+      "key": "SID_CHANTSTR",
+      "term": "SID_CHANTSTR"
+    },
+    {
+      "key": "SID_CHANTMPOW",
+      "term": "SID_CHANTMPOW"
+    },
+    {
+      "key": "SID_CHANTTECH",
+      "term": "SID_CHANTTECH"
+    },
+    {
+      "key": "SID_CHANTQUICK",
+      "term": "SID_CHANTQUICK"
+    },
+    {
+      "key": "SID_CHANTLUCK",
+      "term": "SID_CHANTLUCK"
+    },
+    {
+      "key": "SID_CHANTDEF",
+      "term": "SID_CHANTDEF"
+    },
+    {
+      "key": "SID_CHANTMDEF",
+      "term": "SID_CHANTMDEF"
+    },
+    {
+      "key": "SID_EQUIPFANG",
+      "term": "SID_EQUIPFANG"
+    },
+    {
+      "key": "SID_EQUIPKNIFE",
+      "term": "SID_EQUIPKNIFE"
+    },
+    {
+      "key": "SID_EQUIPLIGHT",
+      "term": "SID_EQUIPLIGHT"
+    },
+    {
+      "key": "SID_EQSW",
+      "term": "SID_EQSW"
+    },
+    {
+      "key": "SID_EQLA",
+      "term": "SID_EQLA"
+    },
+    {
+      "key": "SID_EQAX",
+      "term": "SID_EQAX"
+    },
+    {
+      "key": "SID_EQBW",
+      "term": "SID_EQBW"
+    },
+    {
+      "key": "SID_EQRD",
+      "term": "SID_EQRD"
+    },
+    {
+      "key": "SID_AMBUSH",
+      "term": "SID_AMBUSH"
+    },
+    {
+      "key": "SID_GRASP",
+      "term": "SID_GRASP"
+    },
+    {
+      "key": "SID_ANGER",
+      "term": "SID_ANGER"
+    },
+    {
+      "key": "SID_DEFENCE",
+      "term": "SID_DEFENCE"
+    },
+    {
+      "key": "SID_WINGSHIELD",
+      "term": "SID_WINGSHIELD"
+    },
+    {
+      "key": "SID_PRAY",
+      "term": "SID_PRAY"
+    },
+    {
+      "key": "SID_SUNTRICK",
+      "term": "SID_SUNTRICK"
+    },
+    {
+      "key": "SID_MOONTRICK",
+      "term": "SID_MOONTRICK"
+    },
+    {
+      "key": "SID_STARTRICK",
+      "term": "SID_STARTRICK"
+    },
+    {
+      "key": "SID_CONTINUATION",
+      "term": "SID_CONTINUATION"
+    },
+    {
+      "key": "SID_ASSASSINATE",
+      "term": "SID_ASSASSINATE"
+    },
+    {
+      "key": "SID_WEAPONDESTROY",
+      "term": "SID_WEAPONDESTROY"
+    },
+    {
+      "key": "SID_SNIPE",
+      "term": "SID_SNIPE"
+    },
+    {
+      "key": "SID_CHAOS",
+      "term": "SID_CHAOS"
+    },
+    {
+      "key": "SID_COUNTER",
+      "term": "SID_COUNTER"
+    },
+    {
+      "key": "SID_RUMBLE",
+      "term": "SID_RUMBLE"
+    },
+    {
+      "key": "SID_IMPACT",
+      "term": "SID_IMPACT"
+    },
+    {
+      "key": "SID_CHARISMA",
+      "term": "SID_CHARISMA"
+    },
+    {
+      "key": "SID_HORROR",
+      "term": "SID_HORROR"
+    },
+    {
+      "key": "SID_STEAL",
+      "term": "SID_STEAL"
+    },
+    {
+      "key": "SID_PROVOKE",
+      "term": "SID_PROVOKE"
+    },
+    {
+      "key": "SID_SHADE",
+      "term": "SID_SHADE"
+    },
+    {
+      "key": "SID_GAMBLE",
+      "term": "SID_GAMBLE"
+    },
+    {
+      "key": "SID_ABSMOVE",
+      "term": "SID_ABSMOVE"
+    },
+    {
+      "key": "SID_FAIRNESS",
+      "term": "SID_FAIRNESS"
+    },
+    {
+      "key": "SID_CONFRONT",
+      "term": "SID_CONFRONT"
+    },
+    {
+      "key": "SID_FLUTTER",
+      "term": "SID_FLUTTER"
+    },
+    {
+      "key": "SID_TACKLE",
+      "term": "SID_TACKLE"
+    },
+    {
+      "key": "SID_TACKLE2",
+      "term": "SID_TACKLE2"
+    },
+    {
+      "key": "SID_SNARL",
+      "term": "SID_SNARL"
+    },
+    {
+      "key": "SID_EVILEYE",
+      "term": "SID_EVILEYE"
+    },
+    {
+      "key": "SID_REINFORCEMENTS",
+      "term": "SID_REINFORCEMENTS"
+    },
+    {
+      "key": "SID_EARTHBLESSING",
+      "term": "SID_EARTHBLESSING"
+    },
+    {
+      "key": "SID_SKYBLESSING",
+      "term": "SID_SKYBLESSING"
+    },
+    {
+      "key": "SID_FRAC90",
+      "term": "SID_FRAC90"
+    },
+    {
+      "key": "SID_SUNMOON",
+      "term": "SID_SUNMOON"
+    },
+    {
+      "key": "SID_EVENTCC",
+      "term": "SID_EVENTCC"
+    },
+    {
+      "key": "SID_SUMMONED",
+      "term": "SID_SUMMONED"
+    },
+    {
+      "key": "SID_SHOOT",
+      "term": "SID_SHOOT"
+    },
+    {
+      "key": "SID_KEY50",
+      "term": "SID_KEY50"
+    },
+    {
+      "key": "SID_TELEGNOSIS",
+      "term": "SID_TELEGNOSIS"
+    },
+    {
+      "key": "SID_BIGEAR",
+      "term": "SID_BIGEAR"
+    },
+    {
+      "key": "SID_GODDESSBLESS",
+      "term": "SID_GODDESSBLESS"
+    },
+    {
+      "key": "SID_TRI_A",
+      "term": "SID_TRI_A"
+    },
+    {
+      "key": "SID_TRI_B",
+      "term": "SID_TRI_B"
+    },
+    {
+      "key": "SID_EQ_A",
+      "term": "SID_EQ_A"
+    },
+    {
+      "key": "SID_EQ_B",
+      "term": "SID_EQ_B"
+    },
+    {
+      "key": "SID_EQ_C",
+      "term": "SID_EQ_C"
+    },
+    {
+      "key": "SID_TEMP_ON_DIE",
+      "term": "SID_TEMP_ON_DIE"
+    },
+    {
+      "key": "SID_BRIGHTNESS",
+      "term": "SID_BRIGHTNESS"
+    },
+    {
+      "key": "SID_KEY0",
+      "term": "SID_KEY0"
+    },
+    {
+      "key": "SID_IMMORTAL",
+      "term": "SID_IMMORTAL"
+    },
+    {
+      "key": "SID_EQ_D",
+      "term": "SID_EQ_D"
+    },
+    {
+      "key": "SID_EQREV_A",
+      "term": "SID_EQREV_A"
+    },
+    {
+      "key": "SID_WEAK_A",
+      "term": "SID_WEAK_A"
+    },
+    {
+      "key": "SID_AHIMSA",
+      "term": "SID_AHIMSA"
+    }
+  ],
+  "seq": [
+    {
+      "key": "SEQ_ALLATK100_BLACKNIGHT",
+      "term": "SEQ_ALLATK100_BLACKNIGHT"
+    },
+    {
+      "key": "SEQ_ALLATK100_DIRECT",
+      "term": "SEQ_ALLATK100_DIRECT"
+    },
+    {
+      "key": "SEQ_ALLATK100_FOR_CHINON",
+      "term": "SEQ_ALLATK100_FOR_CHINON"
+    },
+    {
+      "key": "SEQ_ALLATK100_FOR_ZIHARK",
+      "term": "SEQ_ALLATK100_FOR_ZIHARK"
+    },
+    {
+      "key": "SEQ_ALLATK100_NOCHILD",
+      "term": "SEQ_ALLATK100_NOCHILD"
+    },
+    {
+      "key": "SEQ_ALLATK100_NOGREIL",
+      "term": "SEQ_ALLATK100_NOGREIL"
+    },
+    {
+      "key": "SEQ_ALLATK100_NOIKE",
+      "term": "SEQ_ALLATK100_NOIKE"
+    },
+    {
+      "key": "SEQ_ALLATK100_NOJILL",
+      "term": "SEQ_ALLATK100_NOJILL"
+    },
+    {
+      "key": "SEQ_ALLATK100_NOLAGU",
+      "term": "SEQ_ALLATK100_NOLAGU"
+    },
+    {
+      "key": "SEQ_ALLATK100_NOLEARNE",
+      "term": "SEQ_ALLATK100_NOLEARNE"
+    },
+    {
+      "key": "SEQ_ALLATK100_NOMIST",
+      "term": "SEQ_ALLATK100_NOMIST"
+    },
+    {
+      "key": "SEQ_ALLATK100_NOPRAGUE",
+      "term": "SEQ_ALLATK100_NOPRAGUE"
+    },
+    {
+      "key": "SEQ_ALLATK100_NORIEUSION",
+      "term": "SEQ_ALLATK100_NORIEUSION"
+    },
+    {
+      "key": "SEQ_ALLUNITATTACK100",
+      "term": "SEQ_ALLUNITATTACK100"
+    },
+    {
+      "key": "SEQ_ALLUNITATTACK100_GAMBLE50",
+      "term": "SEQ_ALLUNITATTACK100_GAMBLE50"
+    },
+    {
+      "key": "SEQ_ALLUNITATTACK100_ROCK100",
+      "term": "SEQ_ALLUNITATTACK100_ROCK100"
+    },
+    {
+      "key": "SEQ_ALLUNITATTACK100_SHOOT100",
+      "term": "SEQ_ALLUNITATTACK100_SHOOT100"
+    },
+    {
+      "key": "SEQ_ALLUNITATTACK100_TACKLE100",
+      "term": "SEQ_ALLUNITATTACK100_TACKLE100"
+    },
+    {
+      "key": "SEQ_ALLUNITATTACK50",
+      "term": "SEQ_ALLUNITATTACK50"
+    },
+    {
+      "key": "SEQ_ALLUNITATTACK80",
+      "term": "SEQ_ALLUNITATTACK80"
+    },
+    {
+      "key": "SEQ_ALLUNITROD100",
+      "term": "SEQ_ALLUNITROD100"
+    },
+    {
+      "key": "SEQ_ATTACK1.5RANGEMOVE",
+      "term": "SEQ_ATTACK1.5RANGEMOVE"
+    },
+    {
+      "key": "SEQ_ATTACK2RANGEMOVE",
+      "term": "SEQ_ATTACK2RANGEMOVE"
+    },
+    {
+      "key": "SEQ_ATTACK3RANGEMOVE",
+      "term": "SEQ_ATTACK3RANGEMOVE"
+    },
+    {
+      "key": "SEQ_ATTACKRANGEMOVE",
+      "term": "SEQ_ATTACKRANGEMOVE"
+    },
+    {
+      "key": "SEQ_ATTACKRANGEMOVE_NOJILL",
+      "term": "SEQ_ATTACKRANGEMOVE_NOJILL"
+    },
+    {
+      "key": "SEQ_ATTACKRANGEMOVE_NOLAGU",
+      "term": "SEQ_ATTACKRANGEMOVE_NOLAGU"
+    },
+    {
+      "key": "SEQ_BEARHEAL",
+      "term": "SEQ_BEARHEAL"
+    },
+    {
+      "key": "SEQ_BEARHEAL_NOACT",
+      "term": "SEQ_BEARHEAL_NOACT"
+    },
+    {
+      "key": "SEQ_BREAKMOVE",
+      "term": "SEQ_BREAKMOVE"
+    },
+    {
+      "key": "SEQ_BULLHEAL",
+      "term": "SEQ_BULLHEAL"
+    },
+    {
+      "key": "SEQ_ESCAPEMOVE",
+      "term": "SEQ_ESCAPEMOVE"
+    },
+    {
+      "key": "SEQ_LOOTERMOVE",
+      "term": "SEQ_LOOTERMOVE"
+    },
+    {
+      "key": "SEQ_LOOTERMOVE_ESCAPE",
+      "term": "SEQ_LOOTERMOVE_ESCAPE"
+    },
+    {
+      "key": "SEQ_LOOTERMOVE_ONE",
+      "term": "SEQ_LOOTERMOVE_ONE"
+    },
+    {
+      "key": "SEQ_MAP11_ROUTEMOVE1",
+      "term": "SEQ_MAP11_ROUTEMOVE1"
+    },
+    {
+      "key": "SEQ_MAP11_ROUTEMOVE2",
+      "term": "SEQ_MAP11_ROUTEMOVE2"
+    },
+    {
+      "key": "SEQ_MAP11_ROUTEMOVE3",
+      "term": "SEQ_MAP11_ROUTEMOVE3"
+    },
+    {
+      "key": "SEQ_MAP11_ROUTEMOVE4",
+      "term": "SEQ_MAP11_ROUTEMOVE4"
+    },
+    {
+      "key": "SEQ_MAP24_GREENMOVE",
+      "term": "SEQ_MAP24_GREENMOVE"
+    },
+    {
+      "key": "SEQ_NEARESTUNITMOVE",
+      "term": "SEQ_NEARESTUNITMOVE"
+    },
+    {
+      "key": "SEQ_NEARESTUNITMOVEINDIRECT",
+      "term": "SEQ_NEARESTUNITMOVEINDIRECT"
+    },
+    {
+      "key": "SEQ_NEARESTUNITMOVE_BLACKNIGHT",
+      "term": "SEQ_NEARESTUNITMOVE_BLACKNIGHT"
+    },
+    {
+      "key": "SEQ_NEARESTUNITMOVE_NOIKE",
+      "term": "SEQ_NEARESTUNITMOVE_NOIKE"
+    },
+    {
+      "key": "SEQ_NEARESTUNITMOVE_NOJILL",
+      "term": "SEQ_NEARESTUNITMOVE_NOJILL"
+    },
+    {
+      "key": "SEQ_NEARESTUNITMOVE_NOLAGU",
+      "term": "SEQ_NEARESTUNITMOVE_NOLAGU"
+    },
+    {
+      "key": "SEQ_NEARESTUNITMOVE_NOLEARNE",
+      "term": "SEQ_NEARESTUNITMOVE_NOLEARNE"
+    },
+    {
+      "key": "SEQ_NEARESTUNITMOVE_NOPRAGUE",
+      "term": "SEQ_NEARESTUNITMOVE_NOPRAGUE"
+    },
+    {
+      "key": "SEQ_NEARESTUNITMOVE_TO_GEOFFRAY",
+      "term": "SEQ_NEARESTUNITMOVE_TO_GEOFFRAY"
+    },
+    {
+      "key": "SEQ_NEARESTUNITMOVE_TO_IKE",
+      "term": "SEQ_NEARESTUNITMOVE_TO_IKE"
+    },
+    {
+      "key": "SEQ_NEARESTUNITSAFETYMOVE",
+      "term": "SEQ_NEARESTUNITSAFETYMOVE"
+    },
+    {
+      "key": "SEQ_NOATTACK",
+      "term": "SEQ_NOATTACK"
+    },
+    {
+      "key": "SEQ_NOHEAL",
+      "term": "SEQ_NOHEAL"
+    },
+    {
+      "key": "SEQ_NOMOVATK100_NOCRIMEA_AND_TALK",
+      "term": "SEQ_NOMOVATK100_NOCRIMEA_AND_TALK"
+    },
+    {
+      "key": "SEQ_NOMOVATK100_NOJILL_AND_TALK",
+      "term": "SEQ_NOMOVATK100_NOJILL_AND_TALK"
+    },
+    {
+      "key": "SEQ_NOMOVE",
+      "term": "SEQ_NOMOVE"
+    },
+    {
+      "key": "SEQ_NOMOVEATTACK100",
+      "term": "SEQ_NOMOVEATTACK100"
+    },
+    {
+      "key": "SEQ_NOMOVEATTACK100_NOERINCIA",
+      "term": "SEQ_NOMOVEATTACK100_NOERINCIA"
+    },
+    {
+      "key": "SEQ_NOMOVEATTACK100_TALK_TO_JILL",
+      "term": "SEQ_NOMOVEATTACK100_TALK_TO_JILL"
+    },
+    {
+      "key": "SEQ_NOMOVEATTACK50",
+      "term": "SEQ_NOMOVEATTACK50"
+    },
+    {
+      "key": "SEQ_NOMOVEATTACK80",
+      "term": "SEQ_NOMOVEATTACK80"
+    },
+    {
+      "key": "SEQ_NOMOVEROD100",
+      "term": "SEQ_NOMOVEROD100"
+    },
+    {
+      "key": "SEQ_NORMALHEAL",
+      "term": "SEQ_NORMALHEAL"
+    },
+    {
+      "key": "SEQ_PERSONMOVE_TO_IKE",
+      "term": "SEQ_PERSONMOVE_TO_IKE"
+    },
+    {
+      "key": "SEQ_ROCKATTACK_FORCE",
+      "term": "SEQ_ROCKATTACK_FORCE"
+    },
+    {
+      "key": "SEQ_SUPERBEARHEAL",
+      "term": "SEQ_SUPERBEARHEAL"
+    },
+    {
+      "key": "SEQ_TALKMOVE_TO_IKE",
+      "term": "SEQ_TALKMOVE_TO_IKE"
+    },
+    {
+      "key": "SEQ_TALKMOVE_TO_RIEUSION",
+      "term": "SEQ_TALKMOVE_TO_RIEUSION"
+    },
+    {
+      "key": "SEQ_USECHANGE_1.5ATRANGE",
+      "term": "SEQ_USECHANGE_1.5ATRANGE"
+    },
+    {
+      "key": "SEQ_USECHANGE_2ATRANGE",
+      "term": "SEQ_USECHANGE_2ATRANGE"
+    },
+    {
+      "key": "SEQ_USECHANGE_3ATRANGE",
+      "term": "SEQ_USECHANGE_3ATRANGE"
+    },
+    {
+      "key": "SEQ_USECHANGE_ATRANGE",
+      "term": "SEQ_USECHANGE_ATRANGE"
+    },
+    {
+      "key": "SEQ_USECHANGE_NEAREST",
+      "term": "SEQ_USECHANGE_NEAREST"
+    },
+    {
+      "key": "SEQ_USECHANGE_NEARESTMOVE",
+      "term": "SEQ_USECHANGE_NEARESTMOVE"
+    },
+    {
+      "key": "SEQ_USECHANGE_NOMOVE",
+      "term": "SEQ_USECHANGE_NOMOVE"
+    }
+  ],
+  "mtype": [
+    {
+      "key": "MTYPE_ANIMALKILLER",
+      "term": "MTYPE_ANIMALKILLER"
+    },
+    {
+      "key": "MTYPE_ARCHER",
+      "term": "MTYPE_ARCHER"
+    },
+    {
+      "key": "MTYPE_ARMORKILLER",
+      "term": "MTYPE_ARMORKILLER"
+    },
+    {
+      "key": "MTYPE_BEAR",
+      "term": "MTYPE_BEAR"
+    },
+    {
+      "key": "MTYPE_BULL",
+      "term": "MTYPE_BULL"
+    },
+    {
+      "key": "MTYPE_FOOL",
+      "term": "MTYPE_FOOL"
+    },
+    {
+      "key": "MTYPE_FOUL",
+      "term": "MTYPE_FOUL"
+    },
+    {
+      "key": "MTYPE_GREENFORCE",
+      "term": "MTYPE_GREENFORCE"
+    },
+    {
+      "key": "MTYPE_HEROKILLER",
+      "term": "MTYPE_HEROKILLER"
+    },
+    {
+      "key": "MTYPE_HUMANKILLER",
+      "term": "MTYPE_HUMANKILLER"
+    },
+    {
+      "key": "MTYPE_KNIGHTKILLER",
+      "term": "MTYPE_KNIGHTKILLER"
+    },
+    {
+      "key": "MTYPE_LONGRANGE",
+      "term": "MTYPE_LONGRANGE"
+    },
+    {
+      "key": "MTYPE_MAGEKILLER",
+      "term": "MTYPE_MAGEKILLER"
+    },
+    {
+      "key": "MTYPE_NONE",
+      "term": "MTYPE_NONE"
+    },
+    {
+      "key": "MTYPE_NORMAL",
+      "term": "MTYPE_NORMAL"
+    },
+    {
+      "key": "MTYPE_TABLEID_LIST",
+      "term": "MTYPE_TABLEID_LIST"
+    },
+    {
+      "key": "MTYPE_TEST00",
+      "term": "MTYPE_TEST00"
+    },
+    {
+      "key": "MTYPE_TEST01",
+      "term": "MTYPE_TEST01"
+    },
+    {
+      "key": "MTYPE_TEST02",
+      "term": "MTYPE_TEST02"
+    },
+    {
+      "key": "MTYPE_TEST03",
+      "term": "MTYPE_TEST03"
+    },
+    {
+      "key": "MTYPE_TEST04",
+      "term": "MTYPE_TEST04"
+    },
+    {
+      "key": "MTYPE_TEST05",
+      "term": "MTYPE_TEST05"
+    },
+    {
+      "key": "MTYPE_TEST06",
+      "term": "MTYPE_TEST06"
+    },
+    {
+      "key": "MTYPE_TEST07",
+      "term": "MTYPE_TEST07"
+    },
+    {
+      "key": "MTYPE_TEST08",
+      "term": "MTYPE_TEST08"
+    },
+    {
+      "key": "MTYPE_TEST09",
+      "term": "MTYPE_TEST09"
+    },
+    {
+      "key": "MTYPE_TEST10",
+      "term": "MTYPE_TEST10"
+    },
+    {
+      "key": "MTYPE_TEST11",
+      "term": "MTYPE_TEST11"
+    },
+    {
+      "key": "MTYPE_TEST12",
+      "term": "MTYPE_TEST12"
+    },
+    {
+      "key": "MTYPE_TEST13",
+      "term": "MTYPE_TEST13"
+    },
+    {
+      "key": "MTYPE_TEST14",
+      "term": "MTYPE_TEST14"
+    },
+    {
+      "key": "MTYPE_TEST15",
+      "term": "MTYPE_TEST15"
+    },
+    {
+      "key": "MTYPE_TEST16",
+      "term": "MTYPE_TEST16"
+    }
+  ]
+}

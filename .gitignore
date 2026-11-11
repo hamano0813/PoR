@@ -1,0 +1,24 @@
+# .NET / Avalonia
+[Bb]in/
+[Oo]bj/
+.vs/
+*.user
+*.suo
+TestResults/
+artifacts/
+publish/
+*.nupkg
+*.snupkg
+
+# Python
+venv/
+.venv/
+dist/
+build/
+__pycache__/
+*.py[cod]
+
+# IDE / OS
+.idea/workspace.xml
+.DS_Store
+Thumbs.db

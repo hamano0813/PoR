@@ -1,0 +1,2998 @@
+{
+  "profile": {
+    "slotBase": "0x802AF5E4",
+    "slotStep": 640,
+    "slotCount": 159,
+    "fieldCount": 201
+  },
+  "fields": [
+    {
+      "id": "model",
+      "legacyKey": "模型",
+      "address": "0x802AF760",
+      "length": 4,
+      "bit": null,
+      "scope": "character",
+      "kind": "enum",
+      "enumId": "aid",
+      "readOnly": false,
+      "refreshAfterWrite": true,
+      "displayKey": "Ui.Field.model"
+    },
+    {
+      "id": "temp1",
+      "legacyKey": "TEMP1",
+      "address": "0x802AF764",
+      "length": 4,
+      "bit": null,
+      "scope": "character",
+      "kind": "numeric",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.temp1"
+    },
+    {
+      "id": "temp2",
+      "legacyKey": "TEMP2",
+      "address": "0x802AF768",
+      "length": 4,
+      "bit": null,
+      "scope": "character",
+      "kind": "numeric",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.temp2"
+    },
+    {
+      "id": "person",
+      "legacyKey": "人物",
+      "address": "0x802AF76C",
+      "length": 4,
+      "bit": null,
+      "scope": "character",
+      "kind": "enum",
+      "enumId": "pid",
+      "readOnly": false,
+      "refreshAfterWrite": true,
+      "displayKey": "Ui.Field.person"
+    },
+    {
+      "id": "class",
+      "legacyKey": "职业",
+      "address": "0x802AF770",
+      "length": 4,
+      "bit": null,
+      "scope": "character",
+      "kind": "enum",
+      "enumId": "jid",
+      "readOnly": false,
+      "refreshAfterWrite": true,
+      "displayKey": "Ui.Field.class"
+    },
+    {
+      "id": "faction",
+      "legacyKey": "阵营",
+      "address": "0x802AF774",
+      "length": 4,
+      "bit": null,
+      "scope": "character",
+      "kind": "enum",
+      "enumId": "group",
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.faction"
+    },
+    {
+      "id": "ally",
+      "legacyKey": "同行",
+      "address": "0x802AF778",
+      "length": 4,
+      "bit": null,
+      "scope": "character",
+      "kind": "enum",
+      "enumId": "ally",
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.ally"
+    },
+    {
+      "id": "slotIndex",
+      "legacyKey": "序号",
+      "address": "0x802AF77C",
+      "length": 1,
+      "bit": null,
+      "scope": "character",
+      "kind": "numeric",
+      "enumId": null,
+      "readOnly": true,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.slotIndex"
+    },
+    {
+      "id": "army",
+      "legacyKey": "部队",
+      "address": "0x802AF77D",
+      "length": 1,
+      "bit": null,
+      "scope": "character",
+      "kind": "enum",
+      "enumId": "army",
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.army"
+    },
+    {
+      "id": "level",
+      "legacyKey": "等级",
+      "address": "0x802AF77E",
+      "length": 1,
+      "bit": null,
+      "scope": "character",
+      "kind": "numeric",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.level"
+    },
+    {
+      "id": "exp",
+      "legacyKey": "经验",
+      "address": "0x802AF77F",
+      "length": 1,
+      "bit": null,
+      "scope": "character",
+      "kind": "numeric",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.exp"
+    },
+    {
+      "id": "transform",
+      "legacyKey": "化身",
+      "address": "0x802AF780",
+      "length": 1,
+      "bit": null,
+      "scope": "character",
+      "kind": "numeric",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.transform"
+    },
+    {
+      "id": "temp3",
+      "legacyKey": "TEMP3",
+      "address": "0x802AF781",
+      "length": 1,
+      "bit": null,
+      "scope": "character",
+      "kind": "numeric",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.temp3"
+    },
+    {
+      "id": "coordX",
+      "legacyKey": "坐标Ｘ",
+      "address": "0x802AF782",
+      "length": 1,
+      "bit": null,
+      "scope": "character",
+      "kind": "numeric",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.coordX"
+    },
+    {
+      "id": "coordY",
+      "legacyKey": "坐标Ｙ",
+      "address": "0x802AF783",
+      "length": 1,
+      "bit": null,
+      "scope": "character",
+      "kind": "numeric",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.coordY"
+    },
+    {
+      "id": "temp4",
+      "legacyKey": "TEMP4",
+      "address": "0x802AF784",
+      "length": 2,
+      "bit": null,
+      "scope": "character",
+      "kind": "numeric",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.temp4"
+    },
+    {
+      "id": "isLeader",
+      "legacyKey": "首领",
+      "address": "0x802AF786",
+      "length": 1,
+      "bit": {
+        "start": 0,
+        "end": 1
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.isLeader"
+    },
+    {
+      "id": "temp5",
+      "legacyKey": "TEMP5",
+      "address": "0x802AF786",
+      "length": 1,
+      "bit": {
+        "start": 1,
+        "end": 7
+      },
+      "scope": "character",
+      "kind": "numeric",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.temp5"
+    },
+    {
+      "id": "action",
+      "legacyKey": "行动",
+      "address": "0x802AF787",
+      "length": 1,
+      "bit": {
+        "start": 0,
+        "end": 1
+      },
+      "scope": "character",
+      "kind": "tristate",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.action"
+    },
+    {
+      "id": "rescuing",
+      "legacyKey": "救出",
+      "address": "0x802AF787",
+      "length": 1,
+      "bit": {
+        "start": 1,
+        "end": 2
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.rescuing"
+    },
+    {
+      "id": "rescued",
+      "legacyKey": "被救",
+      "address": "0x802AF787",
+      "length": 1,
+      "bit": {
+        "start": 2,
+        "end": 3
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.rescued"
+    },
+    {
+      "id": "temp6",
+      "legacyKey": "TEMP6",
+      "address": "0x802AF787",
+      "length": 1,
+      "bit": {
+        "start": 3,
+        "end": 7
+      },
+      "scope": "character",
+      "kind": "numeric",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.temp6"
+    },
+    {
+      "id": "paralysis",
+      "legacyKey": "麻痹",
+      "address": "0x802AF788",
+      "length": 2,
+      "bit": {
+        "start": 0,
+        "end": 3
+      },
+      "scope": "character",
+      "kind": "numeric",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.paralysis"
+    },
+    {
+      "id": "temp7",
+      "legacyKey": "TEMP7",
+      "address": "0x802AF788",
+      "length": 2,
+      "bit": {
+        "start": 3,
+        "end": 4
+      },
+      "scope": "character",
+      "kind": "numeric",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.temp7"
+    },
+    {
+      "id": "silence",
+      "legacyKey": "沉默",
+      "address": "0x802AF788",
+      "length": 2,
+      "bit": {
+        "start": 4,
+        "end": 7
+      },
+      "scope": "character",
+      "kind": "numeric",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.silence"
+    },
+    {
+      "id": "sleep",
+      "legacyKey": "睡眠",
+      "address": "0x802AF788",
+      "length": 2,
+      "bit": {
+        "start": 7,
+        "end": 10
+      },
+      "scope": "character",
+      "kind": "numeric",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.sleep"
+    },
+    {
+      "id": "berserk",
+      "legacyKey": "狂暴",
+      "address": "0x802AF788",
+      "length": 2,
+      "bit": {
+        "start": 10,
+        "end": 13
+      },
+      "scope": "character",
+      "kind": "numeric",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.berserk"
+    },
+    {
+      "id": "poison",
+      "legacyKey": "中毒",
+      "address": "0x802AF788",
+      "length": 2,
+      "bit": {
+        "start": 13,
+        "end": 16
+      },
+      "scope": "character",
+      "kind": "numeric",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.poison"
+    },
+    {
+      "id": "temp8",
+      "legacyKey": "TEMP8",
+      "address": "0x802AF789",
+      "length": 3,
+      "bit": null,
+      "scope": "character",
+      "kind": "numeric",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.temp8"
+    },
+    {
+      "id": "hp",
+      "legacyKey": "ＨＰ",
+      "address": "0x802AF78C",
+      "length": 1,
+      "bit": null,
+      "scope": "character",
+      "kind": "numeric",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.hp"
+    },
+    {
+      "id": "stat.con",
+      "legacyKey": "S_CON",
+      "address": "0x802AF78D",
+      "length": 1,
+      "bit": null,
+      "scope": "character",
+      "kind": "numeric",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.stat.con"
+    },
+    {
+      "id": "stat.mov",
+      "legacyKey": "S_MOV",
+      "address": "0x802AF78E",
+      "length": 1,
+      "bit": null,
+      "scope": "character",
+      "kind": "numeric",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.stat.mov"
+    },
+    {
+      "id": "stat.hp",
+      "legacyKey": "S_HP",
+      "address": "0x802AF78F",
+      "length": -1,
+      "bit": null,
+      "scope": "character",
+      "kind": "numeric",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.stat.hp"
+    },
+    {
+      "id": "stat.str",
+      "legacyKey": "S_STR",
+      "address": "0x802AF790",
+      "length": -1,
+      "bit": null,
+      "scope": "character",
+      "kind": "numeric",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.stat.str"
+    },
+    {
+      "id": "stat.mag",
+      "legacyKey": "S_MAG",
+      "address": "0x802AF791",
+      "length": -1,
+      "bit": null,
+      "scope": "character",
+      "kind": "numeric",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.stat.mag"
+    },
+    {
+      "id": "stat.skl",
+      "legacyKey": "S_SKL",
+      "address": "0x802AF792",
+      "length": -1,
+      "bit": null,
+      "scope": "character",
+      "kind": "numeric",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.stat.skl"
+    },
+    {
+      "id": "stat.spd",
+      "legacyKey": "S_SPD",
+      "address": "0x802AF793",
+      "length": -1,
+      "bit": null,
+      "scope": "character",
+      "kind": "numeric",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.stat.spd"
+    },
+    {
+      "id": "stat.luk",
+      "legacyKey": "S_LUK",
+      "address": "0x802AF794",
+      "length": -1,
+      "bit": null,
+      "scope": "character",
+      "kind": "numeric",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.stat.luk"
+    },
+    {
+      "id": "stat.def",
+      "legacyKey": "S_DEF",
+      "address": "0x802AF795",
+      "length": -1,
+      "bit": null,
+      "scope": "character",
+      "kind": "numeric",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.stat.def"
+    },
+    {
+      "id": "stat.mdf",
+      "legacyKey": "S_MDF",
+      "address": "0x802AF796",
+      "length": -1,
+      "bit": null,
+      "scope": "character",
+      "kind": "numeric",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.stat.mdf"
+    },
+    {
+      "id": "temp9",
+      "legacyKey": "TEMP9",
+      "address": "0x802AF797",
+      "length": 1,
+      "bit": null,
+      "scope": "character",
+      "kind": "numeric",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.temp9"
+    },
+    {
+      "id": "growth.hp",
+      "legacyKey": "E_HP",
+      "address": "0x802AF798",
+      "length": 1,
+      "bit": null,
+      "scope": "character",
+      "kind": "numeric",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.growth.hp"
+    },
+    {
+      "id": "growth.str",
+      "legacyKey": "E_STR",
+      "address": "0x802AF799",
+      "length": 1,
+      "bit": null,
+      "scope": "character",
+      "kind": "numeric",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.growth.str"
+    },
+    {
+      "id": "growth.mag",
+      "legacyKey": "E_MAG",
+      "address": "0x802AF79A",
+      "length": 1,
+      "bit": null,
+      "scope": "character",
+      "kind": "numeric",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.growth.mag"
+    },
+    {
+      "id": "growth.skl",
+      "legacyKey": "E_SKL",
+      "address": "0x802AF79B",
+      "length": 1,
+      "bit": null,
+      "scope": "character",
+      "kind": "numeric",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.growth.skl"
+    },
+    {
+      "id": "growth.spd",
+      "legacyKey": "E_SPD",
+      "address": "0x802AF79C",
+      "length": 1,
+      "bit": null,
+      "scope": "character",
+      "kind": "numeric",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.growth.spd"
+    },
+    {
+      "id": "growth.luk",
+      "legacyKey": "E_LUK",
+      "address": "0x802AF79D",
+      "length": 1,
+      "bit": null,
+      "scope": "character",
+      "kind": "numeric",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.growth.luk"
+    },
+    {
+      "id": "growth.def",
+      "legacyKey": "E_DEF",
+      "address": "0x802AF79E",
+      "length": 1,
+      "bit": null,
+      "scope": "character",
+      "kind": "numeric",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.growth.def"
+    },
+    {
+      "id": "growth.mdf",
+      "legacyKey": "E_MDF",
+      "address": "0x802AF79F",
+      "length": 1,
+      "bit": null,
+      "scope": "character",
+      "kind": "numeric",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.growth.mdf"
+    },
+    {
+      "id": "item1",
+      "legacyKey": "道具1",
+      "address": "0x802AF7B0",
+      "length": 4,
+      "bit": null,
+      "scope": "character",
+      "kind": "enum",
+      "enumId": "iid",
+      "readOnly": false,
+      "refreshAfterWrite": true,
+      "displayKey": "Ui.Field.item1"
+    },
+    {
+      "id": "item2",
+      "legacyKey": "道具2",
+      "address": "0x802AF7B8",
+      "length": 4,
+      "bit": null,
+      "scope": "character",
+      "kind": "enum",
+      "enumId": "iid",
+      "readOnly": false,
+      "refreshAfterWrite": true,
+      "displayKey": "Ui.Field.item2"
+    },
+    {
+      "id": "item3",
+      "legacyKey": "道具3",
+      "address": "0x802AF7C0",
+      "length": 4,
+      "bit": null,
+      "scope": "character",
+      "kind": "enum",
+      "enumId": "iid",
+      "readOnly": false,
+      "refreshAfterWrite": true,
+      "displayKey": "Ui.Field.item3"
+    },
+    {
+      "id": "item4",
+      "legacyKey": "道具4",
+      "address": "0x802AF7C8",
+      "length": 4,
+      "bit": null,
+      "scope": "character",
+      "kind": "enum",
+      "enumId": "iid",
+      "readOnly": false,
+      "refreshAfterWrite": true,
+      "displayKey": "Ui.Field.item4"
+    },
+    {
+      "id": "item5",
+      "legacyKey": "道具5",
+      "address": "0x802AF7D0",
+      "length": 4,
+      "bit": null,
+      "scope": "character",
+      "kind": "enum",
+      "enumId": "iid",
+      "readOnly": false,
+      "refreshAfterWrite": true,
+      "displayKey": "Ui.Field.item5"
+    },
+    {
+      "id": "item6",
+      "legacyKey": "道具6",
+      "address": "0x802AF7D8",
+      "length": 4,
+      "bit": null,
+      "scope": "character",
+      "kind": "enum",
+      "enumId": "iid",
+      "readOnly": false,
+      "refreshAfterWrite": true,
+      "displayKey": "Ui.Field.item6"
+    },
+    {
+      "id": "item7",
+      "legacyKey": "道具7",
+      "address": "0x802AF7E0",
+      "length": 4,
+      "bit": null,
+      "scope": "character",
+      "kind": "enum",
+      "enumId": "iid",
+      "readOnly": false,
+      "refreshAfterWrite": true,
+      "displayKey": "Ui.Field.item7"
+    },
+    {
+      "id": "item8",
+      "legacyKey": "道具8",
+      "address": "0x802AF7E8",
+      "length": 4,
+      "bit": null,
+      "scope": "character",
+      "kind": "enum",
+      "enumId": "iid",
+      "readOnly": false,
+      "refreshAfterWrite": true,
+      "displayKey": "Ui.Field.item8"
+    },
+    {
+      "id": "durability1",
+      "legacyKey": "耐久1",
+      "address": "0x802AF7B4",
+      "length": 1,
+      "bit": null,
+      "scope": "character",
+      "kind": "numeric",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.durability1"
+    },
+    {
+      "id": "durability2",
+      "legacyKey": "耐久2",
+      "address": "0x802AF7BC",
+      "length": 1,
+      "bit": null,
+      "scope": "character",
+      "kind": "numeric",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.durability2"
+    },
+    {
+      "id": "durability3",
+      "legacyKey": "耐久3",
+      "address": "0x802AF7C4",
+      "length": 1,
+      "bit": null,
+      "scope": "character",
+      "kind": "numeric",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.durability3"
+    },
+    {
+      "id": "durability4",
+      "legacyKey": "耐久4",
+      "address": "0x802AF7CC",
+      "length": 1,
+      "bit": null,
+      "scope": "character",
+      "kind": "numeric",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.durability4"
+    },
+    {
+      "id": "durability5",
+      "legacyKey": "耐久5",
+      "address": "0x802AF7D4",
+      "length": 1,
+      "bit": null,
+      "scope": "character",
+      "kind": "numeric",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.durability5"
+    },
+    {
+      "id": "durability6",
+      "legacyKey": "耐久6",
+      "address": "0x802AF7DC",
+      "length": 1,
+      "bit": null,
+      "scope": "character",
+      "kind": "numeric",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.durability6"
+    },
+    {
+      "id": "durability7",
+      "legacyKey": "耐久7",
+      "address": "0x802AF7E4",
+      "length": 1,
+      "bit": null,
+      "scope": "character",
+      "kind": "numeric",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.durability7"
+    },
+    {
+      "id": "durability8",
+      "legacyKey": "耐久8",
+      "address": "0x802AF7EC",
+      "length": 1,
+      "bit": null,
+      "scope": "character",
+      "kind": "numeric",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.durability8"
+    },
+    {
+      "id": "equipped1",
+      "legacyKey": "装备1",
+      "address": "0x802AF7B5",
+      "length": 1,
+      "bit": {
+        "start": 7,
+        "end": 8
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.equipped1"
+    },
+    {
+      "id": "equipped2",
+      "legacyKey": "装备2",
+      "address": "0x802AF7BD",
+      "length": 1,
+      "bit": {
+        "start": 7,
+        "end": 8
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.equipped2"
+    },
+    {
+      "id": "equipped3",
+      "legacyKey": "装备3",
+      "address": "0x802AF7C5",
+      "length": 1,
+      "bit": {
+        "start": 7,
+        "end": 8
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.equipped3"
+    },
+    {
+      "id": "equipped4",
+      "legacyKey": "装备4",
+      "address": "0x802AF7CD",
+      "length": 1,
+      "bit": {
+        "start": 7,
+        "end": 8
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.equipped4"
+    },
+    {
+      "id": "equipped5",
+      "legacyKey": "装备5",
+      "address": "0x802AF7D5",
+      "length": 1,
+      "bit": {
+        "start": 7,
+        "end": 8
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.equipped5"
+    },
+    {
+      "id": "equipped6",
+      "legacyKey": "装备6",
+      "address": "0x802AF7DD",
+      "length": 1,
+      "bit": {
+        "start": 7,
+        "end": 8
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.equipped6"
+    },
+    {
+      "id": "equipped7",
+      "legacyKey": "装备7",
+      "address": "0x802AF7E5",
+      "length": 1,
+      "bit": {
+        "start": 7,
+        "end": 8
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.equipped7"
+    },
+    {
+      "id": "equipped8",
+      "legacyKey": "装备8",
+      "address": "0x802AF7ED",
+      "length": 1,
+      "bit": {
+        "start": 7,
+        "end": 8
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.equipped8"
+    },
+    {
+      "id": "dropped1",
+      "legacyKey": "掉落1",
+      "address": "0x802AF7B5",
+      "length": 1,
+      "bit": {
+        "start": 6,
+        "end": 7
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.dropped1"
+    },
+    {
+      "id": "dropped2",
+      "legacyKey": "掉落2",
+      "address": "0x802AF7BD",
+      "length": 1,
+      "bit": {
+        "start": 6,
+        "end": 7
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.dropped2"
+    },
+    {
+      "id": "dropped3",
+      "legacyKey": "掉落3",
+      "address": "0x802AF7C5",
+      "length": 1,
+      "bit": {
+        "start": 6,
+        "end": 7
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.dropped3"
+    },
+    {
+      "id": "dropped4",
+      "legacyKey": "掉落4",
+      "address": "0x802AF7CD",
+      "length": 1,
+      "bit": {
+        "start": 6,
+        "end": 7
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.dropped4"
+    },
+    {
+      "id": "dropped5",
+      "legacyKey": "掉落5",
+      "address": "0x802AF7D5",
+      "length": 1,
+      "bit": {
+        "start": 6,
+        "end": 7
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.dropped5"
+    },
+    {
+      "id": "dropped6",
+      "legacyKey": "掉落6",
+      "address": "0x802AF7DD",
+      "length": 1,
+      "bit": {
+        "start": 6,
+        "end": 7
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.dropped6"
+    },
+    {
+      "id": "dropped7",
+      "legacyKey": "掉落7",
+      "address": "0x802AF7E5",
+      "length": 1,
+      "bit": {
+        "start": 6,
+        "end": 7
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.dropped7"
+    },
+    {
+      "id": "dropped8",
+      "legacyKey": "掉落8",
+      "address": "0x802AF7ED",
+      "length": 1,
+      "bit": {
+        "start": 6,
+        "end": 7
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.dropped8"
+    },
+    {
+      "id": "weapon.sword",
+      "legacyKey": "剑",
+      "address": "0x802AF7F0",
+      "length": 1,
+      "bit": null,
+      "scope": "character",
+      "kind": "numeric",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.weapon.sword"
+    },
+    {
+      "id": "weapon.lance",
+      "legacyKey": "枪",
+      "address": "0x802AF7F1",
+      "length": 1,
+      "bit": null,
+      "scope": "character",
+      "kind": "numeric",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.weapon.lance"
+    },
+    {
+      "id": "weapon.axe",
+      "legacyKey": "斧",
+      "address": "0x802AF7F2",
+      "length": 1,
+      "bit": null,
+      "scope": "character",
+      "kind": "numeric",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.weapon.axe"
+    },
+    {
+      "id": "weapon.bow",
+      "legacyKey": "弓",
+      "address": "0x802AF7F3",
+      "length": 1,
+      "bit": null,
+      "scope": "character",
+      "kind": "numeric",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.weapon.bow"
+    },
+    {
+      "id": "weapon.fire",
+      "legacyKey": "炎",
+      "address": "0x802AF7F4",
+      "length": 1,
+      "bit": null,
+      "scope": "character",
+      "kind": "numeric",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.weapon.fire"
+    },
+    {
+      "id": "weapon.thunder",
+      "legacyKey": "雷",
+      "address": "0x802AF7F5",
+      "length": 1,
+      "bit": null,
+      "scope": "character",
+      "kind": "numeric",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.weapon.thunder"
+    },
+    {
+      "id": "weapon.wind",
+      "legacyKey": "风",
+      "address": "0x802AF7F6",
+      "length": 1,
+      "bit": null,
+      "scope": "character",
+      "kind": "numeric",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.weapon.wind"
+    },
+    {
+      "id": "weapon.staff",
+      "legacyKey": "杖",
+      "address": "0x802AF7F7",
+      "length": 1,
+      "bit": null,
+      "scope": "character",
+      "kind": "numeric",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.weapon.staff"
+    },
+    {
+      "id": "support1",
+      "legacyKey": "支援1",
+      "address": "0x802AF7F8",
+      "length": 1,
+      "bit": null,
+      "scope": "character",
+      "kind": "numeric",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.support1"
+    },
+    {
+      "id": "support2",
+      "legacyKey": "支援2",
+      "address": "0x802AF7F9",
+      "length": 1,
+      "bit": null,
+      "scope": "character",
+      "kind": "numeric",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.support2"
+    },
+    {
+      "id": "support3",
+      "legacyKey": "支援3",
+      "address": "0x802AF7FA",
+      "length": 1,
+      "bit": null,
+      "scope": "character",
+      "kind": "numeric",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.support3"
+    },
+    {
+      "id": "support4",
+      "legacyKey": "支援4",
+      "address": "0x802AF7FB",
+      "length": 1,
+      "bit": null,
+      "scope": "character",
+      "kind": "numeric",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.support4"
+    },
+    {
+      "id": "support5",
+      "legacyKey": "支援5",
+      "address": "0x802AF7FC",
+      "length": 1,
+      "bit": null,
+      "scope": "character",
+      "kind": "numeric",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.support5"
+    },
+    {
+      "id": "support6",
+      "legacyKey": "支援6",
+      "address": "0x802AF7FD",
+      "length": 1,
+      "bit": null,
+      "scope": "character",
+      "kind": "numeric",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.support6"
+    },
+    {
+      "id": "support7",
+      "legacyKey": "支援7",
+      "address": "0x802AF7FE",
+      "length": 1,
+      "bit": null,
+      "scope": "character",
+      "kind": "numeric",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.support7"
+    },
+    {
+      "id": "field_96",
+      "legacyKey": "战斗",
+      "address": "0x802AF80C",
+      "length": 2,
+      "bit": null,
+      "scope": "character",
+      "kind": "numeric",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.field_96"
+    },
+    {
+      "id": "field_97",
+      "legacyKey": "胜利",
+      "address": "0x802AF80E",
+      "length": 2,
+      "bit": null,
+      "scope": "character",
+      "kind": "numeric",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.field_97"
+    },
+    {
+      "id": "SID_HERO",
+      "legacyKey": "SID_HERO",
+      "address": "0x802AF7A0",
+      "length": 4,
+      "bit": {
+        "start": 0,
+        "end": 1
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.SID_HERO"
+    },
+    {
+      "id": "SID_FEMALE",
+      "legacyKey": "SID_FEMALE",
+      "address": "0x802AF7A0",
+      "length": 4,
+      "bit": {
+        "start": 1,
+        "end": 2
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.SID_FEMALE"
+    },
+    {
+      "id": "SID_HIGHER",
+      "legacyKey": "SID_HIGHER",
+      "address": "0x802AF7A0",
+      "length": 4,
+      "bit": {
+        "start": 2,
+        "end": 3
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.SID_HIGHER"
+    },
+    {
+      "id": "SID_TWICE",
+      "legacyKey": "SID_TWICE",
+      "address": "0x802AF7A0",
+      "length": 4,
+      "bit": {
+        "start": 3,
+        "end": 4
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.SID_TWICE"
+    },
+    {
+      "id": "SID_FLY",
+      "legacyKey": "SID_FLY",
+      "address": "0x802AF7A0",
+      "length": 4,
+      "bit": {
+        "start": 4,
+        "end": 5
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.SID_FLY"
+    },
+    {
+      "id": "SID_VILLAGEDESTROY",
+      "legacyKey": "SID_VILLAGEDESTROY",
+      "address": "0x802AF7A0",
+      "length": 4,
+      "bit": {
+        "start": 5,
+        "end": 6
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.SID_VILLAGEDESTROY"
+    },
+    {
+      "id": "SID_BOSS",
+      "legacyKey": "SID_BOSS",
+      "address": "0x802AF7A0",
+      "length": 4,
+      "bit": {
+        "start": 6,
+        "end": 7
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.SID_BOSS"
+    },
+    {
+      "id": "SID_FINAL",
+      "legacyKey": "SID_FINAL",
+      "address": "0x802AF7A0",
+      "length": 4,
+      "bit": {
+        "start": 7,
+        "end": 8
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.SID_FINAL"
+    },
+    {
+      "id": "SID_ANIMALIZE",
+      "legacyKey": "SID_ANIMALIZE",
+      "address": "0x802AF7A0",
+      "length": 4,
+      "bit": {
+        "start": 8,
+        "end": 9
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.SID_ANIMALIZE"
+    },
+    {
+      "id": "SID_LYCANTHROPE",
+      "legacyKey": "SID_LYCANTHROPE",
+      "address": "0x802AF7A0",
+      "length": 4,
+      "bit": {
+        "start": 9,
+        "end": 10
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.SID_LYCANTHROPE"
+    },
+    {
+      "id": "SID_FIXEDBEAST",
+      "legacyKey": "SID_FIXEDBEAST",
+      "address": "0x802AF7A0",
+      "length": 4,
+      "bit": {
+        "start": 10,
+        "end": 11
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.SID_FIXEDBEAST"
+    },
+    {
+      "id": "SID_ELITE",
+      "legacyKey": "SID_ELITE",
+      "address": "0x802AF7A0",
+      "length": 4,
+      "bit": {
+        "start": 11,
+        "end": 12
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.SID_ELITE"
+    },
+    {
+      "id": "SID_TURNREGENE",
+      "legacyKey": "SID_TURNREGENE",
+      "address": "0x802AF7A0",
+      "length": 4,
+      "bit": {
+        "start": 12,
+        "end": 13
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.SID_TURNREGENE"
+    },
+    {
+      "id": "SID_BARGAIN",
+      "legacyKey": "SID_BARGAIN",
+      "address": "0x802AF7A0",
+      "length": 4,
+      "bit": {
+        "start": 13,
+        "end": 14
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.SID_BARGAIN"
+    },
+    {
+      "id": "SID_SWIFT",
+      "legacyKey": "SID_SWIFT",
+      "address": "0x802AF7A0",
+      "length": 4,
+      "bit": {
+        "start": 14,
+        "end": 15
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.SID_SWIFT"
+    },
+    {
+      "id": "SID_WLUPTOS",
+      "legacyKey": "SID_WLUPTOS",
+      "address": "0x802AF7A0",
+      "length": 4,
+      "bit": {
+        "start": 15,
+        "end": 16
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.SID_WLUPTOS"
+    },
+    {
+      "id": "SID_BLAVE",
+      "legacyKey": "SID_BLAVE",
+      "address": "0x802AF7A0",
+      "length": 4,
+      "bit": {
+        "start": 16,
+        "end": 17
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.SID_BLAVE"
+    },
+    {
+      "id": "SID_IMPREGNABLE",
+      "legacyKey": "SID_IMPREGNABLE",
+      "address": "0x802AF7A0",
+      "length": 4,
+      "bit": {
+        "start": 17,
+        "end": 18
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.SID_IMPREGNABLE"
+    },
+    {
+      "id": "SID_TEMPER",
+      "legacyKey": "SID_TEMPER",
+      "address": "0x802AF7A0",
+      "length": 4,
+      "bit": {
+        "start": 18,
+        "end": 19
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.SID_TEMPER"
+    },
+    {
+      "id": "SID_CALM",
+      "legacyKey": "SID_CALM",
+      "address": "0x802AF7A0",
+      "length": 4,
+      "bit": {
+        "start": 19,
+        "end": 20
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.SID_CALM"
+    },
+    {
+      "id": "SID_FLYTHRU",
+      "legacyKey": "SID_FLYTHRU",
+      "address": "0x802AF7A0",
+      "length": 4,
+      "bit": {
+        "start": 20,
+        "end": 21
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.SID_FLYTHRU"
+    },
+    {
+      "id": "SID_WALKTHRU",
+      "legacyKey": "SID_WALKTHRU",
+      "address": "0x802AF7A0",
+      "length": 4,
+      "bit": {
+        "start": 21,
+        "end": 22
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.SID_WALKTHRU"
+    },
+    {
+      "id": "SID_RESCUEP",
+      "legacyKey": "SID_RESCUEP",
+      "address": "0x802AF7A0",
+      "length": 4,
+      "bit": {
+        "start": 22,
+        "end": 23
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.SID_RESCUEP"
+    },
+    {
+      "id": "SID_HANDI",
+      "legacyKey": "SID_HANDI",
+      "address": "0x802AF7A0",
+      "length": 4,
+      "bit": {
+        "start": 23,
+        "end": 24
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.SID_HANDI"
+    },
+    {
+      "id": "SID_CHANT",
+      "legacyKey": "SID_CHANT",
+      "address": "0x802AF7A0",
+      "length": 4,
+      "bit": {
+        "start": 24,
+        "end": 25
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.SID_CHANT"
+    },
+    {
+      "id": "SID_CHANTHP",
+      "legacyKey": "SID_CHANTHP",
+      "address": "0x802AF7A0",
+      "length": 4,
+      "bit": {
+        "start": 25,
+        "end": 26
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.SID_CHANTHP"
+    },
+    {
+      "id": "SID_CHANTSTR",
+      "legacyKey": "SID_CHANTSTR",
+      "address": "0x802AF7A0",
+      "length": 4,
+      "bit": {
+        "start": 26,
+        "end": 27
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.SID_CHANTSTR"
+    },
+    {
+      "id": "SID_CHANTMPOW",
+      "legacyKey": "SID_CHANTMPOW",
+      "address": "0x802AF7A0",
+      "length": 4,
+      "bit": {
+        "start": 27,
+        "end": 28
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.SID_CHANTMPOW"
+    },
+    {
+      "id": "SID_CHANTTECH",
+      "legacyKey": "SID_CHANTTECH",
+      "address": "0x802AF7A0",
+      "length": 4,
+      "bit": {
+        "start": 28,
+        "end": 29
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.SID_CHANTTECH"
+    },
+    {
+      "id": "SID_CHANTQUICK",
+      "legacyKey": "SID_CHANTQUICK",
+      "address": "0x802AF7A0",
+      "length": 4,
+      "bit": {
+        "start": 29,
+        "end": 30
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.SID_CHANTQUICK"
+    },
+    {
+      "id": "SID_CHANTLUCK",
+      "legacyKey": "SID_CHANTLUCK",
+      "address": "0x802AF7A0",
+      "length": 4,
+      "bit": {
+        "start": 30,
+        "end": 31
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.SID_CHANTLUCK"
+    },
+    {
+      "id": "SID_CHANTDEF",
+      "legacyKey": "SID_CHANTDEF",
+      "address": "0x802AF7A0",
+      "length": 4,
+      "bit": {
+        "start": 31,
+        "end": 32
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.SID_CHANTDEF"
+    },
+    {
+      "id": "SID_CHANTMDEF",
+      "legacyKey": "SID_CHANTMDEF",
+      "address": "0x802AF7A4",
+      "length": 4,
+      "bit": {
+        "start": 0,
+        "end": 1
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.SID_CHANTMDEF"
+    },
+    {
+      "id": "SID_EQUIPFANG",
+      "legacyKey": "SID_EQUIPFANG",
+      "address": "0x802AF7A4",
+      "length": 4,
+      "bit": {
+        "start": 1,
+        "end": 2
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.SID_EQUIPFANG"
+    },
+    {
+      "id": "SID_EQUIPKNIFE",
+      "legacyKey": "SID_EQUIPKNIFE",
+      "address": "0x802AF7A4",
+      "length": 4,
+      "bit": {
+        "start": 2,
+        "end": 3
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.SID_EQUIPKNIFE"
+    },
+    {
+      "id": "SID_EQUIPLIGHT",
+      "legacyKey": "SID_EQUIPLIGHT",
+      "address": "0x802AF7A4",
+      "length": 4,
+      "bit": {
+        "start": 3,
+        "end": 4
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.SID_EQUIPLIGHT"
+    },
+    {
+      "id": "SID_EQSW",
+      "legacyKey": "SID_EQSW",
+      "address": "0x802AF7A4",
+      "length": 4,
+      "bit": {
+        "start": 4,
+        "end": 5
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.SID_EQSW"
+    },
+    {
+      "id": "SID_EQLA",
+      "legacyKey": "SID_EQLA",
+      "address": "0x802AF7A4",
+      "length": 4,
+      "bit": {
+        "start": 5,
+        "end": 6
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.SID_EQLA"
+    },
+    {
+      "id": "SID_EQAX",
+      "legacyKey": "SID_EQAX",
+      "address": "0x802AF7A4",
+      "length": 4,
+      "bit": {
+        "start": 6,
+        "end": 7
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.SID_EQAX"
+    },
+    {
+      "id": "SID_EQBW",
+      "legacyKey": "SID_EQBW",
+      "address": "0x802AF7A4",
+      "length": 4,
+      "bit": {
+        "start": 7,
+        "end": 8
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.SID_EQBW"
+    },
+    {
+      "id": "SID_EQRD",
+      "legacyKey": "SID_EQRD",
+      "address": "0x802AF7A4",
+      "length": 4,
+      "bit": {
+        "start": 8,
+        "end": 9
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.SID_EQRD"
+    },
+    {
+      "id": "SID_AMBUSH",
+      "legacyKey": "SID_AMBUSH",
+      "address": "0x802AF7A4",
+      "length": 4,
+      "bit": {
+        "start": 9,
+        "end": 10
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.SID_AMBUSH"
+    },
+    {
+      "id": "SID_GRASP",
+      "legacyKey": "SID_GRASP",
+      "address": "0x802AF7A4",
+      "length": 4,
+      "bit": {
+        "start": 10,
+        "end": 11
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.SID_GRASP"
+    },
+    {
+      "id": "SID_ANGER",
+      "legacyKey": "SID_ANGER",
+      "address": "0x802AF7A4",
+      "length": 4,
+      "bit": {
+        "start": 11,
+        "end": 12
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.SID_ANGER"
+    },
+    {
+      "id": "SID_DEFENCE",
+      "legacyKey": "SID_DEFENCE",
+      "address": "0x802AF7A4",
+      "length": 4,
+      "bit": {
+        "start": 12,
+        "end": 13
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.SID_DEFENCE"
+    },
+    {
+      "id": "SID_WINGSHIELD",
+      "legacyKey": "SID_WINGSHIELD",
+      "address": "0x802AF7A4",
+      "length": 4,
+      "bit": {
+        "start": 13,
+        "end": 14
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.SID_WINGSHIELD"
+    },
+    {
+      "id": "SID_PRAY",
+      "legacyKey": "SID_PRAY",
+      "address": "0x802AF7A4",
+      "length": 4,
+      "bit": {
+        "start": 14,
+        "end": 15
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.SID_PRAY"
+    },
+    {
+      "id": "SID_SUNTRICK",
+      "legacyKey": "SID_SUNTRICK",
+      "address": "0x802AF7A4",
+      "length": 4,
+      "bit": {
+        "start": 15,
+        "end": 16
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.SID_SUNTRICK"
+    },
+    {
+      "id": "SID_MOONTRICK",
+      "legacyKey": "SID_MOONTRICK",
+      "address": "0x802AF7A4",
+      "length": 4,
+      "bit": {
+        "start": 16,
+        "end": 17
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.SID_MOONTRICK"
+    },
+    {
+      "id": "SID_STARTRICK",
+      "legacyKey": "SID_STARTRICK",
+      "address": "0x802AF7A4",
+      "length": 4,
+      "bit": {
+        "start": 17,
+        "end": 18
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.SID_STARTRICK"
+    },
+    {
+      "id": "SID_CONTINUATION",
+      "legacyKey": "SID_CONTINUATION",
+      "address": "0x802AF7A4",
+      "length": 4,
+      "bit": {
+        "start": 18,
+        "end": 19
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.SID_CONTINUATION"
+    },
+    {
+      "id": "SID_ASSASSINATE",
+      "legacyKey": "SID_ASSASSINATE",
+      "address": "0x802AF7A4",
+      "length": 4,
+      "bit": {
+        "start": 19,
+        "end": 20
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.SID_ASSASSINATE"
+    },
+    {
+      "id": "SID_WEAPONDESTROY",
+      "legacyKey": "SID_WEAPONDESTROY",
+      "address": "0x802AF7A4",
+      "length": 4,
+      "bit": {
+        "start": 20,
+        "end": 21
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.SID_WEAPONDESTROY"
+    },
+    {
+      "id": "SID_SNIPE",
+      "legacyKey": "SID_SNIPE",
+      "address": "0x802AF7A4",
+      "length": 4,
+      "bit": {
+        "start": 21,
+        "end": 22
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.SID_SNIPE"
+    },
+    {
+      "id": "SID_CHAOS",
+      "legacyKey": "SID_CHAOS",
+      "address": "0x802AF7A4",
+      "length": 4,
+      "bit": {
+        "start": 22,
+        "end": 23
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.SID_CHAOS"
+    },
+    {
+      "id": "SID_COUNTER",
+      "legacyKey": "SID_COUNTER",
+      "address": "0x802AF7A4",
+      "length": 4,
+      "bit": {
+        "start": 23,
+        "end": 24
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.SID_COUNTER"
+    },
+    {
+      "id": "SID_RUMBLE",
+      "legacyKey": "SID_RUMBLE",
+      "address": "0x802AF7A4",
+      "length": 4,
+      "bit": {
+        "start": 24,
+        "end": 25
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.SID_RUMBLE"
+    },
+    {
+      "id": "SID_IMPACT",
+      "legacyKey": "SID_IMPACT",
+      "address": "0x802AF7A4",
+      "length": 4,
+      "bit": {
+        "start": 25,
+        "end": 26
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.SID_IMPACT"
+    },
+    {
+      "id": "SID_CHARISMA",
+      "legacyKey": "SID_CHARISMA",
+      "address": "0x802AF7A4",
+      "length": 4,
+      "bit": {
+        "start": 26,
+        "end": 27
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.SID_CHARISMA"
+    },
+    {
+      "id": "SID_HORROR",
+      "legacyKey": "SID_HORROR",
+      "address": "0x802AF7A4",
+      "length": 4,
+      "bit": {
+        "start": 27,
+        "end": 28
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.SID_HORROR"
+    },
+    {
+      "id": "SID_STEAL",
+      "legacyKey": "SID_STEAL",
+      "address": "0x802AF7A4",
+      "length": 4,
+      "bit": {
+        "start": 28,
+        "end": 29
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.SID_STEAL"
+    },
+    {
+      "id": "SID_PROVOKE",
+      "legacyKey": "SID_PROVOKE",
+      "address": "0x802AF7A4",
+      "length": 4,
+      "bit": {
+        "start": 29,
+        "end": 30
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.SID_PROVOKE"
+    },
+    {
+      "id": "SID_SHADE",
+      "legacyKey": "SID_SHADE",
+      "address": "0x802AF7A4",
+      "length": 4,
+      "bit": {
+        "start": 30,
+        "end": 31
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.SID_SHADE"
+    },
+    {
+      "id": "SID_GAMBLE",
+      "legacyKey": "SID_GAMBLE",
+      "address": "0x802AF7A4",
+      "length": 4,
+      "bit": {
+        "start": 31,
+        "end": 32
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.SID_GAMBLE"
+    },
+    {
+      "id": "SID_ABSMOVE",
+      "legacyKey": "SID_ABSMOVE",
+      "address": "0x802AF7A8",
+      "length": 4,
+      "bit": {
+        "start": 0,
+        "end": 1
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.SID_ABSMOVE"
+    },
+    {
+      "id": "SID_FAIRNESS",
+      "legacyKey": "SID_FAIRNESS",
+      "address": "0x802AF7A8",
+      "length": 4,
+      "bit": {
+        "start": 1,
+        "end": 2
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.SID_FAIRNESS"
+    },
+    {
+      "id": "SID_CONFRONT",
+      "legacyKey": "SID_CONFRONT",
+      "address": "0x802AF7A8",
+      "length": 4,
+      "bit": {
+        "start": 2,
+        "end": 3
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.SID_CONFRONT"
+    },
+    {
+      "id": "SID_FLUTTER",
+      "legacyKey": "SID_FLUTTER",
+      "address": "0x802AF7A8",
+      "length": 4,
+      "bit": {
+        "start": 3,
+        "end": 4
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.SID_FLUTTER"
+    },
+    {
+      "id": "SID_TACKLE",
+      "legacyKey": "SID_TACKLE",
+      "address": "0x802AF7A8",
+      "length": 4,
+      "bit": {
+        "start": 4,
+        "end": 5
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.SID_TACKLE"
+    },
+    {
+      "id": "SID_TACKLE2",
+      "legacyKey": "SID_TACKLE2",
+      "address": "0x802AF7A8",
+      "length": 4,
+      "bit": {
+        "start": 5,
+        "end": 6
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.SID_TACKLE2"
+    },
+    {
+      "id": "SID_SNARL",
+      "legacyKey": "SID_SNARL",
+      "address": "0x802AF7A8",
+      "length": 4,
+      "bit": {
+        "start": 6,
+        "end": 7
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.SID_SNARL"
+    },
+    {
+      "id": "SID_EVILEYE",
+      "legacyKey": "SID_EVILEYE",
+      "address": "0x802AF7A8",
+      "length": 4,
+      "bit": {
+        "start": 7,
+        "end": 8
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.SID_EVILEYE"
+    },
+    {
+      "id": "SID_REINFORCEMENTS",
+      "legacyKey": "SID_REINFORCEMENTS",
+      "address": "0x802AF7A8",
+      "length": 4,
+      "bit": {
+        "start": 8,
+        "end": 9
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.SID_REINFORCEMENTS"
+    },
+    {
+      "id": "SID_EARTHBLESSING",
+      "legacyKey": "SID_EARTHBLESSING",
+      "address": "0x802AF7A8",
+      "length": 4,
+      "bit": {
+        "start": 9,
+        "end": 10
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.SID_EARTHBLESSING"
+    },
+    {
+      "id": "SID_SKYBLESSING",
+      "legacyKey": "SID_SKYBLESSING",
+      "address": "0x802AF7A8",
+      "length": 4,
+      "bit": {
+        "start": 10,
+        "end": 11
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.SID_SKYBLESSING"
+    },
+    {
+      "id": "SID_FRAC90",
+      "legacyKey": "SID_FRAC90",
+      "address": "0x802AF7A8",
+      "length": 4,
+      "bit": {
+        "start": 11,
+        "end": 12
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.SID_FRAC90"
+    },
+    {
+      "id": "SID_SUNMOON",
+      "legacyKey": "SID_SUNMOON",
+      "address": "0x802AF7A8",
+      "length": 4,
+      "bit": {
+        "start": 12,
+        "end": 13
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.SID_SUNMOON"
+    },
+    {
+      "id": "SID_EVENTCC",
+      "legacyKey": "SID_EVENTCC",
+      "address": "0x802AF7A8",
+      "length": 4,
+      "bit": {
+        "start": 13,
+        "end": 14
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.SID_EVENTCC"
+    },
+    {
+      "id": "SID_SUMMONED",
+      "legacyKey": "SID_SUMMONED",
+      "address": "0x802AF7A8",
+      "length": 4,
+      "bit": {
+        "start": 14,
+        "end": 15
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.SID_SUMMONED"
+    },
+    {
+      "id": "SID_SHOOT",
+      "legacyKey": "SID_SHOOT",
+      "address": "0x802AF7A8",
+      "length": 4,
+      "bit": {
+        "start": 15,
+        "end": 16
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.SID_SHOOT"
+    },
+    {
+      "id": "SID_KEY50",
+      "legacyKey": "SID_KEY50",
+      "address": "0x802AF7A8",
+      "length": 4,
+      "bit": {
+        "start": 16,
+        "end": 17
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.SID_KEY50"
+    },
+    {
+      "id": "SID_TELEGNOSIS",
+      "legacyKey": "SID_TELEGNOSIS",
+      "address": "0x802AF7A8",
+      "length": 4,
+      "bit": {
+        "start": 17,
+        "end": 18
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.SID_TELEGNOSIS"
+    },
+    {
+      "id": "SID_BIGEAR",
+      "legacyKey": "SID_BIGEAR",
+      "address": "0x802AF7A8",
+      "length": 4,
+      "bit": {
+        "start": 18,
+        "end": 19
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.SID_BIGEAR"
+    },
+    {
+      "id": "SID_GODDESSBLESS",
+      "legacyKey": "SID_GODDESSBLESS",
+      "address": "0x802AF7A8",
+      "length": 4,
+      "bit": {
+        "start": 19,
+        "end": 20
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.SID_GODDESSBLESS"
+    },
+    {
+      "id": "SID_TRI_A",
+      "legacyKey": "SID_TRI_A",
+      "address": "0x802AF7A8",
+      "length": 4,
+      "bit": {
+        "start": 20,
+        "end": 21
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.SID_TRI_A"
+    },
+    {
+      "id": "SID_TRI_B",
+      "legacyKey": "SID_TRI_B",
+      "address": "0x802AF7A8",
+      "length": 4,
+      "bit": {
+        "start": 21,
+        "end": 22
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.SID_TRI_B"
+    },
+    {
+      "id": "SID_EQ_A",
+      "legacyKey": "SID_EQ_A",
+      "address": "0x802AF7A8",
+      "length": 4,
+      "bit": {
+        "start": 22,
+        "end": 23
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.SID_EQ_A"
+    },
+    {
+      "id": "SID_EQ_B",
+      "legacyKey": "SID_EQ_B",
+      "address": "0x802AF7A8",
+      "length": 4,
+      "bit": {
+        "start": 23,
+        "end": 24
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.SID_EQ_B"
+    },
+    {
+      "id": "SID_EQ_C",
+      "legacyKey": "SID_EQ_C",
+      "address": "0x802AF7A8",
+      "length": 4,
+      "bit": {
+        "start": 24,
+        "end": 25
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.SID_EQ_C"
+    },
+    {
+      "id": "SID_TEMP_ON_DIE",
+      "legacyKey": "SID_TEMP_ON_DIE",
+      "address": "0x802AF7A8",
+      "length": 4,
+      "bit": {
+        "start": 25,
+        "end": 26
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.SID_TEMP_ON_DIE"
+    },
+    {
+      "id": "SID_BRIGHTNESS",
+      "legacyKey": "SID_BRIGHTNESS",
+      "address": "0x802AF7A8",
+      "length": 4,
+      "bit": {
+        "start": 26,
+        "end": 27
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.SID_BRIGHTNESS"
+    },
+    {
+      "id": "SID_KEY0",
+      "legacyKey": "SID_KEY0",
+      "address": "0x802AF7A8",
+      "length": 4,
+      "bit": {
+        "start": 27,
+        "end": 28
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.SID_KEY0"
+    },
+    {
+      "id": "SID_IMMORTAL",
+      "legacyKey": "SID_IMMORTAL",
+      "address": "0x802AF7A8",
+      "length": 4,
+      "bit": {
+        "start": 28,
+        "end": 29
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.SID_IMMORTAL"
+    },
+    {
+      "id": "SID_EQ_D",
+      "legacyKey": "SID_EQ_D",
+      "address": "0x802AF7A8",
+      "length": 4,
+      "bit": {
+        "start": 29,
+        "end": 30
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.SID_EQ_D"
+    },
+    {
+      "id": "SID_EQREV_A",
+      "legacyKey": "SID_EQREV_A",
+      "address": "0x802AF7A8",
+      "length": 4,
+      "bit": {
+        "start": 30,
+        "end": 31
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.SID_EQREV_A"
+    },
+    {
+      "id": "SID_WEAK_A",
+      "legacyKey": "SID_WEAK_A",
+      "address": "0x802AF7A8",
+      "length": 4,
+      "bit": {
+        "start": 31,
+        "end": 32
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.SID_WEAK_A"
+    },
+    {
+      "id": "SID_AHIMSA",
+      "legacyKey": "SID_AHIMSA",
+      "address": "0x802AF7AC",
+      "length": 4,
+      "bit": {
+        "start": 0,
+        "end": 1
+      },
+      "scope": "character",
+      "kind": "bool",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.SID_AHIMSA"
+    },
+    {
+      "id": "seq1",
+      "legacyKey": "SEQ1",
+      "address": "0x802AF81C",
+      "length": 4,
+      "bit": null,
+      "scope": "character",
+      "kind": "enum",
+      "enumId": "seq",
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.seq1"
+    },
+    {
+      "id": "seq2",
+      "legacyKey": "SEQ2",
+      "address": "0x802AF820",
+      "length": 4,
+      "bit": null,
+      "scope": "character",
+      "kind": "enum",
+      "enumId": "seq",
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.seq2"
+    },
+    {
+      "id": "seq3",
+      "legacyKey": "SEQ3",
+      "address": "0x802AF824",
+      "length": 4,
+      "bit": null,
+      "scope": "character",
+      "kind": "enum",
+      "enumId": "seq",
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.seq3"
+    },
+    {
+      "id": "mtype",
+      "legacyKey": "MTYPE",
+      "address": "0x802AF828",
+      "length": 4,
+      "bit": null,
+      "scope": "character",
+      "kind": "enum",
+      "enumId": "mtype",
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.mtype"
+    },
+    {
+      "id": "money",
+      "legacyKey": "所持金",
+      "address": "0x8032E7A1",
+      "length": 3,
+      "bit": null,
+      "scope": "global",
+      "kind": "numeric",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.money"
+    },
+    {
+      "id": "bonusExp",
+      "legacyKey": "奖励EX",
+      "address": "0x8032E7A5",
+      "length": 3,
+      "bit": null,
+      "scope": "global",
+      "kind": "numeric",
+      "enumId": null,
+      "readOnly": false,
+      "refreshAfterWrite": false,
+      "displayKey": "Ui.Field.bonusExp"
+    }
+  ]
+}

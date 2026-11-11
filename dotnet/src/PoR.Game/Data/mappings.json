@@ -1,0 +1,40 @@
+{
+  "aid": {
+    "type": "pointer",
+    "pointerAddress": "0x802AF760",
+    "step": 20,
+    "enum": "aid"
+  },
+  "pid": {
+    "type": "pointer",
+    "pointerAddress": "0x802AF76C",
+    "step": 100,
+    "enum": "pid"
+  },
+  "jid": {
+    "type": "pointer",
+    "pointerAddress": "0x802AF770",
+    "step": 100,
+    "enum": "jid"
+  },
+  "iid": {
+    "type": "pointer",
+    "pointerAddress": "0x802AF7B0",
+    "step": 72,
+    "enum": "iid"
+  },
+  "seq": {
+    "type": "text",
+    "baseAddress": "0x80511258",
+    "step": 16,
+    "addressOffset": -4895,
+    "enum": "seq"
+  },
+  "mtype": {
+    "type": "text",
+    "baseAddress": "0x80511048",
+    "step": 16,
+    "addressOffset": -5085,
+    "enum": "mtype"
+  }
+}

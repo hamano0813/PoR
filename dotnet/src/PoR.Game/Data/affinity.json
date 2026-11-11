@@ -1,0 +1,186 @@
+[
+  {
+    "pid": "PID_IKE",
+    "affinity": "AFF_EARTH"
+  },
+  {
+    "pid": "PID_TIAMAT",
+    "affinity": "AFF_LIGHT"
+  },
+  {
+    "pid": "PID_SENERIO",
+    "affinity": "AFF_DARK"
+  },
+  {
+    "pid": "PID_MIST",
+    "affinity": "AFF_WATER"
+  },
+  {
+    "pid": "PID_OSCAR",
+    "affinity": "AFF_EARTH"
+  },
+  {
+    "pid": "PID_BOLE",
+    "affinity": "AFF_FIRE"
+  },
+  {
+    "pid": "PID_LOFA",
+    "affinity": "AFF_WIND"
+  },
+  {
+    "pid": "PID_CHINON",
+    "affinity": "AFF_THUNDER"
+  },
+  {
+    "pid": "PID_GATRIE",
+    "affinity": "AFF_LIGHT"
+  },
+  {
+    "pid": "PID_ERINCIA_QUEEN",
+    "affinity": "AFF_HEAVEN"
+  },
+  {
+    "pid": "PID_GEOFFRAY",
+    "affinity": "AFF_FIRE"
+  },
+  {
+    "pid": "PID_ULYSSES",
+    "affinity": "AFF_WIND"
+  },
+  {
+    "pid": "PID_KEVIN",
+    "affinity": "AFF_WIND"
+  },
+  {
+    "pid": "PID_KILROY",
+    "affinity": "AFF_FIRE"
+  },
+  {
+    "pid": "PID_LUCHINO",
+    "affinity": "AFF_EARTH"
+  },
+  {
+    "pid": "PID_ZIHARK",
+    "affinity": "AFF_EARTH"
+  },
+  {
+    "pid": "PID_DALAHOWE",
+    "affinity": "AFF_FIRE"
+  },
+  {
+    "pid": "PID_TANIS",
+    "affinity": "AFF_EARTH"
+  },
+  {
+    "pid": "PID_MARCIA",
+    "affinity": "AFF_FIRE"
+  },
+  {
+    "pid": "PID_MAKAROV",
+    "affinity": "AFF_THUNDER"
+  },
+  {
+    "pid": "PID_TOPUCK",
+    "affinity": "AFF_FIRE"
+  },
+  {
+    "pid": "PID_MWARIM",
+    "affinity": "AFF_THUNDER"
+  },
+  {
+    "pid": "PID_SOANVALCKE",
+    "affinity": "AFF_HEAVEN"
+  },
+  {
+    "pid": "PID_ELAICE",
+    "affinity": "AFF_LIGHT"
+  },
+  {
+    "pid": "PID_CALILL",
+    "affinity": "AFF_DARK"
+  },
+  {
+    "pid": "PID_LARGO",
+    "affinity": "AFF_WIND"
+  },
+  {
+    "pid": "PID_STELLA",
+    "affinity": "AFF_WIND"
+  },
+  {
+    "pid": "PID_VOKE",
+    "affinity": "AFF_WIND"
+  },
+  {
+    "pid": "PID_SOTHE",
+    "affinity": "AFF_WIND"
+  },
+  {
+    "pid": "PID_WAYU",
+    "affinity": "AFF_FIRE"
+  },
+  {
+    "pid": "PID_ENA",
+    "affinity": "AFF_EARTH"
+  },
+  {
+    "pid": "PID_HAAR",
+    "affinity": "AFF_WIND"
+  },
+  {
+    "pid": "PID_JILL",
+    "affinity": "AFF_THUNDER"
+  },
+  {
+    "pid": "PID_TAURONEO",
+    "affinity": "AFF_THUNDER"
+  },
+  {
+    "pid": "PID_NEPENEE",
+    "affinity": "AFF_WIND"
+  },
+  {
+    "pid": "PID_CHAP",
+    "affinity": "AFF_WATER"
+  },
+  {
+    "pid": "PID_NASIR",
+    "affinity": "AFF_LIGHT"
+  },
+  {
+    "pid": "PID_GIFFCA",
+    "affinity": "AFF_DARK"
+  },
+  {
+    "pid": "PID_LETHE",
+    "affinity": "AFF_HEAVEN"
+  },
+  {
+    "pid": "PID_MORDY",
+    "affinity": "AFF_WATER"
+  },
+  {
+    "pid": "PID_LAY",
+    "affinity": "AFF_WIND"
+  },
+  {
+    "pid": "PID_TIBARN",
+    "affinity": "AFF_HEAVEN"
+  },
+  {
+    "pid": "PID_VULCI",
+    "affinity": "AFF_WATER"
+  },
+  {
+    "pid": "PID_JANAFF",
+    "affinity": "AFF_THUNDER"
+  },
+  {
+    "pid": "PID_NAESALA",
+    "affinity": "AFF_DARK"
+  },
+  {
+    "pid": "PID_RIEUSION",
+    "affinity": "AFF_FIRE"
+  }
+]
