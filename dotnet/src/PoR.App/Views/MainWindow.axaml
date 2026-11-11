@@ -111,38 +111,9 @@
                             Orientation="Horizontal"
                             Spacing="8"
                             VerticalAlignment="Center">
-                    <Button Command="{Binding ToggleLanguageCommand}"
-                            ToolTip.Tip="{loc:Tr Ui_Action_Language}"
-                            Width="96"
-                            HorizontalContentAlignment="Center">
-                        <StackPanel Orientation="Horizontal"
-                                    Spacing="6">
-                            <TextBlock Text="&#xE774;"
-                                       FontFamily="Segoe Fluent Icons"
-                                       FontSize="14"
-                                       VerticalAlignment="Center" />
-                            <TextBlock Text="{Binding LanguageButtonText}"
-                                       VerticalAlignment="Center" />
-                        </StackPanel>
-                    </Button>
-
-                    <ToggleButton IsChecked="{Binding IsDarkTheme, Mode=TwoWay}"
-                                  ToolTip.Tip="{loc:Tr Ui_Action_Theme}"
-                                  Width="96"
-                                  HorizontalContentAlignment="Center">
-                        <StackPanel Orientation="Horizontal"
-                                    Spacing="6">
-                            <TextBlock Text="{Binding ThemeIcon}"
-                                       FontFamily="Segoe Fluent Icons"
-                                       FontSize="14"
-                                       VerticalAlignment="Center" />
-                            <TextBlock Text="{Binding ThemeButtonText}"
-                                       VerticalAlignment="Center" />
-                        </StackPanel>
-                    </ToggleButton>
-
                     <Button Command="{Binding RefreshCommand}"
                             IsEnabled="{Binding IsNotBusy}"
+                            Classes="accent"
                             Width="96"
                             HorizontalContentAlignment="Center">
                         <StackPanel Orientation="Horizontal"
@@ -167,6 +138,37 @@
                                        FontSize="14"
                                        VerticalAlignment="Center" />
                             <TextBlock Text="{loc:Tr Ui_Action_Reconnect}"
+                                       VerticalAlignment="Center" />
+                        </StackPanel>
+                    </Button>
+
+                    <ToggleButton IsChecked="{Binding IsDarkTheme, Mode=TwoWay}"
+                                  ToolTip.Tip="{loc:Tr Ui_Action_Theme}"
+                                  Classes="neutralToggle"
+                                  Width="96"
+                                  HorizontalContentAlignment="Center">
+                        <StackPanel Orientation="Horizontal"
+                                    Spacing="6">
+                            <TextBlock Text="{Binding ThemeIcon}"
+                                       FontFamily="Segoe Fluent Icons"
+                                       FontSize="14"
+                                       VerticalAlignment="Center" />
+                            <TextBlock Text="{Binding ThemeButtonText}"
+                                       VerticalAlignment="Center" />
+                        </StackPanel>
+                    </ToggleButton>
+
+                    <Button Command="{Binding ToggleLanguageCommand}"
+                            ToolTip.Tip="{loc:Tr Ui_Action_Language}"
+                            Width="96"
+                            HorizontalContentAlignment="Center">
+                        <StackPanel Orientation="Horizontal"
+                                    Spacing="6">
+                            <TextBlock Text="&#xE774;"
+                                       FontFamily="Segoe Fluent Icons"
+                                       FontSize="14"
+                                       VerticalAlignment="Center" />
+                            <TextBlock Text="{Binding LanguageButtonText}"
                                        VerticalAlignment="Center" />
                         </StackPanel>
                     </Button>

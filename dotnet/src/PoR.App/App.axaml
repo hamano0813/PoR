@@ -12,18 +12,69 @@
 
         <DataTemplate DataType="{x:Type fields:NumericFieldViewModel}"
                       x:DataType="fields:NumericFieldViewModel">
-            <NumericUpDown Value="{Binding Value}"
-                           Minimum="{Binding Minimum}"
-                           Maximum="{Binding Maximum}"
-                           IsEnabled="{Binding IsEditable}"
-                           FormatString="0"
-                           Increment="1"
-                           ShowButtonSpinner="True"
-                           TextAlignment="Center"
-                           HorizontalContentAlignment="Center"
-                           Height="32"
-                           Margin="2,3,0,3"
-                           HorizontalAlignment="Stretch" />
+            <Border Background="{DynamicResource AppInputBackgroundBrush}"
+                    BorderBrush="{DynamicResource AppBorderBrush}"
+                    BorderThickness="1"
+                    CornerRadius="6"
+                    Height="32"
+                    Margin="2,3,0,3"
+                    IsEnabled="{Binding IsEditable}">
+                <Grid ColumnDefinitions="26,*,26">
+                    <RepeatButton Grid.Column="0"
+                                  Classes="spinnerButton"
+                                  Width="26"
+                                  Height="26"
+                                  MinWidth="0"
+                                  MinHeight="0"
+                                  Margin="3,0,0,0"
+                                  Padding="0"
+                                  VerticalAlignment="Center"
+                                  CornerRadius="4"
+                                  IsTabStop="False"
+                                  Command="{Binding DecrementCommand}">
+                        <Path Data="M 4,0 L 0,4 L 4,8"
+                              Stroke="{DynamicResource AppForegroundBrush}"
+                              StrokeThickness="1.2"
+                              StrokeLineCap="Round"
+                              Width="5"
+                              Height="9"
+                              HorizontalAlignment="Center"
+                              VerticalAlignment="Center" />
+                    </RepeatButton>
+                    <TextBox Grid.Column="1"
+                             Text="{Binding Value, Mode=TwoWay}"
+                             TextAlignment="Center"
+                             HorizontalContentAlignment="Center"
+                             VerticalContentAlignment="Center"
+                             Background="Transparent"
+                             BorderThickness="0"
+                             MinHeight="0"
+                             Padding="0"
+                             FontSize="12"
+                             VerticalAlignment="Stretch" />
+                    <RepeatButton Grid.Column="2"
+                                  Classes="spinnerButton"
+                                  Width="26"
+                                  Height="26"
+                                  MinWidth="0"
+                                  MinHeight="0"
+                                  Margin="0,0,3,0"
+                                  Padding="0"
+                                  VerticalAlignment="Center"
+                                  CornerRadius="4"
+                                  IsTabStop="False"
+                                  Command="{Binding IncrementCommand}">
+                        <Path Data="M 0,0 L 4,4 L 0,8"
+                              Stroke="{DynamicResource AppForegroundBrush}"
+                              StrokeThickness="1.2"
+                              StrokeLineCap="Round"
+                              Width="5"
+                              Height="9"
+                              HorizontalAlignment="Center"
+                              VerticalAlignment="Center" />
+                    </RepeatButton>
+                </Grid>
+            </Border>
         </DataTemplate>
 
         <DataTemplate DataType="{x:Type fields:EnumFieldViewModel}"
@@ -88,6 +139,8 @@
         <ResourceDictionary>
             <Color x:Key="SystemAccentColor">#0E8FA3</Color>
             <SolidColorBrush x:Key="AccentBrush" Color="#0E8FA3" />
+            <SolidColorBrush x:Key="AccentHoverBrush" Color="#14A5BA" />
+            <SolidColorBrush x:Key="AccentPressedBrush" Color="#0B7C8C" />
 
             <ResourceDictionary.ThemeDictionaries>
                 <ResourceDictionary x:Key="Light">
@@ -96,6 +149,8 @@
                     <SolidColorBrush x:Key="AppSurfaceAltBrush" Color="#F7F7F7" />
                     <SolidColorBrush x:Key="AppBorderBrush" Color="#E0E0E0" />
                     <SolidColorBrush x:Key="AppForegroundBrush" Color="#1A1A1A" />
+                    <SolidColorBrush x:Key="AppInputBackgroundBrush" Color="#FFFFFF" />
+                    <SolidColorBrush x:Key="AppSurfaceHoverBrush" Color="#E9E9E9" />
                 </ResourceDictionary>
                 <ResourceDictionary x:Key="Dark">
                     <SolidColorBrush x:Key="AppBackgroundBrush" Color="#1F1F1F" />
@@ -103,6 +158,8 @@
                     <SolidColorBrush x:Key="AppSurfaceAltBrush" Color="#252525" />
                     <SolidColorBrush x:Key="AppBorderBrush" Color="#3A3A3A" />
                     <SolidColorBrush x:Key="AppForegroundBrush" Color="#F2F2F2" />
+                    <SolidColorBrush x:Key="AppInputBackgroundBrush" Color="#333333" />
+                    <SolidColorBrush x:Key="AppSurfaceHoverBrush" Color="#3A3A3A" />
                 </ResourceDictionary>
             </ResourceDictionary.ThemeDictionaries>
         </ResourceDictionary>
@@ -111,66 +168,6 @@
     <Application.Styles>
         <sty:FluentAvaloniaTheme PreferSystemTheme="True"
                                  CustomAccentColor="#0E8FA3" />
-
-        <Style Selector="ButtonSpinner">
-            <Setter Property="Template">
-                <ControlTemplate>
-                    <DataValidationErrors>
-                        <Grid>
-                            <ContentPresenter Name="PART_ContentPresenter"
-                                              Content="{TemplateBinding Content}"
-                                              ContentTemplate="{TemplateBinding ContentTemplate}"
-                                              HorizontalContentAlignment="Stretch"
-                                              VerticalContentAlignment="Stretch" />
-                            <RepeatButton Name="PART_DecreaseButton"
-                                          Width="18"
-                                          Height="26"
-                                          Margin="2,0,0,0"
-                                          Padding="0"
-                                          HorizontalAlignment="Left"
-                                          VerticalAlignment="Center"
-                                          Background="Transparent"
-                                          BorderThickness="0"
-                                          CornerRadius="4"
-                                          IsTabStop="False">
-                                <Path Data="M 4,0 L 0,4 L 4,8"
-                                      Stroke="{DynamicResource AppForegroundBrush}"
-                                      StrokeThickness="1.2"
-                                      StrokeLineCap="Round"
-                                      Width="5"
-                                      Height="9"
-                                      HorizontalAlignment="Center"
-                                      VerticalAlignment="Center" />
-                            </RepeatButton>
-                            <RepeatButton Name="PART_IncreaseButton"
-                                          Width="18"
-                                          Height="26"
-                                          Margin="0,0,2,0"
-                                          Padding="0"
-                                          HorizontalAlignment="Right"
-                                          VerticalAlignment="Center"
-                                          Background="Transparent"
-                                          BorderThickness="0"
-                                          CornerRadius="4"
-                                          IsTabStop="False">
-                                <Path Data="M 0,0 L 4,4 L 0,8"
-                                      Stroke="{DynamicResource AppForegroundBrush}"
-                                      StrokeThickness="1.2"
-                                      StrokeLineCap="Round"
-                                      Width="5"
-                                      Height="9"
-                                      HorizontalAlignment="Center"
-                                      VerticalAlignment="Center" />
-                            </RepeatButton>
-                        </Grid>
-                    </DataValidationErrors>
-                </ControlTemplate>
-            </Setter>
-        </Style>
-
-        <Style Selector="ButtonSpinner TextBox#PART_TextBox">
-            <Setter Property="HorizontalContentAlignment" Value="Center" />
-        </Style>
 
         <Style Selector="Button">
             <Setter Property="CornerRadius" Value="6" />
@@ -181,6 +178,65 @@
         <Style Selector="ToggleButton">
             <Setter Property="CornerRadius" Value="6" />
             <Setter Property="MinHeight" Value="32" />
+        </Style>
+
+        <Style Selector="Button.accent">
+            <Setter Property="Background" Value="{DynamicResource AccentBrush}" />
+            <Setter Property="Foreground" Value="White" />
+            <Setter Property="BorderThickness" Value="0" />
+        </Style>
+
+        <Style Selector="Button.accent /template/ ContentPresenter">
+            <Setter Property="Background" Value="{DynamicResource AccentBrush}" />
+        </Style>
+
+        <Style Selector="Button.accent:pointerover /template/ ContentPresenter">
+            <Setter Property="Background" Value="{DynamicResource AccentHoverBrush}" />
+        </Style>
+
+        <Style Selector="Button.accent:pressed /template/ ContentPresenter">
+            <Setter Property="Background" Value="{DynamicResource AccentPressedBrush}" />
+        </Style>
+
+        <Style Selector="Button.accent TextBlock">
+            <Setter Property="Foreground" Value="White" />
+        </Style>
+
+        <Style Selector="ToggleButton.neutralToggle:checked">
+            <Setter Property="Background" Value="{DynamicResource AppSurfaceAltBrush}" />
+            <Setter Property="Foreground" Value="{DynamicResource AppForegroundBrush}" />
+        </Style>
+
+        <Style Selector="ToggleButton.neutralToggle:checked /template/ ContentPresenter">
+            <Setter Property="Background" Value="{DynamicResource AppSurfaceAltBrush}" />
+            <Setter Property="Foreground" Value="{DynamicResource AppForegroundBrush}" />
+        </Style>
+
+        <Style Selector="ToggleButton.neutralToggle:checked:pointerover /template/ ContentPresenter">
+            <Setter Property="Background" Value="{DynamicResource AppSurfaceBrush}" />
+        </Style>
+
+        <Style Selector="ToggleButton.neutralToggle:checked:pressed /template/ ContentPresenter">
+            <Setter Property="Background" Value="{DynamicResource AppBorderBrush}" />
+        </Style>
+
+        <Style Selector="ToggleButton.neutralToggle TextBlock">
+            <Setter Property="Foreground" Value="{DynamicResource AppForegroundBrush}" />
+        </Style>
+
+        <Style Selector="RepeatButton.spinnerButton">
+            <Setter Property="Background" Value="{DynamicResource AppSurfaceAltBrush}" />
+            <Setter Property="BorderBrush" Value="{DynamicResource AppBorderBrush}" />
+            <Setter Property="BorderThickness" Value="1" />
+        </Style>
+
+        <Style Selector="RepeatButton.spinnerButton:pointerover">
+            <Setter Property="Background" Value="{DynamicResource AppSurfaceHoverBrush}" />
+            <Setter Property="BorderBrush" Value="{DynamicResource AccentBrush}" />
+        </Style>
+
+        <Style Selector="RepeatButton.spinnerButton:pressed">
+            <Setter Property="Background" Value="{DynamicResource AccentBrush}" />
         </Style>
 
         <Style Selector="TextBox">

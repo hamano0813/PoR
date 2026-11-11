@@ -30,6 +30,7 @@
   "Field_ally": "同行",
   "Field_isLeader": "部隊長",
   "Field_action": "行動",
+  "Field_actionStatus": "行動状態",
   "Field_rescuing": "救出",
   "Field_rescued": "被救",
   "Field_slotIndex": "番号",

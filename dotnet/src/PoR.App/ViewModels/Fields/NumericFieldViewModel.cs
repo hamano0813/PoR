@@ -1,4 +1,5 @@
 using CommunityToolkit.Mvvm.ComponentModel;
+using CommunityToolkit.Mvvm.Input;
 using PoR.Core.Values;
 using PoR.Game;
 
@@ -37,11 +38,29 @@ public sealed partial class NumericFieldViewModel : FieldViewModelBase
         SetLoading(false);
     }
 
+    [RelayCommand]
+    private void Increment()
+        => Value = Math.Min(Value + 1, Maximum);
+
+    [RelayCommand]
+    private void Decrement()
+        => Value = Math.Max(Value - 1, Minimum);
+
     partial void OnValueChanged(decimal value)
     {
-        if (!Loading)
+        if (Loading)
         {
-            _ = WriteAsync((long)value);
+            return;
         }
+
+        var clamped = Math.Clamp(value, Minimum, Maximum);
+        if (clamped != value)
+        {
+            SetLoading(true);
+            Value = clamped;
+            SetLoading(false);
+        }
+
+        _ = WriteAsync((long)clamped);
     }
 }

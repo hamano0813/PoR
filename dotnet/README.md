@@ -13,10 +13,10 @@ This branch is a parallel UI version of the completed editor:
   card on the Other tab.
 - Keeps the fixed 960×800 window (no resize/maximize) and the same compact
   280px roster, form spacing and bottom action bar as the `avalonia` branch.
-- Replaces the FluentAvalonia `ButtonSpinner` template with a compact
-  left/right layout: a small decrease chevron on the left, the centered value
-  in the middle, and an increase chevron on the right. Standard numeric input,
-  validation and wheel behavior are preserved.
+- Uses a custom numeric editor: two near-square Fluent-style buttons (decrease
+  on the left, increase on the right) around a centered text field. Increment
+  and decrement are ViewModel commands, with range clamping on the shared
+  `NumericFieldViewModel`.
 - Shares all ViewModels, localization, memory access and page behavior with the
   `avalonia` branch.
 
@@ -52,7 +52,8 @@ Current UI scope:
 - left roster with avatars/names/classes and selection
 - compact status form modeled on the original Qt layout: identity/faction/army,
   flags, level/EXP/HP, status effects, coordinates, MTYPE/SEQ, battle/victory
-- numeric fields use a compact FluentAvalonia spinner; enum fields show
+- numeric fields use a custom compact editor: near-square Fluent-style
+  decrease/increase buttons around a centered value; enum fields show
   portraits/items where available
 - tri-state action checkbox: unchecked = not acted, indeterminate = 10 ms
   "lock not acted" polling, checked = acted
@@ -62,7 +63,10 @@ Current UI scope:
 - support tab: current affinity, seven support partners, support points and
   C/B/A progress bars driven by the original thresholds
 - other tab: global money/bonus EXP plus the original modification notes
-- fixed-width language/theme/refresh/reconnect buttons in the bottom status bar
+- bottom status bar order: refresh (accent), reconnect, theme (neutral),
+  language; all four buttons have fixed 96px width
+- action status has its own label; the rescue/rescued checkboxes share a compact
+  horizontal group
 - `tools/process_avatars.py` regenerates the de-fringed PNG portraits used by
   the roster and the character drop-down (requires Pillow)
 

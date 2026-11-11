@@ -17,7 +17,7 @@
             VerticalAlignment="Stretch">
         <ScrollViewer VerticalScrollBarVisibility="Auto"
                       HorizontalScrollBarVisibility="Disabled">
-            <Grid ColumnDefinitions="72,124,72,124,72,124"
+            <Grid ColumnDefinitions="80,124,80,124,80,124"
                   RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto">
 
                 <Border Grid.Row="0" Grid.Column="0" Classes="fieldLabel"
@@ -56,8 +56,15 @@
                 </Border>
                 <ContentControl Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2"
                                 Content="{Binding Ally}" />
-                <ContentControl Grid.Row="4" Grid.Column="3" Content="{Binding Rescuing}" />
-                <ContentControl Grid.Row="4" Grid.Column="4" Content="{Binding Rescued}" />
+                <StackPanel Grid.Row="4"
+                            Grid.Column="3"
+                            Grid.ColumnSpan="3"
+                            Orientation="Horizontal"
+                            Spacing="6"
+                            HorizontalAlignment="Left">
+                    <ContentControl Content="{Binding Rescuing}" />
+                    <ContentControl Content="{Binding Rescued}" />
+                </StackPanel>
 
                 <Border Grid.Row="5" Grid.Column="0" Classes="fieldLabel">
                     <TextBlock Text="{loc:Tr Field_mtype}" VerticalAlignment="Center" />
@@ -117,8 +124,10 @@
                     <TextBlock Text="{loc:Tr Field_silence}" VerticalAlignment="Center" />
                 </Border>
                 <ContentControl Grid.Row="11" Grid.Column="3" Content="{Binding Silence}" />
-                <ContentControl Grid.Row="11" Grid.Column="4" Grid.ColumnSpan="2"
-                                Content="{Binding Action}" />
+                <Border Grid.Row="11" Grid.Column="4" Classes="fieldLabel">
+                    <TextBlock Text="{loc:Tr Field_actionStatus}" VerticalAlignment="Center" />
+                </Border>
+                <ContentControl Grid.Row="11" Grid.Column="5" Content="{Binding Action}" />
 
                 <Border Grid.Row="12" Grid.Column="0" Classes="fieldLabel">
                     <TextBlock Text="{loc:Tr Field_hp}" VerticalAlignment="Center" />
