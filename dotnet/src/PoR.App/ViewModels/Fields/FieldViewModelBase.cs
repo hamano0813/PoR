@@ -38,6 +38,12 @@ public abstract partial class FieldViewModelBase : ObservableObject
 
     protected void SetLoading(bool value) => _loading = value;
 
+    protected void SetError(string? message)
+    {
+        ErrorMessage = message;
+        OnPropertyChanged(nameof(HasError));
+    }
+
     protected async Task WriteAsync(long value)
     {
         if (_loading)
@@ -48,13 +54,11 @@ public abstract partial class FieldViewModelBase : ObservableObject
         try
         {
             await Session.WriteFieldAsync(Definition, SlotIndex, value);
-            ErrorMessage = null;
-            OnPropertyChanged(nameof(HasError));
+            SetError(null);
         }
         catch (Exception exception)
         {
-            ErrorMessage = exception.Message;
-            OnPropertyChanged(nameof(HasError));
+            SetError(exception.Message);
         }
     }
 }

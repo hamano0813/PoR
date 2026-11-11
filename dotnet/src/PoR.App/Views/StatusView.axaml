@@ -2,50 +2,52 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:vm="using:PoR.App.ViewModels"
              xmlns:fields="using:PoR.App.ViewModels.Fields"
+             xmlns:controls="using:PoR.App.Controls"
+             xmlns:loc="using:PoR.App.Localization"
              x:Class="PoR.App.Views.StatusView"
              x:DataType="vm:StatusTabViewModel">
 
     <UserControl.DataTemplates>
         <DataTemplate DataType="{x:Type fields:NumericFieldViewModel}"
                       x:DataType="fields:NumericFieldViewModel">
-            <Grid ColumnDefinitions="100,*" Margin="0,4,18,4">
-                <TextBlock Text="{Binding Label}"
-                           VerticalAlignment="Center"
-                           TextTrimming="CharacterEllipsis" />
-                <NumericUpDown Grid.Column="1"
-                               Value="{Binding Value}"
-                               Minimum="{Binding Minimum}"
-                               Maximum="{Binding Maximum}"
-                               IsEnabled="{Binding IsEditable}"
-                               FormatString="0"
-                               Increment="1"
-                               ShowButtonSpinner="False"
-                               HorizontalAlignment="Stretch"
-                               MinHeight="30" />
-            </Grid>
+            <NumericUpDown Value="{Binding Value}"
+                           Minimum="{Binding Minimum}"
+                           Maximum="{Binding Maximum}"
+                           IsEnabled="{Binding IsEditable}"
+                           FormatString="0"
+                           Increment="1"
+                           ShowButtonSpinner="True"
+                           Width="110"
+                           MinHeight="26"
+                           Margin="0,2"
+                           HorizontalAlignment="Left" />
         </DataTemplate>
 
         <DataTemplate DataType="{x:Type fields:EnumFieldViewModel}"
                       x:DataType="fields:EnumFieldViewModel">
-            <Grid ColumnDefinitions="100,*" Margin="0,4,18,4">
-                <TextBlock Text="{Binding Label}"
-                           VerticalAlignment="Center"
-                           TextTrimming="CharacterEllipsis" />
-                <ComboBox Grid.Column="1"
-                          ItemsSource="{Binding Items}"
-                          SelectedItem="{Binding SelectedItem}"
-                          IsEnabled="{Binding IsEditable}"
-                          MaxDropDownHeight="320"
-                          HorizontalAlignment="Stretch"
-                          MinHeight="30">
-                    <ComboBox.ItemTemplate>
-                        <DataTemplate x:DataType="fields:EnumItemViewModel">
-                            <TextBlock Text="{Binding DisplayName}"
+            <ComboBox ItemsSource="{Binding Items}"
+                      SelectedItem="{Binding SelectedItem}"
+                      IsEnabled="{Binding IsEditable}"
+                      Classes="compact"
+                      MaxDropDownHeight="320"
+                      Margin="0,2"
+                      HorizontalAlignment="Stretch">
+                <ComboBox.ItemTemplate>
+                    <DataTemplate x:DataType="fields:EnumItemViewModel">
+                        <Grid ColumnDefinitions="Auto,*">
+                            <Image Source="{Binding Icon}"
+                                   Width="32"
+                                   Height="32"
+                                   Margin="0,0,6,0"
+                                   IsVisible="{Binding HasIcon}" />
+                            <TextBlock Grid.Column="1"
+                                       Text="{Binding DisplayName}"
+                                       VerticalAlignment="Center"
                                        TextTrimming="CharacterEllipsis" />
-                        </DataTemplate>
-                    </ComboBox.ItemTemplate>
-                </ComboBox>
-            </Grid>
+                        </Grid>
+                    </DataTemplate>
+                </ComboBox.ItemTemplate>
+            </ComboBox>
         </DataTemplate>
 
         <DataTemplate DataType="{x:Type fields:BoolFieldViewModel}"
@@ -53,41 +55,155 @@
             <CheckBox Content="{Binding Label}"
                       IsChecked="{Binding IsChecked}"
                       IsEnabled="{Binding IsEditable}"
-                      Margin="0,4,18,4" />
+                      MinHeight="26"
+                      Margin="0,2" />
         </DataTemplate>
 
-        <DataTemplate DataType="{x:Type fields:ChoiceFieldViewModel}"
-                      x:DataType="fields:ChoiceFieldViewModel">
-            <Grid ColumnDefinitions="100,*" Margin="0,4,18,4">
-                <TextBlock Text="{Binding Label}"
-                           VerticalAlignment="Center"
-                           TextTrimming="CharacterEllipsis" />
-                <ComboBox Grid.Column="1"
-                          ItemsSource="{Binding Items}"
-                          SelectedItem="{Binding SelectedItem}"
-                          IsEnabled="{Binding IsEditable}"
-                          HorizontalAlignment="Stretch"
-                          MinHeight="30">
-                    <ComboBox.ItemTemplate>
-                        <DataTemplate x:DataType="fields:ChoiceItem">
-                            <TextBlock Text="{Binding Label}" />
-                        </DataTemplate>
-                    </ComboBox.ItemTemplate>
-                </ComboBox>
-            </Grid>
+        <DataTemplate DataType="{x:Type fields:TriStateLockFieldViewModel}"
+                      x:DataType="fields:TriStateLockFieldViewModel">
+            <controls:TriStateLockCheckBox IsThreeState="True"
+                                           IsChecked="{Binding StateValue, Mode=TwoWay}"
+                                           Content="{Binding DisplayText}"
+                                           IsEnabled="{Binding IsEditable}"
+                                           MinHeight="26"
+                                           Margin="0,2" />
         </DataTemplate>
     </UserControl.DataTemplates>
 
-    <Border Classes="card" Padding="12" Margin="4">
+    <Border Classes="card"
+            Padding="10"
+            Margin="4"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top">
         <ScrollViewer VerticalScrollBarVisibility="Auto"
                       HorizontalScrollBarVisibility="Disabled">
-            <ItemsControl ItemsSource="{Binding Fields}">
-                <ItemsControl.ItemsPanel>
-                    <ItemsPanelTemplate>
-                        <UniformGrid Columns="2" />
-                    </ItemsPanelTemplate>
-                </ItemsControl.ItemsPanel>
-            </ItemsControl>
+            <Grid ColumnDefinitions="66,110,66,110,66,110"
+                  RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto">
+
+                <Border Grid.Row="0" Grid.Column="0" Classes="fieldLabel">
+                    <TextBlock Text="{loc:Tr Field_person}" VerticalAlignment="Center" />
+                </Border>
+                <ContentControl Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="5"
+                                Content="{Binding Person}" />
+
+                <Border Grid.Row="1" Grid.Column="0" Classes="fieldLabel">
+                    <TextBlock Text="{loc:Tr Field_class}" VerticalAlignment="Center" />
+                </Border>
+                <ContentControl Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="5"
+                                Content="{Binding Class}" />
+
+                <Border Grid.Row="2" Grid.Column="0" Classes="fieldLabel">
+                    <TextBlock Text="{loc:Tr Field_model}" VerticalAlignment="Center" />
+                </Border>
+                <ContentControl Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="5"
+                                Content="{Binding Model}" />
+
+                <Border Grid.Row="3" Grid.Column="0" Classes="fieldLabel">
+                    <TextBlock Text="{loc:Tr Field_faction}" VerticalAlignment="Center" />
+                </Border>
+                <ContentControl Grid.Row="3" Grid.Column="1" Content="{Binding Faction}" />
+                <Border Grid.Row="3" Grid.Column="2" Classes="fieldLabel">
+                    <TextBlock Text="{loc:Tr Field_army}" VerticalAlignment="Center" />
+                </Border>
+                <ContentControl Grid.Row="3" Grid.Column="3" Grid.ColumnSpan="2"
+                                Content="{Binding Army}" />
+                <ContentControl Grid.Row="3" Grid.Column="5" Content="{Binding IsLeader}" />
+
+                <Border Grid.Row="4" Grid.Column="0" Classes="fieldLabel">
+                    <TextBlock Text="{loc:Tr Field_ally}" VerticalAlignment="Center" />
+                </Border>
+                <ContentControl Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2"
+                                Content="{Binding Ally}" />
+                <ContentControl Grid.Row="4" Grid.Column="3" Content="{Binding Rescuing}" />
+                <ContentControl Grid.Row="4" Grid.Column="4" Content="{Binding Rescued}" />
+
+                <Border Grid.Row="5" Grid.Column="0" Classes="fieldLabel">
+                    <TextBlock Text="{loc:Tr Field_mtype}" VerticalAlignment="Center" />
+                </Border>
+                <ContentControl Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="5"
+                                Content="{Binding MType}" />
+
+                <Border Grid.Row="6" Grid.Column="0" Classes="fieldLabel">
+                    <TextBlock Text="{loc:Tr Field_seq1}" VerticalAlignment="Center" />
+                </Border>
+                <ContentControl Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="5"
+                                Content="{Binding Seq1}" />
+
+                <Border Grid.Row="7" Grid.Column="0" Classes="fieldLabel">
+                    <TextBlock Text="{loc:Tr Field_seq2}" VerticalAlignment="Center" />
+                </Border>
+                <ContentControl Grid.Row="7" Grid.Column="1" Grid.ColumnSpan="5"
+                                Content="{Binding Seq2}" />
+
+                <Border Grid.Row="8" Grid.Column="0" Classes="fieldLabel">
+                    <TextBlock Text="{loc:Tr Field_seq3}" VerticalAlignment="Center" />
+                </Border>
+                <ContentControl Grid.Row="8" Grid.Column="1" Grid.ColumnSpan="5"
+                                Content="{Binding Seq3}" />
+
+                <Border Grid.Row="9" Grid.Column="0" Classes="fieldLabel">
+                    <TextBlock Text="{loc:Tr Field_slotIndex}" VerticalAlignment="Center" />
+                </Border>
+                <ContentControl Grid.Row="9" Grid.Column="1" Content="{Binding SlotIndex}" />
+                <Border Grid.Row="9" Grid.Column="2" Classes="fieldLabel">
+                    <TextBlock Text="{loc:Tr Field_poison}" VerticalAlignment="Center" />
+                </Border>
+                <ContentControl Grid.Row="9" Grid.Column="3" Content="{Binding Poison}" />
+                <Border Grid.Row="9" Grid.Column="4" Classes="fieldLabel">
+                    <TextBlock Text="{loc:Tr Field_coordX}" VerticalAlignment="Center" />
+                </Border>
+                <ContentControl Grid.Row="9" Grid.Column="5" Content="{Binding CoordX}" />
+
+                <Border Grid.Row="10" Grid.Column="0" Classes="fieldLabel">
+                    <TextBlock Text="{loc:Tr Field_level}" VerticalAlignment="Center" />
+                </Border>
+                <ContentControl Grid.Row="10" Grid.Column="1" Content="{Binding Level}" />
+                <Border Grid.Row="10" Grid.Column="2" Classes="fieldLabel">
+                    <TextBlock Text="{loc:Tr Field_sleep}" VerticalAlignment="Center" />
+                </Border>
+                <ContentControl Grid.Row="10" Grid.Column="3" Content="{Binding Sleep}" />
+                <Border Grid.Row="10" Grid.Column="4" Classes="fieldLabel">
+                    <TextBlock Text="{loc:Tr Field_coordY}" VerticalAlignment="Center" />
+                </Border>
+                <ContentControl Grid.Row="10" Grid.Column="5" Content="{Binding CoordY}" />
+
+                <Border Grid.Row="11" Grid.Column="0" Classes="fieldLabel">
+                    <TextBlock Text="{loc:Tr Field_exp}" VerticalAlignment="Center" />
+                </Border>
+                <ContentControl Grid.Row="11" Grid.Column="1" Content="{Binding Exp}" />
+                <Border Grid.Row="11" Grid.Column="2" Classes="fieldLabel">
+                    <TextBlock Text="{loc:Tr Field_silence}" VerticalAlignment="Center" />
+                </Border>
+                <ContentControl Grid.Row="11" Grid.Column="3" Content="{Binding Silence}" />
+                <ContentControl Grid.Row="11" Grid.Column="4" Grid.ColumnSpan="2"
+                                Content="{Binding Action}" />
+
+                <Border Grid.Row="12" Grid.Column="0" Classes="fieldLabel">
+                    <TextBlock Text="{loc:Tr Field_hp}" VerticalAlignment="Center" />
+                </Border>
+                <ContentControl Grid.Row="12" Grid.Column="1" Content="{Binding Hp}" />
+                <Border Grid.Row="12" Grid.Column="2" Classes="fieldLabel">
+                    <TextBlock Text="{loc:Tr Field_berserk}" VerticalAlignment="Center" />
+                </Border>
+                <ContentControl Grid.Row="12" Grid.Column="3" Content="{Binding Berserk}" />
+                <Border Grid.Row="12" Grid.Column="4" Classes="fieldLabel">
+                    <TextBlock Text="{loc:Tr Field_battle}" VerticalAlignment="Center" />
+                </Border>
+                <ContentControl Grid.Row="12" Grid.Column="5" Content="{Binding Battle}" />
+
+                <Border Grid.Row="13" Grid.Column="0" Classes="fieldLabel">
+                    <TextBlock Text="{loc:Tr Field_transform}" VerticalAlignment="Center" />
+                </Border>
+                <ContentControl Grid.Row="13" Grid.Column="1" Content="{Binding Transform}" />
+                <Border Grid.Row="13" Grid.Column="2" Classes="fieldLabel">
+                    <TextBlock Text="{loc:Tr Field_paralysis}" VerticalAlignment="Center" />
+                </Border>
+                <ContentControl Grid.Row="13" Grid.Column="3" Content="{Binding Paralysis}" />
+                <Border Grid.Row="13" Grid.Column="4" Classes="fieldLabel">
+                    <TextBlock Text="{loc:Tr Field_victory}" VerticalAlignment="Center" />
+                </Border>
+                <ContentControl Grid.Row="13" Grid.Column="5" Content="{Binding Victory}" />
+            </Grid>
         </ScrollViewer>
     </Border>
 </UserControl>

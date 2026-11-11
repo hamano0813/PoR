@@ -1,3 +1,4 @@
+using System.Collections.Concurrent;
 using PoR.Core.Game;
 using PoR.Core.Memory;
 using PoR.Core.Values;
@@ -15,6 +16,7 @@ public sealed class GameSession : IAsyncDisposable
     private readonly DolphinMemoryReader _reader;
     private readonly MappingService _mappingService;
     private readonly SemaphoreSlim _gate = new(1, 1);
+    private readonly ConcurrentDictionary<uint, LockEntry> _locks = new();
 
     public GameSession(IDolphinMemory memory, GameDataCatalog? catalog = null)
     {
@@ -31,6 +33,8 @@ public sealed class GameSession : IAsyncDisposable
     public DolphinStatus Status => _memory.Status;
 
     public string? StatusMessage => _memory.StatusMessage;
+
+    public event EventHandler<LockFailedEventArgs>? LockFailed;
 
     public bool Hook() => _memory.Hook();
 
@@ -91,6 +95,113 @@ public sealed class GameSession : IAsyncDisposable
         return ValueCodec.Read(buffer, field.Length, field.Bit);
     }
 
+    public bool IsLocked(FieldDefinition field, int? slotIndex)
+        => _locks.ContainsKey(ResolveAddress(field, slotIndex));
+
+    public async Task StartLockAsync(
+        FieldDefinition field,
+        int? slotIndex,
+        long value,
+        TimeSpan? interval = null,
+        CancellationToken cancellationToken = default)
+    {
+        var address = ResolveAddress(field, slotIndex);
+
+        if (_locks.TryRemove(address, out var previous))
+        {
+            previous.Cancellation.Cancel();
+            await previous.Loop.ConfigureAwait(false);
+            previous.Cancellation.Dispose();
+        }
+
+        var cancellation = CancellationTokenSource.CreateLinkedTokenSource(cancellationToken);
+        var entry = new LockEntry(cancellation);
+        _locks[address] = entry;
+
+        entry.Loop = Task.Run(
+            async () =>
+            {
+                using var timer = new PeriodicTimer(
+                    interval ?? TimeSpan.FromMilliseconds(10));
+                try
+                {
+                    while (await timer.WaitForNextTickAsync(cancellation.Token)
+                               .ConfigureAwait(false))
+                    {
+                        await WriteFieldAsync(
+                                field,
+                                slotIndex,
+                                value,
+                                cancellation.Token)
+                            .ConfigureAwait(false);
+                    }
+                }
+                catch (OperationCanceledException)
+                {
+                    // Normal stop.
+                }
+                catch (Exception exception)
+                {
+                    _locks.TryRemove(address, out _);
+                    LockFailed?.Invoke(this, new LockFailedEventArgs(address, exception));
+                }
+            },
+            cancellation.Token);
+
+        await Task.CompletedTask;
+    }
+
+    public async Task StopLockAsync(
+        FieldDefinition field,
+        int? slotIndex,
+        long? finalValue = null,
+        CancellationToken cancellationToken = default)
+    {
+        var address = ResolveAddress(field, slotIndex);
+
+        if (_locks.TryRemove(address, out var entry))
+        {
+            entry.Cancellation.Cancel();
+            try
+            {
+                await entry.Loop.ConfigureAwait(false);
+            }
+            catch (OperationCanceledException)
+            {
+                // Normal stop.
+            }
+
+            entry.Cancellation.Dispose();
+        }
+
+        if (finalValue is { } value)
+        {
+            await WriteFieldAsync(field, slotIndex, value, cancellationToken)
+                .ConfigureAwait(false);
+        }
+    }
+
+    public async Task StopAllLocksAsync()
+    {
+        foreach (var address in _locks.Keys.ToArray())
+        {
+            if (_locks.TryRemove(address, out var entry))
+            {
+                entry.Cancellation.Cancel();
+                try
+                {
+                    await entry.Loop.ConfigureAwait(false);
+                }
+                catch (OperationCanceledException)
+                {
+                    // Normal stop.
+                }
+
+                entry.Cancellation.Dispose();
+            }
+        }
+    }
+
     public uint ResolveAddress(FieldDefinition field, int? slotIndex)
     {
         if (field.Scope == FieldScope.Global)
@@ -118,6 +229,7 @@ public sealed class GameSession : IAsyncDisposable
 
     public async ValueTask DisposeAsync()
     {
+        await StopAllLocksAsync().ConfigureAwait(false);
         await _gate.WaitAsync().ConfigureAwait(false);
         try
         {
@@ -127,6 +239,18 @@ public sealed class GameSession : IAsyncDisposable
         {
             _gate.Dispose();
         }
+    }
+
+    private sealed class LockEntry
+    {
+        public LockEntry(CancellationTokenSource cancellation)
+        {
+            Cancellation = cancellation;
+        }
+
+        public CancellationTokenSource Cancellation { get; }
+
+        public Task Loop { get; set; } = Task.CompletedTask;
     }
 
     private GameSnapshot BuildSnapshot()

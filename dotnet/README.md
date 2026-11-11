@@ -32,10 +32,15 @@ extension and Avalonia extension are recommended (see the refactor plan).
 Current UI scope:
 
 - left roster with avatars/names/classes and selection
-- status tab: identity/faction/army/ally, flags, level/EXP/HP, status effects,
-  coordinates, MTYPE/SEQ, battle/victory
-- language switch (game terms zh/jp) and light/dark toggle
-- refresh/reconnect and connection/error status bar
+- compact status form modeled on the original Qt layout: identity/faction/army,
+  flags, level/EXP/HP, status effects, coordinates, MTYPE/SEQ, battle/victory
+- numeric fields use compact spin boxes; enum fields show portraits/items where
+  available
+- tri-state action checkbox: unchecked = not acted, indeterminate = 10 ms
+  "lock not acted" polling, checked = acted
+- fixed-width language/theme/refresh/reconnect buttons in the bottom status bar
+- `tools/process_avatars.py` regenerates the de-fringed PNG portraits used by
+  the roster and the character drop-down (requires Pillow)
 
 Ability/Skill/Item/Support/Other tabs are placeholders for P4.
 

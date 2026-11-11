@@ -11,7 +11,7 @@ public sealed class AssetService
     private readonly Dictionary<string, Bitmap?> _cache = new(StringComparer.Ordinal);
 
     public Bitmap? GetPidIcon(string? key)
-        => GetIcon("PID", key, ".gif");
+        => GetIcon("PID", key, ".png") ?? GetIcon("PID", key, ".gif");
 
     public Bitmap? GetItemIcon(string? key)
         => GetIcon("IID", key, ".gif");

@@ -1,3 +1,4 @@
+using Avalonia.Media.Imaging;
 using CommunityToolkit.Mvvm.ComponentModel;
 using PoR.App.Services;
 using PoR.Core.Game;
@@ -18,6 +19,7 @@ public sealed partial class EnumFieldViewModel : FieldViewModelBase
         string label,
         IReadOnlyList<MappingItem> mapping,
         LocalizationService localization,
+        AssetService assets,
         long value)
         : base(session, definition, slotIndex, label)
     {
@@ -25,7 +27,8 @@ public sealed partial class EnumFieldViewModel : FieldViewModelBase
             .Select(item => new EnumItemViewModel(
                 item.Value,
                 item.Key,
-                localization.Term(item.TermKey)))
+                localization.Term(item.TermKey),
+                GetIcon(definition.EnumId, item.Key, assets)))
             .ToList();
 
         SetLoading(true);
@@ -49,4 +52,13 @@ public sealed partial class EnumFieldViewModel : FieldViewModelBase
             _ = WriteAsync(value.Value);
         }
     }
+
+    private static Bitmap? GetIcon(string? enumId, string key, AssetService assets)
+        => enumId switch
+        {
+            "pid" => assets.GetPidIcon(key),
+            "iid" => assets.GetItemIcon(key),
+            "sid" => assets.GetSkillIcon(key),
+            _ => null,
+        };
 }

@@ -1,4 +1,3 @@
-using System.Collections.ObjectModel;
 using PoR.App.Services;
 using PoR.App.ViewModels.Fields;
 using PoR.Core.Game;
@@ -9,97 +8,154 @@ namespace PoR.App.ViewModels;
 
 public sealed class StatusTabViewModel
 {
-    private static readonly string[] StatusFieldIds =
-    [
-        "person",
-        "class",
-        "model",
-        "faction",
-        "army",
-        "ally",
-        "isLeader",
-        "action",
-        "rescuing",
-        "rescued",
-        "slotIndex",
-        "level",
-        "exp",
-        "hp",
-        "transform",
-        "paralysis",
-        "silence",
-        "sleep",
-        "berserk",
-        "poison",
-        "coordX",
-        "coordY",
-        "mtype",
-        "seq1",
-        "seq2",
-        "seq3",
-        "battle",
-        "victory",
-    ];
+    private readonly GameSnapshot _snapshot;
+    private readonly SlotInfo _slot;
+    private readonly GameSession _session;
+    private readonly LocalizationService _localization;
+    private readonly AssetService _assets;
 
     public StatusTabViewModel(
         GameSnapshot snapshot,
         SlotInfo slot,
         GameSession session,
-        LocalizationService localization)
+        LocalizationService localization,
+        AssetService assets)
     {
-        Fields = [];
+        _snapshot = snapshot;
+        _slot = slot;
+        _session = session;
+        _localization = localization;
+        _assets = assets;
 
-        foreach (var id in StatusFieldIds)
-        {
-            var field = session.Catalog.GetField(id);
-            var label = localization.Ui($"Field_{id}");
-            if (string.IsNullOrWhiteSpace(label) || label == $"Field_{id}")
-            {
-                label = field.LegacyKey;
-            }
-            var value = snapshot.Slots.ReadField(field, slot.Index);
-            IReadOnlyList<MappingItem> mapping = field.EnumId is null
-                ? Array.Empty<MappingItem>()
-                : snapshot.Mappings.GetValueOrDefault(field.EnumId)
-                  ?? Array.Empty<MappingItem>();
-
-            FieldViewModelBase editor = field.Kind switch
-            {
-                FieldKind.Enum => new EnumFieldViewModel(
-                    session,
-                    field,
-                    slot.Index,
-                    label,
-                    mapping,
-                    localization,
-                    value),
-                FieldKind.Bool => new BoolFieldViewModel(
-                    session,
-                    field,
-                    slot.Index,
-                    label,
-                    value),
-                FieldKind.TriState => new ChoiceFieldViewModel(
-                    session,
-                    field,
-                    slot.Index,
-                    label,
-                    [
-                        new ChoiceItem(0, localization.Ui("Choice_NotActed")),
-                        new ChoiceItem(1, localization.Ui("Choice_Acted")),
-                    ],
-                    value),
-                _ => new NumericFieldViewModel(
-                    session,
-                    field,
-                    slot.Index,
-                    label,
-                    value),
-            };
-
-            Fields.Add(editor);
-        }
+        Person = Enum("person");
+        Class = Enum("class");
+        Model = Enum("model");
+        Faction = Enum("faction");
+        Army = Enum("army");
+        Ally = Enum("ally");
+        IsLeader = Bool("isLeader");
+        Action = new TriStateLockFieldViewModel(
+            session,
+            Field("action"),
+            slot.Index,
+            localization,
+            Value("action"));
+        Rescuing = Bool("rescuing");
+        Rescued = Bool("rescued");
+        SlotIndex = Num("slotIndex");
+        Level = Num("level");
+        Exp = Num("exp");
+        Hp = Num("hp");
+        Transform = Num("transform");
+        Paralysis = Num("paralysis");
+        Silence = Num("silence");
+        Sleep = Num("sleep");
+        Berserk = Num("berserk");
+        Poison = Num("poison");
+        CoordX = Num("coordX");
+        CoordY = Num("coordY");
+        MType = Enum("mtype");
+        Seq1 = Enum("seq1");
+        Seq2 = Enum("seq2");
+        Seq3 = Enum("seq3");
+        Battle = Num("battle");
+        Victory = Num("victory");
     }
 
-    public ObservableCollection<FieldViewModelBase> Fields { get; }
+    public EnumFieldViewModel Person { get; }
+
+    public EnumFieldViewModel Class { get; }
+
+    public EnumFieldViewModel Model { get; }
+
+    public EnumFieldViewModel Faction { get; }
+
+    public EnumFieldViewModel Army { get; }
+
+    public EnumFieldViewModel Ally { get; }
+
+    public BoolFieldViewModel IsLeader { get; }
+
+    public TriStateLockFieldViewModel Action { get; }
+
+    public BoolFieldViewModel Rescuing { get; }
+
+    public BoolFieldViewModel Rescued { get; }
+
+    public NumericFieldViewModel SlotIndex { get; }
+
+    public NumericFieldViewModel Level { get; }
+
+    public NumericFieldViewModel Exp { get; }
+
+    public NumericFieldViewModel Hp { get; }
+
+    public NumericFieldViewModel Transform { get; }
+
+    public NumericFieldViewModel Paralysis { get; }
+
+    public NumericFieldViewModel Silence { get; }
+
+    public NumericFieldViewModel Sleep { get; }
+
+    public NumericFieldViewModel Berserk { get; }
+
+    public NumericFieldViewModel Poison { get; }
+
+    public NumericFieldViewModel CoordX { get; }
+
+    public NumericFieldViewModel CoordY { get; }
+
+    public EnumFieldViewModel MType { get; }
+
+    public EnumFieldViewModel Seq1 { get; }
+
+    public EnumFieldViewModel Seq2 { get; }
+
+    public EnumFieldViewModel Seq3 { get; }
+
+    public NumericFieldViewModel Battle { get; }
+
+    public NumericFieldViewModel Victory { get; }
+
+    private FieldDefinition Field(string id) => _session.Catalog.GetField(id);
+
+    private long Value(string id)
+        => _snapshot.Slots.ReadField(Field(id), _slot.Index);
+
+    private IReadOnlyList<MappingItem> Mapping(FieldDefinition field)
+        => field.EnumId is null
+            ? Array.Empty<MappingItem>()
+            : _snapshot.Mappings.GetValueOrDefault(field.EnumId)
+              ?? Array.Empty<MappingItem>();
+
+    private EnumFieldViewModel Enum(string id)
+    {
+        var field = Field(id);
+        return new EnumFieldViewModel(
+            _session,
+            field,
+            _slot.Index,
+            _localization.Ui($"Field_{id}"),
+            Mapping(field),
+            _localization,
+            _assets,
+            Value(id));
+    }
+
+    private BoolFieldViewModel Bool(string id)
+        => new(
+            _session,
+            Field(id),
+            _slot.Index,
+            _localization.Ui($"Field_{id}"),
+            Value(id));
+
+    private NumericFieldViewModel Num(string id)
+        => new(
+            _session,
+            Field(id),
+            _slot.Index,
+            _localization.Ui($"Field_{id}"),
+            Value(id));
 }

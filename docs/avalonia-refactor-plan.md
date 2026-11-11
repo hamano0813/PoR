@@ -1223,3 +1223,12 @@ __pycache__/
   - 语言改为按钮切换（中文/日本語），主题按钮带太阳/月亮图标，刷新/重连带 Fluent 图标。
   - 修复初始主题状态：根据 `ActualThemeVariant` 初始化 `IsDarkTheme`，避免系统已暗色时按钮仍显示“深色”。
   - 已用 UI Automation 实测：语言切换为日文后标题/Tab/字段/游戏名词全部变化；主题切换后浅色/暗色背景与控件颜色变化。
+- 2026-11-12：第二轮 UI 反馈修复（紧凑布局 / 头像 / 行动锁定）。
+  - 状态页 ViewModel 从动态 `Fields` 集合改为命名字段属性，视图按原版 6 列紧凑网格重建：66px 标签 + 110px 控件；人物/职业/模型/模式/SEQ 跨 5 列。
+  - 数值字段恢复可见 spinner（`NumericUpDown` 宽 110，值区可显示 3 位数）；下拉框使用 12px 紧凑样式。
+  - 行动字段改为自定义三态复选框 `TriStateLockCheckBox`（`StyleKeyOverride => typeof(CheckBox)` 复用 Fluent 主题），循环顺序 未行动 → 锁定未行动 → 行动完毕；中间态由 `GameSession` 每 10ms 写 0，切回时写 0/1 并停止轮询。
+  - 实测：中间态下用 Python DME 外部写 action 位为 1，200ms 后 C# 锁把 action 位恢复为 0；切到“行动完毕”读回 1，再切回“未行动”读回 0。
+  - 新增 2 个 `GameSession` 锁定单元测试；目前 47 个测试通过。
+  - 删除左侧重复“刷新列表”按钮，只保留底部刷新；底部语言/主题/刷新/重连按钮统一 96px，文字切换不再改变布局。
+  - 新建 `tools/process_avatars.py`：把原版 GIF 头像外圈的白色抗锯齿蒙版转换为黑色 + alpha，输出 340 张 `PID/*.png`；`AssetService` 优先加载 PNG、回退 GIF。深色/浅色背景下边缘均无白边。
+  - 人物下拉框选项和选中项都显示头像；头像/图标行使用 32px 图片。

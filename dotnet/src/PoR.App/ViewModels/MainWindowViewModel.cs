@@ -2,6 +2,7 @@ using System.Collections.ObjectModel;
 using Avalonia;
 using Avalonia.Media;
 using Avalonia.Styling;
+using Avalonia.Threading;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using PoR.App.Services;
@@ -50,6 +51,7 @@ public sealed partial class MainWindowViewModel : ViewModelBase, IDisposable
         _assets = new AssetService();
         _memory = new WindowsDolphinMemory();
         _session = new GameSession(_memory);
+        _session.LockFailed += OnLockFailed;
         Languages = [new LanguageOption("zh", "中文"), new LanguageOption("jp", "日本語")];
         _selectedLanguage = Languages[0];
         _connectionText = _localization.Ui("Ui_Status_Disconnected");
@@ -131,6 +133,7 @@ public sealed partial class MainWindowViewModel : ViewModelBase, IDisposable
             return;
         }
 
+        await _session.StopAllLocksAsync();
         _memory.Unhook();
         await RefreshAsync();
     }
@@ -206,6 +209,17 @@ public sealed partial class MainWindowViewModel : ViewModelBase, IDisposable
             application.ActualThemeVariantChanged -= OnActualThemeVariantChanged;
         }
 
+        _session.LockFailed -= OnLockFailed;
+
+        try
+        {
+            _session.StopAllLocksAsync().GetAwaiter().GetResult();
+        }
+        catch
+        {
+            // Closing the app must not throw.
+        }
+
         try
         {
             _memory.Unhook();
@@ -216,6 +230,12 @@ public sealed partial class MainWindowViewModel : ViewModelBase, IDisposable
         }
 
         _memory.Dispose();
+    }
+
+    private void OnLockFailed(object? sender, LockFailedEventArgs eventArgs)
+    {
+        Dispatcher.UIThread.Post(
+            () => ErrorMessage = eventArgs.Exception.Message);
     }
 
     private void OnActualThemeVariantChanged(object? sender, EventArgs e)
@@ -258,7 +278,8 @@ public sealed partial class MainWindowViewModel : ViewModelBase, IDisposable
                 _snapshot,
                 SelectedSlot.Info,
                 _session,
-                _localization);
+                _localization,
+                _assets);
     }
 
     private void UpdateConnection()

@@ -51,5 +51,6 @@
   "Field_battle": "战斗",
   "Field_victory": "胜利",
   "Choice_NotActed": "未行动",
-  "Choice_Acted": "行动完毕"
+  "Choice_Acted": "行动完毕",
+  "Choice_Locked": "锁定未行动"
 }
