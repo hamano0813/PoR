@@ -1,6 +1,22 @@
 # C# / Avalonia Rewrite
 
-Current status: **P4 all editor tabs implemented** (2026-11-12).
+Current status: **FluentAvalonia UI variant** (branch `avalonia-fluent-ui`,
+2026-11-12).
+
+## FluentAvalonia variant
+
+This branch is a parallel UI version of the completed editor:
+
+- Uses `FluentAvaloniaUI` 3.1.0 with `FluentAvaloniaTheme` and accent `#0E8FA3`;
+  the built-in `Avalonia.Themes.Fluent` package/theme is not used.
+- Uses `FAAppWindow` for the managed title bar and `FAInfoBar` for the warning
+  card on the Other tab.
+- Keeps the fixed 960×800 window (no resize/maximize) and the same compact
+  280px roster, form spacing and bottom action bar as the `avalonia` branch.
+- Uses FluentAvalonia's native compact `NumericUpDown` spinner instead of the
+  custom `CompactNumericUpDown` from the `avalonia` branch.
+- Shares all ViewModels, localization, memory access and page behavior with the
+  `avalonia` branch.
 
 ## Projects
 
@@ -8,7 +24,7 @@ Current status: **P4 all editor tabs implemented** (2026-11-12).
 dotnet/
 ├─ PoR.sln
 ├─ src/
-│  ├─ PoR.App/                 # Avalonia UI (roster + status tab + language/theme)
+│  ├─ PoR.App/                 # Avalonia UI (roster + six editor tabs + language/theme)
 │  ├─ PoR.Core/                # memory abstractions, ValueCodec, mapping models
 │  ├─ PoR.Game/                # catalog, mapping, slot snapshot, GameSession
 │  └─ PoR.Memory.Dolphin/      # Windows/GameCube MEM1 port of DME
@@ -34,8 +50,8 @@ Current UI scope:
 - left roster with avatars/names/classes and selection
 - compact status form modeled on the original Qt layout: identity/faction/army,
   flags, level/EXP/HP, status effects, coordinates, MTYPE/SEQ, battle/victory
-- numeric fields use compact spin boxes; enum fields show portraits/items where
-  available
+- numeric fields use FluentAvalonia's compact spinner; enum fields show
+  portraits/items where available
 - tri-state action checkbox: unchecked = not acted, indeterminate = 10 ms
   "lock not acted" polling, checked = acted
 - ability tab: base stats, growth rates, weapon proficiency icons/values

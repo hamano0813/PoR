@@ -1,5 +1,6 @@
-<Window xmlns="https://github.com/avaloniaui"
+<fa:FAAppWindow xmlns="https://github.com/avaloniaui"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:fa="using:FluentAvalonia.UI.Windowing"
         xmlns:vm="using:PoR.App.ViewModels"
         xmlns:views="using:PoR.App.Views"
         xmlns:loc="using:PoR.App.Localization"
@@ -8,7 +9,7 @@
         Title="{loc:Tr Ui_App_Title}"
         Icon="/Assets/icon.ico"
         Width="960"
-        Height="760"
+        Height="800"
         WindowStartupLocation="CenterScreen"
         CanResize="False"
         CanMaximize="False"
@@ -173,4 +174,4 @@
             </Grid>
         </Border>
     </Grid>
-</Window>
+</fa:FAAppWindow>

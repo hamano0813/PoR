@@ -1252,3 +1252,9 @@ __pycache__/
   - `GameSnapshot` 新增 `GlobalValues`，刷新时同时读取全局字段，其他页直接使用同一快照。
   - 新增目录完整性与全局快照单元测试；目前 49 个测试通过。
   - 新增 `CompactNumericUpDown`：运行时把默认横向大号 spinner 重排为 18px 宽的上下箭头，数值区更宽，切换主题后仍保持紧凑样式。
+- 2026-11-12：`avalonia-fluent-ui` 分支采用 FluentAvaloniaUI。
+  - 引入 `FluentAvaloniaUI` 3.1.0，移除内置 `Avalonia.Themes.Fluent`，改用 `FluentAvaloniaTheme`（Accent `#0E8FA3`）。
+  - 主窗口改为 `FAAppWindow`，其他页面的警告改用 `FAInfoBar`。
+  - 保持固定 960×800、禁止缩放/最大化、左侧列表 280px、紧凑表单和固定宽度底部按钮。
+  - 该分支直接使用 FluentAvalonia 原生 `NumericUpDown` spinner，不再使用 `CompactNumericUpDown`。
+  - 所有页面 ViewModel、本地化、内存读写逻辑与 `avalonia` 分支共用。

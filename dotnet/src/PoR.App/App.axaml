@@ -4,6 +4,7 @@
              xmlns:local="using:PoR.App"
              xmlns:fields="using:PoR.App.ViewModels.Fields"
              xmlns:controls="using:PoR.App.Controls"
+             xmlns:sty="using:FluentAvalonia.Styling"
              RequestedThemeVariant="Default">
 
     <Application.DataTemplates>
@@ -11,17 +12,17 @@
 
         <DataTemplate DataType="{x:Type fields:NumericFieldViewModel}"
                       x:DataType="fields:NumericFieldViewModel">
-            <controls:CompactNumericUpDown Value="{Binding Value}"
-                                           Minimum="{Binding Minimum}"
-                                           Maximum="{Binding Maximum}"
-                                           IsEnabled="{Binding IsEditable}"
-                                           FormatString="0"
-                                           Increment="1"
-                                           ShowButtonSpinner="True"
-                                           TextAlignment="Right"
-                                           Height="32"
-                                           Margin="2,3,0,3"
-                                           HorizontalAlignment="Stretch" />
+            <NumericUpDown Value="{Binding Value}"
+                           Minimum="{Binding Minimum}"
+                           Maximum="{Binding Maximum}"
+                           IsEnabled="{Binding IsEditable}"
+                           FormatString="0"
+                           Increment="1"
+                           ShowButtonSpinner="True"
+                           TextAlignment="Right"
+                           Height="32"
+                           Margin="2,3,0,3"
+                           HorizontalAlignment="Stretch" />
         </DataTemplate>
 
         <DataTemplate DataType="{x:Type fields:EnumFieldViewModel}"
@@ -105,7 +106,8 @@
     </Application.Resources>
 
     <Application.Styles>
-        <FluentTheme />
+        <sty:FluentAvaloniaTheme PreferSystemTheme="True"
+                                 CustomAccentColor="#0E8FA3" />
 
         <Style Selector="Button">
             <Setter Property="CornerRadius" Value="6" />
@@ -154,6 +156,16 @@
             <Setter Property="CornerRadius" Value="6" />
             <Setter Property="Margin" Value="2" />
             <Setter Property="Padding" Value="4" />
+        </Style>
+
+        <Style Selector="ListBoxItem:selected">
+            <Setter Property="Background" Value="{DynamicResource AccentBrush}" />
+            <Setter Property="Foreground" Value="White" />
+        </Style>
+
+        <Style Selector="ListBoxItem:selected /template/ ContentPresenter">
+            <Setter Property="Background" Value="{DynamicResource AccentBrush}" />
+            <Setter Property="Foreground" Value="White" />
         </Style>
 
         <Style Selector="Border.card">

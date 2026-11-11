@@ -1,6 +1,7 @@
 <UserControl xmlns="https://github.com/avaloniaui"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:vm="using:PoR.App.ViewModels"
+             xmlns:fa="using:FluentAvalonia.UI.Controls"
              x:Class="PoR.App.Views.OtherView"
              x:DataType="vm:OtherTabViewModel">
 
@@ -29,12 +30,11 @@
                     Background="{DynamicResource AppBorderBrush}"
                     Margin="0,4,0,12" />
 
-            <TextBlock Text="{Binding WarningText}"
-                       FontSize="13"
-                       FontWeight="SemiBold"
-                       Foreground="#D69E2E"
-                       TextWrapping="Wrap"
-                       Margin="2,0,2,10" />
+            <fa:FAInfoBar IsOpen="True"
+                          Severity="Warning"
+                          Title="{Binding WarningText}"
+                          IsClosable="False"
+                          Margin="0,0,0,10" />
 
             <TextBlock Text="{Binding InfoText}"
                        FontSize="12"
