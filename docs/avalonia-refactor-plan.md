@@ -1214,3 +1214,12 @@ __pycache__/
   - 语言 ComboBox、主题 ToggleButton 改为显式 `Mode=TwoWay`。
   - 主题增加 Mica、圆角控件样式、卡片背景、青绿色 Accent。
   - 仍需人工验证：Mica 在目标机器上的效果、浅色/深色切换、zh/jp 所有标签与游戏名词切换。
+- 2026-11-12：根据截图反馈重构主窗口布局。
+  - 删除顶部标题行，避免与系统标题栏重复；连接状态/语言/主题/刷新/重连接到底部状态栏。
+  - 左侧头像 40 → 56；刷新列表按钮加宽至 220 并居中。
+  - 状态页改为 `UniformGrid Columns=2`，所有行固定“100px 标签 + 拉伸控件”，解决控件宽度不一造成的杂乱。
+  - NumericUpDown 隐藏 spinner，减少视觉噪音。
+  - 移除 Mica/透明窗口，改用主题字典 `AppBackgroundBrush` / `AppSurfaceBrush` / `AppSurfaceAltBrush` / `AppBorderBrush`：暗色为 #1F1F1F/#2B2B2B，浅色为 #F3F3F3/#FFFFFF。
+  - 语言改为按钮切换（中文/日本語），主题按钮带太阳/月亮图标，刷新/重连带 Fluent 图标。
+  - 修复初始主题状态：根据 `ActualThemeVariant` 初始化 `IsDarkTheme`，避免系统已暗色时按钮仍显示“深色”。
+  - 已用 UI Automation 实测：语言切换为日文后标题/Tab/字段/游戏名词全部变化；主题切换后浅色/暗色背景与控件颜色变化。

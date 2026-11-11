@@ -12,86 +12,36 @@
         MinWidth="980"
         MinHeight="620"
         FontFamily="Microsoft YaHei UI"
-        TransparencyLevelHint="Mica, AcrylicBlur, None"
-        Background="Transparent">
+        Background="{DynamicResource AppBackgroundBrush}">
 
-    <Grid RowDefinitions="52,*,28">
-        <Border Grid.Row="0"
-                Background="{DynamicResource SystemControlBackgroundAltHighBrush}"
-                BorderBrush="{DynamicResource SystemControlForegroundBaseLowBrush}"
-                BorderThickness="0,0,0,1"
-                Padding="12,0">
-            <Grid ColumnDefinitions="Auto,*,Auto">
-                <TextBlock Text="{loc:Tr Ui_App_Title}"
-                           FontSize="15"
-                           FontWeight="SemiBold"
-                           VerticalAlignment="Center" />
-
-                <StackPanel Grid.Column="2"
-                            Orientation="Horizontal"
-                            Spacing="8"
-                            VerticalAlignment="Center">
-                    <Border Background="{DynamicResource SystemControlBackgroundBaseLowBrush}"
-                            CornerRadius="10"
-                            Padding="10,3">
-                        <TextBlock Text="{Binding ConnectionText}"
-                                   FontSize="12"
-                                   VerticalAlignment="Center" />
-                    </Border>
-
-                    <ComboBox Width="92"
-                              ItemsSource="{Binding Languages}"
-                              SelectedItem="{Binding SelectedLanguage, Mode=TwoWay}"
-                              MinHeight="30">
-                        <ComboBox.ItemTemplate>
-                            <DataTemplate x:DataType="vm:LanguageOption">
-                                <TextBlock Text="{Binding Name}" />
-                            </DataTemplate>
-                        </ComboBox.ItemTemplate>
-                    </ComboBox>
-
-                    <ToggleButton Content="{Binding ThemeButtonText}"
-                                  IsChecked="{Binding IsDarkTheme, Mode=TwoWay}"
-                                  MinHeight="30" />
-
-                    <Button Content="{loc:Tr Ui_Action_Refresh}"
-                            Command="{Binding RefreshCommand}"
-                            IsEnabled="{Binding IsNotBusy}"
-                            MinHeight="30" />
-                    <Button Content="{loc:Tr Ui_Action_Reconnect}"
-                            Command="{Binding ReconnectCommand}"
-                            IsEnabled="{Binding IsNotBusy}"
-                            MinHeight="30" />
-                </StackPanel>
-            </Grid>
-        </Border>
-
-        <Grid Grid.Row="1" ColumnDefinitions="300,*">
+    <Grid RowDefinitions="*,44">
+        <Grid Grid.Row="0" ColumnDefinitions="300,*">
             <Border Grid.Column="0"
-                    Background="{DynamicResource SystemControlBackgroundAltHighBrush}"
-                    BorderBrush="{DynamicResource SystemControlForegroundBaseLowBrush}"
+                    Background="{DynamicResource AppSurfaceAltBrush}"
+                    BorderBrush="{DynamicResource AppBorderBrush}"
                     BorderThickness="0,0,1,0">
                 <Grid RowDefinitions="*,Auto">
                     <ListBox ItemsSource="{Binding Slots}"
                              SelectedItem="{Binding SelectedSlot}"
                              Background="Transparent"
                              BorderThickness="0"
-                             Margin="6">
+                             Margin="6,6,6,0">
                         <ListBox.ItemTemplate>
                             <DataTemplate x:DataType="vm:CharacterSlotViewModel">
-                                <Grid ColumnDefinitions="48,*" Margin="2">
-                                    <Border Width="40"
-                                            Height="40"
-                                            CornerRadius="4"
+                                <Grid ColumnDefinitions="64,*" Margin="2">
+                                    <Border Width="56"
+                                            Height="56"
+                                            CornerRadius="6"
                                             ClipToBounds="True"
-                                            Background="{DynamicResource SystemControlBackgroundBaseLowBrush}">
+                                            Background="{DynamicResource AppBackgroundBrush}">
                                         <Image Source="{Binding Avatar}"
                                                Stretch="UniformToFill" />
                                     </Border>
                                     <StackPanel Grid.Column="1"
-                                                Margin="8,0,0,0"
+                                                Margin="10,0,0,0"
                                                 VerticalAlignment="Center">
                                         <TextBlock Text="{Binding DisplayName}"
+                                                   FontSize="13"
                                                    FontWeight="SemiBold"
                                                    TextTrimming="CharacterEllipsis" />
                                         <TextBlock Text="{Binding ClassName}"
@@ -105,15 +55,27 @@
                     </ListBox>
 
                     <Button Grid.Row="1"
-                            Content="{loc:Tr Ui_Action_RefreshList}"
                             Command="{Binding RefreshCommand}"
                             IsEnabled="{Binding IsNotBusy}"
-                            Margin="8"
-                            MinHeight="32" />
+                            Width="220"
+                            Height="36"
+                            HorizontalAlignment="Center"
+                            Margin="0,8,0,12">
+                        <StackPanel Orientation="Horizontal"
+                                    Spacing="6"
+                                    HorizontalAlignment="Center">
+                            <TextBlock Text="&#xE72C;"
+                                       FontFamily="Segoe Fluent Icons"
+                                       FontSize="14"
+                                       VerticalAlignment="Center" />
+                            <TextBlock Text="{loc:Tr Ui_Action_RefreshList}"
+                                       VerticalAlignment="Center" />
+                        </StackPanel>
+                    </Button>
                 </Grid>
             </Border>
 
-            <TabControl Grid.Column="1" Margin="8,6,8,6">
+            <TabControl Grid.Column="1" Margin="8,8,8,4">
                 <TabItem Header="{loc:Tr Ui_Tab_Status}">
                     <views:StatusView DataContext="{Binding StatusTab}" />
                 </TabItem>
@@ -150,22 +112,91 @@
             </TabControl>
         </Grid>
 
-        <Border Grid.Row="2"
-                BorderBrush="{DynamicResource SystemControlForegroundBaseLowBrush}"
+        <Border Grid.Row="1"
+                Background="{DynamicResource AppSurfaceAltBrush}"
+                BorderBrush="{DynamicResource AppBorderBrush}"
                 BorderThickness="0,1,0,0"
                 Padding="10,0">
-            <Grid ColumnDefinitions="Auto,*,Auto">
-                <TextBlock Text="{Binding LastRefreshText}"
-                           FontSize="11"
-                           VerticalAlignment="Center"
-                           Opacity="0.7" />
-                <TextBlock Grid.Column="2"
-                           Text="{Binding ErrorMessage}"
-                           IsVisible="{Binding HasError}"
-                           FontSize="11"
-                           Foreground="{DynamicResource SystemControlErrorTextForegroundBrush}"
-                           TextTrimming="CharacterEllipsis"
-                           VerticalAlignment="Center" />
+            <Grid ColumnDefinitions="*,Auto">
+                <StackPanel Orientation="Horizontal"
+                            Spacing="10"
+                            VerticalAlignment="Center">
+                    <TextBlock Text="●"
+                               FontSize="12"
+                               Foreground="{Binding ConnectionBrush}"
+                               VerticalAlignment="Center" />
+                    <TextBlock Text="{Binding ConnectionText}"
+                               FontSize="12"
+                               VerticalAlignment="Center" />
+                    <TextBlock Text="{Binding LastRefreshText}"
+                               FontSize="11"
+                               Opacity="0.65"
+                               VerticalAlignment="Center" />
+                    <TextBlock Text="{Binding ErrorMessage}"
+                               IsVisible="{Binding HasError}"
+                               FontSize="11"
+                               Foreground="#E81123"
+                               TextTrimming="CharacterEllipsis"
+                               MaxWidth="520"
+                               VerticalAlignment="Center" />
+                </StackPanel>
+
+                <StackPanel Grid.Column="1"
+                            Orientation="Horizontal"
+                            Spacing="8"
+                            VerticalAlignment="Center">
+                    <Button Command="{Binding ToggleLanguageCommand}"
+                            ToolTip.Tip="{loc:Tr Ui_Action_Language}">
+                        <StackPanel Orientation="Horizontal"
+                                    Spacing="6">
+                            <TextBlock Text="&#xE774;"
+                                       FontFamily="Segoe Fluent Icons"
+                                       FontSize="14"
+                                       VerticalAlignment="Center" />
+                            <TextBlock Text="{Binding LanguageButtonText}"
+                                       VerticalAlignment="Center" />
+                        </StackPanel>
+                    </Button>
+
+                    <ToggleButton IsChecked="{Binding IsDarkTheme, Mode=TwoWay}"
+                                  ToolTip.Tip="{loc:Tr Ui_Action_Theme}">
+                        <StackPanel Orientation="Horizontal"
+                                    Spacing="6">
+                            <TextBlock Text="{Binding ThemeIcon}"
+                                       FontFamily="Segoe Fluent Icons"
+                                       FontSize="14"
+                                       VerticalAlignment="Center" />
+                            <TextBlock Text="{Binding ThemeButtonText}"
+                                       VerticalAlignment="Center" />
+                        </StackPanel>
+                    </ToggleButton>
+
+                    <Button Command="{Binding RefreshCommand}"
+                            IsEnabled="{Binding IsNotBusy}">
+                        <StackPanel Orientation="Horizontal"
+                                    Spacing="6">
+                            <TextBlock Text="&#xE72C;"
+                                       FontFamily="Segoe Fluent Icons"
+                                       FontSize="14"
+                                       VerticalAlignment="Center" />
+                            <TextBlock Text="{loc:Tr Ui_Action_Refresh}"
+                                       VerticalAlignment="Center" />
+                        </StackPanel>
+                    </Button>
+
+                    <Button Command="{Binding ReconnectCommand}"
+                            IsEnabled="{Binding IsNotBusy}">
+                        <StackPanel Orientation="Horizontal"
+                                    Spacing="6">
+                            <TextBlock Text="&#xE895;"
+                                       FontFamily="Segoe Fluent Icons"
+                                       FontSize="14"
+                                       VerticalAlignment="Center" />
+                            <TextBlock Text="{loc:Tr Ui_Action_Reconnect}"
+                                       VerticalAlignment="Center" />
+                        </StackPanel>
+                    </Button>
+                </StackPanel>
             </Grid>
         </Border>
     </Grid>

@@ -11,6 +11,8 @@
   "Ui_Action_RefreshList": "刷新列表",
   "Ui_Action_ThemeDark": "深色",
   "Ui_Action_ThemeLight": "浅色",
+  "Ui_Action_Language": "语言",
+  "Ui_Action_Theme": "主题",
   "Ui_Status_Connected": "已连接",
   "Ui_Status_NotRunning": "未找到 Dolphin",
   "Ui_Status_NoEmu": "Dolphin 已运行，等待游戏",

@@ -11,6 +11,8 @@
   "Ui_Action_RefreshList": "リスト更新",
   "Ui_Action_ThemeDark": "ダーク",
   "Ui_Action_ThemeLight": "ライト",
+  "Ui_Action_Language": "言語",
+  "Ui_Action_Theme": "テーマ",
   "Ui_Status_Connected": "接続済み",
   "Ui_Status_NotRunning": "Dolphinが見つかりません",
   "Ui_Status_NoEmu": "Dolphin起動中・ゲーム待ち",

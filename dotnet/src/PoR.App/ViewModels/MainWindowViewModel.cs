@@ -1,5 +1,6 @@
 using System.Collections.ObjectModel;
 using Avalonia;
+using Avalonia.Media;
 using Avalonia.Styling;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
@@ -49,10 +50,16 @@ public sealed partial class MainWindowViewModel : ViewModelBase, IDisposable
         _assets = new AssetService();
         _memory = new WindowsDolphinMemory();
         _session = new GameSession(_memory);
-        Languages = [new LanguageOption("zh", "中文"), new LanguageOption("jp", "日文")];
+        Languages = [new LanguageOption("zh", "中文"), new LanguageOption("jp", "日本語")];
         _selectedLanguage = Languages[0];
         _connectionText = _localization.Ui("Ui_Status_Disconnected");
         _lastRefreshText = _localization.Ui("Ui_Status_NotRefreshed");
+
+        if (Application.Current is { } application)
+        {
+            IsDarkTheme = application.ActualThemeVariant == ThemeVariant.Dark;
+            application.ActualThemeVariantChanged += OnActualThemeVariantChanged;
+        }
     }
 
     public ObservableCollection<CharacterSlotViewModel> Slots { get; } = [];
@@ -65,6 +72,18 @@ public sealed partial class MainWindowViewModel : ViewModelBase, IDisposable
 
     public string ThemeButtonText => _localization.Ui(
         IsDarkTheme ? "Ui_Action_ThemeLight" : "Ui_Action_ThemeDark");
+
+    public string ThemeIcon => IsDarkTheme ? "" : "";
+
+    public string LanguageButtonText => SelectedLanguage.Name;
+
+    public IBrush ConnectionBrush => _session.Status switch
+    {
+        DolphinStatus.Hooked => Brushes.LimeGreen,
+        DolphinStatus.NoEmu => Brushes.Goldenrod,
+        DolphinStatus.AccessDenied => Brushes.IndianRed,
+        _ => Brushes.Gray,
+    };
 
     public async Task InitializeAsync()
     {
@@ -116,6 +135,15 @@ public sealed partial class MainWindowViewModel : ViewModelBase, IDisposable
         await RefreshAsync();
     }
 
+    [RelayCommand]
+    private void ToggleLanguage()
+    {
+        var nextCode = SelectedLanguage.Code == "zh" ? "jp" : "zh";
+        SelectedLanguage =
+            Languages.FirstOrDefault(language => language.Code == nextCode) ??
+            SelectedLanguage;
+    }
+
     partial void OnIsBusyChanged(bool value)
     {
         OnPropertyChanged(nameof(IsNotBusy));
@@ -129,6 +157,7 @@ public sealed partial class MainWindowViewModel : ViewModelBase, IDisposable
     partial void OnIsDarkThemeChanged(bool value)
     {
         OnPropertyChanged(nameof(ThemeButtonText));
+        OnPropertyChanged(nameof(ThemeIcon));
 
         if (Application.Current is { } application)
         {
@@ -167,10 +196,16 @@ public sealed partial class MainWindowViewModel : ViewModelBase, IDisposable
         UpdateConnection();
         UpdateLastRefreshText();
         OnPropertyChanged(nameof(ThemeButtonText));
+        OnPropertyChanged(nameof(LanguageButtonText));
     }
 
     public void Dispose()
     {
+        if (Application.Current is { } application)
+        {
+            application.ActualThemeVariantChanged -= OnActualThemeVariantChanged;
+        }
+
         try
         {
             _memory.Unhook();
@@ -181,6 +216,23 @@ public sealed partial class MainWindowViewModel : ViewModelBase, IDisposable
         }
 
         _memory.Dispose();
+    }
+
+    private void OnActualThemeVariantChanged(object? sender, EventArgs e)
+    {
+        if (Application.Current is not { } application)
+        {
+            return;
+        }
+
+        var isDark = application.ActualThemeVariant == ThemeVariant.Dark;
+        if (IsDarkTheme == isDark)
+        {
+            return;
+        }
+
+        // Keep the toggle in sync with system theme changes.
+        IsDarkTheme = isDark;
     }
 
     private void BuildSlots(GameSnapshot snapshot)
@@ -221,6 +273,7 @@ public sealed partial class MainWindowViewModel : ViewModelBase, IDisposable
             DolphinStatus.AccessDenied => _localization.Ui("Ui_Status_AccessDenied"),
             _ => _localization.Ui("Ui_Status_Disconnected"),
         };
+        OnPropertyChanged(nameof(ConnectionBrush));
     }
 
     private void UpdateLastRefreshText()

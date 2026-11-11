@@ -8,7 +8,7 @@
     <UserControl.DataTemplates>
         <DataTemplate DataType="{x:Type fields:NumericFieldViewModel}"
                       x:DataType="fields:NumericFieldViewModel">
-            <Grid ColumnDefinitions="110,150" Margin="0,3,16,3">
+            <Grid ColumnDefinitions="100,*" Margin="0,4,18,4">
                 <TextBlock Text="{Binding Label}"
                            VerticalAlignment="Center"
                            TextTrimming="CharacterEllipsis" />
@@ -19,13 +19,15 @@
                                IsEnabled="{Binding IsEditable}"
                                FormatString="0"
                                Increment="1"
-                               MinHeight="28" />
+                               ShowButtonSpinner="False"
+                               HorizontalAlignment="Stretch"
+                               MinHeight="30" />
             </Grid>
         </DataTemplate>
 
         <DataTemplate DataType="{x:Type fields:EnumFieldViewModel}"
                       x:DataType="fields:EnumFieldViewModel">
-            <Grid ColumnDefinitions="110,190" Margin="0,3,16,3">
+            <Grid ColumnDefinitions="100,*" Margin="0,4,18,4">
                 <TextBlock Text="{Binding Label}"
                            VerticalAlignment="Center"
                            TextTrimming="CharacterEllipsis" />
@@ -34,7 +36,8 @@
                           SelectedItem="{Binding SelectedItem}"
                           IsEnabled="{Binding IsEditable}"
                           MaxDropDownHeight="320"
-                          MinHeight="28">
+                          HorizontalAlignment="Stretch"
+                          MinHeight="30">
                     <ComboBox.ItemTemplate>
                         <DataTemplate x:DataType="fields:EnumItemViewModel">
                             <TextBlock Text="{Binding DisplayName}"
@@ -50,13 +53,12 @@
             <CheckBox Content="{Binding Label}"
                       IsChecked="{Binding IsChecked}"
                       IsEnabled="{Binding IsEditable}"
-                      MinWidth="220"
-                      Margin="0,3,16,3" />
+                      Margin="0,4,18,4" />
         </DataTemplate>
 
         <DataTemplate DataType="{x:Type fields:ChoiceFieldViewModel}"
                       x:DataType="fields:ChoiceFieldViewModel">
-            <Grid ColumnDefinitions="110,150" Margin="0,3,16,3">
+            <Grid ColumnDefinitions="100,*" Margin="0,4,18,4">
                 <TextBlock Text="{Binding Label}"
                            VerticalAlignment="Center"
                            TextTrimming="CharacterEllipsis" />
@@ -64,7 +66,8 @@
                           ItemsSource="{Binding Items}"
                           SelectedItem="{Binding SelectedItem}"
                           IsEnabled="{Binding IsEditable}"
-                          MinHeight="28">
+                          HorizontalAlignment="Stretch"
+                          MinHeight="30">
                     <ComboBox.ItemTemplate>
                         <DataTemplate x:DataType="fields:ChoiceItem">
                             <TextBlock Text="{Binding Label}" />
@@ -75,14 +78,13 @@
         </DataTemplate>
     </UserControl.DataTemplates>
 
-    <Border Classes="card" Padding="10" Margin="4">
+    <Border Classes="card" Padding="12" Margin="4">
         <ScrollViewer VerticalScrollBarVisibility="Auto"
                       HorizontalScrollBarVisibility="Disabled">
-            <ItemsControl ItemsSource="{Binding Fields}"
-                          Margin="4">
+            <ItemsControl ItemsSource="{Binding Fields}">
                 <ItemsControl.ItemsPanel>
                     <ItemsPanelTemplate>
-                        <WrapPanel Orientation="Horizontal" />
+                        <UniformGrid Columns="2" />
                     </ItemsPanelTemplate>
                 </ItemsControl.ItemsPanel>
             </ItemsControl>
