@@ -7,10 +7,11 @@
         x:DataType="vm:MainWindowViewModel"
         Title="{loc:Tr Ui_App_Title}"
         Icon="/Assets/icon.ico"
-        Width="1180"
+        Width="1080"
         Height="760"
-        MinWidth="980"
-        MinHeight="620"
+        WindowStartupLocation="CenterScreen"
+        CanResize="False"
+        CanMaximize="False"
         FontFamily="Microsoft YaHei UI"
         Background="{DynamicResource AppBackgroundBrush}">
 

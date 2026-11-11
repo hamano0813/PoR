@@ -83,7 +83,7 @@
             VerticalAlignment="Stretch">
         <ScrollViewer VerticalScrollBarVisibility="Auto"
                       HorizontalScrollBarVisibility="Disabled">
-            <Grid ColumnDefinitions="66,110,66,110,66,110"
+            <Grid ColumnDefinitions="72,124,72,124,72,124"
                   RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto">
 
                 <Border Grid.Row="0" Grid.Column="0" Classes="fieldLabel"
