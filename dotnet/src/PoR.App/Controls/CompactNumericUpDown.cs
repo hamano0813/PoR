@@ -7,13 +7,14 @@ using Avalonia.VisualTree;
 namespace PoR.App.Controls;
 
 /// <summary>
-/// FluentAvalonia NumericUpDown with a narrower spinner strip.
-/// The buttons stay horizontal (the FA template layout), but are reduced
-/// from 32px to 14px wide with a smaller glyph.
+/// FluentAvalonia NumericUpDown with a compact vertical spinner.
+/// The buttons are moved into a narrow right-hand gutter with the
+/// increase button above the decrease button.
 /// </summary>
 public sealed class CompactNumericUpDown : NumericUpDown
 {
-    private const double ButtonWidth = 14;
+    private const double SpinnerWidth = 18;
+    private const double ButtonHeight = 15;
 
     public CompactNumericUpDown()
     {
@@ -32,15 +33,20 @@ public sealed class CompactNumericUpDown : NumericUpDown
             return;
         }
 
+        panel.Orientation = Orientation.Vertical;
+        panel.Width = SpinnerWidth;
         panel.Spacing = 0;
+        panel.VerticalAlignment = VerticalAlignment.Center;
 
         foreach (var button in panel.Children.OfType<RepeatButton>())
         {
             button.MinWidth = 0;
-            button.Width = ButtonWidth;
-            button.MaxWidth = ButtonWidth;
+            button.Width = SpinnerWidth;
+            button.MaxWidth = SpinnerWidth;
             button.MinHeight = 0;
-            button.Margin = new Thickness(1, 2, 1, 2);
+            button.Height = ButtonHeight;
+            button.MaxHeight = ButtonHeight;
+            button.Margin = default;
             button.Padding = default;
             button.FontSize = 10;
             button.HorizontalContentAlignment = HorizontalAlignment.Center;

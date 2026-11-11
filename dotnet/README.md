@@ -13,9 +13,10 @@ This branch is a parallel UI version of the completed editor:
   card on the Other tab.
 - Keeps the fixed 960×800 window (no resize/maximize) and the same compact
   280px roster, form spacing and bottom action bar as the `avalonia` branch.
-- Uses a `CompactNumericUpDown` tuned for FluentAvalonia: the spinner strip is
-  narrowed to two 14px buttons with a smaller glyph, while keeping the
-  standard NumericUpDown input, validation and wheel behavior.
+- Uses a `CompactNumericUpDown` tuned for FluentAvalonia: the spinner is a
+  narrow right-hand gutter with stacked up/down buttons and a smaller glyph,
+  while keeping the standard NumericUpDown input, validation and wheel
+  behavior.
 - Shares all ViewModels, localization, memory access and page behavior with the
   `avalonia` branch.
 
