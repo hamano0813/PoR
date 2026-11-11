@@ -1,0 +1,89 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:vm="using:PoR.App.ViewModels"
+             xmlns:fields="using:PoR.App.ViewModels.Fields"
+             x:Class="PoR.App.Views.StatusView"
+             x:DataType="vm:StatusTabViewModel">
+
+    <UserControl.DataTemplates>
+        <DataTemplate DataType="{x:Type fields:NumericFieldViewModel}"
+                      x:DataType="fields:NumericFieldViewModel">
+            <Grid ColumnDefinitions="110,150" Margin="0,3,16,3">
+                <TextBlock Text="{Binding Label}"
+                           VerticalAlignment="Center"
+                           TextTrimming="CharacterEllipsis" />
+                <NumericUpDown Grid.Column="1"
+                               Value="{Binding Value}"
+                               Minimum="{Binding Minimum}"
+                               Maximum="{Binding Maximum}"
+                               IsEnabled="{Binding IsEditable}"
+                               FormatString="0"
+                               Increment="1"
+                               MinHeight="28" />
+            </Grid>
+        </DataTemplate>
+
+        <DataTemplate DataType="{x:Type fields:EnumFieldViewModel}"
+                      x:DataType="fields:EnumFieldViewModel">
+            <Grid ColumnDefinitions="110,190" Margin="0,3,16,3">
+                <TextBlock Text="{Binding Label}"
+                           VerticalAlignment="Center"
+                           TextTrimming="CharacterEllipsis" />
+                <ComboBox Grid.Column="1"
+                          ItemsSource="{Binding Items}"
+                          SelectedItem="{Binding SelectedItem}"
+                          IsEnabled="{Binding IsEditable}"
+                          MaxDropDownHeight="320"
+                          MinHeight="28">
+                    <ComboBox.ItemTemplate>
+                        <DataTemplate x:DataType="fields:EnumItemViewModel">
+                            <TextBlock Text="{Binding DisplayName}"
+                                       TextTrimming="CharacterEllipsis" />
+                        </DataTemplate>
+                    </ComboBox.ItemTemplate>
+                </ComboBox>
+            </Grid>
+        </DataTemplate>
+
+        <DataTemplate DataType="{x:Type fields:BoolFieldViewModel}"
+                      x:DataType="fields:BoolFieldViewModel">
+            <CheckBox Content="{Binding Label}"
+                      IsChecked="{Binding IsChecked}"
+                      IsEnabled="{Binding IsEditable}"
+                      MinWidth="220"
+                      Margin="0,3,16,3" />
+        </DataTemplate>
+
+        <DataTemplate DataType="{x:Type fields:ChoiceFieldViewModel}"
+                      x:DataType="fields:ChoiceFieldViewModel">
+            <Grid ColumnDefinitions="110,150" Margin="0,3,16,3">
+                <TextBlock Text="{Binding Label}"
+                           VerticalAlignment="Center"
+                           TextTrimming="CharacterEllipsis" />
+                <ComboBox Grid.Column="1"
+                          ItemsSource="{Binding Items}"
+                          SelectedItem="{Binding SelectedItem}"
+                          IsEnabled="{Binding IsEditable}"
+                          MinHeight="28">
+                    <ComboBox.ItemTemplate>
+                        <DataTemplate x:DataType="fields:ChoiceItem">
+                            <TextBlock Text="{Binding Label}" />
+                        </DataTemplate>
+                    </ComboBox.ItemTemplate>
+                </ComboBox>
+            </Grid>
+        </DataTemplate>
+    </UserControl.DataTemplates>
+
+    <ScrollViewer VerticalScrollBarVisibility="Auto"
+                  HorizontalScrollBarVisibility="Disabled">
+        <ItemsControl ItemsSource="{Binding Fields}"
+                      Margin="8">
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <WrapPanel Orientation="Horizontal" />
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+        </ItemsControl>
+    </ScrollViewer>
+</UserControl>

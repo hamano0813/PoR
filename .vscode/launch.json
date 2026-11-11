@@ -1,0 +1,17 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "PoR.App (Debug)",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build PoR.App",
+      "program": "${workspaceFolder}/dotnet/src/PoR.App/bin/Debug/net10.0-windows/PoR.App.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}/dotnet/src/PoR.App",
+      "console": "internalConsole",
+      "stopAtEntry": false,
+      "justMyCode": true
+    }
+  ]
+}

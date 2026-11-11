@@ -1197,3 +1197,13 @@ __pycache__/
   - 槽位 0 识别为 `PID_IKE` / `JID_HERO`，与 Python 版一致。
   - `--session-write-self-test` 对等级（字节）、行动（位域）、金钱（全局 3 字节）做同值写回，通过。
   - 45 个单元测试通过（ValueCodec、Catalog、MappingService、SlotSnapshot）。
+- 2026-11-12：P3 Avalonia 壳完成（待人工 UI 测试）。
+  - `PoR.App`：Avalonia 12.1.6 + CommunityToolkit.Mvvm。
+  - 主窗口：左侧角色列表（头像/名字/职业）+ 右侧 Tab + 底部状态栏。
+  - 状态页：身份/阵营/部队/同行、标志位、等级/经验/HP、状态、坐标、MTYPE/SEQ、战斗/胜利。
+  - 语言切换（游戏名词 zh/jp）、浅色/深色切换、刷新/重连。
+  - 其他 5 个 Tab 为占位页，P4 实现。
+  - 资源图标已复制到 `dotnet/src/PoR.App/Assets`。
+  - 构建 0 警告 0 错误；应用冒烟运行 15 秒无崩溃。
+  - 启动命令：`dotnet run --project src/PoR.App/PoR.App.csproj`（在 `dotnet/` 下）。
+  - 注意：Avalonia 原生依赖较大，当前机器通过 `.nuget-local` 本地包源完成 restore；该目录已忽略，不提交。

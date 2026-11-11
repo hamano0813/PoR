@@ -1,6 +1,6 @@
 # C# / Avalonia Rewrite
 
-Current status: **P2 core domain implemented** (2026-11-11).
+Current status: **P3 Avalonia shell implemented** (2026-11-12).
 
 ## Projects
 
@@ -8,6 +8,7 @@ Current status: **P2 core domain implemented** (2026-11-11).
 dotnet/
 ├─ PoR.sln
 ├─ src/
+│  ├─ PoR.App/                 # Avalonia UI (roster + status tab + language/theme)
 │  ├─ PoR.Core/                # memory abstractions, ValueCodec, mapping models
 │  ├─ PoR.Game/                # catalog, mapping, slot snapshot, GameSession
 │  └─ PoR.Memory.Dolphin/      # Windows/GameCube MEM1 port of DME
@@ -17,7 +18,26 @@ dotnet/
    └─ PoR.Tools.Probe/         # console probe for manual verification
 ```
 
-`PoR.App` (Avalonia UI) will be added in P3.
+## Run the Avalonia app
+
+```bash
+cd C:\iCode\PoR\dotnet
+dotnet run --project src/PoR.App/PoR.App.csproj
+```
+
+From VS Code: open `C:\iCode\PoR`, choose the **PoR.App (Debug)** launch
+configuration and press F5. The launch config builds the app first. The C#
+extension and Avalonia extension are recommended (see the refactor plan).
+
+Current UI scope:
+
+- left roster with avatars/names/classes and selection
+- status tab: identity/faction/army/ally, flags, level/EXP/HP, status effects,
+  coordinates, MTYPE/SEQ, battle/victory
+- language switch (game terms zh/jp) and light/dark toggle
+- refresh/reconnect and connection/error status bar
+
+Ability/Skill/Item/Support/Other tabs are placeholders for P4.
 
 ## Build
 

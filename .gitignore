@@ -18,6 +18,10 @@ build/
 __pycache__/
 *.py[cod]
 
+# Local NuGet workaround (packages are large; not committed)
+.nuget-local/
+NuGet.local.config
+
 # IDE / OS
 .idea/workspace.xml
 .DS_Store

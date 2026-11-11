@@ -1,0 +1,20 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build PoR.App",
+      "type": "process",
+      "command": "dotnet",
+      "args": [
+        "build",
+        "src/PoR.App/PoR.App.csproj",
+        "--no-restore"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}/dotnet"
+      },
+      "problemMatcher": "$msCompile",
+      "group": "build"
+    }
+  ]
+}
