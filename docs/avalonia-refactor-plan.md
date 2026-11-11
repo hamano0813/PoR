@@ -1256,5 +1256,5 @@ __pycache__/
   - 引入 `FluentAvaloniaUI` 3.1.0，移除内置 `Avalonia.Themes.Fluent`，改用 `FluentAvaloniaTheme`（Accent `#0E8FA3`）。
   - 主窗口改为 `FAAppWindow`，其他页面的警告改用 `FAInfoBar`。
   - 保持固定 960×800、禁止缩放/最大化、左侧列表 280px、紧凑表单和固定宽度底部按钮。
-  - 该分支使用针对 FluentAvalonia 调整的 `CompactNumericUpDown`，把 spinner 改为右侧 18px 宽的上下排列小箭头，保留标准输入/校验/滚轮行为。
+  - 该分支重写 FluentAvalonia `ButtonSpinner` 模板：数值框左侧为减小、右侧为增加的细线箭头，数值居中，保留标准输入/校验/滚轮行为；不再使用 `CompactNumericUpDown`。
   - 所有页面 ViewModel、本地化、内存读写逻辑与 `avalonia` 分支共用。
