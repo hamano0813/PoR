@@ -65,10 +65,13 @@ Current UI scope:
 - support tab: current affinity, seven support partners, support points and
   C/B/A progress bars driven by the original thresholds
 - other tab: global money/bonus EXP plus the original modification notes
-- bottom status bar order: refresh (accent), reconnect, theme (neutral),
-  language; all four buttons have fixed 96px width
+- bottom status bar order: refresh (accent), reconnect, theme, language;
+  theme and language use the same neutral button style, all four have fixed
+  96px width
 - action status has its own label; the rescue/rescued checkboxes share a compact
   horizontal group
+- tab pages use `CompactTabControl` to remove the FluentAvalonia 12px selected
+  content margin and tighten the outer page spacing
 - `tools/process_avatars.py` regenerates the de-fringed PNG portraits used by
   the roster and the character drop-down (requires Pillow)
 

@@ -3,6 +3,7 @@
         xmlns:fa="using:FluentAvalonia.UI.Windowing"
         xmlns:vm="using:PoR.App.ViewModels"
         xmlns:views="using:PoR.App.Views"
+        xmlns:controls="using:PoR.App.Controls"
         xmlns:loc="using:PoR.App.Localization"
         x:Class="PoR.App.Views.MainWindow"
         x:DataType="vm:MainWindowViewModel"
@@ -56,7 +57,7 @@
                 </ListBox>
             </Border>
 
-            <TabControl Grid.Column="1" Margin="8,8,8,4">
+            <controls:CompactTabControl Grid.Column="1" Margin="4,4,4,2">
                 <TabItem Header="{loc:Tr Ui_Tab_Status}">
                     <views:StatusView DataContext="{Binding StatusTab}" />
                 </TabItem>
@@ -75,7 +76,7 @@
                 <TabItem Header="{loc:Tr Ui_Tab_Other}">
                     <views:OtherView DataContext="{Binding OtherTab}" />
                 </TabItem>
-            </TabControl>
+            </controls:CompactTabControl>
         </Grid>
 
         <Border Grid.Row="1"
@@ -142,11 +143,10 @@
                         </StackPanel>
                     </Button>
 
-                    <ToggleButton IsChecked="{Binding IsDarkTheme, Mode=TwoWay}"
-                                  ToolTip.Tip="{loc:Tr Ui_Action_Theme}"
-                                  Classes="neutralToggle"
-                                  Width="96"
-                                  HorizontalContentAlignment="Center">
+                    <Button Command="{Binding ToggleThemeCommand}"
+                            ToolTip.Tip="{loc:Tr Ui_Action_Theme}"
+                            Width="96"
+                            HorizontalContentAlignment="Center">
                         <StackPanel Orientation="Horizontal"
                                     Spacing="6">
                             <TextBlock Text="{Binding ThemeIcon}"
@@ -156,7 +156,7 @@
                             <TextBlock Text="{Binding ThemeButtonText}"
                                        VerticalAlignment="Center" />
                         </StackPanel>
-                    </ToggleButton>
+                    </Button>
 
                     <Button Command="{Binding ToggleLanguageCommand}"
                             ToolTip.Tip="{loc:Tr Ui_Action_Language}"

@@ -164,6 +164,12 @@ public sealed partial class MainWindowViewModel : ViewModelBase, IDisposable
             SelectedLanguage;
     }
 
+    [RelayCommand]
+    private void ToggleTheme()
+    {
+        IsDarkTheme = !IsDarkTheme;
+    }
+
     partial void OnIsBusyChanged(bool value)
     {
         OnPropertyChanged(nameof(IsNotBusy));

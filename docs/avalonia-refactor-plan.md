@@ -1263,3 +1263,6 @@ __pycache__/
   - 底部按钮顺序改为刷新（强调色）、重连、主题（中性色）、语言；主题按钮不再使用强调色。
   - 状态页标签宽度 72→80；行动复选框前增加“行动状态”标签。
   - 救出/被救放入同一横向 StackPanel，缩小间距并保证被救文字完整显示。
+  - 微调按钮内容改为居中对齐，修正取消边框后箭头偏移 1px 的问题。
+  - 主题切换从 ToggleButton 改为与语言相同的普通 Button + `ToggleThemeCommand`，两者视觉一致。
+  - 新增 `CompactTabControl`，在模板应用后移除 FluentAvalonia `PART_SelectedContentHost` 的 12px 外边距，并将 TabControl 外边距从 8 缩小到 4；右侧页面内容更贴近边缘。

@@ -202,31 +202,12 @@
             <Setter Property="Foreground" Value="White" />
         </Style>
 
-        <Style Selector="ToggleButton.neutralToggle:checked">
-            <Setter Property="Background" Value="{DynamicResource AppSurfaceAltBrush}" />
-            <Setter Property="Foreground" Value="{DynamicResource AppForegroundBrush}" />
-        </Style>
-
-        <Style Selector="ToggleButton.neutralToggle:checked /template/ ContentPresenter">
-            <Setter Property="Background" Value="{DynamicResource AppSurfaceAltBrush}" />
-            <Setter Property="Foreground" Value="{DynamicResource AppForegroundBrush}" />
-        </Style>
-
-        <Style Selector="ToggleButton.neutralToggle:checked:pointerover /template/ ContentPresenter">
-            <Setter Property="Background" Value="{DynamicResource AppSurfaceBrush}" />
-        </Style>
-
-        <Style Selector="ToggleButton.neutralToggle:checked:pressed /template/ ContentPresenter">
-            <Setter Property="Background" Value="{DynamicResource AppBorderBrush}" />
-        </Style>
-
-        <Style Selector="ToggleButton.neutralToggle TextBlock">
-            <Setter Property="Foreground" Value="{DynamicResource AppForegroundBrush}" />
-        </Style>
-
         <Style Selector="RepeatButton.spinnerButton">
             <Setter Property="Background" Value="Transparent" />
             <Setter Property="BorderThickness" Value="0" />
+            <Setter Property="Padding" Value="0" />
+            <Setter Property="HorizontalContentAlignment" Value="Center" />
+            <Setter Property="VerticalContentAlignment" Value="Center" />
         </Style>
 
         <Style Selector="TextBox">
