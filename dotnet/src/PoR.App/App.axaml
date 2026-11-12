@@ -119,14 +119,20 @@
                        VerticalAlignment="Center"
                        IsVisible="{Binding HasIcon}" />
                 <CheckBox Grid.Column="1"
-                          Content="{Binding Label}"
                           IsChecked="{Binding IsChecked}"
                           IsEnabled="{Binding IsEditable}"
                           VerticalContentAlignment="Center"
                           MinHeight="32"
                           FontSize="12"
                           Margin="10,3,0,3"
-                          VerticalAlignment="Center" />
+                          VerticalAlignment="Center">
+                    <TextBlock Text="{Binding Label}"
+                               VerticalAlignment="Center">
+                        <TextBlock.RenderTransform>
+                            <TranslateTransform Y="-2" />
+                        </TextBlock.RenderTransform>
+                    </TextBlock>
+                </CheckBox>
             </Grid>
         </DataTemplate>
 
@@ -134,12 +140,18 @@
                       x:DataType="fields:TriStateLockFieldViewModel">
             <controls:TriStateLockCheckBox IsThreeState="True"
                                            IsChecked="{Binding StateValue, Mode=TwoWay}"
-                                           Content="{Binding DisplayText}"
                                            IsEnabled="{Binding IsEditable}"
                                            VerticalContentAlignment="Center"
                                            MinHeight="32"
                                            FontSize="12"
-                                           Margin="10,3,0,3" />
+                                           Margin="10,3,0,3">
+                <TextBlock Text="{Binding DisplayText}"
+                           VerticalAlignment="Center">
+                    <TextBlock.RenderTransform>
+                        <TranslateTransform Y="-2" />
+                    </TextBlock.RenderTransform>
+                </TextBlock>
+            </controls:TriStateLockCheckBox>
         </DataTemplate>
     </Application.DataTemplates>
 
