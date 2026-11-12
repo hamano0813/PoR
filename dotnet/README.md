@@ -11,7 +11,7 @@ This branch is a parallel UI version of the completed editor:
   the built-in `Avalonia.Themes.Fluent` package/theme is not used.
 - Uses `FAAppWindow` for the managed title bar and `FAInfoBar` for the warning
   card on the Other tab.
-- Keeps the fixed 1360×800 window (no resize/maximize) and the same 280px
+- Keeps the fixed 1440×800 window (no resize/maximize) and the same 280px
   roster, form spacing and bottom action bar as the `avalonia` branch.
 - Uses a custom numeric editor: two near-square, borderless/transparent
   Fluent-style buttons (decrease on the left, increase on the right) overlaid
