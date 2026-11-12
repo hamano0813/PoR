@@ -1,3 +1,4 @@
+using Avalonia.Media;
 using Avalonia.Media.Imaging;
 
 namespace PoR.App.ViewModels.Fields;
@@ -7,7 +8,9 @@ public sealed record EnumItemViewModel(
     string Key,
     string DisplayName,
     Bitmap? Icon,
-    double IconSize)
+    double IconSize,
+    FontFamily FontFamily,
+    double FontSize)
 {
     public bool HasIcon => Icon is not null;
 }

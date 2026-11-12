@@ -1,5 +1,7 @@
 using System.ComponentModel;
 using System.Text.Json;
+using Avalonia;
+using Avalonia.Media;
 
 namespace PoR.App.Services;
 
@@ -17,6 +19,7 @@ public sealed class LocalizationService : INotifyPropertyChanged
 
     private IReadOnlyDictionary<string, string> _terms =
         new Dictionary<string, string>(StringComparer.Ordinal);
+    private readonly IReadOnlyDictionary<string, string> _zhTerms;
     private IReadOnlyDictionary<string, string> _ui =
         new Dictionary<string, string>(StringComparer.Ordinal);
 
@@ -30,6 +33,7 @@ public sealed class LocalizationService : INotifyPropertyChanged
     private LocalizationService()
     {
         _ui = Load("ui", "zh");
+        _zhTerms = Load("terms", "zh");
         SetLanguage("zh");
     }
 
@@ -73,10 +77,37 @@ public sealed class LocalizationService : INotifyPropertyChanged
             : key;
     }
 
+    /// <summary>
+    /// Returns the fixed Chinese game term regardless of the selected language.
+    /// Used by fields such as faction that should never be translated.
+    /// </summary>
+    public string FixedChineseTerm(string? key)
+    {
+        if (string.IsNullOrWhiteSpace(key))
+        {
+            return string.Empty;
+        }
+
+        return _zhTerms.TryGetValue(key, out var value) && !string.IsNullOrWhiteSpace(value)
+            ? value
+            : key;
+    }
+
     public void SetLanguage(string language)
     {
         Language = language;
         _terms = Load("terms", language);
+
+        if (Application.Current is { } application)
+        {
+            var isJapanese = string.Equals(language, "jp", StringComparison.Ordinal);
+            application.Resources["GameTermFontFamily"] = new FontFamily(
+                isJapanese ? "Yu Gothic UI" : "Microsoft YaHei UI");
+            application.Resources["GameTermFontSize11"] = isJapanese ? 12d : 11d;
+            application.Resources["GameTermFontSize12"] = isJapanese ? 13d : 12d;
+            application.Resources["GameTermFontSize13"] = isJapanese ? 14d : 13d;
+            application.Resources["GameTermFontSize14"] = isJapanese ? 15d : 14d;
+        }
 
         PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Item[]"));
         PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(string.Empty));

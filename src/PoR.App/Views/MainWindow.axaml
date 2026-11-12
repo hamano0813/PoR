@@ -52,7 +52,7 @@
                     ToolTip.Tip="{loc:Tr Ui_Action_Language}">
                 <TextBlock Text="{Binding LanguageShortText}"
                            FontSize="13"
-                           FontWeight="SemiBold"
+                           FontWeight="Normal"
                            VerticalAlignment="Center" />
             </Button>
             <Button Classes="titleBarButton"
@@ -147,11 +147,13 @@
                                             Margin="10,0,0,0"
                                             VerticalAlignment="Center">
                                     <TextBlock Text="{Binding DisplayName}"
-                                               FontSize="13"
+                                               FontFamily="{DynamicResource GameTermFontFamily}"
+                                               FontSize="{DynamicResource GameTermFontSize13}"
                                                FontWeight="Bold"
                                                TextTrimming="CharacterEllipsis" />
                                     <TextBlock Text="{Binding ClassName}"
-                                               FontSize="11"
+                                               FontFamily="{DynamicResource GameTermFontFamily}"
+                                               FontSize="{DynamicResource GameTermFontSize11}"
                                                Opacity="0.7"
                                                TextTrimming="CharacterEllipsis" />
                                 </StackPanel>

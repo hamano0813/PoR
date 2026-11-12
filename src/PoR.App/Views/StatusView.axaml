@@ -22,6 +22,8 @@
                           VerticalContentAlignment="Center"
                           VerticalAlignment="Center">
                     <TextBlock Text="{Binding Equipped.Label}"
+                               FontFamily="{DynamicResource DefaultFontFamily}"
+                               FontSize="12"
                                VerticalAlignment="Center">
                         <TextBlock.RenderTransform>
                             <TranslateTransform Y="-2" />
@@ -324,7 +326,8 @@
                                        VerticalAlignment="Center"
                                        IsVisible="{Binding Support.HasCurrentAffinity}" />
                                 <TextBlock Text="{Binding Support.CurrentName}"
-                                           FontSize="13"
+                                           FontFamily="{DynamicResource GameTermFontFamily}"
+                                           FontSize="{DynamicResource GameTermFontSize13}"
                                            FontWeight="SemiBold"
                                            VerticalAlignment="Center"
                                            Margin="2,0,6,0"
@@ -349,6 +352,8 @@
                                                        IsVisible="{Binding HasAffinity}" />
                                                 <TextBlock Grid.Column="1"
                                                            Text="{Binding PartnerName}"
+                                                           FontFamily="{DynamicResource GameTermFontFamily}"
+                                                           FontSize="{DynamicResource GameTermFontSize14}"
                                                            VerticalAlignment="Center"
                                                            TextTrimming="CharacterEllipsis"
                                                            Margin="2,0,6,0" />

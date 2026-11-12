@@ -1,3 +1,4 @@
+using Avalonia.Media;
 using Avalonia.Media.Imaging;
 using CommunityToolkit.Mvvm.ComponentModel;
 using PoR.App.Services;
@@ -29,13 +30,23 @@ public sealed partial class EnumFieldViewModel : FieldViewModelBase
         EditorHeight = isPortrait ? 112 : 32;
         DropDownHeight = isPortrait ? 540 : 320;
 
+        // AI（移动AI + 3个行为AI）、3D建模与阵营不跟随游戏名词字体。
+        var useGameFont = definition.Id is not ("faction" or "model" or "mtype" or "seq1" or "seq2" or "seq3");
+        var isFaction = string.Equals(definition.Id, "faction", StringComparison.Ordinal);
+        var isJapanese = string.Equals(localization.Language, "jp", StringComparison.Ordinal);
+        var fontFamily = new FontFamily(
+            useGameFont && isJapanese ? "Yu Gothic UI" : "Microsoft YaHei UI");
+        var fontSize = useGameFont && isJapanese ? 13d : 12d;
+
         Items = mapping
             .Select(item => new EnumItemViewModel(
                 item.Value,
                 item.Key,
-                localization.Term(item.TermKey),
+                isFaction ? localization.FixedChineseTerm(item.TermKey) : localization.Term(item.TermKey),
                 GetIcon(definition.EnumId, item.Key, assets),
-                IconSize))
+                IconSize,
+                fontFamily,
+                fontSize))
             .ToList();
 
         SetLoading(true);

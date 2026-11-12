@@ -1,5 +1,7 @@
+using Avalonia.Media;
 using Avalonia.Media.Imaging;
 using CommunityToolkit.Mvvm.ComponentModel;
+using PoR.App.Services;
 using PoR.Core.Values;
 using PoR.Game;
 
@@ -17,11 +19,20 @@ public sealed partial class BoolFieldViewModel : FieldViewModelBase
         string label,
         long value,
         Bitmap? icon = null,
-        double iconSize = 32)
+        double iconSize = 32,
+        bool useGameTermFont = false)
         : base(session, definition, slotIndex, label)
     {
         Icon = icon;
         IconSize = iconSize;
+
+        var japanese = string.Equals(
+            LocalizationService.Instance.Language,
+            "jp",
+            StringComparison.Ordinal);
+        LabelFontFamily = new FontFamily(
+            useGameTermFont && japanese ? "Yu Gothic UI" : "Microsoft YaHei UI");
+        LabelFontSize = useGameTermFont && japanese ? 13d : 12d;
 
         SetLoading(true);
         IsChecked = value != 0;
@@ -33,6 +44,10 @@ public sealed partial class BoolFieldViewModel : FieldViewModelBase
     public bool HasIcon => Icon is not null;
 
     public double IconSize { get; }
+
+    public FontFamily LabelFontFamily { get; }
+
+    public double LabelFontSize { get; }
 
     public void Load(long value)
     {

@@ -99,6 +99,8 @@
                                    IsVisible="{Binding HasIcon}" />
                             <TextBlock Grid.Column="1"
                                        Text="{Binding DisplayName}"
+                                       FontFamily="{Binding FontFamily}"
+                                       FontSize="{Binding FontSize}"
                                        VerticalAlignment="Center"
                                        TextTrimming="CharacterEllipsis" />
                         </Grid>
@@ -128,6 +130,8 @@
                           Margin="10,3,0,3"
                           VerticalAlignment="Center">
                     <TextBlock Text="{Binding Label}"
+                               FontFamily="{Binding LabelFontFamily}"
+                               FontSize="{Binding LabelFontSize}"
                                VerticalAlignment="Center">
                         <TextBlock.RenderTransform>
                             <TranslateTransform Y="-2" />
@@ -147,6 +151,8 @@
                                            FontSize="12"
                                            Margin="10,3,0,3">
                 <TextBlock Text="{Binding DisplayText}"
+                           FontFamily="{DynamicResource DefaultFontFamily}"
+                           FontSize="12"
                            VerticalAlignment="Center">
                     <TextBlock.RenderTransform>
                         <TranslateTransform Y="-2" />
@@ -160,6 +166,14 @@
         <ResourceDictionary>
             <!-- 帮助 Flyout 需要容纳约 500px 宽的图文内容。 -->
             <x:Double x:Key="FlyoutThemeMaxWidth">520</x:Double>
+            <!-- 让 FluentAvalonia 控件与普通 TextBlock/TextBox 使用同一字体。 -->
+            <FontFamily x:Key="DefaultFontFamily">Microsoft YaHei UI</FontFamily>
+            <!-- 游戏名词字体：中文用微软雅黑，日文切换为 Yu Gothic UI。 -->
+            <FontFamily x:Key="GameTermFontFamily">Microsoft YaHei UI</FontFamily>
+            <x:Double x:Key="GameTermFontSize11">11</x:Double>
+            <x:Double x:Key="GameTermFontSize12">12</x:Double>
+            <x:Double x:Key="GameTermFontSize13">13</x:Double>
+            <x:Double x:Key="GameTermFontSize14">14</x:Double>
             <Color x:Key="SystemAccentColor">#0E8FA3</Color>
             <SolidColorBrush x:Key="AccentBrush" Color="#0E8FA3" />
             <SolidColorBrush x:Key="AccentHoverBrush" Color="#14A5BA" />
@@ -329,6 +343,15 @@
         <Style Selector="ComboBox">
             <Setter Property="CornerRadius" Value="6" />
             <Setter Property="MinHeight" Value="32" />
+            <Setter Property="FontSize" Value="12" />
+        </Style>
+
+        <Style Selector="ComboBoxItem">
+            <Setter Property="FontSize" Value="12" />
+        </Style>
+
+        <Style Selector="CheckBox">
+            <Setter Property="FontSize" Value="12" />
         </Style>
 
         <Style Selector="NumericUpDown">

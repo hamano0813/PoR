@@ -55,6 +55,7 @@ public sealed class SkillTabViewModel
             label,
             _snapshot.Slots.ReadField(field, _slot.Index),
             _assets.GetSkillIcon(id),
-            32);
+            32,
+            useGameTermFont: true);
     }
 }
