@@ -48,6 +48,7 @@
   "Field_coordX": "坐标Ｘ",
   "Field_coordY": "坐标Ｙ",
   "Field_mtype": "移动AI",
+  "Field_behaviorAi": "行为AI",
   "Field_seq1": "行为AI 1",
   "Field_seq2": "行为AI 2",
   "Field_seq3": "行为AI 3",

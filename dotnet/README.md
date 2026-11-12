@@ -23,8 +23,8 @@ This branch is a parallel UI version of the completed editor:
 - Status page layout: a 10-column × 88px grid (880px of content, 40px row
   height). Labels are 88px; person/class/3D model dropdowns span 4 columns
   (352px), ally spans 2 columns (176px), move AI spans 3 columns (264px), and
-  the three behavior AI fields share the row at 205px per dropdown. Ordinary
-  numeric and boolean controls are 88px wide.
+  the behavior AI row uses one 88px label followed by three 264px dropdowns.
+  Ordinary numeric and boolean controls are 88px wide.
 - Shares all ViewModels, localization, memory access and page behavior with the
   `avalonia` branch.
 

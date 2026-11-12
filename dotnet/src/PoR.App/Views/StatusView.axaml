@@ -74,23 +74,15 @@
                     <ContentControl Grid.Column="6" Content="{Binding IsLeader}" />
                 </Grid>
 
-                <!-- 行为AI 1/2/3：三组等宽排列。 -->
+                <!-- 行为AI：1 个 88px 标签 + 3 个 264px 下拉框。 -->
                 <Grid Grid.Row="4" Grid.ColumnSpan="10"
-                      ColumnDefinitions="88,*,88,*,88,*">
+                      ColumnDefinitions="88,264,264,264">
                     <Border Grid.Column="0" Classes="fieldLabel">
-                        <TextBlock Text="{loc:Tr Field_seq1}" VerticalAlignment="Center" />
+                        <TextBlock Text="{loc:Tr Field_behaviorAi}" VerticalAlignment="Center" />
                     </Border>
                     <ContentControl Grid.Column="1" Content="{Binding Seq1}" />
-
-                    <Border Grid.Column="2" Classes="fieldLabel">
-                        <TextBlock Text="{loc:Tr Field_seq2}" VerticalAlignment="Center" />
-                    </Border>
-                    <ContentControl Grid.Column="3" Content="{Binding Seq2}" />
-
-                    <Border Grid.Column="4" Classes="fieldLabel">
-                        <TextBlock Text="{loc:Tr Field_seq3}" VerticalAlignment="Center" />
-                    </Border>
-                    <ContentControl Grid.Column="5" Content="{Binding Seq3}" />
+                    <ContentControl Grid.Column="2" Content="{Binding Seq2}" />
+                    <ContentControl Grid.Column="3" Content="{Binding Seq3}" />
                 </Grid>
 
                 <!-- 数值与状态：每行 5 组，标签 88px + 控件 88px。 -->

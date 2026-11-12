@@ -48,6 +48,7 @@
   "Field_coordX": "X座標",
   "Field_coordY": "Y座標",
   "Field_mtype": "移動AI",
+  "Field_behaviorAi": "行動AI",
   "Field_seq1": "行動AI 1",
   "Field_seq2": "行動AI 2",
   "Field_seq3": "行動AI 3",
