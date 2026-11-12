@@ -8,13 +8,13 @@
     <AvaloniaUseCompiledBindingsByDefault>true</AvaloniaUseCompiledBindingsByDefault>
 
     <!-- Version metadata for the C# application. -->
-    <AssemblyVersion>1.9.5.0</AssemblyVersion>
-    <FileVersion>1.9.5.0</FileVersion>
-    <Version>1.9.5</Version>
-    <InformationalVersion>1.9.5</InformationalVersion>
+    <AssemblyVersion>1.9.6.0</AssemblyVersion>
+    <FileVersion>1.9.6.0</FileVersion>
+    <Version>1.9.6</Version>
+    <InformationalVersion>1.9.6</InformationalVersion>
     <IncludeSourceRevisionInInformationalVersion>false</IncludeSourceRevisionInInformationalVersion>
     <Company>Hamano0813</Company>
-    <Product>Fire Emblem Path of Radiance Modifier V1.9.5</Product>
+    <Product>Fire Emblem Path of Radiance Modifier V1.9.6</Product>
     <AssemblyTitle>火焰纹章 苍炎的轨迹 动态修改器</AssemblyTitle>
     <Description>火焰纹章 苍炎的轨迹 动态修改器</Description>
     <Copyright>Copyright © 2021-2026 Hamano0813</Copyright>
