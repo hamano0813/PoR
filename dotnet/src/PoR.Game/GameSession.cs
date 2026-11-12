@@ -304,7 +304,11 @@ public sealed class GameSession : IAsyncDisposable
         var classField = _catalog.GetField("class");
 
         var slotInfos = new List<SlotInfo>(profile.SlotCount);
-        var allyMapping = new List<MappingItem>();
+        var allyMapping = new List<MappingItem>
+        {
+            // A zero ally pointer means no co-op partner.
+            new(0, "SLOT_NONE", "——"),
+        };
         for (var index = 0; index < profile.SlotCount; index++)
         {
             var personPointer = (uint)slots.ReadField(personField, index);
