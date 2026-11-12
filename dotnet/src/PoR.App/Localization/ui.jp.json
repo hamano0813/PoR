@@ -78,6 +78,8 @@
   "Ui_Skill_Active": "スキル / 奥義",
   "Ui_Skill_Features": "隠れ特性",
   "Ui_Item_Item": "道具",
+  "Ui_Item_WeaponSection": "武器枠",
+  "Ui_Item_ItemSection": "道具枠",
   "Ui_Item_Durability": "耐久",
   "Ui_Item_Equipped": "装備",
   "Ui_Item_Dropped": "ドロップ",

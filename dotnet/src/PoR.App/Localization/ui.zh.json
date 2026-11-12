@@ -78,6 +78,8 @@
   "Ui_Skill_Active": "技能 / 奥义",
   "Ui_Skill_Features": "隐藏特性",
   "Ui_Item_Item": "道具",
+  "Ui_Item_WeaponSection": "武器栏",
+  "Ui_Item_ItemSection": "道具栏",
   "Ui_Item_Durability": "耐久",
   "Ui_Item_Equipped": "装备",
   "Ui_Item_Dropped": "掉落",

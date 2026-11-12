@@ -60,6 +60,9 @@ public sealed class StatusTabViewModel
         Seq3 = Enum("seq3");
         Battle = Num("battle");
         Victory = Num("victory");
+
+        Ability = new AbilityTabViewModel(snapshot, slot, session, localization, assets);
+        Items = new ItemTabViewModel(snapshot, slot, session, localization, assets);
     }
 
     public EnumFieldViewModel Person { get; }
@@ -117,6 +120,10 @@ public sealed class StatusTabViewModel
     public NumericFieldViewModel Battle { get; }
 
     public NumericFieldViewModel Victory { get; }
+
+    public AbilityTabViewModel Ability { get; }
+
+    public ItemTabViewModel Items { get; }
 
     private FieldDefinition Field(string id) => _session.Catalog.GetField(id);
 

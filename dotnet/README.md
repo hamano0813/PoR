@@ -11,7 +11,7 @@ This branch is a parallel UI version of the completed editor:
   the built-in `Avalonia.Themes.Fluent` package/theme is not used.
 - Uses `FAAppWindow` for the managed title bar and `FAInfoBar` for the warning
   card on the Other tab.
-- Keeps the fixed 1220×800 window (no resize/maximize) and the same 280px
+- Keeps the fixed 1340×800 window (no resize/maximize) and the same 280px
   roster, form spacing and bottom action bar as the `avalonia` branch.
 - Uses a custom numeric editor: two near-square, borderless/transparent
   Fluent-style buttons (decrease on the left, increase on the right) overlaid
@@ -25,6 +25,13 @@ This branch is a parallel UI version of the completed editor:
   (360px), ally spans 2 columns (180px), move AI spans 3 columns (270px), and
   the behavior AI row uses one 90px label followed by three 270px dropdowns.
   Ordinary numeric and boolean controls are 90px wide.
+- Below the status group, the same page shows two side-by-side groups: ability
+  (6 × 90px columns: stat/growth/weapon-proficiency label-value pairs) and
+  equipment (5 × 90px columns: four weapon rows and four item rows; the item
+  dropdown spans two cells, followed by quantity/equipped/dropped). The page
+  uses an automatic vertical scrollbar when the groups exceed the window
+  height. The ability/equipment tabs share the same ViewModel instances as the
+  status page, so edits stay in sync.
 - Shares all ViewModels, localization, memory access and page behavior with the
   `avalonia` branch.
 

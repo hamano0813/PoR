@@ -326,24 +326,14 @@ public sealed partial class MainWindowViewModel : ViewModelBase, IDisposable
                 _session,
                 _localization,
                 _assets);
-            AbilityTab = new AbilityTabViewModel(
-                _snapshot,
-                info,
-                _session,
-                _localization,
-                _assets);
+            AbilityTab = StatusTab.Ability;
             SkillTab = new SkillTabViewModel(
                 _snapshot,
                 info,
                 _session,
                 _localization,
                 _assets);
-            ItemTab = new ItemTabViewModel(
-                _snapshot,
-                info,
-                _session,
-                _localization,
-                _assets);
+            ItemTab = StatusTab.Items;
             SupportTab = new SupportTabViewModel(
                 _snapshot,
                 info,

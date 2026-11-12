@@ -8,6 +8,15 @@
     <UserControl.Resources>
         <!-- 人物标签上边距：调整第二个数字（top）即可微调标签的垂直位置。 -->
         <Thickness x:Key="PersonLabelMargin">2,3,0,3</Thickness>
+
+        <DataTemplate x:Key="ItemRowTemplate" x:DataType="vm:ItemRowViewModel">
+            <Grid Height="40" ColumnDefinitions="180,90,90,90">
+                <ContentControl Grid.Column="0" Content="{Binding Item}" />
+                <ContentControl Grid.Column="1" Content="{Binding Durability}" />
+                <ContentControl Grid.Column="2" Content="{Binding Equipped}" />
+                <ContentControl Grid.Column="3" Content="{Binding Dropped}" />
+            </Grid>
+        </DataTemplate>
     </UserControl.Resources>
 
     <Border Classes="card"
@@ -16,139 +25,215 @@
             HorizontalAlignment="Center"
             VerticalAlignment="Stretch">
         <ScrollViewer VerticalScrollBarVisibility="Auto"
-                      HorizontalScrollBarVisibility="Disabled">
-            <!-- 10 列，每列 90px；每行 40px。 -->
-            <Grid ColumnDefinitions="90,90,90,90,90,90,90,90,90,90"
-                  RowDefinitions="40,40,40,40,40,40,40,40"
-                  HorizontalAlignment="Center">
+                      HorizontalScrollBarVisibility="Disabled"
+                      AllowAutoHide="False">
+            <StackPanel Width="1000"
+                        Spacing="10"
+                        HorizontalAlignment="Center">
 
-                <!-- 人物：3 行 × 4 列；右侧为职业、3D建模、同行。 -->
-                <Border Grid.Row="0" Grid.Column="0" Classes="fieldLabel"
-                        VerticalAlignment="Top"
-                        Margin="{StaticResource PersonLabelMargin}">
-                    <TextBlock Text="{loc:Tr Field_person}" VerticalAlignment="Center" />
-                </Border>
-                <ContentControl Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="4" Grid.RowSpan="3"
-                                Content="{Binding Person}" />
+                <!-- 状态组：10 列 × 90px，每行 40px。 -->
+                <Grid ColumnDefinitions="90,90,90,90,90,90,90,90,90,90"
+                      RowDefinitions="40,40,40,40,40,40,40,40"
+                      HorizontalAlignment="Left">
 
-                <Border Grid.Row="0" Grid.Column="5" Classes="fieldLabel">
-                    <TextBlock Text="{loc:Tr Field_class}" VerticalAlignment="Center" />
-                </Border>
-                <ContentControl Grid.Row="0" Grid.Column="6" Grid.ColumnSpan="4"
-                                Content="{Binding Class}" />
-
-                <Border Grid.Row="1" Grid.Column="5" Classes="fieldLabel">
-                    <TextBlock Text="{loc:Tr Field_model}" VerticalAlignment="Center" />
-                </Border>
-                <ContentControl Grid.Row="1" Grid.Column="6" Grid.ColumnSpan="4"
-                                Content="{Binding Model}" />
-
-                <Border Grid.Row="2" Grid.Column="5" Classes="fieldLabel">
-                    <TextBlock Text="{loc:Tr Field_ally}" VerticalAlignment="Center" />
-                </Border>
-                <ContentControl Grid.Row="2" Grid.Column="6" Grid.ColumnSpan="2"
-                                Content="{Binding Ally}" />
-                <ContentControl Grid.Row="2" Grid.Column="8"
-                                Content="{Binding Rescuing}" />
-                <ContentControl Grid.Row="2" Grid.Column="9"
-                                Content="{Binding Rescued}" />
-
-                <!-- 移动AI、阵营、部队、部队首领。 -->
-                <Grid Grid.Row="3" Grid.ColumnSpan="10"
-                      ColumnDefinitions="90,270,90,135,90,135,90">
-                    <Border Grid.Column="0" Classes="fieldLabel">
-                        <TextBlock Text="{loc:Tr Field_mtype}" VerticalAlignment="Center" />
+                    <!-- 人物：3 行 × 4 列；右侧为职业、3D建模、同行。 -->
+                    <Border Grid.Row="0" Grid.Column="0" Classes="fieldLabel"
+                            VerticalAlignment="Top"
+                            Margin="{StaticResource PersonLabelMargin}">
+                        <TextBlock Text="{loc:Tr Field_person}" VerticalAlignment="Center" />
                     </Border>
-                    <ContentControl Grid.Column="1" Content="{Binding MType}" />
+                    <ContentControl Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="4" Grid.RowSpan="3"
+                                    Content="{Binding Person}" />
 
-                    <Border Grid.Column="2" Classes="fieldLabel">
-                        <TextBlock Text="{loc:Tr Field_faction}" VerticalAlignment="Center" />
+                    <Border Grid.Row="0" Grid.Column="5" Classes="fieldLabel">
+                        <TextBlock Text="{loc:Tr Field_class}" VerticalAlignment="Center" />
                     </Border>
-                    <ContentControl Grid.Column="3" Content="{Binding Faction}" />
+                    <ContentControl Grid.Row="0" Grid.Column="6" Grid.ColumnSpan="4"
+                                    Content="{Binding Class}" />
 
-                    <Border Grid.Column="4" Classes="fieldLabel">
-                        <TextBlock Text="{loc:Tr Field_army}" VerticalAlignment="Center" />
+                    <Border Grid.Row="1" Grid.Column="5" Classes="fieldLabel">
+                        <TextBlock Text="{loc:Tr Field_model}" VerticalAlignment="Center" />
                     </Border>
-                    <ContentControl Grid.Column="5" Content="{Binding Army}" />
+                    <ContentControl Grid.Row="1" Grid.Column="6" Grid.ColumnSpan="4"
+                                    Content="{Binding Model}" />
 
-                    <ContentControl Grid.Column="6" Content="{Binding IsLeader}" />
+                    <Border Grid.Row="2" Grid.Column="5" Classes="fieldLabel">
+                        <TextBlock Text="{loc:Tr Field_ally}" VerticalAlignment="Center" />
+                    </Border>
+                    <ContentControl Grid.Row="2" Grid.Column="6" Grid.ColumnSpan="2"
+                                    Content="{Binding Ally}" />
+                    <ContentControl Grid.Row="2" Grid.Column="8"
+                                    Content="{Binding Rescuing}" />
+                    <ContentControl Grid.Row="2" Grid.Column="9"
+                                    Content="{Binding Rescued}" />
+
+                    <!-- 移动AI、阵营、部队、部队首领。 -->
+                    <Grid Grid.Row="3" Grid.ColumnSpan="10"
+                          ColumnDefinitions="90,270,90,135,90,135,90">
+                        <Border Grid.Column="0" Classes="fieldLabel">
+                            <TextBlock Text="{loc:Tr Field_mtype}" VerticalAlignment="Center" />
+                        </Border>
+                        <ContentControl Grid.Column="1" Content="{Binding MType}" />
+
+                        <Border Grid.Column="2" Classes="fieldLabel">
+                            <TextBlock Text="{loc:Tr Field_faction}" VerticalAlignment="Center" />
+                        </Border>
+                        <ContentControl Grid.Column="3" Content="{Binding Faction}" />
+
+                        <Border Grid.Column="4" Classes="fieldLabel">
+                            <TextBlock Text="{loc:Tr Field_army}" VerticalAlignment="Center" />
+                        </Border>
+                        <ContentControl Grid.Column="5" Content="{Binding Army}" />
+
+                        <ContentControl Grid.Column="6" Content="{Binding IsLeader}" />
+                    </Grid>
+
+                    <!-- 行为AI：1 个 90px 标签 + 3 个 270px 下拉框。 -->
+                    <Grid Grid.Row="4" Grid.ColumnSpan="10"
+                          ColumnDefinitions="90,270,270,270">
+                        <Border Grid.Column="0" Classes="fieldLabel">
+                            <TextBlock Text="{loc:Tr Field_behaviorAi}" VerticalAlignment="Center" />
+                        </Border>
+                        <ContentControl Grid.Column="1" Content="{Binding Seq1}" />
+                        <ContentControl Grid.Column="2" Content="{Binding Seq2}" />
+                        <ContentControl Grid.Column="3" Content="{Binding Seq3}" />
+                    </Grid>
+
+                    <!-- 数值与状态：每行 5 组，标签 90px + 控件 90px。 -->
+                    <Border Grid.Row="5" Grid.Column="0" Classes="fieldLabel">
+                        <TextBlock Text="{loc:Tr Field_slotIndex}" VerticalAlignment="Center" />
+                    </Border>
+                    <ContentControl Grid.Row="5" Grid.Column="1" Content="{Binding SlotIndex}" />
+                    <Border Grid.Row="5" Grid.Column="2" Classes="fieldLabel">
+                        <TextBlock Text="{loc:Tr Field_level}" VerticalAlignment="Center" />
+                    </Border>
+                    <ContentControl Grid.Row="5" Grid.Column="3" Content="{Binding Level}" />
+                    <Border Grid.Row="5" Grid.Column="4" Classes="fieldLabel">
+                        <TextBlock Text="{loc:Tr Field_exp}" VerticalAlignment="Center" />
+                    </Border>
+                    <ContentControl Grid.Row="5" Grid.Column="5" Content="{Binding Exp}" />
+                    <Border Grid.Row="5" Grid.Column="6" Classes="fieldLabel">
+                        <TextBlock Text="{loc:Tr Field_hp}" VerticalAlignment="Center" />
+                    </Border>
+                    <ContentControl Grid.Row="5" Grid.Column="7" Content="{Binding Hp}" />
+                    <Border Grid.Row="5" Grid.Column="8" Classes="fieldLabel">
+                        <TextBlock Text="{loc:Tr Field_transform}" VerticalAlignment="Center" />
+                    </Border>
+                    <ContentControl Grid.Row="5" Grid.Column="9" Content="{Binding Transform}" />
+
+                    <Border Grid.Row="6" Grid.Column="0" Classes="fieldLabel">
+                        <TextBlock Text="{loc:Tr Field_poison}" VerticalAlignment="Center" />
+                    </Border>
+                    <ContentControl Grid.Row="6" Grid.Column="1" Content="{Binding Poison}" />
+                    <Border Grid.Row="6" Grid.Column="2" Classes="fieldLabel">
+                        <TextBlock Text="{loc:Tr Field_sleep}" VerticalAlignment="Center" />
+                    </Border>
+                    <ContentControl Grid.Row="6" Grid.Column="3" Content="{Binding Sleep}" />
+                    <Border Grid.Row="6" Grid.Column="4" Classes="fieldLabel">
+                        <TextBlock Text="{loc:Tr Field_silence}" VerticalAlignment="Center" />
+                    </Border>
+                    <ContentControl Grid.Row="6" Grid.Column="5" Content="{Binding Silence}" />
+                    <Border Grid.Row="6" Grid.Column="6" Classes="fieldLabel">
+                        <TextBlock Text="{loc:Tr Field_berserk}" VerticalAlignment="Center" />
+                    </Border>
+                    <ContentControl Grid.Row="6" Grid.Column="7" Content="{Binding Berserk}" />
+                    <Border Grid.Row="6" Grid.Column="8" Classes="fieldLabel">
+                        <TextBlock Text="{loc:Tr Field_paralysis}" VerticalAlignment="Center" />
+                    </Border>
+                    <ContentControl Grid.Row="6" Grid.Column="9" Content="{Binding Paralysis}" />
+
+                    <Border Grid.Row="7" Grid.Column="0" Classes="fieldLabel">
+                        <TextBlock Text="{loc:Tr Field_coordX}" VerticalAlignment="Center" />
+                    </Border>
+                    <ContentControl Grid.Row="7" Grid.Column="1" Content="{Binding CoordX}" />
+                    <Border Grid.Row="7" Grid.Column="2" Classes="fieldLabel">
+                        <TextBlock Text="{loc:Tr Field_coordY}" VerticalAlignment="Center" />
+                    </Border>
+                    <ContentControl Grid.Row="7" Grid.Column="3" Content="{Binding CoordY}" />
+                    <Border Grid.Row="7" Grid.Column="4" Classes="fieldLabel">
+                        <TextBlock Text="{loc:Tr Field_battle}" VerticalAlignment="Center" />
+                    </Border>
+                    <ContentControl Grid.Row="7" Grid.Column="5" Content="{Binding Battle}" />
+                    <Border Grid.Row="7" Grid.Column="6" Classes="fieldLabel">
+                        <TextBlock Text="{loc:Tr Field_victory}" VerticalAlignment="Center" />
+                    </Border>
+                    <ContentControl Grid.Row="7" Grid.Column="7" Content="{Binding Victory}" />
+                    <Border Grid.Row="7" Grid.Column="8" Classes="fieldLabel">
+                        <TextBlock Text="{loc:Tr Field_actionStatus}" VerticalAlignment="Center" />
+                    </Border>
+                    <ContentControl Grid.Row="7" Grid.Column="9" Content="{Binding Action}" />
                 </Grid>
 
-                <!-- 行为AI：1 个 90px 标签 + 3 个 270px 下拉框。 -->
-                <Grid Grid.Row="4" Grid.ColumnSpan="10"
-                      ColumnDefinitions="90,270,270,270">
-                    <Border Grid.Column="0" Classes="fieldLabel">
-                        <TextBlock Text="{loc:Tr Field_behaviorAi}" VerticalAlignment="Center" />
-                    </Border>
-                    <ContentControl Grid.Column="1" Content="{Binding Seq1}" />
-                    <ContentControl Grid.Column="2" Content="{Binding Seq2}" />
-                    <ContentControl Grid.Column="3" Content="{Binding Seq3}" />
+                <Border Height="1"
+                        Background="{DynamicResource AppBorderBrush}"
+                        Opacity="0.7" />
+
+                <!-- 能力（6列）与装备（5列）左右并排。 -->
+                <Grid Width="1000"
+                      ColumnDefinitions="540,10,450">
+
+                    <ItemsControl Grid.Column="0"
+                                  Width="540"
+                                  ItemsSource="{Binding Ability.Rows}">
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate x:DataType="vm:AbilityRowViewModel">
+                                <Grid Height="40" ColumnDefinitions="90,90,90,90,90,90">
+                                    <Border Grid.Column="0" Classes="fieldLabel">
+                                        <TextBlock Text="{Binding Label}" VerticalAlignment="Center" />
+                                    </Border>
+                                    <ContentControl Grid.Column="1" Content="{Binding Stat}" />
+
+                                    <Border Grid.Column="2" Classes="fieldLabel"
+                                            IsVisible="{Binding HasGrowth}">
+                                        <TextBlock Text="{Binding GrowthLabel}" VerticalAlignment="Center" />
+                                    </Border>
+                                    <ContentControl Grid.Column="3" Content="{Binding Growth}"
+                                                    IsVisible="{Binding HasGrowth}" />
+
+                                    <Border Grid.Column="4" Classes="fieldLabel"
+                                            IsVisible="{Binding HasWeapon}">
+                                        <StackPanel Orientation="Horizontal"
+                                                    Spacing="4"
+                                                    HorizontalAlignment="Center"
+                                                    VerticalAlignment="Center">
+                                            <Image Source="{Binding WeaponIcon}"
+                                                   Width="22"
+                                                   Height="22"
+                                                   VerticalAlignment="Center" />
+                                            <TextBlock Text="{Binding ProficiencyLabel}"
+                                                       FontSize="12"
+                                                       VerticalAlignment="Center" />
+                                        </StackPanel>
+                                    </Border>
+                                    <ContentControl Grid.Column="5" Content="{Binding Proficiency}"
+                                                    IsVisible="{Binding HasWeapon}" />
+                                </Grid>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+
+                    <Border Grid.Column="1"
+                            Width="1"
+                            Background="{DynamicResource AppBorderBrush}"
+                            Opacity="0.7"
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Stretch" />
+
+                    <StackPanel Grid.Column="2" Width="450">
+                        <Border Classes="fieldLabel" Height="34">
+                            <TextBlock Text="{loc:Tr Ui_Item_WeaponSection}" VerticalAlignment="Center" />
+                        </Border>
+                        <ItemsControl ItemsSource="{Binding Items.WeaponRows}"
+                                      ItemTemplate="{StaticResource ItemRowTemplate}" />
+
+                        <Border Classes="fieldLabel" Height="34">
+                            <TextBlock Text="{loc:Tr Ui_Item_ItemSection}" VerticalAlignment="Center" />
+                        </Border>
+                        <ItemsControl ItemsSource="{Binding Items.ItemRows}"
+                                      ItemTemplate="{StaticResource ItemRowTemplate}" />
+                    </StackPanel>
                 </Grid>
-
-                <!-- 数值与状态：每行 5 组，标签 90px + 控件 90px。 -->
-                <Border Grid.Row="5" Grid.Column="0" Classes="fieldLabel">
-                    <TextBlock Text="{loc:Tr Field_slotIndex}" VerticalAlignment="Center" />
-                </Border>
-                <ContentControl Grid.Row="5" Grid.Column="1" Content="{Binding SlotIndex}" />
-                <Border Grid.Row="5" Grid.Column="2" Classes="fieldLabel">
-                    <TextBlock Text="{loc:Tr Field_level}" VerticalAlignment="Center" />
-                </Border>
-                <ContentControl Grid.Row="5" Grid.Column="3" Content="{Binding Level}" />
-                <Border Grid.Row="5" Grid.Column="4" Classes="fieldLabel">
-                    <TextBlock Text="{loc:Tr Field_exp}" VerticalAlignment="Center" />
-                </Border>
-                <ContentControl Grid.Row="5" Grid.Column="5" Content="{Binding Exp}" />
-                <Border Grid.Row="5" Grid.Column="6" Classes="fieldLabel">
-                    <TextBlock Text="{loc:Tr Field_hp}" VerticalAlignment="Center" />
-                </Border>
-                <ContentControl Grid.Row="5" Grid.Column="7" Content="{Binding Hp}" />
-                <Border Grid.Row="5" Grid.Column="8" Classes="fieldLabel">
-                    <TextBlock Text="{loc:Tr Field_transform}" VerticalAlignment="Center" />
-                </Border>
-                <ContentControl Grid.Row="5" Grid.Column="9" Content="{Binding Transform}" />
-
-                <Border Grid.Row="6" Grid.Column="0" Classes="fieldLabel">
-                    <TextBlock Text="{loc:Tr Field_poison}" VerticalAlignment="Center" />
-                </Border>
-                <ContentControl Grid.Row="6" Grid.Column="1" Content="{Binding Poison}" />
-                <Border Grid.Row="6" Grid.Column="2" Classes="fieldLabel">
-                    <TextBlock Text="{loc:Tr Field_sleep}" VerticalAlignment="Center" />
-                </Border>
-                <ContentControl Grid.Row="6" Grid.Column="3" Content="{Binding Sleep}" />
-                <Border Grid.Row="6" Grid.Column="4" Classes="fieldLabel">
-                    <TextBlock Text="{loc:Tr Field_silence}" VerticalAlignment="Center" />
-                </Border>
-                <ContentControl Grid.Row="6" Grid.Column="5" Content="{Binding Silence}" />
-                <Border Grid.Row="6" Grid.Column="6" Classes="fieldLabel">
-                    <TextBlock Text="{loc:Tr Field_berserk}" VerticalAlignment="Center" />
-                </Border>
-                <ContentControl Grid.Row="6" Grid.Column="7" Content="{Binding Berserk}" />
-                <Border Grid.Row="6" Grid.Column="8" Classes="fieldLabel">
-                    <TextBlock Text="{loc:Tr Field_paralysis}" VerticalAlignment="Center" />
-                </Border>
-                <ContentControl Grid.Row="6" Grid.Column="9" Content="{Binding Paralysis}" />
-
-                <Border Grid.Row="7" Grid.Column="0" Classes="fieldLabel">
-                    <TextBlock Text="{loc:Tr Field_coordX}" VerticalAlignment="Center" />
-                </Border>
-                <ContentControl Grid.Row="7" Grid.Column="1" Content="{Binding CoordX}" />
-                <Border Grid.Row="7" Grid.Column="2" Classes="fieldLabel">
-                    <TextBlock Text="{loc:Tr Field_coordY}" VerticalAlignment="Center" />
-                </Border>
-                <ContentControl Grid.Row="7" Grid.Column="3" Content="{Binding CoordY}" />
-                <Border Grid.Row="7" Grid.Column="4" Classes="fieldLabel">
-                    <TextBlock Text="{loc:Tr Field_battle}" VerticalAlignment="Center" />
-                </Border>
-                <ContentControl Grid.Row="7" Grid.Column="5" Content="{Binding Battle}" />
-                <Border Grid.Row="7" Grid.Column="6" Classes="fieldLabel">
-                    <TextBlock Text="{loc:Tr Field_victory}" VerticalAlignment="Center" />
-                </Border>
-                <ContentControl Grid.Row="7" Grid.Column="7" Content="{Binding Victory}" />
-                <Border Grid.Row="7" Grid.Column="8" Classes="fieldLabel">
-                    <TextBlock Text="{loc:Tr Field_actionStatus}" VerticalAlignment="Center" />
-                </Border>
-                <ContentControl Grid.Row="7" Grid.Column="9" Content="{Binding Action}" />
-            </Grid>
+            </StackPanel>
         </ScrollViewer>
     </Border>
 </UserControl>

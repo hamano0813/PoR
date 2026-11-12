@@ -70,9 +70,15 @@ public sealed class ItemTabViewModel
         }
 
         Rows = rows;
+        WeaponRows = rows.Take(4).ToList();
+        ItemRows = rows.Skip(4).ToList();
     }
 
     public IReadOnlyList<ItemRowViewModel> Rows { get; }
+
+    public IReadOnlyList<ItemRowViewModel> WeaponRows { get; }
+
+    public IReadOnlyList<ItemRowViewModel> ItemRows { get; }
 
     private FieldDefinition Field(string id) => _session.Catalog.GetField(id);
 
