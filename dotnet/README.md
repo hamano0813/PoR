@@ -69,7 +69,8 @@ Current UI scope:
   theme and language use the same neutral button style, all four have fixed
   96px width
 - action status has its own label; the rescue/rescued checkboxes share a compact
-  horizontal group; checkbox text uses the same 12px size as other controls
+  horizontal group; checkbox text is vertically centered and uses the same
+  12px size as other controls
 - tab pages use `CompactTabControl` to remove the FluentAvalonia 12px selected
   content margin and tighten the outer page spacing
 - `tools/process_avatars.py` regenerates the de-fringed PNG portraits used by
