@@ -31,11 +31,13 @@ This branch is a parallel UI version of the completed editor:
   four weapon rows and four item rows; the item dropdown spans two 100px cells,
   quantity is 100px, the equipped checkbox column is 64px, and dropped is
   100px. The equipped column saves 36px, matching the 10px panel gap plus 12px
-  panel padding and 1px border on each side, so the visible control edges align
-  across the three panels while the equipment card keeps its 526px outer width.
-  The page uses an automatic vertical scrollbar when the panels exceed the
-  window height. The ability/equipment tabs share the same ViewModel instances
-  as the status page, so edits stay in sync.
+  panel padding and 1px border on each side. The equipment card is therefore
+  490px wide (464px content + 24px padding + 2px border), so the lower row is
+  526 + 10 + 490 = 1026px, exactly matching the 1026px status card and aligning
+  all three panel edges and visible control edges. The page uses an automatic
+  vertical scrollbar when the panels exceed the window height. The
+  ability/equipment tabs share the same ViewModel instances as the status page,
+  so edits stay in sync.
 - Shares all ViewModels, localization, memory access and page behavior with the
   `avalonia` branch.
 

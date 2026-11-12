@@ -36,7 +36,7 @@
     <ScrollViewer VerticalScrollBarVisibility="Auto"
                   HorizontalScrollBarVisibility="Disabled"
                   AllowAutoHide="False">
-        <StackPanel Width="1062"
+        <StackPanel Width="1026"
                     Spacing="10"
                     Margin="4"
                     HorizontalAlignment="Center">
@@ -177,8 +177,8 @@
             </Border>
 
             <!-- 能力（5列）与装备（5列）分别使用独立面板。 -->
-            <Grid Width="1062"
-                  ColumnDefinitions="526,10,526">
+            <Grid Width="1026"
+                  ColumnDefinitions="526,10,490">
 
                 <Border Grid.Column="0" Classes="card" Padding="12">
                     <ItemsControl Width="500"
