@@ -6,9 +6,9 @@
       "type": "coreclr",
       "request": "launch",
       "preLaunchTask": "build PoR.App",
-      "program": "${workspaceFolder}/dotnet/src/PoR.App/bin/Debug/net10.0-windows/PoR.App.dll",
+      "program": "${workspaceFolder}/src/PoR.App/bin/Debug/net10.0-windows/PoR.App.dll",
       "args": [],
-      "cwd": "${workspaceFolder}/dotnet/src/PoR.App",
+      "cwd": "${workspaceFolder}/src/PoR.App",
       "console": "internalConsole",
       "stopAtEntry": false,
       "justMyCode": true

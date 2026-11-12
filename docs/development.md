@@ -51,8 +51,7 @@ This branch is the C#-only UI version of the completed editor:
 ## Projects
 
 ```text
-dotnet/
-├─ PoR.sln
+PoR.sln
 ├─ src/
 │  ├─ PoR.App/                 # Avalonia UI (roster + single status page + language/theme)
 │  ├─ PoR.Core/                # memory abstractions, ValueCodec, mapping models
@@ -67,7 +66,7 @@ dotnet/
 ## Run the Avalonia app
 
 ```bash
-cd C:\iCode\PoR\dotnet
+cd C:\iCode\PoR
 dotnet run --project src/PoR.App/PoR.App.csproj
 ```
 
@@ -112,7 +111,7 @@ throughout the editor.
 ## Build
 
 ```bash
-cd dotnet
+cd C:\iCode\PoR
 dotnet build PoR.sln
 ```
 
@@ -121,7 +120,7 @@ dotnet build PoR.sln
 Two single-file publish profiles are available:
 
 ```bash
-cd dotnet
+cd C:\iCode\PoR
 
 # Self-contained, compressed: about 52 MB, no .NET runtime required.
 dotnet publish src/PoR.App/PoR.App.csproj -p:PublishProfile=win-x64-standalone
@@ -203,10 +202,10 @@ The probe reads:
 The embedded JSON catalog under `src/PoR.Game/Data/` and the localization files
 under `src/PoR.App/Localization/` are the current source of truth.
 
-Validation report: `../docs/data-report.md`.
+Validation report: `data-report.md`.
 
 ## Prerequisites
 
 - .NET 10 SDK (10.0.404 or later)
 - Avalonia templates 12.1.6 when P3 starts
-- See `../docs/avalonia-refactor-plan.md` section 14 for commands.
+- See `avalonia-refactor-plan.md` section 14 for commands.

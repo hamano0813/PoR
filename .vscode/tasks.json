@@ -11,7 +11,7 @@
         "--no-restore"
       ],
       "options": {
-        "cwd": "${workspaceFolder}/dotnet"
+        "cwd": "${workspaceFolder}"
       },
       "problemMatcher": "$msCompile",
       "group": "build"

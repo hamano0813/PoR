@@ -36,15 +36,14 @@ C# / Avalonia 12 / .NET 10 版本，替换了旧的 Python / PySide6 实现。
 - Dolphin 5.0 以上
 
 ```bash
-cd dotnet
 dotnet run --project src/PoR.App/PoR.App.csproj
 ```
 
-也可以使用 `dotnet/` 下的 `PoR.sln` 在 Visual Studio 中打开并运行。
+也可以使用根目录的 `PoR.sln` 在 Visual Studio 中打开并运行。
 
 #### 发布 EXE
 
-在 `dotnet/` 目录下执行：
+在仓库根目录执行：
 
 ```bash
 # 自包含单文件版本（体积较大，不依赖本机 .NET）
@@ -54,7 +53,7 @@ dotnet publish src/PoR.App/PoR.App.csproj -c Release -p:PublishProfile=win-x64-s
 dotnet publish src/PoR.App/PoR.App.csproj -c Release -p:PublishProfile=win-x64-framework-dependent
 ```
 
-输出目录分别为 `dotnet/publish/win-x64` 和 `dotnet/publish/win-x64-framework-dependent`。
+输出目录分别为 `publish/win-x64` 和 `publish/win-x64-framework-dependent`。
 
 #### 版本
 
