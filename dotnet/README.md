@@ -94,9 +94,9 @@ Current UI scope:
   C/B/A progress bars; affinity icons are 20px
 - the old Skill/Item/Support/Other tabs and the compact tab control have been
   removed; their controls now live directly on the status page
-- bottom status bar: editable money/bonus-EXP text fields, refresh (accent),
-  theme, language; the separate reconnect button was removed because refresh
-  re-hooks when disconnected
+- bottom status bar: left-aligned refresh (accent) followed by editable
+  money/EXP text fields; theme and language stay right-aligned. The separate
+  reconnect button was removed because refresh re-hooks when disconnected.
 - language switching reloads game terms only; UI labels and buttons stay in
   Chinese; the theme button now shows the current mode (深色/浅色)
 - action status has its own label; the rescue/rescued checkboxes share a compact

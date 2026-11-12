@@ -69,8 +69,9 @@
                 BorderBrush="{DynamicResource AppBorderBrush}"
                 BorderThickness="0,1,0,0"
                 Padding="10,0">
-            <Grid ColumnDefinitions="*,Auto">
-                <Grid ColumnDefinitions="Auto,Auto,Auto,*"
+            <Grid ColumnDefinitions="Auto,Auto,*,Auto">
+                <Grid MaxWidth="480"
+                      ColumnDefinitions="Auto,Auto,Auto,*"
                       VerticalAlignment="Center">
                     <TextBlock Text="●"
                                FontSize="12"
@@ -101,7 +102,24 @@
                 <StackPanel Grid.Column="1"
                             Orientation="Horizontal"
                             Spacing="8"
+                            Margin="16,0,0,0"
                             VerticalAlignment="Center">
+                    <Button Command="{Binding RefreshCommand}"
+                            IsEnabled="{Binding IsNotBusy}"
+                            Classes="accent"
+                            Width="96"
+                            HorizontalContentAlignment="Center">
+                        <StackPanel Orientation="Horizontal"
+                                    Spacing="6">
+                            <TextBlock Text="&#xE72C;"
+                                       FontFamily="Segoe Fluent Icons"
+                                       FontSize="14"
+                                       VerticalAlignment="Center" />
+                            <TextBlock Text="{loc:Tr Ui_Action_Refresh}"
+                                       VerticalAlignment="Center" />
+                        </StackPanel>
+                    </Button>
+
                     <StackPanel Orientation="Horizontal"
                                 Spacing="4"
                                 VerticalAlignment="Center">
@@ -123,23 +141,12 @@
                                  IsEnabled="{Binding HasSnapshot}"
                                  Text="{Binding OtherTab.BonusExp.Value, Mode=TwoWay, UpdateSourceTrigger=LostFocus, StringFormat='{}{0:0}'}" />
                     </StackPanel>
+                </StackPanel>
 
-                    <Button Command="{Binding RefreshCommand}"
-                            IsEnabled="{Binding IsNotBusy}"
-                            Classes="accent"
-                            Width="96"
-                            HorizontalContentAlignment="Center">
-                        <StackPanel Orientation="Horizontal"
-                                    Spacing="6">
-                            <TextBlock Text="&#xE72C;"
-                                       FontFamily="Segoe Fluent Icons"
-                                       FontSize="14"
-                                       VerticalAlignment="Center" />
-                            <TextBlock Text="{loc:Tr Ui_Action_Refresh}"
-                                       VerticalAlignment="Center" />
-                        </StackPanel>
-                    </Button>
-
+                <StackPanel Grid.Column="3"
+                            Orientation="Horizontal"
+                            Spacing="8"
+                            VerticalAlignment="Center">
                     <Button Command="{Binding ToggleThemeCommand}"
                             ToolTip.Tip="{loc:Tr Ui_Action_Theme}"
                             Width="96"
