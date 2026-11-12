@@ -4,7 +4,7 @@
              xmlns:local="using:PoR.App"
              xmlns:fields="using:PoR.App.ViewModels.Fields"
              xmlns:controls="using:PoR.App.Controls"
-             xmlns:sty="using:FluentAvalonia.Styling"
+             xmlns:sty="using:AvaloniaFluentUI.Styling"
              RequestedThemeVariant="Default">
 
     <Application.DataTemplates>
@@ -158,6 +158,8 @@
 
     <Application.Resources>
         <ResourceDictionary>
+            <!-- 帮助 Flyout 需要容纳约 500px 宽的图文内容。 -->
+            <x:Double x:Key="FlyoutThemeMaxWidth">520</x:Double>
             <Color x:Key="SystemAccentColor">#0E8FA3</Color>
             <SolidColorBrush x:Key="AccentBrush" Color="#0E8FA3" />
             <SolidColorBrush x:Key="AccentHoverBrush" Color="#14A5BA" />
@@ -171,6 +173,9 @@
                     <SolidColorBrush x:Key="AppBorderBrush" Color="#E0E0E0" />
                     <SolidColorBrush x:Key="AppForegroundBrush" Color="#1A1A1A" />
                     <SolidColorBrush x:Key="AppInputBackgroundBrush" Color="#FFFFFF" />
+                    <SolidColorBrush x:Key="SupportMeterTrackBrush" Color="#D8D8D8" />
+                    <SolidColorBrush x:Key="SupportMeterFillBrush" Color="#3DB9C9" />
+                    <SolidColorBrush x:Key="SupportMeterForegroundBrush" Color="#1A1A1A" />
                 </ResourceDictionary>
                 <ResourceDictionary x:Key="Dark">
                     <SolidColorBrush x:Key="AppBackgroundBrush" Color="#1F1F1F" />
@@ -179,14 +184,23 @@
                     <SolidColorBrush x:Key="AppBorderBrush" Color="#3A3A3A" />
                     <SolidColorBrush x:Key="AppForegroundBrush" Color="#F2F2F2" />
                     <SolidColorBrush x:Key="AppInputBackgroundBrush" Color="#333333" />
+                    <SolidColorBrush x:Key="SupportMeterTrackBrush" Color="#3A3A3A" />
+                    <SolidColorBrush x:Key="SupportMeterFillBrush" Color="#0B7C8C" />
+                    <SolidColorBrush x:Key="SupportMeterForegroundBrush" Color="#FFFFFF" />
                 </ResourceDictionary>
             </ResourceDictionary.ThemeDictionaries>
         </ResourceDictionary>
     </Application.Resources>
 
     <Application.Styles>
-        <sty:FluentAvaloniaTheme PreferSystemTheme="True"
-                                 CustomAccentColor="#0E8FA3" />
+        <sty:AvaloniaFluentTheme PreferSystemTheme="True"
+                                 AccentColor="#0E8FA3" />
+
+        <!-- Flyout 内容自行控制尺寸，不需要滚动条。 -->
+        <Style Selector="FlyoutPresenter">
+            <Setter Property="ScrollViewer.HorizontalScrollBarVisibility" Value="Disabled" />
+            <Setter Property="ScrollViewer.VerticalScrollBarVisibility" Value="Disabled" />
+        </Style>
 
         <Style Selector="Button">
             <Setter Property="CornerRadius" Value="6" />
@@ -381,7 +395,7 @@
 
         <Style Selector="TextBlock.sectionTitle">
             <Setter Property="FontSize" Value="13" />
-            <Setter Property="FontWeight" Value="SemiBold" />
+            <Setter Property="FontWeight" Value="Bold" />
             <Setter Property="Margin" Value="2,0,0,8" />
         </Style>
 

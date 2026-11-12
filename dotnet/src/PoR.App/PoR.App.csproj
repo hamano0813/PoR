@@ -50,7 +50,7 @@
       <PrivateAssets Condition="'$(Configuration)' != 'Debug'">All</PrivateAssets>
     </PackageReference>
     <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.2" />
-    <PackageReference Include="FluentAvaloniaUI" Version="3.1.0" />
+    <PackageReference Include="AvaloniaFluentUI" Version="2.0.6" />
   </ItemGroup>
 
   <ItemGroup>

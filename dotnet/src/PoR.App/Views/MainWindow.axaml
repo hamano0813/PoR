@@ -1,6 +1,7 @@
-<fa:FAAppWindow xmlns="https://github.com/avaloniaui"
+<fw:FluentWindow xmlns="https://github.com/avaloniaui"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:fa="using:FluentAvalonia.UI.Windowing"
+        xmlns:fw="using:AvaloniaFluentUI.Windowing"
+        xmlns:ui="using:AvaloniaFluentUI.Controls"
         xmlns:vm="using:PoR.App.ViewModels"
         xmlns:views="using:PoR.App.Views"
         xmlns:loc="using:PoR.App.Localization"
@@ -13,10 +14,110 @@
         WindowStartupLocation="CenterScreen"
         CanResize="False"
         CanMaximize="False"
+        MaxButtonIsVisible="False"
         FontFamily="Microsoft YaHei UI"
         Background="{DynamicResource AppBackgroundBrush}">
 
+    <Window.Styles>
+        <Style Selector="Button.titleBarButton">
+            <Setter Property="Width" Value="46" />
+            <Setter Property="Height" Value="45" />
+            <Setter Property="MinHeight" Value="0" />
+            <Setter Property="Padding" Value="0" />
+            <Setter Property="CornerRadius" Value="0" />
+            <Setter Property="Background" Value="Transparent" />
+            <Setter Property="BorderThickness" Value="0" />
+            <Setter Property="HorizontalContentAlignment" Value="Center" />
+            <Setter Property="VerticalContentAlignment" Value="Center" />
+        </Style>
+    </Window.Styles>
+
+    <fw:FluentWindow.TitleBarContent>
+        <StackPanel Orientation="Horizontal"
+                    Spacing="2"
+                    Margin="0,0,4,0"
+                    HorizontalAlignment="Right"
+                    VerticalAlignment="Center"
+                    fw:FluentWindow.AllowInteractionInTitleBar="True">
+            <Button Classes="titleBarButton"
+                    Command="{Binding ToggleThemeCommand}"
+                    ToolTip.Tip="{loc:Tr Ui_Action_Theme}">
+                <TextBlock Text="{Binding ThemeIcon}"
+                           FontFamily="Segoe Fluent Icons"
+                           FontSize="14"
+                           VerticalAlignment="Center" />
+            </Button>
+            <Button Classes="titleBarButton"
+                    Command="{Binding ToggleLanguageCommand}"
+                    ToolTip.Tip="{loc:Tr Ui_Action_Language}">
+                <TextBlock Text="{Binding LanguageShortText}"
+                           FontSize="13"
+                           FontWeight="SemiBold"
+                           VerticalAlignment="Center" />
+            </Button>
+            <Button Classes="titleBarButton"
+                    ToolTip.Tip="{loc:Tr Ui_Action_Help}">
+                <Button.Flyout>
+                    <ui:FluentFlyout Placement="BottomEdgeAlignedRight">
+                        <Border Background="{DynamicResource AppSurfaceBrush}"
+                                CornerRadius="8"
+                                Padding="16">
+                            <StackPanel Width="460"
+                                        Spacing="8">
+                            <TextBlock Text="修改提示"
+                                       FontSize="16"
+                                       FontWeight="Bold" />
+                            <TextBlock Text="修改可能出现严重错误，及时存档是好习惯"
+                                       FontSize="12"
+                                       FontWeight="Bold"
+                                       TextWrapping="Wrap" />
+                            <TextBlock Text="1.支持日文原版和汉化版，同时支持 Dolphin 5.0 以上至今的任意开发版本&#10;2.修改人物职业为上级职业时，记得在技能的隐藏特性里勾选“上级职业”&#10;3.模型原则上可以修改人物是否持有武器等等，可能会出现奇妙的 3D 贴图错误，慎用&#10;4.将敌方修改为本方可能在过关时加入，但容易造成后续关卡的阵容和强制出击出现问题，慎用&#10;5.武器熟练只有在职业可以使用该类武器时生效，圣骑士等职业可以勾选隐藏特性装备各类武器&#10;6.人物的生理节奏与战斗次数有关，每战斗 10 次生理曲线前进 1 格，30 格为一个周期"
+                                       FontSize="12"
+                                       LineHeight="18"
+                                       TextWrapping="Wrap"
+                                       Opacity="0.85" />
+                            <TextBlock Text="created by Hamano0813"
+                                       FontSize="11"
+                                       Opacity="0.55" />
+                            <Separator />
+                            <Grid ColumnDefinitions="180,*"
+                                  ColumnSpacing="14">
+                                <Image Source="avares://PoR.App/Assets/bill.png"
+                                       Width="180"
+                                       Height="180"
+                                       Stretch="Uniform" />
+                                <StackPanel Grid.Column="1"
+                                            Spacing="6"
+                                            VerticalAlignment="Center">
+                                    <TextBlock Text="友情捐赠"
+                                               FontSize="15"
+                                               FontWeight="Bold" />
+                                    <TextBlock Text="如果这个修改器帮到了你，欢迎扫码请作者喝杯可乐。"
+                                               FontSize="12"
+                                               LineHeight="18"
+                                               TextWrapping="Wrap" />
+                                    <TextBlock Text="金额随意，感谢你的支持！"
+                                               FontSize="12"
+                                               LineHeight="18"
+                                               TextWrapping="Wrap"
+                                               Opacity="0.75" />
+                                </StackPanel>
+                            </Grid>
+                            </StackPanel>
+                        </Border>
+                    </ui:FluentFlyout>
+                </Button.Flyout>
+                <TextBlock Text="&#xE897;"
+                           FontFamily="Segoe Fluent Icons"
+                           FontSize="14"
+                           VerticalAlignment="Center" />
+            </Button>
+        </StackPanel>
+    </fw:FluentWindow.TitleBarContent>
+
+    <!-- FluentWindow 的标题栏默认悬浮在内容上方；预留 45px 标题栏高度，避免内容与标题栏层叠。 -->
     <Grid x:Name="RootLayout"
+          Margin="0,45,0,0"
           RowDefinitions="*,44"
           Focusable="True"
           IsTabStop="False"
@@ -47,7 +148,7 @@
                                             VerticalAlignment="Center">
                                     <TextBlock Text="{Binding DisplayName}"
                                                FontSize="13"
-                                               FontWeight="SemiBold"
+                                               FontWeight="Bold"
                                                TextTrimming="CharacterEllipsis" />
                                     <TextBlock Text="{Binding ClassName}"
                                                FontSize="11"
@@ -70,8 +171,27 @@
                 BorderThickness="0,1,0,0"
                 Padding="10,0">
             <Grid ColumnDefinitions="Auto,Auto,*,Auto">
-                <Grid MaxWidth="480"
+                <Button Grid.Column="0"
+                        Command="{Binding RefreshCommand}"
+                        IsEnabled="{Binding IsNotBusy}"
+                        Classes="accent"
+                        Width="96"
+                        HorizontalContentAlignment="Center">
+                    <StackPanel Orientation="Horizontal"
+                                Spacing="6">
+                        <TextBlock Text="&#xE72C;"
+                                   FontFamily="Segoe Fluent Icons"
+                                   FontSize="14"
+                                   VerticalAlignment="Center" />
+                        <TextBlock Text="{loc:Tr Ui_Action_Refresh}"
+                                   VerticalAlignment="Center" />
+                    </StackPanel>
+                </Button>
+
+                <Grid Grid.Column="1"
+                      MaxWidth="480"
                       ColumnDefinitions="Auto,Auto,Auto,*"
+                      Margin="16,0,0,0"
                       VerticalAlignment="Center">
                     <TextBlock Text="●"
                                FontSize="12"
@@ -99,27 +219,11 @@
                                VerticalAlignment="Center" />
                 </Grid>
 
-                <StackPanel Grid.Column="1"
+                <StackPanel Grid.Column="3"
                             Orientation="Horizontal"
-                            Spacing="8"
-                            Margin="16,0,0,0"
+                            Spacing="16"
+                            HorizontalAlignment="Right"
                             VerticalAlignment="Center">
-                    <Button Command="{Binding RefreshCommand}"
-                            IsEnabled="{Binding IsNotBusy}"
-                            Classes="accent"
-                            Width="96"
-                            HorizontalContentAlignment="Center">
-                        <StackPanel Orientation="Horizontal"
-                                    Spacing="6">
-                            <TextBlock Text="&#xE72C;"
-                                       FontFamily="Segoe Fluent Icons"
-                                       FontSize="14"
-                                       VerticalAlignment="Center" />
-                            <TextBlock Text="{loc:Tr Ui_Action_Refresh}"
-                                       VerticalAlignment="Center" />
-                        </StackPanel>
-                    </Button>
-
                     <StackPanel Orientation="Horizontal"
                                 Spacing="4"
                                 VerticalAlignment="Center">
@@ -143,41 +247,7 @@
                     </StackPanel>
                 </StackPanel>
 
-                <StackPanel Grid.Column="3"
-                            Orientation="Horizontal"
-                            Spacing="8"
-                            VerticalAlignment="Center">
-                    <Button Command="{Binding ToggleThemeCommand}"
-                            ToolTip.Tip="{loc:Tr Ui_Action_Theme}"
-                            Width="96"
-                            HorizontalContentAlignment="Center">
-                        <StackPanel Orientation="Horizontal"
-                                    Spacing="6">
-                            <TextBlock Text="{Binding ThemeIcon}"
-                                       FontFamily="Segoe Fluent Icons"
-                                       FontSize="14"
-                                       VerticalAlignment="Center" />
-                            <TextBlock Text="{Binding ThemeButtonText}"
-                                       VerticalAlignment="Center" />
-                        </StackPanel>
-                    </Button>
-
-                    <Button Command="{Binding ToggleLanguageCommand}"
-                            ToolTip.Tip="{loc:Tr Ui_Action_Language}"
-                            Width="96"
-                            HorizontalContentAlignment="Center">
-                        <StackPanel Orientation="Horizontal"
-                                    Spacing="6">
-                            <TextBlock Text="&#xE774;"
-                                       FontFamily="Segoe Fluent Icons"
-                                       FontSize="14"
-                                       VerticalAlignment="Center" />
-                            <TextBlock Text="{Binding LanguageButtonText}"
-                                       VerticalAlignment="Center" />
-                        </StackPanel>
-                    </Button>
-                </StackPanel>
             </Grid>
         </Border>
     </Grid>
-</fa:FAAppWindow>
+</fw:FluentWindow>

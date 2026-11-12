@@ -85,6 +85,8 @@ public sealed partial class MainWindowViewModel : ViewModelBase, IDisposable
 
     public string LanguageButtonText => SelectedLanguage.Name;
 
+    public string LanguageShortText => SelectedLanguage.Code == "zh" ? "中" : "日";
+
     public IBrush ConnectionBrush => _session.Status switch
     {
         DolphinStatus.Hooked => Brushes.LimeGreen,
@@ -214,6 +216,7 @@ public sealed partial class MainWindowViewModel : ViewModelBase, IDisposable
         UpdateLastRefreshText();
         OnPropertyChanged(nameof(ThemeButtonText));
         OnPropertyChanged(nameof(LanguageButtonText));
+        OnPropertyChanged(nameof(LanguageShortText));
     }
 
     public void Dispose()

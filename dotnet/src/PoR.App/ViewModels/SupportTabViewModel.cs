@@ -109,13 +109,10 @@ public sealed class SupportRowViewModel : ObservableObject
         PartnerName = partnerName;
         AffinityIcon = affinityIcon;
         Points = points;
-
-        C = new SupportProgressViewModel("C", 0, thresholds[0] + 1);
-        B = new SupportProgressViewModel("B", thresholds[0] + 1, thresholds[1] + 2);
-        A = new SupportProgressViewModel("A", thresholds[1] + 2, thresholds[2] + 3);
+        Meter = new SupportMeterViewModel(thresholds);
 
         Points.PropertyChanged += OnPointsChanged;
-        UpdateBars();
+        UpdateMeter();
     }
 
     public string PartnerName { get; }
@@ -126,44 +123,83 @@ public sealed class SupportRowViewModel : ObservableObject
 
     public NumericFieldViewModel Points { get; }
 
-    public SupportProgressViewModel C { get; }
-
-    public SupportProgressViewModel B { get; }
-
-    public SupportProgressViewModel A { get; }
+    public SupportMeterViewModel Meter { get; }
 
     private void OnPointsChanged(object? sender, PropertyChangedEventArgs eventArgs)
     {
         if (eventArgs.PropertyName == nameof(NumericFieldViewModel.Value))
         {
-            UpdateBars();
+            UpdateMeter();
         }
     }
 
-    private void UpdateBars()
+    private void UpdateMeter()
     {
-        var value = (double)Points.Value;
-        C.Value = Math.Clamp(value, C.Minimum, C.Maximum);
-        B.Value = Math.Clamp(value, B.Minimum, B.Maximum);
-        A.Value = Math.Clamp(value, A.Minimum, A.Maximum);
+        Meter.Update((double)Points.Value);
     }
 }
 
-public sealed partial class SupportProgressViewModel : ObservableObject
+/// <summary>
+/// 单条累计支援值进度：以 A 级阈值为满值，C/B 阈值处画刻度，
+/// 并在进度条上显示当前已达到的最高等级。
+/// </summary>
+public sealed partial class SupportMeterViewModel : ObservableObject
 {
-    public SupportProgressViewModel(string label, double minimum, double maximum)
+    // 进度条右侧对齐三级进度区域，左侧留出 8px 与支援值微调框分隔。
+    private const double TrackWidth = 316d;
+
+    private readonly int _cThreshold;
+    private readonly int _bThreshold;
+    private readonly int _aThreshold;
+
+    public SupportMeterViewModel(IReadOnlyList<int> thresholds)
     {
-        Label = label;
-        Minimum = minimum;
-        Maximum = maximum;
+        _cThreshold = thresholds[0];
+        _bThreshold = thresholds[1];
+        _aThreshold = thresholds[2];
+
+        Maximum = _aThreshold;
+        var span = Math.Max(1, _aThreshold);
+        CTickLeft = TrackWidth * _cThreshold / span;
+        BTickLeft = TrackWidth * _bThreshold / span;
+        ToolTipText = $"C：{_cThreshold}    B：{_bThreshold}    A：{_aThreshold}";
     }
-
-    public string Label { get; }
-
-    public double Minimum { get; }
 
     public double Maximum { get; }
 
+    public double CTickLeft { get; }
+
+    public double BTickLeft { get; }
+
+    public double FillWidth => Maximum <= 0 ? 0 : TrackWidth * Value / Maximum;
+
     [ObservableProperty]
     private double _value;
+
+    [ObservableProperty]
+    private string _rankLabel = string.Empty;
+
+    [ObservableProperty]
+    private bool _hasRankLabel;
+
+    [ObservableProperty]
+    private string _toolTipText = string.Empty;
+
+    public void Update(double points)
+    {
+        Value = Math.Clamp(points, 0, Maximum);
+        RankLabel = points >= _aThreshold
+            ? "A"
+            : points >= _bThreshold
+                ? "B"
+                : points >= _cThreshold
+                    ? "C"
+                    : string.Empty;
+        HasRankLabel = RankLabel.Length > 0;
+    }
+
+    partial void OnValueChanged(double value)
+    {
+        OnPropertyChanged(nameof(FillWidth));
+    }
 }
