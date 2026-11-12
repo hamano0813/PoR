@@ -41,18 +41,6 @@ public sealed partial class MainWindowViewModel : ViewModelBase, IDisposable
     private StatusTabViewModel? _statusTab;
 
     [ObservableProperty]
-    private AbilityTabViewModel? _abilityTab;
-
-    [ObservableProperty]
-    private SkillTabViewModel? _skillTab;
-
-    [ObservableProperty]
-    private ItemTabViewModel? _itemTab;
-
-    [ObservableProperty]
-    private SupportTabViewModel? _supportTab;
-
-    [ObservableProperty]
     private OtherTabViewModel? _otherTab;
 
     [ObservableProperty]
@@ -91,7 +79,7 @@ public sealed partial class MainWindowViewModel : ViewModelBase, IDisposable
     public bool HasError => !string.IsNullOrWhiteSpace(ErrorMessage);
 
     public string ThemeButtonText => _localization.Ui(
-        IsDarkTheme ? "Ui_Action_ThemeLight" : "Ui_Action_ThemeDark");
+        IsDarkTheme ? "Ui_Action_ThemeDark" : "Ui_Action_ThemeLight");
 
     public string ThemeIcon => IsDarkTheme ? "" : "";
 
@@ -309,10 +297,6 @@ public sealed partial class MainWindowViewModel : ViewModelBase, IDisposable
         if (_snapshot is null || SelectedSlot is null)
         {
             StatusTab = null;
-            AbilityTab = null;
-            SkillTab = null;
-            ItemTab = null;
-            SupportTab = null;
         }
         else
         {
@@ -323,10 +307,6 @@ public sealed partial class MainWindowViewModel : ViewModelBase, IDisposable
                 _session,
                 _localization,
                 _assets);
-            AbilityTab = StatusTab.Ability;
-            SkillTab = StatusTab.Skill;
-            ItemTab = StatusTab.Items;
-            SupportTab = StatusTab.Support;
         }
 
         if (rebuildGlobal || OtherTab is null)
@@ -340,10 +320,6 @@ public sealed partial class MainWindowViewModel : ViewModelBase, IDisposable
     private void ClearTabs()
     {
         StatusTab = null;
-        AbilityTab = null;
-        SkillTab = null;
-        ItemTab = null;
-        SupportTab = null;
         OtherTab = null;
     }
 

@@ -1331,3 +1331,8 @@ __pycache__/
 - 2026-11-12：小编辑控件继续左右各内缩 1px。
   - 标签、微调框、下拉框及装备复选框的左右外边距由 1px 调整为 2px。
   - 标准 108px 单元格中的实际绘制宽度变为 104px，左右各留空 2px。
+- 2026-11-12：移除 Tab UI 并隐藏最大化按钮。
+  - 删除 CompactTabControl 及 Ability/Skill/Item/Support/Other 独立视图，状态页控件直接显示在主窗口右侧。
+  - MainWindowViewModel 不再保留各 Tab 的公开属性，仅保留 StatusTab 与底部栏所需的 OtherTab。
+  - 通过移除 Win32 `WS_MAXIMIZEBOX` 样式隐藏系统最大化按钮，保留最小化和关闭按钮。
+  - 主题按钮文字改为显示当前主题：深色模式显示“深色”，浅色模式显示“浅色”。

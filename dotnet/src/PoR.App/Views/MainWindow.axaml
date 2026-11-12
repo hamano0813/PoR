@@ -3,7 +3,6 @@
         xmlns:fa="using:FluentAvalonia.UI.Windowing"
         xmlns:vm="using:PoR.App.ViewModels"
         xmlns:views="using:PoR.App.Views"
-        xmlns:controls="using:PoR.App.Controls"
         xmlns:loc="using:PoR.App.Localization"
         x:Class="PoR.App.Views.MainWindow"
         x:DataType="vm:MainWindowViewModel"
@@ -61,26 +60,8 @@
                 </ListBox>
             </Border>
 
-            <controls:CompactTabControl Grid.Column="1" Margin="4,4,4,2">
-                <TabItem Header="{loc:Tr Ui_Tab_Status}">
-                    <views:StatusView DataContext="{Binding StatusTab}" />
-                </TabItem>
-                <TabItem Header="{loc:Tr Ui_Tab_Ability}">
-                    <views:AbilityView DataContext="{Binding AbilityTab}" />
-                </TabItem>
-                <TabItem Header="{loc:Tr Ui_Tab_Skill}">
-                    <views:SkillView DataContext="{Binding SkillTab}" />
-                </TabItem>
-                <TabItem Header="{loc:Tr Ui_Tab_Item}">
-                    <views:ItemView DataContext="{Binding ItemTab}" />
-                </TabItem>
-                <TabItem Header="{loc:Tr Ui_Tab_Support}">
-                    <views:SupportView DataContext="{Binding SupportTab}" />
-                </TabItem>
-                <TabItem Header="{loc:Tr Ui_Tab_Other}">
-                    <views:OtherView DataContext="{Binding OtherTab}" />
-                </TabItem>
-            </controls:CompactTabControl>
+            <views:StatusView Grid.Column="1"
+                              DataContext="{Binding StatusTab}" />
         </Grid>
 
         <Border Grid.Row="1"

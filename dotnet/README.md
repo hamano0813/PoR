@@ -9,8 +9,8 @@ This branch is a parallel UI version of the completed editor:
 
 - Uses `FluentAvaloniaUI` 3.1.0 with `FluentAvaloniaTheme` and accent `#0E8FA3`;
   the built-in `Avalonia.Themes.Fluent` package/theme is not used.
-- Uses `FAAppWindow` for the managed title bar and `FAInfoBar` for the warning
-  card on the Other tab.
+- Uses `FAAppWindow` for the managed title bar; the native maximize button is
+  hidden while minimize and close remain available.
 - Keeps the fixed 1440×800 window (no resize/maximize) and the same 280px
   roster, form spacing and bottom action bar as the `avalonia` branch.
 - Uses a custom numeric editor: two near-square, borderless/transparent
@@ -41,8 +41,10 @@ This branch is a parallel UI version of the completed editor:
   support panel uses 20px affinity icons, a 128px icon+name column, an 88px
   points column, and 108px progress-bar columns; the old “support value” header
   was removed. The page uses an automatic vertical scrollbar when the panels
-  exceed the window height. Ability/equipment/skill/support tabs share the same
-  ViewModel instances as the status page, so edits stay in sync.
+  exceed the window height. All panels are part of the single status page; the
+  old tab UI and separate tab views have been removed, while the ability,
+  equipment, skill and support data still share their underlying ViewModel
+  instances.
 - Shares all ViewModels, localization, memory access and page behavior with the
   `avalonia` branch.
 
@@ -52,7 +54,7 @@ This branch is a parallel UI version of the completed editor:
 dotnet/
 ├─ PoR.sln
 ├─ src/
-│  ├─ PoR.App/                 # Avalonia UI (roster + six editor tabs + language/theme)
+│  ├─ PoR.App/                 # Avalonia UI (roster + single status page + language/theme)
 │  ├─ PoR.Core/                # memory abstractions, ValueCodec, mapping models
 │  ├─ PoR.Game/                # catalog, mapping, slot snapshot, GameSession
 │  └─ PoR.Memory.Dolphin/      # Windows/GameCube MEM1 port of DME
@@ -79,35 +81,33 @@ Current UI scope:
 - compact status page modeled on the original Qt layout: identity/faction/army,
   flags, level/EXP/HP, status effects, coordinates, MTYPE/SEQ, battle/victory
 - the status page also contains ability/equipment and support/skills/features
-  panels; the skill and support tabs reuse the same ViewModel instances
+  panels; all panels share their underlying ViewModel instances
 - numeric fields use a custom compact editor: near-square Fluent-style
   decrease/increase buttons around a centered value; the arrows are hidden by
   default and appear in the accent color on hover or keyboard focus. Clicking
   empty space clears text-field focus.
 - tri-state action checkbox: unchecked = not acted, indeterminate = 10 ms
   "lock not acted" polling, checked = acted
-- skill tab: two scrollable skill/feature lists with localized names and icons
-- item tab: eight item/durability/equipped/dropped rows with item icons
-- support tab/panel: current affinity, seven support partners, support points
-  and C/B/A progress bars; affinity icons are 20px
-- other tab: the original modification notes (money/bonus EXP moved to the
-  bottom status bar)
+- skill/feature panels: two scrollable lists with localized names and icons
+- equipment panel: eight item/durability/equipped/dropped rows with item icons
+- support panel: current affinity, seven support partners, support points and
+  C/B/A progress bars; affinity icons are 20px
+- the old Skill/Item/Support/Other tabs and the compact tab control have been
+  removed; their controls now live directly on the status page
 - bottom status bar: editable money/bonus-EXP text fields, refresh (accent),
   theme, language; the separate reconnect button was removed because refresh
   re-hooks when disconnected
 - language switching reloads game terms only; UI labels and buttons stay in
-  Chinese
+  Chinese; the theme button now shows the current mode (深色/浅色)
 - action status has its own label; the rescue/rescued checkboxes share a compact
   horizontal group; checkbox text is vertically centered and uses the same
   12px size as other controls
-- tab pages use `CompactTabControl` to remove the FluentAvalonia 12px selected
-  content margin and tighten the outer page spacing
 - `tools/process_avatars.py` regenerates the de-fringed PNG portraits used by
   the roster and the character drop-down (requires Pillow)
 
 All editor fields share the application-level editor DataTemplates in
 `src/PoR.App/App.axaml`, so numeric/enum/bool controls look and behave the same
-across tabs.
+throughout the editor.
 
 ## Build
 
