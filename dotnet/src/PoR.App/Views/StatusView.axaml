@@ -10,7 +10,7 @@
         <Thickness x:Key="PersonLabelMargin">2,3,0,3</Thickness>
 
         <DataTemplate x:Key="ItemRowTemplate" x:DataType="vm:ItemRowViewModel">
-            <Grid Height="40" ColumnDefinitions="200,100,64,100">
+            <Grid Height="40" ColumnDefinitions="216,108,72,108">
                 <ContentControl Grid.Column="0" Content="{Binding Item}" />
                 <ContentControl Grid.Column="1" Content="{Binding Durability}" />
                 <CheckBox Grid.Column="2"
@@ -36,14 +36,14 @@
     <ScrollViewer VerticalScrollBarVisibility="Auto"
                   HorizontalScrollBarVisibility="Disabled"
                   AllowAutoHide="False">
-        <StackPanel Width="1026"
+        <StackPanel Width="1106"
                     Spacing="10"
                     Margin="4"
                     HorizontalAlignment="Center">
 
             <Border Classes="card" Padding="12">
-                <!-- 状态组：10 列 × 100px，每行 40px。 -->
-                <Grid ColumnDefinitions="100,100,100,100,100,100,100,100,100,100"
+                <!-- 状态组：10 列 × 108px，每行 40px。 -->
+                <Grid ColumnDefinitions="108,108,108,108,108,108,108,108,108,108"
                       RowDefinitions="40,40,40,40,40,40,40,40"
                       HorizontalAlignment="Left">
 
@@ -80,7 +80,7 @@
 
                     <!-- 移动AI、阵营、部队、部队首领。 -->
                     <Grid Grid.Row="3" Grid.ColumnSpan="10"
-                          ColumnDefinitions="100,300,100,150,100,150,100">
+                          ColumnDefinitions="108,324,108,108,108,216,108">
                         <Border Grid.Column="0" Classes="fieldLabel">
                             <TextBlock Text="{loc:Tr Field_mtype}" VerticalAlignment="Center" />
                         </Border>
@@ -99,9 +99,9 @@
                         <ContentControl Grid.Column="6" Content="{Binding IsLeader}" />
                     </Grid>
 
-                    <!-- 行为AI：1 个 100px 标签 + 3 个 300px 下拉框。 -->
+                    <!-- 行为AI：1 个 108px 标签 + 3 个 324px 下拉框。 -->
                     <Grid Grid.Row="4" Grid.ColumnSpan="10"
-                          ColumnDefinitions="100,300,300,300">
+                          ColumnDefinitions="108,324,324,324">
                         <Border Grid.Column="0" Classes="fieldLabel">
                             <TextBlock Text="{loc:Tr Field_behaviorAi}" VerticalAlignment="Center" />
                         </Border>
@@ -110,7 +110,7 @@
                         <ContentControl Grid.Column="3" Content="{Binding Seq3}" />
                     </Grid>
 
-                    <!-- 数值与状态：每行 5 组，标签 100px + 控件 100px。 -->
+                    <!-- 数值与状态：每行 5 组，标签 108px + 控件 108px。 -->
                     <Border Grid.Row="5" Grid.Column="0" Classes="fieldLabel">
                         <TextBlock Text="{loc:Tr Field_slotIndex}" VerticalAlignment="Center" />
                     </Border>
@@ -177,15 +177,15 @@
             </Border>
 
             <!-- 能力（5列）与装备（5列）分别使用独立面板。 -->
-            <Grid Width="1026"
-                  ColumnDefinitions="526,10,490">
+            <Grid Width="1106"
+                  ColumnDefinitions="566,10,530">
 
                 <Border Grid.Column="0" Classes="card" Padding="12">
-                    <ItemsControl Width="500"
+                    <ItemsControl Width="540"
                                   ItemsSource="{Binding Ability.Rows}">
                         <ItemsControl.ItemTemplate>
                             <DataTemplate x:DataType="vm:AbilityRowViewModel">
-                                <Grid Height="40" ColumnDefinitions="100,100,100,100,100">
+                                <Grid Height="40" ColumnDefinitions="108,108,108,108,108">
                                     <Border Grid.Column="0" Classes="fieldLabel">
                                         <TextBlock Text="{Binding Label}" VerticalAlignment="Center" />
                                     </Border>
@@ -218,7 +218,7 @@
                 </Border>
 
                 <Border Grid.Column="2" Classes="card" Padding="12">
-                    <StackPanel Width="464">
+                    <StackPanel Width="504">
                         <Border Classes="fieldLabel" Height="34">
                             <TextBlock Text="{loc:Tr Ui_Item_WeaponSection}" VerticalAlignment="Center" />
                         </Border>

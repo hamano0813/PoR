@@ -20,24 +20,25 @@ This branch is a parallel UI version of the completed editor:
   padding on both sides and centers the value. Increment/decrement are
   ViewModel commands with range clamping on the shared
   `NumericFieldViewModel`.
-- Status page layout: a 10-column × 100px grid (1000px of content, 40px row
-  height). Labels are 100px; person/class/3D model dropdowns span 4 columns
-  (400px), ally spans 2 columns (200px), move AI spans 3 columns (300px), and
-  the behavior AI row uses one 100px label followed by three 300px dropdowns.
-  Ordinary numeric and boolean controls are 100px wide.
+- Status page layout: a 10-column × 108px grid (1080px of content, 40px row
+  height). Labels are 108px; person/class/3D model dropdowns span 4 columns
+  (432px), ally spans 2 columns (216px), move AI spans 3 columns (324px), and
+  the behavior AI row uses one 108px label followed by three 324px dropdowns.
+  Ordinary numeric and boolean controls are 108px wide. Faction uses one
+  standard cell (108px); army uses two (216px).
 - The page is split into three separate card panels: status on top, then two
-  side-by-side panels (10px apart) for ability (5 × 100px: stat label/value,
+  side-by-side panels (10px apart) for ability (5 × 108px: stat label/value,
   growth value, weapon-proficiency label/value) and equipment. Equipment uses
-  four weapon rows and four item rows; the item dropdown spans two 100px cells,
-  quantity is 100px, the equipped checkbox column is 64px, and dropped is
-  100px. The equipped column saves 36px, matching the 10px panel gap plus 12px
-  panel padding and 1px border on each side. The equipment card is therefore
-  490px wide (464px content + 24px padding + 2px border), so the lower row is
-  526 + 10 + 490 = 1026px, exactly matching the 1026px status card and aligning
-  all three panel edges and visible control edges. The page uses an automatic
-  vertical scrollbar when the panels exceed the window height. The
-  ability/equipment tabs share the same ViewModel instances as the status page,
-  so edits stay in sync.
+  four weapon rows and four item rows; the item dropdown spans two 108px cells
+  (216px), quantity is 108px, the equipped checkbox column is 72px, and dropped
+  is 108px. The equipped column saves 36px, matching the 10px panel gap plus
+  12px panel padding and 1px border on each side. The equipment card is
+  therefore 530px wide (504px content + 24px padding + 2px border), so the
+  lower row is 566 + 10 + 530 = 1106px, exactly matching the 1106px status card
+  and aligning all three panel edges and visible control edges. The page uses
+  an automatic vertical scrollbar when the panels exceed the window height.
+  The ability/equipment tabs share the same ViewModel instances as the status
+  page, so edits stay in sync.
 - Shares all ViewModels, localization, memory access and page behavior with the
   `avalonia` branch.
 
