@@ -1325,3 +1325,6 @@ __pycache__/
   - FileVersion/AssemblyVersion 提升到 1.9.0.0，ProductVersion 为 1.9。
   - 产品名更新为 Fire Emblem Path of Radiance Modifier V1.9，版权年份更新为 2021-2026。
   - `version.txt` 与 `PoR.App.csproj` 保持同步。
+- 2026-11-12：小编辑控件左右各内缩 1px。
+  - 标准单元格宽度保持 108px；标签、微调框、下拉框及装备复选框的左右外边距由 2/0 改为 1/1。
+  - 控件实际绘制宽度仍为单元格宽度减 2px（标准为 106px），现在左右留空对称。

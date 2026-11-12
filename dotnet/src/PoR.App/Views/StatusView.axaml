@@ -7,7 +7,7 @@
 
     <UserControl.Resources>
         <!-- 人物标签上边距：调整第二个数字（top）即可微调标签的垂直位置。 -->
-        <Thickness x:Key="PersonLabelMargin">2,3,0,3</Thickness>
+        <Thickness x:Key="PersonLabelMargin">1,3,1,3</Thickness>
 
         <DataTemplate x:Key="ItemRowTemplate" x:DataType="vm:ItemRowViewModel">
             <Grid Height="40" ColumnDefinitions="216,108,72,108">
@@ -18,7 +18,7 @@
                           IsEnabled="{Binding Equipped.IsEditable}"
                           MinHeight="32"
                           FontSize="12"
-                          Margin="2,3,0,3"
+                          Margin="1,3,1,3"
                           VerticalContentAlignment="Center"
                           VerticalAlignment="Center">
                     <TextBlock Text="{Binding Equipped.Label}"
