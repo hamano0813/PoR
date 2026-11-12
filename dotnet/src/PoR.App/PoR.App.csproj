@@ -4,7 +4,21 @@
     <TargetFramework>net10.0-windows</TargetFramework>
     <Nullable>enable</Nullable>
     <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>Assets\icon.ico</ApplicationIcon>
     <AvaloniaUseCompiledBindingsByDefault>true</AvaloniaUseCompiledBindingsByDefault>
+
+    <!-- Mirrors the metadata previously kept in version.txt. -->
+    <AssemblyVersion>1.2.0.0</AssemblyVersion>
+    <FileVersion>1.2.0.0</FileVersion>
+    <Version>1.2.0</Version>
+    <InformationalVersion>1.2</InformationalVersion>
+    <IncludeSourceRevisionInInformationalVersion>false</IncludeSourceRevisionInInformationalVersion>
+    <Company>Hamano0813</Company>
+    <Product>Fire Emblem Path of Radiance Modifier V1.2</Product>
+    <AssemblyTitle>火焰纹章 苍炎的轨迹 动态修改器</AssemblyTitle>
+    <Description>火焰纹章 苍炎的轨迹 动态修改器</Description>
+    <Copyright>Copyright © 2021-2022 Hamano0813</Copyright>
+    <Authors>Hamano0813</Authors>
   </PropertyGroup>
 
   <ItemGroup>
@@ -44,4 +58,14 @@
     <ProjectReference Include="..\PoR.Game\PoR.Game.csproj" />
     <ProjectReference Include="..\PoR.Memory.Dolphin\PoR.Memory.Dolphin.csproj" />
   </ItemGroup>
+
+  <!-- Publish output is meant to be a single distributable EXE. -->
+  <Target Name="DeletePublishPdbs"
+          AfterTargets="Publish"
+          Condition="'$(PublishSingleFile)' == 'true'">
+    <ItemGroup>
+      <PublishPdbs Include="$(PublishDir)**\*.pdb" />
+    </ItemGroup>
+    <Delete Files="@(PublishPdbs)" />
+  </Target>
 </Project>

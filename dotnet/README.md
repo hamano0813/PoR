@@ -116,6 +116,41 @@ cd dotnet
 dotnet build PoR.sln
 ```
 
+## Publish
+
+Two single-file publish profiles are available:
+
+```bash
+cd dotnet
+
+# Self-contained, compressed: about 52 MB, no .NET runtime required.
+dotnet publish src/PoR.App/PoR.App.csproj -p:PublishProfile=win-x64-standalone
+
+# Framework-dependent: about 41 MB, requires the .NET 10 Desktop Runtime.
+dotnet publish src/PoR.App/PoR.App.csproj -p:PublishProfile=win-x64-framework-dependent
+```
+
+Outputs:
+
+- `publish/win-x64/PoR.App.exe` — standalone distribution build
+- `publish/win-x64-framework-dependent/PoR.App.exe` — smaller build for machines
+  with the .NET 10 Desktop Runtime installed
+
+Publish symbols are removed automatically; each directory contains only the
+single EXE. The EXE embeds `Assets/icon.ico` and the following metadata, mapped
+from the old `version.txt`:
+
+- File version: 1.2.0.0
+- Product version: 1.2
+- Company: Hamano0813
+- Product: Fire Emblem Path of Radiance Modifier V1.2
+- Description: 火焰纹章 苍炎的轨迹 动态修改器
+- Copyright: Copyright © 2021-2022 Hamano0813
+
+Trimming is intentionally disabled: Avalonia/FluentAvalonia plus reflection-based
+resource loading make aggressive trimming risky. `EnableCompressionInSingleFile`
+and the framework-dependent profile are the safe size reductions used here.
+
 ## Probe
 
 Start Dolphin and boot Path of Radiance first, then:

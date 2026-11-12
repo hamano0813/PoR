@@ -1315,3 +1315,9 @@ __pycache__/
   - “其他”页的所持金与奖励 EXP 移到窗口底部状态栏，改为纯文本框（无微调按钮）；其他页保留修改提示。
   - 微调箭头默认透明隐藏，鼠标悬浮或输入框获得焦点时显示为强调色；点击页面空白处会清除文本输入焦点。
   - 语言切换只重新加载游戏名词（人名/技能/道具等），界面标签、按钮和提示固定中文；已截图验证切换后标签仍为中文。
+- 2026-11-12：发布与 EXE 元数据。
+  - 增加 `ApplicationIcon=Assets/icon.ico`，与根目录 `resource/icon.ico` 完全一致；Windows 文件图标和窗口图标均生效。
+  - 将原 `version.txt` 的元数据映射到 `PoR.App.csproj`：FileVersion 1.2.0.0、ProductVersion 1.2、公司/产品/描述/版权等。
+  - 新增两个单文件发布配置：`win-x64-standalone`（自包含 + 单文件压缩，约 52MB，无需 .NET 运行时）和 `win-x64-framework-dependent`（依赖 .NET 10 Desktop Runtime，约 41MB）。
+  - 发布后自动删除 PDB；每个发布目录只保留单个 EXE。
+  - 未启用 trimming：Avalonia/FluentAvalonia 和反射资源加载对裁剪较敏感，避免潜在运行时问题。
