@@ -51,7 +51,7 @@ extension and Avalonia extension are recommended (see the refactor plan).
 
 Current UI scope:
 
-- left roster with avatars/names/classes and selection
+- left roster with transparent-background avatars, names/classes and selection
 - compact status form modeled on the original Qt layout: identity/faction/army,
   flags, level/EXP/HP, status effects, coordinates, MTYPE/SEQ, battle/victory
 - numeric fields use a custom compact editor: near-square Fluent-style
@@ -69,7 +69,7 @@ Current UI scope:
   theme and language use the same neutral button style, all four have fixed
   96px width
 - action status has its own label; the rescue/rescued checkboxes share a compact
-  horizontal group
+  horizontal group; checkbox text uses the same 12px size as other controls
 - tab pages use `CompactTabControl` to remove the FluentAvalonia 12px selected
   content margin and tighten the outer page spacing
 - `tools/process_avatars.py` regenerates the de-fringed PNG portraits used by

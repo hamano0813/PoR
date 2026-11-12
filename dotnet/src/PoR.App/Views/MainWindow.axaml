@@ -35,7 +35,7 @@
                                         Height="56"
                                         CornerRadius="6"
                                         ClipToBounds="True"
-                                        Background="{DynamicResource AppBackgroundBrush}">
+                                        Background="Transparent">
                                     <Image Source="{Binding Avatar}"
                                            Stretch="UniformToFill" />
                                 </Border>

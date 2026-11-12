@@ -1266,3 +1266,6 @@ __pycache__/
   - 微调按钮内容改为居中对齐，修正取消边框后箭头偏移 1px 的问题。
   - 主题切换从 ToggleButton 改为与语言相同的普通 Button + `ToggleThemeCommand`，两者视觉一致。
   - 新增 `CompactTabControl`，在模板应用后移除 FluentAvalonia `PART_SelectedContentHost` 的 12px 外边距，并将 TabControl 外边距从 8 缩小到 4；右侧页面内容更贴近边缘。
+  - 微调按钮右侧箭头增加 1px 修正量，解决视觉上仍略偏左的问题。
+  - 所有复选框文本统一为 12px，与下拉框/数值框/标签一致。
+  - 左侧角色列表头像去掉方框底色，改为透明背景。
