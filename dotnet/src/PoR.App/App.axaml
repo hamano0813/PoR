@@ -32,6 +32,7 @@
                              HorizontalAlignment="Stretch"
                              VerticalAlignment="Stretch" />
                     <RepeatButton Classes="spinnerButton"
+                                  ZIndex="1"
                                   Width="26"
                                   Height="26"
                                   MinWidth="0"
@@ -53,6 +54,7 @@
                               VerticalAlignment="Center" />
                     </RepeatButton>
                     <RepeatButton Classes="spinnerButton"
+                                  ZIndex="1"
                                   Width="26"
                                   Height="26"
                                   MinWidth="0"
@@ -150,7 +152,6 @@
                     <SolidColorBrush x:Key="AppBorderBrush" Color="#E0E0E0" />
                     <SolidColorBrush x:Key="AppForegroundBrush" Color="#1A1A1A" />
                     <SolidColorBrush x:Key="AppInputBackgroundBrush" Color="#FFFFFF" />
-                    <SolidColorBrush x:Key="AppSurfaceHoverBrush" Color="#E9E9E9" />
                 </ResourceDictionary>
                 <ResourceDictionary x:Key="Dark">
                     <SolidColorBrush x:Key="AppBackgroundBrush" Color="#1F1F1F" />
@@ -159,7 +160,6 @@
                     <SolidColorBrush x:Key="AppBorderBrush" Color="#3A3A3A" />
                     <SolidColorBrush x:Key="AppForegroundBrush" Color="#F2F2F2" />
                     <SolidColorBrush x:Key="AppInputBackgroundBrush" Color="#333333" />
-                    <SolidColorBrush x:Key="AppSurfaceHoverBrush" Color="#3A3A3A" />
                 </ResourceDictionary>
             </ResourceDictionary.ThemeDictionaries>
         </ResourceDictionary>
@@ -225,18 +225,8 @@
         </Style>
 
         <Style Selector="RepeatButton.spinnerButton">
-            <Setter Property="Background" Value="{DynamicResource AppSurfaceAltBrush}" />
-            <Setter Property="BorderBrush" Value="{DynamicResource AppBorderBrush}" />
-            <Setter Property="BorderThickness" Value="1" />
-        </Style>
-
-        <Style Selector="RepeatButton.spinnerButton:pointerover">
-            <Setter Property="Background" Value="{DynamicResource AppSurfaceHoverBrush}" />
-            <Setter Property="BorderBrush" Value="{DynamicResource AccentBrush}" />
-        </Style>
-
-        <Style Selector="RepeatButton.spinnerButton:pressed">
-            <Setter Property="Background" Value="{DynamicResource AccentBrush}" />
+            <Setter Property="Background" Value="Transparent" />
+            <Setter Property="BorderThickness" Value="0" />
         </Style>
 
         <Style Selector="TextBox">

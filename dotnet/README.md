@@ -13,11 +13,12 @@ This branch is a parallel UI version of the completed editor:
   card on the Other tab.
 - Keeps the fixed 960×800 window (no resize/maximize) and the same compact
   280px roster, form spacing and bottom action bar as the `avalonia` branch.
-- Uses a custom numeric editor: two near-square Fluent-style buttons
-  (decrease on the left, increase on the right) overlaid on a full-width text
-  field. The text field reserves button-width padding on both sides and centers
-  the value. Increment/decrement are ViewModel commands with range clamping on
-  the shared `NumericFieldViewModel`.
+- Uses a custom numeric editor: two near-square, borderless/transparent
+  Fluent-style buttons (decrease on the left, increase on the right) overlaid
+  on a full-width text field; the buttons become visible on hover. The text
+  field reserves button-width padding on both sides and centers the value.
+  Increment/decrement are ViewModel commands with range clamping on the shared
+  `NumericFieldViewModel`.
 - Shares all ViewModels, localization, memory access and page behavior with the
   `avalonia` branch.
 
