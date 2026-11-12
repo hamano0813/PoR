@@ -26,7 +26,7 @@ This branch is a parallel UI version of the completed editor:
   the behavior AI row uses one 108px label followed by three 324px dropdowns.
   Ordinary numeric and boolean controls are 108px wide. Faction uses one
   standard cell (108px); army uses two (216px).
-- The page is split into three separate card panels: status on top, then two
+- The page is split into separate card panels: status on top, then two
   side-by-side panels (10px apart) for ability (5 × 108px: stat label/value,
   growth value, weapon-proficiency label/value) and equipment. Equipment uses
   four weapon rows and four item rows; the item dropdown spans two 108px cells
@@ -35,10 +35,14 @@ This branch is a parallel UI version of the completed editor:
   12px panel padding and 1px border on each side. The equipment card is
   therefore 530px wide (504px content + 24px padding + 2px border), so the
   lower row is 566 + 10 + 530 = 1106px, exactly matching the 1106px status card
-  and aligning all three panel edges and visible control edges. The page uses
-  an automatic vertical scrollbar when the panels exceed the window height.
-  The ability/equipment tabs share the same ViewModel instances as the status
-  page, so edits stay in sync.
+  and aligning all three panel edges and visible control edges.
+- A third row (426px high) contains three more cards: support (566px, matching
+  the ability panel), active skills (260px), and hidden features (260px). The
+  support panel uses 20px affinity icons, a 128px icon+name column, an 88px
+  points column, and 108px progress-bar columns; the old “support value” header
+  was removed. The page uses an automatic vertical scrollbar when the panels
+  exceed the window height. Ability/equipment/skill/support tabs share the same
+  ViewModel instances as the status page, so edits stay in sync.
 - Shares all ViewModels, localization, memory access and page behavior with the
   `avalonia` branch.
 
@@ -72,22 +76,27 @@ extension and Avalonia extension are recommended (see the refactor plan).
 Current UI scope:
 
 - left roster with transparent-background avatars, names/classes and selection
-- compact status form modeled on the original Qt layout: identity/faction/army,
+- compact status page modeled on the original Qt layout: identity/faction/army,
   flags, level/EXP/HP, status effects, coordinates, MTYPE/SEQ, battle/victory
+- the status page also contains ability/equipment and support/skills/features
+  panels; the skill and support tabs reuse the same ViewModel instances
 - numeric fields use a custom compact editor: near-square Fluent-style
-  decrease/increase buttons around a centered value; enum fields show
-  portraits/items where available
+  decrease/increase buttons around a centered value; the arrows are hidden by
+  default and appear in the accent color on hover or keyboard focus. Clicking
+  empty space clears text-field focus.
 - tri-state action checkbox: unchecked = not acted, indeterminate = 10 ms
   "lock not acted" polling, checked = acted
-- ability tab: base stats, growth rates, weapon proficiency icons/values
 - skill tab: two scrollable skill/feature lists with localized names and icons
 - item tab: eight item/durability/equipped/dropped rows with item icons
-- support tab: current affinity, seven support partners, support points and
-  C/B/A progress bars driven by the original thresholds
-- other tab: global money/bonus EXP plus the original modification notes
-- bottom status bar order: refresh (accent), reconnect, theme, language;
-  theme and language use the same neutral button style, all four have fixed
-  96px width
+- support tab/panel: current affinity, seven support partners, support points
+  and C/B/A progress bars; affinity icons are 20px
+- other tab: the original modification notes (money/bonus EXP moved to the
+  bottom status bar)
+- bottom status bar: editable money/bonus-EXP text fields, refresh (accent),
+  theme, language; the separate reconnect button was removed because refresh
+  re-hooks when disconnected
+- language switching reloads game terms only; UI labels and buttons stay in
+  Chinese
 - action status has its own label; the rescue/rescued checkboxes share a compact
   horizontal group; checkbox text is vertically centered and uses the same
   12px size as other controls

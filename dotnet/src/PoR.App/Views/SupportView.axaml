@@ -33,10 +33,10 @@
             HorizontalAlignment="Center"
             VerticalAlignment="Top">
         <StackPanel>
-            <Grid ColumnDefinitions="34,*" Margin="0,0,0,8">
+            <Grid ColumnDefinitions="24,104" Margin="0,0,0,6">
                 <Image Source="{Binding CurrentAffinityIcon}"
-                       Width="28"
-                       Height="28"
+                       Width="20"
+                       Height="20"
                        VerticalAlignment="Center"
                        IsVisible="{Binding HasCurrentAffinity}" />
                 <TextBlock Grid.Column="1"
@@ -44,23 +44,18 @@
                            FontSize="13"
                            FontWeight="SemiBold"
                            VerticalAlignment="Center"
-                           Margin="6,0,0,0" />
-            </Grid>
-
-            <Grid ColumnDefinitions="34,110,120,90,90,90">
-                <TextBlock Grid.Column="2"
-                           Classes="columnHeader"
-                           Text="{loc:Tr Ui_Support_Points}"
-                           Margin="2,0,0,4" />
+                           Margin="2,0,6,0"
+                           TextTrimming="CharacterEllipsis" />
             </Grid>
 
             <ItemsControl ItemsSource="{Binding Rows}">
                 <ItemsControl.ItemTemplate>
                     <DataTemplate x:DataType="vm:SupportRowViewModel">
-                        <Grid ColumnDefinitions="34,110,120,90,90,90">
+                        <Grid Height="38"
+                              ColumnDefinitions="24,104,88,108,108,108">
                             <Image Source="{Binding AffinityIcon}"
-                                   Width="28"
-                                   Height="28"
+                                   Width="20"
+                                   Height="20"
                                    VerticalAlignment="Center"
                                    IsVisible="{Binding HasAffinity}" />
                             <TextBlock Grid.Column="1"

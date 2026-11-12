@@ -86,6 +86,8 @@ public sealed partial class MainWindowViewModel : ViewModelBase, IDisposable
 
     public bool IsNotBusy => !IsBusy;
 
+    public bool HasSnapshot => _snapshot is not null;
+
     public bool HasError => !string.IsNullOrWhiteSpace(ErrorMessage);
 
     public string ThemeButtonText => _localization.Ui(
@@ -121,14 +123,22 @@ public sealed partial class MainWindowViewModel : ViewModelBase, IDisposable
 
         try
         {
+            if (_session.Status != DolphinStatus.Hooked)
+            {
+                await _session.StopAllLocksAsync();
+                _memory.Unhook();
+            }
+
             var snapshot = await _session.RefreshAsync();
             _snapshot = snapshot;
+            OnPropertyChanged(nameof(HasSnapshot));
             BuildSlots(snapshot);
             RebuildTabs();
         }
         catch (Exception exception)
         {
             _snapshot = null;
+            OnPropertyChanged(nameof(HasSnapshot));
             Slots.Clear();
             SelectedSlot = null;
             ClearTabs();
@@ -140,19 +150,6 @@ public sealed partial class MainWindowViewModel : ViewModelBase, IDisposable
             UpdateConnection();
             UpdateLastRefreshText();
         }
-    }
-
-    [RelayCommand]
-    private async Task ReconnectAsync()
-    {
-        if (IsBusy)
-        {
-            return;
-        }
-
-        await _session.StopAllLocksAsync();
-        _memory.Unhook();
-        await RefreshAsync();
     }
 
     [RelayCommand]
@@ -327,19 +324,9 @@ public sealed partial class MainWindowViewModel : ViewModelBase, IDisposable
                 _localization,
                 _assets);
             AbilityTab = StatusTab.Ability;
-            SkillTab = new SkillTabViewModel(
-                _snapshot,
-                info,
-                _session,
-                _localization,
-                _assets);
+            SkillTab = StatusTab.Skill;
             ItemTab = StatusTab.Items;
-            SupportTab = new SupportTabViewModel(
-                _snapshot,
-                info,
-                _session,
-                _localization,
-                _assets);
+            SupportTab = StatusTab.Support;
         }
 
         if (rebuildGlobal || OtherTab is null)

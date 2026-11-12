@@ -12,7 +12,8 @@
 
         <DataTemplate DataType="{x:Type fields:NumericFieldViewModel}"
                       x:DataType="fields:NumericFieldViewModel">
-            <Border Background="{DynamicResource AppInputBackgroundBrush}"
+            <Border Classes="numericEditor"
+                    Background="{DynamicResource AppInputBackgroundBrush}"
                     BorderBrush="{DynamicResource AppBorderBrush}"
                     BorderThickness="1"
                     CornerRadius="6"
@@ -269,7 +270,15 @@
         </Style>
 
         <Style Selector="RepeatButton.spinnerButton Path">
-            <Setter Property="Stroke" Value="{DynamicResource AppForegroundBrush}" />
+            <Setter Property="Stroke" Value="Transparent" />
+        </Style>
+
+        <Style Selector="Border.numericEditor:pointerover Path">
+            <Setter Property="Stroke" Value="{DynamicResource AccentBrush}" />
+        </Style>
+
+        <Style Selector="Border.numericEditor:focus-within Path">
+            <Setter Property="Stroke" Value="{DynamicResource AccentBrush}" />
         </Style>
 
         <Style Selector="RepeatButton.spinnerButton:pointerover Path">
@@ -281,7 +290,18 @@
         </Style>
 
         <Style Selector="RepeatButton.spinnerButton:disabled Path">
-            <Setter Property="Stroke" Value="{DynamicResource AppForegroundBrush}" />
+            <Setter Property="Stroke" Value="Transparent" />
+        </Style>
+
+        <Style Selector="TextBox.bottomInput">
+            <Setter Property="Width" Value="90" />
+            <Setter Property="Height" Value="28" />
+            <Setter Property="MinHeight" Value="0" />
+            <Setter Property="Padding" Value="6,2" />
+            <Setter Property="FontSize" Value="12" />
+            <Setter Property="TextAlignment" Value="Right" />
+            <Setter Property="VerticalContentAlignment" Value="Center" />
+            <Setter Property="CornerRadius" Value="4" />
         </Style>
 
         <Style Selector="TextBox">

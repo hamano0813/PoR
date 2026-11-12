@@ -4,8 +4,9 @@ using System.Text.Json;
 namespace PoR.App.Services;
 
 /// <summary>
-/// Loads UI strings and game-term translations generated from the original
-/// Qt .ts files. Changing the language notifies indexer bindings.
+/// Loads fixed Chinese UI strings plus switchable game-term translations.
+/// Only names and other game terms change with the language; labels and
+/// buttons stay in the original UI language.
 /// </summary>
 public sealed class LocalizationService : INotifyPropertyChanged
 {
@@ -28,6 +29,7 @@ public sealed class LocalizationService : INotifyPropertyChanged
 
     private LocalizationService()
     {
+        _ui = Load("ui", "zh");
         SetLanguage("zh");
     }
 
@@ -75,7 +77,6 @@ public sealed class LocalizationService : INotifyPropertyChanged
     {
         Language = language;
         _terms = Load("terms", language);
-        _ui = Load("ui", language);
 
         PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Item[]"));
         PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(string.Empty));

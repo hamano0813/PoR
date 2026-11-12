@@ -63,6 +63,8 @@ public sealed class StatusTabViewModel
 
         Ability = new AbilityTabViewModel(snapshot, slot, session, localization, assets);
         Items = new ItemTabViewModel(snapshot, slot, session, localization, assets);
+        Skill = new SkillTabViewModel(snapshot, slot, session, localization, assets);
+        Support = new SupportTabViewModel(snapshot, slot, session, localization, assets);
     }
 
     public EnumFieldViewModel Person { get; }
@@ -124,6 +126,10 @@ public sealed class StatusTabViewModel
     public AbilityTabViewModel Ability { get; }
 
     public ItemTabViewModel Items { get; }
+
+    public SkillTabViewModel Skill { get; }
+
+    public SupportTabViewModel Support { get; }
 
     private FieldDefinition Field(string id) => _session.Catalog.GetField(id);
 
