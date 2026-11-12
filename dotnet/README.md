@@ -11,14 +11,20 @@ This branch is a parallel UI version of the completed editor:
   the built-in `Avalonia.Themes.Fluent` package/theme is not used.
 - Uses `FAAppWindow` for the managed title bar and `FAInfoBar` for the warning
   card on the Other tab.
-- Keeps the fixed 960×800 window (no resize/maximize) and the same compact
-  280px roster, form spacing and bottom action bar as the `avalonia` branch.
+- Keeps the fixed 1200×800 window (no resize/maximize) and the same 280px
+  roster, form spacing and bottom action bar as the `avalonia` branch.
 - Uses a custom numeric editor: two near-square, borderless/transparent
   Fluent-style buttons (decrease on the left, increase on the right) overlaid
-  on a full-width text field; the buttons become visible on hover. The text
-  field reserves button-width padding on both sides and centers the value.
-  Increment/decrement are ViewModel commands with range clamping on the shared
+  on a full-width text field; the buttons stay transparent on hover and only
+  the arrow changes to the accent color. The text field reserves button-width
+  padding on both sides and centers the value. Increment/decrement are
+  ViewModel commands with range clamping on the shared
   `NumericFieldViewModel`.
+- Status page layout: a 10-column × 88px grid (880px of content, 40px row
+  height). Labels are 88px; person/class/3D model dropdowns span 4 columns
+  (352px), ally spans 2 columns (176px), move AI spans 3 columns (264px), and
+  the three behavior AI fields share the row at 205px per dropdown. Ordinary
+  numeric and boolean controls are 88px wide.
 - Shares all ViewModels, localization, memory access and page behavior with the
   `avalonia` branch.
 
