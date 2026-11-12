@@ -204,40 +204,56 @@
                   ColumnDefinitions="566,10,530">
 
                 <Border Grid.Column="0" Classes="card" Padding="12">
-                    <ItemsControl Width="540"
-                                  ItemsSource="{Binding Ability.Rows}">
-                        <ItemsControl.ItemTemplate>
-                            <DataTemplate x:DataType="vm:AbilityRowViewModel">
-                                <Grid Height="40" ColumnDefinitions="108,108,108,108,108">
-                                    <Border Grid.Column="0" Classes="fieldLabel">
-                                        <TextBlock Text="{Binding Label}" VerticalAlignment="Center" />
-                                    </Border>
-                                    <ContentControl Grid.Column="1" Content="{Binding Stat}" />
+                    <Grid Width="540">
+                        <ItemsControl ItemsSource="{Binding Ability.Rows}">
+                            <ItemsControl.ItemTemplate>
+                                <DataTemplate x:DataType="vm:AbilityRowViewModel">
+                                    <Grid Height="40" ColumnDefinitions="108,108,108,108,108">
+                                        <Border Grid.Column="0" Classes="fieldLabel">
+                                            <TextBlock Text="{Binding Label}" VerticalAlignment="Center" />
+                                        </Border>
+                                        <ContentControl Grid.Column="1" Content="{Binding Stat}" />
 
-                                    <ContentControl Grid.Column="2" Content="{Binding Growth}"
-                                                    IsVisible="{Binding HasGrowth}" />
+                                        <ContentControl Grid.Column="2" Content="{Binding Growth}"
+                                                        IsVisible="{Binding HasGrowth}" />
 
-                                    <Border Grid.Column="3" Classes="fieldLabel"
-                                            IsVisible="{Binding HasWeapon}">
-                                        <StackPanel Orientation="Horizontal"
-                                                    Spacing="4"
-                                                    HorizontalAlignment="Center"
-                                                    VerticalAlignment="Center">
-                                            <Image Source="{Binding WeaponIcon}"
-                                                   Width="22"
-                                                   Height="22"
-                                                   VerticalAlignment="Center" />
-                                            <TextBlock Text="{Binding ProficiencyLabel}"
-                                                       FontSize="12"
+                                        <Border Grid.Column="3" Classes="fieldLabel"
+                                                IsVisible="{Binding HasWeapon}">
+                                            <StackPanel Orientation="Horizontal"
+                                                        Spacing="4"
+                                                        HorizontalAlignment="Center"
+                                                        VerticalAlignment="Center">
+                                                <Image Source="{Binding WeaponIcon}"
+                                                       Width="22"
+                                                       Height="22"
                                                        VerticalAlignment="Center" />
-                                        </StackPanel>
-                                    </Border>
-                                    <ContentControl Grid.Column="4" Content="{Binding Proficiency}"
-                                                    IsVisible="{Binding HasWeapon}" />
-                                </Grid>
-                            </DataTemplate>
-                        </ItemsControl.ItemTemplate>
-                    </ItemsControl>
+                                                <TextBlock Text="{Binding ProficiencyLabel}"
+                                                           FontSize="12"
+                                                           VerticalAlignment="Center" />
+                                            </StackPanel>
+                                        </Border>
+                                        <ContentControl Grid.Column="4" Content="{Binding Proficiency}"
+                                                        IsVisible="{Binding HasWeapon}" />
+                                    </Grid>
+                                </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+                        </ItemsControl>
+
+                        <!-- 体格、移动两行的右侧说明。 -->
+                        <Grid Height="80"
+                              VerticalAlignment="Bottom"
+                              ColumnDefinitions="216,324"
+                              IsHitTestVisible="False">
+                            <TextBlock Grid.Column="1"
+                                       Text="角色最终能力值为职业基础能力值和个人成长能力值的和&#10;此处修改的数值为个人成长能力值"
+                                       FontSize="11"
+                                       LineHeight="16"
+                                       TextWrapping="Wrap"
+                                       Opacity="0.7"
+                                       VerticalAlignment="Center"
+                                       Margin="4,0,4,0" />
+                        </Grid>
+                    </Grid>
                 </Border>
 
                 <Border Grid.Column="2" Classes="card" Padding="12">
