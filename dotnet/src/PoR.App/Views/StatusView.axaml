@@ -10,10 +10,24 @@
         <Thickness x:Key="PersonLabelMargin">2,3,0,3</Thickness>
 
         <DataTemplate x:Key="ItemRowTemplate" x:DataType="vm:ItemRowViewModel">
-            <Grid Height="40" ColumnDefinitions="200,100,100,100">
+            <Grid Height="40" ColumnDefinitions="200,100,64,100">
                 <ContentControl Grid.Column="0" Content="{Binding Item}" />
                 <ContentControl Grid.Column="1" Content="{Binding Durability}" />
-                <ContentControl Grid.Column="2" Content="{Binding Equipped}" />
+                <CheckBox Grid.Column="2"
+                          IsChecked="{Binding Equipped.IsChecked, Mode=TwoWay}"
+                          IsEnabled="{Binding Equipped.IsEditable}"
+                          MinHeight="32"
+                          FontSize="12"
+                          Margin="2,3,0,3"
+                          VerticalContentAlignment="Center"
+                          VerticalAlignment="Center">
+                    <TextBlock Text="{Binding Equipped.Label}"
+                               VerticalAlignment="Center">
+                        <TextBlock.RenderTransform>
+                            <TranslateTransform Y="-2" />
+                        </TextBlock.RenderTransform>
+                    </TextBlock>
+                </CheckBox>
                 <ContentControl Grid.Column="3" Content="{Binding Dropped}" />
             </Grid>
         </DataTemplate>
@@ -204,7 +218,7 @@
                 </Border>
 
                 <Border Grid.Column="2" Classes="card" Padding="12">
-                    <StackPanel Width="500">
+                    <StackPanel Width="464">
                         <Border Classes="fieldLabel" Height="34">
                             <TextBlock Text="{loc:Tr Ui_Item_WeaponSection}" VerticalAlignment="Center" />
                         </Border>
