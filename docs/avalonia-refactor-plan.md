@@ -1321,3 +1321,7 @@ __pycache__/
   - 新增两个单文件发布配置：`win-x64-standalone`（自包含 + 单文件压缩，约 52MB，无需 .NET 运行时）和 `win-x64-framework-dependent`（依赖 .NET 10 Desktop Runtime，约 41MB）。
   - 发布后自动删除 PDB；每个发布目录只保留单个 EXE。
   - 未启用 trimming：Avalonia/FluentAvalonia 和反射资源加载对裁剪较敏感，避免潜在运行时问题。
+- 2026-11-12：版本元数据更新。
+  - FileVersion/AssemblyVersion 提升到 1.9.0.0，ProductVersion 为 1.9。
+  - 产品名更新为 Fire Emblem Path of Radiance Modifier V1.9，版权年份更新为 2021-2026。
+  - `version.txt` 与 `PoR.App.csproj` 保持同步。

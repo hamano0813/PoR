@@ -8,16 +8,16 @@
     <AvaloniaUseCompiledBindingsByDefault>true</AvaloniaUseCompiledBindingsByDefault>
 
     <!-- Mirrors the metadata previously kept in version.txt. -->
-    <AssemblyVersion>1.2.0.0</AssemblyVersion>
-    <FileVersion>1.2.0.0</FileVersion>
-    <Version>1.2.0</Version>
-    <InformationalVersion>1.2</InformationalVersion>
+    <AssemblyVersion>1.9.0.0</AssemblyVersion>
+    <FileVersion>1.9.0.0</FileVersion>
+    <Version>1.9.0</Version>
+    <InformationalVersion>1.9</InformationalVersion>
     <IncludeSourceRevisionInInformationalVersion>false</IncludeSourceRevisionInInformationalVersion>
     <Company>Hamano0813</Company>
-    <Product>Fire Emblem Path of Radiance Modifier V1.2</Product>
+    <Product>Fire Emblem Path of Radiance Modifier V1.9</Product>
     <AssemblyTitle>火焰纹章 苍炎的轨迹 动态修改器</AssemblyTitle>
     <Description>火焰纹章 苍炎的轨迹 动态修改器</Description>
-    <Copyright>Copyright © 2021-2022 Hamano0813</Copyright>
+    <Copyright>Copyright © 2021-2026 Hamano0813</Copyright>
     <Authors>Hamano0813</Authors>
   </PropertyGroup>
 

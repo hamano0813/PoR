@@ -140,12 +140,12 @@ Publish symbols are removed automatically; each directory contains only the
 single EXE. The EXE embeds `Assets/icon.ico` and the following metadata, mapped
 from the old `version.txt`:
 
-- File version: 1.2.0.0
-- Product version: 1.2
+- File version: 1.9.0.0
+- Product version: 1.9
 - Company: Hamano0813
-- Product: Fire Emblem Path of Radiance Modifier V1.2
+- Product: Fire Emblem Path of Radiance Modifier V1.9
 - Description: 火焰纹章 苍炎的轨迹 动态修改器
-- Copyright: Copyright © 2021-2022 Hamano0813
+- Copyright: Copyright © 2021-2026 Hamano0813
 
 Trimming is intentionally disabled: Avalonia/FluentAvalonia plus reflection-based
 resource loading make aggressive trimming risky. `EnableCompressionInSingleFile`
