@@ -9,7 +9,7 @@
         x:DataType="vm:MainWindowViewModel"
         Title="{loc:Tr Ui_App_Title}"
         Icon="/Assets/icon.ico"
-        Width="1260"
+        Width="1360"
         Height="800"
         WindowStartupLocation="CenterScreen"
         CanResize="False"
