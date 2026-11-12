@@ -10,19 +10,11 @@ publish/
 *.nupkg
 *.snupkg
 
-# Python
-venv/
-.venv/
-dist/
-build/
-__pycache__/
-*.py[cod]
-
 # Local NuGet workaround (packages are large; not committed)
 .nuget-local/
 NuGet.local.config
 
 # IDE / OS
-.idea/workspace.xml
+.idea/
 .DS_Store
 Thumbs.db
