@@ -24,7 +24,8 @@ public sealed partial class EnumFieldViewModel : FieldViewModelBase
         : base(session, definition, slotIndex, label)
     {
         var isPortrait = string.Equals(definition.EnumId, "pid", StringComparison.Ordinal);
-        IconSize = isPortrait ? 100 : 32;
+        var isItem = string.Equals(definition.EnumId, "iid", StringComparison.Ordinal);
+        IconSize = isPortrait ? 100 : isItem ? 24 : 32;
         EditorHeight = isPortrait ? 112 : 32;
         DropDownHeight = isPortrait ? 540 : 320;
 
