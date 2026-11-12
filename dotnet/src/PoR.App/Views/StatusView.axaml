@@ -19,18 +19,15 @@
         </DataTemplate>
     </UserControl.Resources>
 
-    <Border Classes="card"
-            Padding="12"
-            Margin="4"
-            HorizontalAlignment="Center"
-            VerticalAlignment="Stretch">
-        <ScrollViewer VerticalScrollBarVisibility="Auto"
-                      HorizontalScrollBarVisibility="Disabled"
-                      AllowAutoHide="False">
-            <StackPanel Width="1010"
-                        Spacing="10"
-                        HorizontalAlignment="Center">
+    <ScrollViewer VerticalScrollBarVisibility="Auto"
+                  HorizontalScrollBarVisibility="Disabled"
+                  AllowAutoHide="False">
+        <StackPanel Width="1062"
+                    Spacing="10"
+                    Margin="4"
+                    HorizontalAlignment="Center">
 
+            <Border Classes="card" Padding="12">
                 <!-- 状态组：10 列 × 100px，每行 40px。 -->
                 <Grid ColumnDefinitions="100,100,100,100,100,100,100,100,100,100"
                       RowDefinitions="40,40,40,40,40,40,40,40"
@@ -163,17 +160,14 @@
                     </Border>
                     <ContentControl Grid.Row="7" Grid.Column="9" Content="{Binding Action}" />
                 </Grid>
+            </Border>
 
-                <Border Height="1"
-                        Background="{DynamicResource AppBorderBrush}"
-                        Opacity="0.7" />
+            <!-- 能力（5列）与装备（5列）分别使用独立面板。 -->
+            <Grid Width="1062"
+                  ColumnDefinitions="526,10,526">
 
-                <!-- 能力（5列）与装备（5列）左右并排。 -->
-                <Grid Width="1010"
-                      ColumnDefinitions="500,10,500">
-
-                    <ItemsControl Grid.Column="0"
-                                  Width="500"
+                <Border Grid.Column="0" Classes="card" Padding="12">
+                    <ItemsControl Width="500"
                                   ItemsSource="{Binding Ability.Rows}">
                         <ItemsControl.ItemTemplate>
                             <DataTemplate x:DataType="vm:AbilityRowViewModel">
@@ -207,15 +201,10 @@
                             </DataTemplate>
                         </ItemsControl.ItemTemplate>
                     </ItemsControl>
+                </Border>
 
-                    <Border Grid.Column="1"
-                            Width="1"
-                            Background="{DynamicResource AppBorderBrush}"
-                            Opacity="0.7"
-                            HorizontalAlignment="Center"
-                            VerticalAlignment="Stretch" />
-
-                    <StackPanel Grid.Column="2" Width="500">
+                <Border Grid.Column="2" Classes="card" Padding="12">
+                    <StackPanel Width="500">
                         <Border Classes="fieldLabel" Height="34">
                             <TextBlock Text="{loc:Tr Ui_Item_WeaponSection}" VerticalAlignment="Center" />
                         </Border>
@@ -228,8 +217,8 @@
                         <ItemsControl ItemsSource="{Binding Items.ItemRows}"
                                       ItemTemplate="{StaticResource ItemRowTemplate}" />
                     </StackPanel>
-                </Grid>
-            </StackPanel>
-        </ScrollViewer>
-    </Border>
+                </Border>
+            </Grid>
+        </StackPanel>
+    </ScrollViewer>
 </UserControl>

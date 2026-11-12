@@ -25,13 +25,14 @@ This branch is a parallel UI version of the completed editor:
   (400px), ally spans 2 columns (200px), move AI spans 3 columns (300px), and
   the behavior AI row uses one 100px label followed by three 300px dropdowns.
   Ordinary numeric and boolean controls are 100px wide.
-- Below the status group, the same page shows two side-by-side 5 × 100px groups
-  (500px each, 10px apart): ability (stat label/value, growth value,
-  weapon-proficiency label/value) and equipment (four weapon rows and four item
-  rows; the item dropdown spans two cells, followed by
-  quantity/equipped/dropped). The page uses an automatic vertical scrollbar
-  when the groups exceed the window height. The ability/equipment tabs share the
-  same ViewModel instances as the status page, so edits stay in sync.
+- The page is split into three separate card panels: status on top, then two
+  side-by-side 5 × 100px panels (500px each, 10px apart) for ability (stat
+  label/value, growth value, weapon-proficiency label/value) and equipment
+  (four weapon rows and four item rows; the item dropdown spans two cells,
+  followed by quantity/equipped/dropped). The page uses an automatic vertical
+  scrollbar when the panels exceed the window height. The ability/equipment
+  tabs share the same ViewModel instances as the status page, so edits stay in
+  sync.
 - Shares all ViewModels, localization, memory access and page behavior with the
   `avalonia` branch.
 
