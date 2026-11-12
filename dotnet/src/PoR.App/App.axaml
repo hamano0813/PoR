@@ -104,6 +104,9 @@
                         </Grid>
                     </DataTemplate>
                 </ComboBox.ItemTemplate>
+                <ComboBox.RenderTransform>
+                    <TranslateTransform Y="1" />
+                </ComboBox.RenderTransform>
             </ComboBox>
         </DataTemplate>
 
