@@ -85,28 +85,33 @@
                 BorderThickness="0,1,0,0"
                 Padding="10,0">
             <Grid ColumnDefinitions="*,Auto">
-                <StackPanel Orientation="Horizontal"
-                            Spacing="10"
-                            VerticalAlignment="Center">
+                <Grid ColumnDefinitions="Auto,Auto,Auto,*"
+                      VerticalAlignment="Center">
                     <TextBlock Text="●"
                                FontSize="12"
                                Foreground="{Binding ConnectionBrush}"
                                VerticalAlignment="Center" />
-                    <TextBlock Text="{Binding ConnectionText}"
+                    <TextBlock Grid.Column="1"
+                               Text="{Binding ConnectionText}"
                                FontSize="12"
+                               Margin="10,0,0,0"
                                VerticalAlignment="Center" />
-                    <TextBlock Text="{Binding LastRefreshText}"
+                    <TextBlock Grid.Column="2"
+                               Text="{Binding LastRefreshText}"
                                FontSize="11"
                                Opacity="0.65"
+                               Margin="10,0,0,0"
                                VerticalAlignment="Center" />
-                    <TextBlock Text="{Binding ErrorMessage}"
+                    <TextBlock Grid.Column="3"
+                               Text="{Binding ErrorMessage}"
                                IsVisible="{Binding HasError}"
+                               ToolTip.Tip="{Binding ErrorMessage}"
                                FontSize="11"
                                Foreground="#E81123"
                                TextTrimming="CharacterEllipsis"
-                               MaxWidth="520"
+                               Margin="10,0,0,0"
                                VerticalAlignment="Center" />
-                </StackPanel>
+                </Grid>
 
                 <StackPanel Grid.Column="1"
                             Orientation="Horizontal"

@@ -132,7 +132,7 @@ public sealed partial class MainWindowViewModel : ViewModelBase, IDisposable
             Slots.Clear();
             SelectedSlot = null;
             ClearTabs();
-            ErrorMessage = exception.Message;
+            ErrorMessage = GetRefreshErrorMessage(exception);
         }
         finally
         {
@@ -369,6 +369,15 @@ public sealed partial class MainWindowViewModel : ViewModelBase, IDisposable
         SupportTab = null;
         OtherTab = null;
     }
+
+    private string GetRefreshErrorMessage(Exception exception) => _session.Status switch
+    {
+        DolphinStatus.NotRunning or DolphinStatus.NoEmu =>
+            _localization.Ui("Ui_Error_NoEmulator"),
+        DolphinStatus.AccessDenied =>
+            _localization.Ui("Ui_Error_AccessDenied"),
+        _ => exception.Message,
+    };
 
     private void UpdateConnection()
     {

@@ -45,7 +45,6 @@
                                   IsTabStop="False"
                                   Command="{Binding DecrementCommand}">
                         <Path Data="M 4,0 L 0,4 L 4,8"
-                              Stroke="{DynamicResource AppForegroundBrush}"
                               StrokeThickness="1.2"
                               StrokeLineCap="Round"
                               Width="5"
@@ -68,7 +67,6 @@
                                   IsTabStop="False"
                                   Command="{Binding IncrementCommand}">
                         <Path Data="M 0,0 L 4,4 L 0,8"
-                              Stroke="{DynamicResource AppForegroundBrush}"
                               StrokeThickness="1.2"
                               StrokeLineCap="Round"
                               Width="5"
@@ -222,15 +220,69 @@
 
         <Style Selector="RepeatButton.spinnerButton">
             <Setter Property="Background" Value="Transparent" />
+            <Setter Property="BorderBrush" Value="Transparent" />
             <Setter Property="BorderThickness" Value="0" />
             <Setter Property="Padding" Value="0" />
             <Setter Property="HorizontalContentAlignment" Value="Center" />
             <Setter Property="VerticalContentAlignment" Value="Center" />
         </Style>
 
+        <Style Selector="RepeatButton.spinnerButton:pointerover">
+            <Setter Property="Background" Value="Transparent" />
+            <Setter Property="BorderBrush" Value="Transparent" />
+            <Setter Property="BorderThickness" Value="0" />
+        </Style>
+
+        <Style Selector="RepeatButton.spinnerButton:pressed">
+            <Setter Property="Background" Value="Transparent" />
+            <Setter Property="BorderBrush" Value="Transparent" />
+            <Setter Property="BorderThickness" Value="0" />
+        </Style>
+
         <Style Selector="RepeatButton.spinnerButton:disabled">
             <Setter Property="Background" Value="Transparent" />
+            <Setter Property="BorderBrush" Value="Transparent" />
             <Setter Property="BorderThickness" Value="0" />
+        </Style>
+
+        <Style Selector="RepeatButton.spinnerButton /template/ ContentPresenter">
+            <Setter Property="Background" Value="Transparent" />
+            <Setter Property="BorderBrush" Value="Transparent" />
+            <Setter Property="BorderThickness" Value="0" />
+        </Style>
+
+        <Style Selector="RepeatButton.spinnerButton:pointerover /template/ ContentPresenter">
+            <Setter Property="Background" Value="Transparent" />
+            <Setter Property="BorderBrush" Value="Transparent" />
+            <Setter Property="BorderThickness" Value="0" />
+        </Style>
+
+        <Style Selector="RepeatButton.spinnerButton:pressed /template/ ContentPresenter">
+            <Setter Property="Background" Value="Transparent" />
+            <Setter Property="BorderBrush" Value="Transparent" />
+            <Setter Property="BorderThickness" Value="0" />
+        </Style>
+
+        <Style Selector="RepeatButton.spinnerButton:disabled /template/ ContentPresenter">
+            <Setter Property="Background" Value="Transparent" />
+            <Setter Property="BorderBrush" Value="Transparent" />
+            <Setter Property="BorderThickness" Value="0" />
+        </Style>
+
+        <Style Selector="RepeatButton.spinnerButton Path">
+            <Setter Property="Stroke" Value="{DynamicResource AppForegroundBrush}" />
+        </Style>
+
+        <Style Selector="RepeatButton.spinnerButton:pointerover Path">
+            <Setter Property="Stroke" Value="{DynamicResource AccentBrush}" />
+        </Style>
+
+        <Style Selector="RepeatButton.spinnerButton:pressed Path">
+            <Setter Property="Stroke" Value="{DynamicResource AccentPressedBrush}" />
+        </Style>
+
+        <Style Selector="RepeatButton.spinnerButton:disabled Path">
+            <Setter Property="Stroke" Value="{DynamicResource AppForegroundBrush}" />
         </Style>
 
         <Style Selector="TextBox">
@@ -251,7 +303,7 @@
 
         <Style Selector="ComboBox.compact">
             <Setter Property="FontSize" Value="12" />
-            <Setter Property="Padding" Value="6,2" />
+            <Setter Property="Padding" Value="11,2,6,2" />
             <Setter Property="MinHeight" Value="26" />
         </Style>
 
