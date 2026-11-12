@@ -27,7 +27,7 @@
         <ScrollViewer VerticalScrollBarVisibility="Auto"
                       HorizontalScrollBarVisibility="Disabled"
                       AllowAutoHide="False">
-            <StackPanel Width="1000"
+            <StackPanel Width="910"
                         Spacing="10"
                         HorizontalAlignment="Center">
 
@@ -168,29 +168,25 @@
                         Background="{DynamicResource AppBorderBrush}"
                         Opacity="0.7" />
 
-                <!-- 能力（6列）与装备（5列）左右并排。 -->
-                <Grid Width="1000"
-                      ColumnDefinitions="540,10,450">
+                <!-- 能力（5列）与装备（5列）左右并排。 -->
+                <Grid Width="910"
+                      ColumnDefinitions="450,10,450">
 
                     <ItemsControl Grid.Column="0"
-                                  Width="540"
+                                  Width="450"
                                   ItemsSource="{Binding Ability.Rows}">
                         <ItemsControl.ItemTemplate>
                             <DataTemplate x:DataType="vm:AbilityRowViewModel">
-                                <Grid Height="40" ColumnDefinitions="90,90,90,90,90,90">
+                                <Grid Height="40" ColumnDefinitions="90,90,90,90,90">
                                     <Border Grid.Column="0" Classes="fieldLabel">
                                         <TextBlock Text="{Binding Label}" VerticalAlignment="Center" />
                                     </Border>
                                     <ContentControl Grid.Column="1" Content="{Binding Stat}" />
 
-                                    <Border Grid.Column="2" Classes="fieldLabel"
-                                            IsVisible="{Binding HasGrowth}">
-                                        <TextBlock Text="{Binding GrowthLabel}" VerticalAlignment="Center" />
-                                    </Border>
-                                    <ContentControl Grid.Column="3" Content="{Binding Growth}"
+                                    <ContentControl Grid.Column="2" Content="{Binding Growth}"
                                                     IsVisible="{Binding HasGrowth}" />
 
-                                    <Border Grid.Column="4" Classes="fieldLabel"
+                                    <Border Grid.Column="3" Classes="fieldLabel"
                                             IsVisible="{Binding HasWeapon}">
                                         <StackPanel Orientation="Horizontal"
                                                     Spacing="4"
@@ -205,7 +201,7 @@
                                                        VerticalAlignment="Center" />
                                         </StackPanel>
                                     </Border>
-                                    <ContentControl Grid.Column="5" Content="{Binding Proficiency}"
+                                    <ContentControl Grid.Column="4" Content="{Binding Proficiency}"
                                                     IsVisible="{Binding HasWeapon}" />
                                 </Grid>
                             </DataTemplate>

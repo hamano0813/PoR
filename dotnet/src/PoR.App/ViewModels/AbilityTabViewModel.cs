@@ -47,9 +47,6 @@ public sealed class AbilityTabViewModel
             var label = _localization.Ui(labelKey);
             var stat = Num(statId, label);
             var growth = growthId is null ? null : Num(growthId, label);
-            var growthLabel = growthId is null
-                ? null
-                : $"{label}{_localization.Ui("Ui_Ability_Growth")}";
             NumericFieldViewModel? proficiency = null;
             Bitmap? weaponIcon = null;
             string? weaponLabel = null;
@@ -68,7 +65,6 @@ public sealed class AbilityTabViewModel
                 label,
                 stat,
                 growth,
-                growthLabel,
                 weaponIcon,
                 weaponLabel,
                 proficiencyLabel,
@@ -96,7 +92,6 @@ public sealed class AbilityRowViewModel(
     string label,
     NumericFieldViewModel stat,
     NumericFieldViewModel? growth,
-    string? growthLabel,
     Bitmap? weaponIcon,
     string? weaponLabel,
     string? proficiencyLabel,
@@ -107,8 +102,6 @@ public sealed class AbilityRowViewModel(
     public NumericFieldViewModel Stat { get; } = stat;
 
     public NumericFieldViewModel? Growth { get; } = growth;
-
-    public string? GrowthLabel { get; } = growthLabel;
 
     public bool HasGrowth => Growth is not null;
 
