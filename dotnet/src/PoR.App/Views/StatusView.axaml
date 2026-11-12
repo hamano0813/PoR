@@ -17,8 +17,8 @@
             VerticalAlignment="Stretch">
         <ScrollViewer VerticalScrollBarVisibility="Auto"
                       HorizontalScrollBarVisibility="Disabled">
-            <!-- 10 列，每列 88px；每行 40px。 -->
-            <Grid ColumnDefinitions="88,88,88,88,88,88,88,88,88,88"
+            <!-- 10 列，每列 90px；每行 40px。 -->
+            <Grid ColumnDefinitions="90,90,90,90,90,90,90,90,90,90"
                   RowDefinitions="40,40,40,40,40,40,40,40"
                   HorizontalAlignment="Center">
 
@@ -55,7 +55,7 @@
 
                 <!-- 移动AI、阵营、部队、部队首领。 -->
                 <Grid Grid.Row="3" Grid.ColumnSpan="10"
-                      ColumnDefinitions="88,264,88,132,88,132,88">
+                      ColumnDefinitions="90,270,90,135,90,135,90">
                     <Border Grid.Column="0" Classes="fieldLabel">
                         <TextBlock Text="{loc:Tr Field_mtype}" VerticalAlignment="Center" />
                     </Border>
@@ -74,9 +74,9 @@
                     <ContentControl Grid.Column="6" Content="{Binding IsLeader}" />
                 </Grid>
 
-                <!-- 行为AI：1 个 88px 标签 + 3 个 264px 下拉框。 -->
+                <!-- 行为AI：1 个 90px 标签 + 3 个 270px 下拉框。 -->
                 <Grid Grid.Row="4" Grid.ColumnSpan="10"
-                      ColumnDefinitions="88,264,264,264">
+                      ColumnDefinitions="90,270,270,270">
                     <Border Grid.Column="0" Classes="fieldLabel">
                         <TextBlock Text="{loc:Tr Field_behaviorAi}" VerticalAlignment="Center" />
                     </Border>
@@ -85,7 +85,7 @@
                     <ContentControl Grid.Column="3" Content="{Binding Seq3}" />
                 </Grid>
 
-                <!-- 数值与状态：每行 5 组，标签 88px + 控件 88px。 -->
+                <!-- 数值与状态：每行 5 组，标签 90px + 控件 90px。 -->
                 <Border Grid.Row="5" Grid.Column="0" Classes="fieldLabel">
                     <TextBlock Text="{loc:Tr Field_slotIndex}" VerticalAlignment="Center" />
                 </Border>
