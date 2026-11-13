@@ -1,9 +1,9 @@
 ###  苍炎的轨迹 动态修改器
 
 [![.NET](https://img.shields.io/badge/.NET-10.0-darkcyan?logo=dotnet&style=flat&labelColor=013243)](https://dotnet.microsoft.com/)
-[![Avalonia](https://img.shields.io/badge/Avalonia-12.1.6-darkcyan?style=flat&labelColor=013243)](https://avaloniaui.net/)
-[![AvaloniaFluentUI](https://img.shields.io/badge/AvaloniaFluentUI-2.0.6-darkcyan?style=flat&labelColor=013243)](https://github.com/IzumiPL/Avalonia-Fluent-UI)
-[![Dolphin](https://img.shields.io/badge/Dolphin-5.0-darkcyan?logo=nintendogamecube&style=flat&labelColor=013243)](https://cn.dolphin-emu.org/)
+[![AvaloniaUI](https://img.shields.io/badge/AvaloniaUI-12.1.6-darkcyan?logo=avaloniaui&style=flat&labelColor=013243)](https://avaloniaui.net/)
+[![AvaloniaFluentUI](https://img.shields.io/badge/AvaloniaFluentUI-2.0.6-darkcyan?logo=avaloniaui&style=flat&labelColor=013243)](https://github.com/IzumiPL/Avalonia-Fluent-UI)
+[![Dolphin](https://img.shields.io/badge/Dolphin-≥5.0-darkcyan?logo=dolphin&style=flat&labelColor=013243)](https://cn.dolphin-emu.org/)
 
 #### 项目说明
 
