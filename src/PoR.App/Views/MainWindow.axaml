@@ -44,14 +44,12 @@
                     ToolTip.Tip="{loc:Tr Ui_Action_Theme}">
                 <TextBlock Text="{Binding ThemeIcon}"
                            FontFamily="Segoe Fluent Icons"
-                           FontSize="14"
                            VerticalAlignment="Center" />
             </Button>
             <Button Classes="titleBarButton"
                     Command="{Binding ToggleLanguageCommand}"
                     ToolTip.Tip="{loc:Tr Ui_Action_Language}">
                 <TextBlock Text="{Binding LanguageShortText}"
-                           FontSize="13"
                            FontWeight="Normal"
                            VerticalAlignment="Center" />
             </Button>
@@ -109,7 +107,6 @@
                 </Button.Flyout>
                 <TextBlock Text="&#xE897;"
                            FontFamily="Segoe Fluent Icons"
-                           FontSize="14"
                            VerticalAlignment="Center" />
             </Button>
         </StackPanel>
@@ -148,12 +145,10 @@
                                             VerticalAlignment="Center">
                                     <TextBlock Text="{Binding DisplayName}"
                                                FontFamily="{DynamicResource GameTermFontFamily}"
-                                               FontSize="{DynamicResource GameTermFontSize13}"
                                                FontWeight="Bold"
                                                TextTrimming="CharacterEllipsis" />
                                     <TextBlock Text="{Binding ClassName}"
                                                FontFamily="{DynamicResource GameTermFontFamily}"
-                                               FontSize="{DynamicResource GameTermFontSize11}"
                                                Opacity="0.7"
                                                TextTrimming="CharacterEllipsis" />
                                 </StackPanel>
@@ -183,7 +178,6 @@
                                 Spacing="6">
                         <TextBlock Text="&#xE72C;"
                                    FontFamily="Segoe Fluent Icons"
-                                   FontSize="14"
                                    VerticalAlignment="Center" />
                         <TextBlock Text="{loc:Tr Ui_Action_Refresh}"
                                    VerticalAlignment="Center" />
@@ -196,17 +190,14 @@
                       Margin="16,0,0,0"
                       VerticalAlignment="Center">
                     <TextBlock Text="●"
-                               FontSize="12"
                                Foreground="{Binding ConnectionBrush}"
                                VerticalAlignment="Center" />
                     <TextBlock Grid.Column="1"
                                Text="{Binding ConnectionText}"
-                               FontSize="12"
                                Margin="10,0,0,0"
                                VerticalAlignment="Center" />
                     <TextBlock Grid.Column="2"
                                Text="{Binding LastRefreshText}"
-                               FontSize="11"
                                Opacity="0.65"
                                Margin="10,0,0,0"
                                VerticalAlignment="Center" />
@@ -214,7 +205,6 @@
                                Text="{Binding ErrorMessage}"
                                IsVisible="{Binding HasError}"
                                ToolTip.Tip="{Binding ErrorMessage}"
-                               FontSize="11"
                                Foreground="#E81123"
                                TextTrimming="CharacterEllipsis"
                                Margin="10,0,0,0"
@@ -230,7 +220,6 @@
                                 Spacing="4"
                                 VerticalAlignment="Center">
                         <TextBlock Text="{loc:Tr Ui_Other_Money}"
-                                   FontSize="11"
                                    VerticalAlignment="Center" />
                         <TextBox Classes="bottomInput"
                                  IsEnabled="{Binding HasSnapshot}"
@@ -241,7 +230,6 @@
                                 Spacing="4"
                                 VerticalAlignment="Center">
                         <TextBlock Text="{loc:Tr Ui_Other_BonusExp}"
-                                   FontSize="11"
                                    VerticalAlignment="Center" />
                         <TextBox Classes="bottomInput"
                                  IsEnabled="{Binding HasSnapshot}"

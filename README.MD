@@ -57,7 +57,7 @@ dotnet publish src/PoR.App/PoR.App.csproj -c Release -p:PublishProfile=win-x64-f
 
 #### 版本
 
-1.9.7
+1.9.8
 
 #### License
 

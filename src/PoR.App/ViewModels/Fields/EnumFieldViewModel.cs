@@ -36,7 +36,6 @@ public sealed partial class EnumFieldViewModel : FieldViewModelBase
         var isJapanese = string.Equals(localization.Language, "jp", StringComparison.Ordinal);
         var fontFamily = new FontFamily(
             useGameFont && isJapanese ? "Yu Gothic UI" : "Microsoft YaHei UI");
-        var fontSize = useGameFont && isJapanese ? 13d : 12d;
 
         Items = mapping
             .Select(item => new EnumItemViewModel(
@@ -45,8 +44,7 @@ public sealed partial class EnumFieldViewModel : FieldViewModelBase
                 isFaction ? localization.FixedChineseTerm(item.TermKey) : localization.Term(item.TermKey),
                 GetIcon(definition.EnumId, item.Key, assets),
                 IconSize,
-                fontFamily,
-                fontSize))
+                fontFamily))
             .ToList();
 
         SetLoading(true);

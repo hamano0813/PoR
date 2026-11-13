@@ -139,10 +139,10 @@ Publish symbols are removed automatically; each directory contains only the
 single EXE. The EXE embeds `Assets/icon.ico` and the following metadata, mapped
 in the C# project (the old `version.txt` has been removed):
 
-- File version: 1.9.7.0
-- Product version: 1.9.7
+- File version: 1.9.8.0
+- Product version: 1.9.8
 - Company: Hamano0813
-- Product: Fire Emblem Path of Radiance Modifier V1.9.7
+- Product: Fire Emblem Path of Radiance Modifier V1.9.8
 - Description: 火焰纹章 苍炎的轨迹 动态修改器
 - Copyright: Copyright © 2021-2026 Hamano0813
 

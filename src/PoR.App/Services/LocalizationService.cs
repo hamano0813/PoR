@@ -103,10 +103,6 @@ public sealed class LocalizationService : INotifyPropertyChanged
             var isJapanese = string.Equals(language, "jp", StringComparison.Ordinal);
             application.Resources["GameTermFontFamily"] = new FontFamily(
                 isJapanese ? "Yu Gothic UI" : "Microsoft YaHei UI");
-            application.Resources["GameTermFontSize11"] = isJapanese ? 12d : 11d;
-            application.Resources["GameTermFontSize12"] = isJapanese ? 13d : 12d;
-            application.Resources["GameTermFontSize13"] = isJapanese ? 14d : 13d;
-            application.Resources["GameTermFontSize14"] = isJapanese ? 15d : 14d;
         }
 
         PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Item[]"));

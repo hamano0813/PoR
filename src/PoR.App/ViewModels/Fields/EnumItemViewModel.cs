@@ -9,8 +9,7 @@ public sealed record EnumItemViewModel(
     string DisplayName,
     Bitmap? Icon,
     double IconSize,
-    FontFamily FontFamily,
-    double FontSize)
+    FontFamily FontFamily)
 {
     public bool HasIcon => Icon is not null;
 }

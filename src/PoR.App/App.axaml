@@ -29,7 +29,6 @@
                              BorderThickness="0"
                              MinHeight="0"
                              Padding="29,0"
-                             FontSize="12"
                              HorizontalAlignment="Stretch"
                              VerticalAlignment="Stretch" />
                     <RepeatButton Classes="spinnerButton"
@@ -100,15 +99,11 @@
                             <TextBlock Grid.Column="1"
                                        Text="{Binding DisplayName}"
                                        FontFamily="{Binding FontFamily}"
-                                       FontSize="{Binding FontSize}"
                                        VerticalAlignment="Center"
                                        TextTrimming="CharacterEllipsis" />
                         </Grid>
                     </DataTemplate>
                 </ComboBox.ItemTemplate>
-                <ComboBox.RenderTransform>
-                    <TranslateTransform Y="1" />
-                </ComboBox.RenderTransform>
             </ComboBox>
         </DataTemplate>
 
@@ -126,15 +121,13 @@
                           IsEnabled="{Binding IsEditable}"
                           VerticalContentAlignment="Center"
                           MinHeight="32"
-                          FontSize="12"
                           Margin="10,3,0,3"
                           VerticalAlignment="Center">
                     <TextBlock Text="{Binding Label}"
                                FontFamily="{Binding LabelFontFamily}"
-                               FontSize="{Binding LabelFontSize}"
                                VerticalAlignment="Center">
                         <TextBlock.RenderTransform>
-                            <TranslateTransform Y="{Binding LabelOffsetY}" />
+                            <TranslateTransform Y="-3" />
                         </TextBlock.RenderTransform>
                     </TextBlock>
                 </CheckBox>
@@ -148,14 +141,12 @@
                                            IsEnabled="{Binding IsEditable}"
                                            VerticalContentAlignment="Center"
                                            MinHeight="32"
-                                           FontSize="12"
                                            Margin="10,3,0,3">
                 <TextBlock Text="{Binding DisplayText}"
                            FontFamily="{DynamicResource DefaultFontFamily}"
-                           FontSize="12"
                            VerticalAlignment="Center">
                     <TextBlock.RenderTransform>
-                        <TranslateTransform Y="-2" />
+                        <TranslateTransform Y="-3" />
                     </TextBlock.RenderTransform>
                 </TextBlock>
             </controls:TriStateLockCheckBox>
@@ -170,10 +161,6 @@
             <FontFamily x:Key="DefaultFontFamily">Microsoft YaHei UI</FontFamily>
             <!-- 游戏名词字体：中文用微软雅黑，日文切换为 Yu Gothic UI。 -->
             <FontFamily x:Key="GameTermFontFamily">Microsoft YaHei UI</FontFamily>
-            <x:Double x:Key="GameTermFontSize11">11</x:Double>
-            <x:Double x:Key="GameTermFontSize12">12</x:Double>
-            <x:Double x:Key="GameTermFontSize13">13</x:Double>
-            <x:Double x:Key="GameTermFontSize14">14</x:Double>
             <Color x:Key="SystemAccentColor">#0E8FA3</Color>
             <SolidColorBrush x:Key="AccentBrush" Color="#0E8FA3" />
             <SolidColorBrush x:Key="AccentHoverBrush" Color="#14A5BA" />
@@ -329,7 +316,6 @@
             <Setter Property="Height" Value="28" />
             <Setter Property="MinHeight" Value="0" />
             <Setter Property="Padding" Value="6,2" />
-            <Setter Property="FontSize" Value="12" />
             <Setter Property="TextAlignment" Value="Right" />
             <Setter Property="VerticalContentAlignment" Value="Center" />
             <Setter Property="CornerRadius" Value="4" />
@@ -343,25 +329,14 @@
         <Style Selector="ComboBox">
             <Setter Property="CornerRadius" Value="6" />
             <Setter Property="MinHeight" Value="32" />
-            <Setter Property="FontSize" Value="12" />
-        </Style>
-
-        <Style Selector="ComboBoxItem">
-            <Setter Property="FontSize" Value="12" />
-        </Style>
-
-        <Style Selector="CheckBox">
-            <Setter Property="FontSize" Value="12" />
         </Style>
 
         <Style Selector="NumericUpDown">
             <Setter Property="CornerRadius" Value="6" />
             <Setter Property="MinHeight" Value="26" />
-            <Setter Property="FontSize" Value="12" />
         </Style>
 
         <Style Selector="ComboBox.compact">
-            <Setter Property="FontSize" Value="12" />
             <Setter Property="Padding" Value="11,2,6,2" />
             <Setter Property="MinHeight" Value="26" />
         </Style>
@@ -369,7 +344,6 @@
         <Style Selector="TabItem">
             <Setter Property="CornerRadius" Value="6,6,0,0" />
             <Setter Property="Padding" Value="12,5" />
-            <Setter Property="FontSize" Value="13" />
         </Style>
 
         <Style Selector="TabItem:selected">
@@ -410,20 +384,17 @@
         </Style>
 
         <Style Selector="Border.fieldLabel > TextBlock">
-            <Setter Property="FontSize" Value="12" />
             <Setter Property="HorizontalAlignment" Value="Center" />
             <Setter Property="VerticalAlignment" Value="Center" />
             <Setter Property="TextAlignment" Value="Center" />
         </Style>
 
         <Style Selector="TextBlock.sectionTitle">
-            <Setter Property="FontSize" Value="13" />
             <Setter Property="FontWeight" Value="Bold" />
             <Setter Property="Margin" Value="2,0,0,8" />
         </Style>
 
         <Style Selector="TextBlock.columnHeader">
-            <Setter Property="FontSize" Value="11" />
             <Setter Property="HorizontalAlignment" Value="Center" />
             <Setter Property="Opacity" Value="0.7" />
             <Setter Property="Margin" Value="0,0,0,4" />
