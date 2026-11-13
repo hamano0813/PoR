@@ -35,12 +35,20 @@
    ```bash
    git clone https://github.com/hamano0813/PoR.git
    ```
-3. 在仓库根目录构建自包含单文件版本：
+3. 在仓库根目录运行编译脚本：
+   ```bat
+   build.cmd
+   ```
+   默认生成自包含单文件版本。需要较小体积时运行：
+   ```bat
+   build.cmd framework
+   ```
+   也可以手动执行：
    ```bash
    dotnet publish src/PoR.App/PoR.App.csproj -c Release -p:PublishProfile=win-x64-standalone
    ```
-4. 在 `publish/win-x64` 目录中找到 `PoR.App.exe`
-5. 如需较小体积，可改用 `win-x64-framework-dependent` 配置，但需要安装 .NET 10 Desktop Runtime
+4. 自包含版本在 `publish/win-x64` 目录中；框架依赖版在 `publish/win-x64-framework-dependent` 中
+5. 框架依赖版需要安装 .NET 10 Desktop Runtime
 
 #### 运行
 
@@ -50,7 +58,7 @@ dotnet run --project src/PoR.App/PoR.App.csproj
 
 #### 版本
 
-1.9.8
+1.9.9
 
 #### License
 

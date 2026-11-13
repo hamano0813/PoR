@@ -44,6 +44,7 @@
                     ToolTip.Tip="{loc:Tr Ui_Action_Theme}">
                 <TextBlock Text="{Binding ThemeIcon}"
                            FontFamily="Segoe Fluent Icons"
+                           FontSize="14"
                            VerticalAlignment="Center" />
             </Button>
             <Button Classes="titleBarButton"
@@ -107,6 +108,7 @@
                 </Button.Flyout>
                 <TextBlock Text="&#xE897;"
                            FontFamily="Segoe Fluent Icons"
+                           FontSize="14"
                            VerticalAlignment="Center" />
             </Button>
         </StackPanel>
@@ -119,7 +121,9 @@
           Focusable="True"
           IsTabStop="False"
           FocusAdorner="{x:Null}">
-        <Grid Grid.Row="0" ColumnDefinitions="280,*">
+        <Grid Grid.Row="0"
+              ColumnDefinitions="280,*"
+              IsVisible="{Binding HasSnapshot}">
             <Border Grid.Column="0"
                     Background="{DynamicResource AppSurfaceAltBrush}"
                     BorderBrush="{DynamicResource AppBorderBrush}"
@@ -178,6 +182,7 @@
                                 Spacing="6">
                         <TextBlock Text="&#xE72C;"
                                    FontFamily="Segoe Fluent Icons"
+                                   FontSize="14"
                                    VerticalAlignment="Center" />
                         <TextBlock Text="{loc:Tr Ui_Action_Refresh}"
                                    VerticalAlignment="Center" />
@@ -215,7 +220,8 @@
                             Orientation="Horizontal"
                             Spacing="16"
                             HorizontalAlignment="Right"
-                            VerticalAlignment="Center">
+                            VerticalAlignment="Center"
+                            IsVisible="{Binding HasSnapshot}">
                     <StackPanel Orientation="Horizontal"
                                 Spacing="4"
                                 VerticalAlignment="Center">

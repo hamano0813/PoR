@@ -321,19 +321,34 @@
             <Setter Property="CornerRadius" Value="4" />
         </Style>
 
+        <Style Selector="TextBlock">
+            <Setter Property="FontSize" Value="13" />
+        </Style>
+
         <Style Selector="TextBox">
             <Setter Property="CornerRadius" Value="6" />
             <Setter Property="MinHeight" Value="32" />
+            <Setter Property="FontSize" Value="13" />
         </Style>
 
         <Style Selector="ComboBox">
             <Setter Property="CornerRadius" Value="6" />
             <Setter Property="MinHeight" Value="32" />
+            <Setter Property="FontSize" Value="13" />
+        </Style>
+
+        <Style Selector="ComboBoxItem">
+            <Setter Property="FontSize" Value="13" />
+        </Style>
+
+        <Style Selector="CheckBox">
+            <Setter Property="FontSize" Value="13" />
         </Style>
 
         <Style Selector="NumericUpDown">
             <Setter Property="CornerRadius" Value="6" />
             <Setter Property="MinHeight" Value="26" />
+            <Setter Property="FontSize" Value="13" />
         </Style>
 
         <Style Selector="ComboBox.compact">
