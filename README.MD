@@ -1,8 +1,9 @@
-### 苍炎的轨迹 动态修改器
+###  苍炎的轨迹 动态修改器
 
-C# / Avalonia 12 / .NET 10 版本，替换了旧的 Python / PySide6 实现。
-
-![界面截图](docs/izumipl-titlebar.png)
+[![.NET](https://img.shields.io/badge/.NET-10.0-darkcyan?logo=dotnet&style=flat&labelColor=013243)](https://dotnet.microsoft.com/)
+[![Avalonia](https://img.shields.io/badge/Avalonia-12.1.6-darkcyan?style=flat&labelColor=013243)](https://avaloniaui.net/)
+[![AvaloniaFluentUI](https://img.shields.io/badge/AvaloniaFluentUI-2.0.6-darkcyan?style=flat&labelColor=013243)](https://github.com/IzumiPL/Avalonia-Fluent-UI)
+[![Dolphin](https://img.shields.io/badge/Dolphin-5.0-darkcyan?logo=nintendogamecube&style=flat&labelColor=013243)](https://cn.dolphin-emu.org/)
 
 #### 项目说明
 
@@ -27,33 +28,25 @@ C# / Avalonia 12 / .NET 10 版本，替换了旧的 Python / PySide6 实现。
 - [x] 支援
 - [x] 金钱
 
+#### BUILD本地EXE程序方法
+
+1. 安装 .NET 10 SDK，[.NET 官网下载页面](https://dotnet.microsoft.com/download)
+2. 克隆项目：
+   ```bash
+   git clone https://github.com/hamano0813/PoR.git
+   ```
+3. 在仓库根目录构建自包含单文件版本：
+   ```bash
+   dotnet publish src/PoR.App/PoR.App.csproj -c Release -p:PublishProfile=win-x64-standalone
+   ```
+4. 在 `publish/win-x64` 目录中找到 `PoR.App.exe`
+5. 如需较小体积，可改用 `win-x64-framework-dependent` 配置，但需要安装 .NET 10 Desktop Runtime
+
 #### 运行
-
-环境要求：
-
-- Windows 10/11 x64
-- .NET 10 SDK（构建）
-- Dolphin 5.0 以上
 
 ```bash
 dotnet run --project src/PoR.App/PoR.App.csproj
 ```
-
-也可以使用根目录的 `PoR.sln` 在 Visual Studio 中打开并运行。
-
-#### 发布 EXE
-
-在仓库根目录执行：
-
-```bash
-# 自包含单文件版本（体积较大，不依赖本机 .NET）
-dotnet publish src/PoR.App/PoR.App.csproj -c Release -p:PublishProfile=win-x64-standalone
-
-# 依赖 .NET 10 Desktop Runtime 的单文件版本（体积较小）
-dotnet publish src/PoR.App/PoR.App.csproj -c Release -p:PublishProfile=win-x64-framework-dependent
-```
-
-输出目录分别为 `publish/win-x64` 和 `publish/win-x64-framework-dependent`。
 
 #### 版本
 
