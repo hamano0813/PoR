@@ -33,6 +33,7 @@ public sealed partial class BoolFieldViewModel : FieldViewModelBase
         LabelFontFamily = new FontFamily(
             useGameTermFont && japanese ? "Yu Gothic UI" : "Microsoft YaHei UI");
         LabelFontSize = useGameTermFont && japanese ? 13d : 12d;
+        LabelOffsetY = useGameTermFont && japanese ? -3d : -2d;
 
         SetLoading(true);
         IsChecked = value != 0;
@@ -48,6 +49,8 @@ public sealed partial class BoolFieldViewModel : FieldViewModelBase
     public FontFamily LabelFontFamily { get; }
 
     public double LabelFontSize { get; }
+
+    public double LabelOffsetY { get; }
 
     public void Load(long value)
     {

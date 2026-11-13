@@ -134,7 +134,7 @@
                                FontSize="{Binding LabelFontSize}"
                                VerticalAlignment="Center">
                         <TextBlock.RenderTransform>
-                            <TranslateTransform Y="-2" />
+                            <TranslateTransform Y="{Binding LabelOffsetY}" />
                         </TextBlock.RenderTransform>
                     </TextBlock>
                 </CheckBox>
