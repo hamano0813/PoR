@@ -17,6 +17,8 @@ public sealed class WindowsDolphinMemory : IDolphinMemory
         NativeMethods.PROCESS_VM_READ |
         NativeMethods.PROCESS_VM_WRITE;
 
+    private const uint StillActive = 259;
+
     private readonly object _gate = new();
 
     private SafeProcessHandle? _process;
@@ -45,16 +47,22 @@ public sealed class WindowsDolphinMemory : IDolphinMemory
         {
             ThrowIfDisposed();
 
+            var processes = DolphinProcessLocator.FindAll();
+
+            // A hook is reusable only while its process is still alive. Dolphin
+            // may have been closed and restarted since the previous refresh;
+            // in that case the old process handle and MEM1 address are stale.
             if (_status == DolphinStatus.Hooked &&
-                _process is { IsInvalid: false, IsClosed: false })
+                _process is { IsInvalid: false, IsClosed: false } &&
+                IsProcessAlive(_process) &&
+                (processes.Count == 0 || processes.Any(p => p.ProcessId == _processId)))
             {
                 return true;
             }
 
             UnhookCore();
 
-            var processInfo = DolphinProcessLocator.Find();
-            if (processInfo is null)
+            if (processes.Count == 0)
             {
                 SetStatus(
                     DolphinStatus.NotRunning,
@@ -62,48 +70,76 @@ public sealed class WindowsDolphinMemory : IDolphinMemory
                 return false;
             }
 
-            var rawHandle = NativeMethods.OpenProcess(
-                ProcessAccess,
-                false,
-                processInfo.ProcessId);
+            var openedAny = false;
+            var failureDetails = new List<string>();
 
-            if (rawHandle == IntPtr.Zero)
+            foreach (var processInfo in processes)
             {
-                var error = Marshal.GetLastWin32Error();
+                var rawHandle = NativeMethods.OpenProcess(
+                    ProcessAccess,
+                    false,
+                    processInfo.ProcessId);
+
+                if (rawHandle == IntPtr.Zero)
+                {
+                    var error = Marshal.GetLastWin32Error();
+                    failureDetails.Add(
+                        $"{processInfo.ExecutableName} (pid {processInfo.ProcessId}): " +
+                        $"OpenProcess failed (win32={error}).");
+                    continue;
+                }
+
+                openedAny = true;
+                var process = new SafeProcessHandle(rawHandle, ownsHandle: true);
+                var mem1 = Mem1Locator.Find(process, out var diagnostics);
+
+                if (mem1 is null)
+                {
+                    process.Dispose();
+                    if (!string.IsNullOrWhiteSpace(diagnostics))
+                    {
+                        failureDetails.Add(
+                            $"{processInfo.ExecutableName} (pid {processInfo.ProcessId}): " +
+                            diagnostics);
+                    }
+
+                    continue;
+                }
+
+                _process = process;
+                _processId = processInfo.ProcessId;
+                _mem1HostBase = mem1.HostBase;
+                _mem1Size = mem1.Size;
+
                 SetStatus(
-                    DolphinStatus.AccessDenied,
-                    $"OpenProcess failed for {processInfo.ExecutableName} " +
-                    $"(pid {processInfo.ProcessId}, win32={error}). " +
-                    "Run Dolphin and the modifier at the same privilege level.");
-                return false;
+                    DolphinStatus.Hooked,
+                    $"Hooked {processInfo.ExecutableName} pid {_processId}; " +
+                    $"MEM1 host 0x{_mem1HostBase:X}, size 0x{_mem1Size:X}.");
+                return true;
             }
 
-            var process = new SafeProcessHandle(rawHandle, ownsHandle: true);
-            var mem1 = Mem1Locator.Find(process, out var diagnostics);
+            var details = failureDetails.Count == 0
+                ? string.Empty
+                : Environment.NewLine + string.Join(Environment.NewLine, failureDetails);
 
-            if (mem1 is null)
+            if (openedAny)
             {
-                process.Dispose();
                 SetStatus(
                     DolphinStatus.NoEmu,
                     "Dolphin is running, but GameCube MEM1 was not found. " +
                     "Start a game and wait for it to boot." +
-                    (string.IsNullOrWhiteSpace(diagnostics)
-                        ? string.Empty
-                        : Environment.NewLine + diagnostics));
-                return false;
+                    details);
+            }
+            else
+            {
+                SetStatus(
+                    DolphinStatus.AccessDenied,
+                    "OpenProcess failed for Dolphin. " +
+                    "Run Dolphin and the modifier at the same privilege level." +
+                    details);
             }
 
-            _process = process;
-            _processId = processInfo.ProcessId;
-            _mem1HostBase = mem1.HostBase;
-            _mem1Size = mem1.Size;
-
-            SetStatus(
-                DolphinStatus.Hooked,
-                $"Hooked {processInfo.ExecutableName} pid {_processId}; " +
-                $"MEM1 host 0x{_mem1HostBase:X}, size 0x{_mem1Size:X}.");
-            return true;
+            return false;
         }
     }
 
@@ -273,6 +309,12 @@ public sealed class WindowsDolphinMemory : IDolphinMemory
         StatusChanged?.Invoke(
             this,
             new DolphinStatusChangedEventArgs(oldStatus, status, message));
+    }
+
+    private static bool IsProcessAlive(SafeProcessHandle process)
+    {
+        return NativeMethods.GetExitCodeProcess(process, out var exitCode) &&
+               exitCode == StillActive;
     }
 
     private void ThrowIfDisposed()

@@ -14,6 +14,9 @@ internal static class DolphinProcessLocator
     ];
 
     public static DolphinProcessInfo? Find()
+        => FindAll().FirstOrDefault();
+
+    public static IReadOnlyList<DolphinProcessInfo> FindAll()
     {
         var names = ResolveProcessNames();
         var snapshot = NativeMethods.CreateToolhelp32Snapshot(
@@ -22,8 +25,10 @@ internal static class DolphinProcessLocator
 
         if (snapshot == NativeMethods.InvalidHandleValue)
         {
-            return null;
+            return [];
         }
+
+        var matches = new List<DolphinProcessInfo>();
 
         try
         {
@@ -34,7 +39,7 @@ internal static class DolphinProcessLocator
 
             if (!NativeMethods.Process32FirstW(snapshot, ref entry))
             {
-                return null;
+                return matches;
             }
 
             do
@@ -49,13 +54,14 @@ internal static class DolphinProcessLocator
                 {
                     if (string.Equals(exeName, name, StringComparison.OrdinalIgnoreCase))
                     {
-                        return new DolphinProcessInfo(entry.th32ProcessID, exeName);
+                        matches.Add(new DolphinProcessInfo(entry.th32ProcessID, exeName));
+                        break;
                     }
                 }
             }
             while (NativeMethods.Process32NextW(snapshot, ref entry));
 
-            return null;
+            return matches;
         }
         finally
         {

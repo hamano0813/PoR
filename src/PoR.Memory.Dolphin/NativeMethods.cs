@@ -78,6 +78,12 @@ internal static class NativeMethods
     internal static extern bool CloseHandle(IntPtr hObject);
 
     [DllImport("kernel32.dll", SetLastError = true)]
+    [return: MarshalAs(UnmanagedType.Bool)]
+    internal static extern bool GetExitCodeProcess(
+        SafeProcessHandle hProcess,
+        out uint lpExitCode);
+
+    [DllImport("kernel32.dll", SetLastError = true)]
     internal static extern nuint VirtualQueryEx(
         SafeProcessHandle hProcess,
         IntPtr lpAddress,

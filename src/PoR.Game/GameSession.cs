@@ -46,13 +46,31 @@ public sealed class GameSession : IAsyncDisposable
         await _gate.WaitAsync(cancellationToken).ConfigureAwait(false);
         try
         {
-            if (_memory.Status != DolphinStatus.Hooked && !_memory.Hook())
+            // Always validate the hook. The emulator may have been closed and
+            // restarted since the previous refresh, leaving a stale process
+            // handle and MEM1 address behind.
+            if (!_memory.Hook() && !await RetryHookAsync(cancellationToken).ConfigureAwait(false))
             {
                 throw new InvalidOperationException(
                     $"Dolphin is not hooked: {_memory.Status}. {_memory.StatusMessage}");
             }
 
-            return await Task.Run(BuildSnapshot, cancellationToken).ConfigureAwait(false);
+            try
+            {
+                return await Task.Run(BuildSnapshot, cancellationToken).ConfigureAwait(false);
+            }
+            catch (MemoryAccessException) when (!cancellationToken.IsCancellationRequested)
+            {
+                // The game may have restarted after the hook was established.
+                // Reconnect once and retry the snapshot.
+                _memory.Unhook();
+                if (!_memory.Hook())
+                {
+                    throw;
+                }
+
+                return await Task.Run(BuildSnapshot, cancellationToken).ConfigureAwait(false);
+            }
         }
         finally
         {
@@ -251,6 +269,18 @@ public sealed class GameSession : IAsyncDisposable
         public CancellationTokenSource Cancellation { get; }
 
         public Task Loop { get; set; } = Task.CompletedTask;
+    }
+
+    private async Task<bool> RetryHookAsync(CancellationToken cancellationToken)
+    {
+        if (_memory.Status != DolphinStatus.NoEmu)
+        {
+            return false;
+        }
+
+        // The Dolphin process may be up while the game is still creating MEM1.
+        await Task.Delay(300, cancellationToken).ConfigureAwait(false);
+        return _memory.Hook();
     }
 
     private GameSnapshot BuildSnapshot()
