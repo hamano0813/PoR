@@ -12,6 +12,9 @@ public sealed partial class BoolFieldViewModel : FieldViewModelBase
     [ObservableProperty]
     private bool _isChecked;
 
+    [ObservableProperty]
+    private bool _isToggleEnabled = true;
+
     public BoolFieldViewModel(
         GameSession session,
         FieldDefinition definition,
@@ -44,6 +47,8 @@ public sealed partial class BoolFieldViewModel : FieldViewModelBase
 
     public double IconSize { get; }
 
+    public bool CanToggle => IsEditable && IsToggleEnabled;
+
     public FontFamily LabelFontFamily { get; }
 
     public void Load(long value)
@@ -59,5 +64,10 @@ public sealed partial class BoolFieldViewModel : FieldViewModelBase
         {
             _ = WriteAsync(value ? 1 : 0);
         }
+    }
+
+    partial void OnIsToggleEnabledChanged(bool value)
+    {
+        OnPropertyChanged(nameof(CanToggle));
     }
 }

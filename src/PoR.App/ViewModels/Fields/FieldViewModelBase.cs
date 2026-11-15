@@ -30,6 +30,8 @@ public abstract partial class FieldViewModelBase : ObservableObject
 
     public string Label { get; }
 
+    public string FieldId => Definition.Id;
+
     public bool IsEditable => !Definition.ReadOnly;
 
     public string? ErrorMessage { get; private set; }

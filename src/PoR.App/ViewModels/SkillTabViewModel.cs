@@ -38,6 +38,13 @@ public sealed class SkillTabViewModel
 
     public IReadOnlyList<BoolFieldViewModel> Features { get; }
 
+    public BoolFieldViewModel? FindFeature(string fieldId)
+        => Features.FirstOrDefault(feature => feature.FieldId == fieldId);
+
+    public BoolFieldViewModel? FindField(string fieldId)
+        => ActiveSkills.Concat(Features)
+            .FirstOrDefault(field => field.FieldId == fieldId);
+
     private BoolFieldViewModel Create(string id)
     {
         var field = _session.Catalog.GetField(id);

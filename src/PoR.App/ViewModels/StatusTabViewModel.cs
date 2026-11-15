@@ -61,9 +61,24 @@ public sealed class StatusTabViewModel
         Battle = Num("battle");
         Victory = Num("victory");
 
-        Ability = new AbilityTabViewModel(snapshot, slot, session, localization, assets);
-        Items = new ItemTabViewModel(snapshot, slot, session, localization, assets);
-        Skill = new SkillTabViewModel(snapshot, slot, session, localization, assets);
+        var skill = new SkillTabViewModel(snapshot, slot, session, localization, assets);
+        Skill = skill;
+        Ability = new AbilityTabViewModel(
+            snapshot,
+            slot,
+            session,
+            localization,
+            assets,
+            Class,
+            skill);
+        Items = new ItemTabViewModel(
+            snapshot,
+            slot,
+            session,
+            localization,
+            assets,
+            Ability,
+            skill);
         Support = new SupportTabViewModel(snapshot, slot, session, localization, assets);
     }
 

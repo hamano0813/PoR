@@ -15,7 +15,7 @@
                 <ContentControl Grid.Column="1" Content="{Binding Durability}" />
                 <CheckBox Grid.Column="2"
                           IsChecked="{Binding Equipped.IsChecked, Mode=TwoWay}"
-                          IsEnabled="{Binding Equipped.IsEditable}"
+                          IsEnabled="{Binding Equipped.CanToggle}"
                           MinHeight="32"
                           Margin="2,3,2,3"
                           VerticalContentAlignment="Center"

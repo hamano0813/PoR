@@ -19,9 +19,9 @@
                     CornerRadius="6"
                     Height="32"
                     Margin="2,3,2,3"
-                    IsEnabled="{Binding IsEditable}">
+                    IsEnabled="{Binding CanEdit}">
                 <Grid>
-                    <TextBox Text="{Binding Value, Mode=TwoWay}"
+                    <TextBox Text="{Binding Text, Mode=OneWay}"
                              TextAlignment="Center"
                              HorizontalContentAlignment="Center"
                              VerticalContentAlignment="Center"
@@ -118,7 +118,7 @@
                        IsVisible="{Binding HasIcon}" />
                 <CheckBox Grid.Column="1"
                           IsChecked="{Binding IsChecked}"
-                          IsEnabled="{Binding IsEditable}"
+                          IsEnabled="{Binding CanToggle}"
                           VerticalContentAlignment="Center"
                           MinHeight="32"
                           Margin="10,3,0,3"
