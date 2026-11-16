@@ -1,6 +1,9 @@
 using Avalonia.Controls;
+using Avalonia.Controls.Primitives;
+using Avalonia.Input;
 using Avalonia.Interactivity;
 using Avalonia.Threading;
+using PoR.App.ViewModels;
 
 namespace PoR.App.Views;
 
@@ -19,5 +22,31 @@ public partial class StatusView : UserControl
         Dispatcher.UIThread.Post(
             () => StatusScroll.Offset = default,
             DispatcherPriority.Background);
+    }
+
+    private void OnSupportMeterPointerPressed(object? sender, PointerPressedEventArgs e)
+    {
+        if (sender is not Control control ||
+            !e.GetCurrentPoint(control).Properties.IsLeftButtonPressed)
+        {
+            return;
+        }
+
+        if (control.DataContext is not SupportMeterViewModel meter ||
+            string.IsNullOrWhiteSpace(meter.BonusText))
+        {
+            return;
+        }
+
+        if (FlyoutBase.GetAttachedFlyout(control) is Flyout flyout &&
+            flyout.Content is Control content)
+        {
+            // The flyout is hosted in a popup, so pass the meter's data
+            // context through explicitly to keep BonusText bound.
+            content.DataContext = control.DataContext;
+        }
+
+        FlyoutBase.ShowAttachedFlyout(control);
+        e.Handled = true;
     }
 }

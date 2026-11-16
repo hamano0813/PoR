@@ -30,6 +30,12 @@ public sealed class GameSession : IAsyncDisposable
 
     public GameDataCatalog Catalog => _catalog;
 
+    /// <summary>
+    /// The most recent snapshot. Successful character writes are applied to it
+    /// so the UI does not show stale values when switching characters.
+    /// </summary>
+    public GameSnapshot? CurrentSnapshot { get; private set; }
+
     public DolphinStatus Status => _memory.Status;
 
     public string? StatusMessage => _memory.StatusMessage;
@@ -57,7 +63,9 @@ public sealed class GameSession : IAsyncDisposable
 
             try
             {
-                return await Task.Run(BuildSnapshot, cancellationToken).ConfigureAwait(false);
+                var snapshot = await Task.Run(BuildSnapshot, cancellationToken).ConfigureAwait(false);
+                CurrentSnapshot = snapshot;
+                return snapshot;
             }
             catch (MemoryAccessException) when (!cancellationToken.IsCancellationRequested)
             {
@@ -69,7 +77,9 @@ public sealed class GameSession : IAsyncDisposable
                     throw;
                 }
 
-                return await Task.Run(BuildSnapshot, cancellationToken).ConfigureAwait(false);
+                var snapshot = await Task.Run(BuildSnapshot, cancellationToken).ConfigureAwait(false);
+                CurrentSnapshot = snapshot;
+                return snapshot;
             }
         }
         finally
@@ -98,6 +108,11 @@ public sealed class GameSession : IAsyncDisposable
 
             ValueCodec.Write(buffer, field.Length, value, field.Bit);
             _memory.WriteBytes(address, buffer);
+
+            if (field.Scope == FieldScope.Character && slotIndex is int slot)
+            {
+                CurrentSnapshot?.Slots.WriteField(field, slot, value);
+            }
         }
         finally
         {

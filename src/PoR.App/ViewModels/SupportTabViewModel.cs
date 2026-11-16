@@ -4,6 +4,7 @@ using CommunityToolkit.Mvvm.ComponentModel;
 using PoR.App.Services;
 using PoR.App.ViewModels.Fields;
 using PoR.Core.Game;
+using PoR.Core.Values;
 using PoR.Game;
 
 namespace PoR.App.ViewModels;
@@ -52,13 +53,34 @@ public sealed class SupportTabViewModel
                     slot.Index,
                     _localization.Ui("Ui_Support_Points"),
                     snapshot.Slots.ReadField(field, slot.Index));
+                points.SetRange(0, 30);
 
                 var partnerAffinity = session.Catalog.Affinities.Find(entry.PartnerKey);
+                var partnerSlot = snapshot.SlotInfos.FirstOrDefault(
+                    info => !info.IsEmpty &&
+                            string.Equals(
+                                info.PidKey,
+                                entry.PartnerKey,
+                                StringComparison.Ordinal));
+                var partnerSupportIndex = FindSupportIndex(
+                    session,
+                    entry.PartnerKey,
+                    slot.PidKey);
+                var partnerField = partnerSupportIndex is int supportIndex
+                    ? session.Catalog.GetField($"support{supportIndex + 1}")
+                    : null;
+
                 rows.Add(new SupportRowViewModel(
                     Term(entry.PartnerKey, null, pidTermKeys),
                     _assets.GetAffinityIcon(partnerAffinity),
                     points,
-                    entry.Thresholds));
+                    entry.Thresholds,
+                    session,
+                    partnerField,
+                    partnerSlot?.Index,
+                    currentAffinity,
+                    partnerAffinity,
+                    _localization));
             }
         }
 
@@ -96,20 +118,65 @@ public sealed class SupportTabViewModel
             ? key ?? _localization.Ui("Ui_Status_Unknown")
             : text;
     }
+
+    private static int? FindSupportIndex(
+        GameSession session,
+        string partnerPid,
+        string? currentPid)
+    {
+        if (currentPid is null)
+        {
+            return null;
+        }
+
+        var support = session.Catalog.Supports.Find(partnerPid);
+        if (support is null)
+        {
+            return null;
+        }
+
+        for (var index = 0; index < support.Entries.Count; index++)
+        {
+            if (support.Entries[index] is { } entry &&
+                string.Equals(entry.PartnerKey, currentPid, StringComparison.Ordinal))
+            {
+                return index;
+            }
+        }
+
+        return null;
+    }
 }
 
 public sealed class SupportRowViewModel : ObservableObject
 {
+    private readonly GameSession _session;
+    private readonly FieldDefinition? _partnerField;
+    private readonly int? _partnerSlotIndex;
+
     public SupportRowViewModel(
         string partnerName,
         Bitmap? affinityIcon,
         NumericFieldViewModel points,
-        IReadOnlyList<int> thresholds)
+        IReadOnlyList<int> thresholds,
+        GameSession session,
+        FieldDefinition? partnerField,
+        int? partnerSlotIndex,
+        string? currentAffinity,
+        string? partnerAffinity,
+        LocalizationService localization)
     {
         PartnerName = partnerName;
         AffinityIcon = affinityIcon;
         Points = points;
-        Meter = new SupportMeterViewModel(thresholds);
+        _session = session;
+        _partnerField = partnerField;
+        _partnerSlotIndex = partnerSlotIndex;
+        Meter = new SupportMeterViewModel(
+            thresholds,
+            currentAffinity,
+            partnerAffinity,
+            localization);
 
         Points.PropertyChanged += OnPointsChanged;
         UpdateMeter();
@@ -130,12 +197,36 @@ public sealed class SupportRowViewModel : ObservableObject
         if (eventArgs.PropertyName == nameof(NumericFieldViewModel.Value))
         {
             UpdateMeter();
+            WritePartnerValue();
         }
     }
 
     private void UpdateMeter()
     {
         Meter.Update((double)Points.Value);
+    }
+
+    private void WritePartnerValue()
+    {
+        if (_partnerField is null || _partnerSlotIndex is not int slotIndex)
+        {
+            return;
+        }
+
+        _ = WritePartnerValueAsync(_partnerField, slotIndex);
+    }
+
+    private async Task WritePartnerValueAsync(FieldDefinition field, int slotIndex)
+    {
+        try
+        {
+            await _session.WriteFieldAsync(field, slotIndex, (long)Points.Value);
+        }
+        catch
+        {
+            // The primary field reports its own write errors; a failed linked
+            // write should not interrupt the current value edit.
+        }
     }
 }
 
@@ -151,12 +242,31 @@ public sealed partial class SupportMeterViewModel : ObservableObject
     private readonly int _cThreshold;
     private readonly int _bThreshold;
     private readonly int _aThreshold;
+    private readonly string? _currentAffinity;
+    private readonly string? _partnerAffinity;
+    private readonly string _attackLabel;
+    private readonly string _defenseLabel;
+    private readonly string _hitLabel;
+    private readonly string _avoidLabel;
 
-    public SupportMeterViewModel(IReadOnlyList<int> thresholds)
+    public SupportMeterViewModel(
+        IReadOnlyList<int> thresholds,
+        string? currentAffinity,
+        string? partnerAffinity,
+        LocalizationService localization)
     {
-        _cThreshold = thresholds[0];
-        _bThreshold = thresholds[1];
-        _aThreshold = thresholds[2];
+        // support.json 存的是各档之间的累计差值，实际要严格超过该值才升档：
+        // C 需要 >C，B 需要 >C+B，A 需要 >C+B+A。+1/+2/+3 后得到各档的
+        // 第一个有效点数（9/13/29 等）。
+        _cThreshold = thresholds[0] + 1;
+        _bThreshold = thresholds[1] + 2;
+        _aThreshold = thresholds[2] + 3;
+        _currentAffinity = currentAffinity;
+        _partnerAffinity = partnerAffinity;
+        _attackLabel = localization.Ui("Ui_Support_Atk");
+        _defenseLabel = localization.Ui("Ui_Support_Def");
+        _hitLabel = localization.Ui("Ui_Support_Hit");
+        _avoidLabel = localization.Ui("Ui_Support_Avoid");
 
         Maximum = _aThreshold;
         var span = Math.Max(1, _aThreshold);
@@ -185,17 +295,63 @@ public sealed partial class SupportMeterViewModel : ObservableObject
     [ObservableProperty]
     private string _toolTipText = string.Empty;
 
+    [ObservableProperty]
+    private string _bonusText = string.Empty;
+
     public void Update(double points)
     {
         Value = Math.Clamp(points, 0, Maximum);
-        RankLabel = points >= _aThreshold
-            ? "A"
+        var level = points >= _aThreshold
+            ? 3
             : points >= _bThreshold
-                ? "B"
+                ? 2
                 : points >= _cThreshold
-                    ? "C"
-                    : string.Empty;
-        HasRankLabel = RankLabel.Length > 0;
+                    ? 1
+                    : 0;
+        RankLabel = level switch
+        {
+            3 => "A",
+            2 => "B",
+            1 => "C",
+            _ => string.Empty,
+        };
+        HasRankLabel = level > 0;
+        BonusText = FormatBonus(level);
+    }
+
+    private string FormatBonus(int level)
+    {
+        if (level <= 0)
+        {
+            return string.Empty;
+        }
+
+        var bonus = AffinitySupportCatalog.Calculate(
+            _currentAffinity,
+            _partnerAffinity,
+            level);
+        var parts = new List<string>(4);
+        if (bonus.Attack > 0)
+        {
+            parts.Add($"{_attackLabel}+{bonus.Attack}");
+        }
+
+        if (bonus.Defense > 0)
+        {
+            parts.Add($"{_defenseLabel}+{bonus.Defense}");
+        }
+
+        if (bonus.Hit > 0)
+        {
+            parts.Add($"{_hitLabel}+{bonus.Hit}");
+        }
+
+        if (bonus.Avoid > 0)
+        {
+            parts.Add($"{_avoidLabel}+{bonus.Avoid}");
+        }
+
+        return parts.Count == 0 ? string.Empty : string.Join(" ", parts);
     }
 
     partial void OnValueChanged(double value)

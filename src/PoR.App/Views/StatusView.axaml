@@ -1,6 +1,7 @@
 <UserControl xmlns="https://github.com/avaloniaui"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:vm="using:PoR.App.ViewModels"
+             xmlns:ui="using:AvaloniaFluentUI.Controls"
              xmlns:loc="using:PoR.App.Localization"
              x:Class="PoR.App.Views.StatusView"
              x:DataType="vm:StatusTabViewModel">
@@ -42,7 +43,19 @@
                   Background="Transparent"
                   HorizontalAlignment="Right"
                   VerticalAlignment="Center"
-                  ToolTip.Tip="{Binding ToolTipText}">
+                  ToolTip.Tip="{Binding ToolTipText}"
+                  PointerPressed="OnSupportMeterPointerPressed">
+                <FlyoutBase.AttachedFlyout>
+                    <ui:FluentFlyout Placement="Top">
+                        <Border Background="{DynamicResource AppSurfaceBrush}"
+                                CornerRadius="6"
+                                Padding="10,6">
+                            <TextBlock Text="{Binding BonusText}"
+                                       FontFamily="{DynamicResource GameTermFontFamily}"
+                                       FontSize="12" />
+                        </Border>
+                    </ui:FluentFlyout>
+                </FlyoutBase.AttachedFlyout>
                 <Border Background="{DynamicResource SupportMeterTrackBrush}"
                         CornerRadius="5"
                         ToolTip.Tip="{Binding ToolTipText}">
@@ -267,7 +280,7 @@
                             </ItemsControl.ItemTemplate>
                         </ItemsControl>
 
-                        <!-- 体格、移动两行的右侧说明。 -->
+                        <!-- 重量、移动两行的右侧说明。 -->
                         <Grid Height="80"
                               VerticalAlignment="Bottom"
                               ColumnDefinitions="216,324"
