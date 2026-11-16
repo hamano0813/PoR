@@ -20,7 +20,10 @@ public enum WeaponCategory
 public static class ClassProficiencyCatalog
 {
     public const int RankE = 1;
+    public const int RankD = 31;
+    public const int RankC = 71;
     public const int RankB = 121;
+    public const int RankA = 181;
     public const int RankS = 251;
 
     private static readonly HashSet<string> LockedClasses = new(StringComparer.Ordinal)

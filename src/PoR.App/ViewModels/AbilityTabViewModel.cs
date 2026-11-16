@@ -1,5 +1,6 @@
 using System.ComponentModel;
 using Avalonia.Media.Imaging;
+using CommunityToolkit.Mvvm.ComponentModel;
 using PoR.App.Services;
 using PoR.App.ViewModels.Fields;
 using PoR.Core.Game;
@@ -62,16 +63,20 @@ public sealed class AbilityTabViewModel
         _assets = assets;
         _classField = classField;
 
+        var staffLightLabel =
+            $"{_localization.Ui("Ui_Weapon_STAFF")}／{_localization.Ui("Ui_Weapon_LIGHT")}";
         var rows = new List<AbilityRowViewModel>(RowDefinitions.Length);
         foreach (var (labelKey, statId, growthId, weaponKey) in RowDefinitions)
         {
             var label = _localization.Ui(labelKey);
             var stat = Num(statId, label);
+            stat.SetRange(0, 50);
+
             var growth = growthId is null ? null : Num(growthId, label);
+            growth?.SetRange(0, 255);
             NumericFieldViewModel? proficiency = null;
             Bitmap? weaponIcon = null;
             string? weaponLabel = null;
-            string? proficiencyLabel = null;
 
             if (weaponKey is not null)
             {
@@ -79,8 +84,6 @@ public sealed class AbilityTabViewModel
                 _proficiencies[Category(weaponKey)] = proficiency;
                 weaponIcon = _assets.GetWeaponIcon(weaponKey);
                 weaponLabel = _localization.Ui($"Ui_Weapon_{weaponKey}");
-                proficiencyLabel =
-                    $"{weaponLabel}{_localization.Ui("Ui_Ability_Proficiency")}";
             }
 
             rows.Add(new AbilityRowViewModel(
@@ -89,8 +92,9 @@ public sealed class AbilityTabViewModel
                 growth,
                 weaponIcon,
                 weaponLabel,
-                proficiencyLabel,
-                proficiency));
+                proficiency,
+                weaponKey == "STAFF" ? _classField : null,
+                weaponKey == "STAFF" ? staffLightLabel : null));
         }
 
         Rows = rows;
@@ -292,30 +296,124 @@ public sealed class AbilityTabViewModel
     }
 }
 
-public sealed class AbilityRowViewModel(
-    string label,
-    NumericFieldViewModel stat,
-    NumericFieldViewModel? growth,
-    Bitmap? weaponIcon,
-    string? weaponLabel,
-    string? proficiencyLabel,
-    NumericFieldViewModel? proficiency)
+public sealed class AbilityRowViewModel : ObservableObject
 {
-    public string Label { get; } = label;
+    private readonly string? _weaponLabel;
+    private readonly EnumFieldViewModel? _staffClassField;
+    private readonly string? _staffLightLabel;
 
-    public NumericFieldViewModel Stat { get; } = stat;
+    public AbilityRowViewModel(
+        string label,
+        NumericFieldViewModel stat,
+        NumericFieldViewModel? growth,
+        Bitmap? weaponIcon,
+        string? weaponLabel,
+        NumericFieldViewModel? proficiency,
+        EnumFieldViewModel? staffClassField,
+        string? staffLightLabel)
+    {
+        Label = label;
+        Stat = stat;
+        Growth = growth;
+        WeaponIcon = weaponIcon;
+        _weaponLabel = weaponLabel;
+        _staffClassField = staffClassField;
+        _staffLightLabel = staffLightLabel;
+        Proficiency = proficiency;
 
-    public NumericFieldViewModel? Growth { get; } = growth;
+        if (proficiency is not null)
+        {
+            proficiency.PropertyChanged += OnProficiencyChanged;
+        }
+
+        if (staffClassField is not null)
+        {
+            staffClassField.PropertyChanged += OnClassChanged;
+        }
+    }
+
+    public string Label { get; }
+
+    public NumericFieldViewModel Stat { get; }
+
+    public NumericFieldViewModel? Growth { get; }
 
     public bool HasGrowth => Growth is not null;
 
-    public Bitmap? WeaponIcon { get; } = weaponIcon;
+    public Bitmap? WeaponIcon { get; }
 
     public bool HasWeapon => WeaponIcon is not null;
 
-    public string? WeaponLabel { get; } = weaponLabel;
+    public string? WeaponLabel => _weaponLabel;
 
-    public string? ProficiencyLabel { get; } = proficiencyLabel;
+    public string ProficiencyLabel
+    {
+        get
+        {
+            if (Proficiency is null || Proficiency.Value <= 0)
+            {
+                return string.Empty;
+            }
 
-    public NumericFieldViewModel? Proficiency { get; } = proficiency;
+            return $"{GetWeaponLabel()} {GetWeaponRank(Proficiency.Value)}";
+        }
+    }
+
+    public NumericFieldViewModel? Proficiency { get; }
+
+    private string GetWeaponLabel()
+    {
+        if (_staffClassField?.SelectedItem?.Key is "JID_BISHOP" or "JID_BISHOP/F")
+        {
+            return _staffLightLabel ?? _weaponLabel ?? string.Empty;
+        }
+
+        return _weaponLabel ?? string.Empty;
+    }
+
+    private static string GetWeaponRank(decimal value)
+    {
+        if (value >= ClassProficiencyCatalog.RankS)
+        {
+            return "Ｓ";
+        }
+
+        if (value >= ClassProficiencyCatalog.RankA)
+        {
+            return "Ａ";
+        }
+
+        if (value >= ClassProficiencyCatalog.RankB)
+        {
+            return "Ｂ";
+        }
+
+        if (value >= ClassProficiencyCatalog.RankC)
+        {
+            return "Ｃ";
+        }
+
+        if (value >= ClassProficiencyCatalog.RankD)
+        {
+            return "Ｄ";
+        }
+
+        return "Ｅ";
+    }
+
+    private void OnProficiencyChanged(object? sender, PropertyChangedEventArgs e)
+    {
+        if (e.PropertyName == nameof(NumericFieldViewModel.Value))
+        {
+            OnPropertyChanged(nameof(ProficiencyLabel));
+        }
+    }
+
+    private void OnClassChanged(object? sender, PropertyChangedEventArgs e)
+    {
+        if (e.PropertyName == nameof(EnumFieldViewModel.SelectedItem))
+        {
+            OnPropertyChanged(nameof(ProficiencyLabel));
+        }
+    }
 }

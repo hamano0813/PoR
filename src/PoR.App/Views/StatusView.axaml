@@ -249,7 +249,8 @@
                                                 IsVisible="{Binding HasWeapon}">
                                             <StackPanel Orientation="Horizontal"
                                                         Spacing="4"
-                                                        HorizontalAlignment="Center"
+                                                        Margin="5,0,0,0"
+                                                        HorizontalAlignment="Left"
                                                         VerticalAlignment="Center">
                                                 <Image Source="{Binding WeaponIcon}"
                                                        Width="22"
@@ -272,7 +273,7 @@
                               ColumnDefinitions="216,324"
                               IsHitTestVisible="False">
                             <TextBlock Grid.Column="1"
-                                       Text="角色最终能力值为职业基础能力值和个人成长能力值的和&#10;能力值第一列为个人成长能力值的修改&#10;能力值第二列为固定成长模式下能力经验值的修改"
+                                       Text="角色最终能力值为角色基础能力值和角色成长能力值的和&#10;能力值第一列为角色成长能力值的修改&#10;能力值第二列为固定成长模式下能力经验值的修改"
                                        FontSize="11"
                                        LineHeight="16"
                                        TextWrapping="Wrap"
